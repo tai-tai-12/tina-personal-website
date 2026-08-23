@@ -85,39 +85,38 @@
       <div class="project-copy">
         <div class="project-kicker-row"><span class="project-no">01</span><span class="project-type">FLAGSHIP CASE</span></div>
         <h3>{{ if $isZh }}從醫療 AI 研究走向可部署產品{{ else }}From Medical AI Research to a Deployable Product{{ end }}</h3>
-        <p>{{ if $isZh }}把研究、臨床驗證、法規執行與跨團隊協作串成一條可落地的產品路徑。{{ else }}Connecting research, clinical validation, regulatory execution, and cross-functional delivery into a product path designed for real-world use.{{ end }}</p>
+        <p>{{ if $isZh }}把腦瘤 MRI 研究轉化為臨床產品工作流程，串接驗證、法規送件與部署準備。{{ else }}Translated brain tumor MRI research into a clinical product workflow spanning validation, regulatory submission, and deployment readiness.{{ end }}</p>
         <div class="tag-row"><span>Product</span><span>Healthcare AI</span><span>Regulatory</span></div>
-        <div class="metric-row-v3">
-          <div><strong>2</strong><span>medical centers</span></div>
-          <div><strong>TFDA</strong><span>submission</span></div>
-          <div><strong>PACS</strong><span>clinical workflow</span></div>
+        <div class="metric-row-v3 metric-row-compact">
+          <div><strong>2</strong><span>{{ if $isZh }}medical centers{{ else }}medical centers{{ end }}</span></div>
+          <div><strong>TFDA</strong><span>{{ if $isZh }}submission{{ else }}submission{{ end }}</span></div>
         </div>
         <a href="{{ "work/medical-ai-product/" | relLangURL }}" class="project-link">{{ if $isZh }}查看案例{{ else }}View case study{{ end }} <span>→</span></a>
       </div>
       <a class="project-visual project-system-visual product-path-visual" href="{{ "work/medical-ai-product/" | relLangURL }}" aria-label="Open Medical AI to Product case study">
         <div class="visual-system-head"><span>PRODUCT TRANSLATION</span><i></i></div>
-        <div class="product-path-core" aria-hidden="true">
+        <div class="product-path-core product-path-core-v53" aria-hidden="true">
           <div class="system-node">
             <svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/></svg>
-            <b>PACS</b><small>{{ if $isZh }}個案調閱{{ else }}Case access{{ end }}</small>
+            <b>{{ if $isZh }}臨床資料{{ else }}Clinical data{{ end }}</b><small>PACS + MRI</small>
           </div>
           <span class="system-arrow">→</span>
           <div class="system-node">
             <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><path d="M12 7v10M7 12h10"/></svg>
-            <b>AI</b><small>{{ if $isZh }}病灶分析{{ else }}Lesion analysis{{ end }}</small>
+            <b>{{ if $isZh }}AI 分析{{ else }}AI analysis{{ end }}</b><small>{{ if $isZh }}候選病灶{{ else }}Lesion candidates{{ end }}</small>
           </div>
           <span class="system-arrow">→</span>
           <div class="system-node">
             <svg viewBox="0 0 24 24"><path d="M5 4h14v16H5z"/><path d="M8 9h8M8 13h6M8 17h4"/></svg>
-            <b>{{ if $isZh }}證據{{ else }}Evidence{{ end }}</b><small>{{ if $isZh }}驗證與法規{{ else }}Validation + regulatory{{ end }}</small>
+            <b>{{ if $isZh }}病灶檢閱{{ else }}Lesion review{{ end }}</b><small>{{ if $isZh }}結果與報告{{ else }}Results + report{{ end }}</small>
           </div>
           <span class="system-arrow">→</span>
           <div class="system-node node-accent">
             <svg viewBox="0 0 24 24"><path d="M12 3 4 7v5c0 5 3.4 8 8 9 4.6-1 8-4 8-9V7l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg>
-            <b>{{ if $isZh }}部署{{ else }}Deployment{{ end }}</b><small>{{ if $isZh }}醫師最終判讀{{ else }}Physician-led review{{ end }}</small>
+            <b>{{ if $isZh }}醫師決策{{ else }}Physician decision{{ end }}</b><small>{{ if $isZh }}最終判讀{{ else }}Final interpretation{{ end }}</small>
           </div>
         </div>
-        <div class="visual-proof-line"><span>2 {{ if $isZh }}家醫學中心{{ else }}medical centers{{ end }}</span><span>TFDA submission</span><span>{{ if $isZh }}臨床流程轉譯{{ else }}Clinical workflow translation{{ end }}</span></div>
+        <div class="visual-footnote">{{ if $isZh }}研究 → 驗證 → 臨床產品流程{{ else }}Research → validation → clinical product workflow{{ end }}</div>
         <span class="visual-open">↗</span>
       </a>
     </article>
@@ -132,17 +131,15 @@
           <span class="system-arrow">→</span>
           <div class="cascade-stage"><span>2</span><b>{{ if $isZh }}五分類{{ else }}5-class typing{{ end }}</b><small>{{ if $isZh }}保留病灶{{ else }}Retained lesions{{ end }}</small></div>
         </div>
-        <div class="cohort-proof-grid">
-          <div><strong>12,125</strong><span>{{ if $isZh }}開發 MRI examinations{{ else }}development MRI exams{{ end }}</span></div>
+        <div class="cohort-proof-grid cohort-proof-grid-v53">
+          <div><strong>12.1K</strong><span>{{ if $isZh }}開發 MRI examinations{{ else }}development MRI exams{{ end }}</span></div>
           <div><strong>264</strong><span>{{ if $isZh }}獨立測試 examinations{{ else }}independent test exams{{ end }}</span></div>
-          <div><strong>2</strong><span>{{ if $isZh }}家醫學中心{{ else }}medical centers{{ end }}</span></div>
         </div>
-        <div class="technical-proof-line"><span><b>80.97%</b> sensitivity</span><span><b>0.21</b> FP/scan</span><span><b>90.16%</b> 5-class acc.</span></div>
       </div>
       <div class="project-copy">
         <div class="project-kicker-row"><span class="project-no">02</span><span class="project-type">TECHNICAL + ANALYTICS</span></div>
         <h3>{{ if $isZh }}大規模臨床 AI 驗證{{ else }}Building and Validating Clinical AI at Scale{{ end }}</h3>
-        <p>{{ if $isZh }}建立與評估真實世界醫學影像系統，把模型表現轉成可被團隊使用的證據。{{ else }}Developing and evaluating machine-learning systems across real-world medical imaging data, then translating model performance into evidence teams can actually use.{{ end }}</p>
+        <p>{{ if $isZh }}以兩中心 MRI 資料建立與驗證逐病灶 AI 架構，並將模型表現轉化為可解讀的臨床證據。{{ else }}Built and evaluated a lesion-wise AI cascade on two-center MRI data, with an independent cohort reserved for final end-to-end testing.{{ end }}</p>
         <div class="tag-row"><span>Machine Learning</span><span>Analytics</span><span>Medical Imaging</span></div>
         <a href="{{ "work/clinical-ai-at-scale/" | relLangURL }}" class="project-link">{{ if $isZh }}查看案例{{ else }}View case study{{ end }} <span>→</span></a>
       </div>
@@ -152,7 +149,7 @@
       <div class="project-copy">
         <div class="project-kicker-row"><span class="project-no">03</span><span class="project-type">TRANSFERABLE OPERATIONS</span></div>
         <h3>{{ if $isZh }}把複雜驗證流程變成結構化決策{{ else }}Turning Complex Validation Workflows into Structured Decisions{{ end }}</h3>
-        <p>{{ if $isZh }}運用分析、流程設計與文件結構化，改善複雜技術與法規工作中的決策品質與可重複性。{{ else }}Using analytics, process design, and structured documentation to improve decision quality and repeatability across complex technical and regulatory workflows.{{ end }}</p>
+        <p>{{ if $isZh }}用結構化證據、決策準則與追蹤流程，把複雜驗證工作轉成更清楚、可重複的執行系統。{{ else }}Structured evidence, decision criteria, and tracking workflows to make complex validation work clearer and more repeatable.{{ end }}</p>
         <div class="tag-row"><span>Analytics</span><span>Process Design</span><span>Operations</span></div>
         <a href="{{ "work/structured-validation/" | relLangURL }}" class="project-link">{{ if $isZh }}查看案例{{ else }}View case study{{ end }} <span>→</span></a>
       </div>
@@ -165,7 +162,6 @@
           <span class="system-arrow">→</span>
           <div class="decision-system-step node-accent"><span>03</span><svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg><b>Action</b><small>Execute + track</small></div>
         </div>
-        <div class="visual-proof-line"><span>Analytics</span><span>Process design</span><span>Regulatory operations</span></div>
       </div>
     </article>
   </div>
@@ -201,31 +197,26 @@
   </div>
 </section>
 
-<section class="section-shell research-v3" id="research">
+<section class="section-shell research-v3 research-v53" id="research">
   <div class="shell">
     <div class="section-signature reveal">
       <span class="section-number">03</span><span class="section-rule"></span><span class="section-dot"></span><span class="section-label">{{ if $isZh }}研究與獲獎{{ else }}RESEARCH & RECOGNITION{{ end }}</span>
     </div>
-    <div class="research-v3-grid">
-      <div class="research-gallery research-photo-gallery reveal">
-        <figure class="research-photo-card research-photo-main">
-          <img src="{{ "images/research/midl-poster.webp" | relURL }}" alt="Tina Tai presenting her MIDL 2026 brain tumor AI poster">
-          <figcaption><span>MIDL · 2026</span><strong>{{ if $isZh }}腦瘤 AI 研究發表{{ else }}Medical AI research{{ end }}</strong><small>{{ if $isZh }}Short Paper Poster{{ else }}Short Paper Poster{{ end }}</small></figcaption>
-        </figure>
-        <figure class="research-photo-card research-photo-secondary">
-          <img src="{{ "images/research/amlds-talk.webp" | relURL }}" alt="Tina Tai giving an oral presentation at AMLDS 2026">
-          <figcaption><span>AMLDS · 2026</span><strong>{{ if $isZh }}國際口頭報告{{ else }}Oral presentation{{ end }}</strong><small>{{ if $isZh }}Outstanding Oral Presentation{{ else }}Outstanding Oral Presentation{{ end }}</small></figcaption>
-        </figure>
+    <div class="research-v53-grid">
+      <div class="research-v53-copy reveal">
+        <h2>{{ if $isZh }}研究讓我更重視證據、驗證與臨床轉譯。{{ else }}Research grounded my approach to evidence, validation, and clinical translation.{{ end }}</h2>
+        <p>{{ if $isZh }}從逐病灶醫療 AI 到國際會議發表，我把研究視為產品與決策工作中的技術基礎。{{ else }}From lesion-wise medical AI to international research presentations, the work built the technical foundation I bring to product and analytics decisions.{{ end }}</p>
+        <a class="text-link" href="{{ "research/" | relLangURL }}">{{ if $isZh }}查看研究與獲獎{{ else }}Explore research & recognition{{ end }} →</a>
       </div>
-      <div class="research-copy reveal delay-1">
-        <h2>{{ if $isZh }}讓研究成為可信度，而不是唯一身份。{{ else }}Research as a credibility layer—not the whole identity.{{ end }}</h2>
-        <p>{{ if $isZh }}我的研究經驗建立了技術深度，也讓我更重視如何把證據轉化成產品與決策。{{ else }}Research gives me technical depth and a strong evidence mindset—but the work I care about most is what happens when that evidence has to shape products, workflows, and decisions.{{ end }}</p>
-        <div class="research-list-v3">
-          <div><strong>MIDL 2026</strong><span>Selected work</span></div>
-          <div><strong>IEEE AMLDS 2026</strong><span>Outstanding Oral Presentation</span></div>
-          <div><strong>NYCU</strong><span>Outstanding Thesis Award</span></div>
-        </div>
-        <a class="text-link" href="{{ "research/" | relLangURL }}">{{ if $isZh }}查看研究{{ else }}Explore research{{ end }} →</a>
+      <div class="research-v53-cards reveal delay-1">
+        <a class="research-mini-card midl-mini" href="{{ "research/" | relLangURL }}">
+          <figure><img src="{{ "images/research/midl-poster.webp" | relURL }}" alt="Tina Tai with her MIDL 2026 brain tumor AI poster"></figure>
+          <div class="research-mini-copy"><span>MIDL · 2026</span><strong>{{ if $isZh }}Short Paper Poster{{ else }}Short Paper Poster{{ end }}</strong><small>{{ if $isZh }}Lesion-wise brain tumor AI{{ else }}Lesion-wise brain tumor AI{{ end }}</small></div>
+        </a>
+        <a class="research-mini-card amlds-mini" href="{{ "research/" | relLangURL }}">
+          <figure><img src="{{ "images/research/amlds-talk.webp" | relURL }}" alt="Tina Tai giving an oral presentation at AMLDS 2026"></figure>
+          <div class="research-mini-copy"><span>AMLDS · 2026</span><strong>{{ if $isZh }}Oral Presentation{{ else }}Oral Presentation{{ end }}</strong><small class="award-inline">Outstanding Oral Presentation</small></div>
+        </a>
       </div>
     </div>
   </div>

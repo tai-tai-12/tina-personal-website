@@ -1,14 +1,16 @@
-# Tina Tai Personal Website — V5.2
+# Tina Tai Personal Website — V5.3
 
-Recruiter-first Hugo portfolio with a black / white / blue identity, bilingual content, responsive layout, dark mode, project case studies, research evidence, and GitHub Pages deployment workflow.
+Recruiter-first Hugo portfolio with a black / white / blue identity, bilingual content, responsive layout, dark mode, project case studies, and research evidence.
 
-## V5.2 focus
+## V5.3 focus — Editorial Polish Pass
 
-- Unified vector visual system across all three Selected Work projects
-- Correct development-vs-independent-test cohort wording
-- Product and technical case studies separated more clearly
-- High-resolution MIDL / AMLDS imagery
-- Redesigned Research & Recognition hierarchy
-- SVG case-study diagrams for sharper rendering
+- Reduced homepage information density
+- Simplified the three Selected Work visuals while preserving a shared design system
+- Clarified 12,125-development / 264-independent-test data scope
+- Rebuilt homepage research as a compact editorial strip
+- Preserved native photo proportions instead of forcing matching portrait crops
+- Re-encoded the latest MIDL / AMLDS source photos at high WebP quality
+- Simplified the Research page into Featured Research, Recognition, publications, and focus
+- Reduced About-image visual weight
 
-See `docs/V5_2_VISUAL_CONSISTENCY_PASS.md` for the update summary.
+See `docs/V5_3_EDITORIAL_POLISH_PASS.md` for details.

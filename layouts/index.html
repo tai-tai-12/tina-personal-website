@@ -17,10 +17,15 @@
         <a class="btn primary-blue" href="{{ "work/" | relLangURL }}">{{ if $isZh }}查看專案{{ else }}View My Work{{ end }} <span>→</span></a>
         <a class="btn secondary-clean" href="{{ .Site.Params.resume | relURL }}" target="_blank" rel="noreferrer">Resume <span>↓</span></a>
       </div>
-      <div class="micro-links">
-        <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-        <span class="micro-dot">·</span>
-        <a href="mailto:{{ .Site.Params.email }}">Email ↗</a>
+      <div class="micro-links icon-links">
+        <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 10v7M8 7.5v.1M12 17v-4a3 3 0 0 1 6 0v4M12 10v7"/></svg>
+          <span>LinkedIn</span><span class="link-arrow">↗</span>
+        </a>
+        <a href="mailto:{{ .Site.Params.email }}" aria-label="Email">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+          <span>Email</span><span class="link-arrow">↗</span>
+        </a>
       </div>
     </div>
 
@@ -89,14 +94,11 @@
         </div>
         <a href="{{ "work/medical-ai-product/" | relLangURL }}" class="project-link">{{ if $isZh }}查看案例{{ else }}View case study{{ end }} <span>→</span></a>
       </div>
-      <div class="project-visual product-translation-visual" role="img" aria-label="Abstract research to deployment workflow illustration">
-        <div class="visual-grid" aria-hidden="true"></div>
-        <div class="stack-card stack-1"><span>01</span><b>Research</b><small>Evidence generation</small></div>
-        <div class="stack-card stack-2"><span>02</span><b>Validation</b><small>Clinical + technical</small></div>
-        <div class="stack-card stack-3"><span>03</span><b>Product</b><small>Workflow fit</small></div>
-        <div class="stack-card stack-4"><span>04</span><b>Regulatory</b><small>Submission readiness</small></div>
-        <div class="stack-spine"></div>
-      </div>
+      <a class="project-visual project-image-visual" href="{{ "work/medical-ai-product/" | relLangURL }}" aria-label="Open Medical AI to Product case study">
+        <img src="{{ "/images/projects/medical-ai-product/clinical-product-workflow.webp" | relURL }}" alt="Conceptual clinical product workflow for AI-assisted brain tumor MRI review">
+        <span class="visual-badge">{{ if $isZh }}臨床產品流程{{ else }}CLINICAL PRODUCT WORKFLOW{{ end }}</span>
+        <span class="visual-open">↗</span>
+      </a>
     </article>
 
     <article class="project-feature project-feature-secondary project-reverse reveal">
@@ -172,17 +174,15 @@
       <span class="section-number">03</span><span class="section-rule"></span><span class="section-dot"></span><span class="section-label">{{ if $isZh }}研究與獲獎{{ else }}RESEARCH & RECOGNITION{{ end }}</span>
     </div>
     <div class="research-v3-grid">
-      <div class="research-gallery reveal">
-        <div class="research-tile rt-main">
-          <span class="tile-index">MIDL · 2026</span>
-          <div class="tile-lines"><i></i><i></i><i></i><i></i></div>
-          <strong>Medical AI</strong><small>Selected research</small>
-        </div>
-        <div class="research-tile rt-accent">
-          <span class="tile-index">AMLDS · 2026</span>
-          <div class="award-mark">★</div>
-          <strong>Outstanding Oral</strong><small>Presentation Award</small>
-        </div>
+      <div class="research-gallery research-photo-gallery reveal">
+        <figure class="research-photo-card research-photo-main">
+          <img src="{{ "/images/research/midl-poster.webp" | relURL }}" alt="Tina Tai presenting her MIDL 2026 brain tumor AI poster">
+          <figcaption><span>MIDL · 2026</span><strong>{{ if $isZh }}腦瘤 AI 研究發表{{ else }}Medical AI research{{ end }}</strong><small>{{ if $isZh }}Short Paper Poster{{ else }}Short Paper Poster{{ end }}</small></figcaption>
+        </figure>
+        <figure class="research-photo-card research-photo-secondary">
+          <img src="{{ "/images/research/amlds-talk.webp" | relURL }}" alt="Tina Tai giving an oral presentation at AMLDS 2026">
+          <figcaption><span>AMLDS · 2026</span><strong>{{ if $isZh }}國際口頭報告{{ else }}Oral presentation{{ end }}</strong><small>{{ if $isZh }}Outstanding Oral Presentation{{ else }}Outstanding Oral Presentation{{ end }}</small></figcaption>
+        </figure>
       </div>
       <div class="research-copy reveal delay-1">
         <h2>{{ if $isZh }}讓研究成為可信度，而不是唯一身份。{{ else }}Research as a credibility layer—not the whole identity.{{ end }}</h2>
@@ -208,14 +208,20 @@
         <blockquote>{{ if $isZh }}我關心的不只是技術能不能做到，也關心它是否能被理解、被使用，並真正改善決策。{{ else }}I’m interested not only in whether technology can work, but in what it takes for people to trust it, use it, and make better decisions with it.{{ end }}</blockquote>
         <a class="text-link" href="{{ "about/" | relLangURL }}">{{ if $isZh }}更多關於我{{ else }}More about me{{ end }} →</a>
       </div>
-      <div class="journey-map reveal delay-1" aria-label="Career journey">
-        <div class="journey-step"><span>01</span><strong>Biomedical Imaging</strong></div>
-        <div class="journey-arrow">→</div>
-        <div class="journey-step"><span>02</span><strong>AI Research</strong></div>
-        <div class="journey-arrow">→</div>
-        <div class="journey-step"><span>03</span><strong>Product</strong></div>
-        <div class="journey-arrow">→</div>
-        <div class="journey-step"><span>04</span><strong>Analytics</strong></div>
+      <div class="about-visual-stack reveal delay-1">
+        <figure class="about-photo-card">
+          <img src="{{ "/images/about/thesis-presentation.webp" | relURL }}" alt="Tina Tai presenting her master's thesis on a radiologist-oriented brain tumor MRI framework">
+          <figcaption><span>NYCU · 2026</span><strong>{{ if $isZh }}碩士論文口試{{ else }}Master's thesis presentation{{ end }}</strong></figcaption>
+        </figure>
+        <div class="journey-map" aria-label="Career journey">
+          <div class="journey-step"><span>01</span><strong>Biomedical Imaging</strong></div>
+          <div class="journey-arrow">→</div>
+          <div class="journey-step"><span>02</span><strong>AI Research</strong></div>
+          <div class="journey-arrow">→</div>
+          <div class="journey-step"><span>03</span><strong>Product</strong></div>
+          <div class="journey-arrow">→</div>
+          <div class="journey-step"><span>04</span><strong>Analytics</strong></div>
+        </div>
       </div>
     </div>
   </div>

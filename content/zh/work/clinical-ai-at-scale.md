@@ -2,6 +2,10 @@
 title: "大規模臨床 AI 的建立與驗證"
 translationKey: "clinical-ai-at-scale"
 tags: ["Machine Learning", "Analytics", "Medical Imaging", "Experimentation"]
+category: "臨床 AI · ML"
+summary: "以嚴謹的 development／independent test 分離建立與驗證逐病灶臨床 AI。"
+proof: ["12.1K development exams", "264 independent test exams"]
+weight: 2
 ---
 
 這個案例聚焦我的分析與技術能力：如何在真實世界醫學影像資料中建立、評估並溝通模型效能。

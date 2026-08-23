@@ -2,6 +2,10 @@
 title: "從醫療 AI 研究走向可部署產品"
 translationKey: "medical-ai-product"
 tags: ["產品管理", "醫療 AI", "法規", "跨團隊協作"]
+category: "產品轉譯"
+summary: "串接臨床 AI 研究、驗證、法規準備與部署就緒。"
+proof: ["2 medical centers", "TFDA submission"]
+weight: 1
 ---
 
 我參與將腦瘤 MRI 研究轉化為可融入臨床使用情境的工作流程，同時協調產品、驗證與法規工作，推進產品化與部署準備。

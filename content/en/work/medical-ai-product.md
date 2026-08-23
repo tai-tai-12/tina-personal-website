@@ -2,6 +2,10 @@
 title: "From Medical AI Research to a Deployable Product"
 translationKey: "medical-ai-product"
 tags: ["Product Management", "Healthcare AI", "Regulatory", "Cross-functional Leadership"]
+category: "PRODUCT TRANSLATION"
+summary: "Bridging clinical AI research, validation, regulatory preparation, and deployment readiness."
+proof: ["2 medical centers", "TFDA submission"]
+weight: 1
 ---
 
 I helped translate brain-tumor MRI research into a physician-led workflow designed for real clinical use, while coordinating the product, validation, and regulatory work needed to move toward deployment.

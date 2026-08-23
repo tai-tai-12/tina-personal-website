@@ -2,6 +2,10 @@
 title: "Turning Complex Validation Workflows into Structured Decisions"
 translationKey: "structured-validation"
 tags: ["Analytics", "Operations", "Process Design", "Decision-Making"]
+category: "ANALYTICS · OPERATIONS"
+summary: "Structuring technical evidence, compliance workflows, and analytical tooling so complex validation work becomes repeatable."
+proof: ["8 products tested", "10+ regulatory reports"]
+weight: 3
 ---
 
 Before my later product and clinical-AI work, I built experience in technical validation and regulatory testing for ionizing-radiation equipment. The work taught me how to make complex evidence traceable, repeatable, and decision-ready.

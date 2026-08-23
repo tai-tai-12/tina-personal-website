@@ -2,6 +2,10 @@
 title: "把複雜驗證流程轉化為結構化決策"
 translationKey: "structured-validation"
 tags: ["Analytics", "Operations", "Process Design", "Decision-Making"]
+category: "分析 · 營運"
+summary: "將技術證據、合規流程與分析工具整理成可重複執行的驗證系統。"
+proof: ["8 products tested", "10+ regulatory reports"]
+weight: 3
 ---
 
 在後來的 Product 與 Clinical AI 工作之前，我先累積了游離輻射設備的技術驗證與法規測試經驗。這段工作讓我學到如何把複雜證據變成可追蹤、可重複、可支援決策的流程。

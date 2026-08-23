@@ -2,6 +2,10 @@
 title: "Building and Validating Lesion-Wise Clinical AI"
 translationKey: "clinical-ai-at-scale"
 tags: ["Machine Learning", "Analytics", "Medical Imaging", "Experimentation"]
+category: "CLINICAL AI · ML"
+summary: "Building and evaluating lesion-wise clinical AI with disciplined cohort separation and independent end-to-end testing."
+proof: ["12.1K development exams", "264 independent test exams"]
+weight: 2
 ---
 
 This case study focuses on the analytical and technical side of my clinical-AI work: building, evaluating, and communicating model performance across real-world medical imaging datasets.

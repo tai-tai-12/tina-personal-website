@@ -1,4 +1,5 @@
 {{ $section := .Section }}
+{{ $isZh := eq .Site.Language.Lang "zh" }}
 <div class="page-context">
   <span class="page-context-icon" aria-hidden="true">
     {{ if eq $section "research" }}
@@ -11,5 +12,12 @@
       <svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/></svg>
     {{ end }}
   </span>
-  <span class="page-context-label">{{ if eq $section "work" }}SELECTED WORK{{ else if eq $section "research" }}RESEARCH & RECOGNITION{{ else if eq $section "experience" }}EXPERIENCE{{ else if eq $section "about" }}ABOUT{{ else }}TINA TAI{{ end }}</span>
+  <span class="page-context-label">
+    {{ if and (eq $section "work") .Params.category }}{{ .Params.category }}
+    {{ else if eq $section "work" }}{{ if $isZh }}精選專案{{ else }}SELECTED WORK{{ end }}
+    {{ else if eq $section "research" }}{{ if $isZh }}研究與獲獎{{ else }}RESEARCH & RECOGNITION{{ end }}
+    {{ else if eq $section "experience" }}{{ if $isZh }}經歷{{ else }}EXPERIENCE{{ end }}
+    {{ else if eq $section "about" }}{{ if $isZh }}關於我{{ else }}ABOUT{{ end }}
+    {{ else }}TINA TAI{{ end }}
+  </span>
 </div>

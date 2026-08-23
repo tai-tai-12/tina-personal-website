@@ -1,5 +1,5 @@
 ---
 title: "Selected Work"
 translationKey: "work"
-description: "Case studies spanning product, analytics, AI, and real-world implementation."
+description: "Selected projects spanning product translation, clinical AI, analytics, and regulated implementation."
 ---

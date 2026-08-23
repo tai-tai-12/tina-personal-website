@@ -1,0 +1,19 @@
+{{ define "main" }}
+{{ $isZh := eq .Site.Language.Lang "zh" }}
+<div class="page-hero section-shell compact"><div class="shell narrow reveal">
+  {{ partial "page-context.html" . }}
+  <h1>{{ .Title }}</h1>
+  <p class="lede small">{{ if $isZh }}三個案例分別呈現產品轉譯、臨床 AI 驗證與可轉移的分析／營運能力。{{ else }}Three selected projects showing product translation, clinical-AI evaluation, and transferable analytics/operations judgment.{{ end }}</p>
+</div></div>
+<section class="section-shell work-index-section"><div class="shell work-index-grid">
+  {{ range sort .Pages "Weight" }}
+  <a class="work-index-card reveal" href="{{ .RelPermalink }}">
+    <div class="work-index-top"><span class="work-category">{{ .Params.category }}</span><span class="work-index-arrow">↗</span></div>
+    <h2>{{ .Title }}</h2>
+    <p>{{ .Params.summary }}</p>
+    {{ with .Params.proof }}<div class="work-proof-row">{{ range . }}<span>{{ . }}</span>{{ end }}</div>{{ end }}
+    {{ with .Params.tags }}<div class="tag-row work-index-tags">{{ range first 3 . }}<span>{{ . }}</span>{{ end }}</div>{{ end }}
+  </a>
+  {{ end }}
+</div></section>
+{{ end }}

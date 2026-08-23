@@ -1,0 +1,39 @@
+{{ define "main" }}
+{{ $isZh := eq .Site.Language.Lang "zh" }}
+<div class="page-hero section-shell compact"><div class="shell narrow reveal">
+  {{ partial "page-context.html" . }}<h1>{{ .Title }}</h1>
+  <p class="lede small">{{ if $isZh }}我的經歷跨越醫療 AI 產品、研究、臨床與受規範的技術驗證；共同核心是把複雜需求轉化為可執行的工作。{{ else }}My experience spans medical-AI product work, research, clinical context, and regulated technical validation—connected by a focus on turning complex requirements into executable work.{{ end }}</p>
+</div></div>
+<section class="section-shell experience-detail-section"><div class="shell experience-detail-list">
+  <article class="experience-detail-card reveal">
+    <div class="experience-detail-meta"><span>2024–2026</span><span>Taipei, Taiwan</span></div>
+    <div class="experience-detail-body">
+      <span class="experience-org">AITEWAN Biomedical Technology</span><h2>Product Manager</h2>
+      <p>{{ if $isZh }}負責 AI 輔助腦瘤 SaMD 的產品與法規準備，串接臨床需求、工程開發、驗證計畫與商業化需求。{{ else }}Managed product development and regulatory preparation for an AI-assisted brain-tumor SaMD, bridging clinical requirements, technical development, validation plans, and commercialization needs.{{ end }}</p>
+      <ul><li>{{ if $isZh }}協調 AI 工程師、醫師、研究人員與法規利害關係人。{{ else }}Coordinated AI engineers, physicians, clinical researchers, and regulatory stakeholders.{{ end }}</li><li>{{ if $isZh }}主導 TFDA 送件資料準備與文件／進度追蹤。{{ else }}Led TFDA submission preparation and maintained documentation and progress tracking across product and regulatory workflows.{{ end }}</li></ul>
+      <div class="experience-actions"><a href="{{ "work/medical-ai-product/" | relLangURL }}">{{ if $isZh }}查看相關專案{{ else }}Related project{{ end }} →</a><a href="https://www.aitewan-bio.com/en/" target="_blank" rel="noreferrer">AItewan ↗</a></div>
+      <div class="tag-row"><span>Product Management</span><span>SaMD</span><span>Clinical Validation</span><span>Regulatory</span></div>
+    </div>
+  </article>
+  <article class="experience-detail-card reveal">
+    <div class="experience-detail-meta"><span>2023–2026</span><span>Taipei, Taiwan</span></div>
+    <div class="experience-detail-body"><span class="experience-org">NYCU · AI in Medical Imaging Lab</span><h2>Research Assistant / Project Lead</h2>
+      <p>{{ if $isZh }}進行腦瘤 MRI 深度學習研究，建立逐病灶偵測、偽陽性降低與腫瘤分類流程，並負責多中心資料分析與研究溝通。{{ else }}Developed and evaluated lesion-wise deep-learning pipelines for brain-tumor MRI, including candidate generation, false-positive reduction, tumor typing, multi-center data analysis, and research communication.{{ end }}</p>
+      <div class="experience-actions"><a href="{{ "work/clinical-ai-at-scale/" | relLangURL }}">{{ if $isZh }}查看相關專案{{ else }}Related project{{ end }} →</a><a href="{{ "research/" | relLangURL }}">{{ if $isZh }}研究成果{{ else }}Research outputs{{ end }} →</a></div>
+      <div class="tag-row"><span>Machine Learning</span><span>Medical Imaging</span><span>Model Evaluation</span><span>Research</span></div>
+    </div>
+  </article>
+  <article class="experience-detail-card reveal">
+    <div class="experience-detail-meta"><span>2021–2023</span><span>Taipei, Taiwan</span></div>
+    <div class="experience-detail-body"><span class="experience-org">NYCU · Biomedical Imaging Physics & Instrumentation Lab</span><h2>Test Manager / Research Assistant</h2>
+      <p>{{ if $isZh }}執行游離輻射設備性能與合規測試、撰寫第三方認證報告，並開發 MATLAB 影像分析工具標準化量測流程。{{ else }}Conducted performance and compliance testing of ionizing-radiation equipment, prepared third-party certification reports, and developed MATLAB image-analysis tooling to standardize measurement workflows.{{ end }}</p>
+      <div class="experience-actions"><a href="{{ "work/structured-validation/" | relLangURL }}">{{ if $isZh }}查看相關專案{{ else }}Related project{{ end }} →</a></div>
+      <div class="tag-row"><span>Validation</span><span>Regulatory Testing</span><span>MATLAB</span><span>Analytics Operations</span></div>
+    </div>
+  </article>
+  <article class="experience-detail-card reveal experience-detail-compact">
+    <div class="experience-detail-meta"><span>2023–2024</span><span>Taipei, Taiwan</span></div>
+    <div class="experience-detail-body"><span class="experience-org">National Taiwan University Hospital</span><h2>Clinical Intern</h2><p>{{ if $isZh }}完成診斷影像、放射腫瘤與核子醫學臨床訓練，建立對臨床工作流、病人照護與品質安全的實務理解。{{ else }}Completed multidisciplinary clinical training across diagnostic imaging, radiation oncology, and nuclear medicine, building first-hand understanding of clinical workflows, patient care, and quality/safety requirements.{{ end }}</p><div class="tag-row"><span>Medical Imaging</span><span>Clinical Workflow</span><span>Certificate of Excellence</span></div></div>
+  </article>
+</div></section>
+{{ end }}

@@ -1,45 +1,41 @@
-# Tina Tai — Personal Website V2
+# Tina Tai — Personal Website V4
 
-A bilingual Hugo portfolio built for recruiting and long-term personal branding.
+Recruiter-first Hugo portfolio built on the CareerCanvas/Hugo foundation and refined around a quieter, more personal visual system.
 
-## Positioning
+## V4 direction
 
-**Product & Analytics**  
-**AI × Healthcare**  
-Turning complex problems into products, insights, and real-world impact.
+**Beautiful, professional, and recognizably personal — without looking like a template.**
 
-## V2 design direction
+- Product & Analytics | AI × Healthcare
+- English primary + Traditional Chinese
+- Light default + dark mode
+- **Manrope for display + Inter for body/UI + Noto Sans TC**
+- **Single chromatic brand color: deep/electric blue**
+- Warm ivory used only as a neutral atmosphere, not a second accent color
+- Tina Tai. reduced from heavy display weight to Manrope Medium
+- Product & Analytics carries stronger professional hierarchy
+- Medium professional portrait
+- Mixed credibility strip
+- Three asymmetric featured case studies
+- Experience, Research & Recognition, About
+- Writing architecture retained but not surfaced in the main navigation
 
-- Recruiter-first hierarchy: Product & Analytics is the primary identity; AI × Healthcare is the specialization.
-- Light mode default + dark mode toggle.
-- Black / white / deep-blue palette with restrained electric-blue interaction details.
-- Sans-serif only: Inter + Noto Sans TC.
-- Medium professional portrait: visible enough to be memorable, but secondary to positioning and work.
-- Three featured case-study cards with abstract public-safe visuals that can later be replaced with real project imagery.
-- English primary + Traditional Chinese.
-- Writing remains built in but intentionally hidden from the main navigation until there are strong posts to publish.
+## Preview
 
-## Deployment-ready
+Open:
 
-This package includes a GitHub Pages workflow at `.github/workflows/hugo.yaml`. After the repository is pushed to GitHub, set **Settings → Pages → Source → GitHub Actions**. Every push to `main` will then rebuild and deploy the site automatically.
+`preview/index.html`
 
-See `docs/DEPLOYMENT_GUIDE.md` for the exact steps.
+## Deploy over the existing GitHub Pages site
 
-## Local preview on Mac
+Read:
 
-```bash
-brew install hugo
-hugo server -D
-```
+`docs/V4_UPDATE.md`
 
-Open `http://localhost:1313`.
+The repository is already configured for GitHub Pages. Replace the site files with this V4 package, commit, and push. GitHub Actions will redeploy automatically.
 
-The site also contains a static browser preview under `preview/` for quick viewing without Hugo.
+## Future image replacement
 
-## CareerCanvas
+The V3 image replacement plan still applies:
 
-The project retains CareerCanvas as the upstream Hugo theme identity, while the custom layouts and CSS in this repository override the visual presentation. The bundled theme folder is an offline placeholder so the repository can build without a network-time theme fetch. `setup-theme.sh` can replace it with the official upstream CareerCanvas repository when desired.
-
-## Before launch
-
-Review `docs/PRELAUNCH_CHECKLIST.md` and `docs/ASSETS_NEEDED.md`.
+`docs/V3_ASSET_REPLACEMENT_LIST.md`

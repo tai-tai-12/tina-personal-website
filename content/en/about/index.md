@@ -1,6 +1,7 @@
 ---
 title: "About"
 translationKey: "about"
+contextLabel: "ABOUT"
 ---
 
 I work at the intersection of **product, analytics, and AI**, with a background spanning biomedical imaging, machine-learning research, and healthcare technology.

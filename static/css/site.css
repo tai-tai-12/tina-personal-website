@@ -909,3 +909,7 @@ body{letter-spacing:-.006em}
   .section-signature{margin-bottom:21px}
   .section-rule{width:36px!important}
 }
+
+
+/* V5.13 — experience workstream separation */
+.experience-workstreams{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:24px 0 8px}.experience-workstreams>div{border:1px solid var(--line);border-radius:16px;padding:18px 20px;background:var(--surface)}.experience-workstreams strong{display:block;font:600 1rem/1.35 Manrope,Inter,sans-serif;color:var(--ink);margin:6px 0 8px}.experience-workstreams p{margin:0!important;font-size:.93rem!important;line-height:1.55!important}.experience-stream-kicker{font:600 .68rem/1 Manrope,Inter,sans-serif;letter-spacing:.13em;color:var(--blue)}@media(max-width:760px){.experience-workstreams{grid-template-columns:1fr}}

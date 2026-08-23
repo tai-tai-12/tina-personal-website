@@ -1,6 +1,7 @@
 ---
 title: "關於我"
 translationKey: "about"
+contextLabel: "關於我"
 ---
 
 我的經歷位在 **產品、數據分析與 AI** 的交會處，背景橫跨生醫影像、機器學習研究與醫療科技。

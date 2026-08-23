@@ -1,26 +1,37 @@
 {{ $section := .Section }}
 {{ $isZh := eq .Site.Language.Lang "zh" }}
+{{ $ctx := .Params.contextLabel }}
+{{ if not $ctx }}
+  {{ if eq $section "work" }}
+    {{ if .Params.category }}{{ $ctx = .Params.category }}{{ else }}{{ $ctx = cond $isZh "精選專案" "SELECTED WORK" }}{{ end }}
+  {{ else if eq $section "research" }}{{ $ctx = cond $isZh "研究與獲獎" "RESEARCH & RECOGNITION" }}
+  {{ else if eq $section "experience" }}{{ $ctx = cond $isZh "經歷" "EXPERIENCE" }}
+  {{ else if eq $section "education" }}{{ $ctx = cond $isZh "學歷與專業資格" "EDUCATION & CREDENTIALS" }}
+  {{ else if eq $section "about" }}{{ $ctx = cond $isZh "關於我" "ABOUT" }}
+  {{ else if eq $section "writing" }}{{ $ctx = cond $isZh "文章" "WRITING" }}
+  {{ else }}
+    {{ $u := .RelPermalink }}
+    {{ if strings.Contains $u "/experience/" }}{{ $ctx = cond $isZh "經歷" "EXPERIENCE" }}
+    {{ else if strings.Contains $u "/education/" }}{{ $ctx = cond $isZh "學歷與專業資格" "EDUCATION & CREDENTIALS" }}
+    {{ else if strings.Contains $u "/research/" }}{{ $ctx = cond $isZh "研究與獲獎" "RESEARCH & RECOGNITION" }}
+    {{ else if strings.Contains $u "/about/" }}{{ $ctx = cond $isZh "關於我" "ABOUT" }}
+    {{ else if strings.Contains $u "/work/" }}{{ if .Params.category }}{{ $ctx = .Params.category }}{{ else }}{{ $ctx = cond $isZh "精選專案" "SELECTED WORK" }}{{ end }}
+    {{ else }}{{ $ctx = cond $isZh "個人網站" "PORTFOLIO" }}{{ end }}
+  {{ end }}
+{{ end }}
 <div class="page-context">
   <span class="page-context-icon" aria-hidden="true">
-    {{ if eq $section "research" }}
+    {{ if or (eq $section "research") (strings.Contains .RelPermalink "/research/") }}
       <svg viewBox="0 0 24 24"><path d="M8 4h8v4a4 4 0 0 1-8 0V4Z"/><path d="M8 6H4v2a4 4 0 0 0 4 4M16 6h4v2a4 4 0 0 1-4 4M12 12v5M8 21h8M10 17h4"/></svg>
-    {{ else if eq $section "experience" }}
+    {{ else if or (eq $section "experience") (strings.Contains .RelPermalink "/experience/") }}
       <svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V4h8v3M3 12h18M10 12v2h4v-2"/></svg>
-    {{ else if eq $section "education" }}
+    {{ else if or (eq $section "education") (strings.Contains .RelPermalink "/education/") }}
       <svg viewBox="0 0 24 24"><path d="M3 10.5 12 5l9 5.5-9 5.5-9-5.5Z"/><path d="M6 12.5V17c2.8 2 9.2 2 12 0v-4.5"/></svg>
-    {{ else if eq $section "about" }}
+    {{ else if or (eq $section "about") (strings.Contains .RelPermalink "/about/") }}
       <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c.8-4.3 3.5-6.5 8-6.5s7.2 2.2 8 6.5"/></svg>
     {{ else }}
       <svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/></svg>
     {{ end }}
   </span>
-  <span class="page-context-label">
-    {{ if and (eq $section "work") .Params.category }}{{ .Params.category }}
-    {{ else if eq $section "work" }}{{ if $isZh }}精選專案{{ else }}SELECTED WORK{{ end }}
-    {{ else if eq $section "research" }}{{ if $isZh }}研究與獲獎{{ else }}RESEARCH & RECOGNITION{{ end }}
-    {{ else if eq $section "experience" }}{{ if $isZh }}經歷{{ else }}EXPERIENCE{{ end }}
-    {{ else if eq $section "education" }}{{ if $isZh }}學歷與專業資格{{ else }}EDUCATION & CREDENTIALS{{ end }}
-    {{ else if eq $section "about" }}{{ if $isZh }}關於我{{ else }}ABOUT{{ end }}
-    {{ else }}TINA TAI{{ end }}
-  </span>
+  <span class="page-context-label">{{ $ctx }}</span>
 </div>

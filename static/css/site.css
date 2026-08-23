@@ -815,3 +815,97 @@ body{letter-spacing:-.006em}
   .education-institution-row-v510{grid-template-columns:48px 1fr;gap:12px}.education-mark-v510{width:48px;height:48px;border-radius:14px}
   .work-stack-row-v510{padding:30px 0}.work-stack-visual-v510{aspect-ratio:1.72/1}.work-stack-copy-v510 h2{font-size:2rem}.work-stack-copy-v510>p{font-size:.95rem}
 }
+
+/* V5.11 — Education hierarchy + institutional seals */
+.education-institution-row-v510{grid-template-columns:72px minmax(0,1fr);gap:18px;align-items:center}
+.education-seal-link-v511{width:72px;height:72px;display:grid;place-items:center;text-decoration:none;flex:0 0 auto;border-radius:50%;transition:transform .2s ease,opacity .2s ease}
+.education-seal-link-v511:hover{transform:translateY(-2px);opacity:.9}
+.education-seal-v511{display:block;width:68px;height:68px;object-fit:contain}
+.cmu-seal-v511{width:70px;height:70px}
+.nycu-seal-v511{width:66px;height:66px;border-radius:50%}
+.education-institution-copy-v511{display:flex;flex-direction:column;align-items:flex-start;min-width:0;gap:4px}
+.education-university-link-v510,.education-unit-link-v510{display:flex;width:fit-content;max-width:100%;align-items:baseline;gap:6px}
+.education-university-link-v510{font-size:.8rem;line-height:1.35;margin:0}
+.education-unit-link-v510{font-size:.78rem;line-height:1.42;margin:0;color:var(--muted)}
+.education-entry-card-v510 h2{margin-top:22px}
+@media(max-width:700px){
+  .education-institution-row-v510{grid-template-columns:58px minmax(0,1fr);gap:13px;align-items:start}
+  .education-seal-link-v511{width:58px;height:58px}
+  .education-seal-v511,.cmu-seal-v511{width:56px;height:56px}.nycu-seal-v511{width:54px;height:54px}
+  .education-university-link-v510{font-size:.73rem}.education-unit-link-v510{font-size:.72rem}
+}
+
+/* V5.12 — Navigation & Interface Polish */
+.nav-wrap-v512{gap:26px}
+.nav-v512{display:flex;align-items:center;gap:26px;margin-left:auto}
+.nav-primary-v512,.nav-utility-v512{display:flex;align-items:center}
+.nav-primary-v512{gap:24px}
+.nav-utility-v512{gap:10px;padding-left:18px;border-left:1px solid var(--line)}
+.nav-v512 a{white-space:nowrap}
+.nav-resume-v512{display:inline-flex;align-items:center;gap:7px!important;min-height:38px;padding:0 14px!important;border:1px solid var(--line);border-radius:11px;color:var(--text)!important;font-weight:600;background:color-mix(in srgb,var(--panel) 92%,transparent);transition:border-color .2s ease,background .2s ease,color .2s ease,transform .2s ease}
+.nav-resume-v512:hover{border-color:color-mix(in srgb,var(--electric) 48%,var(--line));background:var(--soft-2);transform:translateY(-1px)}
+.nav-resume-v512 span{font-size:.76em;color:var(--electric)}
+.lang-switch-v512{display:inline-flex!important;align-items:center!important;justify-content:center;gap:7px!important;min-height:38px;padding:0 11px!important;border:1px solid var(--line);border-radius:11px;color:var(--muted)!important;background:color-mix(in srgb,var(--panel) 92%,transparent);font:600 .72rem/1 Manrope,Inter,"Noto Sans TC",sans-serif!important;letter-spacing:.01em;transition:border-color .2s ease,background .2s ease}
+.lang-switch-v512:hover{border-color:color-mix(in srgb,var(--electric) 48%,var(--line));background:var(--soft-2)}
+.lang-switch-v512 span{color:var(--muted);transition:color .2s ease}
+.lang-switch-v512 span.is-active{color:var(--text);font-weight:750}
+.lang-switch-v512 i{font-style:normal;color:color-mix(in srgb,var(--muted) 55%,transparent);font-weight:400}
+.theme-toggle-v512{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;padding:0;margin:0}
+.theme-toggle-v512 svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+
+/* More editorial metadata hierarchy */
+.section-signature{gap:9px;margin-bottom:24px}
+.section-number{font-size:.69rem;color:color-mix(in srgb,var(--blue) 72%,var(--muted))}
+.section-rule{width:46px!important;opacity:.7}
+.section-dot{width:6px!important;height:6px!important;opacity:.8}
+.section-label{font-size:.63rem!important;letter-spacing:.18em!important;color:var(--muted)!important}
+.experience-v55-row .experience-tags{gap:6px;opacity:.82}
+.experience-v55-row .experience-tags span{font-size:.58rem;padding:3px 7px;color:var(--muted);background:transparent;border-color:color-mix(in srgb,var(--line) 90%,transparent);font-weight:550}
+.experience-v55-main h3{font-size:1.1rem}
+.experience-v55-main>span{font-size:.63rem}
+
+/* Hero actions: strong primary/secondary, quiet utilities */
+.hero-cta-row{gap:11px;margin-top:27px}
+.micro-links{margin-top:15px;gap:20px;font-size:.8rem}
+.micro-links a{color:var(--muted)}
+.micro-links a:hover{color:var(--text)}
+
+/* Compact education preview now that Education has its own page */
+.education-home-v59 .section-title-row-v3{margin-bottom:22px}
+.education-home-list{max-width:980px}
+.education-home-row{padding:20px 0}
+.education-home-year{font-size:.69rem}
+.education-home-row strong{font-size:.98rem}
+.education-home-row div span{font-size:.8rem}
+
+/* Slightly denser selected-work copy */
+.project-copy>p{max-width:600px}
+.project-actions{margin-top:22px}
+
+@media (max-width:1180px){
+  .nav-primary-v512{gap:18px}
+  .nav-v512{gap:18px}
+  .nav-utility-v512{padding-left:14px}
+  .nav-resume-v512{padding:0 11px!important}
+}
+
+@media (max-width:900px){
+  .nav-v512{position:absolute;top:72px;left:20px;right:20px;display:none;flex-direction:column;align-items:stretch;gap:12px;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px;box-shadow:var(--shadow)}
+  .nav-v512.open{display:flex}
+  .nav-primary-v512{display:flex;flex-direction:column;align-items:stretch;gap:0}
+  .nav-primary-v512>a{padding:12px 10px;border-radius:9px}
+  .nav-primary-v512>a:hover{background:var(--soft-2)}
+  .nav-utility-v512{border-left:0;border-top:1px solid var(--line);padding:12px 0 0;display:grid;grid-template-columns:1fr auto auto;gap:8px}
+  .nav-resume-v512{justify-content:center;width:100%;margin:0!important}
+  .lang-switch-v512{margin:0!important;min-width:88px}
+  .theme-toggle-v512{width:40px!important;height:40px!important;margin:0!important;padding:0!important}
+  .menu-toggle{display:block}
+}
+
+@media (max-width:560px){
+  .nav-utility-v512{grid-template-columns:1fr 1fr 44px}
+  .lang-switch-v512{width:100%}
+  .education-home-row{grid-template-columns:76px 1fr auto;gap:11px}
+  .section-signature{margin-bottom:21px}
+  .section-rule{width:36px!important}
+}

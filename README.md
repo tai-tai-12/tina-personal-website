@@ -1,5 +1,4 @@
-# Tina Tai Personal Website — V5.6
+# Tina Tai Personal Website — V5.12
+Navigation & Interface Polish release.
 
-Monochrome Editorial Pass. This version prioritizes tighter hierarchy, illustration-first visuals, stronger CTA rhythm, and fewer template-like cards.
-
-See `docs/V5_6_MONOCHROME_EDITORIAL_PASS.md`.
+See `docs/V5_12_NAVIGATION_INTERFACE_POLISH.md` for changes.

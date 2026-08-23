@@ -1,17 +1,27 @@
 {{ $isZh := eq .Site.Language.Lang "zh" }}
 <header class="site-header">
-  <div class="shell nav-wrap">
+  <div class="shell nav-wrap nav-wrap-v512">
     <a class="brand" href="{{ .Site.Home.RelPermalink }}" aria-label="Tina Tai home">Tina Tai<span class="brand-dot">.</span></a>
     <button class="menu-toggle" aria-label="Menu" aria-expanded="false" data-menu-toggle>☰</button>
-    <nav class="nav" data-menu>
-      <a href="{{ "work/" | relLangURL }}">{{ if $isZh }}專案{{ else }}Work{{ end }}</a>
-      <a href="{{ "experience/" | relLangURL }}">{{ if $isZh }}經歷{{ else }}Experience{{ end }}</a>
-      <a href="{{ "education/" | relLangURL }}">{{ if $isZh }}學歷{{ else }}Education{{ end }}</a>
-      <a href="{{ "research/" | relLangURL }}">{{ if $isZh }}研究{{ else }}Research{{ end }}</a>
-      <a href="{{ "about/" | relLangURL }}">{{ if $isZh }}關於我{{ else }}About{{ end }}</a>
-      <a href="{{ .Site.Params.resume | relURL }}" target="_blank" rel="noreferrer">Resume</a>
-      {{ if .IsTranslated }}{{ range .Translations }}<a class="lang-link" href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>{{ end }}{{ end }}
-      <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">◐</button>
+    <nav class="nav nav-v512" data-menu aria-label="Primary navigation">
+      <div class="nav-primary-v512">
+        <a href="{{ "work/" | relLangURL }}">{{ if $isZh }}專案{{ else }}Work{{ end }}</a>
+        <a href="{{ "experience/" | relLangURL }}">{{ if $isZh }}經歷{{ else }}Experience{{ end }}</a>
+        <a href="{{ "education/" | relLangURL }}">{{ if $isZh }}學歷{{ else }}Education{{ end }}</a>
+        <a href="{{ "research/" | relLangURL }}">{{ if $isZh }}研究{{ else }}Research{{ end }}</a>
+        <a href="{{ "about/" | relLangURL }}">{{ if $isZh }}關於我{{ else }}About{{ end }}</a>
+      </div>
+      <div class="nav-utility-v512" aria-label="Site controls">
+        <a class="nav-resume-v512" href="{{ .Site.Params.resume | relURL }}" target="_blank" rel="noreferrer">Resume <span aria-hidden="true">↗</span></a>
+        {{ if .IsTranslated }}{{ range .Translations }}
+          <a class="lang-switch-v512" href="{{ .RelPermalink }}" aria-label="{{ if $isZh }}Switch to English{{ else }}切換至中文{{ end }}">
+            <span class="{{ if not $isZh }}is-active{{ end }}">EN</span><i aria-hidden="true">/</i><span class="{{ if $isZh }}is-active{{ end }}">中文</span>
+          </a>
+        {{ end }}{{ end }}
+        <button class="theme-toggle theme-toggle-v512" data-theme-toggle aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.64 5.64l1.42 1.42M16.94 16.94l1.42 1.42M18.36 5.64l-1.42 1.42M7.06 16.94l-1.42 1.42"/><circle cx="12" cy="12" r="4"/></svg>
+        </button>
+      </div>
     </nav>
   </div>
 </header>

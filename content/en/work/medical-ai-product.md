@@ -12,7 +12,7 @@ weight: 1
 I helped translate brain-tumor MRI research into a physician-led workflow designed for real clinical use, while coordinating the product, validation, and regulatory work needed to move toward deployment.
 
 <figure class="case-visual case-visual-vector">
-  {{< site-img src="images/projects/medical-ai-product/clinical-product-workflow.svg" alt="Conceptual clinical product workflow from PACS case access through AI-assisted MRI review and physician review" >}}
+  {{< site-img src="images/projects/medical-ai-product/clinical-product-real.webp" alt="Conceptual clinical product workflow from PACS case access through AI-assisted MRI review and physician review" >}}
   <figcaption>Conceptual physician-led workflow. Details and product evidence are explained in the case study below.</figcaption>
 </figure>
 
@@ -44,7 +44,7 @@ I worked across **product management, project leadership, clinical translation, 
 The underlying research used a lesion-wise cascade rather than treating detection as a single end point. A sensitivity-oriented proposal stage generated a broad candidate pool, a downstream classifier suppressed false positives, and the final stage assigned retained lesions to one of five tumor subtypes. The detailed technical evaluation is presented separately in **Building and Validating Lesion-Wise Clinical AI**.
 
 <figure class="case-visual case-visual-vector">
-  {{< site-img src="images/projects/medical-ai-product/three-stage-ai-cascade.svg" alt="Three-stage lesion-wise AI cascade for candidate generation, false-positive reduction, and final lesion classification" >}}
+  {{< site-img src="images/projects/medical-ai-product/clinical-ai-real.webp" alt="Three-stage lesion-wise AI cascade for candidate generation, false-positive reduction, and final lesion classification" >}}
   <figcaption>Simplified research architecture; technical definitions and cohort details are provided in the evaluation case study.</figcaption>
 </figure>
 

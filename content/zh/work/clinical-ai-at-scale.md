@@ -30,7 +30,7 @@ weight: 2
 Development cohort 用於模型開發、內部驗證與 operating-point characterization；**264-case independent clinical test cohort** 則保留給最終 end-to-end evaluation。
 
 <figure class="case-visual case-visual-vector">
-  {{< site-img src="images/projects/medical-ai-product/three-stage-ai-cascade.svg" alt="候選生成、偽陽性降低與保留病灶腫瘤分類的三階段 AI 串聯流程" >}}
+  {{< site-img src="images/projects/medical-ai-product/clinical-ai-real.webp" alt="候選生成、偽陽性降低與保留病灶腫瘤分類的三階段 AI 串聯流程" >}}
   <figcaption>最終碩論的評估架構：Stage 0 建立敏感度導向候選池，Stage 1 去除明顯偽陽性，Stage 2 處理殘餘偽陽性並對保留病灶進行分類。</figcaption>
 </figure>
 

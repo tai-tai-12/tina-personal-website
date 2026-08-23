@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="t d"><title id="t">Structured validation workflow</title><desc id="d">Testing setup, quantitative analysis, certification documentation, and audit-ready handoff.</desc><style>
+.bg{fill:#FBFCFE}.panel{fill:#fff;stroke:#D6DDEA;stroke-width:2}.soft{fill:#F3F6FA}.navy{fill:#15284D}.blue{fill:#3D6BFF}.teal{fill:#E6F6F6;stroke:#AEDDDD;stroke-width:1.6}.tealfill{fill:#2E9CA0}.sand{fill:#F6F1E9;stroke:#E2D6C0;stroke-width:1.5}.rose{fill:#FAEEF2;stroke:#E7CBD4;stroke-width:1.5}.line{fill:none;stroke:#9EACC1;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}.darkline{fill:none;stroke:#15284D;stroke-width:2.7;stroke-linecap:round;stroke-linejoin:round}.arrow{fill:none;stroke:#3D6BFF;stroke-width:3.3;stroke-linecap:round;stroke-linejoin:round}.label{font:700 20px Inter,Arial,sans-serif;fill:#182B4B}.small{font:600 12px Inter,Arial,sans-serif;fill:#566985;letter-spacing:.05em}.step{font:700 15px Inter,Arial,sans-serif;fill:#23446E}.white{fill:#fff}.muted{fill:#9AA8BC}.softline{fill:none;stroke:#CFD7E5;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}</style>
+<rect class="bg" width="1200" height="360" rx="26"/>
+<!-- 1 Testing -->
+<g transform="translate(45 40)"><rect width="250" height="280" rx="24" class="panel"/><circle cx="30" cy="30" r="17" class="soft"/><text x="30" y="36" text-anchor="middle" class="step">1</text><text x="58" y="37" class="label">Testing setup</text>
+  <g transform="translate(25 78)">
+    <!-- benchtop instrument -->
+    <path d="M7 76 34 45h86l23 31-14 52H20L7 76Z" class="soft" stroke="#D6DDEA" stroke-width="2"/>
+    <rect x="37" y="17" width="72" height="42" rx="9" class="navy"/>
+    <circle cx="56" cy="38" r="8" class="blue"/><circle cx="85" cy="38" r="8" class="tealfill"/>
+    <path d="M28 92h90M35 108h76" class="darkline"/>
+    <!-- probe and meter -->
+    <rect x="147" y="28" width="52" height="92" rx="12" class="teal"/>
+    <rect x="158" y="42" width="30" height="23" rx="5" class="white"/><path d="M163 54h20" class="line"/><circle cx="173" cy="84" r="8" class="blue"/>
+    <path d="M141 95c18 4 27 13 27 30" class="line"/>
+  </g></g>
+<path d="M300 180h45" class="arrow"/><path d="m334 170 16 10-16 10" class="arrow"/>
+<!-- 2 Analysis -->
+<g transform="translate(355 40)"><rect width="250" height="280" rx="24" class="panel"/><circle cx="30" cy="30" r="17" class="soft"/><text x="30" y="36" text-anchor="middle" class="step">2</text><text x="58" y="37" class="label">Quantitative analysis</text>
+  <g transform="translate(28 76)">
+    <rect x="0" y="22" width="138" height="102" rx="16" class="navy"/><rect x="13" y="35" width="112" height="72" rx="9" class="white"/>
+    <path d="M25 91 45 73 62 80 83 51 111 60" class="arrow"/><circle cx="45" cy="73" r="4" class="blue"/><circle cx="83" cy="51" r="4" class="tealfill"/>
+    <rect x="154" y="8" width="48" height="129" rx="12" class="soft"/><path d="M164 32h28M164 53h28M164 74h20M164 95h28M164 116h18" class="line"/>
+    <rect x="55" y="128" width="34" height="9" rx="4" class="muted"/>
+  </g></g>
+<path d="M610 180h45" class="arrow"/><path d="m644 170 16 10-16 10" class="arrow"/>
+<!-- 3 Documentation -->
+<g transform="translate(665 40)"><rect width="250" height="280" rx="24" class="panel"/><circle cx="30" cy="30" r="17" class="soft"/><text x="30" y="36" text-anchor="middle" class="step">3</text><text x="58" y="37" class="label">Certification package</text>
+  <g transform="translate(34 76)">
+    <rect x="12" y="13" width="128" height="145" rx="16" class="sand"/>
+    <rect x="0" y="0" width="128" height="145" rx="16" class="soft"/>
+    <path d="M22 33h84M22 58h84M22 83h58M22 108h74" class="darkline"/>
+    <circle cx="157" cy="41" r="20" class="teal"/><path d="m147 41 7 7 14-14" class="darkline"/>
+    <circle cx="157" cy="91" r="20" class="rose"/><path d="m147 91 7 7 14-14" class="darkline"/>
+    <circle cx="157" cy="141" r="20" class="soft"/><path d="m147 141 7 7 14-14" class="darkline"/>
+  </g></g>
+<path d="M920 180h45" class="arrow"/><path d="m954 170 16 10-16 10" class="arrow"/>
+<!-- 4 Handoff -->
+<g transform="translate(975 40)"><rect width="180" height="280" rx="24" class="panel"/><circle cx="30" cy="30" r="17" class="soft"/><text x="30" y="36" text-anchor="middle" class="step">4</text><text x="58" y="37" class="label">Audit / handoff</text>
+  <g transform="translate(22 78)">
+    <circle cx="41" cy="35" r="17" class="soft"/><circle cx="99" cy="35" r="17" class="teal"/>
+    <path d="M16 104c4-37 12-52 25-52s21 15 25 52M74 104c4-37 12-52 25-52s21 15 25 52" class="darkline"/>
+    <rect x="38" y="105" width="72" height="44" rx="11" class="navy"/>
+    <path d="M51 119h46M51 134h31" stroke="#F7FAFF" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <circle cx="120" cy="123" r="18" class="teal"/><path d="m111 123 6 6 13-13" class="darkline"/>
+  </g></g>
+</svg>

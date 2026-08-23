@@ -11,6 +11,8 @@ weight: 3
 
 Before my later product and clinical-AI work, I built experience in technical validation and regulatory testing for ionizing-radiation equipment. The work taught me how to make complex evidence traceable, repeatable, and decision-ready.
 
+{{< site-img src="images/projects/structured-validation-banner.svg" alt="Structured validation workflow showing evidence intake, quantitative analysis, report preparation, and execution" >}}
+
 ## The challenge
 
 Validation work can become fragmented quickly: multiple products, clients, test protocols, reports, audit requirements, and technical measurements all need to stay consistent.

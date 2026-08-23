@@ -11,6 +11,8 @@ weight: 3
 
 在後來的 Product 與 Clinical AI 工作之前，我先累積了游離輻射設備的技術驗證與法規測試經驗。這段工作讓我學到如何把複雜證據變成可追蹤、可重複、可支援決策的流程。
 
+{{< site-img src="images/projects/structured-validation-banner.svg" alt="結構化驗證流程，包含證據收集、定量分析、報告準備與執行追蹤" >}}
+
 ## 挑戰
 
 當驗證同時涉及多個產品、客戶、測試流程、報告、稽核與技術量測時，資訊很容易碎片化。

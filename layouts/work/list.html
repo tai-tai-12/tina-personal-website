@@ -10,13 +10,12 @@
   <article class="work-index-card mono-work-card reveal">
     <a class="mono-work-visual {{ .Params.visual }}" href="{{ .RelPermalink }}" aria-label="Open {{ .Title }}">
       {{ if eq .Params.visual "product-visual" }}
-      <img src="{{ "images/projects/medical-ai-product/clinical-product-workflow.svg" | relURL }}" alt="Clinical product workflow illustration">
+      <img src="{{ "images/projects/medical-ai-product/clinical-product-real.webp" | relURL }}" alt="Clinical product workflow illustration">
       {{ else if eq .Params.visual "clinical-ai-visual" }}
-      <img src="{{ "images/projects/medical-ai-product/three-stage-ai-cascade.svg" | relURL }}" alt="Lesion-wise brain tumor AI pipeline illustration">
+      <img src="{{ "images/projects/medical-ai-product/clinical-ai-real.webp" | relURL }}" alt="Lesion-wise brain tumor AI pipeline illustration">
       {{ else }}
-      <img src="{{ "images/projects/structured-validation-workflow.svg" | relURL }}" alt="Structured validation workflow illustration">
+      <img src="{{ "images/projects/structured-validation-banner.svg" | relURL }}" alt="Structured validation workflow illustration">
       {{ end }}
-      <span>0{{ .Weight }}</span>
     </a>
     <div class="mono-work-card-body">
       <div class="work-index-top"><span class="work-category">{{ .Params.category }}</span></div>

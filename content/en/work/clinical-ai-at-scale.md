@@ -30,7 +30,7 @@ As a research assistant and project lead, I led brain-imaging model development 
 The development cohort was used for model development, internal validation, and operating-point characterization. The **264-case independent clinical test cohort** was reserved for final end-to-end evaluation.
 
 <figure class="case-visual case-visual-vector">
-  {{< site-img src="images/projects/medical-ai-product/three-stage-ai-cascade.svg" alt="Three-stage lesion-wise AI cascade used for candidate generation, false-positive reduction, and retained-lesion tumor typing" >}}
+  {{< site-img src="images/projects/medical-ai-product/clinical-ai-real.webp" alt="Three-stage lesion-wise AI cascade used for candidate generation, false-positive reduction, and retained-lesion tumor typing" >}}
   <figcaption>Final-thesis evaluation framework: Stage 0 generates a sensitivity-oriented candidate pool, Stage 1 removes obvious false positives, and Stage 2 models residual false positives while typing retained lesions.</figcaption>
 </figure>
 

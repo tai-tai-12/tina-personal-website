@@ -672,4 +672,13 @@ body{letter-spacing:-.006em}
 
 
 /* V5.7 editorial diagram pass */
-.editorial-visual{background:#fff}.project-feature .project-visual.editorial-visual{aspect-ratio:1.58/1}.mono-work-visual{aspect-ratio:1.58/1}.mono-work-card:nth-child(3) .mono-work-visual{aspect-ratio:1.75/1}
+.editorial-visual{background:#fff}.project-feature .project-visual.editorial-visual{aspect-ratio:2.5/1}.mono-work-visual{aspect-ratio:2.5/1}.mono-work-card:nth-child(3) .mono-work-visual{aspect-ratio:2.5/1}
+
+/* V5.8 — scientific editorial banner pass */
+.project-feature.mono-project{padding:46px 0;gap:52px}
+.project-feature .project-visual.editorial-visual{border-radius:18px;background:#FBFCFE}
+.project-feature .project-visual.editorial-visual img{object-fit:contain;background:#FBFCFE}
+.mono-work-visual{min-height:0;background:#FBFCFE}
+.mono-work-visual img{object-fit:contain;background:#FBFCFE}
+@media(max-width:900px){.project-feature .project-visual.editorial-visual,.mono-work-visual{aspect-ratio:2.35/1}}
+@media(max-width:600px){.project-feature .project-visual.editorial-visual,.mono-work-visual{aspect-ratio:1.85/1;overflow-x:auto}.project-feature .project-visual.editorial-visual img,.mono-work-visual img{min-width:720px;object-fit:contain;object-position:left center}}

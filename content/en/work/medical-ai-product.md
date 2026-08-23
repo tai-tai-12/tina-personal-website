@@ -6,9 +6,9 @@ tags: ["Product Management", "Healthcare AI", "Regulatory", "Cross-functional Le
 
 I helped translate brain-tumor MRI research into a workflow designed for real clinical use, while coordinating the product, validation, and regulatory work needed to move toward deployment.
 
-<figure class="case-visual">
-  {{< site-img src="images/projects/medical-ai-product/clinical-product-workflow.webp" alt="Conceptual clinical product workflow from PACS case list through AI-assisted MRI review and physician review" >}}
-  <figcaption>Public-safe conceptual workflow redrawn from product documentation: case access → AI status → MRI review → lesion overlay → lesion analysis → report → physician review.</figcaption>
+<figure class="case-visual case-visual-vector">
+  {{< site-img src="images/projects/medical-ai-product/clinical-product-workflow.svg" alt="Conceptual clinical product workflow from PACS case access through AI-assisted MRI review and physician review" >}}
+  <figcaption>Public-safe conceptual workflow based on product documentation: PACS case access → AI status → MRI review → lesion overlay → lesion analysis → report → physician review.</figcaption>
 </figure>
 
 ## The challenge
@@ -26,21 +26,20 @@ I worked across **product management, project leadership, clinical translation, 
 3. Coordinate stakeholders across technical, clinical, business, and regulatory functions.
 4. Build repeatable documentation and tracking processes so decisions and versions remained clear.
 
+<div class="case-proof-grid">
+  <div class="case-proof"><strong>2</strong><span>medical centers</span><small>Clinical translation across hospital contexts</small></div>
+  <div class="case-proof"><strong>TFDA</strong><span>submission</span><small>Product & regulatory execution</small></div>
+  <div class="case-proof"><strong>PACS</strong><span>connected workflow</span><small>AI review embedded in clinical image access</small></div>
+</div>
+
 ## Product + technical decisions
 
-The underlying research used a lesion-wise cascade rather than treating detection as a single end point. A sensitivity-oriented proposal stage generated a broad candidate pool, a downstream classifier suppressed false positives, and the final stage assigned retained lesions to one of five tumor subtypes.
+The underlying research used a lesion-wise cascade rather than treating detection as a single end point. A sensitivity-oriented proposal stage generated a broad candidate pool, a downstream classifier suppressed false positives, and the final stage assigned retained lesions to one of five tumor subtypes. The detailed technical evaluation is presented separately in **Building and Validating Clinical AI at Scale**.
 
-<figure class="case-visual">
-  {{< site-img src="images/projects/medical-ai-product/three-stage-ai-cascade.webp" alt="Three-stage lesion-wise AI cascade for candidate generation, false-positive reduction, and final lesion classification" >}}
-  <figcaption>Research architecture simplified for portfolio use. The cascade prioritizes sensitivity first, then reduces false positives and performs lesion-level tumor typing.</figcaption>
+<figure class="case-visual case-visual-vector">
+  {{< site-img src="images/projects/medical-ai-product/three-stage-ai-cascade.svg" alt="Three-stage lesion-wise AI cascade for candidate generation, false-positive reduction, and final lesion classification" >}}
+  <figcaption>Research architecture simplified for portfolio use. The cascade prioritizes sensitivity first, then reduces false positives and performs retained-lesion tumor typing.</figcaption>
 </figure>
-
-<div class="case-metrics">
-  <div class="case-metric"><strong>90.13%</strong><span>final lesion-wise sensitivity</span></div>
-  <div class="case-metric"><strong>0.41</strong><span>false positives per scan</span></div>
-  <div class="case-metric"><strong>73.2%</strong><span>FP/scan reduction vs. raw candidates</span></div>
-  <div class="case-metric"><strong>89.55%</strong><span>five-class accuracy on retained lesions</span></div>
-</div>
 
 ## From evidence to product workflow
 
@@ -49,8 +48,8 @@ The product layer extended beyond the model itself. The clinical workflow includ
 <div class="case-evidence-card">
   {{< site-img src="images/research/midl-poster.webp" alt="Tina Tai standing beside her MIDL 2026 poster on lesion-wise brain tumor AI" >}}
   <div>
-    <h3>Research translated into external evidence</h3>
-    <p>The lesion-wise cascade was presented at MIDL 2026, providing a public research artifact behind the technical evidence used in this product story.</p>
+    <h3>Research translated into public evidence</h3>
+    <p>The lesion-wise cascade was presented at MIDL 2026, providing a public research artifact behind the technical foundation of this product story.</p>
   </div>
 </div>
 

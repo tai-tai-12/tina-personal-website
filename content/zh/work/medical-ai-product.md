@@ -6,9 +6,9 @@ tags: ["產品管理", "醫療 AI", "法規", "跨團隊協作"]
 
 我參與將腦瘤 MRI 研究轉化為可融入臨床使用情境的工作流程，同時協調產品、驗證與法規工作，推進產品化與部署準備。
 
-<figure class="case-visual">
-  {{< site-img src="images/projects/medical-ai-product/clinical-product-workflow.webp" alt="從 PACS 個案清單、AI 輔助 MRI 判讀到醫師覆核的概念性臨床產品流程" >}}
-  <figcaption>依公開安全原則重新繪製的產品流程：個案調閱 → AI 狀態 → MRI 判讀 → 病灶圈註 → 病灶分析 → 報告 → 醫師覆核。</figcaption>
+<figure class="case-visual case-visual-vector">
+  {{< site-img src="images/projects/medical-ai-product/clinical-product-workflow.svg" alt="從 PACS 個案調閱、AI 輔助 MRI 判讀到醫師覆核的概念性臨床產品流程" >}}
+  <figcaption>依公開安全原則重新繪製的概念流程：PACS 個案調閱 → AI 狀態 → MRI 判讀 → 病灶圈註 → 病灶分析 → 報告 → 醫師覆核。</figcaption>
 </figure>
 
 ## 挑戰
@@ -26,21 +26,20 @@ tags: ["產品管理", "醫療 AI", "法規", "跨團隊協作"]
 3. 協調技術、臨床、商業與法規團隊。
 4. 建立可重複使用的文件與追蹤流程，使決策與版本更清楚。
 
+<div class="case-proof-grid">
+  <div class="case-proof"><strong>2</strong><span>家醫學中心</span><small>跨院臨床轉譯情境</small></div>
+  <div class="case-proof"><strong>TFDA</strong><span>送件</span><small>產品與法規執行</small></div>
+  <div class="case-proof"><strong>PACS</strong><span>連接工作流程</span><small>AI 判讀融入臨床影像調閱</small></div>
+</div>
+
 ## 產品與技術決策
 
-研究架構採用病灶層級串聯式流程，而不是把 detection 當成單一終點。高敏感度候選生成先建立廣泛病灶候選，再由後續分類器降低偽陽性，最後將保留病灶分成五類腫瘤。
+研究架構採用病灶層級串聯式流程，而不是把 detection 當成單一終點。高敏感度候選生成先建立廣泛病灶候選，再由後續分類器降低偽陽性，最後將保留病灶分成五類腫瘤。完整技術驗證則獨立整理於 **大規模臨床 AI 的建立與驗證** 案例中。
 
-<figure class="case-visual">
-  {{< site-img src="images/projects/medical-ai-product/three-stage-ai-cascade.webp" alt="候選生成、偽陽性降低與最終病灶分類的三階段 AI 串聯流程" >}}
-  <figcaption>為作品集重新簡化的研究架構：先優先保留敏感度，再降低偽陽性，最後進行病灶層級腫瘤分類。</figcaption>
+<figure class="case-visual case-visual-vector">
+  {{< site-img src="images/projects/medical-ai-product/three-stage-ai-cascade.svg" alt="候選生成、偽陽性降低與最終病灶分類的三階段 AI 串聯流程" >}}
+  <figcaption>為作品集重新簡化的研究架構：先優先保留敏感度，再降低偽陽性，最後進行保留病灶的腫瘤分類。</figcaption>
 </figure>
-
-<div class="case-metrics">
-  <div class="case-metric"><strong>90.13%</strong><span>最終病灶層級敏感度</span></div>
-  <div class="case-metric"><strong>0.41</strong><span>每次掃描偽陽性數</span></div>
-  <div class="case-metric"><strong>73.2%</strong><span>相較原始候選的 FP/scan 降幅</span></div>
-  <div class="case-metric"><strong>89.55%</strong><span>保留病灶五分類準確率</span></div>
-</div>
 
 ## 從研究證據走向產品流程
 
@@ -49,8 +48,8 @@ tags: ["產品管理", "醫療 AI", "法規", "跨團隊協作"]
 <div class="case-evidence-card">
   {{< site-img src="images/research/midl-poster.webp" alt="Tina Tai 在 MIDL 2026 腦瘤 AI 海報前合照" >}}
   <div>
-    <h3>把研究轉化為可公開驗證的證據</h3>
-    <p>病灶層級串聯架構於 MIDL 2026 發表，成為這個產品案例背後可公開呈現的技術證據之一。</p>
+    <h3>把研究轉化為可公開呈現的證據</h3>
+    <p>病灶層級串聯架構於 MIDL 2026 發表，成為這個產品案例背後可公開呈現的技術基礎之一。</p>
   </div>
 </div>
 

@@ -56,7 +56,7 @@
     </div>
     <div class="proof-v3-item">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V9M10 19V5M16 19v-8M22 19V3"/></svg>
-      <div><strong>10K+ Cases</strong><span>Clinical AI Experience</span></div>
+      <div><strong>12K+ MRI Exams</strong><span>Development cohort · 2 centers</span></div>
     </div>
     <div class="proof-v3-item">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4h8v4a4 4 0 0 1-8 0V4Z"/><path d="M8 6H4v2a4 4 0 0 0 4 4M16 6h4v2a4 4 0 0 1-4 4M12 12v5M8 21h8M10 17h4"/></svg>
@@ -88,28 +88,56 @@
         <p>{{ if $isZh }}把研究、臨床驗證、法規執行與跨團隊協作串成一條可落地的產品路徑。{{ else }}Connecting research, clinical validation, regulatory execution, and cross-functional delivery into a product path designed for real-world use.{{ end }}</p>
         <div class="tag-row"><span>Product</span><span>Healthcare AI</span><span>Regulatory</span></div>
         <div class="metric-row-v3">
-          <div><strong>10,893</strong><span>cases</span></div>
           <div><strong>2</strong><span>medical centers</span></div>
           <div><strong>TFDA</strong><span>submission</span></div>
+          <div><strong>PACS</strong><span>clinical workflow</span></div>
         </div>
         <a href="{{ "work/medical-ai-product/" | relLangURL }}" class="project-link">{{ if $isZh }}查看案例{{ else }}View case study{{ end }} <span>→</span></a>
       </div>
-      <a class="project-visual project-image-visual" href="{{ "work/medical-ai-product/" | relLangURL }}" aria-label="Open Medical AI to Product case study">
-        <img src="{{ "images/projects/medical-ai-product/clinical-product-workflow.webp" | relURL }}" alt="Conceptual clinical product workflow for AI-assisted brain tumor MRI review">
-        <span class="visual-badge">{{ if $isZh }}臨床產品流程{{ else }}CLINICAL PRODUCT WORKFLOW{{ end }}</span>
+      <a class="project-visual project-system-visual product-path-visual" href="{{ "work/medical-ai-product/" | relLangURL }}" aria-label="Open Medical AI to Product case study">
+        <div class="visual-system-head"><span>PRODUCT TRANSLATION</span><i></i></div>
+        <div class="product-path-core" aria-hidden="true">
+          <div class="system-node">
+            <svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/></svg>
+            <b>PACS</b><small>{{ if $isZh }}個案調閱{{ else }}Case access{{ end }}</small>
+          </div>
+          <span class="system-arrow">→</span>
+          <div class="system-node">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><path d="M12 7v10M7 12h10"/></svg>
+            <b>AI</b><small>{{ if $isZh }}病灶分析{{ else }}Lesion analysis{{ end }}</small>
+          </div>
+          <span class="system-arrow">→</span>
+          <div class="system-node">
+            <svg viewBox="0 0 24 24"><path d="M5 4h14v16H5z"/><path d="M8 9h8M8 13h6M8 17h4"/></svg>
+            <b>{{ if $isZh }}證據{{ else }}Evidence{{ end }}</b><small>{{ if $isZh }}驗證與法規{{ else }}Validation + regulatory{{ end }}</small>
+          </div>
+          <span class="system-arrow">→</span>
+          <div class="system-node node-accent">
+            <svg viewBox="0 0 24 24"><path d="M12 3 4 7v5c0 5 3.4 8 8 9 4.6-1 8-4 8-9V7l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg>
+            <b>{{ if $isZh }}部署{{ else }}Deployment{{ end }}</b><small>{{ if $isZh }}醫師最終判讀{{ else }}Physician-led review{{ end }}</small>
+          </div>
+        </div>
+        <div class="visual-proof-line"><span>2 {{ if $isZh }}家醫學中心{{ else }}medical centers{{ end }}</span><span>TFDA submission</span><span>{{ if $isZh }}臨床流程轉譯{{ else }}Clinical workflow translation{{ end }}</span></div>
         <span class="visual-open">↗</span>
       </a>
     </article>
 
     <article class="project-feature project-feature-secondary project-reverse reveal">
-      <div class="project-visual model-evaluation-visual" role="img" aria-label="Abstract model evaluation dashboard illustration">
-        <div class="evaluation-panel">
-          <div class="chart-header"><span>MODEL EVALUATION</span><i></i></div>
-          <div class="bar-chart-v3"><i style="--h:51%"></i><i style="--h:70%"></i><i style="--h:62%"></i><i style="--h:86%"></i><i style="--h:76%"></i><i style="--h:91%"></i></div>
-          <div class="chart-baseline"></div>
+      <div class="project-visual project-system-visual cascade-summary-visual" role="img" aria-label="Three-stage clinical AI evaluation summary">
+        <div class="visual-system-head"><span>LESION-WISE AI CASCADE</span><i></i></div>
+        <div class="cascade-core">
+          <div class="cascade-stage"><span>0</span><b>{{ if $isZh }}候選生成{{ else }}Candidate generation{{ end }}</b><small>{{ if $isZh }}敏感度優先{{ else }}Sensitivity-first{{ end }}</small></div>
+          <span class="system-arrow">→</span>
+          <div class="cascade-stage"><span>1</span><b>{{ if $isZh }}偽陽性降低{{ else }}FP reduction{{ end }}</b><small>{{ if $isZh }}逐病灶篩選{{ else }}Lesion-wise filtering{{ end }}</small></div>
+          <span class="system-arrow">→</span>
+          <div class="cascade-stage"><span>2</span><b>{{ if $isZh }}五分類{{ else }}5-class typing{{ end }}</b><small>{{ if $isZh }}保留病灶{{ else }}Retained lesions{{ end }}</small></div>
         </div>
-        <div class="metric-float mf-1"><small>Scale</small><strong>10K+</strong><span>cases</span></div>
-        <div class="metric-float mf-2"><small>Evidence</small><strong>Multi-metric</strong><span>validation</span></div>
+        <div class="cohort-proof-grid">
+          <div><strong>12,125</strong><span>{{ if $isZh }}開發 MRI examinations{{ else }}development MRI exams{{ end }}</span></div>
+          <div><strong>264</strong><span>{{ if $isZh }}獨立測試 examinations{{ else }}independent test exams{{ end }}</span></div>
+          <div><strong>2</strong><span>{{ if $isZh }}家醫學中心{{ else }}medical centers{{ end }}</span></div>
+        </div>
+        <div class="technical-proof-line"><span><b>80.97%</b> sensitivity</span><span><b>0.21</b> FP/scan</span><span><b>90.16%</b> 5-class acc.</span></div>
       </div>
       <div class="project-copy">
         <div class="project-kicker-row"><span class="project-no">02</span><span class="project-type">TECHNICAL + ANALYTICS</span></div>
@@ -128,11 +156,16 @@
         <div class="tag-row"><span>Analytics</span><span>Process Design</span><span>Operations</span></div>
         <a href="{{ "work/structured-validation/" | relLangURL }}" class="project-link">{{ if $isZh }}查看案例{{ else }}View case study{{ end }} <span>→</span></a>
       </div>
-      <div class="project-visual decision-flow-visual" role="img" aria-label="Abstract structured decision flow illustration">
-        <div class="decision-axis"></div>
-        <div class="decision-step ds-1"><span>01</span><b>Evidence</b><small>Collect + structure</small></div>
-        <div class="decision-step ds-2"><span>02</span><b>Decision</b><small>Prioritize + align</small></div>
-        <div class="decision-step ds-3"><span>03</span><b>Action</b><small>Execute + track</small></div>
+      <div class="project-visual project-system-visual decision-system-visual" role="img" aria-label="Structured evidence-to-action decision workflow">
+        <div class="visual-system-head"><span>STRUCTURED DECISION SYSTEM</span><i></i></div>
+        <div class="decision-system-core">
+          <div class="decision-system-step"><span>01</span><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="M7 9h10M7 13h6"/></svg><b>Evidence</b><small>Collect + structure</small></div>
+          <span class="system-arrow">→</span>
+          <div class="decision-system-step"><span>02</span><svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="7"/></svg><b>Decision</b><small>Prioritize + align</small></div>
+          <span class="system-arrow">→</span>
+          <div class="decision-system-step node-accent"><span>03</span><svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg><b>Action</b><small>Execute + track</small></div>
+        </div>
+        <div class="visual-proof-line"><span>Analytics</span><span>Process design</span><span>Regulatory operations</span></div>
       </div>
     </article>
   </div>

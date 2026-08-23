@@ -1,4 +1,4 @@
-# Tina Tai — Personal Website V4
+# Tina Tai — Personal Website V5.1 — Round 1 Visuals (GitHub Pages path fix)
 
 Recruiter-first Hugo portfolio built on the CareerCanvas/Hugo foundation and refined around a quieter, more personal visual system.
 
@@ -39,3 +39,8 @@ The repository is already configured for GitHub Pages. Replace the site files wi
 The V3 image replacement plan still applies:
 
 `docs/V3_ASSET_REPLACEMENT_LIST.md`
+
+
+## GitHub Pages image-path fix
+
+V5.1 removes leading slashes from Hugo asset URLs and uses a `site-img` shortcode in Markdown content so images resolve correctly under the project-site base path `/tina-personal-website/`.

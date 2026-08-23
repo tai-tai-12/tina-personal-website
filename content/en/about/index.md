@@ -6,7 +6,7 @@ translationKey: "about"
 I work at the intersection of **product, analytics, and AI**, with a background spanning biomedical imaging, machine-learning research, and healthcare technology.
 
 <figure class="content-photo">
-  <img src="/images/about/thesis-presentation.webp" alt="Tina Tai presenting her master's thesis on a radiologist-oriented brain tumor MRI framework">
+  {{< site-img src="images/about/thesis-presentation.webp" alt="Tina Tai presenting her master's thesis on a radiologist-oriented brain tumor MRI framework" >}}
   <figcaption>Master's thesis presentation, NYCU · 2026</figcaption>
 </figure>
 

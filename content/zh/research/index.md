@@ -7,11 +7,11 @@ translationKey: "research"
 
 <div class="content-photo-grid">
   <figure>
-    <img src="/images/research/midl-poster.webp" alt="Tina Tai 與 MIDL 2026 海報合照">
+    {{< site-img src="images/research/midl-poster.webp" alt="Tina Tai 與 MIDL 2026 海報合照" >}}
     <figcaption>MIDL 2026 · Short Paper Poster</figcaption>
   </figure>
   <figure>
-    <img src="/images/research/amlds-talk.webp" alt="Tina Tai 於 AMLDS 2026 進行口頭報告">
+    {{< site-img src="images/research/amlds-talk.webp" alt="Tina Tai 於 AMLDS 2026 進行口頭報告" >}}
     <figcaption>AMLDS 2026 · Oral Presentation</figcaption>
   </figure>
 </div>

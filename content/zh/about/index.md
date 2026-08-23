@@ -6,7 +6,7 @@ translationKey: "about"
 我的經歷位在 **產品、數據分析與 AI** 的交會處，背景橫跨生醫影像、機器學習研究與醫療科技。
 
 <figure class="content-photo">
-  <img src="/images/about/thesis-presentation.webp" alt="Tina Tai 進行以放射科醫師為導向之腦瘤 MRI 框架碩士論文口試">
+  {{< site-img src="images/about/thesis-presentation.webp" alt="Tina Tai 進行以放射科醫師為導向之腦瘤 MRI 框架碩士論文口試" >}}
   <figcaption>NYCU 碩士論文口試 · 2026</figcaption>
 </figure>
 

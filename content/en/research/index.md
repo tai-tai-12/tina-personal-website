@@ -7,11 +7,11 @@ My research background centers on medical imaging, clinical AI, and translating 
 
 <div class="content-photo-grid">
   <figure>
-    <img src="/images/research/midl-poster.webp" alt="Tina Tai with her MIDL 2026 poster">
+    {{< site-img src="images/research/midl-poster.webp" alt="Tina Tai with her MIDL 2026 poster" >}}
     <figcaption>MIDL 2026 · Short Paper Poster</figcaption>
   </figure>
   <figure>
-    <img src="/images/research/amlds-talk.webp" alt="Tina Tai presenting at AMLDS 2026">
+    {{< site-img src="images/research/amlds-talk.webp" alt="Tina Tai presenting at AMLDS 2026" >}}
     <figcaption>AMLDS 2026 · Oral Presentation</figcaption>
   </figure>
 </div>

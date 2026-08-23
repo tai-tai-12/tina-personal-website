@@ -1,0 +1,4 @@
+name = "CareerCanvas (offline placeholder)"
+license = "MIT"
+homepage = "https://github.com/felipecordero/careercanvas"
+description = "Offline placeholder. Run ./setup-theme.sh to fetch the official CareerCanvas theme."

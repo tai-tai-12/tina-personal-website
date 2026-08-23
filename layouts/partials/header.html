@@ -1,0 +1,16 @@
+{{ $isZh := eq .Site.Language.Lang "zh" }}
+<header class="site-header">
+  <div class="shell nav-wrap">
+    <a class="brand" href="{{ "/" | relLangURL }}">Tina Tai<span class="brand-dot">.</span></a>
+    <button class="menu-toggle" aria-label="Menu" data-menu-toggle>☰</button>
+    <nav class="nav" data-menu>
+      <a href="{{ "work/" | relLangURL }}">{{ if $isZh }}專案{{ else }}Work{{ end }}</a>
+      <a href="{{ "experience/" | relLangURL }}">{{ if $isZh }}經歷{{ else }}Experience{{ end }}</a>
+      <a href="{{ "research/" | relLangURL }}">{{ if $isZh }}研究{{ else }}Research{{ end }}</a>
+      <a href="{{ "about/" | relLangURL }}">{{ if $isZh }}關於我{{ else }}About{{ end }}</a>
+      <a href="{{ .Site.Params.resume | relURL }}" target="_blank">Resume</a>
+      {{ if .IsTranslated }}{{ range .Translations }}<a class="lang-link" href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>{{ end }}{{ end }}
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">◐</button>
+    </nav>
+  </div>
+</header>

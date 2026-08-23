@@ -1,0 +1,44 @@
+baseURL = "https://tinatai.com/"
+title = "Tina Tai — Product & Analytics | AI × Healthcare"
+theme = "careercanvas"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+enableGitInfo = false
+summaryLength = 30
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[params]
+  name = "Tina Tai"
+  tagline = "Product & Analytics | AI × Healthcare"
+  description = "Product and analytics professional working at the intersection of AI, technology, and healthcare."
+  profile_image = "/images/profile/tina-headshot.jpg"
+  linkedin = "https://www.linkedin.com/in/shih-ting-tai/"
+  email = "tinatai@andrew.cmu.edu"
+  resume = "resume/Shih-Ting_Tai_Resume.pdf"
+  plannedDomain = "tinatai.com"
+
+[languages]
+  [languages.en]
+    languageCode = "en-US"
+    languageName = "EN"
+    weight = 1
+    contentDir = "content/en"
+    title = "Tina Tai — Product & Analytics | AI × Healthcare"
+  [languages.zh]
+    languageCode = "zh-TW"
+    languageName = "中文"
+    weight = 2
+    contentDir = "content/zh"
+    title = "Tina Tai — 產品與數據分析 | AI × Healthcare"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS"]

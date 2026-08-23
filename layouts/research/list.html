@@ -21,4 +21,15 @@
   </div>
   <div class="research-v55-summary reveal"><div><strong>{{ if $isZh }}研究焦點{{ else }}Focus{{ end }}</strong><span>{{ if $isZh }}逐病灶醫療 AI · 臨床驗證 · 影像工作流程轉譯{{ else }}Lesion-wise medical AI · clinical validation · imaging workflow translation{{ end }}</span></div><div><strong>{{ if $isZh }}其他獲獎{{ else }}Additional recognition{{ end }}</strong><span>Outstanding Thesis Award · NYCU</span></div></div>
 </div></section>
+
+<section class="section-shell research-engineering-v514"><div class="shell narrow">
+  <div class="research-v55-header reveal"><span class="kicker">{{ if $isZh }}研究工程能力{{ else }}RESEARCH ENGINEERING{{ end }}</span><h2>{{ if $isZh }}模型背後，也包含資料、對位、標註與實驗工具。{{ else }}The model work also depended on data, registration, annotation, and experimentation tooling.{{ end }}</h2></div>
+  <div class="research-engineering-grid-v514 reveal">
+    <article><span>01</span><strong>{{ if $isZh }}3D 血管重建與分割{{ else }}3D vascular reconstruction & segmentation{{ end }}</strong><p>{{ if $isZh }}大專生研究計畫中的 CTA 3D vessel 工作與模型實驗。{{ else }}CTA 3D-vessel work and model experiments from my undergraduate research project.{{ end }}</p></article>
+    <article><span>02</span><strong>{{ if $isZh }}影像對位與空間前處理{{ else }}Image registration & spatial preprocessing{{ end }}</strong><p>{{ if $isZh }}使用 ANTs 進行腦部 MRI 對位，建立後續 lesion-wise 分析的一致空間。{{ else }}Used ANTs-based MRI registration to create consistent spatial inputs for lesion-wise analysis.{{ end }}</p></article>
+    <article><span>03</span><strong>{{ if $isZh }}Ground-truth 共識流程{{ else }}Ground-truth consensus workflows{{ end }}</strong><p>{{ if $isZh }}整理專家共識與標註資料，支援 TFDA／臨床驗證相關的 ground-truth 管理。{{ else }}Structured expert-consensus and annotation data used in clinical and regulatory validation workflows.{{ end }}</p></article>
+    <article><span>04</span><strong>{{ if $isZh }}資料標準化與醫院格式轉換{{ else }}Dataset standardization & hospital-format conversion{{ end }}</strong><p>{{ if $isZh }}建立 process_data 工具，處理資料清理、標準化與跨醫院格式轉換。{{ else }}Built processing utilities for data cleaning, standardization, and hospital-format conversion.{{ end }}</p></article>
+    <article><span>05</span><strong>{{ if $isZh }}Radiomics 與替代模型實驗{{ else }}Radiomics & alternative model experiments{{ end }}</strong><p>{{ if $isZh }}測試 radiomics、segmentation 與 classification 路線，協助比較不同技術方向。{{ else }}Explored radiomics, segmentation, and classification approaches to compare alternative technical directions.{{ end }}</p></article>
+  </div>
+</div></section>
 {{ end }}

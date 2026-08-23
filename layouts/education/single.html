@@ -62,11 +62,36 @@
     </article>
   </div>
 
-  <aside class="credential-panel-v510 reveal">
-    <span class="kicker">{{ if $isZh }}專業資格{{ else }}PROFESSIONAL CREDENTIAL{{ end }}</span>
-    <h2>{{ if $isZh }}醫事放射師{{ else }}Licensed Medical Radiation Technologist{{ end }}</h2>
-    <p>{{ if $isZh }}台灣衛生福利部 · 2024{{ else }}Taiwan Ministry of Health and Welfare · 2024{{ end }}</p>
-    <p class="credential-note">{{ if $isZh }}這項資格代表我有臨床影像、病人安全與放射作業的專業基礎，也讓我在醫療科技產品工作中能更直接理解臨床情境。{{ else }}This credential reflects a formal foundation in clinical imaging, patient safety, and radiation practice—context that informs how I approach healthcare technology products.{{ end }}</p>
+  <aside class="credential-panel-v510 credential-panel-v514 reveal">
+    <span class="kicker">{{ if $isZh }}獲獎與專業資格{{ else }}HONORS & CREDENTIALS{{ end }}</span>
+
+    <div class="credential-group-v514">
+      <span class="credential-group-label-v514">{{ if $isZh }}專業執照{{ else }}PROFESSIONAL LICENSE{{ end }}</span>
+      <h2>{{ if $isZh }}醫事放射師{{ else }}Licensed Medical Radiation Technologist{{ end }}</h2>
+      <p>{{ if $isZh }}台灣衛生福利部 · 2024{{ else }}Taiwan Ministry of Health and Welfare · 2024{{ end }}</p>
+    </div>
+
+    <div class="credential-group-v514">
+      <span class="credential-group-label-v514">{{ if $isZh }}精選獲獎{{ else }}SELECTED HONORS{{ end }}</span>
+      <ul class="credential-list-v514">
+        <li><strong>Outstanding Thesis Award</strong><span>NYCU · 2026</span></li>
+        <li><strong>Outstanding Oral Presentation</strong><span>IEEE AMLDS · 2026</span></li>
+        <li><strong>Honor Student Award</strong><span>NYCU · 2024</span></li>
+        <li><strong>Certificate of Excellence</strong><span>NTU Hospital · Clinical Internship</span></li>
+      </ul>
+      <a class="credential-more-v514" href="{{ "research/" | relLangURL }}">{{ if $isZh }}查看研究與獲獎{{ else }}Research & recognition{{ end }} →</a>
+    </div>
+
+    <div class="credential-group-v514">
+      <span class="credential-group-label-v514">{{ if $isZh }}精選技術證書{{ else }}SELECTED TECHNICAL CREDENTIALS{{ end }}</span>
+      <ul class="credential-list-v514 credential-list-compact-v514">
+        <li><strong>Data Science & Smart Instrumentation</strong><span>NYCU · 2026</span></li>
+        <li><strong>CS50's Introduction to AI with Python</strong><span>Harvard / CS50 · 2025</span></li>
+        <li><strong>Data Science Fundamentals with Python & SQL</strong><span>IBM · 2025</span></li>
+        <li><strong>Fundamentals of Visualization with Tableau</strong><span>UC Davis · 2026</span></li>
+      </ul>
+      <p class="credential-note credential-note-v514">{{ if $isZh }}另外完成多項 IBM、Google 與資料工程／SQL 相關證書；完整清單保留在 LinkedIn，避免此頁變成證書目錄。{{ else }}Additional IBM, Google, data-engineering, and SQL credentials are kept on LinkedIn so this page stays curated rather than becoming a certificate inventory.{{ end }}</p>
+    </div>
   </aside>
 </div></section>
 

@@ -53,6 +53,10 @@ Development cohort 用於模型開發、內部驗證與 operating-point characte
 
 架構使用 T1C 與 T2 MRI、敏感度導向的 **3D nnU-Net v2** proposal stage、lesion-centered downstream patches，以及 mask-gated classification models 進行偽陽性降低與保留病灶分類。我的 broader toolkit 包括 Python、pandas、NumPy、scikit-learn、XGBoost、PyTorch、TensorFlow/Keras、MONAI、SimpleITK、NiBabel、3D Slicer、Git、BigQuery 與 MLflow。
 
+## 模型背後的研究工程
+
+最終 cascade 只是整體研究工程的一層。我也建立與測試 **ANTs MRI 對位**、**ground-truth 共識資料管理**、**醫院資料標準化／格式轉換**，以及 **radiomics、segmentation、classification 實驗**等支援程式，將異質臨床影像整理成可重現的模型開發與驗證輸入。
+
 ## 研究溝通
 
 相關研究成果於 **MIDL 2026** 與 **IEEE AMLDS 2026** 發表。這些 conference artifacts 對應相關研究版本；本頁 headline metrics 統一採用最終碩論的 independent-cohort evaluation，避免混用不同 study versions。

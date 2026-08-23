@@ -913,3 +913,41 @@ body{letter-spacing:-.006em}
 
 /* V5.13 — experience workstream separation */
 .experience-workstreams{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:24px 0 8px}.experience-workstreams>div{border:1px solid var(--line);border-radius:16px;padding:18px 20px;background:var(--surface)}.experience-workstreams strong{display:block;font:600 1rem/1.35 Manrope,Inter,sans-serif;color:var(--ink);margin:6px 0 8px}.experience-workstreams p{margin:0!important;font-size:.93rem!important;line-height:1.55!important}.experience-stream-kicker{font:600 .68rem/1 Manrope,Inter,sans-serif;letter-spacing:.13em;color:var(--blue)}@media(max-width:760px){.experience-workstreams{grid-template-columns:1fr}}
+
+/* V5.14 — Education curation + research-engineering pass */
+.education-seal-v511,.cmu-seal-v511,.nycu-seal-v511{width:68px;height:68px;object-fit:contain}
+.nycu-seal-v511{border-radius:50%}
+
+.credential-panel-v514{padding:28px 30px}
+.credential-group-v514{padding:24px 0;border-top:1px solid var(--line)}
+.credential-group-v514:first-of-type{border-top:0;padding-top:18px}
+.credential-group-label-v514{display:block;font:650 .62rem/1.2 Manrope,Inter,"Noto Sans TC",sans-serif;letter-spacing:.12em;color:var(--muted);margin-bottom:10px}
+.credential-panel-v514 .credential-group-v514 h2{font-size:1.45rem;margin:0 0 8px}
+.credential-panel-v514 .credential-group-v514>p{margin:0;color:var(--muted);font-size:.78rem;line-height:1.55}
+.credential-list-v514{list-style:none;margin:0;padding:0;display:grid;gap:13px}
+.credential-list-v514 li{padding:0 0 12px;border-bottom:1px solid color-mix(in srgb,var(--line) 72%,transparent)}
+.credential-list-v514 li:last-child{border-bottom:0;padding-bottom:0}
+.credential-list-v514 strong,.credential-list-v514 span{display:block}
+.credential-list-v514 strong{font:600 .82rem/1.38 Manrope,Inter,"Noto Sans TC",sans-serif;color:var(--text)}
+.credential-list-v514 span{font-size:.7rem;line-height:1.45;color:var(--muted);margin-top:3px}
+.credential-list-compact-v514{gap:10px}
+.credential-more-v514{display:inline-flex;margin-top:15px;font-size:.72rem;font-weight:650;color:var(--electric);text-decoration:none}
+.credential-note-v514{margin-top:16px!important;font-size:.7rem!important;line-height:1.65!important}
+
+.research-engineering-v514{padding-top:78px;padding-bottom:90px}
+.research-engineering-v514 .research-v55-header{max-width:850px}
+.research-engineering-grid-v514{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:32px;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.research-engineering-grid-v514 article{position:relative;padding:28px 30px 30px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:164px;background:var(--panel)}
+.research-engineering-grid-v514 article:last-child{grid-column:1/-1;min-height:auto}
+.research-engineering-grid-v514 article>span{font:650 .63rem/1 Manrope,Inter,sans-serif;color:var(--electric);letter-spacing:.08em}
+.research-engineering-grid-v514 strong{display:block;font:600 1.02rem/1.35 Manrope,Inter,"Noto Sans TC",sans-serif;letter-spacing:-.02em;margin-top:17px}
+.research-engineering-grid-v514 p{margin:8px 0 0;color:var(--muted);font-size:.79rem;line-height:1.65;max-width:540px}
+
+@media(max-width:760px){
+  .education-seal-v511,.cmu-seal-v511,.nycu-seal-v511{width:56px;height:56px}
+  .credential-panel-v514{padding:24px}
+  .research-engineering-v514{padding-top:58px;padding-bottom:66px}
+  .research-engineering-grid-v514{grid-template-columns:1fr}
+  .research-engineering-grid-v514 article:last-child{grid-column:auto}
+  .research-engineering-grid-v514 article{min-height:auto;padding:24px}
+}

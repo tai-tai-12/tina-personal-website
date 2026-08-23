@@ -53,6 +53,10 @@ The development cohort was used for model development, internal validation, and 
 
 The framework used T1C and T2 MRI, a sensitivity-oriented **3D nnU-Net v2** proposal stage, lesion-centered downstream patches, and mask-gated classification models for false-positive reduction and retained-lesion tumor typing. My broader toolkit includes Python, pandas, NumPy, scikit-learn, XGBoost, PyTorch, TensorFlow/Keras, MONAI, SimpleITK, NiBabel, 3D Slicer, Git, BigQuery, and MLflow.
 
+## Research engineering behind the model
+
+The final cascade was only one layer of a broader engineering workflow. I also built and tested supporting code for **MRI registration with ANTs**, **ground-truth consensus management**, **hospital-data standardization and format conversion**, and **radiomics / segmentation / classification experiments**. These tools helped turn heterogeneous clinical imaging data into reproducible model-development and validation inputs.
+
 ## Research communication
 
 This work contributed to research presented at **MIDL 2026** and **IEEE AMLDS 2026**. Those conference artifacts represent related study versions and are presented as research outputs; the metrics above follow the final master's-thesis independent-cohort evaluation.

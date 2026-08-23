@@ -3,19 +3,19 @@
 {{ $ctx := .Params.contextLabel }}
 {{ if not $ctx }}
   {{ if eq $section "work" }}
-    {{ if .Params.category }}{{ $ctx = .Params.category }}{{ else }}{{ $ctx = cond $isZh "精選專案" "SELECTED WORK" }}{{ end }}
-  {{ else if eq $section "research" }}{{ $ctx = cond $isZh "研究與獲獎" "RESEARCH & RECOGNITION" }}
-  {{ else if eq $section "experience" }}{{ $ctx = cond $isZh "經歷" "EXPERIENCE" }}
-  {{ else if eq $section "education" }}{{ $ctx = cond $isZh "學歷與專業資格" "EDUCATION & CREDENTIALS" }}
-  {{ else if eq $section "about" }}{{ $ctx = cond $isZh "關於我" "ABOUT" }}
-  {{ else if eq $section "writing" }}{{ $ctx = cond $isZh "文章" "WRITING" }}
+    {{ if .Params.category }}{{ $ctx = .Params.category }}{{ else }}{{ $ctx = cond $isZh "作品集" "PORTFOLIO" }}{{ end }}
+  {{ else if eq $section "research" }}{{ $ctx = cond $isZh "精選研究" "SELECTED RESEARCH" }}
+  {{ else if eq $section "experience" }}{{ $ctx = cond $isZh "職涯軌跡" "CAREER PATH" }}
+  {{ else if eq $section "education" }}{{ $ctx = cond $isZh "學術背景" "ACADEMIC BACKGROUND" }}
+  {{ else if eq $section "about" }}{{ $ctx = cond $isZh "個人簡介" "PROFILE" }}
+  {{ else if eq $section "writing" }}{{ $ctx = cond $isZh "筆記與文章" "NOTES & WRITING" }}
   {{ else }}
     {{ $u := .RelPermalink }}
-    {{ if strings.Contains $u "/experience/" }}{{ $ctx = cond $isZh "經歷" "EXPERIENCE" }}
-    {{ else if strings.Contains $u "/education/" }}{{ $ctx = cond $isZh "學歷與專業資格" "EDUCATION & CREDENTIALS" }}
-    {{ else if strings.Contains $u "/research/" }}{{ $ctx = cond $isZh "研究與獲獎" "RESEARCH & RECOGNITION" }}
-    {{ else if strings.Contains $u "/about/" }}{{ $ctx = cond $isZh "關於我" "ABOUT" }}
-    {{ else if strings.Contains $u "/work/" }}{{ if .Params.category }}{{ $ctx = .Params.category }}{{ else }}{{ $ctx = cond $isZh "精選專案" "SELECTED WORK" }}{{ end }}
+    {{ if strings.Contains $u "/experience/" }}{{ $ctx = cond $isZh "職涯軌跡" "CAREER PATH" }}
+    {{ else if strings.Contains $u "/education/" }}{{ $ctx = cond $isZh "學術背景" "ACADEMIC BACKGROUND" }}
+    {{ else if strings.Contains $u "/research/" }}{{ $ctx = cond $isZh "精選研究" "SELECTED RESEARCH" }}
+    {{ else if strings.Contains $u "/about/" }}{{ $ctx = cond $isZh "個人簡介" "PROFILE" }}
+    {{ else if strings.Contains $u "/work/" }}{{ if .Params.category }}{{ $ctx = .Params.category }}{{ else }}{{ $ctx = cond $isZh "作品集" "PORTFOLIO" }}{{ end }}
     {{ else }}{{ $ctx = cond $isZh "個人網站" "PORTFOLIO" }}{{ end }}
   {{ end }}
 {{ end }}

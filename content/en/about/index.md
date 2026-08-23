@@ -1,7 +1,7 @@
 ---
 title: "About"
 translationKey: "about"
-contextLabel: "ABOUT"
+contextLabel: "PROFILE"
 ---
 
 I work at the intersection of **product, analytics, and AI**, with a background spanning biomedical imaging, machine-learning research, and healthcare technology.
@@ -17,4 +17,3 @@ That interest led me from research into product management and cross-functional 
 
 I am especially interested in product and analytics roles involving AI and healthcare, while keeping a broader focus on technology products where rigorous analysis and cross-functional judgment matter.
 
-Outside work, I enjoy documenting everyday life, photography, and exploring new places and food. I like projects that combine structure with curiosity: understanding how something works, then making it clearer and more useful.

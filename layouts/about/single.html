@@ -1,0 +1,31 @@
+{{ define "main" }}
+{{ $isZh := eq .Site.Language.Lang "zh" }}
+<div class="page-hero section-shell compact about-v515-hero"><div class="shell narrow reveal">
+  {{ partial "page-context.html" . }}
+  <h1>{{ .Title }}</h1>
+  <p class="lede small">{{ if $isZh }}我在產品、分析與 AI 的交會處工作，背景橫跨醫療影像、機器學習研究與 healthcare technology。{{ else }}I work at the intersection of product, analytics, and AI, with a background spanning biomedical imaging, machine-learning research, and healthcare technology.{{ end }}</p>
+</div></div>
+
+<section class="section-shell article-section about-story-v515"><article class="shell narrow prose reveal">{{ .Content }}</article></section>
+
+<section class="section-shell alt capabilities-v515"><div class="shell">
+  <div class="section-title-row-v3 reveal">
+    <div><span class="kicker">{{ if $isZh }}能力組合{{ else }}CAPABILITIES{{ end }}</span><h2>{{ if $isZh }}跨產品、分析與受規範科技的能力組合。{{ else }}A cross-functional toolkit for product, analytics, and regulated technology.{{ end }}</h2></div>
+  </div>
+  <div class="capability-grid-v515 reveal">
+    <article><span>01</span><h3>{{ if $isZh }}產品與策略{{ else }}Product & Strategy{{ end }}</h3><p>Product Management · Product Strategy · Requirements Analysis · Stakeholder Management · Cross-functional Collaboration</p></article>
+    <article><span>02</span><h3>{{ if $isZh }}分析與 AI{{ else }}Analytics & AI{{ end }}</h3><p>Business Analytics · Machine Learning · Deep Learning · Statistical Analysis · Computer Vision</p></article>
+    <article><span>03</span><h3>{{ if $isZh }}醫療與受規範科技{{ else }}Healthcare & Regulated Tech{{ end }}</h3><p>Medical Imaging · Clinical Validation · SaMD · Regulatory Affairs · Technical Documentation</p></article>
+    <article><span>04</span><h3>{{ if $isZh }}技術工具{{ else }}Technical Toolkit{{ end }}</h3><p>Python · SQL · MATLAB · PyTorch · scikit-learn · 3D Slicer · Git</p></article>
+  </div>
+</div></section>
+
+<section class="section-shell beyond-work-v515"><div class="shell narrow">
+  <div class="section-title-row-v3 reveal"><div><span class="kicker">{{ if $isZh }}工作之外{{ else }}BEYOND WORK{{ end }}</span><h2>{{ if $isZh }}社群參與與生活中的好奇心。{{ else }}Community involvement and curiosity beyond the portfolio.{{ end }}</h2></div></div>
+  <div class="beyond-work-list-v515 reveal">
+    <article><span>2025–2026</span><div><strong>Lions Club</strong><p>{{ if $isZh }}協助捐血服務，包含捐血者衛教與捐血後協助。{{ else }}Supported blood-donation services through donor education and post-donation assistance.{{ end }}</p></div></article>
+    <article><span>2017–2020</span><div><strong>{{ if $isZh }}社區服務{{ else }}Community Service{{ end }}</strong><p>{{ if $isZh }}參與動物福利、公益募款與淨灘等活動。{{ else }}Contributed to animal-welfare, fundraising, and environmental service activities.{{ end }}</p></div></article>
+  </div>
+  <p class="about-personal-note-v515">{{ if $isZh }}我也喜歡攝影、記錄生活，以及探索新的地方與食物。{{ else }}I also enjoy photography, documenting everyday life, and exploring new places and food.{{ end }}</p>
+</div></section>
+{{ end }}

@@ -1,7 +1,7 @@
 ---
 title: "經歷"
 translationKey: "experience"
-contextLabel: "經歷"
+contextLabel: "職涯軌跡"
 ---
 
 ## AITEWAN Biomedical Technology

@@ -1,7 +1,7 @@
 ---
 title: "Experience"
 translationKey: "experience"
-contextLabel: "EXPERIENCE"
+contextLabel: "CAREER PATH"
 ---
 
 ## AITEWAN Biomedical Technology

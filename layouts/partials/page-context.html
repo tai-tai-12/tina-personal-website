@@ -1,6 +1,16 @@
 {{ $section := .Section }}
 {{ $isZh := eq .Site.Language.Lang "zh" }}
-{{ $ctx := .Params.contextLabel }}
+{{ $ctx := "" }}
+{{ $u := .RelPermalink }}
+{{ if strings.Contains $u "/education/" }}{{ $ctx = cond $isZh "學術背景" "ACADEMIC BACKGROUND" }}
+{{ else if strings.Contains $u "/experience/" }}{{ $ctx = cond $isZh "職涯軌跡" "CAREER PATH" }}
+{{ else if strings.Contains $u "/research/" }}{{ $ctx = cond $isZh "精選研究" "SELECTED RESEARCH" }}
+{{ else if strings.Contains $u "/about/" }}{{ $ctx = cond $isZh "個人簡介" "PROFILE" }}
+{{ else if strings.Contains $u "/work/" }}
+  {{ if .Params.category }}{{ $ctx = .Params.category }}{{ else }}{{ $ctx = cond $isZh "作品集" "PORTFOLIO" }}{{ end }}
+{{ else }}
+  {{ $ctx = .Params.contextLabel }}
+{{ end }}
 {{ if not $ctx }}
   {{ if eq $section "work" }}
     {{ if .Params.category }}{{ $ctx = .Params.category }}{{ else }}{{ $ctx = cond $isZh "作品集" "PORTFOLIO" }}{{ end }}

@@ -21,7 +21,10 @@
           </div>
         </div>
         <h2>M.S. Business Analytics</h2>
-        <div class="education-focus-row"><span>Analytics</span><span>Machine Learning</span><span>Optimization</span><span>Technology Strategy</span></div>
+        <div class="education-subsection-v515">
+          <span class="education-subsection-label-v515">{{ if $isZh }}目前重點{{ else }}CURRENT FOCUS{{ end }}</span>
+          <div class="education-focus-row"><span>Analytics</span><span>Machine Learning</span><span>Optimization</span><span>Technology Strategy</span></div>
+        </div>
       </div>
     </article>
 
@@ -40,6 +43,15 @@
         <h2>M.S. Biophotonics</h2>
         <p>{{ if $isZh }}醫療影像與 AI 研究 · Outstanding Thesis Award{{ else }}Medical imaging & AI research · Outstanding Thesis Award{{ end }}</p>
         <div class="education-action-row"><a href="{{ "research/" | relLangURL }}">{{ if $isZh }}研究成果{{ else }}Research & recognition{{ end }} →</a><a href="{{ "work/clinical-ai-at-scale/" | relLangURL }}">{{ if $isZh }}相關專案{{ else }}Related project{{ end }} →</a></div>
+        <div class="education-subsection-v515 coursework-v515">
+          <span class="education-subsection-label-v515">{{ if $isZh }}精選課程{{ else }}SELECTED COURSEWORK{{ end }}</span>
+          <div class="coursework-list-v515">
+            <span>Deep Learning & Biomedical Applications</span>
+            <span>Machine Learning & Biomedical Applications</span>
+            <span>Magnetic Resonance in Medicine</span>
+            <span>Medical Device Regulatory Requirements</span>
+          </div>
+        </div>
       </div>
     </article>
 
@@ -57,7 +69,17 @@
         </div>
         <h2>B.S. Biomedical Imaging & Radiological Sciences</h2>
         <p>{{ if $isZh }}輔修生醫工程{{ else }}Minor · Biomedical Engineering{{ end }}</p>
-        <div class="education-focus-row"><span>Medical Imaging</span><span>Radiation Science</span><span>Biomedical Engineering</span></div>
+        <div class="education-subsection-v515">
+          <span class="education-subsection-label-v515">{{ if $isZh }}學術基礎{{ else }}FOUNDATION{{ end }}</span>
+          <div class="education-focus-row"><span>Medical Imaging</span><span>Radiation Science</span><span>Biomedical Engineering</span></div>
+        </div>
+        <div class="education-subsection-v515 coursework-v515">
+          <span class="education-subsection-label-v515">{{ if $isZh }}精選課程{{ else }}SELECTED COURSEWORK{{ end }}</span>
+          <div class="coursework-list-v515">
+            <span>Programming Language</span>
+            <span>Principles of Magnetic Resonance Imaging</span>
+          </div>
+        </div>
       </div>
     </article>
   </div>
@@ -90,7 +112,7 @@
         <li><strong>Data Science Fundamentals with Python & SQL</strong><span>IBM · 2025</span></li>
         <li><strong>Fundamentals of Visualization with Tableau</strong><span>UC Davis · 2026</span></li>
       </ul>
-      <p class="credential-note credential-note-v514">{{ if $isZh }}另外完成多項 IBM、Google 與資料工程／SQL 相關證書；完整清單保留在 LinkedIn，避免此頁變成證書目錄。{{ else }}Additional IBM, Google, data-engineering, and SQL credentials are kept on LinkedIn so this page stays curated rather than becoming a certificate inventory.{{ end }}</p>
+      <p class="credential-note credential-note-v514">{{ if $isZh }}更多技術證書收錄於{{ else }}More technical credentials are listed on{{ end }} <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noreferrer">LinkedIn ↗</a></p>
     </div>
   </aside>
 </div></section>

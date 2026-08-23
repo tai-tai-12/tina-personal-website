@@ -951,3 +951,45 @@ body{letter-spacing:-.006em}
   .research-engineering-grid-v514 article:last-child{grid-column:auto}
   .research-engineering-grid-v514 article{min-height:auto;padding:24px}
 }
+
+/* V5.15 — Capabilities & Academic Depth Pass */
+.education-subsection-v515{margin-top:20px}
+.education-subsection-label-v515{display:block;font:650 .61rem/1.2 Manrope,Inter,"Noto Sans TC",sans-serif;letter-spacing:.13em;color:var(--muted);margin-bottom:10px}
+.coursework-v515{padding-top:18px;border-top:1px solid color-mix(in srgb,var(--line) 72%,transparent)}
+.coursework-list-v515{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 18px}
+.coursework-list-v515 span{position:relative;padding-left:14px;font-size:.77rem;line-height:1.48;color:var(--text)}
+.coursework-list-v515 span::before{content:"";position:absolute;left:0;top:.58em;width:5px;height:5px;border-radius:50%;background:var(--electric)}
+.credential-note-v514 a{color:var(--electric);font-weight:650;text-decoration:none}
+.credential-note-v514 a:hover{text-decoration:underline;text-underline-offset:3px}
+
+.about-v515-hero .lede{max-width:760px}
+.about-story-v515{padding-top:42px;padding-bottom:76px}
+.about-story-v515 .prose>p:first-child{display:none}
+.capabilities-v515{padding-top:82px;padding-bottom:88px}
+.capabilities-v515 .section-title-row-v3{max-width:920px}
+.capability-grid-v515{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:32px}
+.capability-grid-v515 article{padding:30px 32px 32px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:190px;background:var(--panel)}
+.capability-grid-v515 article>span{font:650 .63rem/1 Manrope,Inter,sans-serif;color:var(--electric);letter-spacing:.08em}
+.capability-grid-v515 h3{font:600 1.2rem/1.25 Manrope,Inter,"Noto Sans TC",sans-serif;letter-spacing:-.025em;margin:18px 0 12px;color:var(--text)}
+.capability-grid-v515 p{margin:0;color:var(--muted);font-size:.82rem;line-height:1.78;max-width:540px}
+
+.beyond-work-v515{padding-top:82px;padding-bottom:88px}
+.beyond-work-v515 .section-title-row-v3{margin-bottom:28px}
+.beyond-work-list-v515{border-top:1px solid var(--line)}
+.beyond-work-list-v515 article{display:grid;grid-template-columns:120px 1fr;gap:28px;padding:24px 0;border-bottom:1px solid var(--line)}
+.beyond-work-list-v515 article>span{font-size:.72rem;color:var(--muted);font-weight:600}
+.beyond-work-list-v515 strong{font:600 1rem/1.3 Manrope,Inter,"Noto Sans TC",sans-serif;color:var(--text)}
+.beyond-work-list-v515 p{margin:6px 0 0;color:var(--muted);font-size:.84rem;line-height:1.65}
+.about-personal-note-v515{margin:26px 0 0;color:var(--muted);font-size:.8rem;font-style:italic}
+
+/* Defensive page-context polish: context should never visually compete with the H1. */
+.page-context-label{max-width:100%;white-space:nowrap}
+.page-hero .page-context{margin-bottom:4px}
+
+@media(max-width:760px){
+  .coursework-list-v515{grid-template-columns:1fr;gap:7px}
+  .capabilities-v515,.beyond-work-v515{padding-top:60px;padding-bottom:66px}
+  .capability-grid-v515{grid-template-columns:1fr}
+  .capability-grid-v515 article{min-height:auto;padding:25px 24px}
+  .beyond-work-list-v515 article{grid-template-columns:1fr;gap:8px;padding:22px 0}
+}

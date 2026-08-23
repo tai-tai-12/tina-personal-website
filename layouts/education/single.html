@@ -6,23 +6,57 @@
   <p class="lede small">{{ if $isZh }}我的學術路徑從醫療影像與生醫工程出發，延伸到醫療 AI，並在 Carnegie Mellon 補上商業分析、機器學習、最佳化與科技策略訓練。{{ else }}My academic path started in medical imaging and biomedical engineering, expanded into medical AI, and now adds business analytics, machine learning, optimization, and technology strategy at Carnegie Mellon.{{ end }}</p>
 </div></div>
 
-<section class="section-shell education-page-section"><div class="shell education-page-shell">
-  <div class="education-timeline-v59 reveal">
-    <article class="education-entry-v59">
-      <div class="education-entry-meta"><span>2026–2027</span><small>Pittsburgh, PA</small></div>
-      <div class="education-entry-main"><span class="education-school">Carnegie Mellon University</span><h2>M.S. Business Analytics</h2><p>Tepper School of Business</p><div class="education-focus-row"><span>Analytics</span><span>Machine Learning</span><span>Optimization</span><span>Technology Strategy</span></div></div>
+<section class="section-shell education-page-section"><div class="shell education-page-shell-v510">
+  <div class="education-timeline-v510 reveal">
+    <article class="education-entry-v510">
+      <div class="education-entry-meta-v510"><span>2026–2027</span><small>Pittsburgh, PA, USA</small></div>
+      <div class="education-entry-card-v510">
+        <div class="education-institution-row-v510">
+          <div class="education-mark-v510 cmu-mark" aria-hidden="true">CMU</div>
+          <div>
+            <a class="education-university-link-v510" href="https://www.cmu.edu/" target="_blank" rel="noopener">Carnegie Mellon University <span>↗</span></a>
+            <a class="education-unit-link-v510" href="https://www.cmu.edu/tepper/" target="_blank" rel="noopener">Tepper School of Business <span>↗</span></a>
+          </div>
+        </div>
+        <h2>M.S. Business Analytics</h2>
+        <div class="education-focus-row"><span>Analytics</span><span>Machine Learning</span><span>Optimization</span><span>Technology Strategy</span></div>
+      </div>
     </article>
-    <article class="education-entry-v59">
-      <div class="education-entry-meta"><span>2024–2026</span><small>Taiwan</small></div>
-      <div class="education-entry-main"><span class="education-school">National Yang Ming Chiao Tung University</span><h2>M.S. Biophotonics</h2><p>{{ if $isZh }}醫療影像與 AI 研究 · Outstanding Thesis Award{{ else }}Medical imaging & AI research · Outstanding Thesis Award{{ end }}</p><div class="education-action-row"><a href="{{ "research/" | relLangURL }}">{{ if $isZh }}查看研究成果{{ else }}Research & recognition{{ end }} →</a><a href="{{ "work/clinical-ai-at-scale/" | relLangURL }}">{{ if $isZh }}查看相關專案{{ else }}Related project{{ end }} →</a></div></div>
+
+    <article class="education-entry-v510">
+      <div class="education-entry-meta-v510"><span>2024–2026</span><small>Taipei, Taiwan</small></div>
+      <div class="education-entry-card-v510">
+        <div class="education-institution-row-v510">
+          <div class="education-mark-v510 nycu-mark" aria-hidden="true">NYCU</div>
+          <div>
+            <a class="education-university-link-v510" href="https://www.nycu.edu.tw/nycu/en/index" target="_blank" rel="noopener">National Yang Ming Chiao Tung University <span>↗</span></a>
+            <a class="education-unit-link-v510" href="https://bioph.nycu.edu.tw/" target="_blank" rel="noopener">Institute of Biophotonics <span>↗</span></a>
+          </div>
+        </div>
+        <h2>M.S. Biophotonics</h2>
+        <p>{{ if $isZh }}醫療影像與 AI 研究 · Outstanding Thesis Award{{ else }}Medical imaging & AI research · Outstanding Thesis Award{{ end }}</p>
+        <div class="education-action-row"><a href="{{ "research/" | relLangURL }}">{{ if $isZh }}研究成果{{ else }}Research & recognition{{ end }} →</a><a href="{{ "work/clinical-ai-at-scale/" | relLangURL }}">{{ if $isZh }}相關專案{{ else }}Related project{{ end }} →</a></div>
+      </div>
     </article>
-    <article class="education-entry-v59">
-      <div class="education-entry-meta"><span>2020–2024</span><small>Taiwan</small></div>
-      <div class="education-entry-main"><span class="education-school">National Yang Ming Chiao Tung University</span><h2>B.S. Biomedical Imaging & Radiological Sciences</h2><p>{{ if $isZh }}輔修生醫工程{{ else }}Minor · Biomedical Engineering{{ end }}</p><div class="education-focus-row"><span>Medical Imaging</span><span>Radiation Science</span><span>Biomedical Engineering</span></div></div>
+
+    <article class="education-entry-v510">
+      <div class="education-entry-meta-v510"><span>2020–2024</span><small>Taipei, Taiwan</small></div>
+      <div class="education-entry-card-v510">
+        <div class="education-institution-row-v510">
+          <div class="education-mark-v510 nycu-mark" aria-hidden="true">NYCU</div>
+          <div>
+            <a class="education-university-link-v510" href="https://www.nycu.edu.tw/nycu/en/index" target="_blank" rel="noopener">National Yang Ming Chiao Tung University <span>↗</span></a>
+            <a class="education-unit-link-v510" href="https://birs.nycu.edu.tw/english-version/" target="_blank" rel="noopener">Department of Biomedical Imaging & Radiological Sciences <span>↗</span></a>
+          </div>
+        </div>
+        <h2>B.S. Biomedical Imaging & Radiological Sciences</h2>
+        <p>{{ if $isZh }}輔修生醫工程{{ else }}Minor · Biomedical Engineering{{ end }}</p>
+        <div class="education-focus-row"><span>Medical Imaging</span><span>Radiation Science</span><span>Biomedical Engineering</span></div>
+      </div>
     </article>
   </div>
 
-  <aside class="credential-panel-v59 reveal">
+  <aside class="credential-panel-v510 reveal">
     <span class="kicker">{{ if $isZh }}專業資格{{ else }}PROFESSIONAL CREDENTIAL{{ end }}</span>
     <h2>{{ if $isZh }}醫事放射師{{ else }}Licensed Medical Radiation Technologist{{ end }}</h2>
     <p>{{ if $isZh }}台灣衛生福利部 · 2024{{ else }}Taiwan Ministry of Health and Welfare · 2024{{ end }}</p>

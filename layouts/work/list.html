@@ -5,24 +5,25 @@
   <h1>{{ .Title }}</h1>
   <p class="lede small">{{ if $isZh }}三個精選專案，聚焦產品轉譯、臨床 AI 與分析／營運決策。{{ else }}Three selected projects across product translation, clinical AI, and analytics/operations judgment.{{ end }}</p>
 </div></div>
-<section class="section-shell work-index-section"><div class="shell work-index-grid mono-work-grid">
+<section class="section-shell work-index-section work-stack-v510"><div class="shell work-stack-list-v510">
   {{ range sort .Pages "Weight" }}
-  <article class="work-index-card mono-work-card reveal">
-    <a class="mono-work-visual {{ .Params.visual }}" href="{{ .RelPermalink }}" aria-label="Open {{ .Title }}">
+  <article class="work-stack-row-v510 reveal">
+    <a class="work-stack-visual-v510 {{ .Params.visual }}" href="{{ .RelPermalink }}" aria-label="Open {{ .Title }}">
       {{ if eq .Params.visual "product-visual" }}
       <img src="{{ "images/projects/medical-ai-product/clinical-product-home.webp" | relURL }}" alt="Clinical product workflow illustration">
       {{ else if eq .Params.visual "clinical-ai-visual" }}
       <img src="{{ "images/projects/medical-ai-product/clinical-ai-home.webp" | relURL }}" alt="Lesion-wise brain tumor AI pipeline illustration">
       {{ else }}
-      <img src="{{ "images/projects/structured-validation-home.webp" | relURL }}" alt="Structured validation workflow illustration">
+      <img src="{{ "images/projects/structured-validation-home.webp" | relURL }}" alt="Structured validation and analytics workflow illustration">
       {{ end }}
+      <span class="work-stack-index-v510">0{{ .Weight }}</span>
     </a>
-    <div class="mono-work-card-body">
-      <div class="work-index-top"><span class="work-category">{{ .Params.category }}</span></div>
+    <div class="work-stack-copy-v510">
+      <span class="work-category">{{ .Params.category }}</span>
       <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
       <p>{{ .Params.summary }}</p>
-      {{ with .Params.proof }}<div class="work-proof-row">{{ range . }}<span>{{ . }}</span>{{ end }}</div>{{ end }}
-      <a class="btn mono-project-btn" href="{{ .RelPermalink }}">{{ if $isZh }}查看專案{{ else }}Explore project{{ end }} ↗</a>
+      {{ with .Params.proof }}<div class="work-proof-row work-proof-row-v510">{{ range . }}<span>{{ . }}</span>{{ end }}</div>{{ end }}
+      <a class="btn mono-project-btn work-stack-btn-v510" href="{{ .RelPermalink }}">{{ if $isZh }}查看專案{{ else }}Explore project{{ end }} ↗</a>
     </div>
   </article>
   {{ end }}

@@ -1,19 +1,31 @@
 {{ define "main" }}
 {{ $isZh := eq .Site.Language.Lang "zh" }}
-<div class="page-hero section-shell compact"><div class="shell narrow reveal">
+<div class="page-hero section-shell compact mono-page-hero"><div class="shell narrow reveal">
   {{ partial "page-context.html" . }}
   <h1>{{ .Title }}</h1>
-  <p class="lede small">{{ if $isZh }}三個案例分別呈現產品轉譯、臨床 AI 驗證與可轉移的分析／營運能力。{{ else }}Three selected projects showing product translation, clinical-AI evaluation, and transferable analytics/operations judgment.{{ end }}</p>
+  <p class="lede small">{{ if $isZh }}三個精選專案，聚焦產品轉譯、臨床 AI 與分析／營運決策。{{ else }}Three selected projects across product translation, clinical AI, and analytics/operations judgment.{{ end }}</p>
 </div></div>
-<section class="section-shell work-index-section"><div class="shell work-index-grid">
+<section class="section-shell work-index-section"><div class="shell work-index-grid mono-work-grid">
   {{ range sort .Pages "Weight" }}
-  <a class="work-index-card reveal" href="{{ .RelPermalink }}">
-    <div class="work-index-top"><span class="work-category">{{ .Params.category }}</span><span class="work-index-arrow">↗</span></div>
-    <h2>{{ .Title }}</h2>
-    <p>{{ .Params.summary }}</p>
-    {{ with .Params.proof }}<div class="work-proof-row">{{ range . }}<span>{{ . }}</span>{{ end }}</div>{{ end }}
-    {{ with .Params.tags }}<div class="tag-row work-index-tags">{{ range first 3 . }}<span>{{ . }}</span>{{ end }}</div>{{ end }}
-  </a>
+  <article class="work-index-card mono-work-card reveal">
+    <a class="mono-work-visual {{ .Params.visual }}" href="{{ .RelPermalink }}" aria-label="Open {{ .Title }}">
+      {{ if eq .Params.visual "product-visual" }}
+      <svg viewBox="0 0 360 220" aria-hidden="true"><rect x="28" y="45" width="92" height="130" rx="18" class="wcard"/><rect x="42" y="59" width="64" height="64" rx="14" class="wdark"/><circle cx="87" cy="91" r="7" class="wblue"/><path d="M132 110h56M180 102l16 8-16 8" class="wline"/><circle cx="218" cy="110" r="35" class="wring"/><circle cx="218" cy="110" r="10" class="wblue"/><path d="M258 110h44M294 102l16 8-16 8" class="wline"/><circle cx="325" cy="91" r="14" class="wperson"/><path d="M309 145c3-22 8-33 16-33s13 11 16 33" class="wperson"/></svg>
+      {{ else if eq .Params.visual "clinical-ai-visual" }}
+      <svg viewBox="0 0 360 220" aria-hidden="true"><rect x="35" y="55" width="88" height="110" rx="18" class="wcard"/><circle cx="80" cy="104" r="34" class="wring"/><circle cx="94" cy="100" r="6" class="wblue"/><path d="M132 110h42" class="wline"/><path d="M176 70h72l-26 42v50l-20 10v-60l-26-42Z" class="wfunnel"/><path d="M250 110h38" class="wline"/><circle cx="307" cy="78" r="10" class="wnode"/><circle cx="326" cy="109" r="10" class="wnode"/><circle cx="307" cy="140" r="10" class="wnode blue"/><circle cx="288" cy="109" r="10" class="wnode"/></svg>
+      {{ else }}
+      <svg viewBox="0 0 360 220" aria-hidden="true"><rect x="34" y="50" width="100" height="120" rx="18" class="wcard"/><path d="M54 80h60M54 105h45M54 130h60" class="wmuted"/><path d="M146 110h48" class="wline"/><path d="M236 62 292 110 236 158 180 110Z" class="wdiamond"/><circle cx="236" cy="110" r="11" class="wblue"/><path d="M296 110h30" class="wline"/><path d="m315 97 8 8 16-16" class="wcheck"/></svg>
+      {{ end }}
+      <span>0{{ .Weight }}</span>
+    </a>
+    <div class="mono-work-card-body">
+      <div class="work-index-top"><span class="work-category">{{ .Params.category }}</span></div>
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <p>{{ .Params.summary }}</p>
+      {{ with .Params.proof }}<div class="work-proof-row">{{ range . }}<span>{{ . }}</span>{{ end }}</div>{{ end }}
+      <a class="btn mono-project-btn" href="{{ .RelPermalink }}">{{ if $isZh }}查看專案{{ else }}Explore project{{ end }} ↗</a>
+    </div>
+  </article>
   {{ end }}
 </div></section>
 {{ end }}

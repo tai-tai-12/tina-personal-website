@@ -5,6 +5,7 @@ tags: ["Machine Learning", "Analytics", "Medical Imaging", "Experimentation"]
 category: "CLINICAL AI · ML"
 summary: "Building and evaluating lesion-wise clinical AI with disciplined cohort separation and independent end-to-end testing."
 proof: ["12.1K development exams", "264 independent test exams"]
+visual: "clinical-ai-visual"
 weight: 2
 ---
 

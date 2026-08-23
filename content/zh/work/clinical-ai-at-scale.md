@@ -5,6 +5,7 @@ tags: ["Machine Learning", "Analytics", "Medical Imaging", "Experimentation"]
 category: "臨床 AI · ML"
 summary: "以嚴謹的 development／independent test 分離建立與驗證逐病灶臨床 AI。"
 proof: ["12.1K development exams", "264 independent test exams"]
+visual: "clinical-ai-visual"
 weight: 2
 ---
 

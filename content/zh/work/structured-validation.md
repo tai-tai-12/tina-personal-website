@@ -5,6 +5,7 @@ tags: ["Analytics", "Operations", "Process Design", "Decision-Making"]
 category: "分析 · 營運"
 summary: "將技術證據、合規流程與分析工具整理成可重複執行的驗證系統。"
 proof: ["8 products tested", "10+ regulatory reports"]
+visual: "analytics-visual"
 weight: 3
 ---
 

@@ -5,6 +5,7 @@ tags: ["Analytics", "Operations", "Process Design", "Decision-Making"]
 category: "ANALYTICS · OPERATIONS"
 summary: "Structuring technical evidence, compliance workflows, and analytical tooling so complex validation work becomes repeatable."
 proof: ["8 products tested", "10+ regulatory reports"]
+visual: "analytics-visual"
 weight: 3
 ---
 

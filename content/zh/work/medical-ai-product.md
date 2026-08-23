@@ -5,6 +5,7 @@ tags: ["產品管理", "醫療 AI", "法規", "跨團隊協作"]
 category: "產品轉譯"
 summary: "串接臨床 AI 研究、驗證、法規準備與部署就緒。"
 proof: ["2 medical centers", "TFDA submission"]
+visual: "product-visual"
 weight: 1
 ---
 

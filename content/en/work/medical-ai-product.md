@@ -5,6 +5,7 @@ tags: ["Product Management", "Healthcare AI", "Regulatory", "Cross-functional Le
 category: "PRODUCT TRANSLATION"
 summary: "Bridging clinical AI research, validation, regulatory preparation, and deployment readiness."
 proof: ["2 medical centers", "TFDA submission"]
+visual: "product-visual"
 weight: 1
 ---
 
@@ -12,7 +13,7 @@ I helped translate brain-tumor MRI research into a physician-led workflow design
 
 <figure class="case-visual case-visual-vector">
   {{< site-img src="images/projects/medical-ai-product/clinical-product-workflow.svg" alt="Conceptual clinical product workflow from PACS case access through AI-assisted MRI review and physician review" >}}
-  <figcaption>Public-safe conceptual workflow based on product documentation: PACS case access → AI status → MRI review → lesion overlay → lesion analysis → report → physician review.</figcaption>
+  <figcaption>Conceptual physician-led workflow. Details and product evidence are explained in the case study below.</figcaption>
 </figure>
 
 ## The challenge
@@ -44,7 +45,7 @@ The underlying research used a lesion-wise cascade rather than treating detectio
 
 <figure class="case-visual case-visual-vector">
   {{< site-img src="images/projects/medical-ai-product/three-stage-ai-cascade.svg" alt="Three-stage lesion-wise AI cascade for candidate generation, false-positive reduction, and final lesion classification" >}}
-  <figcaption>Research architecture simplified for portfolio use. The cascade prioritizes sensitivity first, then reduces false positives and performs retained-lesion tumor typing.</figcaption>
+  <figcaption>Simplified research architecture; technical definitions and cohort details are provided in the evaluation case study.</figcaption>
 </figure>
 
 ## From evidence to product workflow

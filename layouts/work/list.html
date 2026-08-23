@@ -10,11 +10,11 @@
   <article class="work-index-card mono-work-card reveal">
     <a class="mono-work-visual {{ .Params.visual }}" href="{{ .RelPermalink }}" aria-label="Open {{ .Title }}">
       {{ if eq .Params.visual "product-visual" }}
-      <svg viewBox="0 0 360 220" aria-hidden="true"><rect x="28" y="45" width="92" height="130" rx="18" class="wcard"/><rect x="42" y="59" width="64" height="64" rx="14" class="wdark"/><circle cx="87" cy="91" r="7" class="wblue"/><path d="M132 110h56M180 102l16 8-16 8" class="wline"/><circle cx="218" cy="110" r="35" class="wring"/><circle cx="218" cy="110" r="10" class="wblue"/><path d="M258 110h44M294 102l16 8-16 8" class="wline"/><circle cx="325" cy="91" r="14" class="wperson"/><path d="M309 145c3-22 8-33 16-33s13 11 16 33" class="wperson"/></svg>
+      <img src="{{ "images/projects/medical-ai-product/clinical-product-workflow.svg" | relURL }}" alt="Clinical product workflow illustration">
       {{ else if eq .Params.visual "clinical-ai-visual" }}
-      <svg viewBox="0 0 360 220" aria-hidden="true"><rect x="35" y="55" width="88" height="110" rx="18" class="wcard"/><circle cx="80" cy="104" r="34" class="wring"/><circle cx="94" cy="100" r="6" class="wblue"/><path d="M132 110h42" class="wline"/><path d="M176 70h72l-26 42v50l-20 10v-60l-26-42Z" class="wfunnel"/><path d="M250 110h38" class="wline"/><circle cx="307" cy="78" r="10" class="wnode"/><circle cx="326" cy="109" r="10" class="wnode"/><circle cx="307" cy="140" r="10" class="wnode blue"/><circle cx="288" cy="109" r="10" class="wnode"/></svg>
+      <img src="{{ "images/projects/medical-ai-product/three-stage-ai-cascade.svg" | relURL }}" alt="Lesion-wise brain tumor AI pipeline illustration">
       {{ else }}
-      <svg viewBox="0 0 360 220" aria-hidden="true"><rect x="34" y="50" width="100" height="120" rx="18" class="wcard"/><path d="M54 80h60M54 105h45M54 130h60" class="wmuted"/><path d="M146 110h48" class="wline"/><path d="M236 62 292 110 236 158 180 110Z" class="wdiamond"/><circle cx="236" cy="110" r="11" class="wblue"/><path d="M296 110h30" class="wline"/><path d="m315 97 8 8 16-16" class="wcheck"/></svg>
+      <img src="{{ "images/projects/structured-validation-workflow.svg" | relURL }}" alt="Structured validation workflow illustration">
       {{ end }}
       <span>0{{ .Weight }}</span>
     </a>

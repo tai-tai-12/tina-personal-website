@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="t d">
+<title id="t">Structured validation system overview</title>
+<desc id="d">Editorial diagram showing evidence collection, criteria mapping, reporting, and tracked execution for validation workflows.</desc>
+
+<style>
+  .bg{fill:#FBFCFE}
+  .panel{fill:#FFFFFF;stroke:#D9E0EC;stroke-width:2.4}
+  .soft{fill:#F4F7FB;stroke:#D9E0EC;stroke-width:1.8}
+  .title{font:700 17px/1.25 Inter,Arial,sans-serif;fill:#172B4D;letter-spacing:.01em}
+  .label{font:700 14px/1 Inter,Arial,sans-serif;fill:#123F72;letter-spacing:.08em}
+  .meta{font:500 11.5px/1.5 Inter,Arial,sans-serif;fill:#5A6B86}
+  .mini{font:600 12px/1.3 Inter,Arial,sans-serif;fill:#2E3E57}
+  .chip{font:700 11px/1 Inter,Arial,sans-serif;fill:#2F4D79;letter-spacing:.06em}
+  .metric{font:700 21px/1 Inter,Arial,sans-serif;fill:#102A56}
+  .metricLabel{font:600 11.5px/1.3 Inter,Arial,sans-serif;fill:#677791}
+  .line{stroke:#B8C3D6;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;fill:none}
+  .arrow{stroke:#3A67FF;stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round;fill:none}
+  .accent{fill:#3A67FF}
+  .navy{fill:#172B4D}
+  .teal{fill:#E9F7F7;stroke:#B8E2E3;stroke-width:1.6}
+  .teal2{fill:#1D8B97}
+  .sand{fill:#F9F5ED;stroke:#E6D8BB;stroke-width:1.5}
+  .pink{fill:#FAF1F4;stroke:#E9CAD4;stroke-width:1.5}
+  .outline{stroke:#172B4D;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;fill:none}
+  .fine{stroke:#8FA0BA;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;fill:none}
+  .faint{fill:#EEF3FA}
+  .muted{fill:#91A0B8}
+</style>
+<rect class="bg" width="1200" height="720" rx="28"/>
+<text x="70" y="72" class="title" style="font-size:34px; font-weight:800;">Structured Validation &amp; Analytics Workflow</text>
+<text x="70" y="105" class="meta" style="font-size:18px; font-weight:600; fill:#2C7785;">Turning technical evidence into repeatable, decision-ready operations</text>
+<path d="M70 126H1130" class="line"/>
+
+<g transform="translate(70 156)">
+  <rect width="250" height="220" rx="22" class="panel"/>
+  <circle cx="34" cy="34" r="18" class="soft"/><text x="34" y="39" text-anchor="middle" class="label" style="font-size:16px;">1</text>
+  <text x="68" y="40" class="title" style="font-size:21px;">Evidence intake</text>
+  <rect x="32" y="77" width="100" height="122" rx="18" class="soft"/>
+  <path d="M52 111h60M52 136h48M52 161h60" class="outline"/>
+  <rect x="148" y="93" width="72" height="94" rx="18" class="teal"/>
+  <path d="M168 121h32M168 146h32M168 171h20" class="fine"/>
+  
+</g>
+<path d="M327 266H356" class="arrow"/><path d="M346 256 362 266 346 276" class="arrow"/>
+
+<g transform="translate(372 156)">
+  <rect width="250" height="220" rx="22" class="panel"/>
+  <circle cx="34" cy="34" r="18" class="soft"/><text x="34" y="39" text-anchor="middle" class="label" style="font-size:16px;">2</text>
+  <text x="68" y="40" class="title" style="font-size:21px;">Criteria mapping</text>
+  <g transform="translate(36 84)">
+    <path d="M88 0 162 58 88 116 14 58 88 0Z" class="panel"/>
+    <circle cx="88" cy="58" r="18" class="accent"/>
+    <path d="M28 58h34M128 58h34M88 18v18M88 80v18" class="fine"/>
+  </g>
+  
+</g>
+<path d="M629 266H658" class="arrow"/><path d="M648 256 664 266 648 276" class="arrow"/>
+
+<g transform="translate(674 156)">
+  <rect width="250" height="220" rx="22" class="panel"/>
+  <circle cx="34" cy="34" r="18" class="soft"/><text x="34" y="39" text-anchor="middle" class="label" style="font-size:16px;">3</text>
+  <text x="68" y="40" class="title" style="font-size:21px;">Reporting</text>
+  <g transform="translate(38 78)">
+    <rect x="0" y="0" width="110" height="126" rx="20" class="soft"/>
+    <path d="M22 30h66M22 54h66M22 78h48" class="outline"/>
+    <circle cx="132" cy="40" r="15" class="teal"/><circle cx="164" cy="70" r="15" class="teal"/><circle cx="132" cy="100" r="15" class="teal"/>
+    <path d="M143 40h14M143 70h36M143 100h14" class="fine"/>
+  </g>
+  
+</g>
+<path d="M931 266H960" class="arrow"/><path d="M950 256 966 266 950 276" class="arrow"/>
+
+<g transform="translate(976 156)">
+  <rect width="154" height="220" rx="22" class="panel"/>
+  <circle cx="34" cy="34" r="18" class="soft"/><text x="34" y="39" text-anchor="middle" class="label" style="font-size:16px;">4</text>
+  <text x="68" y="40" class="title" style="font-size:20px;">Execution</text>
+  <rect x="28" y="80" width="96" height="102" rx="18" class="teal"/>
+  <path d="M48 108l12 12 24-24M48 136l12 12 24-24M48 164l12 12 24-24" class="outline"/>
+  
+</g>
+
+<g transform="translate(70 470)">
+  <rect width="1060" height="162" rx="24" class="panel"/>
+  <text x="32" y="40" class="label">OPERATING VALUE</text>
+  <text x="32" y="72" class="title" style="font-size:24px;">Repeatability makes technical work scalable</text>
+  <g transform="translate(32 95)">
+    <rect width="236" height="42" rx="16" class="soft"/><text x="118" y="27" text-anchor="middle" class="mini">8 products tested</text>
+    <rect x="256" width="236" height="42" rx="16" class="soft"/><text x="374" y="27" text-anchor="middle" class="mini">10+ regulatory reports</text>
+    <rect x="512" width="236" height="42" rx="16" class="soft"/><text x="630" y="27" text-anchor="middle" class="mini">2 labs adopted tooling</text>
+  </g>
+  <g transform="translate(792 35)">
+    <rect width="224" height="96" rx="18" class="teal"/>
+    <text x="24" y="31" class="chip">TRANSFERABLE SKILL</text>
+    <text x="24" y="60" class="mini" style="font-size:18px; font-weight:700;">Evidence → decision → action</text>
+    
+  </g>
+</g>
+</svg>

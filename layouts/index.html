@@ -68,60 +68,15 @@
         <div class="project-proof-inline"><span><strong>2</strong> medical centers</span><span><strong>TFDA</strong> submission</span></div>
         <div class="project-actions"><a href="{{ "work/medical-ai-product/" | relLangURL }}" class="btn mono-project-btn">{{ if $isZh }}查看專案{{ else }}Explore project{{ end }} <span>↗</span></a></div>
       </div>
-      <a class="project-visual mono-visual" href="{{ "work/medical-ai-product/" | relLangURL }}" aria-label="Open Medical AI to Product case study">
-        <svg class="mono-art-svg" viewBox="0 0 720 440" role="img" aria-label="Clinical imaging data flowing through AI assistance to physician review">
-          <defs><filter id="softShadow1" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-opacity=".08"/></filter></defs>
-          <rect x="28" y="35" width="664" height="370" rx="34" class="art-surface"/>
-          <g filter="url(#softShadow1)">
-            <rect x="72" y="98" width="170" height="230" rx="24" class="art-card"/>
-            <rect x="92" y="120" width="130" height="130" rx="18" class="art-dark"/>
-            <path d="M157 143c-30 0-50 23-50 53 0 37 24 57 50 57 28 0 49-22 49-56 0-31-20-54-49-54Z" class="art-brain"/>
-            <circle cx="181" cy="189" r="10" class="art-accent-fill"/>
-            <path d="M100 286h112M100 304h72" class="art-line"/>
-          </g>
-          <path d="M260 212h104" class="art-connector"/><path d="m357 202 18 10-18 10" class="art-connector"/>
-          <g>
-            <circle cx="405" cy="212" r="58" class="art-ring"/>
-            <circle cx="405" cy="212" r="18" class="art-accent-fill"/>
-            <path d="M405 136v26M405 262v26M329 212h26M455 212h26M350 157l18 18M442 249l18 18M350 267l18-18M442 175l18-18" class="art-accent-stroke"/>
-          </g>
-          <path d="M474 212h82" class="art-connector"/><path d="m549 202 18 10-18 10" class="art-connector"/>
-          <g filter="url(#softShadow1)">
-            <rect x="574" y="100" width="92" height="224" rx="24" class="art-card"/>
-            <circle cx="620" cy="159" r="23" class="art-person"/>
-            <path d="M591 235c5-39 16-57 29-57s24 18 29 57" class="art-person"/>
-            <path d="m602 266 13 13 26-28" class="art-accent-stroke"/>
-          </g>
-          <circle cx="80" cy="65" r="5" class="art-accent-fill"/><path d="M95 65h94" class="art-faint-line"/>
-        </svg>
+      <a class="project-visual mono-visual editorial-visual" href="{{ "work/medical-ai-product/" | relLangURL }}" aria-label="Open Medical AI to Product case study">
+        <img src="{{ "images/projects/medical-ai-product/clinical-product-workflow.svg" | relURL }}" alt="Clinical product workflow showing imaging input, AI review, lesion evidence, and physician decision">
         <span class="mono-visual-corner">01</span>
       </a>
     </article>
 
     <article class="project-feature project-feature-secondary project-reverse mono-project reveal">
-      <a class="project-visual mono-visual" href="{{ "work/clinical-ai-at-scale/" | relLangURL }}" aria-label="Open lesion-wise clinical AI case study">
-        <svg class="mono-art-svg" viewBox="0 0 720 440" role="img" aria-label="MRI candidates filtered through a lesion-wise AI cascade into tumor typing outputs">
-          <rect x="28" y="35" width="664" height="370" rx="34" class="art-surface"/>
-          <g transform="translate(80 105)">
-            <rect x="0" y="34" width="145" height="185" rx="22" class="art-card"/>
-            <rect x="18" y="54" width="109" height="109" rx="18" class="art-dark"/>
-            <path d="M73 70c-28 0-45 20-45 43 0 29 18 47 45 47 26 0 44-18 44-46 0-25-17-44-44-44Z" class="art-brain"/>
-            <circle cx="92" cy="109" r="8" class="art-accent-fill"/>
-            <circle cx="54" cy="129" r="5" class="art-faint-fill"/>
-          </g>
-          <g transform="translate(266 116)">
-            <path d="M0 0h150l-54 74v93l-42 21V74L0 0Z" class="art-funnel"/>
-            <circle cx="43" cy="38" r="7" class="art-faint-fill"/><circle cx="76" cy="26" r="7" class="art-accent-fill"/><circle cx="108" cy="42" r="7" class="art-faint-fill"/>
-            <circle cx="75" cy="122" r="9" class="art-accent-fill"/>
-          </g>
-          <path d="M226 214h58" class="art-connector"/><path d="m277 204 18 10-18 10" class="art-connector"/>
-          <path d="M418 214h66" class="art-connector"/><path d="m477 204 18 10-18 10" class="art-connector"/>
-          <g transform="translate(510 118)">
-            <circle cx="56" cy="26" r="17" class="art-node"/><circle cx="98" cy="61" r="17" class="art-node"/><circle cx="82" cy="112" r="17" class="art-node accent"/><circle cx="30" cy="116" r="17" class="art-node"/><circle cx="18" cy="64" r="17" class="art-node"/>
-            <path d="M56 43 82 95M84 73 77 96M68 110 47 115M33 101 24 80M34 52 48 38" class="art-faint-line"/>
-          </g>
-          <circle cx="80" cy="65" r="5" class="art-accent-fill"/><path d="M95 65h94" class="art-faint-line"/>
-        </svg>
+      <a class="project-visual mono-visual editorial-visual" href="{{ "work/clinical-ai-at-scale/" | relLangURL }}" aria-label="Open lesion-wise clinical AI case study">
+        <img src="{{ "images/projects/medical-ai-product/three-stage-ai-cascade.svg" | relURL }}" alt="Lesion-wise brain tumor AI pipeline showing MRI input, candidate generation, false-positive reduction, and tumor typing">
         <span class="mono-visual-corner">02</span>
       </a>
       <div class="project-copy">
@@ -141,21 +96,8 @@
         <div class="project-proof-inline"><span><strong>8</strong> products tested</span><span><strong>10+</strong> certification reports</span></div>
         <div class="project-actions"><a href="{{ "work/structured-validation/" | relLangURL }}" class="btn mono-project-btn">{{ if $isZh }}查看專案{{ else }}Explore project{{ end }} <span>↗</span></a></div>
       </div>
-      <a class="project-visual mono-visual" href="{{ "work/structured-validation/" | relLangURL }}" aria-label="Open analytics and operations case study">
-        <svg class="mono-art-svg" viewBox="0 0 720 440" role="img" aria-label="Structured evidence transformed through decision logic into repeatable execution">
-          <rect x="28" y="35" width="664" height="370" rx="34" class="art-surface"/>
-          <g transform="translate(80 110)">
-            <rect width="170" height="210" rx="22" class="art-card"/>
-            <path d="M28 52h114M28 84h78M28 116h114M28 148h60" class="art-line"/>
-            <circle cx="138" cy="84" r="8" class="art-accent-fill"/><circle cx="106" cy="148" r="8" class="art-faint-fill"/>
-          </g>
-          <path d="M256 214h82" class="art-connector"/><path d="m331 204 18 10-18 10" class="art-connector"/>
-          <g transform="translate(350 146)"><path d="M80 0 160 68 80 136 0 68 80 0Z" class="art-diamond"/><circle cx="80" cy="68" r="18" class="art-accent-fill"/></g>
-          <path d="M510 214h70" class="art-connector"/><path d="m573 204 18 10-18 10" class="art-connector"/>
-          <g transform="translate(594 130)"><rect width="72" height="168" rx="20" class="art-card"/><path d="m18 42 9 9 18-19M18 82l9 9 18-19M18 122l9 9 18-19" class="art-accent-stroke"/></g>
-          <path d="M620 321c-74 58-316 54-419 10" class="art-loop"/><path d="m198 331 15 0-7 13" class="art-loop"/>
-          <circle cx="80" cy="65" r="5" class="art-accent-fill"/><path d="M95 65h94" class="art-faint-line"/>
-        </svg>
+      <a class="project-visual mono-visual editorial-visual" href="{{ "work/structured-validation/" | relLangURL }}" aria-label="Open analytics and operations case study">
+        <img src="{{ "images/projects/structured-validation-workflow.svg" | relURL }}" alt="Structured validation workflow showing evidence intake, criteria mapping, reporting, and execution tracking">
         <span class="mono-visual-corner">03</span>
       </a>
     </article>

@@ -1,1 +1,122 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-labelledby="t d"><title id="t">Lesion-wise AI cascade</title><desc id="d">Abstract portfolio illustration of MRI candidate generation, false-positive filtering, and lesion typing.</desc><style>.bg{fill:#fcfcfb}.card{fill:#fff;stroke:#d9dee7;stroke-width:2}.dark{fill:#111318}.blue{fill:#2864ff}.line{fill:none;stroke:#bbc2cd;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.bline{fill:none;stroke:#2864ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.ghost{fill:#d7dce4}.node{fill:#fff;stroke:#111318;stroke-width:3}</style><rect class="bg" width="1200" height="500" rx="30"/><g transform="translate(95 120)"><rect x="28" y="28" width="230" height="245" rx="30" class="card"/><rect x="0" y="0" width="230" height="245" rx="30" class="card"/><rect x="34" y="35" width="162" height="162" rx="24" class="dark"/><path d="M115 58c-41 0-67 31-67 69 0 49 29 73 67 73 37 0 65-28 65-72 0-40-26-70-65-70Z" class="line" stroke="#fff"/><circle cx="141" cy="120" r="12" class="blue"/><circle cx="91" cy="151" r="8" class="ghost"/></g><path d="M370 250h130" class="line"/><path d="m486 238 22 12-22 12" class="line"/><path d="M520 125h225l-80 112v133l-63 30V237l-82-112Z" class="card"/><circle cx="585" cy="184" r="12" class="ghost"/><circle cx="633" cy="167" r="12" class="blue"/><circle cx="682" cy="191" r="12" class="ghost"/><circle cx="633" cy="308" r="15" class="blue"/><path d="M753 250h115" class="line"/><path d="m854 238 22 12-22 12" class="line"/><g transform="translate(900 120)"><circle cx="90" cy="35" r="26" class="node"/><circle cx="155" cy="88" r="26" class="node"/><circle cx="130" cy="167" r="26" class="node" fill="#2864ff" stroke="#2864ff"/><circle cx="50" cy="173" r="26" class="node"/><circle cx="25" cy="92" r="26" class="node"/><path d="M90 61 130 141M133 109 124 142M104 166 76 171M52 147 33 117M49 73 70 51" class="line"/></g><circle cx="85" cy="72" r="7" class="blue"/><path d="M105 72h150" class="line"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="t d">
+<title id="t">Lesion-wise AI cascade overview</title>
+<desc id="d">Editorial diagram showing MRI input, candidate generation, false-positive reduction, and lesion-level tumor typing.</desc>
+
+<style>
+  .bg{fill:#FBFCFE}
+  .panel{fill:#FFFFFF;stroke:#D9E0EC;stroke-width:2.4}
+  .soft{fill:#F4F7FB;stroke:#D9E0EC;stroke-width:1.8}
+  .title{font:700 17px/1.25 Inter,Arial,sans-serif;fill:#172B4D;letter-spacing:.01em}
+  .label{font:700 14px/1 Inter,Arial,sans-serif;fill:#123F72;letter-spacing:.08em}
+  .meta{font:500 11.5px/1.5 Inter,Arial,sans-serif;fill:#5A6B86}
+  .mini{font:600 12px/1.3 Inter,Arial,sans-serif;fill:#2E3E57}
+  .chip{font:700 11px/1 Inter,Arial,sans-serif;fill:#2F4D79;letter-spacing:.06em}
+  .metric{font:700 21px/1 Inter,Arial,sans-serif;fill:#102A56}
+  .metricLabel{font:600 11.5px/1.3 Inter,Arial,sans-serif;fill:#677791}
+  .line{stroke:#B8C3D6;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;fill:none}
+  .arrow{stroke:#3A67FF;stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round;fill:none}
+  .accent{fill:#3A67FF}
+  .navy{fill:#172B4D}
+  .teal{fill:#E9F7F7;stroke:#B8E2E3;stroke-width:1.6}
+  .teal2{fill:#1D8B97}
+  .sand{fill:#F9F5ED;stroke:#E6D8BB;stroke-width:1.5}
+  .pink{fill:#FAF1F4;stroke:#E9CAD4;stroke-width:1.5}
+  .outline{stroke:#172B4D;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;fill:none}
+  .fine{stroke:#8FA0BA;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;fill:none}
+  .faint{fill:#EEF3FA}
+  .muted{fill:#91A0B8}
+</style>
+<rect class="bg" width="1200" height="720" rx="28"/>
+<text x="70" y="72" class="title" style="font-size:34px; font-weight:800;">Lesion-wise Brain Tumor AI Pipeline</text>
+<text x="70" y="105" class="meta" style="font-size:18px; font-weight:600; fill:#2C7785;">Sensitivity-first detection with lesion-level refinement</text>
+<path d="M70 126H1130" class="line"/>
+
+<g transform="translate(70 156)">
+  <rect width="250" height="212" rx="22" class="panel"/>
+  <circle cx="34" cy="34" r="18" class="soft"/><text x="34" y="39" text-anchor="middle" class="label" style="font-size:16px;">1</text>
+  <text x="68" y="40" class="title" style="font-size:21px;">MRI input</text>
+  <g transform="translate(26 72)">
+    <rect x="0" y="6" width="82" height="66" rx="14" class="soft"/>
+    <path d="M16 39h50M23 26h36M23 52h36" class="fine"/>
+    <g transform="translate(100 0)">
+      <rect x="0" y="0" width="116" height="92" rx="18" class="navy"/>
+      <path d="M58 15c-23 0-40 17-40 39 0 28 17 45 40 45 21 0 39-16 39-44 0-23-17-40-39-40Z" stroke="#F7FAFF" stroke-width="3" fill="none"/>
+      <circle cx="73" cy="52" r="7" class="accent"/>
+    </g>
+  </g>
+  <rect x="26" y="166" width="198" height="28" rx="14" class="teal"/>
+  <text x="125" y="185" text-anchor="middle" class="chip">T1C + T2 MRI</text>
+</g>
+<path d="M327 261H356" class="arrow"/><path d="M346 251 362 261 346 271" class="arrow"/>
+
+<g transform="translate(372 156)">
+  <rect width="250" height="212" rx="22" class="panel"/>
+  <circle cx="34" cy="34" r="18" class="soft"/><text x="34" y="39" text-anchor="middle" class="label" style="font-size:16px;">2</text>
+  <text x="68" y="40" class="title" style="font-size:21px;">Candidate generation</text>
+  <g transform="translate(35 80)">
+    <circle cx="78" cy="45" r="42" class="soft"/>
+    <path d="M78 9c-20 0-34 14-34 33 0 22 14 37 34 37 19 0 33-14 33-36 0-19-14-34-33-34Z" class="outline"/>
+    <circle cx="91" cy="40" r="6" class="accent"/>
+    <circle cx="71" cy="59" r="5" class="teal2"/>
+    <circle cx="58" cy="47" r="4.5" class="muted"/>
+    <circle cx="151" cy="24" r="11" class="soft"/>
+    <circle cx="166" cy="52" r="11" class="soft"/>
+    <circle cx="154" cy="80" r="11" class="soft"/>
+    <path d="M114 45H138M121 56l17 0" class="arrow"/>
+  </g>
+  <rect x="26" y="166" width="198" height="28" rx="14" class="teal"/>
+  <text x="125" y="185" text-anchor="middle" class="chip">Sensitivity-first proposals</text>
+</g>
+<path d="M629 261H658" class="arrow"/><path d="M648 251 664 261 648 271" class="arrow"/>
+
+<g transform="translate(674 156)">
+  <rect width="250" height="212" rx="22" class="panel"/>
+  <circle cx="34" cy="34" r="18" class="soft"/><text x="34" y="39" text-anchor="middle" class="label" style="font-size:16px;">3</text>
+  <text x="68" y="40" class="title" style="font-size:21px;">FP reduction</text>
+  <g transform="translate(40 78)">
+    <path d="M0 0h122l-42 58v52l-38 17V58L0 0Z" class="panel"/>
+    <circle cx="29" cy="25" r="7" class="muted"/>
+    <circle cx="61" cy="22" r="7" class="accent"/>
+    <circle cx="92" cy="25" r="7" class="muted"/>
+    <circle cx="61" cy="89" r="9" class="accent"/>
+    <path d="M150 18l16 16M150 46l16-16M145 80l20 0" class="fine"/>
+  </g>
+  <rect x="26" y="166" width="198" height="28" rx="14" class="teal"/>
+  <text x="125" y="185" text-anchor="middle" class="chip">Filter false positives</text>
+</g>
+<path d="M931 261H960" class="arrow"/><path d="M950 251 966 261 950 271" class="arrow"/>
+
+<g transform="translate(976 156)">
+  <rect width="154" height="212" rx="22" class="panel"/>
+  <circle cx="34" cy="34" r="18" class="soft"/><text x="34" y="39" text-anchor="middle" class="label" style="font-size:16px;">4</text>
+  <text x="68" y="40" class="title" style="font-size:20px;">Tumor typing</text>
+  <g transform="translate(22 76)">
+    <circle cx="55" cy="18" r="13" class="soft"/><circle cx="92" cy="48" r="13" class="soft"/><circle cx="82" cy="92" r="13" class="accent"/>
+    <circle cx="28" cy="92" r="13" class="soft"/><circle cx="18" cy="48" r="13" class="soft"/>
+    <path d="M55 31 80 81M80 57 83 79M68 92 41 92M28 79 20 60M31 41 46 25" class="fine"/>
+  </g>
+  <rect x="18" y="166" width="118" height="28" rx="14" class="teal"/>
+  <text x="77" y="185" text-anchor="middle" class="chip">Five classes</text>
+</g>
+
+<g transform="translate(70 456)">
+  <rect width="1060" height="182" rx="24" class="panel"/>
+  <text x="32" y="40" class="label">COHORT DESIGN</text>
+  <text x="32" y="72" class="title" style="font-size:24px;">Trained at scale, tested independently</text>
+  <g transform="translate(32 100)">
+    <rect width="220" height="54" rx="18" class="soft"/>
+    <text x="24" y="25" class="metric" style="font-size:26px;">12,125</text><text x="24" y="45" class="metricLabel">development MRI exams</text>
+    <rect x="246" width="220" height="54" rx="18" class="soft"/>
+    <text x="270" y="25" class="metric" style="font-size:26px;">264</text><text x="270" y="45" class="metricLabel">independent test exams</text>
+    <rect x="492" width="220" height="54" rx="18" class="soft"/>
+    <text x="516" y="25" class="metric" style="font-size:26px;">2</text><text x="516" y="45" class="metricLabel">medical centers</text>
+  </g>
+  <g transform="translate(784 44)">
+    <rect width="236" height="104" rx="18" class="teal"/>
+    <text x="24" y="30" class="chip">PORTFOLIO FRAMING</text>
+    <text x="24" y="58" class="mini" style="font-size:17px; font-weight:700;">Development ≠ final evaluation</text>
+    <text x="24" y="82" class="meta" style="font-size:13px;">12.1K describes the build cohort.</text>
+    <text x="24" y="100" class="meta" style="font-size:13px;">264 is the independent test cohort.</text>
+  </g>
+</g>
+</svg>

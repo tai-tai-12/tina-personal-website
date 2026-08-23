@@ -1,9 +1,9 @@
 ---
-title: "把複雜驗證流程轉化為結構化決策"
+title: "建立可重複的驗證與分析工作流程"
 translationKey: "structured-validation"
 tags: ["Analytics", "Operations", "Process Design", "Decision-Making"]
 category: "分析 · 營運"
-summary: "將技術證據、合規流程與分析工具整理成可重複執行的驗證系統。"
+summary: "把測試證據、報告與定量分析工具整理成可追蹤、可重複的受規範驗證流程。"
 proof: ["8 products tested", "10+ regulatory reports"]
 visual: "analytics-visual"
 weight: 3
@@ -11,7 +11,10 @@ weight: 3
 
 在後來的 Product 與 Clinical AI 工作之前，我先累積了游離輻射設備的技術驗證與法規測試經驗。這段工作讓我學到如何把複雜證據變成可追蹤、可重複、可支援決策的流程。
 
-{{< site-img src="images/projects/structured-validation-banner.svg" alt="結構化驗證流程，包含證據收集、定量分析、報告準備與執行追蹤" >}}
+<figure class="case-visual case-visual-wide">
+  {{< site-img src="images/projects/structured-validation-bmd.webp" alt="以 MATLAB 進行定量 CT 骨密度與骨小樑分析的代表性工作流程" >}}
+  <figcaption>此時期的代表性分析工具：以 MATLAB 將 CT 影像轉為可重複的定量測量；更廣泛的工作也包含第三方測試、認證報告與稽核協調。</figcaption>
+</figure>
 
 ## 挑戰
 

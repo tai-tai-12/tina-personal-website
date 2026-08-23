@@ -6,6 +6,7 @@
     <nav class="nav" data-menu>
       <a href="{{ "work/" | relLangURL }}">{{ if $isZh }}專案{{ else }}Work{{ end }}</a>
       <a href="{{ "experience/" | relLangURL }}">{{ if $isZh }}經歷{{ else }}Experience{{ end }}</a>
+      <a href="{{ "education/" | relLangURL }}">{{ if $isZh }}學歷{{ else }}Education{{ end }}</a>
       <a href="{{ "research/" | relLangURL }}">{{ if $isZh }}研究{{ else }}Research{{ end }}</a>
       <a href="{{ "about/" | relLangURL }}">{{ if $isZh }}關於我{{ else }}About{{ end }}</a>
       <a href="{{ .Site.Params.resume | relURL }}" target="_blank" rel="noreferrer">Resume</a>

@@ -10,11 +10,11 @@
   <article class="work-index-card mono-work-card reveal">
     <a class="mono-work-visual {{ .Params.visual }}" href="{{ .RelPermalink }}" aria-label="Open {{ .Title }}">
       {{ if eq .Params.visual "product-visual" }}
-      <img src="{{ "images/projects/medical-ai-product/clinical-product-real.webp" | relURL }}" alt="Clinical product workflow illustration">
+      <img src="{{ "images/projects/medical-ai-product/clinical-product-home.webp" | relURL }}" alt="Clinical product workflow illustration">
       {{ else if eq .Params.visual "clinical-ai-visual" }}
-      <img src="{{ "images/projects/medical-ai-product/clinical-ai-real.webp" | relURL }}" alt="Lesion-wise brain tumor AI pipeline illustration">
+      <img src="{{ "images/projects/medical-ai-product/clinical-ai-home.webp" | relURL }}" alt="Lesion-wise brain tumor AI pipeline illustration">
       {{ else }}
-      <img src="{{ "images/projects/structured-validation-banner.svg" | relURL }}" alt="Structured validation workflow illustration">
+      <img src="{{ "images/projects/structured-validation-home.webp" | relURL }}" alt="Structured validation workflow illustration">
       {{ end }}
     </a>
     <div class="mono-work-card-body">

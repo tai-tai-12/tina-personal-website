@@ -1,5 +1,9 @@
 {{ define "main" }}
-<div class="page-hero section-shell compact"><div class="shell narrow reveal"><p class="kicker">Tina Tai</p><h1>{{ .Title }}</h1>{{ with .Params.description }}<p class="lede small">{{ . }}</p>{{ end }}</div></div>
+<div class="page-hero section-shell compact"><div class="shell narrow reveal">
+  {{ partial "page-context.html" . }}
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.description }}<p class="lede small">{{ . }}</p>{{ end }}
+</div></div>
 <section class="section-shell article-section"><div class="shell narrow prose reveal">{{ .Content }}</div>
 {{ if eq .Section "work" }}<div class="shell work-list">{{ range .Pages }}<a class="work-list-item reveal" href="{{ .RelPermalink }}"><div><span class="kicker">Case Study</span><h2>{{ .Title }}</h2></div><span>→</span></a>{{ end }}</div>{{ end }}
 </section>{{ end }}

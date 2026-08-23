@@ -1,0 +1,59 @@
+{{ define "main" }}
+{{ $isZh := eq .Site.Language.Lang "zh" }}
+<div class="page-hero section-shell compact research-page-hero"><div class="shell narrow reveal">
+  {{ partial "page-context.html" . }}
+  <h1>{{ .Title }}</h1>
+  <p class="lede small">{{ if $isZh }}我的研究背景聚焦醫療影像、臨床 AI 與證據導向驗證；這些訓練也成為我做產品與分析工作的技術基礎。{{ else }}My research background centers on medical imaging, clinical AI, and evidence-driven validation—the technical grounding I bring to product and analytics work.{{ end }}</p>
+</div></div>
+
+<section class="section-shell research-detail-section"><div class="shell research-detail-shell">
+  <div class="research-detail-heading reveal">
+    <span class="kicker">{{ if $isZh }}精選研究{{ else }}FEATURED RESEARCH{{ end }}</span>
+    <h2>{{ if $isZh }}從模型驗證，到國際研究溝通。{{ else }}From model validation to international research communication.{{ end }}</h2>
+  </div>
+
+  <div class="research-editorial-grid-v54 reveal">
+    <article class="research-feature-card-v54 research-midl-v54">
+      <figure><img src="{{ "images/research/midl-poster.webp" | relURL }}" alt="Tina Tai with her MIDL 2026 brain tumor AI poster"></figure>
+      <div class="research-feature-copy-v54">
+        <span class="research-meta">MIDL 2026 · SHORT PAPER POSTER</span>
+        <h3>{{ if $isZh }}逐病灶腦瘤 AI{{ else }}Lesion-wise brain tumor AI{{ end }}</h3>
+        <p>{{ if $isZh }}多序列 MRI 的偽陽性降低與五類病灶分類。{{ else }}False-positive reduction and five-class lesion typing in multi-sequence MRI.{{ end }}</p>
+      </div>
+    </article>
+
+    <div class="research-side-stack-v54">
+      <article class="research-feature-card-v54 research-talk-v54">
+        <figure><img src="{{ "images/research/amlds-talk.webp" | relURL }}" alt="Tina Tai giving an oral presentation at AMLDS 2026"></figure>
+        <div class="research-feature-copy-v54">
+          <span class="research-meta">IEEE AMLDS 2026 · ORAL PRESENTATION</span>
+          <h3>{{ if $isZh }}Mask-gated 偽陽性降低{{ else }}Mask-gated false-positive reduction{{ end }}</h3>
+          <p>{{ if $isZh }}逐病灶候選驗證與敏感度—偽陽性取捨分析。{{ else }}Lesion-wise candidate verification and sensitivity–false-positive trade-off analysis.{{ end }}</p>
+        </div>
+      </article>
+
+      <article class="research-feature-card-v54 research-award-v54">
+        <figure><img src="{{ "images/research/amlds-award.webp" | relURL }}" alt="Tina Tai holding her AMLDS 2026 Outstanding Oral Presentation certificate"></figure>
+        <div class="research-feature-copy-v54">
+          <span class="research-meta">RECOGNITION · AMLDS 2026</span>
+          <h3>Outstanding Oral Presentation</h3>
+          <p>{{ if $isZh }}Medical Imaging and Diagnostic AI session · Osaka, Japan.{{ else }}Medical Imaging and Diagnostic AI session · Osaka, Japan.{{ end }}</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</div></section>
+
+<section class="section-shell alt research-publication-section"><div class="shell narrow">
+  <div class="publication-heading reveal"><span class="kicker">{{ if $isZh }}研究成果{{ else }}SELECTED PUBLICATIONS & PRESENTATIONS{{ end }}</span></div>
+  <div class="publication-list publication-list-v54 reveal">
+    <div class="publication-item"><span>2026</span><div><strong>MIDL</strong><p><em>A Lesion-Wise Cascade for False-Positive Reduction and Lesion-Level Brain Tumor Typing in Multi-Sequence MRI</em></p></div></div>
+    <div class="publication-item"><span>2026</span><div><strong>IEEE AMLDS</strong><p><em>Lesion-Wise False-Positive Reduction for Brain Tumor Candidate Masks in Multi-Modal MRI via Mask-Gated 2.5D Spatiotemporal Classification</em></p></div></div>
+    <div class="publication-item"><span>2024</span><div><strong>TSBME</strong><p><em>Simultaneous Brain Tumor Segmentation and Classification in 3D MRI with a Multi-Task UNet</em></p></div></div>
+  </div>
+  <div class="research-summary-lines reveal">
+    <div><strong>{{ if $isZh }}研究焦點{{ else }}Focus{{ end }}</strong><span>{{ if $isZh }}逐病灶醫療 AI · 臨床驗證 · 影像工作流程轉譯{{ else }}Lesion-wise medical AI · clinical validation · imaging workflow translation{{ end }}</span></div>
+    <div><strong>{{ if $isZh }}其他獲獎{{ else }}Additional recognition{{ end }}</strong><span>Outstanding Thesis Award · NYCU</span></div>
+  </div>
+</div></section>
+{{ end }}

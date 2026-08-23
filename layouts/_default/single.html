@@ -1,9 +1,9 @@
 {{ define "main" }}
 <div class="page-hero section-shell compact"><div class="shell narrow reveal">
-  {{ if eq .Section "work" }}<p class="kicker">Selected Work</p>{{ end }}
+  {{ partial "page-context.html" . }}
   <h1>{{ .Title }}</h1>
   {{ with .Params.tags }}<div class="tag-row page-tags">{{ range . }}<span>{{ . }}</span>{{ end }}</div>{{ end }}
 </div></div>
 <section class="section-shell article-section"><article class="shell narrow prose reveal">{{ .Content }}</article></section>
-{{ if eq .Section "work" }}<section class="section-shell alt"><div class="shell narrow"><a class="text-link" href="{{ "work/" | relLangURL }}">← Back to selected work</a></div></section>{{ end }}
+{{ if eq .Section "work" }}<section class="section-shell alt back-band"><div class="shell narrow"><a class="text-link" href="{{ "work/" | relLangURL }}">← Back to selected work</a></div></section>{{ end }}
 {{ end }}

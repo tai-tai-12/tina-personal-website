@@ -85,7 +85,7 @@
       <div class="project-copy">
         <div class="project-kicker-row"><span class="project-no">01</span><span class="project-type">FLAGSHIP CASE</span></div>
         <h3>{{ if $isZh }}從醫療 AI 研究走向可部署產品{{ else }}From Medical AI Research to a Deployable Product{{ end }}</h3>
-        <p>{{ if $isZh }}把腦瘤 MRI 研究轉化為臨床產品工作流程，串接驗證、法規送件與部署準備。{{ else }}Translated brain tumor MRI research into a clinical product workflow spanning validation, regulatory submission, and deployment readiness.{{ end }}</p>
+        <p>{{ if $isZh }}把腦瘤 MRI 研究轉化為以醫師為核心的產品工作流程，串接驗證、法規送件與部署準備。{{ else }}Translated brain tumor MRI research into a physician-led product workflow spanning validation, regulatory submission, and deployment readiness.{{ end }}</p>
         <div class="tag-row"><span>Product</span><span>Healthcare AI</span><span>Regulatory</span></div>
         <div class="metric-row-v3 metric-row-compact">
           <div><strong>2</strong><span>{{ if $isZh }}medical centers{{ else }}medical centers{{ end }}</span></div>
@@ -93,52 +93,55 @@
         </div>
         <a href="{{ "work/medical-ai-product/" | relLangURL }}" class="project-link">{{ if $isZh }}查看案例{{ else }}View case study{{ end }} <span>→</span></a>
       </div>
-      <a class="project-visual project-system-visual product-path-visual" href="{{ "work/medical-ai-product/" | relLangURL }}" aria-label="Open Medical AI to Product case study">
-        <div class="visual-system-head"><span>PRODUCT TRANSLATION</span><i></i></div>
-        <div class="product-path-core product-path-core-v53" aria-hidden="true">
-          <div class="system-node">
-            <svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/></svg>
-            <b>{{ if $isZh }}臨床資料{{ else }}Clinical data{{ end }}</b><small>PACS + MRI</small>
+      <a class="project-visual project-system-visual product-path-visual product-path-v54" href="{{ "work/medical-ai-product/" | relLangURL }}" aria-label="Open Medical AI to Product case study">
+        <div class="visual-system-head"><span>CLINICAL PRODUCT PATH</span><i></i><em>PHYSICIAN-LED</em></div>
+        <div class="product-flow-v54" aria-hidden="true">
+          <div class="flow-node-v54">
+            <div class="flow-icon-v54"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8M8 13h5"/></svg></div>
+            <b>{{ if $isZh }}MRI / PACS{{ else }}MRI / PACS{{ end }}</b><small>{{ if $isZh }}臨床影像資料{{ else }}Clinical imaging data{{ end }}</small>
           </div>
-          <span class="system-arrow">→</span>
-          <div class="system-node">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><path d="M12 7v10M7 12h10"/></svg>
-            <b>{{ if $isZh }}AI 分析{{ else }}AI analysis{{ end }}</b><small>{{ if $isZh }}候選病灶{{ else }}Lesion candidates{{ end }}</small>
+          <span class="flow-line-v54"></span>
+          <div class="flow-node-v54">
+            <div class="flow-icon-v54"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div>
+            <b>{{ if $isZh }}AI 分析{{ else }}AI analysis{{ end }}</b><small>{{ if $isZh }}候選病灶與圈註{{ else }}Candidates + contours{{ end }}</small>
           </div>
-          <span class="system-arrow">→</span>
-          <div class="system-node">
-            <svg viewBox="0 0 24 24"><path d="M5 4h14v16H5z"/><path d="M8 9h8M8 13h6M8 17h4"/></svg>
-            <b>{{ if $isZh }}病灶檢閱{{ else }}Lesion review{{ end }}</b><small>{{ if $isZh }}結果與報告{{ else }}Results + report{{ end }}</small>
+          <span class="flow-line-v54"></span>
+          <div class="flow-node-v54">
+            <div class="flow-icon-v54"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5z"/><path d="M8 9h8M8 13h6M8 17h4"/></svg></div>
+            <b>{{ if $isZh }}檢閱與報告{{ else }}Review + report{{ end }}</b><small>{{ if $isZh }}病灶層級資訊{{ else }}Lesion-level evidence{{ end }}</small>
           </div>
-          <span class="system-arrow">→</span>
-          <div class="system-node node-accent">
-            <svg viewBox="0 0 24 24"><path d="M12 3 4 7v5c0 5 3.4 8 8 9 4.6-1 8-4 8-9V7l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg>
-            <b>{{ if $isZh }}醫師決策{{ else }}Physician decision{{ end }}</b><small>{{ if $isZh }}最終判讀{{ else }}Final interpretation{{ end }}</small>
+          <span class="flow-line-v54"></span>
+          <div class="flow-node-v54 flow-node-final-v54">
+            <div class="flow-icon-v54"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3"/><path d="M6 20c.7-4 2.7-6 6-6s5.3 2 6 6"/><path d="m16.5 12.5 1.5 1.5 3-3"/></svg></div>
+            <b>{{ if $isZh }}醫師決策{{ else }}Physician decision{{ end }}</b><small>{{ if $isZh }}確認、修正、最終判讀{{ else }}Confirm · modify · interpret{{ end }}</small>
           </div>
         </div>
-        <div class="visual-footnote">{{ if $isZh }}研究 → 驗證 → 臨床產品流程{{ else }}Research → validation → clinical product workflow{{ end }}</div>
+        <div class="visual-footnote">{{ if $isZh }}研究 → 臨床整合 → 驗證 → 法規準備{{ else }}Research → clinical integration → validation → regulatory readiness{{ end }}</div>
         <span class="visual-open">↗</span>
       </a>
     </article>
 
     <article class="project-feature project-feature-secondary project-reverse reveal">
-      <div class="project-visual project-system-visual cascade-summary-visual" role="img" aria-label="Three-stage clinical AI evaluation summary">
-        <div class="visual-system-head"><span>LESION-WISE AI CASCADE</span><i></i></div>
-        <div class="cascade-core">
-          <div class="cascade-stage"><span>0</span><b>{{ if $isZh }}候選生成{{ else }}Candidate generation{{ end }}</b><small>{{ if $isZh }}敏感度優先{{ else }}Sensitivity-first{{ end }}</small></div>
-          <span class="system-arrow">→</span>
-          <div class="cascade-stage"><span>1</span><b>{{ if $isZh }}偽陽性降低{{ else }}FP reduction{{ end }}</b><small>{{ if $isZh }}逐病灶篩選{{ else }}Lesion-wise filtering{{ end }}</small></div>
-          <span class="system-arrow">→</span>
-          <div class="cascade-stage"><span>2</span><b>{{ if $isZh }}五分類{{ else }}5-class typing{{ end }}</b><small>{{ if $isZh }}保留病灶{{ else }}Retained lesions{{ end }}</small></div>
+      <div class="project-visual project-system-visual cascade-summary-visual cascade-v54" role="img" aria-label="Three-stage lesion-wise clinical AI evaluation summary">
+        <div class="visual-system-head"><span>LESION-WISE AI CASCADE</span><i></i><em>INDEPENDENT TEST</em></div>
+        <div class="cascade-lane-v54" aria-hidden="true">
+          <div class="cascade-node-v54"><span>0</span><div><b>{{ if $isZh }}候選生成{{ else }}Candidate generation{{ end }}</b><small>{{ if $isZh }}敏感度優先{{ else }}Sensitivity-first{{ end }}</small></div></div>
+          <div class="cascade-arrow-v54">→</div>
+          <div class="cascade-node-v54"><span>1</span><div><b>{{ if $isZh }}偽陽性降低{{ else }}FP reduction{{ end }}</b><small>{{ if $isZh }}逐病灶篩選{{ else }}Lesion-wise filtering{{ end }}</small></div></div>
+          <div class="cascade-arrow-v54">→</div>
+          <div class="cascade-node-v54 cascade-node-final-v54"><span>2</span><div><b>{{ if $isZh }}腫瘤分類{{ else }}Tumor typing{{ end }}</b><small>{{ if $isZh }}保留病灶五分類{{ else }}Five-class retained lesions{{ end }}</small></div></div>
         </div>
-        <div class="cohort-proof-grid cohort-proof-grid-v53">
-          <div><strong>12.1K</strong><span>{{ if $isZh }}開發 MRI examinations{{ else }}development MRI exams{{ end }}</span></div>
-          <div><strong>264</strong><span>{{ if $isZh }}獨立測試 examinations{{ else }}independent test exams{{ end }}</span></div>
+        <div class="cohort-band-v54">
+          <div><strong>12,125</strong><span>{{ if $isZh }}development MRI exams{{ else }}development MRI exams{{ end }}</span></div>
+          <i></i>
+          <div><strong>264</strong><span>{{ if $isZh }}independent test exams{{ else }}independent test exams{{ end }}</span></div>
+          <i></i>
+          <div><strong>2</strong><span>{{ if $isZh }}medical centers{{ else }}medical centers{{ end }}</span></div>
         </div>
       </div>
       <div class="project-copy">
         <div class="project-kicker-row"><span class="project-no">02</span><span class="project-type">TECHNICAL + ANALYTICS</span></div>
-        <h3>{{ if $isZh }}大規模臨床 AI 驗證{{ else }}Building and Validating Clinical AI at Scale{{ end }}</h3>
+        <h3>{{ if $isZh }}逐病灶臨床 AI 建立與驗證{{ else }}Building and Validating Lesion-Wise Clinical AI{{ end }}</h3>
         <p>{{ if $isZh }}以兩中心 MRI 資料建立與驗證逐病灶 AI 架構，並將模型表現轉化為可解讀的臨床證據。{{ else }}Built and evaluated a lesion-wise AI cascade on two-center MRI data, with an independent cohort reserved for final end-to-end testing.{{ end }}</p>
         <div class="tag-row"><span>Machine Learning</span><span>Analytics</span><span>Medical Imaging</span></div>
         <a href="{{ "work/clinical-ai-at-scale/" | relLangURL }}" class="project-link">{{ if $isZh }}查看案例{{ else }}View case study{{ end }} <span>→</span></a>
@@ -153,15 +156,16 @@
         <div class="tag-row"><span>Analytics</span><span>Process Design</span><span>Operations</span></div>
         <a href="{{ "work/structured-validation/" | relLangURL }}" class="project-link">{{ if $isZh }}查看案例{{ else }}View case study{{ end }} <span>→</span></a>
       </div>
-      <div class="project-visual project-system-visual decision-system-visual" role="img" aria-label="Structured evidence-to-action decision workflow">
-        <div class="visual-system-head"><span>STRUCTURED DECISION SYSTEM</span><i></i></div>
-        <div class="decision-system-core">
-          <div class="decision-system-step"><span>01</span><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="M7 9h10M7 13h6"/></svg><b>Evidence</b><small>Collect + structure</small></div>
-          <span class="system-arrow">→</span>
-          <div class="decision-system-step"><span>02</span><svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="7"/></svg><b>Decision</b><small>Prioritize + align</small></div>
-          <span class="system-arrow">→</span>
-          <div class="decision-system-step node-accent"><span>03</span><svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg><b>Action</b><small>Execute + track</small></div>
+      <div class="project-visual project-system-visual decision-system-visual decision-v54" role="img" aria-label="Structured evidence-to-action decision workflow">
+        <div class="visual-system-head"><span>STRUCTURED DECISION SYSTEM</span><i></i><em>REPEATABLE</em></div>
+        <div class="decision-loop-v54" aria-hidden="true">
+          <div class="decision-center-v54"><span>DECISION</span><strong>{{ if $isZh }}結構化判斷{{ else }}Structured judgment{{ end }}</strong></div>
+          <div class="decision-orbit-v54 orbit-a"><span>01</span><b>Evidence</b><small>Collect + structure</small></div>
+          <div class="decision-orbit-v54 orbit-b"><span>02</span><b>Prioritize</b><small>Compare + align</small></div>
+          <div class="decision-orbit-v54 orbit-c"><span>03</span><b>Action</b><small>Execute + track</small></div>
+          <svg class="decision-loop-lines-v54" viewBox="0 0 600 260" preserveAspectRatio="none"><path d="M120 145 C210 42 390 42 480 145"/><path d="M475 155 C390 244 210 244 125 155"/></svg>
         </div>
+        <div class="visual-footnote">{{ if $isZh }}證據 → 判斷 → 執行 → 回饋{{ else }}Evidence → judgment → execution → feedback{{ end }}</div>
       </div>
     </article>
   </div>
@@ -181,7 +185,7 @@
       <div class="experience-row">
         <span class="experience-year">2024–2026</span>
         <div class="experience-main"><h3>AITEWAN Biomedical Technology</h3><p>Product Manager</p></div>
-        <div class="experience-tags"><span>Product Strategy</span><span>Regulatory</span><span>Clinical Deployment</span></div>
+        <div class="experience-tags"><span>Product Strategy</span><span>Regulatory</span><span>Clinical Workflow</span></div>
       </div>
       <div class="experience-row">
         <span class="experience-year">2023–2026</span>
@@ -197,25 +201,25 @@
   </div>
 </section>
 
-<section class="section-shell research-v3 research-v53" id="research">
+<section class="section-shell research-v3 research-v54" id="research">
   <div class="shell">
     <div class="section-signature reveal">
       <span class="section-number">03</span><span class="section-rule"></span><span class="section-dot"></span><span class="section-label">{{ if $isZh }}研究與獲獎{{ else }}RESEARCH & RECOGNITION{{ end }}</span>
     </div>
-    <div class="research-v53-grid">
-      <div class="research-v53-copy reveal">
+    <div class="research-v54-grid">
+      <div class="research-v54-copy reveal">
         <h2>{{ if $isZh }}研究讓我更重視證據、驗證與臨床轉譯。{{ else }}Research grounded my approach to evidence, validation, and clinical translation.{{ end }}</h2>
-        <p>{{ if $isZh }}從逐病灶醫療 AI 到國際會議發表，我把研究視為產品與決策工作中的技術基礎。{{ else }}From lesion-wise medical AI to international research presentations, the work built the technical foundation I bring to product and analytics decisions.{{ end }}</p>
+        <p>{{ if $isZh }}研究是我做產品與分析工作的技術基礎，也訓練我更精確地界定證據能支持什麼。{{ else }}It is the technical grounding behind my product and analytics work—and the discipline that taught me to be precise about what evidence can support.{{ end }}</p>
         <a class="text-link" href="{{ "research/" | relLangURL }}">{{ if $isZh }}查看研究與獲獎{{ else }}Explore research & recognition{{ end }} →</a>
       </div>
-      <div class="research-v53-cards reveal delay-1">
-        <a class="research-mini-card midl-mini" href="{{ "research/" | relLangURL }}">
+      <div class="research-strip-v54 reveal delay-1">
+        <a class="research-tile-v54 midl-tile-v54" href="{{ "research/" | relLangURL }}">
           <figure><img src="{{ "images/research/midl-poster.webp" | relURL }}" alt="Tina Tai with her MIDL 2026 brain tumor AI poster"></figure>
-          <div class="research-mini-copy"><span>MIDL · 2026</span><strong>{{ if $isZh }}Short Paper Poster{{ else }}Short Paper Poster{{ end }}</strong><small>{{ if $isZh }}Lesion-wise brain tumor AI{{ else }}Lesion-wise brain tumor AI{{ end }}</small></div>
+          <div><span>MIDL · 2026</span><strong>Short Paper Poster</strong><small>Lesion-wise brain tumor AI</small></div>
         </a>
-        <a class="research-mini-card amlds-mini" href="{{ "research/" | relLangURL }}">
+        <a class="research-tile-v54 amlds-tile-v54" href="{{ "research/" | relLangURL }}">
           <figure><img src="{{ "images/research/amlds-talk.webp" | relURL }}" alt="Tina Tai giving an oral presentation at AMLDS 2026"></figure>
-          <div class="research-mini-copy"><span>AMLDS · 2026</span><strong>{{ if $isZh }}Oral Presentation{{ else }}Oral Presentation{{ end }}</strong><small class="award-inline">Outstanding Oral Presentation</small></div>
+          <div><span>IEEE AMLDS · 2026</span><strong>Oral Presentation</strong><small>Outstanding Oral Presentation</small></div>
         </a>
       </div>
     </div>

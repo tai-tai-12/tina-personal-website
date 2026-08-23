@@ -4,7 +4,7 @@ translationKey: "medical-ai-product"
 tags: ["Product Management", "Healthcare AI", "Regulatory", "Cross-functional Leadership"]
 ---
 
-I helped translate brain-tumor MRI research into a workflow designed for real clinical use, while coordinating the product, validation, and regulatory work needed to move toward deployment.
+I helped translate brain-tumor MRI research into a physician-led workflow designed for real clinical use, while coordinating the product, validation, and regulatory work needed to move toward deployment.
 
 <figure class="case-visual case-visual-vector">
   {{< site-img src="images/projects/medical-ai-product/clinical-product-workflow.svg" alt="Conceptual clinical product workflow from PACS case access through AI-assisted MRI review and physician review" >}}
@@ -18,6 +18,8 @@ A strong model is not yet a deployable product. A clinically useful system has t
 ## My role
 
 I worked across **product management, project leadership, clinical translation, and regulatory execution**. My responsibilities included aligning physicians, engineers, executives, and regulatory stakeholders; organizing validation priorities; supporting TFDA submission work; and improving submission-document management.
+
+[AItewan company website ↗](https://www.aitewan-bio.com/en/)
 
 ## Approach
 
@@ -34,7 +36,7 @@ I worked across **product management, project leadership, clinical translation, 
 
 ## Product + technical decisions
 
-The underlying research used a lesion-wise cascade rather than treating detection as a single end point. A sensitivity-oriented proposal stage generated a broad candidate pool, a downstream classifier suppressed false positives, and the final stage assigned retained lesions to one of five tumor subtypes. The detailed technical evaluation is presented separately in **Building and Validating Clinical AI at Scale**.
+The underlying research used a lesion-wise cascade rather than treating detection as a single end point. A sensitivity-oriented proposal stage generated a broad candidate pool, a downstream classifier suppressed false positives, and the final stage assigned retained lesions to one of five tumor subtypes. The detailed technical evaluation is presented separately in **Building and Validating Lesion-Wise Clinical AI**.
 
 <figure class="case-visual case-visual-vector">
   {{< site-img src="images/projects/medical-ai-product/three-stage-ai-cascade.svg" alt="Three-stage lesion-wise AI cascade for candidate generation, false-positive reduction, and final lesion classification" >}}

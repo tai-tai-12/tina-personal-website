@@ -1,5 +1,5 @@
 ---
-title: "Building and Validating Clinical AI at Scale"
+title: "Building and Validating Lesion-Wise Clinical AI"
 translationKey: "clinical-ai-at-scale"
 tags: ["Machine Learning", "Analytics", "Medical Imaging", "Experimentation"]
 ---

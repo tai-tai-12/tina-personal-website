@@ -8,7 +8,8 @@ proof: ["12.1K development exams", "264 independent test exams"]
 visual: "clinical-ai-visual"
 weight: 2
 heroBackground: "images/projects/work-clinical-ai-v519.webp"
----
+detailHero: "images/projects/detail-v521/clinical-hero-v521.webp"
+detailHeroAlt: "Clinical AI dashboard showing lesion-wise brain MRI analysis"---
 
 這個案例聚焦我的分析與技術能力：如何在真實世界醫學影像資料中建立、評估並溝通模型效能。
 
@@ -31,7 +32,7 @@ heroBackground: "images/projects/work-clinical-ai-v519.webp"
 Development cohort 用於模型開發、內部驗證與 operating-point characterization；**264-case independent clinical test cohort** 則保留給最終 end-to-end evaluation。
 
 <figure class="case-visual case-visual-vector">
-  {{< site-img src="images/projects/medical-ai-product/clinical-ai-real.webp" alt="候選生成、偽陽性降低與保留病灶腫瘤分類的三階段 AI 串聯流程" >}}
+  {{< site-img src="images/projects/detail-v521/clinical-cascade-v521.webp" alt="候選生成、偽陽性降低與保留病灶腫瘤分類的三階段 AI 串聯流程" >}}
   <figcaption>最終碩論的評估架構：Stage 0 建立敏感度導向候選池，Stage 1 去除明顯偽陽性，Stage 2 處理殘餘偽陽性並對保留病灶進行分類。</figcaption>
 </figure>
 
@@ -49,6 +50,11 @@ Development cohort 用於模型開發、內部驗證與 operating-point characte
   <div class="case-metric"><strong>76.89%</strong><span>最終病灶層級 precision</span></div>
   <div class="case-metric"><strong>90.16%</strong><span>保留 true-positive lesions 的五分類 accuracy</span></div>
 </div>
+
+<figure class="case-visual-v521 case-visual-full-v521">
+  {{< site-img src="images/projects/detail-v521/clinical-evaluation-v521.webp" alt="腦部 MRI 病灶層級模型評估與篩選概念流程" >}}
+  <figcaption>概念性作品集視覺：呈現候選病灶篩選、病灶分類與評估邏輯，並非研究程式的逐畫面截圖。</figcaption>
+</figure>
 
 ## 技術深度
 

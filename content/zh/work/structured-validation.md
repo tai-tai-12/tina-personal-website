@@ -9,12 +9,13 @@ visual: "analytics-visual"
 weight: 3
 heroBackground: "images/projects/work-testing-v519.webp"
 contextLabel: "受規範測試 · 作業"
----
+detailHero: "images/projects/detail-v521/testing-hero-v521.webp"
+detailHeroAlt: "Third-party laboratory testing and validation workflow"---
 
 在後來進入醫療 AI 產品工作前，我曾在**陳志成教授的生醫影像物理與儀器實驗室／游離輻射檢驗實驗室**工作，支援實驗室品質作業，以及校內游離輻射產學技術聯盟的營運。
 
 <figure class="case-visual case-visual-wide">
-  {{< site-img src="images/projects/third-party-testing-workflow.webp" alt="第三方游離輻射設備測試概念流程：測試、量測、文件化與審查" >}}
+  {{< site-img src="images/projects/detail-v521/testing-workflow-v521.webp" alt="第三方游離輻射設備測試概念流程：測試、量測、文件化與審查" >}}
   <figcaption>此圖為作品集用的概念流程圖，不是特定客戶報告或實際測試設備的重製。</figcaption>
 </figure>
 

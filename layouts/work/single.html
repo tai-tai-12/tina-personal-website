@@ -1,19 +1,48 @@
 {{ define "main" }}
-{{ $isZh := eq .Site.Language.Lang "zh" }}
-<section class="case-hero-v59 section-shell compact{{ with .Params.heroBackground }} case-hero-has-bg{{ end }}"{{ with .Params.heroBackground }} style="--case-hero-image:url('{{ . | relURL }}')"{{ end }}>
-  <div class="shell case-hero-shell reveal">
-    <div class="case-hero-copy">
-      <a class="case-back-link" href="{{ "work/" | relLangURL }}">← {{ if $isZh }}全部專案{{ else }}All work{{ end }}</a>
-      <span class="case-category-v59">{{ .Params.category }}</span>
+<article class="case-study-v521">
+  <header class="case-hero-v521">
+    <div class="case-hero-v521-inner section-shell compact">
+      <a class="case-back-link-v521" href="{{ "work/" | relLangURL }}">← {{ if eq .Lang "zh" }}返回作品{{ else }}Selected Work{{ end }}</a>
+      <div class="case-kicker-v521">{{ .Params.category | default "CASE STUDY" }}</div>
       <h1>{{ .Title }}</h1>
-      <p>{{ .Params.summary }}</p>
-      {{ with .Params.proof }}<div class="case-hero-proof">{{ range . }}<span>{{ . }}</span>{{ end }}</div>{{ end }}
-      {{ with .Params.tags }}<div class="case-hero-tags">{{ range . }}<span>{{ . }}</span>{{ end }}</div>{{ end }}
+      {{ with .Params.summary }}<p class="case-deck-v521">{{ . }}</p>{{ end }}
+
+      <div class="case-meta-row-v521">
+        {{ range .Params.proof }}<span>{{ . }}</span>{{ end }}
+      </div>
+      <div class="case-tags-v521">
+        {{ range .Params.tags }}<span>{{ . }}</span>{{ end }}
+      </div>
     </div>
+
+    {{ with .Params.detailHero }}
+    <div class="case-hero-media-v521 section-shell">
+      <figure>
+        <img src="{{ . | relURL }}" alt="{{ $.Params.detailHeroAlt | default $.Title }}" loading="eager" decoding="async">
+      </figure>
+    </div>
+    {{ end }}
+  </header>
+
+  <div class="case-reading-layout-v521 section-shell compact">
+    <aside class="case-toc-v521">
+      <div class="case-toc-card-v521">
+        <div class="case-toc-label-v521">{{ if eq .Lang "zh" }}案例導覽{{ else }}CASE STUDY{{ end }}</div>
+        {{ .TableOfContents }}
+        <a class="case-toc-back-v521" href="{{ "work/" | relLangURL }}">{{ if eq .Lang "zh" }}查看所有作品 →{{ else }}All selected work →{{ end }}</a>
+      </div>
+    </aside>
+
+    <main class="case-prose-v521">
+      {{ .Content }}
+    </main>
   </div>
-</section>
-<section class="section-shell case-body-v59">
-  <article class="shell case-prose-v59 reveal">{{ .Content }}</article>
-</section>
-<section class="section-shell alt back-band"><div class="shell narrow"><a class="text-link" href="{{ "work/" | relLangURL }}">← {{ if $isZh }}返回精選專案{{ else }}Back to selected work{{ end }}</a></div></section>
+
+  <footer class="case-next-v521 section-shell compact">
+    <div>
+      <span>{{ if eq .Lang "zh" }}更多作品{{ else }}KEEP EXPLORING{{ end }}</span>
+      <a href="{{ "work/" | relLangURL }}">{{ if eq .Lang "zh" }}回到 Selected Work →{{ else }}Back to Selected Work →{{ end }}</a>
+    </div>
+  </footer>
+</article>
 {{ end }}

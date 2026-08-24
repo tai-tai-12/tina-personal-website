@@ -8,7 +8,8 @@ proof: ["12.1K development exams", "264 independent test exams"]
 visual: "clinical-ai-visual"
 weight: 2
 heroBackground: "images/projects/work-clinical-ai-v519.webp"
----
+detailHero: "images/projects/detail-v521/clinical-hero-v521.webp"
+detailHeroAlt: "Clinical AI dashboard showing lesion-wise brain MRI analysis"---
 
 This case study focuses on the analytical and technical side of my clinical-AI work: building, evaluating, and communicating model performance across real-world medical imaging datasets.
 
@@ -31,7 +32,7 @@ As a research assistant and project lead, I led brain-imaging model development 
 The development cohort was used for model development, internal validation, and operating-point characterization. The **264-case independent clinical test cohort** was reserved for final end-to-end evaluation.
 
 <figure class="case-visual case-visual-vector">
-  {{< site-img src="images/projects/medical-ai-product/clinical-ai-real.webp" alt="Three-stage lesion-wise AI cascade used for candidate generation, false-positive reduction, and retained-lesion tumor typing" >}}
+  {{< site-img src="images/projects/detail-v521/clinical-cascade-v521.webp" alt="Three-stage lesion-wise AI cascade used for candidate generation, false-positive reduction, and retained-lesion tumor typing" >}}
   <figcaption>Final-thesis evaluation framework: Stage 0 generates a sensitivity-oriented candidate pool, Stage 1 removes obvious false positives, and Stage 2 models residual false positives while typing retained lesions.</figcaption>
 </figure>
 
@@ -49,6 +50,11 @@ The development cohort was used for model development, internal validation, and 
   <div class="case-metric"><strong>76.89%</strong><span>final lesion-wise precision</span></div>
   <div class="case-metric"><strong>90.16%</strong><span>five-class accuracy on retained true-positive lesions</span></div>
 </div>
+
+<figure class="case-visual-v521 case-visual-full-v521">
+  {{< site-img src="images/projects/detail-v521/clinical-evaluation-v521.webp" alt="Conceptual lesion-wise model evaluation and filtering workflow for brain MRI" >}}
+  <figcaption>Conceptual portfolio visualization of candidate filtering, lesion-level classification, and evaluation—not a literal screenshot of the research pipeline.</figcaption>
+</figure>
 
 ## Technical depth
 

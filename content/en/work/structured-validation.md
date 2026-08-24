@@ -9,12 +9,13 @@ visual: "analytics-visual"
 weight: 3
 heroBackground: "images/projects/work-testing-v519.webp"
 contextLabel: "REGULATED TESTING · OPERATIONS"
----
+detailHero: "images/projects/detail-v521/testing-hero-v521.webp"
+detailHeroAlt: "Third-party laboratory testing and validation workflow"---
 
 Before my later medical-AI product work, I worked in **Prof. Chen's Biomedical Imaging Physics & Instrumentation Lab and Ionizing Radiation Testing Laboratory at NYCU**, where I supported laboratory quality operations and the university's ionizing-radiation industry–university technical collaboration consortium.
 
 <figure class="case-visual case-visual-wide">
-  {{< site-img src="images/projects/third-party-testing-workflow.webp" alt="Conceptual workflow for third-party radiation equipment testing: test, measure, document, and review" >}}
+  {{< site-img src="images/projects/detail-v521/testing-workflow-v521.webp" alt="Conceptual workflow for third-party radiation equipment testing: test, measure, document, and review" >}}
   <figcaption>Conceptual portfolio illustration of the testing workflow: test, measure, document, and review. It is not a reproduction of a specific client report or setup.</figcaption>
 </figure>
 
@@ -40,6 +41,11 @@ My responsibilities included:
 **Request → test plan → measurement → traceable result → report → review**
 
 The laboratory operated under **ISO/IEC 17025 / TAF accreditation for defined scopes**. Some work could also fall outside accredited items depending on the requested service, so the site does not treat every report as a TAF-accredited test.
+
+<figure class="case-visual-v521 case-visual-full-v521">
+  {{< site-img src="images/projects/detail-v521/testing-measurement-v521.webp" alt="Conceptual laboratory measurement, documentation, and validation review workflow" >}}
+  <figcaption>Conceptual portfolio visualization of measurement, evidence review, documentation, and quality validation in a laboratory setting.</figcaption>
+</figure>
 
 ## Results & impact
 

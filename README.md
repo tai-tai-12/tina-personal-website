@@ -27,3 +27,7 @@ See `docs/V5_18_RESEARCH_VISUAL_ARCHITECTURE_PASS.md` for details.
 - Strengthened Research Engineering as a 2×2 visual capability module.
 - Reduced Recognition image dominance and added an NSTC project badge to thoracic-aorta research.
 - Smoothed responsive behavior for mobile and tablet.
+
+
+## V5.21
+Selected Work detail pages received a full editorial redesign and a new project-specific visual system. See `docs/V5_21_SELECTED_WORK_DETAIL_EDITORIAL_REDESIGN.md`.

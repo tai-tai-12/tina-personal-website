@@ -1,12 +1,11 @@
 {{ $isZh := eq .Site.Language.Lang "zh" }}
-<footer class="site-footer">
-  <div class="shell footer-grid footer-grid-v524">
-    <div class="footer-identity-v524">
+<footer class="site-footer site-footer-v525">
+  <div class="shell footer-grid footer-grid-v524 footer-grid-v525">
+    <div class="footer-identity-v524 footer-identity-v525">
       <strong>Tina Tai</strong>
-      <p>{{ if $isZh }}產品與數據分析 · AI × Healthcare{{ else }}Product & Analytics · AI × Healthcare{{ end }}</p>
-      <div class="footer-contact-v524" aria-label="Contact information">
-        {{ with .Site.Params.location }}<span>{{ . }}</span>{{ end }}
-        <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+      <div class="footer-contact-v524 footer-contact-v525" aria-label="Contact information">
+        <span class="footer-location-v525">{{ with .Site.Params.location }}{{ . }}{{ end }} · {{ if $isZh }}開放美國與台灣工作機會{{ else }}Open to U.S. &amp; Taiwan opportunities{{ end }}</span>
+        <a class="footer-email-v525" href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
       </div>
     </div>
     <nav class="footer-links" aria-label="Footer links">

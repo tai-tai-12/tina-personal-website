@@ -1,44 +1,47 @@
 {{ define "main" }}
-<article class="case-study-v522 case-study-v523">
-  <header class="case-hero-v522{{ with .Params.detailHero }} has-visual{{ end }}"{{ with .Params.detailHero }} style="--case-hero-bg:url('{{ . | relURL }}')"{{ end }}>
+<article class="case-study-v522 case-study-v523 case-study-v525">
+  <header class="case-hero-v522 case-hero-v525{{ with .Params.detailHero }} has-visual{{ end }}"{{ with .Params.detailHero }} style="--case-hero-bg:url('{{ . | relURL }}')"{{ end }}>
     <div class="case-hero-v522-shade"></div>
-    <div class="case-hero-v522-inner section-shell compact">
-      <div class="case-hero-v522-topline">
+    <div class="case-hero-v522-inner case-hero-v525-inner section-shell compact">
+      <div class="case-hero-v525-context" aria-label="Case study context">
         <a class="case-back-link-v522" href="{{ "work/" | relLangURL }}">← {{ if eq .Lang "zh" }}所有作品{{ else }}All work{{ end }}</a>
+        <span class="case-hero-v525-index">{{ if eq .Lang "zh" }}精選作品{{ else }}SELECTED WORK{{ end }} / 0{{ .Weight }}</span>
         <span class="case-kicker-v522">{{ .Params.category | default "CASE STUDY" }}</span>
       </div>
-      <div class="case-hero-v522-copy">
+      <div class="case-hero-v522-copy case-hero-v525-copy">
         <h1>{{ .Title }}</h1>
         {{ with .Params.heroDek }}<p class="case-deck-v522">{{ . }}</p>{{ else }}{{ with .Params.summary }}<p class="case-deck-v522">{{ . }}</p>{{ end }}{{ end }}
         {{ with .Params.heroStats }}
-        <div class="case-stat-rail-v522">
-          {{ range . }}<div class="case-stat-v522"><strong>{{ .value }}</strong><span>{{ .label }}</span></div>{{ end }}
+        <div class="case-stat-rail-v522 case-stat-rail-v525">
+          {{ range . }}<div class="case-stat-v522 case-stat-v525"><strong>{{ .value }}</strong><span>{{ .label }}</span></div>{{ end }}
         </div>
         {{ end }}
-        <div class="case-tags-v522">{{ range first 4 .Params.tags }}<span>{{ . }}</span>{{ end }}</div>
+        <div class="case-tags-v522 case-tags-v525">{{ range first 4 .Params.tags }}<span>{{ . }}</span>{{ end }}</div>
       </div>
     </div>
   </header>
 
   {{ with .Params.snapshot }}
-  <section class="case-snapshot-v522 section-shell compact" aria-label="Project snapshot">
-    <div class="case-snapshot-label-v522">{{ if eq $.Lang "zh" }}PROJECT SNAPSHOT · 專案摘要{{ else }}PROJECT SNAPSHOT{{ end }}</div>
-    <div class="case-snapshot-grid-v522">
-      {{ range . }}
-      <article><span>{{ .title }}</span><p>{{ .body }}</p></article>
-      {{ end }}
+  <section class="case-snapshot-band-v525">
+    <div class="case-snapshot-v522 case-snapshot-v525 section-shell compact" aria-label="Project snapshot">
+      <div class="case-snapshot-label-v522">{{ if eq $.Lang "zh" }}PROJECT SNAPSHOT · 專案摘要{{ else }}PROJECT SNAPSHOT{{ end }}</div>
+      <div class="case-snapshot-grid-v522">
+        {{ range . }}
+        <article><span>{{ .title }}</span><p>{{ .body }}</p></article>
+        {{ end }}
+      </div>
     </div>
   </section>
   {{ end }}
 
-  <div class="case-reading-layout-v522 section-shell compact">
-    <aside class="case-toc-v522">
+  <div class="case-reading-layout-v522 case-reading-layout-v525 section-shell compact">
+    <aside class="case-toc-v522 case-toc-v525">
       <div class="case-toc-card-v522">
         <div class="case-toc-label-v522">{{ if eq .Lang "zh" }}CASE STUDY · 導覽{{ else }}CASE STUDY{{ end }}</div>
         {{ .TableOfContents }}
       </div>
     </aside>
-    <main class="case-prose-v522">{{ .Content }}</main>
+    <main class="case-prose-v522 case-prose-v525">{{ .Content }}</main>
   </div>
 
   <footer class="case-related-v522 section-shell compact">

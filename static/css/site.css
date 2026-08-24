@@ -1658,3 +1658,97 @@ html[data-theme="dark"] .case-visual-vector img{background:var(--panel)}
   .case-evidence-card img{max-height:300px!important;object-fit:cover}
   .case-study-v523 .case-hero-v522.has-visual::before{opacity:.06}
 }
+
+
+/* ==============================================
+   V5.25 — Case Study Hierarchy & Footer Refinement
+   ============================================== */
+
+/* Footer: contact-first, no repeated positioning tagline. */
+.site-footer-v525 .footer-grid-v525{align-items:flex-start}
+.footer-identity-v525{max-width:720px}
+.footer-contact-v525{margin-top:10px;gap:6px 18px;align-items:center}
+.footer-location-v525{color:var(--muted)}
+.footer-email-v525{font-weight:520;color:var(--text)!important}
+.site-footer-v525 .footer-links{padding-top:2px}
+
+/* Work landing stays an index page: open, left-aligned, quieter title scale. */
+.work-index-section{position:relative}
+.mono-page-hero .narrow>h1{font-size:clamp(2.75rem,4.8vw,3.65rem)}
+
+/* Project detail becomes a distinct centered editorial case-study hero. */
+.case-study-v525 .case-hero-v525{min-height:0;border-bottom:1px solid var(--line);background:linear-gradient(135deg,#fbfdff 0%,#f7f9fd 56%,#eef4fb 100%)}
+.case-study-v525 .case-hero-v522.has-visual::before{inset:0 0 0 50%;opacity:.085;background-position:center 40%;filter:saturate(.72) contrast(.95);-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.10) 20%,rgba(0,0,0,.48) 58%,#000 100%);mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.10) 20%,rgba(0,0,0,.48) 58%,#000 100%)}
+.case-study-v525 .case-hero-v522-shade{background:linear-gradient(90deg,rgba(250,252,255,1) 0%,rgba(250,252,255,.998) 51%,rgba(250,252,255,.95) 72%,rgba(250,252,255,.78) 100%)}
+.case-study-v525 .case-hero-v525-inner{max-width:1120px!important;padding-top:38px;padding-bottom:58px}
+.case-hero-v525-context{position:relative;z-index:2;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:8px 14px;margin:0 auto 34px;color:var(--muted)}
+.case-hero-v525-context>*{font-size:10px!important;line-height:1.2;letter-spacing:.12em;text-transform:uppercase}
+.case-hero-v525-context>*+*::before{content:"·";display:inline-block;margin-right:14px;color:var(--line-strong);font-weight:400}
+.case-hero-v525-context .case-back-link-v522{text-transform:uppercase;color:var(--muted)}
+.case-hero-v525-context .case-kicker-v522{color:var(--accent)}
+.case-hero-v525-index{font-weight:650}
+.case-study-v525 .case-hero-v525-copy{max-width:940px;margin:0 auto;text-align:center}
+.case-study-v525 .case-hero-v525-copy h1{max-width:940px;margin:0 auto;font-size:clamp(54px,6vw,76px);line-height:.98;letter-spacing:-.052em;text-wrap:balance}
+.case-study-v525 .case-deck-v522{max-width:760px;margin:24px auto 0;font-size:clamp(18px,1.9vw,24px);line-height:1.55;text-wrap:balance}
+.case-stat-rail-v525{max-width:860px;margin:38px auto 0!important;gap:0!important;background:transparent!important}
+.case-stat-v525{padding:0 18px!important;border:0!important;background:transparent!important;backdrop-filter:none!important;text-align:center}
+.case-stat-v525+.case-stat-v525{border-left:1px solid var(--line)!important}
+.case-stat-v525 strong{font-size:24px!important}
+.case-stat-v525 span{max-width:150px;margin:7px auto 0!important;font-size:11px!important;line-height:1.4!important}
+.case-tags-v525{justify-content:center;margin-top:22px!important}
+.case-tags-v525 span{background:rgba(255,255,255,.42)!important}
+
+/* Snapshot is a deliberate transition from the hero into the case narrative. */
+.case-snapshot-band-v525{background:var(--bg-alt);border-bottom:1px solid var(--line)}
+.case-snapshot-v525{padding-top:56px!important;padding-bottom:58px}
+.case-snapshot-v525 .case-snapshot-label-v522{text-align:center;margin-bottom:19px}
+.case-snapshot-v525 .case-snapshot-grid-v522{background:transparent}
+.case-snapshot-v525 .case-snapshot-grid-v522 article{min-height:148px}
+
+/* Bring the reading system inward: sidebar behaves like a margin note, not a second nav rail. */
+.case-reading-layout-v525{max-width:1120px!important;grid-template-columns:158px minmax(0,820px)!important;gap:72px!important;margin:0 auto!important;padding:92px 34px 110px 72px!important}
+.case-toc-v525{padding-left:10px}
+.case-toc-v525 .case-toc-card-v522{top:112px;border-top-color:var(--line)}
+.case-toc-v525 .case-toc-label-v522{font-size:9px;letter-spacing:.17em;margin-bottom:14px}
+.case-toc-v525 nav a{padding:7px 0 7px 9px!important;font-size:11px!important;line-height:1.38!important}
+.case-study-v525 .case-toc-v522 nav>ul>li:nth-child(n+6){display:none!important}
+
+/* Detail sections use a deeper editorial hierarchy than normal site pages. */
+.case-prose-v525 h2{font-size:clamp(34px,3.35vw,46px)!important;line-height:1.08!important;max-width:720px;margin-top:108px!important;padding-top:24px!important;text-wrap:balance}
+.case-prose-v525 h2::before{font-size:10px!important;letter-spacing:.17em!important;margin-bottom:13px!important}
+.case-prose-v525 h2:nth-of-type(1)::before{content:"01 · THE PROBLEM"}
+.case-prose-v525 h2:nth-of-type(2)::before{content:"02 · ROLE & SCOPE"}
+.case-prose-v525 h2:nth-of-type(3)::before{content:"03 · SYSTEM"}
+.case-prose-v525 h2:nth-of-type(4)::before{content:"04 · EVIDENCE & DEPTH"}
+.case-prose-v525 h2:nth-of-type(5)::before{content:"05 · TAKEAWAY"}
+.case-prose-v525>h2:first-child{margin-top:0!important}
+.case-prose-v525 p,.case-prose-v525 li{max-width:760px}
+
+/* Dark mode keeps the case hero atmospheric rather than image-led. */
+html[data-theme="dark"] .case-study-v525 .case-hero-v522-shade{background:linear-gradient(90deg,rgba(7,17,29,1) 0%,rgba(7,17,29,.998) 51%,rgba(7,17,29,.95) 72%,rgba(7,17,29,.78) 100%)}
+html[data-theme="dark"] .case-snapshot-band-v525{background:var(--bg-alt)}
+html[data-theme="dark"] .case-tags-v525 span{background:rgba(255,255,255,.025)!important}
+
+@media(max-width:980px){
+  .case-study-v525 .case-hero-v522.has-visual::before{inset:0;opacity:.055;-webkit-mask-image:linear-gradient(180deg,#000 0%,transparent 78%);mask-image:linear-gradient(180deg,#000 0%,transparent 78%)}
+  .case-study-v525 .case-hero-v522-shade{background:linear-gradient(180deg,rgba(250,252,255,.95),rgba(250,252,255,.99))}
+  html[data-theme="dark"] .case-study-v525 .case-hero-v522-shade{background:linear-gradient(180deg,rgba(7,17,29,.94),rgba(7,17,29,.995))}
+  .case-reading-layout-v525{grid-template-columns:1fr!important;max-width:860px!important;padding:68px 28px 90px!important}
+  .case-toc-v525{display:none}
+}
+@media(max-width:640px){
+  .case-study-v525 .case-hero-v525-inner{padding:28px 20px 40px}
+  .case-hero-v525-context{gap:6px 9px;margin-bottom:24px}
+  .case-hero-v525-context>*{font-size:9px!important;letter-spacing:.09em}
+  .case-hero-v525-context>*+*::before{margin-right:9px}
+  .case-study-v525 .case-hero-v525-copy h1{font-size:clamp(40px,12vw,52px)}
+  .case-study-v525 .case-deck-v522{font-size:17px;line-height:1.55}
+  .case-stat-rail-v525{grid-template-columns:1fr 1fr!important;row-gap:22px!important;margin-top:30px!important}
+  .case-stat-v525{padding:0 10px!important}
+  .case-stat-v525:nth-child(3){border-left:0!important}
+  .case-snapshot-v525{padding:44px 20px 46px!important}
+  .case-reading-layout-v525{padding:54px 20px 76px!important}
+  .case-prose-v525 h2{font-size:32px!important;margin-top:78px!important}
+  .footer-contact-v525{display:grid;gap:6px;margin-top:10px}
+  .footer-location-v525{line-height:1.55}
+}

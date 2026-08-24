@@ -1263,3 +1263,45 @@ body{letter-spacing:-.006em}
   .research-v518-mini-visual{width:62px;height:54px}.research-v518-mini-visual svg{width:50px;height:38px}
   .research-strip-v54{grid-template-columns:1fr;gap:18px}.research-tile-v54 figure,.midl-tile-v54 figure,.amlds-tile-v54 figure{aspect-ratio:4/3!important}
 }
+
+
+/* V5.19 — work-image continuity, project hero fade, research refinement */
+
+.work-stack-visual-v510,
+.project-feature .project-visual.editorial-visual{aspect-ratio:16/9;}
+
+.research-strip-v54{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:stretch}
+.research-tile-v54{display:flex;flex-direction:column;padding:0;border:1px solid var(--mono-line);border-radius:18px;overflow:hidden;background:#fff}
+.research-tile-v54 figure,.midl-tile-v54 figure,.amlds-tile-v54 figure{aspect-ratio:4/3;margin:0;border:0;border-radius:0;box-shadow:none}
+.research-tile-v54 img,.midl-tile-v54 img,.amlds-tile-v54 img{width:100%;height:100%;object-fit:cover}
+.midl-tile-v54 img{object-position:50% 28%}
+.amlds-tile-v54 img{object-position:50% 42%}
+.research-tile-v54>div{padding:14px 16px 16px}
+
+.case-hero-v59{position:relative;overflow:hidden}
+.case-hero-v59.case-hero-has-bg::before{content:"";position:absolute;inset:0;background-image:var(--case-hero-image);background-size:cover;background-position:center 32%;opacity:.20;filter:saturate(.92) contrast(1.02)}
+.case-hero-v59.case-hero-has-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(249,250,252,.76) 0%, rgba(249,250,252,.9) 44%, rgba(249,250,252,.98) 74%, var(--bg) 100%)}
+.case-hero-shell{position:relative;z-index:1}
+
+.case-evidence-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;max-width:980px;margin:36px auto}
+.case-prose-v59>.case-evidence-grid{max-width:980px;margin-left:auto;margin-right:auto}
+.case-evidence-grid .case-evidence-card{grid-template-columns:1fr;align-items:start;height:100%;margin:0;padding:18px}
+.case-evidence-grid .case-evidence-card img{height:220px}
+.case-evidence-grid .case-evidence-card h3{margin-top:2px}
+
+.research-v518-award-card{grid-template-columns:180px minmax(0,1fr);gap:18px;padding:12px}
+.research-v518-award-card figure{aspect-ratio:4/3}
+.research-v518-award-card figure img{object-position:center 35%}
+
+.research-v518-engineering-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;border-top:none}
+.research-v518-engineering-list article{grid-template-columns:80px minmax(0,1fr);gap:18px;align-items:start;padding:22px;border:1px solid var(--line);border-radius:20px;background:var(--panel)}
+.research-v518-tech-tags{grid-column:2;justify-content:flex-start;margin-top:4px}
+
+.research-v518-aorta-compact figure img{object-position:center}
+
+@media(max-width:900px){
+  .research-strip-v54,
+  .case-evidence-grid,
+  .research-v518-engineering-list{grid-template-columns:1fr}
+  .research-v518-award-card{grid-template-columns:1fr}
+}

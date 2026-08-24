@@ -7,6 +7,7 @@ summary: "串接臨床 AI 研究、驗證、法規準備與部署就緒。"
 proof: ["2 medical centers", "TFDA submission"]
 visual: "product-visual"
 weight: 1
+heroBackground: "images/projects/work-product-v519.webp"
 ---
 
 我參與將腦瘤 MRI 研究轉化為可融入臨床使用情境的工作流程，同時協調產品、驗證與法規工作，推進產品化與部署準備。
@@ -52,12 +53,21 @@ weight: 1
 
 產品層不只包含模型。臨床流程涵蓋 PACS 個案調閱、AI 處理狀態、影像瀏覽、AI 輔助病灶圈註、病灶分析，以及在醫師最終判斷前的報告檢視。系統定位為 **輔助決策工具**，最終判讀仍由臨床專業人員負責。
 
-<div class="case-evidence-card">
-  {{< site-img src="images/research/midl-poster.webp" alt="Tina Tai 在 MIDL 2026 腦瘤 AI 海報前合照" >}}
-  <div>
-    <h3>把研究轉化為可公開呈現的證據</h3>
-    <p>病灶層級串聯架構於 MIDL 2026 發表，成為這個產品案例背後可公開呈現的技術基礎之一。</p>
-  </div>
+<div class="case-evidence-grid">
+  <article class="case-evidence-card">
+    {{< site-img src="images/research/midl-poster.webp" alt="Tina Tai 在 MIDL 2026 腦瘤 AI 海報前合照" >}}
+    <div>
+      <h3>MIDL 2026</h3>
+      <p>病灶層級串聯架構以 short paper poster 形式發表於 MIDL 2026，成為這個產品案例背後可公開呈現的研究證據之一。</p>
+    </div>
+  </article>
+  <article class="case-evidence-card">
+    {{< site-img src="images/research/amlds-talk.webp" alt="Tina Tai 在 IEEE AMLDS 2026 進行口頭報告" >}}
+    <div>
+      <h3>IEEE AMLDS 2026</h3>
+      <p>與此技術主線密切相關的病灶候選驗證與偽陽性降低工作，也以 oral presentation 形式發表於 IEEE AMLDS 2026。</p>
+    </div>
+  </article>
 </div>
 
 ## 成果與影響

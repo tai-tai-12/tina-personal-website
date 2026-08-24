@@ -7,6 +7,7 @@ summary: "Supporting third-party radiation-equipment testing, evidence packaging
 proof: ["8 products tested", "10+ testing reports", "5 client organizations"]
 visual: "analytics-visual"
 weight: 3
+heroBackground: "images/projects/work-testing-v519.webp"
 contextLabel: "REGULATED TESTING · OPERATIONS"
 ---
 

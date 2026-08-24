@@ -11,3 +11,10 @@ Key changes:
 - Homepage Research cards now have equal visual weight.
 
 See `docs/V5_18_RESEARCH_VISUAL_ARCHITECTURE_PASS.md` for details.
+
+
+## V5.19 notes
+- Refreshed selected-work visuals with a consistent dark-blue editorial style.
+- Added project-detail hero background fade using the selected-work image.
+- Updated the Medical AI product case to show both MIDL and IEEE AMLDS research evidence.
+- Refined Research & Recognition with updated award photography, stronger engineering cards, and a new thoracic-aorta research visual.

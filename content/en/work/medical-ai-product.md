@@ -7,6 +7,7 @@ summary: "Bridging clinical AI research, validation, regulatory preparation, and
 proof: ["2 medical centers", "TFDA submission"]
 visual: "product-visual"
 weight: 1
+heroBackground: "images/projects/work-product-v519.webp"
 ---
 
 I helped translate brain-tumor MRI research into a physician-led workflow designed for real clinical use, while coordinating the product, validation, and regulatory work needed to move toward deployment.
@@ -52,12 +53,21 @@ The underlying research used a lesion-wise cascade rather than treating detectio
 
 The product layer extended beyond the model itself. The clinical workflow included PACS-connected case access, AI processing-state review, image viewing, AI-assisted lesion overlays, lesion-level analysis, and report review before physician judgment. The system was designed as **assistive decision support**, with the clinician retaining final interpretation.
 
-<div class="case-evidence-card">
-  {{< site-img src="images/research/midl-poster.webp" alt="Tina Tai standing beside her MIDL 2026 poster on lesion-wise brain tumor AI" >}}
-  <div>
-    <h3>Research translated into public evidence</h3>
-    <p>The lesion-wise cascade was presented at MIDL 2026, providing a public research artifact behind the technical foundation of this product story.</p>
-  </div>
+<div class="case-evidence-grid">
+  <article class="case-evidence-card">
+    {{< site-img src="images/research/midl-poster.webp" alt="Tina Tai standing beside her MIDL 2026 poster on lesion-wise brain tumor AI" >}}
+    <div>
+      <h3>MIDL 2026</h3>
+      <p>The lesion-wise cascade was presented as a short-paper poster at MIDL 2026, providing a public research artifact behind the technical foundation of this product story.</p>
+    </div>
+  </article>
+  <article class="case-evidence-card">
+    {{< site-img src="images/research/amlds-talk.webp" alt="Tina Tai giving an oral presentation at IEEE AMLDS 2026" >}}
+    <div>
+      <h3>IEEE AMLDS 2026</h3>
+      <p>A closely related extension on lesion-wise candidate verification and false-positive reduction was also communicated as an oral presentation at IEEE AMLDS 2026.</p>
+    </div>
+  </article>
 </div>
 
 ## Results & impact

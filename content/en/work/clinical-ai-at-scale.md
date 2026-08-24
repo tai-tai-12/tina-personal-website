@@ -7,6 +7,7 @@ summary: "Building and evaluating lesion-wise clinical AI with disciplined cohor
 proof: ["12.1K development exams", "264 independent test exams"]
 visual: "clinical-ai-visual"
 weight: 2
+heroBackground: "images/projects/work-clinical-ai-v519.webp"
 ---
 
 This case study focuses on the analytical and technical side of my clinical-AI work: building, evaluating, and communicating model performance across real-world medical imaging datasets.

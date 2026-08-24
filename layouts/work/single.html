@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ $isZh := eq .Site.Language.Lang "zh" }}
-<section class="case-hero-v59 section-shell compact">
+<section class="case-hero-v59 section-shell compact{{ with .Params.heroBackground }} case-hero-has-bg{{ end }}"{{ with .Params.heroBackground }} style="--case-hero-image:url('{{ . | relURL }}')"{{ end }}>
   <div class="shell case-hero-shell reveal">
     <div class="case-hero-copy">
       <a class="case-back-link" href="{{ "work/" | relLangURL }}">← {{ if $isZh }}全部專案{{ else }}All work{{ end }}</a>

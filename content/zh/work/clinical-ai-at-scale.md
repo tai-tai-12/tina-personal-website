@@ -7,6 +7,7 @@ summary: "以嚴謹的 development／independent test 分離建立與驗證逐�
 proof: ["12.1K development exams", "264 independent test exams"]
 visual: "clinical-ai-visual"
 weight: 2
+heroBackground: "images/projects/work-clinical-ai-v519.webp"
 ---
 
 這個案例聚焦我的分析與技術能力：如何在真實世界醫學影像資料中建立、評估並溝通模型效能。

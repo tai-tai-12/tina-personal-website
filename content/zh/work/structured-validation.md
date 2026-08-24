@@ -7,6 +7,7 @@ summary: "在 ISO/IEC 17025 實驗室環境中，支援游離輻射設備第三�
 proof: ["8 項產品測試", "10+ 份測試報告", "5 家客戶組織"]
 visual: "analytics-visual"
 weight: 3
+heroBackground: "images/projects/work-testing-v519.webp"
 contextLabel: "受規範測試 · 作業"
 ---
 

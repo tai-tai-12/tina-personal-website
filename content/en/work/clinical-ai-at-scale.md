@@ -9,7 +9,8 @@ visual: "clinical-ai-visual"
 weight: 2
 heroBackground: "images/projects/work-clinical-ai-v519.webp"
 detailHero: "images/projects/detail-v521/clinical-hero-v521.webp"
-detailHeroAlt: "Clinical AI dashboard showing lesion-wise brain MRI analysis"---
+detailHeroAlt: "Clinical AI dashboard showing lesion-wise brain MRI analysis"
+---
 
 This case study focuses on the analytical and technical side of my clinical-AI work: building, evaluating, and communicating model performance across real-world medical imaging datasets.
 

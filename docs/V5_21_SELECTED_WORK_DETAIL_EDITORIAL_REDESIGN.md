@@ -30,3 +30,8 @@ Each case now uses a dedicated set of newly produced visuals rather than reusing
 - Measurement and validation visual
 
 The generated images are used as conceptual portfolio illustrations; captions avoid presenting them as literal screenshots of the underlying clinical or laboratory systems.
+
+
+## Build hotfix
+
+Fixed YAML front-matter closing delimiters in all six EN/ZH work detail Markdown files. This resolves the GitHub Actions Hugo error: `EOF looking for end YAML front matter delimiter`.

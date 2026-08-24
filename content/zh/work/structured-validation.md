@@ -10,7 +10,8 @@ weight: 3
 heroBackground: "images/projects/work-testing-v519.webp"
 contextLabel: "受規範測試 · 作業"
 detailHero: "images/projects/detail-v521/testing-hero-v521.webp"
-detailHeroAlt: "Third-party laboratory testing and validation workflow"---
+detailHeroAlt: "Third-party laboratory testing and validation workflow"
+---
 
 在後來進入醫療 AI 產品工作前，我曾在**陳志成教授的生醫影像物理與儀器實驗室／游離輻射檢驗實驗室**工作，支援實驗室品質作業，以及校內游離輻射產學技術聯盟的營運。
 

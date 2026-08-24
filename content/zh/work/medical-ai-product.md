@@ -9,7 +9,8 @@ visual: "product-visual"
 weight: 1
 heroBackground: "images/projects/work-product-v519.webp"
 detailHero: "images/projects/detail-v521/product-hero-v521.webp"
-detailHeroAlt: "Clinical AI product workflow at a brain MRI review workstation"---
+detailHeroAlt: "Clinical AI product workflow at a brain MRI review workstation"
+---
 
 我參與將腦瘤 MRI 研究轉化為可融入臨床使用情境的工作流程，同時協調產品、驗證與法規工作，推進產品化與部署準備。
 

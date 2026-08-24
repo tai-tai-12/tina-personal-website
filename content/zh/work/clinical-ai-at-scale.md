@@ -9,7 +9,8 @@ visual: "clinical-ai-visual"
 weight: 2
 heroBackground: "images/projects/work-clinical-ai-v519.webp"
 detailHero: "images/projects/detail-v521/clinical-hero-v521.webp"
-detailHeroAlt: "Clinical AI dashboard showing lesion-wise brain MRI analysis"---
+detailHeroAlt: "Clinical AI dashboard showing lesion-wise brain MRI analysis"
+---
 
 這個案例聚焦我的分析與技術能力：如何在真實世界醫學影像資料中建立、評估並溝通模型效能。
 

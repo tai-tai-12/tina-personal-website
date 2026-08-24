@@ -10,7 +10,8 @@ weight: 3
 heroBackground: "images/projects/work-testing-v519.webp"
 contextLabel: "REGULATED TESTING · OPERATIONS"
 detailHero: "images/projects/detail-v521/testing-hero-v521.webp"
-detailHeroAlt: "Third-party laboratory testing and validation workflow"---
+detailHeroAlt: "Third-party laboratory testing and validation workflow"
+---
 
 Before my later medical-AI product work, I worked in **Prof. Chen's Biomedical Imaging Physics & Instrumentation Lab and Ionizing Radiation Testing Laboratory at NYCU**, where I supported laboratory quality operations and the university's ionizing-radiation industry–university technical collaboration consortium.
 

@@ -1752,3 +1752,182 @@ html[data-theme="dark"] .case-tags-v525 span{background:rgba(255,255,255,.025)!i
   .footer-contact-v525{display:grid;gap:6px;margin-top:10px}
   .footer-location-v525{line-height:1.55}
 }
+
+/* =========================================================
+   V5.26 — WORK DETAIL EDITORIAL REDESIGN + ABOUT SPACING FIX
+   Purpose: true viewport centering, less template/card language,
+   quieter case-study navigation, and tighter About page rhythm.
+   ========================================================= */
+
+/* --- About: remove the empty band between the intro and first image --- */
+.about-v517-hero{padding-bottom:22px!important}
+.about-story-v517{padding-top:18px!important;padding-bottom:72px!important}
+.about-story-v517 .content-photo{margin-top:0!important;margin-bottom:34px}
+.about-story-v517 .content-photo img{display:block;max-height:560px;object-fit:cover;object-position:center 42%}
+
+/* --- Case-study hero: width is explicitly viewport-centered on large screens --- */
+.case-study-v526{background:var(--bg);overflow:hidden}
+.case-hero-v526{position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fbfcff 0%,#f8faff 70%,#f5f8fc 100%)}
+.case-hero-v526.has-visual::before{content:"";position:absolute;inset:0 0 0 55%;background-image:var(--case-hero-bg);background-size:cover;background-position:center 42%;opacity:.06;filter:saturate(.55) contrast(.92);-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.12) 24%,#000 72%);mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.12) 24%,#000 72%)}
+.case-hero-v526-art{position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 76% 38%,rgba(37,99,235,.055),transparent 26%),linear-gradient(90deg,rgba(255,255,255,.98) 0%,rgba(255,255,255,.98) 48%,rgba(255,255,255,.72) 100%)}
+.case-hero-shell-v526{position:relative;z-index:2;width:min(calc(100% - 96px),1280px);margin-inline:auto;padding:42px 0 66px}
+.case-hero-context-v526{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:8px 14px;margin:0 auto 34px;color:var(--muted);text-transform:uppercase}
+.case-hero-context-v526>*{font-size:10px;line-height:1.2;letter-spacing:.14em;text-decoration:none}
+.case-hero-context-v526>*+*::before{content:"·";display:inline-block;margin-right:14px;color:var(--line-strong)}
+.case-hero-context-v526 a{color:var(--muted)}
+.case-hero-context-v526 a:hover{color:var(--accent)}
+.case-category-v526{color:var(--accent)!important;font-weight:650}
+.case-hero-copy-v526{width:100%;max-width:1120px;margin-inline:auto;text-align:center}
+.case-hero-copy-v526 h1{max-width:1120px;margin:0 auto;font-family:Manrope,Inter,"Noto Sans TC",sans-serif;font-size:clamp(56px,5.6vw,82px);font-weight:540;line-height:.98;letter-spacing:-.056em;color:var(--text);text-wrap:balance}
+.case-deck-v526{max-width:790px;margin:28px auto 0;font-size:clamp(19px,1.8vw,25px);line-height:1.55;color:var(--muted);text-wrap:balance}
+
+/* Facts are a typographic line, not a dashboard/card component. */
+.case-facts-v526{display:flex;justify-content:center;align-items:flex-start;flex-wrap:wrap;gap:0;max-width:900px;margin:42px auto 0}
+.case-fact-v526{min-width:165px;padding:0 25px;text-align:center}
+.case-fact-v526+.case-fact-v526{border-left:1px solid var(--line)}
+.case-fact-v526 strong{display:block;font-size:24px;line-height:1.1;letter-spacing:-.03em;color:var(--text);font-weight:600}
+.case-fact-v526 span{display:block;margin-top:8px;font-size:11px;line-height:1.4;color:var(--muted)}
+.case-capability-line-v526{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:8px 0;margin:27px auto 0;color:var(--muted)}
+.case-capability-line-v526 span{font-size:12px;line-height:1.4}
+.case-capability-line-v526 span+span::before{content:"·";margin:0 10px;color:var(--line-strong)}
+
+/* Project Brief: open editorial layout, no surrounding cards. */
+.case-brief-v526{border-bottom:1px solid var(--line);background:var(--bg-alt)}
+.case-brief-shell-v526{width:min(calc(100% - 96px),1120px);margin-inline:auto;padding:60px 0 66px;display:grid;grid-template-columns:250px minmax(0,1fr);gap:64px;align-items:start}
+.case-brief-heading-v526{padding-top:2px}
+.case-brief-heading-v526 span{display:block;font-size:10px;letter-spacing:.17em;font-weight:700;color:var(--accent)}
+.case-brief-heading-v526 p{margin:13px 0 0;font-size:14px;line-height:1.6;color:var(--muted);max-width:210px}
+.case-brief-grid-v526{display:grid;grid-template-columns:1fr 1fr;gap:34px 46px}
+.case-brief-item-v526{padding-top:15px;border-top:1px solid var(--line)}
+.case-brief-item-v526 span{display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.case-brief-item-v526 p{margin:9px 0 0;font-size:15px;line-height:1.62;color:var(--text)}
+
+/* Body is genuinely centered as one composition. */
+.case-reading-shell-v526{width:min(calc(100% - 96px),1080px);margin-inline:auto;padding:104px 0 118px;display:grid;grid-template-columns:138px minmax(0,800px);gap:84px;justify-content:center;align-items:start}
+.case-margin-nav-v526{min-width:0}
+.case-margin-nav-inner-v526{position:sticky;top:112px}
+.case-margin-nav-label-v526{display:block;margin-bottom:15px;font-size:9px;letter-spacing:.18em;font-weight:700;color:var(--muted)}
+.case-margin-nav-v526 nav ul{list-style:none;margin:0;padding:0}
+.case-margin-nav-v526 nav ul ul{display:none}
+.case-margin-nav-v526 nav li:nth-child(n+6){display:none}
+.case-margin-nav-v526 nav a{display:block;padding:7px 0;font-size:11px;line-height:1.42;color:var(--muted);text-decoration:none;transition:color .18s ease,transform .18s ease}
+.case-margin-nav-v526 nav a:hover{color:var(--accent);transform:translateX(2px)}
+
+.case-prose-v526{min-width:0;counter-reset:caseSection}
+.case-prose-v526>p:first-child{margin-top:0}
+.case-prose-v526 h2{counter-increment:caseSection;position:relative;max-width:760px;margin:118px 0 28px;padding:0;border:0;font-family:Manrope,Inter,"Noto Sans TC",sans-serif;font-size:clamp(35px,3.1vw,47px);line-height:1.08;letter-spacing:-.04em;font-weight:560;color:var(--text);text-wrap:balance}
+.case-prose-v526>h2:first-child{margin-top:0}
+.case-prose-v526 h2::before{content:"0" counter(caseSection);display:block;margin-bottom:14px;font-size:10px;line-height:1;letter-spacing:.18em;font-weight:700;color:var(--accent)}
+.case-prose-v526 h3{font-size:21px;line-height:1.3;margin:34px 0 12px;color:var(--text)}
+.case-prose-v526 p,.case-prose-v526 li{font-size:17px;line-height:1.78;color:var(--body-text,var(--muted))}
+.case-prose-v526 p{margin:0 0 21px}
+.case-prose-v526 ul,.case-prose-v526 ol{padding-left:22px;margin:18px 0 28px}
+.case-prose-v526 a{color:var(--accent)}
+.case-prose-v526 strong{color:var(--text);font-weight:650}
+
+/* Figures can breathe wider than copy, but do not become page banners. */
+.case-prose-v526 figure.case-visual,.case-prose-v526 figure.case-visual-v521{width:min(920px,calc(100% + 120px));margin:48px 0 58px -60px;border:0;border-radius:22px;overflow:hidden;background:var(--bg-alt);box-shadow:none}
+.case-prose-v526 figure img{display:block;width:100%;max-height:520px;object-fit:cover}
+.case-prose-v526 figure.case-visual-vector img{object-fit:contain;background:#f7faff}
+.case-prose-v526 figure figcaption{padding:13px 4px 0;font-size:11px;line-height:1.55;color:var(--muted);background:transparent}
+.case-prose-v526 .case-visual-full-v521{width:min(920px,calc(100% + 120px))!important;margin-left:-60px!important}
+
+/* Remove SaaS-card language from structured content blocks. */
+.case-prose-v526 .case-section-subgrid-v524,
+.case-prose-v526 .case-proof-grid,
+.case-prose-v526 .case-metrics,
+.case-prose-v526 .case-tooling-grid-v524{display:grid;gap:0;margin:38px 0 46px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.case-prose-v526 .case-section-subgrid-v524{grid-template-columns:1fr 1fr}
+.case-prose-v526 .case-proof-grid{grid-template-columns:repeat(3,1fr)}
+.case-prose-v526 .case-metrics{grid-template-columns:repeat(2,1fr)}
+.case-prose-v526 .case-tooling-grid-v524{grid-template-columns:repeat(3,1fr)}
+.case-prose-v526 .case-section-subgrid-v524>article,
+.case-prose-v526 .case-proof,
+.case-prose-v526 .case-metric,
+.case-prose-v526 .case-tooling-grid-v524>article{border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;padding:24px 24px 26px 0!important}
+.case-prose-v526 .case-section-subgrid-v524>article+article,
+.case-prose-v526 .case-proof+.case-proof,
+.case-prose-v526 .case-metric:nth-child(even),
+.case-prose-v526 .case-tooling-grid-v524>article+article{border-left:1px solid var(--line)!important;padding-left:24px!important}
+.case-prose-v526 .case-metric:nth-child(n+3){border-top:1px solid var(--line)!important}
+.case-prose-v526 .case-section-subgrid-v524 span,
+.case-prose-v526 .case-tooling-grid-v524 span{display:block;font-size:9px;letter-spacing:.14em;font-weight:700;color:var(--accent)}
+.case-prose-v526 .case-section-subgrid-v524 strong{display:block;margin-top:8px;font-size:17px;line-height:1.35}
+.case-prose-v526 .case-section-subgrid-v524 p,
+.case-prose-v526 .case-tooling-grid-v524 p{margin:9px 0 0;font-size:13px;line-height:1.58;color:var(--muted)}
+.case-prose-v526 .case-proof strong,.case-prose-v526 .case-metric strong{display:block;font-size:28px;letter-spacing:-.035em}
+.case-prose-v526 .case-proof span,.case-prose-v526 .case-metric span{display:block;margin-top:7px;font-size:12px;color:var(--text)}
+.case-prose-v526 .case-proof small,.case-prose-v526 .case-metric small{display:block;margin-top:6px;font-size:10px;line-height:1.5;color:var(--muted)}
+
+/* Research evidence stays image-led, but open and editorial rather than boxed. */
+.case-prose-v526 .case-evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin:42px 0 54px}
+.case-prose-v526 .case-evidence-card{border:0!important;border-radius:0!important;background:transparent!important;overflow:visible!important;padding:0!important}
+.case-prose-v526 .case-evidence-card img{width:100%;height:230px;object-fit:cover;border-radius:18px}
+.case-prose-v526 .case-evidence-card>div{padding:15px 0 0!important}
+.case-prose-v526 .case-evidence-card>div>span{font-size:9px;letter-spacing:.14em;font-weight:700;color:var(--accent)}
+.case-prose-v526 .case-evidence-card h3{margin:7px 0 7px;font-size:18px}
+.case-prose-v526 .case-evidence-card p{margin:0;font-size:13px;line-height:1.58;color:var(--muted)}
+.case-prose-v526 .case-note-v524{margin:24px 0 34px;padding:15px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:12px;line-height:1.6}
+
+/* Capabilities are text evidence, not another set of pills. */
+.case-prose-v526 .case-capabilities-v523{margin:42px 0 0;padding-top:18px;border-top:1px solid var(--line)}
+.case-prose-v526 .case-capabilities-label-v523{font-size:9px;letter-spacing:.16em;font-weight:700;color:var(--muted)}
+.case-prose-v526 .case-capabilities-chips-v523{display:flex;flex-wrap:wrap;gap:7px 0;margin-top:12px}
+.case-prose-v526 .case-capabilities-chips-v523 span{padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;font-size:12px;color:var(--text)}
+.case-prose-v526 .case-capabilities-chips-v523 span+span::before{content:"·";margin:0 9px;color:var(--line-strong)}
+
+/* Related work is quiet navigation rather than a card grid. */
+.case-related-v526{border-top:1px solid var(--line);padding:0 0 92px}
+.case-related-shell-v526{width:min(calc(100% - 96px),1080px);margin-inline:auto;padding-top:42px}
+.case-related-label-v526{display:block;font-size:9px;letter-spacing:.17em;font-weight:700;color:var(--muted);margin-bottom:24px}
+.case-related-grid-v526{display:grid;grid-template-columns:1fr 1fr;gap:42px}
+.case-related-grid-v526 a{display:block;padding-top:18px;border-top:1px solid var(--line);text-decoration:none;color:var(--text)}
+.case-related-grid-v526 small{display:block;margin-bottom:9px;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.case-related-grid-v526 strong{font-size:18px;line-height:1.35;font-weight:560}
+.case-related-grid-v526 a:hover strong{color:var(--accent)}
+.case-back-all-v526{display:inline-block;margin-top:34px;font-size:12px;color:var(--muted);text-decoration:none}
+.case-back-all-v526:hover{color:var(--accent)}
+
+html[data-theme="dark"] .case-hero-v526{background:linear-gradient(180deg,var(--bg) 0%,var(--bg-alt) 100%)}
+html[data-theme="dark"] .case-hero-v526-art{background:radial-gradient(circle at 76% 38%,rgba(80,140,255,.08),transparent 26%),linear-gradient(90deg,rgba(7,17,29,.985) 0%,rgba(7,17,29,.98) 52%,rgba(7,17,29,.76) 100%)}
+html[data-theme="dark"] .case-brief-v526{background:var(--bg-alt)}
+
+@media(max-width:980px){
+  .case-hero-shell-v526,.case-brief-shell-v526,.case-reading-shell-v526,.case-related-shell-v526{width:min(calc(100% - 48px),860px)}
+  .case-hero-v526.has-visual::before{inset:0;opacity:.035;-webkit-mask-image:linear-gradient(180deg,#000 0%,transparent 82%);mask-image:linear-gradient(180deg,#000 0%,transparent 82%)}
+  .case-hero-v526-art{background:linear-gradient(180deg,rgba(255,255,255,.91),rgba(255,255,255,.985))}
+  html[data-theme="dark"] .case-hero-v526-art{background:linear-gradient(180deg,rgba(7,17,29,.92),rgba(7,17,29,.99))}
+  .case-brief-shell-v526{grid-template-columns:1fr;gap:28px}
+  .case-brief-heading-v526 p{max-width:520px}
+  .case-reading-shell-v526{grid-template-columns:1fr;padding-top:78px}
+  .case-margin-nav-v526{display:none}
+  .case-prose-v526{max-width:800px;margin-inline:auto}
+  .case-prose-v526 figure.case-visual,.case-prose-v526 figure.case-visual-v521,.case-prose-v526 .case-visual-full-v521{width:100%!important;margin-left:0!important}
+}
+
+@media(max-width:640px){
+  .about-v517-hero{padding-bottom:14px!important}
+  .about-story-v517{padding-top:10px!important}
+  .case-hero-shell-v526,.case-brief-shell-v526,.case-reading-shell-v526,.case-related-shell-v526{width:calc(100% - 40px)}
+  .case-hero-shell-v526{padding:28px 0 45px}
+  .case-hero-context-v526{gap:6px 9px;margin-bottom:26px}
+  .case-hero-context-v526>*{font-size:9px;letter-spacing:.1em}
+  .case-hero-context-v526>*+*::before{margin-right:9px}
+  .case-hero-copy-v526 h1{font-size:clamp(42px,12vw,56px)}
+  .case-deck-v526{font-size:17px;line-height:1.55;margin-top:22px}
+  .case-facts-v526{display:grid;grid-template-columns:1fr 1fr;width:100%;row-gap:24px;margin-top:34px}
+  .case-fact-v526{min-width:0;padding:0 10px}
+  .case-fact-v526:nth-child(3){border-left:0}
+  .case-capability-line-v526{margin-top:22px}
+  .case-brief-shell-v526{padding:46px 0 52px}
+  .case-brief-grid-v526{grid-template-columns:1fr;gap:24px}
+  .case-reading-shell-v526{padding:66px 0 82px}
+  .case-prose-v526 h2{font-size:33px;margin-top:86px}
+  .case-prose-v526 p,.case-prose-v526 li{font-size:16px}
+  .case-prose-v526 .case-section-subgrid-v524,.case-prose-v526 .case-proof-grid,.case-prose-v526 .case-metrics,.case-prose-v526 .case-tooling-grid-v524,.case-prose-v526 .case-evidence-grid{grid-template-columns:1fr}
+  .case-prose-v526 .case-section-subgrid-v524>article+article,.case-prose-v526 .case-proof+.case-proof,.case-prose-v526 .case-metric:nth-child(even),.case-prose-v526 .case-tooling-grid-v524>article+article{border-left:0!important;padding-left:0!important;border-top:1px solid var(--line)!important}
+  .case-prose-v526 .case-metric:nth-child(n+2){border-top:1px solid var(--line)!important}
+  .case-prose-v526 figure img{max-height:360px}
+  .case-related-v526{padding-bottom:68px}
+  .case-related-grid-v526{grid-template-columns:1fr;gap:28px}
+}

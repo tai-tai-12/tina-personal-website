@@ -1,55 +1,67 @@
 {{ define "main" }}
-<article class="case-study-v522 case-study-v523 case-study-v525">
-  <header class="case-hero-v522 case-hero-v525{{ with .Params.detailHero }} has-visual{{ end }}"{{ with .Params.detailHero }} style="--case-hero-bg:url('{{ . | relURL }}')"{{ end }}>
-    <div class="case-hero-v522-shade"></div>
-    <div class="case-hero-v522-inner case-hero-v525-inner section-shell compact">
-      <div class="case-hero-v525-context" aria-label="Case study context">
-        <a class="case-back-link-v522" href="{{ "work/" | relLangURL }}">← {{ if eq .Lang "zh" }}所有作品{{ else }}All work{{ end }}</a>
-        <span class="case-hero-v525-index">{{ if eq .Lang "zh" }}精選作品{{ else }}SELECTED WORK{{ end }} / 0{{ .Weight }}</span>
-        <span class="case-kicker-v522">{{ .Params.category | default "CASE STUDY" }}</span>
+<article class="case-study-v526">
+  <header class="case-hero-v526{{ with .Params.detailHero }} has-visual{{ end }}"{{ with .Params.detailHero }} style="--case-hero-bg:url('{{ . | relURL }}')"{{ end }}>
+    <div class="case-hero-v526-art" aria-hidden="true"></div>
+    <div class="case-hero-shell-v526">
+      <div class="case-hero-context-v526" aria-label="Case study context">
+        <a href="{{ "work/" | relLangURL }}">← {{ if eq .Lang "zh" }}所有作品{{ else }}All work{{ end }}</a>
+        <span>{{ if eq .Lang "zh" }}精選作品{{ else }}Selected work{{ end }} / 0{{ .Weight }}</span>
+        <span class="case-category-v526">{{ .Params.category | default "CASE STUDY" }}</span>
       </div>
-      <div class="case-hero-v522-copy case-hero-v525-copy">
+
+      <div class="case-hero-copy-v526">
         <h1>{{ .Title }}</h1>
-        {{ with .Params.heroDek }}<p class="case-deck-v522">{{ . }}</p>{{ else }}{{ with .Params.summary }}<p class="case-deck-v522">{{ . }}</p>{{ end }}{{ end }}
+        {{ with .Params.heroDek }}<p class="case-deck-v526">{{ . }}</p>{{ else }}{{ with .Params.summary }}<p class="case-deck-v526">{{ . }}</p>{{ end }}{{ end }}
+
         {{ with .Params.heroStats }}
-        <div class="case-stat-rail-v522 case-stat-rail-v525">
-          {{ range . }}<div class="case-stat-v522 case-stat-v525"><strong>{{ .value }}</strong><span>{{ .label }}</span></div>{{ end }}
+        <div class="case-facts-v526" aria-label="Key project facts">
+          {{ range . }}
+          <div class="case-fact-v526"><strong>{{ .value }}</strong><span>{{ .label }}</span></div>
+          {{ end }}
         </div>
         {{ end }}
-        <div class="case-tags-v522 case-tags-v525">{{ range first 4 .Params.tags }}<span>{{ . }}</span>{{ end }}</div>
+
+        <div class="case-capability-line-v526" aria-label="Project capabilities">
+          {{ range first 4 .Params.tags }}<span>{{ . }}</span>{{ end }}
+        </div>
       </div>
     </div>
   </header>
 
   {{ with .Params.snapshot }}
-  <section class="case-snapshot-band-v525">
-    <div class="case-snapshot-v522 case-snapshot-v525 section-shell compact" aria-label="Project snapshot">
-      <div class="case-snapshot-label-v522">{{ if eq $.Lang "zh" }}PROJECT SNAPSHOT · 專案摘要{{ else }}PROJECT SNAPSHOT{{ end }}</div>
-      <div class="case-snapshot-grid-v522">
+  <section class="case-brief-v526" aria-label="Project brief">
+    <div class="case-brief-shell-v526">
+      <div class="case-brief-heading-v526">
+        <span>{{ if eq $.Lang "zh" }}PROJECT BRIEF · 專案摘要{{ else }}PROJECT BRIEF{{ end }}</span>
+        <p>{{ if eq $.Lang "zh" }}問題、角色、範圍與成果，一頁先看懂。{{ else }}The problem, role, scope, and outcome at a glance.{{ end }}</p>
+      </div>
+      <div class="case-brief-grid-v526">
         {{ range . }}
-        <article><span>{{ .title }}</span><p>{{ .body }}</p></article>
+        <div class="case-brief-item-v526"><span>{{ .title }}</span><p>{{ .body }}</p></div>
         {{ end }}
       </div>
     </div>
   </section>
   {{ end }}
 
-  <div class="case-reading-layout-v522 case-reading-layout-v525 section-shell compact">
-    <aside class="case-toc-v522 case-toc-v525">
-      <div class="case-toc-card-v522">
-        <div class="case-toc-label-v522">{{ if eq .Lang "zh" }}CASE STUDY · 導覽{{ else }}CASE STUDY{{ end }}</div>
+  <div class="case-reading-shell-v526">
+    <aside class="case-margin-nav-v526" aria-label="Case study navigation">
+      <div class="case-margin-nav-inner-v526">
+        <span class="case-margin-nav-label-v526">{{ if eq .Lang "zh" }}CASE STUDY · 導覽{{ else }}CASE STUDY{{ end }}</span>
         {{ .TableOfContents }}
       </div>
     </aside>
-    <main class="case-prose-v522 case-prose-v525">{{ .Content }}</main>
+    <main class="case-prose-v526">{{ .Content }}</main>
   </div>
 
-  <footer class="case-related-v522 section-shell compact">
-    <div class="case-related-label-v522">{{ if eq .Lang "zh" }}CONTINUE EXPLORING · 繼續探索{{ else }}CONTINUE EXPLORING{{ end }}</div>
-    <div class="case-related-grid-v522">
-      {{ with .Params.relatedPrevURL }}<a href="{{ . | relLangURL }}"><span>← {{ if eq $.Lang "zh" }}上一個專案{{ else }}Previous project{{ end }}</span><strong>{{ $.Params.relatedPrevTitle }}</strong></a>{{ end }}
-      {{ with .Params.relatedNextURL }}<a href="{{ . | relLangURL }}"><span>{{ if eq $.Lang "zh" }}下一個專案{{ else }}Next project{{ end }} →</span><strong>{{ $.Params.relatedNextTitle }}</strong></a>{{ end }}
-      <a class="case-related-all-v522" href="{{ "work/" | relLangURL }}"><span>{{ if eq .Lang "zh" }}所有作品{{ else }}All work{{ end }}</span><strong>{{ if eq .Lang "zh" }}回到 Selected Work →{{ else }}Back to Selected Work →{{ end }}</strong></a>
+  <footer class="case-related-v526">
+    <div class="case-related-shell-v526">
+      <span class="case-related-label-v526">{{ if eq .Lang "zh" }}CONTINUE EXPLORING · 繼續探索{{ else }}CONTINUE EXPLORING{{ end }}</span>
+      <div class="case-related-grid-v526">
+        {{ with .Params.relatedPrevURL }}<a href="{{ . | relLangURL }}"><small>← {{ if eq $.Lang "zh" }}上一個專案{{ else }}Previous project{{ end }}</small><strong>{{ $.Params.relatedPrevTitle }}</strong></a>{{ end }}
+        {{ with .Params.relatedNextURL }}<a href="{{ . | relLangURL }}"><small>{{ if eq $.Lang "zh" }}下一個專案{{ else }}Next project{{ end }} →</small><strong>{{ $.Params.relatedNextTitle }}</strong></a>{{ end }}
+      </div>
+      <a class="case-back-all-v526" href="{{ "work/" | relLangURL }}">{{ if eq .Lang "zh" }}← 回到所有作品{{ else }}← Back to Selected Work{{ end }}</a>
     </div>
   </footer>
 </article>

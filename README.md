@@ -18,3 +18,12 @@ See `docs/V5_18_RESEARCH_VISUAL_ARCHITECTURE_PASS.md` for details.
 - Added project-detail hero background fade using the selected-work image.
 - Updated the Medical AI product case to show both MIDL and IEEE AMLDS research evidence.
 - Refined Research & Recognition with updated award photography, stronger engineering cards, and a new thoracic-aorta research visual.
+
+
+## V5.20 notes
+- Final editorial copy pass across homepage and Work.
+- Shortened the regulated-testing project summary for faster recruiter scanning.
+- Refined project-image cropping and detail-page hero fade.
+- Strengthened Research Engineering as a 2×2 visual capability module.
+- Reduced Recognition image dominance and added an NSTC project badge to thoracic-aorta research.
+- Smoothed responsive behavior for mobile and tablet.

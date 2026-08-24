@@ -1305,3 +1305,120 @@ body{letter-spacing:-.006em}
   .research-v518-engineering-list{grid-template-columns:1fr}
   .research-v518-award-card{grid-template-columns:1fr}
 }
+
+
+/* V5.20 — Final Editorial & Production Polish */
+
+/* Project imagery: consistent crop, density, and tonal balance */
+.work-stack-visual-v510 img,
+.project-feature .project-visual.editorial-visual img{
+  filter:saturate(.90) contrast(1.035) brightness(.97);
+}
+.work-stack-visual-v510.product-visual img{object-position:46% 48%!important}
+.work-stack-visual-v510.clinical-ai-visual img{object-position:50% 49%!important}
+.work-stack-visual-v510.analytics-visual img{object-position:51% 48%!important}
+
+/* Detail hero: keep project image atmospheric, not decorative */
+.case-hero-v59.case-hero-has-bg::before{
+  opacity:.145;
+  filter:saturate(.82) contrast(1.01) brightness(1.02);
+  background-position:center 38%;
+}
+.case-hero-v59.case-hero-has-bg::after{
+  background:linear-gradient(180deg,
+    rgba(249,250,252,.82) 0%,
+    rgba(249,250,252,.91) 42%,
+    rgba(249,250,252,.985) 76%,
+    var(--bg) 100%);
+}
+
+/* Research recognition: supporting evidence, not gallery-sized */
+.research-v518-award-grid{gap:18px;max-width:1060px}
+.research-v518-award-card{
+  grid-template-columns:164px minmax(0,1fr);
+  min-height:178px;
+  padding:11px;
+  border-radius:17px;
+}
+.research-v518-award-card figure{aspect-ratio:4/3;border-radius:12px}
+.research-v518-award-card>div{padding:4px 12px 4px 2px}
+.research-v518-award-card h3{font-size:1.12rem}
+
+/* Research engineering: stronger editorial modules and faster scanning */
+.research-v518-engineering-list{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:20px;
+}
+.research-v518-engineering-list article{
+  position:relative;
+  min-height:216px;
+  grid-template-columns:92px minmax(0,1fr);
+  gap:20px;
+  padding:24px;
+  border-radius:21px;
+  background:linear-gradient(145deg,#FFFFFF 0%,#F8FAFE 100%);
+  border-color:#DCE3EF;
+}
+.research-v518-engineering-list article::after{
+  content:"";
+  position:absolute;
+  inset:auto 22px 0 22px;
+  height:2px;
+  background:linear-gradient(90deg,var(--electric),transparent 72%);
+  opacity:.28;
+}
+.research-v518-mini-visual{
+  width:82px;
+  height:82px;
+  border-radius:18px;
+  background:#F1F6FF;
+  border:1px solid #D7E3F5;
+  display:grid;
+  place-items:center;
+}
+.research-v518-mini-visual svg{width:64px;height:48px;stroke:var(--blue);stroke-width:1.8;fill:none}
+.research-v518-engineering-list article>div:nth-child(2)>span{font-size:.62rem}
+.research-v518-engineering-list h3{font-size:1.12rem;margin-bottom:8px}
+.research-v518-engineering-list p{font-size:.82rem;line-height:1.62}
+.research-v518-tech-tags{grid-column:2;gap:7px}
+.research-v518-tech-tags i{background:#fff;border-color:#DCE3EF}
+
+/* Aorta detail: explicit project credential and stronger balance */
+.research-v520-nstc-badge{
+  display:inline-flex;
+  margin:10px 0 14px;
+  padding:7px 10px;
+  border:1px solid rgba(31,91,255,.22);
+  border-radius:999px;
+  background:rgba(31,91,255,.05);
+  color:var(--blue);
+  font:650 .64rem/1 Manrope,Inter,"Noto Sans TC",sans-serif;
+  letter-spacing:.04em;
+}
+.research-v518-aorta-compact{align-items:center}
+.research-v518-aorta-compact figure{border-radius:18px;overflow:hidden;background:#06131F}
+.research-v518-aorta-compact figure img{filter:saturate(.9) contrast(1.02);}
+
+/* Homepage research cards: identical footprint and visual weight */
+.research-strip-v54{align-items:stretch}
+.research-tile-v54{height:100%}
+.research-tile-v54 figure{aspect-ratio:4/3}
+.research-tile-v54>div{min-height:116px;display:flex;flex-direction:column;justify-content:flex-start}
+
+/* Small production refinements */
+.work-stack-copy-v510>p{max-width:660px}
+.experience-v516-project-grid>div>span{letter-spacing:.07em}
+
+@media(max-width:900px){
+  .research-v518-engineering-list{grid-template-columns:1fr}
+  .research-v518-award-card{grid-template-columns:150px minmax(0,1fr)}
+}
+@media(max-width:620px){
+  .case-hero-v59.case-hero-has-bg::before{opacity:.10}
+  .research-v518-award-card{grid-template-columns:1fr;max-width:100%}
+  .research-v518-award-card figure{max-width:100%;aspect-ratio:16/10}
+  .research-v518-engineering-list article{grid-template-columns:72px minmax(0,1fr);padding:20px;min-height:0}
+  .research-v518-mini-visual{width:68px;height:68px;border-radius:16px}
+  .research-v518-mini-visual svg{width:52px;height:42px}
+  .research-v518-tech-tags{grid-column:1/-1}
+}

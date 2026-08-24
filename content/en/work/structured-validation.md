@@ -3,7 +3,7 @@ title: "Third-Party Testing & Validation Operations"
 translationKey: "structured-validation"
 tags: ["Third-Party Testing", "Quality Operations", "Regulatory Documentation", "Lab Operations"]
 category: "REGULATED TESTING · OPERATIONS"
-summary: "Supporting third-party radiation-equipment testing, evidence packaging, report production, and consortium operations in an ISO/IEC 17025-accredited laboratory environment."
+summary: "Third-party radiation-equipment testing, evidence packaging, and report production in an accredited laboratory environment."
 proof: ["8 products tested", "10+ testing reports", "5 client organizations"]
 visual: "analytics-visual"
 weight: 3

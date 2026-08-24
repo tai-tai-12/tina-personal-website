@@ -35,8 +35,6 @@ relatedNextTitle: "病灶層級臨床 AI 建置與驗證"
 relatedNextURL: "work/clinical-ai-at-scale/"
 ---
 
-我參與將腦瘤 MRI 研究轉化為可融入臨床使用情境的工作流程，同時協調產品、驗證與法規工作，推進產品化與部署準備。
-
 
 ## 為什麼研究本身還不夠
 
@@ -108,6 +106,7 @@ relatedNextURL: "work/clinical-ai-at-scale/"
 
 AI 產品最困難的部分往往不只是模型，而是讓技術能力、使用者需求、審查所需證據，以及組織真正能執行的流程彼此對齊。
 
-## Skills
-
-產品管理 · 利害關係人協作 · Clinical AI · 法規執行 · 驗證策略 · 流程設計
+<div class="case-capabilities-v523">
+  <span class="case-capabilities-label-v523">展現的能力</span>
+  <div class="case-capabilities-chips-v523"><span>產品管理</span><span>利害關係人協作</span><span>Clinical AI</span><span>法規執行</span><span>驗證策略</span></div>
+</div>

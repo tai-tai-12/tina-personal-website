@@ -96,6 +96,7 @@ Development cohort 用於模型開發、內部驗證與 operating-point characte
 
 Technical credibility 不只來自模型 accuracy，而來自清楚的 data scope、denominator-aware metrics、明確的 failure analysis，以及對 evidence 能夠支持與不能支持什麼保持紀律。
 
-## Skills
-
-Machine learning · Medical imaging · Python · Model evaluation · Error analysis · Research communication
+<div class="case-capabilities-v523">
+  <span class="case-capabilities-label-v523">展現的能力</span>
+  <div class="case-capabilities-chips-v523"><span>機器學習</span><span>醫療影像</span><span>模型評估</span><span>錯誤分析</span><span>研究溝通</span></div>
+</div>

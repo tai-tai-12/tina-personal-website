@@ -21,8 +21,9 @@
           </div>
         </div>
         <h2>M.S. Business Analytics</h2>
+        <p>{{ if $isZh }}商業分析與科技策略訓練{{ else }}Business analytics and technology strategy{{ end }}</p>
         <div class="education-subsection-v515">
-          <span class="education-subsection-label-v515">{{ if $isZh }}目前重點{{ else }}CURRENT FOCUS{{ end }}</span>
+          <span class="education-subsection-label-v515">{{ if $isZh }}學術重點{{ else }}ACADEMIC FOCUS{{ end }}</span>
           <div class="education-focus-row"><span>Analytics</span><span>Machine Learning</span><span>Optimization</span><span>Technology Strategy</span></div>
         </div>
       </div>
@@ -41,8 +42,11 @@
           </div>
         </div>
         <h2>M.S. Biophotonics</h2>
-        <p>{{ if $isZh }}醫療影像與 AI 研究 · Outstanding Thesis Award{{ else }}Medical imaging & AI research · Outstanding Thesis Award{{ end }}</p>
-        <div class="education-action-row"><a href="{{ "research/" | relLangURL }}">{{ if $isZh }}研究成果{{ else }}Research & recognition{{ end }} →</a><a href="{{ "work/clinical-ai-at-scale/" | relLangURL }}">{{ if $isZh }}相關專案{{ else }}Related project{{ end }} →</a></div>
+        <p>{{ if $isZh }}醫療影像與 AI 研究{{ else }}Medical imaging & AI research{{ end }}</p>
+        <div class="education-subsection-v515">
+          <span class="education-subsection-label-v515">{{ if $isZh }}學術重點{{ else }}ACADEMIC FOCUS{{ end }}</span>
+          <div class="education-focus-row"><span>Medical AI</span><span>Brain MRI</span><span>Clinical Validation</span><span>Research Engineering</span></div>
+        </div>
         <div class="education-subsection-v515 coursework-v515">
           <span class="education-subsection-label-v515">{{ if $isZh }}精選課程{{ else }}SELECTED COURSEWORK{{ end }}</span>
           <div class="coursework-list-v515">
@@ -70,7 +74,7 @@
         <h2>B.S. Biomedical Imaging & Radiological Sciences</h2>
         <p>{{ if $isZh }}輔修生醫工程{{ else }}Minor · Biomedical Engineering{{ end }}</p>
         <div class="education-subsection-v515">
-          <span class="education-subsection-label-v515">{{ if $isZh }}學術基礎{{ else }}FOUNDATION{{ end }}</span>
+          <span class="education-subsection-label-v515">{{ if $isZh }}學術重點{{ else }}ACADEMIC FOCUS{{ end }}</span>
           <div class="education-focus-row"><span>Medical Imaging</span><span>Radiation Science</span><span>Biomedical Engineering</span></div>
         </div>
         <div class="education-subsection-v515 coursework-v515">
@@ -105,7 +109,7 @@
     </div>
 
     <div class="credential-group-v514">
-      <span class="credential-group-label-v514">{{ if $isZh }}精選技術證書{{ else }}SELECTED TECHNICAL CREDENTIALS{{ end }}</span>
+      <span class="credential-group-label-v514">{{ if $isZh }}進階訓練{{ else }}ADDITIONAL TRAINING{{ end }}</span>
       <ul class="credential-list-v514 credential-list-compact-v514">
         <li><strong>Data Science & Smart Instrumentation</strong><span>NYCU · 2026</span></li>
         <li><strong>CS50's Introduction to AI with Python</strong><span>Harvard / CS50 · 2025</span></li>

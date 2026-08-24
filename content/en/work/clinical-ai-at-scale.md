@@ -35,8 +35,6 @@ relatedNextTitle: "Third-Party Testing & Validation Operations"
 relatedNextURL: "work/structured-validation/"
 ---
 
-This case study focuses on the analytical and technical side of my clinical-AI work: building, evaluating, and communicating model performance across real-world medical imaging datasets.
-
 ## Accuracy alone does not describe clinical review quality
 
 Medical imaging models need more than a single headline metric. Performance must be evaluated across clinically meaningful tasks, independent data, practical failure modes, and the trade-off between missed lesions and false-positive review burden.
@@ -96,6 +94,7 @@ This work contributed to research presented at **MIDL 2026** and **IEEE AMLDS 20
 
 Technical credibility comes from more than model accuracy. It requires clean data scopes, denominator-aware metrics, explicit failure analysis, and disciplined communication about what the evidence does—and does not—show.
 
-## Skills
-
-Machine learning · Medical imaging · Python · Model evaluation · Error analysis · Research communication
+<div class="case-capabilities-v523">
+  <span class="case-capabilities-label-v523">CAPABILITIES DEMONSTRATED</span>
+  <div class="case-capabilities-chips-v523"><span>Machine Learning</span><span>Medical Imaging</span><span>Model Evaluation</span><span>Error Analysis</span><span>Research Communication</span></div>
+</div>

@@ -35,8 +35,6 @@ relatedNextTitle: "Building and Validating Lesion-Wise Clinical AI"
 relatedNextURL: "work/clinical-ai-at-scale/"
 ---
 
-I helped translate brain-tumor MRI research into a physician-led workflow designed for real clinical use, while coordinating the product, validation, and regulatory work needed to move toward deployment.
-
 
 ## Why research alone was not enough
 
@@ -108,6 +106,7 @@ The product layer extended beyond the model itself. The clinical workflow includ
 
 The hardest part of AI product work is often not the model itself. It is creating alignment between what the technology can do, what users actually need, what evidence reviewers require, and what an organization can operationalize.
 
-## Skills
-
-Product management · Stakeholder alignment · Clinical AI · Regulatory execution · Validation strategy · Process design
+<div class="case-capabilities-v523">
+  <span class="case-capabilities-label-v523">CAPABILITIES DEMONSTRATED</span>
+  <div class="case-capabilities-chips-v523"><span>Product Management</span><span>Stakeholder Alignment</span><span>Clinical AI</span><span>Regulatory Execution</span><span>Validation Strategy</span></div>
+</div>

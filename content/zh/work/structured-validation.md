@@ -78,6 +78,7 @@ relatedNextURL: "work/medical-ai-product/"
 
 這段經驗讓我理解如何讓技術證據變得**可追溯、可審查，並能被技術團隊以外的人使用**。這也成為我後來處理醫療 AI 驗證、法規文件與產品作業的重要基礎。
 
-## 技能
-
-第三方測試 · 品質作業 · ISO/IEC 17025 · 法規文件 · 評鑑協調 · 技術報告
+<div class="case-capabilities-v523">
+  <span class="case-capabilities-label-v523">展現的能力</span>
+  <div class="case-capabilities-chips-v523"><span>第三方測試</span><span>品質營運</span><span>ISO/IEC 17025</span><span>技術報告</span><span>稽核協作</span></div>
+</div>

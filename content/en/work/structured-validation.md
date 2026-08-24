@@ -36,8 +36,6 @@ relatedNextTitle: "From Medical AI Research to a Deployable Product"
 relatedNextURL: "work/medical-ai-product/"
 ---
 
-Before my later medical-AI product work, I worked in **Prof. Chen's Biomedical Imaging Physics & Instrumentation Lab and Ionizing Radiation Testing Laboratory at NYCU**, where I supported laboratory quality operations and the university's ionizing-radiation industry–university technical collaboration consortium.
-
 
 ## Evidence becomes fragile when the workflow fragments
 
@@ -83,6 +81,7 @@ Separately from the third-party testing case above, I also developed **MATLAB-ba
 
 This experience taught me how to make technical evidence **traceable, reviewable, and usable by people outside the immediate technical team**—a foundation I later carried into medical-AI validation, regulatory documentation, and product operations.
 
-## Skills
-
-Third-party testing · Quality operations · ISO/IEC 17025 · Regulatory documentation · Audit coordination · Technical reporting
+<div class="case-capabilities-v523">
+  <span class="case-capabilities-label-v523">CAPABILITIES DEMONSTRATED</span>
+  <div class="case-capabilities-chips-v523"><span>Third-Party Testing</span><span>Quality Operations</span><span>ISO/IEC 17025</span><span>Technical Reporting</span><span>Audit Coordination</span></div>
+</div>

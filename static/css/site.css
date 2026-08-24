@@ -1080,3 +1080,91 @@ body{letter-spacing:-.006em}
   .experience-v516-scope-grid{grid-template-columns:1fr}
   .experience-v516-role h2{font-size:2rem}
 }
+
+/* V5.17 — Full-site QA, readability, and visual-consistency pass */
+
+/* Education: remove redundant bridge; keep timeline + credentials as the full ending. */
+.education-page-section{padding-bottom:96px}
+
+/* Research featured outputs: equal cards, centered media, no visual competition with Recognition. */
+.research-v517-feature{padding-top:82px;padding-bottom:92px}
+.research-v517-feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.research-v517-feature-card{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--panel);display:flex;flex-direction:column}
+.research-v517-photo{margin:0;aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#F5F7FA}
+.research-v517-photo img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
+.research-v517-photo-talk img{object-fit:cover;object-position:center 38%}
+.research-v517-photo-poster img{object-fit:contain;padding:10px}
+.research-v517-feature-card .research-v516-copy{margin-top:auto}
+
+.research-v517-recognition{padding-top:78px;padding-bottom:86px}
+.research-v517-recognition-list{border-top:1px solid var(--line)}
+.research-v517-award-row{display:grid;grid-template-columns:230px 1fr;gap:28px;align-items:center;padding:24px 0;border-bottom:1px solid var(--line)}
+.research-v517-award-row figure{margin:0;height:150px;border-radius:16px;overflow:hidden;background:#F5F7FA;border:1px solid var(--line)}
+.research-v517-award-row figure img{width:100%;height:100%;display:block;object-fit:cover;object-position:center 38%}
+.research-v517-award-row>div>span{font:650 .63rem/1.25 Manrope,Inter,sans-serif;letter-spacing:.11em;color:var(--electric)}
+.research-v517-award-row h3{font:600 1.35rem/1.2 Manrope,Inter,"Noto Sans TC",sans-serif;letter-spacing:-.025em;margin:9px 0 7px;color:var(--text)}
+.research-v517-award-row p{margin:0;color:var(--muted);font-size:.84rem;line-height:1.65}
+.research-v517-award-row-text{grid-template-columns:64px 1fr}
+.research-v517-award-mark{width:52px;height:52px;border-radius:16px;border:1px solid color-mix(in srgb,var(--electric) 24%,var(--line));display:grid;place-items:center;color:var(--electric);font-size:1.35rem;background:color-mix(in srgb,var(--electric) 5%,var(--panel))}
+
+/* Research engineering: icon-led 2×2 capability matrix; remove the large infographic. */
+.research-v517-engineering{padding-top:84px;padding-bottom:92px}
+.research-v517-engineering-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.research-v517-engineering-grid article{display:grid;grid-template-columns:56px 1fr;gap:18px;padding:28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--panel);min-height:160px}
+.research-v517-engineering-icon{width:48px;height:48px;border-radius:14px;border:1px solid color-mix(in srgb,var(--electric) 26%,var(--line));background:color-mix(in srgb,var(--electric) 4%,var(--panel));display:grid;place-items:center}
+.research-v517-engineering-icon svg{width:25px;height:25px;fill:none;stroke:var(--electric);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.research-v517-engineering-grid article>div:last-child>span{display:block;font:650 .61rem/1 Manrope,Inter,sans-serif;color:var(--electric);letter-spacing:.1em;margin-bottom:8px}
+.research-v517-engineering-grid strong{display:block;font:600 1.03rem/1.3 Manrope,Inter,"Noto Sans TC",sans-serif;color:var(--text);margin-bottom:7px}
+.research-v517-engineering-grid p{margin:0;color:var(--muted);font-size:.8rem;line-height:1.62}
+
+/* Experience: make compact clinical role informative without matching the weight of featured roles. */
+.experience-v517-rotation-row{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 14px}
+.experience-v517-rotation-row span{border:1px solid var(--line);border-radius:999px;padding:7px 10px;font-size:.69rem;color:var(--muted);font-weight:600}
+.experience-v517-award{display:flex;align-items:baseline;gap:10px;margin:12px 0 8px}
+.experience-v517-award strong{font:600 .82rem/1.4 Manrope,Inter,"Noto Sans TC",sans-serif;color:var(--text)}
+.experience-v517-award span{font-size:.72rem;color:var(--muted)}
+
+/* About: readable 2×2 capability cards instead of dense dot-separated paragraphs. */
+.capabilities-v517{padding-top:84px;padding-bottom:92px}
+.capabilities-v517 .section-title-row-v3{margin-bottom:28px}
+.capabilities-v517 .section-title-row-v3 p{max-width:720px;margin:12px 0 0;color:var(--muted);font-size:.9rem;line-height:1.7}
+.capability-grid-v517{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.capability-grid-v517 article{display:grid;grid-template-columns:58px 1fr;gap:18px;border:1px solid var(--line);border-radius:18px;padding:26px;background:var(--panel)}
+.capability-icon-v517{width:50px;height:50px;border-radius:14px;display:grid;place-items:center;border:1px solid color-mix(in srgb,var(--electric) 24%,var(--line));background:color-mix(in srgb,var(--electric) 4%,var(--panel))}
+.capability-icon-v517 svg{width:26px;height:26px;fill:none;stroke:var(--electric);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.capability-grid-v517 article>div:last-child>span{font:650 .62rem/1 Manrope,Inter,sans-serif;letter-spacing:.08em;color:var(--electric)}
+.capability-grid-v517 h3{font:600 1.18rem/1.25 Manrope,Inter,"Noto Sans TC",sans-serif;letter-spacing:-.025em;margin:9px 0 12px;color:var(--text)}
+.capability-grid-v517 ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+.capability-grid-v517 li{font-size:.81rem;color:var(--muted);line-height:1.45;position:relative;padding-left:14px}
+.capability-grid-v517 li::before{content:"";width:4px;height:4px;border-radius:50%;background:var(--electric);position:absolute;left:0;top:.55em}
+.capability-footnote-v517{margin:20px 0 0;color:var(--muted);font-size:.8rem;line-height:1.65}
+
+.leadership-v517{padding-top:82px;padding-bottom:88px}
+.leadership-v517 .section-title-row-v3{margin-bottom:28px}
+.leadership-list-v517{border-top:1px solid var(--line)}
+.leadership-list-v517 article{display:grid;grid-template-columns:110px 1fr;gap:26px;padding:22px 0;border-bottom:1px solid var(--line)}
+.leadership-list-v517 article>span{font-size:.71rem;color:var(--muted);font-weight:600}
+.leadership-list-v517 strong{font:600 1rem/1.3 Manrope,Inter,"Noto Sans TC",sans-serif;color:var(--text)}
+.leadership-list-v517 p{margin:5px 0 0;color:var(--muted);font-size:.82rem;line-height:1.62}
+.about-personal-note-v517{margin:26px 0 0;color:var(--muted);font-size:.8rem;line-height:1.7;font-style:italic}
+
+/* Work visuals: same aspect ratio, framing, and crop across all three projects. */
+.work-stack-visual-v510{aspect-ratio:1500/560;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.work-stack-visual-v510 img{width:100%;height:100%;display:block;object-fit:cover;object-position:center}
+.work-stack-index-v510{background:rgba(255,255,255,.86);border:1px solid var(--line);border-radius:999px;padding:5px 8px}
+.project-feature .project-visual.editorial-visual{aspect-ratio:1500/560;background:#fff}
+.project-feature .project-visual.editorial-visual img{object-fit:cover;object-position:center}
+.project-feature-tertiary .editorial-visual img,.work-stack-visual-v510.analytics-visual img{object-fit:cover;object-position:center}
+
+@media(max-width:900px){
+  .research-v517-feature-grid,.capability-grid-v517{grid-template-columns:1fr}
+  .research-v517-award-row{grid-template-columns:190px 1fr}
+  .research-v517-engineering-grid{grid-template-columns:1fr}
+}
+@media(max-width:700px){
+  .research-v517-award-row{grid-template-columns:1fr;gap:16px}.research-v517-award-row figure{height:auto;aspect-ratio:16/9}.research-v517-award-row-text{grid-template-columns:52px 1fr}
+  .research-v517-engineering-grid article{padding:22px 20px;grid-template-columns:50px 1fr}
+  .capability-grid-v517 article{padding:22px 20px;grid-template-columns:50px 1fr}
+  .leadership-list-v517 article{grid-template-columns:1fr;gap:7px}
+  .experience-v517-award{align-items:flex-start;flex-direction:column;gap:2px}
+}

@@ -1,7 +1,5 @@
-# Tina Tai Personal Website — V5.16
+# Tina Tai Personal Website — V5.17
 
-Current release: **Research & Experience Architecture Pass**.
+Full-site QA and readability pass based on V5.16.
 
-See `docs/V5_16_RESEARCH_EXPERIENCE_ARCHITECTURE_PASS.md` for the complete change log.
-
-This package includes all cumulative fixes and content from V5.15 plus the V5.16 research / experience restructuring and new visual assets.
+See `docs/V5_17_FULL_SITE_QA_AND_READABILITY_PASS.md` for details.

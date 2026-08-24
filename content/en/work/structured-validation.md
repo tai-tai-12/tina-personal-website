@@ -14,7 +14,7 @@ Before my later medical-AI product work, I worked in **Prof. Chen's Biomedical I
 
 <figure class="case-visual case-visual-wide">
   {{< site-img src="images/projects/third-party-testing-workflow.webp" alt="Conceptual workflow for third-party radiation equipment testing: test, measure, document, and review" >}}
-  <figcaption>Conceptual portfolio illustration of the workflow. It is not a reproduction of a specific client report or testing setup.</figcaption>
+  <figcaption>Conceptual portfolio illustration of the testing workflow: test, measure, document, and review. It is not a reproduction of a specific client report or setup.</figcaption>
 </figure>
 
 ## Context

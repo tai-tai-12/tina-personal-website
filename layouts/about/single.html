@@ -1,31 +1,44 @@
 {{ define "main" }}
 {{ $isZh := eq .Site.Language.Lang "zh" }}
-<div class="page-hero section-shell compact about-v515-hero"><div class="shell narrow reveal">
+<div class="page-hero section-shell compact about-v517-hero"><div class="shell narrow reveal">
   {{ partial "page-context.html" . }}
   <h1>{{ .Title }}</h1>
   <p class="lede small">{{ if $isZh }}我在產品、分析與 AI 的交會處工作，背景橫跨醫療影像、機器學習研究與 healthcare technology。{{ else }}I work at the intersection of product, analytics, and AI, with a background spanning biomedical imaging, machine-learning research, and healthcare technology.{{ end }}</p>
 </div></div>
 
-<section class="section-shell article-section about-story-v515"><article class="shell narrow prose reveal">{{ .Content }}</article></section>
+<section class="section-shell article-section about-story-v517"><article class="shell narrow prose reveal">{{ .Content }}</article></section>
 
-<section class="section-shell alt capabilities-v515"><div class="shell">
-  <div class="section-title-row-v3 reveal">
-    <div><span class="kicker">{{ if $isZh }}能力組合{{ else }}CAPABILITIES{{ end }}</span><h2>{{ if $isZh }}跨產品、分析與受規範科技的能力組合。{{ else }}A cross-functional toolkit for product, analytics, and regulated technology.{{ end }}</h2></div>
+<section class="section-shell alt capabilities-v517"><div class="shell">
+  <div class="section-title-row-v3 reveal"><div><span class="kicker">{{ if $isZh }}能力組合{{ else }}CAPABILITIES{{ end }}</span><h2>{{ if $isZh }}四個互相連結的能力面向。{{ else }}Four connected capability areas.{{ end }}</h2><p>{{ if $isZh }}不是技能清單，而是我在產品、研究與受規範環境中反覆使用的能力組合。{{ else }}Not a keyword wall—these are the capabilities I repeatedly use across product, research, and regulated environments.{{ end }}</p></div></div>
+  <div class="capability-grid-v517 reveal">
+    <article>
+      <div class="capability-icon-v517" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M8 3v6M16 3v6M8 13h8"/></svg></div>
+      <div><span>01</span><h3>{{ if $isZh }}產品與策略{{ else }}Product & Strategy{{ end }}</h3><ul><li>Product Management</li><li>Requirements & Roadmapping</li><li>Stakeholder Alignment</li></ul></div>
+    </article>
+    <article>
+      <div class="capability-icon-v517" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-8M22 19V3"/><path d="M3 19h19"/></svg></div>
+      <div><span>02</span><h3>{{ if $isZh }}分析與 AI{{ else }}Analytics & AI{{ end }}</h3><ul><li>Business Analytics</li><li>Machine & Deep Learning</li><li>Statistical Evaluation</li></ul></div>
+    </article>
+    <article>
+      <div class="capability-icon-v517" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 5 3 8 7 10 4-2 7-5 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-5"/></svg></div>
+      <div><span>03</span><h3>{{ if $isZh }}醫療與受規範科技{{ else }}Healthcare & Regulated Tech{{ end }}</h3><ul><li>Medical Imaging</li><li>Clinical Validation & SaMD</li><li>Regulatory Documentation</li></ul></div>
+    </article>
+    <article>
+      <div class="capability-icon-v517" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 6 3 12l5 6M16 6l5 6-5 6M14 4l-4 16"/></svg></div>
+      <div><span>04</span><h3>{{ if $isZh }}技術工具{{ else }}Technical Toolkit{{ end }}</h3><ul><li>Python · SQL · MATLAB</li><li>PyTorch · scikit-learn</li><li>3D Slicer · Git</li></ul></div>
+    </article>
   </div>
-  <div class="capability-grid-v515 reveal">
-    <article><span>01</span><h3>{{ if $isZh }}產品與策略{{ else }}Product & Strategy{{ end }}</h3><p>Product Management · Product Strategy · Requirements Analysis · Stakeholder Management · Cross-functional Collaboration</p></article>
-    <article><span>02</span><h3>{{ if $isZh }}分析與 AI{{ else }}Analytics & AI{{ end }}</h3><p>Business Analytics · Machine Learning · Deep Learning · Statistical Analysis · Computer Vision</p></article>
-    <article><span>03</span><h3>{{ if $isZh }}醫療與受規範科技{{ else }}Healthcare & Regulated Tech{{ end }}</h3><p>Medical Imaging · Clinical Validation · SaMD · Regulatory Affairs · Technical Documentation</p></article>
-    <article><span>04</span><h3>{{ if $isZh }}技術工具{{ else }}Technical Toolkit{{ end }}</h3><p>Python · SQL · MATLAB · PyTorch · scikit-learn · 3D Slicer · Git</p></article>
-  </div>
+  <p class="capability-footnote-v517">{{ if $isZh }}曾在醫院、學術實驗室與新創環境中，與醫師、醫事放射師、護理師、工程師及法規顧問協作。{{ else }}Worked across hospital, academic, and startup settings with physicians, radiologic technologists, nurses, engineers, and regulatory advisors.{{ end }}</p>
 </div></section>
 
-<section class="section-shell beyond-work-v515"><div class="shell narrow">
-  <div class="section-title-row-v3 reveal"><div><span class="kicker">{{ if $isZh }}工作之外{{ else }}BEYOND WORK{{ end }}</span><h2>{{ if $isZh }}社群參與與生活中的好奇心。{{ else }}Community involvement and curiosity beyond the portfolio.{{ end }}</h2></div></div>
-  <div class="beyond-work-list-v515 reveal">
-    <article><span>2025–2026</span><div><strong>Lions Club</strong><p>{{ if $isZh }}協助捐血服務，包含捐血者衛教與捐血後協助。{{ else }}Supported blood-donation services through donor education and post-donation assistance.{{ end }}</p></div></article>
-    <article><span>2017–2020</span><div><strong>{{ if $isZh }}社區服務{{ else }}Community Service{{ end }}</strong><p>{{ if $isZh }}參與動物福利、公益募款與淨灘等活動。{{ else }}Contributed to animal-welfare, fundraising, and environmental service activities.{{ end }}</p></div></article>
+<section class="section-shell leadership-v517"><div class="shell narrow">
+  <div class="section-title-row-v3 reveal"><div><span class="kicker">{{ if $isZh }}領導與社群參與{{ else }}LEADERSHIP & COMMUNITY{{ end }}</span><h2>{{ if $isZh }}工作之外，我也持續參與團隊與社群。{{ else }}Leadership and community involvement beyond the portfolio.{{ end }}</h2></div></div>
+  <div class="leadership-list-v517 reveal">
+    <article><span>2023–2024</span><div><strong>{{ if $isZh }}系學會會長{{ else }}Department Student Association · President{{ end }}</strong><p>{{ if $isZh }}帶領學生組織與系上活動協調，累積團隊管理與跨角色溝通經驗。{{ else }}Led student-organization coordination and department activities, building team-management and cross-role communication experience.{{ end }}</p></div></article>
+    <article><span>2020</span><div><strong>{{ if $isZh }}全國高中生醫學研習營{{ else }}National High School Medical Camp{{ end }}</strong><p>{{ if $isZh }}參與活動策劃與營隊執行。{{ else }}Supported program planning and camp operations.{{ end }}</p></div></article>
+    <article><span>2020</span><div><strong>{{ if $isZh }}校／系籃球隊經理{{ else }}University & Department Basketball Team Manager{{ end }}</strong><p>{{ if $isZh }}參與校內外賽事紀錄、裁判與隊務支援。{{ else }}Supported team operations, competition records, and officiating across university and external games.{{ end }}</p></div></article>
+    <article><span>2025–2026</span><div><strong>Lions Club</strong><p>{{ if $isZh }}協助捐血者衛教與捐血後服務。{{ else }}Supported blood-donation services through donor education and post-donation assistance.{{ end }}</p></div></article>
   </div>
-  <p class="about-personal-note-v515">{{ if $isZh }}我也喜歡攝影、記錄生活，以及探索新的地方與食物。{{ else }}I also enjoy photography, documenting everyday life, and exploring new places and food.{{ end }}</p>
+  <p class="about-personal-note-v517">{{ if $isZh }}更早期也參與手語社、熱舞社、Rotary 社區服務與動物福利活動；我也喜歡攝影、記錄生活與探索新的地方和食物。{{ else }}Earlier activities included sign-language and dance clubs, Rotary community service, and animal-welfare volunteering. I also enjoy photography, documenting everyday life, and exploring new places and food.{{ end }}</p>
 </div></section>
 {{ end }}

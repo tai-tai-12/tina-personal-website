@@ -9,7 +9,7 @@ contextLabel: "CAREER PATH"
 
 Led product and regulatory execution for an AI-assisted brain tumor detection product, coordinated physicians, engineers, executives, and regulatory stakeholders, and supported commercialization and hospital deployment readiness.
 
-[AItewan company website ↗](https://www.aitewan-bio.com/en/)
+[AITEWAN company website ↗](https://www.aitewan-bio.com/en/)
 
 ## NYCU — AI in Medical Imaging Lab
 **Research Assistant / Project Lead · Feb 2023 – Jun 2026 · Taipei, Taiwan**

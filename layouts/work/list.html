@@ -8,7 +8,7 @@
 <section class="section-shell work-index-section work-stack-v510"><div class="shell work-stack-list-v510">
   {{ range sort .Pages "Weight" }}
   <article class="work-stack-row-v510 reveal">
-    <a class="work-stack-visual-v510 {{ .Params.visual }}" href="{{ .RelPermalink }}" aria-label="Open {{ .Title }}">
+    <a class="work-stack-visual-v510 {{ .Params.visual }}" href="{{ .RelPermalink }}" aria-label="{{ if $isZh }}開啟專案：{{ else }}Open project: {{ end }}{{ .Title }}">
       {{ if eq .Params.visual "product-visual" }}
       <img src="{{ "images/projects/work-product-v519.webp" | relURL }}" alt="Clinical product workflow illustration">
       {{ else if eq .Params.visual "clinical-ai-visual" }}

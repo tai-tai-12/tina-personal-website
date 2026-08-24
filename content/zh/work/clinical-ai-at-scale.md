@@ -35,68 +35,52 @@ relatedNextTitle: "第三方測試與驗證營運"
 relatedNextURL: "work/structured-validation/"
 ---
 
-這個案例聚焦我的分析與技術能力：如何在真實世界醫學影像資料中建立、評估並溝通模型效能。
 
-## 準確率不足以描述臨床閱片品質
+## 單一 accuracy 無法描述臨床閱片品質
 
-醫學影像模型不能只看單一 headline metric。需要在具臨床意義的任務、獨立資料、failure modes，以及漏診與偽陽性檢閱負擔的 trade-off 下評估系統。
+醫療影像模型不能只看一個 headline metric；評估需要同時考慮獨立資料、實際失敗模式，以及漏診與偽陽性閱片負擔之間的取捨。
 
-## 我負責的工作
+## 我的角色與研究範圍
 
-作為 Research Assistant / Project Lead，我負責腦部影像模型的開發與評估工作、臨床資料處理、錯誤模式分析，以及將技術結果向臨床與國際 audience 溝通。
-
-## 研究資料範圍
+作為 Research Assistant / Project Lead，我負責腦部影像模型開發與評估、臨床資料處理、錯誤模式分析，以及向臨床與國際研究場合傳達技術結果。
 
 <div class="case-proof-grid technical-scope-grid">
-  <div class="case-proof"><strong>12,125</strong><span>開發 MRI examinations</span><small>23,341 個標註腫瘤病灶</small></div>
-  <div class="case-proof"><strong>264</strong><span>獨立測試 examinations</span><small>132 positive + 132 negative</small></div>
-  <div class="case-proof"><strong>2</strong><span>家醫學中心</span><small>台北榮總 + 台中榮總</small></div>
+  <div class="case-proof"><strong>12,125</strong><span>Development MRI exams</span><small>23,341 個標註腫瘤病灶</small></div>
+  <div class="case-proof"><strong>264</strong><span>Independent test exams</span><small>132 positive · 132 negative</small></div>
+  <div class="case-proof"><strong>2</strong><span>Medical centers</span><small>Taipei VGH · Taichung VGH</small></div>
 </div>
 
-Development cohort 用於模型開發、內部驗證與 operating-point characterization；**264-case independent clinical test cohort** 則保留給最終 end-to-end evaluation。
+Development cohort 用於模型開發、internal validation 與 operating-point characterization；**264 例 independent clinical test cohort** 保留作為最終端到端評估。
 
-<figure class="case-visual case-visual-vector">
-  {{< site-img src="images/projects/detail-v521/clinical-cascade-v521.webp" alt="候選生成、偽陽性降低與保留病灶腫瘤分類的三階段 AI 串聯流程" >}}
-  <figcaption>最終碩論的評估架構：Stage 0 建立敏感度導向候選池，Stage 1 去除明顯偽陽性，Stage 2 處理殘餘偽陽性並對保留病灶進行分類。</figcaption>
-</figure>
+<figure class="case-visual case-visual-vector">{{< site-img src="images/projects/detail-v521/clinical-cascade-v521.webp" alt="逐病灶 AI 三階段評估流程" >}}<figcaption><strong>Evaluation framework.</strong> Stage 0 建立高敏感度候選池，Stage 1 移除明顯偽陽性，Stage 2 處理剩餘偽陽性並進行保留病灶分類。</figcaption></figure>
 
 ## 不只看 headline accuracy
 
-- 明確區分 **development** 與 **independent clinical test** 資料範圍。
-- 將病灶層級 sensitivity 與 FP/scan、precision 一起解讀，而非只看單一指標。
-- 分析被刪除的 true positives、殘餘 false positives、病灶大小、腫瘤類型與 operating-point trade-offs。
-- Tumor typing 僅針對經評估流程後保留下來的 true-positive lesions 計算。
-- 將結論限制在 retrospective technical evidence，不將結果誇大為 prospective workflow benefit。
+評估設計刻意分離 development 與 independent clinical testing，並把 lesion-wise sensitivity 與 FP/scan、precision 一起解讀，同時分析 deleted true positives 與 residual false positives；腫瘤分類結果只在保留的 true-positive lesions 上計算。
 
-<div class="case-metrics">
-  <div class="case-metric"><strong>80.97%</strong><span>獨立測試 cohort 的病灶層級 sensitivity</span></div>
-  <div class="case-metric"><strong>0.21</strong><span>full cascade 後的 false positives per scan</span></div>
-  <div class="case-metric"><strong>76.89%</strong><span>最終病灶層級 precision</span></div>
-  <div class="case-metric"><strong>90.16%</strong><span>保留 true-positive lesions 的五分類 accuracy</span></div>
+<div class="case-metrics case-metrics-v524">
+  <div class="case-metric"><strong>80.97%</strong><span>Lesion-wise sensitivity</span><small>Independent test cohort</small></div>
+  <div class="case-metric"><strong>0.21</strong><span>False positives / scan</span><small>完整 cascade 後</small></div>
+  <div class="case-metric"><strong>76.89%</strong><span>Lesion-wise precision</span><small>Final cascade output</small></div>
+  <div class="case-metric"><strong>90.16%</strong><span>Five-class accuracy</span><small>Retained true-positive lesions</small></div>
 </div>
 
-<figure class="case-visual-v521 case-visual-full-v521">
-  {{< site-img src="images/projects/detail-v521/clinical-evaluation-v521.webp" alt="腦部 MRI 病灶層級模型評估與篩選概念流程" >}}
-  <figcaption>概念性作品集視覺：呈現候選病灶篩選、病灶分類與評估邏輯，並非研究程式的逐畫面截圖。</figcaption>
-</figure>
+<figure class="case-visual-v521 case-visual-full-v521">{{< site-img src="images/projects/detail-v521/clinical-evaluation-v521.webp" alt="腦部 MRI 逐病灶模型評估與篩選概念圖" >}}<figcaption><strong>概念評估視覺。</strong> 用於解釋候選篩選、病灶分類與效能評估，不是研究 pipeline 的實際截圖。</figcaption></figure>
 
-## Research Engineering · 研究工程
+## 研究工程與成果溝通
 
-架構使用 T1C 與 T2 MRI、敏感度導向的 **3D nnU-Net v2** proposal stage、lesion-centered downstream patches，以及 mask-gated classification models 進行偽陽性降低與保留病灶分類。我的 broader toolkit 包括 Python、pandas、NumPy、scikit-learn、XGBoost、PyTorch、TensorFlow/Keras、MONAI、SimpleITK、NiBabel、3D Slicer、Git、BigQuery 與 MLflow。
+最終 cascade 只是整體工作的一層；可重複的評估還仰賴影像 preprocessing、ground-truth 管理、實驗設計與清楚的 study-scope 溝通。
 
-## 模型背後的研究工程
-
-最終 cascade 只是整體研究工程的一層。我也建立與測試 **ANTs MRI 對位**、**ground-truth 共識資料管理**、**醫院資料標準化／格式轉換**，以及 **radiomics、segmentation、classification 實驗**等支援程式，將異質臨床影像整理成可重現的模型開發與驗證輸入。
-
-## 研究溝通與公開證據
-
-相關研究成果於 **MIDL 2026** 與 **IEEE AMLDS 2026** 發表。這些 conference artifacts 對應相關研究版本；本頁 headline metrics 統一採用最終碩論的 independent-cohort evaluation，避免混用不同 study versions。
-
-## Takeaway · 核心收穫
-
-Technical credibility 不只來自模型 accuracy，而來自清楚的 data scope、denominator-aware metrics、明確的 failure analysis，以及對 evidence 能夠支持與不能支持什麼保持紀律。
-
-<div class="case-capabilities-v523">
-  <span class="case-capabilities-label-v523">展現的能力</span>
-  <div class="case-capabilities-chips-v523"><span>機器學習</span><span>醫療影像</span><span>模型評估</span><span>錯誤分析</span><span>研究溝通</span></div>
+<div class="case-tooling-grid-v524">
+  <article><span>IMAGING PIPELINE</span><p>ANTs · SimpleITK · NiBabel · 3D Slicer</p></article>
+  <article><span>MODELING</span><p>PyTorch · MONAI · nnU-Net · scikit-learn</p></article>
+  <article><span>EVALUATION & DATA</span><p>Python · pandas · NumPy · statistical analysis</p></article>
 </div>
+
+相關工作還包含 **ANTs MRI registration、hospital-data standardization / format conversion、ground-truth consensus 管理，以及 radiomics / segmentation / classification experiments**。相關研究版本發表於 **MIDL 2026** 與 **AMLDS 2026**；本頁 headline metrics 統一採最終碩論 independent-cohort evaluation。
+
+## Takeaway
+
+技術可信度不只來自模型 accuracy，也來自清楚的資料範圍、正確的 denominator、明確的 failure analysis，以及對證據能支持與不能支持之處的精準溝通。
+
+<div class="case-capabilities-v523"><span class="case-capabilities-label-v523">CAPABILITIES DEMONSTRATED</span><div class="case-capabilities-chips-v523"><span>Machine Learning</span><span>Medical Imaging</span><span>Model Evaluation</span><span>Error Analysis</span><span>Research Communication</span></div></div>

@@ -3,7 +3,7 @@ title: "Third-Party Testing & Validation Operations"
 translationKey: "structured-validation"
 tags: ["Third-Party Testing", "Quality Operations", "Regulatory Documentation", "Lab Operations"]
 category: "REGULATED TESTING · OPERATIONS"
-summary: "Third-party radiation-equipment testing, evidence packaging, and report production in an accredited laboratory environment."
+summary: "Structured third-party radiation-equipment testing, evidence packaging, and reporting in an accredited laboratory environment."
 proof: ["8 products tested", "10+ testing reports", "5 client organizations"]
 visual: "analytics-visual"
 weight: 3
@@ -41,41 +41,36 @@ relatedNextURL: "work/medical-ai-product/"
 
 The work sat between **technical measurement, laboratory quality systems, and external reporting**. Product-testing requests had to be translated into defined procedures, traceable measurements, reviewable records, and reports that could support client compliance preparation.
 
-## Two areas of work
+## Two distinct areas of work
 
-I served as a primary student assistant for the **Ionizing Radiation Industry–University Technical Collaboration Consortium** and supported third-party testing activities in the laboratory.
+<div class="case-section-subgrid-v524">
+  <article><span>REGULATED TESTING</span><strong>Third-party testing & consortium operations</strong><p>Equipment testing, quality documentation, independent technical reports, client coordination, and assessment readiness.</p></article>
+  <article><span>QUANTITATIVE IMAGING</span><strong>MATLAB small-animal CT analysis</strong><p>Bone-density and trabecular measurements through a reusable workflow later adopted by two university laboratories.</p></article>
+</div>
 
-My responsibilities included:
+For the regulated-testing work, I served as a primary student assistant for the **Ionizing Radiation Industry–University Technical Collaboration Consortium** and supported testing activities, evidence organization, technical reporting, quality-system records, audit readiness, and member/client communication.
 
-- Coordinating equipment-testing workflows and client-facing documentation.
-- Supporting measurements such as detector performance and X-ray-tube related testing, depending on the requested service.
-- Producing and organizing third-party technical reports and evidence packages.
-- Maintaining quality-system records and supporting audit / assessment readiness.
-- Supporting consortium administration, member communication, and follow-up documentation.
-- Connecting procedures, raw evidence, review, and final reporting so outputs were traceable and repeatable.
-
-## Validation pipeline
+## Validation pipeline and traceability
 
 **Request → test plan → measurement → traceable result → report → review**
 
-The laboratory operated under **ISO/IEC 17025 / TAF accreditation for defined scopes**. Some work could also fall outside accredited items depending on the requested service, so the site does not treat every report as a TAF-accredited test.
-
 <figure class="case-visual-v521 case-visual-full-v521">
   {{< site-img src="images/projects/detail-v521/testing-measurement-v521.webp" alt="Conceptual laboratory measurement, documentation, and validation review workflow" >}}
-  <figcaption>Conceptual portfolio visualization of measurement, evidence review, documentation, and quality validation in a laboratory setting.</figcaption>
+  <figcaption><strong>Conceptual validation workflow.</strong> Measurement, evidence review, documentation, and quality review in a laboratory setting.</figcaption>
 </figure>
 
-## Reporting, traceability, and impact
+<p class="case-note-v524"><strong>Accreditation context.</strong> The laboratory held ISO/IEC 17025 / TAF accreditation for defined scopes; accreditation status varied by requested test item.</p>
 
-- Conducted or supported third-party testing across **8 ionizing-radiation equipment products**.
-- Produced **10+ third-party testing / certification-support reports**.
-- Supported compliance evidence preparation for **5 client organizations**.
-- Participated in laboratory quality-system and assessment-readiness work.
-- Helped operate the industry–university technical collaboration consortium as a primary student assistant.
+<div class="case-metrics case-metrics-v524">
+  <div class="case-metric"><strong>8</strong><span>Products tested</span><small>Ionizing-radiation equipment</small></div>
+  <div class="case-metric"><strong>10+</strong><span>Reports produced</span><small>Third-party testing / certification support</small></div>
+  <div class="case-metric"><strong>5</strong><span>Client organizations</span><small>Compliance evidence preparation</small></div>
+  <div class="case-metric"><strong>2</strong><span>Labs adopted tooling</span><small>Separate quantitative-imaging workflow</small></div>
+</div>
 
-## Standardizing quantitative imaging across laboratories
+## Quantitative imaging tooling
 
-Separately from the third-party testing case above, I also developed **MATLAB-based quantitative CT tooling** for small-animal bone studies, standardizing bone-mineral-density and trabecular measurements for **two university laboratories**. I keep that work within my Experience rather than treating it as part of the testing-report workflow.
+Separately from the third-party testing workflow, I developed **MATLAB-based quantitative CT tooling** for small-animal bone studies, standardizing bone-mineral-density and trabecular measurements for **two university laboratories**. Keeping this work separate from the testing-report workflow makes the scope of each contribution clear while showing the same underlying strength: repeatable technical operations.
 
 ## Takeaway
 

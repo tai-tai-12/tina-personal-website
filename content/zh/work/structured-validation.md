@@ -36,49 +36,41 @@ relatedNextTitle: "從醫療 AI 研究到可部署產品"
 relatedNextURL: "work/medical-ai-product/"
 ---
 
-在後來進入醫療 AI 產品工作前，我曾在**陳志成教授的生醫影像物理與儀器實驗室／游離輻射檢驗實驗室**工作，支援實驗室品質作業，以及校內游離輻射產學技術聯盟的營運。
 
+## 工作流一旦碎片化，證據就容易失去一致性
 
-## 當流程分散時，證據就會變得脆弱
+這份工作位於 **技術量測、實驗室品質系統與對外報告** 的交界。產品測試需求需要被轉成清楚程序、可追溯量測、可審查紀錄，以及能支援客戶合規準備的報告。
 
-這份工作介於**技術量測、實驗室品質系統與對外報告**之間。產品測試需求需要轉換成明確流程、可追溯量測結果、可審查紀錄，以及可供客戶進行合規準備的技術報告。
+## 兩個彼此獨立的工作範圍
 
-## 兩類不同的工作
-
-我擔任**游離輻射產學技術聯盟主要學生助理**，並支援實驗室的第三方產品測試作業。
-
-主要工作包括：
-
-- 協調設備測試流程與對客文件。
-- 依服務需求支援 detector performance、X-ray tube 等相關量測。
-- 製作與整理第三方技術報告與證據資料。
-- 維護品質系統紀錄並支援監督評鑑／查核準備。
-- 支援聯盟會員、廠商溝通與後續文件管理。
-- 將程序、原始證據、審查與最終報告串成可追溯、可重複的流程。
-
-## 驗證流程
-
-**需求 → 測試計畫 → 量測 → 可追溯結果 → 報告 → 審查**
-
-實驗室在**特定範圍**內依 ISO/IEC 17025 / TAF 認證運作；實際服務也可能包含非 TAF 測項，因此網站不會把所有報告都表述為 TAF 認證測試。
-
-## 成果
-
-- 參與 **8 項游離輻射設備產品**的第三方測試。
-- 產出 **10+ 份第三方測試／認證支援報告**。
-- 支援 **5 家客戶組織**準備合規技術證據。
-- 參與品質系統與評鑑準備工作。
-- 作為主要學生助理支援產學技術聯盟營運。
-
-## 相關的定量影像工作
-
-與上述第三方產品測試不同，我也曾另外開發 **MATLAB small-animal CT 定量分析工具**，將骨密度與骨小樑量測流程標準化，後續由 **2 個大學實驗室**使用。這部分會保留在 Experience 中，而不與第三方測試案例混為同一流程。
-
-## Takeaway · 核心收穫
-
-這段經驗讓我理解如何讓技術證據變得**可追溯、可審查，並能被技術團隊以外的人使用**。這也成為我後來處理醫療 AI 驗證、法規文件與產品作業的重要基礎。
-
-<div class="case-capabilities-v523">
-  <span class="case-capabilities-label-v523">展現的能力</span>
-  <div class="case-capabilities-chips-v523"><span>第三方測試</span><span>品質營運</span><span>ISO/IEC 17025</span><span>技術報告</span><span>稽核協作</span></div>
+<div class="case-section-subgrid-v524">
+  <article><span>REGULATED TESTING</span><strong>第三方測試與小聯盟營運</strong><p>設備測試、品質文件、獨立技術報告、客戶協調與評鑑準備。</p></article>
+  <article><span>QUANTITATIVE IMAGING</span><strong>MATLAB small-animal CT 分析</strong><p>骨密度與骨小樑量測，並建立後續由兩個大學實驗室採用的可重複流程。</p></article>
 </div>
+
+在受規範測試工作中，我擔任 **游離輻射產學技術合作小聯盟** 的主要學生助理，支援第三方測試、證據整理、技術報告、品質系統紀錄、評鑑準備與會員／客戶溝通。
+
+## 驗證流程與可追溯性
+
+**Request → test plan → measurement → traceable result → report → review**
+
+<figure class="case-visual-v521 case-visual-full-v521">{{< site-img src="images/projects/detail-v521/testing-measurement-v521.webp" alt="實驗室量測、文件與驗證審查概念流程" >}}<figcaption><strong>概念驗證流程。</strong> 呈現量測、證據審查、文件與品質審查，不是特定客戶測試的實際畫面。</figcaption></figure>
+
+<p class="case-note-v524"><strong>認證範圍。</strong> 實驗室在特定 scope 下具 ISO/IEC 17025 / TAF 認證；實際測試項目的認證狀態依服務內容而異。</p>
+
+<div class="case-metrics case-metrics-v524">
+  <div class="case-metric"><strong>8</strong><span>Products tested</span><small>游離輻射設備</small></div>
+  <div class="case-metric"><strong>10+</strong><span>Reports produced</span><small>第三方測試／認證支援</small></div>
+  <div class="case-metric"><strong>5</strong><span>Client organizations</span><small>合規證據準備</small></div>
+  <div class="case-metric"><strong>2</strong><span>Labs adopted tooling</span><small>獨立的定量影像流程</small></div>
+</div>
+
+## 定量影像工具
+
+與上述第三方測試工作分開，我也為 small-animal bone studies 開發 **MATLAB-based quantitative CT tooling**，標準化骨密度與骨小樑量測流程，後續由 **兩個大學實驗室** 使用。兩者分開呈現，可以更清楚界定各自工作範圍，同時保留共同能力：建立可重複、可交接的技術流程。
+
+## Takeaway
+
+這段經驗讓我學會如何讓技術證據變得 **可追溯、可審查，也能被技術團隊之外的人使用**；這也成為我後續醫療 AI 驗證、法規文件與產品營運的重要基礎。
+
+<div class="case-capabilities-v523"><span class="case-capabilities-label-v523">CAPABILITIES DEMONSTRATED</span><div class="case-capabilities-chips-v523"><span>Third-Party Testing</span><span>Quality Operations</span><span>ISO/IEC 17025</span><span>Technical Reporting</span><span>Audit Coordination</span></div></div>

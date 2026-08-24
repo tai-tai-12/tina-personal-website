@@ -36,77 +36,57 @@ relatedNextURL: "work/clinical-ai-at-scale/"
 ---
 
 
-## 為什麼研究本身還不夠
+## 為什麼研究成果還不等於可部署產品
 
-模型表現好，不代表已經是一個可部署的產品。臨床使用還需要符合放射科醫師的判讀流程、以可理解方式呈現 AI 結果、完成驗證，並建立技術、臨床與法規利害關係人都能信任的證據。
+一個表現良好的模型，仍不等於可以直接進入臨床使用。真正可用的系統需要貼合醫師閱片流程、清楚呈現 AI 結果、支援驗證，並產生技術、臨床與法規端都能理解與追溯的證據。
 
-## 串接技術證據、臨床與法規決策
+## 我的角色與產品決策
 
-我的工作涵蓋 **產品管理、專案領導、臨床轉譯與法規執行**，包括協調醫師、工程師、主管與法規利害關係人，安排驗證優先順序、支援 TFDA 送件，以及改善送件文件與版本管理流程。
+我的工作橫跨 **產品管理、專案協調、臨床轉譯與法規執行**，包括協調醫師、工程師、主管與法規利害關係人、整理驗證優先順序、支援 TFDA 送件，以及改善送件文件與版本管理。
 
-[AItewan 公司官網 ↗](https://www.aitewan-bio.com/en/)
-
-## 從需求到產品決策
-
-1. 將臨床工作流程需求轉成產品範圍與驗證優先順序。
-2. 將模型表現與醫院及法規審查所需證據連結。
-3. 協調技術、臨床、商業與法規團隊。
-4. 建立可重複使用的文件與追蹤流程，使決策與版本更清楚。
-
-<div class="case-proof-grid">
-  <div class="case-proof"><strong>2</strong><span>家醫學中心</span><small>跨院臨床轉譯情境</small></div>
-  <div class="case-proof"><strong>TFDA</strong><span>送件</span><small>產品與法規執行</small></div>
-  <div class="case-proof"><strong>PACS</strong><span>連接工作流程</span><small>AI 判讀融入臨床影像調閱</small></div>
+<div class="case-section-subgrid-v524">
+  <article><span>PRODUCT & SCOPE</span><strong>工作流程與需求</strong><p>把臨床閱片需求轉成產品範圍與驗證優先順序。</p></article>
+  <article><span>CLINICAL TRANSLATION</span><strong>以醫師為核心的使用方式</strong><p>讓 AI 輔助閱片與醫師最終判斷及責任分工保持一致。</p></article>
+  <article><span>VALIDATION</span><strong>證據規劃</strong><p>把模型表現連接到醫院與法規審查所需的驗證證據。</p></article>
+  <article><span>REGULATORY EXECUTION</span><strong>TFDA 準備</strong><p>支援送件資料、版本追蹤與跨團隊協作。</p></article>
 </div>
 
-## 從模型到產品流程
+[AITEWAN 公司官網 ↗](https://www.aitewan-bio.com/en/)
 
-研究架構採用病灶層級串聯式流程，而不是把 detection 當成單一終點。高敏感度候選生成先建立廣泛病灶候選，再由後續分類器降低偽陽性，最後將保留病灶分成五類腫瘤。完整技術驗證則獨立整理於 **逐病灶臨床 AI 建立與驗證** 案例中。
+## 從模型走向產品工作流程
+
+底層研究採逐病灶 cascade：先以高敏感度策略產生候選病灶，再降低偽陽性，最後對保留病灶進行五類腫瘤分類。完整技術評估另見 **Building and Validating Lesion-Wise Clinical AI**。
 
 <figure class="case-visual case-visual-vector">
-  {{< site-img src="images/projects/detail-v521/clinical-cascade-v521.webp" alt="候選生成、偽陽性降低與最終病灶分類的三階段 AI 串聯流程" >}}
-  <figcaption>為作品集重新簡化的研究架構：先優先保留敏感度，再降低偽陽性，最後進行保留病灶的腫瘤分類。</figcaption>
+  {{< site-img src="images/projects/detail-v521/clinical-cascade-v521.webp" alt="逐病灶 AI 三階段流程" >}}
+  <figcaption><strong>研究基礎。</strong> 這是產品故事背後的簡化逐病灶架構；cohort 定義與 operating-point 分析收錄於技術案例頁。</figcaption>
 </figure>
 
-## 從研究證據走向產品流程
-
-產品層不只包含模型。臨床流程涵蓋 PACS 個案調閱、AI 處理狀態、影像瀏覽、AI 輔助病灶圈註、病灶分析，以及在醫師最終判斷前的報告檢視。系統定位為 **輔助決策工具**，最終判讀仍由臨床專業人員負責。
-
-<div class="case-evidence-grid">
-  <article class="case-evidence-card">
-    {{< site-img src="images/research/midl-poster.webp" alt="Tina Tai 在 MIDL 2026 腦瘤 AI 海報前合照" >}}
-    <div>
-      <h3>MIDL 2026</h3>
-      <p>病灶層級串聯架構以 short paper poster 形式發表於 MIDL 2026，成為這個產品案例背後可公開呈現的研究證據之一。</p>
-    </div>
-  </article>
-  <article class="case-evidence-card">
-    {{< site-img src="images/research/amlds-talk.webp" alt="Tina Tai 在 IEEE AMLDS 2026 進行口頭報告" >}}
-    <div>
-      <h3>IEEE AMLDS 2026</h3>
-      <p>與此技術主線密切相關的病灶候選驗證與偽陽性降低工作，也以 oral presentation 形式發表於 IEEE AMLDS 2026。</p>
-    </div>
-  </article>
-</div>
+產品層不只包含模型，也涵蓋 **PACS case access、AI 處理狀態、影像閱覽、AI lesion overlay、病灶層級分析與報告審閱**，並保留醫師最終判斷。
 
 <figure class="case-visual-v521 case-visual-full-v521">
-  {{< site-img src="images/projects/detail-v521/product-deployment-v521.webp" alt="醫療 AI 部署、資料串接與治理概念視覺" >}}
-  <figcaption>概念性作品集視覺：呈現連接資料、產品監測、安全性與臨床治理如何共同支撐 deployment readiness。</figcaption>
+  {{< site-img src="images/projects/detail-v521/product-deployment-v521.webp" alt="醫療 AI 產品部署、資料流與治理概念圖" >}}
+  <figcaption><strong>概念產品流程。</strong> 呈現資料連接、AI 輔助閱片、文件與治理，不是實際產品畫面截圖。</figcaption>
 </figure>
 
-## 成果與影響
+## 研究證據與法規執行
 
-- 支援橫跨 **兩家醫學中心** 的臨床 AI 工作流程。
-- 推動產品完成 **TFDA 送件**，支援商業化與醫院部署準備。
-- 協調醫師、工程師、主管與法規利害關係人，對齊產品範圍、驗證優先順序與時程。
-- 支援 **2024 Taiwan Medical Informatics Connectathon Level I** 醫學影像工作流程能力聲明驗證。
-- 將分散的 TFDA 文件整合為雲端追蹤系統，改善檔案搜尋與版本管理。
+產品路徑建立在同一條逐病灶腦瘤 AI 研究主線上，並透過不同公開發表形式呈現。
 
-## Takeaway · 核心收穫
-
-AI 產品最困難的部分往往不只是模型，而是讓技術能力、使用者需求、審查所需證據，以及組織真正能執行的流程彼此對齊。
-
-<div class="case-capabilities-v523">
-  <span class="case-capabilities-label-v523">展現的能力</span>
-  <div class="case-capabilities-chips-v523"><span>產品管理</span><span>利害關係人協作</span><span>Clinical AI</span><span>法規執行</span><span>驗證策略</span></div>
+<div class="case-evidence-grid">
+  <article class="case-evidence-card">{{< site-img src="images/research/midl-poster.webp" alt="Tina Tai 與 MIDL 2026 海報" >}}<div><span>MIDL · 2026</span><h3>Short Paper Poster</h3><p>逐病灶偽陽性降低與五類腫瘤分類的公開研究成果。</p></div></article>
+  <article class="case-evidence-card">{{< site-img src="images/research/amlds-talk.webp" alt="Tina Tai 在 AMLDS 2026 進行口頭報告" >}}<div><span>AMLDS · 2026</span><h3>Oral Presentation</h3><p>同一技術主線上，聚焦候選病灶驗證與偽陽性降低的延伸研究。</p></div></article>
 </div>
+
+<div class="case-metrics case-metrics-v524">
+  <div class="case-metric"><strong>2</strong><span>Medical centers</span><small>跨醫院情境的臨床轉譯</small></div>
+  <div class="case-metric"><strong>TFDA</strong><span>Submission supported</span><small>產品與法規執行</small></div>
+  <div class="case-metric"><strong>Level I</strong><span>Connectathon validation</span><small>2024 醫療影像流程能力驗證</small></div>
+  <div class="case-metric"><strong>1 tracker</strong><span>Submission record system</span><small>雲端化檢索與版本管理</small></div>
+</div>
+
+## Takeaway
+
+AI 產品最困難的部分往往不只是模型，而是讓技術能力、使用者需求、審查證據與組織執行能力彼此對齊。
+
+<div class="case-capabilities-v523"><span class="case-capabilities-label-v523">CAPABILITIES DEMONSTRATED</span><div class="case-capabilities-chips-v523"><span>Product Management</span><span>Stakeholder Alignment</span><span>Clinical AI</span><span>Regulatory Execution</span><span>Validation Strategy</span></div></div>

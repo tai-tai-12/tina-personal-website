@@ -1,12 +1,18 @@
 {{ $isZh := eq .Site.Language.Lang "zh" }}
 <footer class="site-footer">
-  <div class="shell footer-grid">
-    <div><strong>Tina Tai</strong><p>{{ if $isZh }}產品與數據分析 · AI × Healthcare{{ else }}Product & Analytics · AI × Healthcare{{ end }}</p></div>
-    <div class="footer-links">
-      <a href="mailto:{{ .Site.Params.email }}">Email</a>
-      <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noreferrer">LinkedIn</a>
-      <a href="{{ .Site.Params.resume | relURL }}" target="_blank" rel="noreferrer">Resume</a>
+  <div class="shell footer-grid footer-grid-v524">
+    <div class="footer-identity-v524">
+      <strong>Tina Tai</strong>
+      <p>{{ if $isZh }}產品與數據分析 · AI × Healthcare{{ else }}Product & Analytics · AI × Healthcare{{ end }}</p>
+      <div class="footer-contact-v524" aria-label="Contact information">
+        {{ with .Site.Params.location }}<span>{{ . }}</span>{{ end }}
+        <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+      </div>
     </div>
+    <nav class="footer-links" aria-label="Footer links">
+      <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+      <a href="{{ .Site.Params.resume | relURL }}" target="_blank" rel="noreferrer">Resume ↗</a>
+    </nav>
   </div>
   <div class="shell footer-note">© {{ now.Year }} Tina Tai</div>
 </footer>

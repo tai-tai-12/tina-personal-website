@@ -9,7 +9,7 @@ contextLabel: "職涯軌跡"
 
 負責 AI 輔助腦瘤偵測產品的產品與法規執行，協調醫師、工程師、主管與法規相關利害關係人，並支援商業化與醫院部署準備。
 
-[AItewan 公司官網 ↗](https://www.aitewan-bio.com/en/)
+[AITEWAN 公司官網 ↗](https://www.aitewan-bio.com/en/)
 
 ## NYCU — AI in Medical Imaging Lab
 **Research Assistant / Project Lead · 2023/02 – 2026/06 · 台北**

@@ -1,7 +1,7 @@
-# Tina Tai Personal Website — V5.15
+# Tina Tai Personal Website — V5.16
 
-Current release: **Capabilities & Academic Depth Pass**. See `docs/V5_15_CAPABILITIES_ACADEMIC_DEPTH_PASS.md` for details.
+Current release: **Research & Experience Architecture Pass**.
 
-Navigation & Interface Polish release.
+See `docs/V5_16_RESEARCH_EXPERIENCE_ARCHITECTURE_PASS.md` for the complete change log.
 
-See `docs/V5_12_NAVIGATION_INTERFACE_POLISH.md` for changes.
+This package includes all cumulative fixes and content from V5.15 plus the V5.16 research / experience restructuring and new visual assets.

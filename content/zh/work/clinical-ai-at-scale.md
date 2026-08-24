@@ -10,15 +10,38 @@ weight: 2
 heroBackground: "images/projects/work-clinical-ai-v519.webp"
 detailHero: "images/projects/detail-v521/clinical-hero-v521.webp"
 detailHeroAlt: "Clinical AI dashboard showing lesion-wise brain MRI analysis"
+heroDek: "以多中心資料、實務失敗模式與敏感度／閱片負擔取捨，評估病灶層級腦部 MRI AI。"
+heroStats:
+  - value: "12,125"
+    label: "開發 MRI exams"
+  - value: "264"
+    label: "獨立測試 exams"
+  - value: "0.21"
+    label: "每掃描 FP"
+  - value: "90.16%"
+    label: "五分類準確率"
+snapshot:
+  - title: "挑戰"
+    body: "單一 headline metric 無法完整描述病灶偵測品質與後續閱片負擔。"
+  - title: "我的角色"
+    body: "模型開發、評估設計、錯誤分析與技術溝通。"
+  - title: "範圍"
+    body: "12,125 筆開發資料，加上 264 筆多中心獨立臨床測試。"
+  - title: "成果"
+    body: "建立同時考量 sensitivity、precision、FP/scan 與保留病灶分類的評估架構。"
+relatedPrevTitle: "從醫療 AI 研究到可部署產品"
+relatedPrevURL: "work/medical-ai-product/"
+relatedNextTitle: "第三方測試與驗證營運"
+relatedNextURL: "work/structured-validation/"
 ---
 
 這個案例聚焦我的分析與技術能力：如何在真實世界醫學影像資料中建立、評估並溝通模型效能。
 
-## 挑戰
+## 準確率不足以描述臨床閱片品質
 
 醫學影像模型不能只看單一 headline metric。需要在具臨床意義的任務、獨立資料、failure modes，以及漏診與偽陽性檢閱負擔的 trade-off 下評估系統。
 
-## 我的角色
+## 我負責的工作
 
 作為 Research Assistant / Project Lead，我負責腦部影像模型的開發與評估工作、臨床資料處理、錯誤模式分析，以及將技術結果向臨床與國際 audience 溝通。
 
@@ -37,7 +60,7 @@ Development cohort 用於模型開發、內部驗證與 operating-point characte
   <figcaption>最終碩論的評估架構：Stage 0 建立敏感度導向候選池，Stage 1 去除明顯偽陽性，Stage 2 處理殘餘偽陽性並對保留病灶進行分類。</figcaption>
 </figure>
 
-## 評估方法
+## 不只看 headline accuracy
 
 - 明確區分 **development** 與 **independent clinical test** 資料範圍。
 - 將病灶層級 sensitivity 與 FP/scan、precision 一起解讀，而非只看單一指標。
@@ -57,7 +80,7 @@ Development cohort 用於模型開發、內部驗證與 operating-point characte
   <figcaption>概念性作品集視覺：呈現候選病灶篩選、病灶分類與評估邏輯，並非研究程式的逐畫面截圖。</figcaption>
 </figure>
 
-## 技術深度
+## Research Engineering · 研究工程
 
 架構使用 T1C 與 T2 MRI、敏感度導向的 **3D nnU-Net v2** proposal stage、lesion-centered downstream patches，以及 mask-gated classification models 進行偽陽性降低與保留病灶分類。我的 broader toolkit 包括 Python、pandas、NumPy、scikit-learn、XGBoost、PyTorch、TensorFlow/Keras、MONAI、SimpleITK、NiBabel、3D Slicer、Git、BigQuery 與 MLflow。
 
@@ -65,11 +88,11 @@ Development cohort 用於模型開發、內部驗證與 operating-point characte
 
 最終 cascade 只是整體研究工程的一層。我也建立與測試 **ANTs MRI 對位**、**ground-truth 共識資料管理**、**醫院資料標準化／格式轉換**，以及 **radiomics、segmentation、classification 實驗**等支援程式，將異質臨床影像整理成可重現的模型開發與驗證輸入。
 
-## 研究溝通
+## 研究溝通與公開證據
 
 相關研究成果於 **MIDL 2026** 與 **IEEE AMLDS 2026** 發表。這些 conference artifacts 對應相關研究版本；本頁 headline metrics 統一採用最終碩論的 independent-cohort evaluation，避免混用不同 study versions。
 
-## 我學到的事
+## Takeaway · 核心收穫
 
 Technical credibility 不只來自模型 accuracy，而來自清楚的 data scope、denominator-aware metrics、明確的 failure analysis，以及對 evidence 能夠支持與不能支持什麼保持紀律。
 

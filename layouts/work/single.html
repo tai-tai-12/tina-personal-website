@@ -1,47 +1,52 @@
 {{ define "main" }}
-<article class="case-study-v521">
-  <header class="case-hero-v521">
-    <div class="case-hero-v521-inner section-shell compact">
-      <a class="case-back-link-v521" href="{{ "work/" | relLangURL }}">← {{ if eq .Lang "zh" }}返回作品{{ else }}Selected Work{{ end }}</a>
-      <div class="case-kicker-v521">{{ .Params.category | default "CASE STUDY" }}</div>
-      <h1>{{ .Title }}</h1>
-      {{ with .Params.summary }}<p class="case-deck-v521">{{ . }}</p>{{ end }}
-
-      <div class="case-meta-row-v521">
-        {{ range .Params.proof }}<span>{{ . }}</span>{{ end }}
+<article class="case-study-v522">
+  <header class="case-hero-v522{{ with .Params.detailHero }} has-visual{{ end }}"{{ with .Params.detailHero }} style="--case-hero-bg:url('{{ . | relURL }}')"{{ end }}>
+    <div class="case-hero-v522-shade"></div>
+    <div class="case-hero-v522-inner section-shell compact">
+      <div class="case-hero-v522-topline">
+        <a class="case-back-link-v522" href="{{ "work/" | relLangURL }}">← {{ if eq .Lang "zh" }}所有作品{{ else }}All work{{ end }}</a>
+        <span class="case-kicker-v522">{{ .Params.category | default "CASE STUDY" }}</span>
       </div>
-      <div class="case-tags-v521">
-        {{ range .Params.tags }}<span>{{ . }}</span>{{ end }}
+      <div class="case-hero-v522-copy">
+        <h1>{{ .Title }}</h1>
+        {{ with .Params.heroDek }}<p class="case-deck-v522">{{ . }}</p>{{ else }}{{ with .Params.summary }}<p class="case-deck-v522">{{ . }}</p>{{ end }}{{ end }}
+        {{ with .Params.heroStats }}
+        <div class="case-stat-rail-v522">
+          {{ range . }}<div class="case-stat-v522"><strong>{{ .value }}</strong><span>{{ .label }}</span></div>{{ end }}
+        </div>
+        {{ end }}
+        <div class="case-tags-v522">{{ range first 4 .Params.tags }}<span>{{ . }}</span>{{ end }}</div>
       </div>
     </div>
-
-    {{ with .Params.detailHero }}
-    <div class="case-hero-media-v521 section-shell">
-      <figure>
-        <img src="{{ . | relURL }}" alt="{{ $.Params.detailHeroAlt | default $.Title }}" loading="eager" decoding="async">
-      </figure>
-    </div>
-    {{ end }}
   </header>
 
-  <div class="case-reading-layout-v521 section-shell compact">
-    <aside class="case-toc-v521">
-      <div class="case-toc-card-v521">
-        <div class="case-toc-label-v521">{{ if eq .Lang "zh" }}案例導覽{{ else }}CASE STUDY{{ end }}</div>
+  {{ with .Params.snapshot }}
+  <section class="case-snapshot-v522 section-shell compact" aria-label="Project snapshot">
+    <div class="case-snapshot-label-v522">{{ if eq $.Lang "zh" }}PROJECT SNAPSHOT · 專案摘要{{ else }}PROJECT SNAPSHOT{{ end }}</div>
+    <div class="case-snapshot-grid-v522">
+      {{ range . }}
+      <article><span>{{ .title }}</span><p>{{ .body }}</p></article>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  <div class="case-reading-layout-v522 section-shell compact">
+    <aside class="case-toc-v522">
+      <div class="case-toc-card-v522">
+        <div class="case-toc-label-v522">{{ if eq .Lang "zh" }}CASE STUDY · 導覽{{ else }}CASE STUDY{{ end }}</div>
         {{ .TableOfContents }}
-        <a class="case-toc-back-v521" href="{{ "work/" | relLangURL }}">{{ if eq .Lang "zh" }}查看所有作品 →{{ else }}All selected work →{{ end }}</a>
       </div>
     </aside>
-
-    <main class="case-prose-v521">
-      {{ .Content }}
-    </main>
+    <main class="case-prose-v522">{{ .Content }}</main>
   </div>
 
-  <footer class="case-next-v521 section-shell compact">
-    <div>
-      <span>{{ if eq .Lang "zh" }}更多作品{{ else }}KEEP EXPLORING{{ end }}</span>
-      <a href="{{ "work/" | relLangURL }}">{{ if eq .Lang "zh" }}回到 Selected Work →{{ else }}Back to Selected Work →{{ end }}</a>
+  <footer class="case-related-v522 section-shell compact">
+    <div class="case-related-label-v522">{{ if eq .Lang "zh" }}CONTINUE EXPLORING · 繼續探索{{ else }}CONTINUE EXPLORING{{ end }}</div>
+    <div class="case-related-grid-v522">
+      {{ with .Params.relatedPrevURL }}<a href="{{ . | relLangURL }}"><span>← {{ if eq $.Lang "zh" }}上一個專案{{ else }}Previous project{{ end }}</span><strong>{{ $.Params.relatedPrevTitle }}</strong></a>{{ end }}
+      {{ with .Params.relatedNextURL }}<a href="{{ . | relLangURL }}"><span>{{ if eq $.Lang "zh" }}下一個專案{{ else }}Next project{{ end }} →</span><strong>{{ $.Params.relatedNextTitle }}</strong></a>{{ end }}
+      <a class="case-related-all-v522" href="{{ "work/" | relLangURL }}"><span>{{ if eq .Lang "zh" }}所有作品{{ else }}All work{{ end }}</span><strong>{{ if eq .Lang "zh" }}回到 Selected Work →{{ else }}Back to Selected Work →{{ end }}</strong></a>
     </div>
   </footer>
 </article>

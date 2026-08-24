@@ -10,26 +10,45 @@ weight: 1
 heroBackground: "images/projects/work-product-v519.webp"
 detailHero: "images/projects/detail-v521/product-hero-v521.webp"
 detailHeroAlt: "Clinical AI product workflow at a brain MRI review workstation"
+heroDek: "Translating lesion-wise brain MRI research into a physician-led product workflow spanning validation, regulatory preparation, and deployment readiness."
+heroStats:
+  - value: "2"
+    label: "Medical centers"
+  - value: "TFDA"
+    label: "Submission supported"
+  - value: "5 classes"
+    label: "Tumor typing"
+  - value: "PACS"
+    label: "Connected workflow"
+snapshot:
+  - title: "Challenge"
+    body: "A strong research model still needed to fit clinical review, validation, regulatory, and operational requirements."
+  - title: "My role"
+    body: "Product management, project coordination, clinical translation, and regulatory execution."
+  - title: "Scope"
+    body: "Physicians, engineers, executives, medical centers, and regulatory stakeholders."
+  - title: "Outcome"
+    body: "A physician-led workflow supported by structured validation and TFDA submission preparation."
+relatedPrevTitle: "Third-Party Testing & Validation Operations"
+relatedPrevURL: "work/structured-validation/"
+relatedNextTitle: "Building and Validating Lesion-Wise Clinical AI"
+relatedNextURL: "work/clinical-ai-at-scale/"
 ---
 
 I helped translate brain-tumor MRI research into a physician-led workflow designed for real clinical use, while coordinating the product, validation, and regulatory work needed to move toward deployment.
 
-<figure class="case-visual case-visual-vector">
-  {{< site-img src="images/projects/detail-v521/product-workflow-v521.webp" alt="Conceptual clinical product workflow from PACS case access through AI-assisted MRI review and physician review" >}}
-  <figcaption>Conceptual physician-led workflow. Details and product evidence are explained in the case study below.</figcaption>
-</figure>
 
-## The challenge
+## Why research alone was not enough
 
 A strong model is not yet a deployable product. A clinically useful system has to fit the radiologist's review workflow, surface AI results in an interpretable way, support validation, and generate evidence that technical, clinical, and regulatory stakeholders can trust.
 
-## My role
+## Connecting technical evidence with clinical and regulatory decisions
 
 I worked across **product management, project leadership, clinical translation, and regulatory execution**. My responsibilities included aligning physicians, engineers, executives, and regulatory stakeholders; organizing validation priorities; supporting TFDA submission work; and improving submission-document management.
 
 [AItewan company website ↗](https://www.aitewan-bio.com/en/)
 
-## Approach
+## From requirements to product decisions
 
 1. Translate clinical workflow needs into product scope and validation priorities.
 2. Connect model performance with the evidence needed for hospital and regulatory review.
@@ -42,7 +61,7 @@ I worked across **product management, project leadership, clinical translation, 
   <div class="case-proof"><strong>PACS</strong><span>connected workflow</span><small>AI review embedded in clinical image access</small></div>
 </div>
 
-## Product + technical decisions
+## From model to product workflow
 
 The underlying research used a lesion-wise cascade rather than treating detection as a single end point. A sensitivity-oriented proposal stage generated a broad candidate pool, a downstream classifier suppressed false positives, and the final stage assigned retained lesions to one of five tumor subtypes. The detailed technical evaluation is presented separately in **Building and Validating Lesion-Wise Clinical AI**.
 
@@ -51,7 +70,7 @@ The underlying research used a lesion-wise cascade rather than treating detectio
   <figcaption>Simplified research architecture; technical definitions and cohort details are provided in the evaluation case study.</figcaption>
 </figure>
 
-## From evidence to product workflow
+## Research foundation
 
 The product layer extended beyond the model itself. The clinical workflow included PACS-connected case access, AI processing-state review, image viewing, AI-assisted lesion overlays, lesion-level analysis, and report review before physician judgment. The system was designed as **assistive decision support**, with the clinician retaining final interpretation.
 
@@ -77,7 +96,7 @@ The product layer extended beyond the model itself. The clinical workflow includ
   <figcaption>Conceptual portfolio visualization of deployment readiness: connected data, product monitoring, security, and governed clinical use.</figcaption>
 </figure>
 
-## Results & impact
+## Product + regulatory execution
 
 - Supported a clinical AI workflow spanning **two medical centers**.
 - Led product work through **TFDA submission**, supporting commercialization and hospital deployment readiness.
@@ -85,7 +104,7 @@ The product layer extended beyond the model itself. The clinical workflow includ
 - Supported **2024 Taiwan Medical Informatics Connectathon Level I** capability-statement validation for medical imaging workflows.
 - Consolidated fragmented TFDA records into a cloud-based tracker to improve retrieval and version control.
 
-## What I learned
+## Takeaway
 
 The hardest part of AI product work is often not the model itself. It is creating alignment between what the technology can do, what users actually need, what evidence reviewers require, and what an organization can operationalize.
 

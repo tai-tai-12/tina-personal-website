@@ -1,4 +1,7 @@
-# Tina Tai Personal Website — V5.18
+# Tina Tai Personal Website — V5.22
+
+V5.22 introduces the Case Study Editorial System for the three Selected Work detail pages.
+
 
 Research architecture, recognition, and selected-work visual consistency pass based on V5.17.
 

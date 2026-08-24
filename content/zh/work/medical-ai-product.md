@@ -10,26 +10,45 @@ weight: 1
 heroBackground: "images/projects/work-product-v519.webp"
 detailHero: "images/projects/detail-v521/product-hero-v521.webp"
 detailHeroAlt: "Clinical AI product workflow at a brain MRI review workstation"
+heroDek: "將病灶層級腦部 MRI 研究轉化為以醫師為核心的產品流程，串接驗證、法規準備與部署就緒。"
+heroStats:
+  - value: "2"
+    label: "醫療中心"
+  - value: "TFDA"
+    label: "送審支援"
+  - value: "5 類"
+    label: "腫瘤分類"
+  - value: "PACS"
+    label: "臨床流程串接"
+snapshot:
+  - title: "挑戰"
+    body: "強大的研究模型仍需要符合臨床閱片、驗證、法規與實際營運需求。"
+  - title: "我的角色"
+    body: "產品管理、專案協調、臨床轉譯與法規執行。"
+  - title: "範圍"
+    body: "醫師、工程師、主管、醫療中心與法規利害關係人。"
+  - title: "成果"
+    body: "形成以醫師為核心、由結構化驗證與 TFDA 準備支撐的產品流程。"
+relatedPrevTitle: "第三方測試與驗證營運"
+relatedPrevURL: "work/structured-validation/"
+relatedNextTitle: "病灶層級臨床 AI 建置與驗證"
+relatedNextURL: "work/clinical-ai-at-scale/"
 ---
 
 我參與將腦瘤 MRI 研究轉化為可融入臨床使用情境的工作流程，同時協調產品、驗證與法規工作，推進產品化與部署準備。
 
-<figure class="case-visual case-visual-vector">
-  {{< site-img src="images/projects/detail-v521/product-workflow-v521.webp" alt="從 PACS 個案調閱、AI 輔助 MRI 判讀到醫師覆核的概念性臨床產品流程" >}}
-  <figcaption>依公開安全原則重新繪製的概念流程：PACS 個案調閱 → AI 狀態 → MRI 判讀 → 病灶圈註 → 病灶分析 → 報告 → 醫師覆核。</figcaption>
-</figure>
 
-## 挑戰
+## 為什麼研究本身還不夠
 
 模型表現好，不代表已經是一個可部署的產品。臨床使用還需要符合放射科醫師的判讀流程、以可理解方式呈現 AI 結果、完成驗證，並建立技術、臨床與法規利害關係人都能信任的證據。
 
-## 我的角色
+## 串接技術證據、臨床與法規決策
 
 我的工作涵蓋 **產品管理、專案領導、臨床轉譯與法規執行**，包括協調醫師、工程師、主管與法規利害關係人，安排驗證優先順序、支援 TFDA 送件，以及改善送件文件與版本管理流程。
 
 [AItewan 公司官網 ↗](https://www.aitewan-bio.com/en/)
 
-## 方法
+## 從需求到產品決策
 
 1. 將臨床工作流程需求轉成產品範圍與驗證優先順序。
 2. 將模型表現與醫院及法規審查所需證據連結。
@@ -42,7 +61,7 @@ detailHeroAlt: "Clinical AI product workflow at a brain MRI review workstation"
   <div class="case-proof"><strong>PACS</strong><span>連接工作流程</span><small>AI 判讀融入臨床影像調閱</small></div>
 </div>
 
-## 產品與技術決策
+## 從模型到產品流程
 
 研究架構採用病灶層級串聯式流程，而不是把 detection 當成單一終點。高敏感度候選生成先建立廣泛病灶候選，再由後續分類器降低偽陽性，最後將保留病灶分成五類腫瘤。完整技術驗證則獨立整理於 **逐病灶臨床 AI 建立與驗證** 案例中。
 
@@ -85,7 +104,7 @@ detailHeroAlt: "Clinical AI product workflow at a brain MRI review workstation"
 - 支援 **2024 Taiwan Medical Informatics Connectathon Level I** 醫學影像工作流程能力聲明驗證。
 - 將分散的 TFDA 文件整合為雲端追蹤系統，改善檔案搜尋與版本管理。
 
-## 我學到的事
+## Takeaway · 核心收穫
 
 AI 產品最困難的部分往往不只是模型，而是讓技術能力、使用者需求、審查所需證據，以及組織真正能執行的流程彼此對齊。
 

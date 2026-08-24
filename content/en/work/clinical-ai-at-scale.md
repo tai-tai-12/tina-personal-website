@@ -10,19 +10,42 @@ weight: 2
 heroBackground: "images/projects/work-clinical-ai-v519.webp"
 detailHero: "images/projects/detail-v521/clinical-hero-v521.webp"
 detailHeroAlt: "Clinical AI dashboard showing lesion-wise brain MRI analysis"
+heroDek: "Evaluating lesion-wise brain MRI AI across multi-center data, practical failure modes, and the trade-off between sensitivity and review burden."
+heroStats:
+  - value: "12,125"
+    label: "Development MRI exams"
+  - value: "264"
+    label: "Independent test exams"
+  - value: "0.21"
+    label: "False positives / scan"
+  - value: "90.16%"
+    label: "5-class accuracy"
+snapshot:
+  - title: "Challenge"
+    body: "A single headline metric could not capture lesion detection quality or downstream review burden."
+  - title: "My role"
+    body: "Model development, evaluation design, error analysis, and technical communication."
+  - title: "Scope"
+    body: "12,125 development exams plus a 264-exam independent multi-center clinical test."
+  - title: "Outcome"
+    body: "A lesion-wise evaluation framework balancing sensitivity, precision, FP/scan, and retained-lesion typing."
+relatedPrevTitle: "From Medical AI Research to a Deployable Product"
+relatedPrevURL: "work/medical-ai-product/"
+relatedNextTitle: "Third-Party Testing & Validation Operations"
+relatedNextURL: "work/structured-validation/"
 ---
 
 This case study focuses on the analytical and technical side of my clinical-AI work: building, evaluating, and communicating model performance across real-world medical imaging datasets.
 
-## The challenge
+## Accuracy alone does not describe clinical review quality
 
 Medical imaging models need more than a single headline metric. Performance must be evaluated across clinically meaningful tasks, independent data, practical failure modes, and the trade-off between missed lesions and false-positive review burden.
 
-## My role
+## What I owned
 
 As a research assistant and project lead, I led brain-imaging model development and evaluation work, handled clinical datasets, investigated error modes, and translated technical results for clinical and international audiences.
 
-## Study scope
+## Study scope at a glance
 
 <div class="case-proof-grid technical-scope-grid">
   <div class="case-proof"><strong>12,125</strong><span>development MRI exams</span><small>23,341 annotated tumor lesions</small></div>
@@ -37,7 +60,7 @@ The development cohort was used for model development, internal validation, and 
   <figcaption>Final-thesis evaluation framework: Stage 0 generates a sensitivity-oriented candidate pool, Stage 1 removes obvious false positives, and Stage 2 models residual false positives while typing retained lesions.</figcaption>
 </figure>
 
-## Evaluation approach
+## Measuring more than headline accuracy
 
 - Separate **development** and **independent clinical test** data scopes.
 - Evaluate lesion-wise sensitivity together with FP/scan and precision rather than relying on a single metric.
@@ -57,7 +80,7 @@ The development cohort was used for model development, internal validation, and 
   <figcaption>Conceptual portfolio visualization of candidate filtering, lesion-level classification, and evaluation—not a literal screenshot of the research pipeline.</figcaption>
 </figure>
 
-## Technical depth
+## Research engineering
 
 The framework used T1C and T2 MRI, a sensitivity-oriented **3D nnU-Net v2** proposal stage, lesion-centered downstream patches, and mask-gated classification models for false-positive reduction and retained-lesion tumor typing. My broader toolkit includes Python, pandas, NumPy, scikit-learn, XGBoost, PyTorch, TensorFlow/Keras, MONAI, SimpleITK, NiBabel, 3D Slicer, Git, BigQuery, and MLflow.
 
@@ -65,11 +88,11 @@ The framework used T1C and T2 MRI, a sensitivity-oriented **3D nnU-Net v2** prop
 
 The final cascade was only one layer of a broader engineering workflow. I also built and tested supporting code for **MRI registration with ANTs**, **ground-truth consensus management**, **hospital-data standardization and format conversion**, and **radiomics / segmentation / classification experiments**. These tools helped turn heterogeneous clinical imaging data into reproducible model-development and validation inputs.
 
-## Research communication
+## Research communication & public evidence
 
 This work contributed to research presented at **MIDL 2026** and **IEEE AMLDS 2026**. Those conference artifacts represent related study versions and are presented as research outputs; the metrics above follow the final master's-thesis independent-cohort evaluation.
 
-## What I learned
+## Takeaway
 
 Technical credibility comes from more than model accuracy. It requires clean data scopes, denominator-aware metrics, explicit failure analysis, and disciplined communication about what the evidence does—and does not—show.
 

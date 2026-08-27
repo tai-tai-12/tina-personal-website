@@ -21,9 +21,6 @@
         </div>
         {{ end }}
 
-        <div class="case-capability-line-v526" aria-label="Project capabilities">
-          {{ range first 4 .Params.tags }}<span>{{ . }}</span>{{ end }}
-        </div>
       </div>
     </div>
   </header>
@@ -32,8 +29,7 @@
   <section class="case-brief-v526" aria-label="Project brief">
     <div class="case-brief-shell-v526">
       <div class="case-brief-heading-v526">
-        <span>{{ if eq $.Lang "zh" }}PROJECT BRIEF · 專案摘要{{ else }}PROJECT BRIEF{{ end }}</span>
-        <p>{{ if eq $.Lang "zh" }}問題、角色、範圍與成果，一頁先看懂。{{ else }}The problem, role, scope, and outcome at a glance.{{ end }}</p>
+        <span>{{ if eq $.Lang "zh" }}AT A GLANCE · 重點摘要{{ else }}AT A GLANCE{{ end }}</span>
       </div>
       <div class="case-brief-grid-v526">
         {{ range . }}
@@ -48,7 +44,9 @@
     <aside class="case-margin-nav-v526" aria-label="Case study navigation">
       <div class="case-margin-nav-inner-v526">
         <span class="case-margin-nav-label-v526">{{ if eq .Lang "zh" }}CASE STUDY · 導覽{{ else }}CASE STUDY{{ end }}</span>
-        {{ .TableOfContents }}
+        {{ with .Params.navItems }}
+        <nav><ul>{{ range . }}<li><a href="#{{ .id }}">{{ .label }}</a></li>{{ end }}</ul></nav>
+        {{ else }}{{ $.TableOfContents }}{{ end }}
       </div>
     </aside>
     <main class="case-prose-v526">{{ .Content }}</main>

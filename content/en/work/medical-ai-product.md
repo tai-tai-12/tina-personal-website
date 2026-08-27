@@ -1,45 +1,67 @@
 ---
-title: "From Medical AI Research to a Deployable Product"
-translationKey: "medical-ai-product"
-tags: ["Product Management", "Healthcare AI", "Regulatory", "Cross-functional Leadership"]
-category: "PRODUCT TRANSLATION"
-summary: "Translated brain tumor MRI research into clinical workflow, validation, and regulatory deliverables."
-proof: ["2 medical centers", "TFDA submission"]
-visual: "product-visual"
+title: From Medical AI Research to a Deployable Product
+translationKey: medical-ai-product
+tags:
+- Product Management
+- Healthcare AI
+- Regulatory
+- Cross-functional Leadership
+category: PRODUCT TRANSLATION
+summary: Translated brain tumor MRI research into clinical workflow, validation, and
+  regulatory deliverables.
+proof:
+- 2 medical centers
+- TFDA submission
+visual: product-visual
 weight: 1
-heroBackground: "images/projects/work-product-v519.webp"
-detailHero: "images/projects/detail-v521/product-hero-v521.webp"
-detailHeroAlt: "Clinical AI product workflow at a brain MRI review workstation"
-heroDek: "Translating lesion-wise brain MRI research into a physician-led product workflow spanning validation, regulatory preparation, and deployment readiness."
+heroBackground: images/projects/work-product-v519.webp
+detailHero: images/projects/detail-v521/product-hero-v521.webp
+detailHeroAlt: Clinical AI product workflow at a brain MRI review workstation
+heroDek: Translating lesion-wise brain MRI research into a physician-led product workflow
+  spanning validation, regulatory preparation, and deployment readiness.
 heroStats:
-  - value: "2"
-    label: "Medical centers"
-  - value: "TFDA"
-    label: "Submission supported"
-  - value: "5 classes"
-    label: "Tumor typing"
-  - value: "PACS"
-    label: "Connected workflow"
+- value: '2'
+  label: Medical centers
+- value: TFDA
+  label: Submission supported
+- value: PACS-connected
+  label: Clinical workflow
 snapshot:
-  - title: "Challenge"
-    body: "A strong research model still needed to fit clinical review, validation, regulatory, and operational requirements."
-  - title: "My role"
-    body: "Product management, project coordination, clinical translation, and regulatory execution."
-  - title: "Scope"
-    body: "Physicians, engineers, executives, medical centers, and regulatory stakeholders."
-  - title: "Outcome"
-    body: "A physician-led workflow supported by structured validation and TFDA submission preparation."
-relatedPrevTitle: "Third-Party Testing & Validation Operations"
-relatedPrevURL: "work/structured-validation/"
-relatedNextTitle: "Building and Validating Lesion-Wise Clinical AI"
-relatedNextURL: "work/clinical-ai-at-scale/"
+- title: Challenge
+  body: A strong research model still needed to fit clinical review, validation, regulatory,
+    and operational requirements.
+- title: My role
+  body: Product management, project coordination, clinical translation, and regulatory
+    execution.
+- title: Scope
+  body: Physicians, engineers, executives, medical centers, and regulatory stakeholders.
+- title: Outcome
+  body: A physician-led workflow supported by structured validation and TFDA submission
+    preparation.
+relatedPrevTitle: Third-Party Testing & Validation Operations
+relatedPrevURL: work/structured-validation/
+relatedNextTitle: Building and Validating Lesion-Wise Clinical AI
+relatedNextURL: work/clinical-ai-at-scale/
+navItems:
+- id: problem
+  label: 01 Problem
+- id: role
+  label: 02 Role & Decisions
+- id: workflow
+  label: 03 Product Workflow
+- id: evidence
+  label: 04 Evidence & Impact
+- id: takeaway
+  label: 05 Takeaway
 ---
 
 
+<span id="problem"></span>
 ## Why research alone was not enough
 
 A strong model is not yet a deployable product. A clinically useful system has to fit the radiologist's review workflow, surface AI results in an interpretable way, support validation, and generate evidence that technical, clinical, and regulatory stakeholders can trust.
 
+<span id="role"></span>
 ## My role and product decisions
 
 I worked across **product management, project leadership, clinical translation, and regulatory execution**. My responsibilities included aligning physicians, engineers, executives, and regulatory stakeholders; organizing validation priorities; supporting TFDA submission work; and improving submission-document management.
@@ -53,14 +75,11 @@ I worked across **product management, project leadership, clinical translation, 
 
 [AITEWAN company website ↗](https://www.aitewan-bio.com/en/)
 
+<span id="workflow"></span>
 ## From model to product workflow
 
 The underlying research used a lesion-wise cascade rather than treating detection as a single end point. A sensitivity-oriented proposal stage generated a broad candidate pool, a downstream classifier suppressed false positives, and the final stage assigned retained lesions to one of five tumor subtypes. The detailed technical evaluation is presented separately in **Building and Validating Lesion-Wise Clinical AI**.
 
-<figure class="case-visual case-visual-vector">
-  {{< site-img src="images/projects/detail-v521/clinical-cascade-v521.webp" alt="Three-stage lesion-wise AI cascade for candidate generation, false-positive reduction, and final lesion classification" >}}
-  <figcaption><strong>Research foundation.</strong> A simplified lesion-wise architecture behind the product story; cohort definitions and operating-point analysis are covered in the technical case study.</figcaption>
-</figure>
 
 The product layer extended beyond the model itself. The workflow included **PACS-connected case access, AI processing-state review, image viewing, AI-assisted lesion overlays, lesion-level analysis, and report review before physician judgment**. The system was designed as assistive decision support, with the clinician retaining final interpretation.
 
@@ -69,6 +88,7 @@ The product layer extended beyond the model itself. The workflow included **PACS
   <figcaption><strong>Conceptual product workflow.</strong> Connected data, AI-assisted review, documentation, and governed clinical use—not a literal product screenshot.</figcaption>
 </figure>
 
+<span id="evidence"></span>
 ## Research evidence and regulatory execution
 
 The product pathway grew from the same lesion-wise brain-tumor AI research program communicated through complementary public outputs.
@@ -91,6 +111,7 @@ The product pathway grew from the same lesion-wise brain-tumor AI research progr
   <div class="case-metric"><strong>1 tracker</strong><span>Submission record system</span><small>Cloud-based retrieval and version control</small></div>
 </div>
 
+<span id="takeaway"></span>
 ## Takeaway
 
 The hardest part of AI product work is often not the model itself. It is creating alignment between what the technology can do, what users need, what evidence reviewers require, and what an organization can operationalize.

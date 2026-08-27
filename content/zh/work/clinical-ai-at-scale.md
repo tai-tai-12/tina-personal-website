@@ -1,45 +1,62 @@
 ---
-title: "大規模臨床 AI 的建立與驗證"
-translationKey: "clinical-ai-at-scale"
-tags: ["Machine Learning", "Analytics", "Medical Imaging", "Experimentation"]
-category: "臨床 AI · ML"
-summary: "以嚴謹的 development／independent test 分離建立與驗證逐病灶臨床 AI。"
-proof: ["12.1K development exams", "264 independent test exams"]
-visual: "clinical-ai-visual"
+title: 大規模臨床 AI 的建立與驗證
+translationKey: clinical-ai-at-scale
+tags:
+- Machine Learning
+- Analytics
+- Medical Imaging
+- Experimentation
+category: 臨床 AI · ML
+summary: 以嚴謹的 development／independent test 分離建立與驗證逐病灶臨床 AI。
+proof:
+- 12.1K development exams
+- 264 independent test exams
+visual: clinical-ai-visual
 weight: 2
-heroBackground: "images/projects/work-clinical-ai-v519.webp"
-detailHero: "images/projects/detail-v521/clinical-hero-v521.webp"
-detailHeroAlt: "Clinical AI dashboard showing lesion-wise brain MRI analysis"
-heroDek: "以多中心資料、實務失敗模式與敏感度／閱片負擔取捨，評估病灶層級腦部 MRI AI。"
+heroBackground: images/projects/work-clinical-ai-v519.webp
+detailHero: images/projects/detail-v521/clinical-hero-v521.webp
+detailHeroAlt: Clinical AI dashboard showing lesion-wise brain MRI analysis
+heroDek: 以多中心資料、實務失敗模式與敏感度／閱片負擔取捨，評估病灶層級腦部 MRI AI。
 heroStats:
-  - value: "12,125"
-    label: "開發 MRI exams"
-  - value: "264"
-    label: "獨立測試 exams"
-  - value: "0.21"
-    label: "每掃描 FP"
-  - value: "90.16%"
-    label: "五分類準確率"
+- value: '264'
+  label: 獨立測試病例
+- value: '0.21'
+  label: 每掃描偽陽性
+- value: 90.16%
+  label: 五類分類準確率
 snapshot:
-  - title: "挑戰"
-    body: "單一 headline metric 無法完整描述病灶偵測品質與後續閱片負擔。"
-  - title: "我的角色"
-    body: "模型開發、評估設計、錯誤分析與技術溝通。"
-  - title: "範圍"
-    body: "12,125 筆開發資料，加上 264 筆多中心獨立臨床測試。"
-  - title: "成果"
-    body: "建立同時考量 sensitivity、precision、FP/scan 與保留病灶分類的評估架構。"
-relatedPrevTitle: "從醫療 AI 研究到可部署產品"
-relatedPrevURL: "work/medical-ai-product/"
-relatedNextTitle: "第三方測試與驗證營運"
-relatedNextURL: "work/structured-validation/"
+- title: 挑戰
+  body: 單一 headline metric 無法完整描述病灶偵測品質與後續閱片負擔。
+- title: 我的角色
+  body: 模型開發、評估設計、錯誤分析與技術溝通。
+- title: 範圍
+  body: 12,125 筆開發資料，加上 264 筆多中心獨立臨床測試。
+- title: 成果
+  body: 建立同時考量 sensitivity、precision、FP/scan 與保留病灶分類的評估架構。
+relatedPrevTitle: 從醫療 AI 研究到可部署產品
+relatedPrevURL: work/medical-ai-product/
+relatedNextTitle: 第三方測試與驗證營運
+relatedNextURL: work/structured-validation/
+navItems:
+- id: problem
+  label: 01 評估問題
+- id: role
+  label: 02 角色與範圍
+- id: evaluation
+  label: 03 效能評估
+- id: engineering
+  label: 04 研究工程
+- id: takeaway
+  label: 05 重點收斂
 ---
 
 
+<span id="problem"></span>
 ## 單一 accuracy 無法描述臨床閱片品質
 
 醫療影像模型不能只看一個 headline metric；評估需要同時考慮獨立資料、實際失敗模式，以及漏診與偽陽性閱片負擔之間的取捨。
 
+<span id="role"></span>
 ## 我的角色與研究範圍
 
 作為 Research Assistant / Project Lead，我負責腦部影像模型開發與評估、臨床資料處理、錯誤模式分析，以及向臨床與國際研究場合傳達技術結果。
@@ -54,6 +71,7 @@ Development cohort 用於模型開發、internal validation 與 operating-point 
 
 <figure class="case-visual case-visual-vector">{{< site-img src="images/projects/detail-v521/clinical-cascade-v521.webp" alt="逐病灶 AI 三階段評估流程" >}}<figcaption><strong>Evaluation framework.</strong> Stage 0 建立高敏感度候選池，Stage 1 移除明顯偽陽性，Stage 2 處理剩餘偽陽性並進行保留病灶分類。</figcaption></figure>
 
+<span id="evaluation"></span>
 ## 不只看 headline accuracy
 
 評估設計刻意分離 development 與 independent clinical testing，並把 lesion-wise sensitivity 與 FP/scan、precision 一起解讀，同時分析 deleted true positives 與 residual false positives；腫瘤分類結果只在保留的 true-positive lesions 上計算。
@@ -67,6 +85,7 @@ Development cohort 用於模型開發、internal validation 與 operating-point 
 
 <figure class="case-visual-v521 case-visual-full-v521">{{< site-img src="images/projects/detail-v521/clinical-evaluation-v521.webp" alt="腦部 MRI 逐病灶模型評估與篩選概念圖" >}}<figcaption><strong>概念評估視覺。</strong> 用於解釋候選篩選、病灶分類與效能評估，不是研究 pipeline 的實際截圖。</figcaption></figure>
 
+<span id="engineering"></span>
 ## 研究工程與成果溝通
 
 最終 cascade 只是整體工作的一層；可重複的評估還仰賴影像 preprocessing、ground-truth 管理、實驗設計與清楚的 study-scope 溝通。
@@ -79,6 +98,7 @@ Development cohort 用於模型開發、internal validation 與 operating-point 
 
 相關工作還包含 **ANTs MRI registration、hospital-data standardization / format conversion、ground-truth consensus 管理，以及 radiomics / segmentation / classification experiments**。相關研究版本發表於 **MIDL 2026** 與 **AMLDS 2026**；本頁 headline metrics 統一採最終碩論 independent-cohort evaluation。
 
+<span id="takeaway"></span>
 ## Takeaway
 
 技術可信度不只來自模型 accuracy，也來自清楚的資料範圍、正確的 denominator、明確的 failure analysis，以及對證據能支持與不能支持之處的精準溝通。

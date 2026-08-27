@@ -4,15 +4,15 @@ translationKey: "about"
 contextLabel: "個人簡介"
 ---
 
+我的路徑從醫學影像與 AI 研究開始。慢慢地，我開始關心的不只是模型表現好不好，而是技術要真正進入現實環境還需要什麼：定義正確的問題、驗證證據、對齊利害關係人，並把結果轉成決策。
 
 <figure class="content-photo">
   {{< site-img src="images/about/thesis-presentation.webp" alt="Tina Tai 進行以放射科醫師為導向之腦瘤 MRI 框架碩士論文口試" >}}
   <figcaption>NYCU 碩士論文口試 · 2026</figcaption>
 </figure>
 
-我的路徑從醫學影像與 AI 研究開始。慢慢地，我開始關心的不只是模型表現好不好，而是技術要真正進入現實環境還需要什麼：定義正確的問題、驗證證據、對齊利害關係人，並把結果轉成決策。
+
 
 這份興趣讓我從研究走向產品管理與跨團隊執行，也進一步到 Carnegie Mellon University 就讀 M.S. in Business Analytics，補強 analytics、machine learning、optimization、data-driven decision-making 與 technology strategy。
 
 我特別關注 AI 與 healthcare 相關的產品與分析職位，同時也希望保留更廣泛的科技產品方向，尤其是需要嚴謹分析與跨團隊判斷的角色。
-

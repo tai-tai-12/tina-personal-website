@@ -1,4 +1,8 @@
-# Tina Tai Personal Website — V5.27
+# Tina Tai Personal Website — V5.28
+
+Final Editorial Reduction & Hierarchy Cleanup.
+
+# Tina Tai Personal Website — V5.28
 
 # Tina Tai Personal Website — V5.22
 

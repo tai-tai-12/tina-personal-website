@@ -15,6 +15,7 @@ visual: product-visual
 weight: 1
 heroBackground: images/projects/work-product-v519.webp
 detailHero: images/projects/detail-v521/product-hero-v521.webp
+heroSize: compact
 detailHeroAlt: Clinical AI product workflow at a brain MRI review workstation
 heroDek: 將病灶層級腦部 MRI 研究轉化為以醫師為核心的產品流程，串接驗證、法規準備與部署就緒。
 heroStats:

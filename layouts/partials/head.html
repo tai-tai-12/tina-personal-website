@@ -1,6 +1,7 @@
 <meta charset="utf-8">
 <script>document.documentElement.classList.add('motion')</script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="portfolio-version" content="5.29">
 <meta name="theme-color" content="#FCFCFB">
 {{ $description := .Description | default .Site.Params.description }}
 {{ $title := cond .IsHome .Site.Title (printf "%s · Tina Tai" .Title) }}
@@ -12,7 +13,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600&family=Noto+Sans+TC:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
-<link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/site.css" | relURL }}?v=5.29.0">
+<link rel="stylesheet" href="{{ "css/production-lock.css" | relURL }}?v=5.29.0">
 <meta property="og:title" content="{{ $title }}">
 <meta property="og:description" content="{{ $description }}">
 <meta property="og:type" content="website">

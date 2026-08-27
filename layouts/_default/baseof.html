@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ .Site.Language.Lang }}" data-theme="light">
+<html lang="{{ .Site.Language.Lang }}" data-theme="light" data-portfolio-version="5.29">
 <head>
   {{ partial "head.html" . }}
 </head>
@@ -7,6 +7,6 @@
   {{ partial "header.html" . }}
   <main>{{ block "main" . }}{{ end }}</main>
   {{ partial "footer.html" . }}
-  <script src="{{ "js/site.js" | relURL }}" defer></script>
+  <script src="{{ "js/site.js" | relURL }}?v=5.29.0" defer></script>
 </body>
 </html>

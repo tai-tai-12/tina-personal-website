@@ -15,6 +15,7 @@ visual: clinical-ai-visual
 weight: 2
 heroBackground: images/projects/work-clinical-ai-v519.webp
 detailHero: images/projects/detail-v521/clinical-hero-v521.webp
+heroSize: standard
 detailHeroAlt: Clinical AI dashboard showing lesion-wise brain MRI analysis
 heroDek: 以多中心資料、實務失敗模式與敏感度／閱片負擔取捨，評估病灶層級腦部 MRI AI。
 heroStats:

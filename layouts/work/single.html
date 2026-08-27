@@ -1,6 +1,6 @@
 {{ define "main" }}
 <article class="case-study-v526">
-  <header class="case-hero-v526{{ with .Params.detailHero }} has-visual{{ end }}"{{ with .Params.detailHero }} style="--case-hero-bg:url('{{ . | relURL }}')"{{ end }}>
+  <header class="case-hero-v526 case-hero-size-{{ .Params.heroSize | default "standard" }}{{ with .Params.detailHero }} has-visual{{ end }}"{{ with .Params.detailHero }} style="--case-hero-bg:url('{{ . | relURL }}')"{{ end }}>
     <div class="case-hero-v526-art" aria-hidden="true"></div>
     <div class="case-hero-shell-v526">
       <div class="case-hero-context-v526" aria-label="Case study context">

@@ -18,6 +18,7 @@ weight: 3
 heroBackground: images/projects/work-testing-v519.webp
 contextLabel: REGULATED TESTING · OPERATIONS
 detailHero: images/projects/detail-v521/testing-hero-v521.webp
+heroSize: standard
 detailHeroAlt: Third-party laboratory testing and validation workflow
 heroDek: Structuring third-party testing, quantitative analysis, documentation, and
   review into repeatable validation operations.

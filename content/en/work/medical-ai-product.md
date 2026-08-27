@@ -16,6 +16,7 @@ visual: product-visual
 weight: 1
 heroBackground: images/projects/work-product-v519.webp
 detailHero: images/projects/detail-v521/product-hero-v521.webp
+heroSize: compact
 detailHeroAlt: Clinical AI product workflow at a brain MRI review workstation
 heroDek: Translating lesion-wise brain MRI research into a physician-led product workflow
   spanning validation, regulatory preparation, and deployment readiness.

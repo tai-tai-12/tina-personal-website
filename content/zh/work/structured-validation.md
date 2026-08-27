@@ -17,6 +17,7 @@ weight: 3
 heroBackground: images/projects/work-testing-v519.webp
 contextLabel: 受規範測試 · 作業
 detailHero: images/projects/detail-v521/testing-hero-v521.webp
+heroSize: standard
 detailHeroAlt: Third-party laboratory testing and validation workflow
 heroDek: 把第三方測試、定量分析、文件與審查整理成可重複、可追溯的驗證營運流程。
 heroStats:

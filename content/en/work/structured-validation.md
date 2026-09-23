@@ -87,12 +87,6 @@ For the regulated-testing work, I served as a primary student assistant for the 
 
 <p class="case-note-v524"><strong>Accreditation context.</strong> The laboratory held ISO/IEC 17025 / TAF accreditation for defined scopes; accreditation status varied by requested test item.</p>
 
-<div class="case-metrics case-metrics-v524">
-  <div class="case-metric"><strong>8</strong><span>Products tested</span><small>Ionizing-radiation equipment</small></div>
-  <div class="case-metric"><strong>10+</strong><span>Reports produced</span><small>Third-party testing / certification support</small></div>
-  <div class="case-metric"><strong>5</strong><span>Client organizations</span><small>Compliance evidence preparation</small></div>
-  <div class="case-metric"><strong>2</strong><span>Labs adopted tooling</span><small>Separate quantitative-imaging workflow</small></div>
-</div>
 
 <span id="quantitative"></span>
 ## Quantitative imaging tooling

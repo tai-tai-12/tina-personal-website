@@ -1,42 +1,7 @@
-# Tina Tai Personal Website — V5.29
+# Tina Tai Personal Website — V5.30
 
-Final Editorial Reduction & Hierarchy Cleanup.
+Portrait Refresh & Final Visual QA.
 
-# Tina Tai Personal Website — V5.29
+V5.30 keeps V5.29 as the production baseline and makes a restrained visual/semantic refinement pass: the homepage portrait is replaced with Tina's new professional photograph (cropped only, not generatively altered), decorative portrait chrome is reduced, several remaining duplicated metrics are removed, and a handful of semantic spacing/accessibility issues are cleaned up.
 
-# Tina Tai Personal Website — V5.22
-
-V5.22 introduces the Case Study Editorial System for the three Selected Work detail pages.
-
-
-Research architecture, recognition, and selected-work visual consistency pass based on V5.17.
-
-Key changes:
-- Research page opens with two primary research areas so the thoracic-aorta project is visible immediately.
-- MIDL and AMLDS research outputs use equal-size cards.
-- Recognition uses Tina's actual award photos for both Outstanding Oral Presentation and Outstanding Thesis Award (First Place), with intentionally compact image treatment.
-- Research Engineering is redesigned as four horizontal editorial rows with small domain-specific illustrations.
-- Selected Work uses three newly standardized, text-light 1500×560 visuals with the same dark medical/technical visual language.
-- Homepage Research cards now have equal visual weight.
-
-See `docs/V5_18_RESEARCH_VISUAL_ARCHITECTURE_PASS.md` for details.
-
-
-## V5.19 notes
-- Refreshed selected-work visuals with a consistent dark-blue editorial style.
-- Added project-detail hero background fade using the selected-work image.
-- Updated the Medical AI product case to show both MIDL and IEEE AMLDS research evidence.
-- Refined Research & Recognition with updated award photography, stronger engineering cards, and a new thoracic-aorta research visual.
-
-
-## V5.20 notes
-- Final editorial copy pass across homepage and Work.
-- Shortened the regulated-testing project summary for faster recruiter scanning.
-- Refined project-image cropping and detail-page hero fade.
-- Strengthened Research Engineering as a 2×2 visual capability module.
-- Reduced Recognition image dominance and added an NSTC project badge to thoracic-aorta research.
-- Smoothed responsive behavior for mobile and tablet.
-
-
-## V5.21
-Selected Work detail pages received a full editorial redesign and a new project-specific visual system. See `docs/V5_21_SELECTED_WORK_DETAIL_EDITORIAL_REDESIGN.md`.
+See `docs/V5_30_PORTRAIT_REFRESH_FINAL_VISUAL_QA.md`.

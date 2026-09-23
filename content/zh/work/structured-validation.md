@@ -80,12 +80,6 @@ navItems:
 
 <p class="case-note-v524"><strong>認證範圍。</strong> 實驗室在特定 scope 下具 ISO/IEC 17025 / TAF 認證；實際測試項目的認證狀態依服務內容而異。</p>
 
-<div class="case-metrics case-metrics-v524">
-  <div class="case-metric"><strong>8</strong><span>Products tested</span><small>游離輻射設備</small></div>
-  <div class="case-metric"><strong>10+</strong><span>Reports produced</span><small>第三方測試／認證支援</small></div>
-  <div class="case-metric"><strong>5</strong><span>Client organizations</span><small>合規證據準備</small></div>
-  <div class="case-metric"><strong>2</strong><span>Labs adopted tooling</span><small>獨立的定量影像流程</small></div>
-</div>
 
 <span id="quantitative"></span>
 ## 定量影像工具

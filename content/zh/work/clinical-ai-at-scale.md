@@ -31,7 +31,7 @@ snapshot:
 - title: 我的角色
   body: 模型開發、評估設計、錯誤分析與技術溝通。
 - title: 範圍
-  body: 12,125 筆開發資料，加上 264 筆多中心獨立臨床測試。
+  body: 12,125 筆開發資料，加上一個正負病例平衡的多中心獨立臨床測試 cohort。
 - title: 成果
   body: 建立同時考量 sensitivity、precision、FP/scan 與保留病灶分類的評估架構。
 relatedPrevTitle: 從醫療 AI 研究到可部署產品
@@ -64,11 +64,11 @@ navItems:
 
 <div class="case-proof-grid technical-scope-grid">
   <div class="case-proof"><strong>12,125</strong><span>Development MRI exams</span><small>23,341 個標註腫瘤病灶</small></div>
-  <div class="case-proof"><strong>264</strong><span>Independent test exams</span><small>132 positive · 132 negative</small></div>
+  <div class="case-proof"><strong>132 / 132</strong><span>Positive / negative exams</span><small>平衡的獨立測試 cohort</small></div>
   <div class="case-proof"><strong>2</strong><span>Medical centers</span><small>Taipei VGH · Taichung VGH</small></div>
 </div>
 
-Development cohort 用於模型開發、internal validation 與 operating-point characterization；**264 例 independent clinical test cohort** 保留作為最終端到端評估。
+Development cohort 用於模型開發、internal validation 與 operating-point characterization；**independent clinical test cohort** 則保留作為最終端到端評估。
 
 <figure class="case-visual case-visual-vector">{{< site-img src="images/projects/detail-v521/clinical-cascade-v521.webp" alt="逐病灶 AI 三階段評估流程" >}}<figcaption><strong>Evaluation framework.</strong> Stage 0 建立高敏感度候選池，Stage 1 移除明顯偽陽性，Stage 2 處理剩餘偽陽性並進行保留病灶分類。</figcaption></figure>
 
@@ -78,10 +78,10 @@ Development cohort 用於模型開發、internal validation 與 operating-point 
 評估設計刻意分離 development 與 independent clinical testing，並把 lesion-wise sensitivity 與 FP/scan、precision 一起解讀，同時分析 deleted true positives 與 residual false positives；腫瘤分類結果只在保留的 true-positive lesions 上計算。
 
 <div class="case-metrics case-metrics-v524">
-  <div class="case-metric"><strong>80.97%</strong><span>Lesion-wise sensitivity</span><small>Independent test cohort</small></div>
-  <div class="case-metric"><strong>0.21</strong><span>False positives / scan</span><small>完整 cascade 後</small></div>
-  <div class="case-metric"><strong>76.89%</strong><span>Lesion-wise precision</span><small>Final cascade output</small></div>
-  <div class="case-metric"><strong>90.16%</strong><span>Five-class accuracy</span><small>Retained true-positive lesions</small></div>
+  <div class="case-metric"><strong>80.97%&nbsp;</strong><span>Lesion-wise sensitivity</span><small>Independent test cohort</small></div>
+  <div class="case-metric"><strong>0.21&nbsp;</strong><span>False positives / scan</span><small>完整 cascade 後</small></div>
+  <div class="case-metric"><strong>76.89%&nbsp;</strong><span>Lesion-wise precision</span><small>Final cascade output</small></div>
+  <div class="case-metric"><strong>90.16%&nbsp;</strong><span>Five-class accuracy</span><small>Retained true-positive lesions</small></div>
 </div>
 
 <figure class="case-visual-v521 case-visual-full-v521">{{< site-img src="images/projects/detail-v521/clinical-evaluation-v521.webp" alt="腦部 MRI 逐病灶模型評估與篩選概念圖" >}}<figcaption><strong>概念評估視覺。</strong> 用於解釋候選篩選、病灶分類與效能評估，不是研究 pipeline 的實際截圖。</figcaption></figure>

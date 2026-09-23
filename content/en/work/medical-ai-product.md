@@ -67,11 +67,9 @@ A strong model is not yet a deployable product. A clinically useful system has t
 
 I worked across **product management, project leadership, clinical translation, and regulatory execution**. My responsibilities included aligning physicians, engineers, executives, and regulatory stakeholders; organizing validation priorities; supporting TFDA submission work; and improving submission-document management.
 
-<div class="case-section-subgrid-v524">
-  <article><span>PRODUCT & SCOPE</span><strong>Workflow and requirements</strong><p>Translated clinical-review needs into product scope and validation priorities.</p></article>
-  <article><span>CLINICAL TRANSLATION</span><strong>Physician-led use</strong><p>Aligned AI-assisted review behavior with the clinician's final interpretation and accountability.</p></article>
-  <article><span>VALIDATION</span><strong>Evidence planning</strong><p>Connected model evidence with hospital and regulatory review requirements.</p></article>
-  <article><span>REGULATORY EXECUTION</span><strong>TFDA preparation</strong><p>Supported submission materials, version tracking, and cross-functional coordination.</p></article>
+<div class="case-responsibility-pair-v530">
+  <article><span>PRODUCT & CLINICAL</span><strong>Workflow, scope, and physician-led use</strong><p>Translated clinical-review needs into product scope and validation priorities, while aligning AI-assisted review with the clinician's final interpretation and accountability.</p></article>
+  <article><span>VALIDATION & REGULATORY</span><strong>Evidence planning and TFDA execution</strong><p>Connected model evidence with hospital and regulatory review requirements, and supported submission materials, version tracking, and cross-functional coordination.</p></article>
 </div>
 
 [AITEWAN company website ↗](https://www.aitewan-bio.com/en/)
@@ -106,10 +104,10 @@ The product pathway grew from the same lesion-wise brain-tumor AI research progr
 </div>
 
 <div class="case-metrics case-metrics-v524">
-  <div class="case-metric"><strong>2</strong><span>Medical centers</span><small>Clinical translation across hospital contexts</small></div>
-  <div class="case-metric"><strong>TFDA</strong><span>Submission supported</span><small>Product and regulatory execution</small></div>
-  <div class="case-metric"><strong>Level I</strong><span>Connectathon validation</span><small>2024 medical-imaging workflow capability statement</small></div>
-  <div class="case-metric"><strong>1 tracker</strong><span>Submission record system</span><small>Cloud-based retrieval and version control</small></div>
+  <div class="case-metric"><strong>2&nbsp;</strong><span>Medical centers</span><small>Clinical translation across hospital contexts</small></div>
+  <div class="case-metric"><strong>TFDA&nbsp;</strong><span>Submission supported</span><small>Product and regulatory execution</small></div>
+  <div class="case-metric"><strong>Level I&nbsp;</strong><span>Connectathon validation</span><small>2024 medical-imaging workflow capability statement</small></div>
+  <div class="case-metric"><strong>1 tracker&nbsp;</strong><span>Submission record system</span><small>Cloud-based retrieval and version control</small></div>
 </div>
 
 <span id="takeaway"></span>

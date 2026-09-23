@@ -62,11 +62,9 @@ navItems:
 
 我的工作橫跨 **產品管理、專案協調、臨床轉譯與法規執行**，包括協調醫師、工程師、主管與法規利害關係人、整理驗證優先順序、支援 TFDA 送件，以及改善送件文件與版本管理。
 
-<div class="case-section-subgrid-v524">
-  <article><span>PRODUCT & SCOPE</span><strong>工作流程與需求</strong><p>把臨床閱片需求轉成產品範圍與驗證優先順序。</p></article>
-  <article><span>CLINICAL TRANSLATION</span><strong>以醫師為核心的使用方式</strong><p>讓 AI 輔助閱片與醫師最終判斷及責任分工保持一致。</p></article>
-  <article><span>VALIDATION</span><strong>證據規劃</strong><p>把模型表現連接到醫院與法規審查所需的驗證證據。</p></article>
-  <article><span>REGULATORY EXECUTION</span><strong>TFDA 準備</strong><p>支援送件資料、版本追蹤與跨團隊協作。</p></article>
+<div class="case-responsibility-pair-v530">
+  <article><span>PRODUCT & CLINICAL</span><strong>工作流程、產品範圍與醫師使用情境</strong><p>把臨床閱片需求轉成產品範圍與驗證優先順序，並讓 AI 輔助閱片與醫師最終判斷及責任分工保持一致。</p></article>
+  <article><span>VALIDATION & REGULATORY</span><strong>證據規劃與 TFDA 執行</strong><p>把模型表現連接到醫院與法規審查所需證據，並支援送件資料、版本追蹤與跨團隊協作。</p></article>
 </div>
 
 [AITEWAN 公司官網 ↗](https://www.aitewan-bio.com/en/)
@@ -95,10 +93,10 @@ navItems:
 </div>
 
 <div class="case-metrics case-metrics-v524">
-  <div class="case-metric"><strong>2</strong><span>Medical centers</span><small>跨醫院情境的臨床轉譯</small></div>
-  <div class="case-metric"><strong>TFDA</strong><span>Submission supported</span><small>產品與法規執行</small></div>
-  <div class="case-metric"><strong>Level I</strong><span>Connectathon validation</span><small>2024 醫療影像流程能力驗證</small></div>
-  <div class="case-metric"><strong>1 tracker</strong><span>Submission record system</span><small>雲端化檢索與版本管理</small></div>
+  <div class="case-metric"><strong>2&nbsp;</strong><span>Medical centers</span><small>跨醫院情境的臨床轉譯</small></div>
+  <div class="case-metric"><strong>TFDA&nbsp;</strong><span>Submission supported</span><small>產品與法規執行</small></div>
+  <div class="case-metric"><strong>Level I&nbsp;</strong><span>Connectathon validation</span><small>2024 醫療影像流程能力驗證</small></div>
+  <div class="case-metric"><strong>1 tracker&nbsp;</strong><span>Submission record system</span><small>雲端化檢索與版本管理</small></div>
 </div>
 
 <span id="takeaway"></span>

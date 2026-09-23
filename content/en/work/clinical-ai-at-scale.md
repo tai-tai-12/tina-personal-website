@@ -34,8 +34,8 @@ snapshot:
 - title: My role
   body: Model development, evaluation design, error analysis, and technical communication.
 - title: Scope
-  body: 12,125 development exams plus a 264-exam independent multi-center clinical
-    test.
+  body: 12,125 development exams plus a balanced independent multi-center clinical
+    test cohort.
 - title: Outcome
   body: A lesion-wise evaluation framework balancing sensitivity, precision, FP/scan,
     and retained-lesion typing.
@@ -69,11 +69,11 @@ As a research assistant and project lead, I led brain-imaging model development 
 
 <div class="case-proof-grid technical-scope-grid">
   <div class="case-proof"><strong>12,125</strong><span>Development MRI exams</span><small>23,341 annotated tumor lesions</small></div>
-  <div class="case-proof"><strong>264</strong><span>Independent test exams</span><small>132 positive · 132 negative</small></div>
+  <div class="case-proof"><strong>132 / 132</strong><span>Positive / negative exams</span><small>Balanced independent cohort</small></div>
   <div class="case-proof"><strong>2</strong><span>Medical centers</span><small>Taipei VGH · Taichung VGH</small></div>
 </div>
 
-The development cohort supported model development, internal validation, and operating-point characterization. The **264-case independent clinical test cohort** was reserved for final end-to-end evaluation.
+The development cohort supported model development, internal validation, and operating-point characterization. The **independent clinical test cohort** was reserved for final end-to-end evaluation.
 
 <figure class="case-visual case-visual-vector">
   {{< site-img src="images/projects/detail-v521/clinical-cascade-v521.webp" alt="Three-stage lesion-wise AI cascade used for candidate generation, false-positive reduction, and retained-lesion tumor typing" >}}
@@ -86,10 +86,10 @@ The development cohort supported model development, internal validation, and ope
 The evaluation deliberately separated development and independent clinical testing, paired lesion-wise sensitivity with FP/scan and precision, examined deleted true positives and residual false positives, and reported tumor typing only on retained true-positive lesions.
 
 <div class="case-metrics case-metrics-v524">
-  <div class="case-metric"><strong>80.97%</strong><span>Lesion-wise sensitivity</span><small>Independent test cohort</small></div>
-  <div class="case-metric"><strong>0.21</strong><span>False positives / scan</span><small>After the full cascade</small></div>
-  <div class="case-metric"><strong>76.89%</strong><span>Lesion-wise precision</span><small>Final cascade output</small></div>
-  <div class="case-metric"><strong>90.16%</strong><span>Five-class accuracy</span><small>Retained true-positive lesions</small></div>
+  <div class="case-metric"><strong>80.97%&nbsp;</strong><span>Lesion-wise sensitivity</span><small>Independent test cohort</small></div>
+  <div class="case-metric"><strong>0.21&nbsp;</strong><span>False positives / scan</span><small>After the full cascade</small></div>
+  <div class="case-metric"><strong>76.89%&nbsp;</strong><span>Lesion-wise precision</span><small>Final cascade output</small></div>
+  <div class="case-metric"><strong>90.16%&nbsp;</strong><span>Five-class accuracy</span><small>Retained true-positive lesions</small></div>
 </div>
 
 <figure class="case-visual-v521 case-visual-full-v521">

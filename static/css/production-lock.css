@@ -182,3 +182,68 @@
 html[data-theme="dark"] .case-study-v526 .case-brief-v526{background:color-mix(in srgb,var(--panel) 58%,transparent)!important}
 html[data-theme="dark"] .case-study-v526 .case-evidence-card img{border-color:var(--line)!important}
 html[data-theme="dark"] .research-v518-mini-visual{background:color-mix(in srgb,var(--panel) 84%,#fff 4%)!important}
+
+
+/* =========================================================
+   V5.30 — Portrait Refresh & Final Visual QA
+   The new homepage portrait is documentary photography, so
+   decorative framing is deliberately reduced rather than added.
+   ========================================================= */
+
+/* Homepage hero: let the new portrait carry the visual weight. */
+@media(min-width:901px){
+  .hero-v3-grid{grid-template-columns:minmax(0,1.04fr) minmax(360px,.96fr)!important;gap:64px!important;min-height:610px!important}
+  .portrait-composition{width:min(100%,440px)!important;aspect-ratio:440/470!important;justify-self:end!important;transform:none!important}
+  .portrait-frame{left:46px!important;top:22px!important;width:340px!important;height:425px!important;border-radius:24px!important;border-color:color-mix(in srgb,var(--blue) 14%,var(--line))!important;box-shadow:0 20px 56px rgba(18,44,93,.105)!important}
+  .portrait-frame img{object-fit:cover!important;object-position:center!important;transform:none!important}
+  .portrait-blue-plane{left:67px!important;top:42px!important;width:340px!important;height:425px!important;border-radius:26px!important;background:linear-gradient(145deg,color-mix(in srgb,var(--electric) 7%,transparent),color-mix(in srgb,var(--blue) 2%,transparent))!important;border-color:color-mix(in srgb,var(--blue) 11%,var(--line))!important}
+}
+.portrait-grid,.portrait-line,.portrait-node,.portrait-caption{display:none!important}
+html[data-theme="dark"] .portrait-frame{box-shadow:0 22px 58px rgba(0,0,0,.28)!important}
+
+/* The refreshed portrait already contains warm/cool environmental color.
+   Keep the site's off-white + cobalt system unchanged rather than recoloring globally. */
+
+/* Medical Product: two responsibility domains instead of four feature-card fragments. */
+.case-responsibility-pair-v530{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:30px 0 34px}
+.case-responsibility-pair-v530 article{padding:22px 26px 22px 0;background:transparent;border:0;box-shadow:none}
+.case-responsibility-pair-v530 article+article{padding-left:26px;border-left:1px solid var(--line)}
+.case-responsibility-pair-v530 article>span{display:block;font-size:9px;letter-spacing:.15em;color:var(--muted);font-weight:600}
+.case-responsibility-pair-v530 article>strong{display:block;margin-top:7px;font-size:.96rem;line-height:1.42}
+.case-responsibility-pair-v530 article>p{margin:8px 0 0!important;font-size:.86rem!important;line-height:1.65!important;color:var(--muted)}
+
+/* Research micro-semantics and cleaner inline evidence. */
+.research-v518-tech-tags{column-gap:7px!important;row-gap:3px!important}
+.research-tech-sep-v530{display:inline-block!important;margin:0 1px!important;color:var(--muted-2)!important}
+.research-v530-metrics{display:flex!important;align-items:center!important;flex-wrap:wrap!important;gap:7px!important}
+.research-v530-metrics>span{font-style:normal;color:var(--line-strong);font-size:.72rem}
+
+/* Coursework should read like coursework, not another chip system. */
+.coursework-list-v530{list-style:none!important;margin:10px 0 0!important;padding:0!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;column-gap:28px!important;row-gap:0!important}
+.coursework-list-v530 li{padding:8px 0!important;border-top:1px solid var(--line)!important;font-size:.78rem!important;line-height:1.5!important;color:var(--muted)!important}
+.coursework-list-v530 li:nth-child(-n+2){border-top-color:color-mix(in srgb,var(--line) 72%,transparent)!important}
+
+/* Proof rows: lightweight punctuation rather than more pill/card weight. */
+.project-proof-inline-v530,.work-proof-row-v530{align-items:center!important}
+.project-proof-inline-v530>i,.work-proof-row-v530>i{font-style:normal;color:var(--line-strong);font-size:.7rem;margin:0 1px}
+
+/* Footer: email is its own readable line; keep the footer compact. */
+.footer-contact-v525{display:grid!important;gap:2px!important;align-items:start!important;margin-top:6px!important}
+.footer-email-v525{display:inline-block!important;margin:0!important}
+.footer-email-v525::before{display:none!important}
+
+@media(max-width:900px){
+  .portrait-composition{width:min(100%,380px)!important;aspect-ratio:380/430!important;justify-self:start!important;transform:none!important}
+  .portrait-frame{left:30px!important;top:18px!important;width:310px!important;height:388px!important;border-radius:22px!important}
+  .portrait-frame img{object-position:center!important;transform:none!important}
+  .portrait-blue-plane{left:48px!important;top:36px!important;width:310px!important;height:388px!important;border-radius:24px!important}
+}
+@media(max-width:640px){
+  .portrait-composition{width:min(100%,330px)!important;aspect-ratio:330/380!important;margin-top:4px!important}
+  .portrait-frame{left:18px!important;top:12px!important;width:284px!important;height:355px!important;border-radius:20px!important}
+  .portrait-blue-plane{left:34px!important;top:27px!important;width:284px!important;height:355px!important;border-radius:22px!important}
+  .case-responsibility-pair-v530{grid-template-columns:1fr!important}
+  .case-responsibility-pair-v530 article,.case-responsibility-pair-v530 article+article{padding:17px 0!important;border-left:0!important;border-bottom:1px solid var(--line)}
+  .case-responsibility-pair-v530 article:last-child{border-bottom:0}
+  .coursework-list-v530{grid-template-columns:1fr!important}
+}

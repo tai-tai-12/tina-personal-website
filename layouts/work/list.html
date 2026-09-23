@@ -22,7 +22,7 @@
       <span class="work-category">{{ .Params.category }}</span>
       <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
       <p>{{ .Params.summary }}</p>
-      {{ with .Params.proof }}<div class="work-proof-row work-proof-row-v510">{{ range . }}<span>{{ . }}</span>{{ end }}</div>{{ end }}
+      {{ with .Params.proof }}<div class="work-proof-row work-proof-row-v510 work-proof-row-v530">{{ range $i, $p := . }}{{ if $i }}<i aria-hidden="true">·</i>{{ end }}<span>{{ $p }}</span>{{ end }}</div>{{ end }}
       <a class="btn mono-project-btn work-stack-btn-v510" href="{{ .RelPermalink }}">{{ if $isZh }}查看專案{{ else }}Explore project{{ end }} ↗</a>
     </div>
   </article>

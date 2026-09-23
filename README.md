@@ -1,4 +1,4 @@
-# Tina Tai Personal Website — V6
+# Tina Tai Personal Website — V6.1
 
 Production release focused on **product judgment, user discovery, and defensible evidence**.
 

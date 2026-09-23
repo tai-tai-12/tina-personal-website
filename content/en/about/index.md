@@ -7,7 +7,7 @@ contextLabel: "PROFILE"
 My path started in medical imaging and AI research. Over time, I became less interested in model performance as an end point and more interested in the decisions around it: what users actually need, which trade-offs matter, what evidence is defensible, and how a team turns that evidence into a product that works in a real workflow.
 
 <figure class="content-photo">
-  {{< site-img src="images/about/thesis-presentation.webp" alt="Tina Tai presenting her master's thesis on a radiologist-oriented brain tumor MRI framework" >}}
+  {{< site-img src="images/about/thesis-presentation-v61.webp" alt="Tina Tai presenting her master's thesis on a radiologist-oriented brain tumor MRI framework" >}}
   <figcaption>Master's thesis presentation, NYCU · 2026</figcaption>
 </figure>
 

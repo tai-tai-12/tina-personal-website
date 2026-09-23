@@ -1,0 +1,247 @@
+/* V6.1 — Readability, Portrait Integration & Visual Balance
+   Purpose: preserve hierarchy without making secondary information hard to read. */
+
+/* ---------- Global readability floor ---------- */
+.page-context-label{
+  font-size:.76rem!important;
+  letter-spacing:.125em!important;
+  font-weight:650!important;
+}
+.page-context-icon{width:32px!important;height:32px!important;border-radius:10px!important}
+.page-context-icon svg{width:16px!important;height:16px!important}
+.page-hero h1{
+  font-size:clamp(2.75rem,4.7vw,4.05rem)!important;
+  line-height:1.025!important;
+  letter-spacing:-.048em!important;
+  margin-top:18px!important;
+}
+.page-hero .lede{
+  max-width:760px!important;
+  font-size:1.08rem!important;
+  line-height:1.72!important;
+}
+.kicker{font-size:.79rem!important}
+.section-signature .section-number{
+  font-size:.76rem!important;
+  opacity:.52!important;
+}
+.section-signature .section-label{
+  font-size:.75rem!important;
+  letter-spacing:.135em!important;
+}
+
+/* ---------- Homepage portrait: photo first, frame second ---------- */
+.hero-v3-grid{grid-template-columns:minmax(0,1.12fr) minmax(350px,.88fr)!important;gap:64px!important}
+.portrait-composition{
+  position:relative!important;
+  width:min(100%,405px)!important;
+  aspect-ratio:4/5!important;
+  justify-self:end!important;
+  display:grid!important;
+  place-items:center!important;
+  transform:none!important;
+}
+.portrait-composition::before{
+  content:"";
+  position:absolute;
+  inset:8% -7% -5% 7%;
+  border-radius:42% 38% 40% 34%;
+  background:radial-gradient(circle at 56% 44%,color-mix(in srgb,var(--electric) 10%,transparent),transparent 68%);
+  filter:blur(24px);
+  opacity:.58;
+  pointer-events:none;
+}
+.portrait-blue-plane{display:none!important}
+.portrait-frame{
+  position:relative!important;
+  inset:auto!important;
+  left:auto!important;
+  top:auto!important;
+  width:100%!important;
+  height:100%!important;
+  margin:0!important;
+  border:0!important;
+  border-radius:22px!important;
+  background:transparent!important;
+  box-shadow:0 18px 52px rgba(19,39,79,.085)!important;
+  overflow:hidden!important;
+  z-index:1!important;
+}
+.portrait-frame img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+  transform:none!important;
+}
+html[data-theme="dark"] .portrait-frame{box-shadow:0 20px 56px rgba(0,0,0,.24)!important}
+html[data-theme="dark"] .portrait-composition::before{opacity:.34}
+
+/* Give the hero's supporting copy enough presence beside the stronger portrait. */
+.hero-intro{font-size:.82rem!important;letter-spacing:.04em}
+.hero-statement{font-size:1.15rem!important;line-height:1.64!important;max-width:600px!important}
+.credential-row{font-size:.92rem!important}
+.micro-links{font-size:.88rem!important}
+
+/* ---------- Experience: preserve hierarchy, remove tiny-text feel ---------- */
+.experience-v516{padding-top:42px!important}
+.experience-v516-role{
+  grid-template-columns:172px minmax(0,1fr)!important;
+  gap:48px!important;
+  padding:50px 0!important;
+}
+.experience-v516-role>aside span{
+  font-size:1rem!important;
+  line-height:1.3!important;
+  font-weight:650!important;
+  letter-spacing:-.01em!important;
+}
+.experience-v516-role>aside small{
+  font-size:.9rem!important;
+  line-height:1.45!important;
+  margin-top:8px!important;
+}
+.experience-org{
+  font-size:.87rem!important;
+  line-height:1.4!important;
+  letter-spacing:.045em!important;
+  font-weight:650!important;
+}
+.experience-v516-role h2{
+  font-size:clamp(2rem,2.8vw,2.5rem)!important;
+  line-height:1.08!important;
+  margin:12px 0 17px!important;
+}
+.experience-v516-role>div>p{
+  max-width:860px!important;
+  font-size:1.06rem!important;
+  line-height:1.72!important;
+}
+.experience-v516-role ul{
+  max-width:860px!important;
+  font-size:.98rem!important;
+  line-height:1.72!important;
+  padding-left:1.25em!important;
+}
+.experience-v516-role li+li{margin-top:7px!important}
+.experience-v516-section-label{
+  font-size:.75rem!important;
+  line-height:1.3!important;
+  letter-spacing:.12em!important;
+  margin-bottom:15px!important;
+}
+.experience-v516-selected-grid>div>span,
+.experience-v516-scope-grid>div>span{
+  font-size:.74rem!important;
+  line-height:1.35!important;
+  letter-spacing:.085em!important;
+}
+.experience-v516-selected-grid strong,
+.experience-v516-scope-grid strong{
+  font-size:1.05rem!important;
+  line-height:1.4!important;
+  margin:9px 0!important;
+}
+.experience-v516-selected-grid p,
+.experience-v516-scope-grid p{
+  font-size:.9rem!important;
+  line-height:1.62!important;
+}
+.experience-v516-selected-grid a,
+.experience-actions a{
+  font-size:.84rem!important;
+  line-height:1.4!important;
+}
+.experience-v523-product-scope>div{padding:15px 14px!important}
+.experience-v523-product-scope span{
+  font-size:11px!important;
+  line-height:1.3!important;
+  letter-spacing:.12em!important;
+}
+.experience-v523-product-scope strong{
+  font-size:.86rem!important;
+  line-height:1.42!important;
+}
+.experience-v517-rotation-row span{font-size:.78rem!important;padding:7px 11px!important}
+.experience-v517-award strong{font-size:.94rem!important}
+.experience-v517-award span{font-size:.82rem!important}
+
+/* ---------- Work case studies: navigation and metadata must remain readable ---------- */
+.case-study-v526 .case-fact-v526 span{font-size:.78rem!important;line-height:1.45!important}
+.case-study-v526 .case-brief-heading-v526>span,
+.case-study-v526 .case-brief-item-v526 span,
+.case-study-v526 .case-tooling-grid-v524>article span{
+  font-size:11.5px!important;
+  letter-spacing:.13em!important;
+}
+.case-study-v526 .case-brief-item-v526 p{font-size:.9rem!important;line-height:1.65!important}
+.case-study-v526 .case-margin-nav-label-v526{font-size:11px!important;letter-spacing:.15em!important;opacity:.62!important}
+.case-study-v526 .case-margin-nav-v526 nav a{font-size:12px!important;line-height:1.4!important;padding:7px 0!important}
+.case-study-v526 .case-prose-v526 figcaption{font-size:12.5px!important}
+.case-study-v526 .case-note-v524{font-size:13px!important}
+.case-study-v526 .case-capabilities-label-v523{font-size:11px!important}
+.case-study-v526 .case-capabilities-chips-v523 span{font-size:12.5px!important}
+.product-decision-list-v6 article>span,.clinical-insight-v6>span{font-size:11px!important}
+.publication-actions-v6 a{font-size:.82rem!important}
+
+/* ---------- Research / Education metadata: quiet but legible ---------- */
+.research-v518-engineering-list article>div:nth-child(2)>span{font-size:.72rem!important}
+.research-v518-tech-tags i{font-size:.76rem!important}
+.research-v518-inline-metrics em{font-size:.75rem!important}
+.publication-item-v524>div>strong{font-size:.8rem!important}
+.publication-item-v524 small{font-size:.75rem!important}
+.education-entry-meta-v510 small,.education-university-link-v510,.education-unit-link-v510{font-size:.8rem!important}
+.education-mark-v510{font-size:.74rem!important}
+.education-home-year{font-size:.82rem!important}
+.coursework-list-v530 li{font-size:.86rem!important;line-height:1.55!important}
+
+/* ---------- About: use the supplied presentation photo as documentary evidence ---------- */
+.about-story-v517 .content-photo{
+  margin-top:32px!important;
+  margin-bottom:36px!important;
+}
+.about-story-v517 .content-photo img{
+  width:100%!important;
+  max-height:none!important;
+  aspect-ratio:3/2!important;
+  object-fit:cover!important;
+  object-position:center!important;
+  border:0!important;
+  border-radius:16px!important;
+  box-shadow:0 14px 38px rgba(18,34,66,.065)!important;
+}
+.about-story-v517 .content-photo figcaption{font-size:.8rem!important;line-height:1.45!important;margin-top:10px!important}
+
+/* ---------- Footer ---------- */
+.footer-location-v525,.footer-email-v525{font-size:.82rem!important;line-height:1.5!important}
+.site-footer-v525 .footer-note{font-size:.72rem!important}
+
+@media(max-width:980px){
+  .hero-v3-grid{grid-template-columns:1fr!important;gap:46px!important}
+  .portrait-composition{width:min(100%,360px)!important;justify-self:start!important}
+  .experience-v516-role{grid-template-columns:150px minmax(0,1fr)!important;gap:34px!important}
+}
+
+@media(max-width:760px){
+  .page-hero h1{font-size:clamp(2.45rem,11vw,3.35rem)!important}
+  .page-hero .lede{font-size:1rem!important}
+  .page-context-label{font-size:.72rem!important}
+  .hero-v3-grid{gap:34px!important}
+  .portrait-composition{width:min(100%,320px)!important}
+  .experience-v516-role{grid-template-columns:1fr!important;gap:15px!important;padding:34px 0!important}
+  .experience-v516-role>aside{display:flex!important;justify-content:flex-start!important;gap:18px!important;align-items:baseline!important}
+  .experience-v516-role>aside span{font-size:.95rem!important}
+  .experience-v516-role>aside small{font-size:.84rem!important;margin-top:0!important}
+  .experience-org{font-size:.82rem!important}
+  .experience-v516-role h2{font-size:2rem!important}
+  .experience-v516-role>div>p{font-size:1rem!important}
+  .experience-v516-role ul{font-size:.95rem!important}
+  .experience-v523-product-scope{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .case-study-v526 .case-margin-nav-v526{display:none!important}
+}
+
+@media(max-width:520px){
+  .portrait-composition{width:min(100%,292px)!important}
+  .experience-v523-product-scope{grid-template-columns:1fr!important}
+  .section-signature .section-number,.section-signature .section-label{font-size:.72rem!important}
+}

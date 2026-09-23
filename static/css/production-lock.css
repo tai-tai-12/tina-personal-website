@@ -247,3 +247,25 @@ html[data-theme="dark"] .portrait-frame{box-shadow:0 22px 58px rgba(0,0,0,.28)!i
   .case-responsibility-pair-v530 article:last-child{border-bottom:0}
   .coursework-list-v530{grid-template-columns:1fr!important}
 }
+
+
+/* =========================================================
+   V6 — Product Judgment & Evidence Upgrade
+   Content-led components only; V5.30 visual system remains intact.
+   ========================================================= */
+.product-decision-list-v6{margin:30px 0 36px;border-top:1px solid var(--line)}
+.product-decision-list-v6 article{display:grid;grid-template-columns:180px minmax(0,1fr);column-gap:30px;padding:25px 0;border-bottom:1px solid var(--line);background:transparent}
+.product-decision-list-v6 article>span{font-size:9px;line-height:1.45;letter-spacing:.14em;font-weight:600;color:var(--muted);text-transform:uppercase}
+.product-decision-list-v6 article>h3{grid-column:2;margin:0 0 8px;font-size:1.05rem;line-height:1.42;color:var(--text)}
+.product-decision-list-v6 article>p{grid-column:2;margin:0!important;font-size:.9rem!important;line-height:1.72!important;color:var(--muted)}
+.clinical-insight-v6{margin:32px 0;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.clinical-insight-v6>span{display:block;font-size:9px;letter-spacing:.15em;font-weight:600;color:var(--blue)}
+.clinical-insight-v6 h3{margin:8px 0 8px;font-size:1.02rem;line-height:1.45}
+.clinical-insight-v6 p{margin:0!important;font-size:.9rem!important;line-height:1.72!important;color:var(--muted)}
+.publication-actions-v6{display:flex;flex-wrap:wrap;gap:14px;margin-top:9px}
+.publication-actions-v6 a{font-size:.72rem;font-weight:600;color:var(--blue);text-decoration:none}
+.publication-actions-v6 a:hover{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:640px){
+  .product-decision-list-v6 article{grid-template-columns:1fr;gap:7px}
+  .product-decision-list-v6 article>h3,.product-decision-list-v6 article>p{grid-column:1}
+}

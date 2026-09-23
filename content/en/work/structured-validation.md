@@ -36,7 +36,7 @@ snapshot:
   body: Testing evidence, measurements, documentation, clients, and audits had to
     remain consistent and traceable.
 - title: My role
-  body: Testing, analytical tooling, report preparation, and coordination.
+  body: End-to-end client and testing coordination—from requirement scoping and technical execution to nonconformity / retesting communication and formal reporting.
 - title: Scope
   body: Third-party ionizing-radiation equipment testing and quantitative imaging
     support.
@@ -69,11 +69,11 @@ The work sat between **technical measurement, laboratory quality systems, and ex
 ## Two distinct areas of work
 
 <div class="case-section-subgrid-v524">
-  <article><span>REGULATED TESTING</span><strong>Third-party testing & consortium operations</strong><p>Equipment testing, quality documentation, independent technical reports, client coordination, and assessment readiness.</p></article>
+  <article><span>REGULATED TESTING</span><strong>Third-party testing & consortium operations</strong><p>Requirement scoping, equipment testing, nonconformity / retesting communication, formal technical reports, client coordination, and assessment readiness.</p></article>
   <article><span>QUANTITATIVE IMAGING</span><strong>MATLAB small-animal CT analysis</strong><p>Bone-density and trabecular measurements through a reusable workflow later adopted by two university laboratories.</p></article>
 </div>
 
-For the regulated-testing work, I served as a primary student assistant for the **Ionizing Radiation Industry–University Technical Collaboration Consortium** and supported testing activities, evidence organization, technical reporting, quality-system records, audit readiness, and member/client communication.
+For the regulated-testing work, I served as a primary student assistant for the **Ionizing Radiation Industry–University Technical Collaboration Consortium** and supported end-to-end client intake and test execution, including product/specification confirmation, scope definition, nonconformity and retesting communication, technical reporting, quality-system records, audit readiness, and member/client communication.
 
 <span id="validation"></span>
 ## Validation pipeline and traceability

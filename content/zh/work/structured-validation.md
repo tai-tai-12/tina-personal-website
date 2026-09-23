@@ -33,7 +33,7 @@ snapshot:
 - title: 挑戰
   body: 測試證據、量測、文件、客戶與稽核需求必須保持一致且可追溯。
 - title: 我的角色
-  body: 測試、分析工具、報告準備與協調。
+  body: 從需求範圍、技術執行到 nonconformity／retesting 溝通與正式報告的端到端客戶與測試協調。
 - title: 範圍
   body: 游離輻射設備第三方測試與定量影像分析支援。
 - title: 成果
@@ -65,11 +65,11 @@ navItems:
 ## 兩個彼此獨立的工作範圍
 
 <div class="case-section-subgrid-v524">
-  <article><span>REGULATED TESTING</span><strong>第三方測試與小聯盟營運</strong><p>設備測試、品質文件、獨立技術報告、客戶協調與評鑑準備。</p></article>
+  <article><span>REGULATED TESTING</span><strong>第三方測試與小聯盟營運</strong><p>需求範圍確認、設備測試、nonconformity／retesting 溝通、正式技術報告、客戶協調與評鑑準備。</p></article>
   <article><span>QUANTITATIVE IMAGING</span><strong>MATLAB small-animal CT 分析</strong><p>骨密度與骨小樑量測，並建立後續由兩個大學實驗室採用的可重複流程。</p></article>
 </div>
 
-在受規範測試工作中，我擔任 **游離輻射產學技術合作小聯盟** 的主要學生助理，支援第三方測試、證據整理、技術報告、品質系統紀錄、評鑑準備與會員／客戶溝通。
+在受規範測試工作中，我擔任 **游離輻射產學技術合作小聯盟** 的主要學生助理，參與端到端客戶 intake 與測試執行，包括產品／規格確認、測試範圍定義、nonconformity 與 retesting 溝通、技術報告、品質系統紀錄、評鑑準備與會員／客戶溝通。
 
 <span id="validation"></span>
 ## 驗證流程與可追溯性

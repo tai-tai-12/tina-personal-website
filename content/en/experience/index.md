@@ -7,7 +7,7 @@ contextLabel: "CAREER PATH"
 ## AITEWAN Biomedical Technology
 **Product Manager · Jul 2024 – Jun 2026 · Taipei, Taiwan**
 
-Led product and regulatory execution for an AI-assisted brain tumor detection product, coordinated physicians, engineers, executives, and regulatory stakeholders, and supported commercialization and hospital deployment readiness.
+Led recurring physician discovery, technical product trade-offs, release planning, and regulatory execution for an AI-assisted brain-tumor product across two medical centers.
 
 [AITEWAN company website ↗](https://www.aitewan-bio.com/en/)
 

@@ -7,7 +7,7 @@ contextLabel: "職涯軌跡"
 ## AITEWAN Biomedical Technology
 **Product Manager · 2024/07 – 2026/06 · 台北**
 
-負責 AI 輔助腦瘤偵測產品的產品與法規執行，協調醫師、工程師、主管與法規相關利害關係人，並支援商業化與醫院部署準備。
+負責 AI 輔助腦瘤產品的持續醫師需求探索、技術產品取捨、release planning 與法規執行，工作橫跨兩家醫療中心。
 
 [AITEWAN 公司官網 ↗](https://www.aitewan-bio.com/en/)
 

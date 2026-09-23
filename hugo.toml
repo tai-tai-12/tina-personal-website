@@ -14,7 +14,7 @@ summaryLength = 30
 [params]
   name = "Tina Tai"
   tagline = "Product & Analytics | AI × Healthcare"
-  description = "Product and analytics professional translating AI and complex technical problems into products, evidence, and real-world decisions, with experience in healthcare technology."
+  description = "Technical product and analytics professional translating AI evidence, user workflows, and technical trade-offs into real-world product decisions."
   profile_image = "images/profile/tina-headshot.jpg"
   linkedin = "https://www.linkedin.com/in/shih-ting-tai/"
   email = "tinatai@andrew.cmu.edu"

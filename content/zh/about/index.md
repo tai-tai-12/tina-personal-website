@@ -4,7 +4,7 @@ translationKey: "about"
 contextLabel: "個人簡介"
 ---
 
-我的路徑從醫學影像與 AI 研究開始。慢慢地，我開始關心的不只是模型表現好不好，而是技術要真正進入現實環境還需要什麼：定義正確的問題、驗證證據、對齊利害關係人，並把結果轉成決策。
+我的路徑從醫學影像與 AI 研究開始。後來我逐漸不把模型表現視為終點，而更關心圍繞模型的產品判斷：使用者真正需要什麼、哪些技術取捨重要、哪些證據能被合理支持，以及團隊如何把這些證據轉成真正在工作流程中可用的產品。
 
 <figure class="content-photo">
   {{< site-img src="images/about/thesis-presentation.webp" alt="Tina Tai 進行以放射科醫師為導向之腦瘤 MRI 框架碩士論文口試" >}}

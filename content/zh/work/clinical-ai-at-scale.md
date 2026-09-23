@@ -97,7 +97,9 @@ Development cohort 用於模型開發、internal validation 與 operating-point 
   <article><span>EVALUATION & DATA</span><p>Python · pandas · NumPy · statistical analysis</p></article>
 </div>
 
-相關工作還包含 **ANTs MRI registration、hospital-data standardization / format conversion、ground-truth consensus 管理，以及 radiomics / segmentation / classification experiments**。相關研究版本發表於 **MIDL 2026** 與 **AMLDS 2026**；本頁 headline metrics 統一採最終碩論 independent-cohort evaluation。
+<div class="clinical-insight-v6"><span>CLINICAL INSIGHT → TECHNICAL DESIGN</span><h3>用臨床 domain knowledge 找模型失敗原因，而不是只換 architecture</h3><p>當 glioma 與 metastasis 長期容易混淆時，我重新回到 MRI 影像本身，利用醫事放射背景觀察肉眼可辨識特徵，與醫師確認後，再把這些臨床 insight 轉成模型與 augmentation 實驗。這是我把臨床推理轉成技術設計的代表例子。</p></div>
+
+相關工作還包含 **ANTs MRI registration、hospital-data standardization / format conversion、ground-truth consensus 管理，以及 radiomics / segmentation / classification experiments**。相關研究版本發表於 **MIDL 2026** 與 **AMLDS 2026**；本頁 headline metrics 刻意統一採最終碩論 independent-cohort evaluation。
 
 <span id="takeaway"></span>
 ## Takeaway

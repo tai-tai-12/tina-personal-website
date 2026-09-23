@@ -108,7 +108,9 @@ The final cascade was only one layer of the work. Reproducible evaluation also d
   <article><span>EVALUATION & DATA</span><p>Python · pandas · NumPy · statistical analysis</p></article>
 </div>
 
-Supporting work included **MRI registration with ANTs, hospital-data standardization and format conversion, ground-truth consensus management, and radiomics / segmentation / classification experiments**. Related study versions were presented at **MIDL 2026** and **AMLDS 2026**; the headline metrics on this page follow the final master's-thesis independent-cohort evaluation.
+<div class="clinical-insight-v6"><span>CLINICAL INSIGHT → TECHNICAL DESIGN</span><h3>Use domain knowledge to diagnose model failure—not only architecture changes</h3><p>When glioma and metastasis remained difficult to distinguish, I returned to the MRI itself, used my radiologic training to identify clinically visible patterns, consulted physicians, and translated those observations into model and augmentation experiments. It became a practical example of using clinical reasoning to guide technical design.</p></div>
+
+Supporting work included **MRI registration with ANTs, hospital-data standardization and format conversion, ground-truth consensus management, and radiomics / segmentation / classification experiments**. Related study versions were presented at **MIDL 2026** and **AMLDS 2026**; the headline metrics on this page intentionally follow the final master's-thesis independent-cohort evaluation.
 
 <span id="takeaway"></span>
 ## Takeaway

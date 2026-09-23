@@ -1,7 +1,7 @@
-# Tina Tai Personal Website — V5.30
+# Tina Tai Personal Website — V6
 
-Portrait Refresh & Final Visual QA.
+Production release focused on **product judgment, user discovery, and defensible evidence**.
 
-V5.30 keeps V5.29 as the production baseline and makes a restrained visual/semantic refinement pass: the homepage portrait is replaced with Tina's new professional photograph (cropped only, not generatively altered), decorative portrait chrome is reduced, several remaining duplicated metrics are removed, and a handful of semantic spacing/accessibility issues are cleaned up.
+V6 builds on the V5.30 visual system while upgrading the story told by the portfolio: not only what Tina worked on, but the product decisions she made, the trade-offs she analyzed, and the evidence behind those decisions.
 
-See `docs/V5_30_PORTRAIT_REFRESH_FINAL_VISUAL_QA.md`.
+See `docs/V6_PRODUCT_JUDGMENT_EVIDENCE_UPGRADE.md` for the release summary.

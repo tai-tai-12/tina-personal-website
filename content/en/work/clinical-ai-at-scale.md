@@ -1,14 +1,13 @@
 ---
-title: Building and Validating Lesion-Wise Clinical AI
+title: Designing AI Evaluation Beyond Accuracy
 translationKey: clinical-ai-at-scale
 tags:
 - Machine Learning
 - Analytics
 - Medical Imaging
 - Experimentation
-category: CLINICAL AI · ML
-summary: Built and evaluated lesion-wise clinical AI across development and independent
-  multi-center clinical cohorts.
+category: AI EVALUATION · ML
+summary: Designed lesion-wise AI evaluation beyond headline accuracy, separating development from independent clinical testing and review burden.
 proof:
 - 12.1K development exams
 - 264 independent test exams
@@ -39,9 +38,9 @@ snapshot:
 - title: Outcome
   body: A lesion-wise evaluation framework balancing sensitivity, precision, FP/scan,
     and retained-lesion typing.
-relatedPrevTitle: From Medical AI Research to a Deployable Product
+relatedPrevTitle: Shipping Medical AI Under Real Clinical Constraints
 relatedPrevURL: work/medical-ai-product/
-relatedNextTitle: Third-Party Testing & Validation Operations
+relatedNextTitle: Running Client-Facing Validation Operations
 relatedNextURL: work/structured-validation/
 navItems:
 - id: problem
@@ -98,19 +97,25 @@ The evaluation deliberately separated development and independent clinical testi
 </figure>
 
 <span id="engineering"></span>
-## Research engineering and communication
+## From clinical insight to technical design
 
 The final cascade was only one layer of the work. Reproducible evaluation also depended on imaging preprocessing, ground-truth management, experimentation, and clear communication of study scope.
 
-<div class="case-tooling-grid-v524">
-  <article><span>IMAGING PIPELINE</span><p>ANTs · SimpleITK · NiBabel · 3D Slicer</p></article>
-  <article><span>MODELING</span><p>PyTorch · MONAI · nnU-Net · scikit-learn</p></article>
-  <article><span>EVALUATION & DATA</span><p>Python · pandas · NumPy · statistical analysis</p></article>
-</div>
-
 <div class="clinical-insight-v6"><span>CLINICAL INSIGHT → TECHNICAL DESIGN</span><h3>Use domain knowledge to diagnose model failure—not only architecture changes</h3><p>When glioma and metastasis remained difficult to distinguish, I returned to the MRI itself, used my radiologic training to identify clinically visible patterns, consulted physicians, and translated those observations into model and augmentation experiments. It became a practical example of using clinical reasoning to guide technical design.</p></div>
 
-Supporting work included **MRI registration with ANTs, hospital-data standardization and format conversion, ground-truth consensus management, and radiomics / segmentation / classification experiments**. Related study versions were presented at **MIDL 2026** and **AMLDS 2026**; the headline metrics on this page intentionally follow the final master's-thesis independent-cohort evaluation.
+The reasoning came first; the tooling supported it.
+
+<details class="technical-details-v62">
+  <summary>Technical details</summary>
+  <div class="case-tooling-grid-v524">
+    <article><span>IMAGING PIPELINE</span><p>ANTs · SimpleITK · NiBabel · 3D Slicer</p></article>
+    <article><span>MODELING</span><p>PyTorch · MONAI · nnU-Net · scikit-learn</p></article>
+    <article><span>EVALUATION & DATA</span><p>Python · pandas · NumPy · statistical analysis</p></article>
+  </div>
+  <p>Supporting work included MRI registration, hospital-data standardization / format conversion, ground-truth consensus management, and radiomics / segmentation / classification experiments.</p>
+</details>
+
+Related study versions were presented at **MIDL 2026** and **AMLDS 2026**; the headline metrics on this page intentionally follow the final master's-thesis independent-cohort evaluation.
 
 <span id="takeaway"></span>
 ## Takeaway

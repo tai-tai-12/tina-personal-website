@@ -1,13 +1,13 @@
 ---
-title: 大規模臨床 AI 的建立與驗證
+title: 設計不只看 Accuracy 的 AI 評估
 translationKey: clinical-ai-at-scale
 tags:
 - Machine Learning
 - Analytics
 - Medical Imaging
 - Experimentation
-category: 臨床 AI · ML
-summary: 以嚴謹的 development／independent test 分離建立與驗證逐病灶臨床 AI。
+category: AI 評估 · ML
+summary: 以 sensitivity、FP/scan、precision 與 failure analysis 設計不只看單一 accuracy 的逐病灶 AI 評估。
 proof:
 - 12.1K development exams
 - 264 independent test exams
@@ -34,9 +34,9 @@ snapshot:
   body: 12,125 筆開發資料，加上一個正負病例平衡的多中心獨立臨床測試 cohort。
 - title: 成果
   body: 建立同時考量 sensitivity、precision、FP/scan 與保留病灶分類的評估架構。
-relatedPrevTitle: 從醫療 AI 研究到可部署產品
+relatedPrevTitle: 在真實臨床限制下推進醫療 AI 產品
 relatedPrevURL: work/medical-ai-product/
-relatedNextTitle: 第三方測試與驗證營運
+relatedNextTitle: 客戶導向的第三方驗證營運
 relatedNextURL: work/structured-validation/
 navItems:
 - id: problem
@@ -87,19 +87,25 @@ Development cohort 用於模型開發、internal validation 與 operating-point 
 <figure class="case-visual-v521 case-visual-full-v521">{{< site-img src="images/projects/detail-v521/clinical-evaluation-v521.webp" alt="腦部 MRI 逐病灶模型評估與篩選概念圖" >}}<figcaption><strong>概念評估視覺。</strong> 用於解釋候選篩選、病灶分類與效能評估，不是研究 pipeline 的實際截圖。</figcaption></figure>
 
 <span id="engineering"></span>
-## 研究工程與成果溝通
+## 從臨床洞察到技術設計
 
 最終 cascade 只是整體工作的一層；可重複的評估還仰賴影像 preprocessing、ground-truth 管理、實驗設計與清楚的 study-scope 溝通。
 
-<div class="case-tooling-grid-v524">
-  <article><span>IMAGING PIPELINE</span><p>ANTs · SimpleITK · NiBabel · 3D Slicer</p></article>
-  <article><span>MODELING</span><p>PyTorch · MONAI · nnU-Net · scikit-learn</p></article>
-  <article><span>EVALUATION & DATA</span><p>Python · pandas · NumPy · statistical analysis</p></article>
-</div>
-
 <div class="clinical-insight-v6"><span>CLINICAL INSIGHT → TECHNICAL DESIGN</span><h3>用臨床 domain knowledge 找模型失敗原因，而不是只換 architecture</h3><p>當 glioma 與 metastasis 長期容易混淆時，我重新回到 MRI 影像本身，利用醫事放射背景觀察肉眼可辨識特徵，與醫師確認後，再把這些臨床 insight 轉成模型與 augmentation 實驗。這是我把臨床推理轉成技術設計的代表例子。</p></div>
 
-相關工作還包含 **ANTs MRI registration、hospital-data standardization / format conversion、ground-truth consensus 管理，以及 radiomics / segmentation / classification experiments**。相關研究版本發表於 **MIDL 2026** 與 **AMLDS 2026**；本頁 headline metrics 刻意統一採最終碩論 independent-cohort evaluation。
+重點先放在問題判斷與 evidence；工具則作為支撐。
+
+<details class="technical-details-v62">
+  <summary>Technical details</summary>
+  <div class="case-tooling-grid-v524">
+    <article><span>IMAGING PIPELINE</span><p>ANTs · SimpleITK · NiBabel · 3D Slicer</p></article>
+    <article><span>MODELING</span><p>PyTorch · MONAI · nnU-Net · scikit-learn</p></article>
+    <article><span>EVALUATION & DATA</span><p>Python · pandas · NumPy · statistical analysis</p></article>
+  </div>
+  <p>相關工作還包含 MRI registration、hospital-data standardization / format conversion、ground-truth consensus 管理，以及 radiomics / segmentation / classification experiments。</p>
+</details>
+
+相關研究版本發表於 **MIDL 2026** 與 **AMLDS 2026**；本頁 headline metrics 刻意統一採最終碩論 independent-cohort evaluation。
 
 <span id="takeaway"></span>
 ## Takeaway

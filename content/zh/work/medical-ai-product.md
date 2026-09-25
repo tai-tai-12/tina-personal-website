@@ -1,13 +1,13 @@
 ---
-title: 從醫療 AI 研究走向可部署產品
+title: 在真實臨床限制下推進醫療 AI 產品
 translationKey: medical-ai-product
 tags:
 - 產品管理
 - 醫療 AI
 - 法規
 - 跨團隊協作
-category: 產品轉譯
-summary: 透過持續醫師需求探索、模型取捨與法規執行，把腦瘤 MRI 研究轉化為真實臨床工作流程。
+category: 產品管理 · AI
+summary: 透過醫師需求探索、技術取捨與 release sequencing，把腦瘤 MRI AI 推進真實臨床工作流程。
 proof:
 - ~67% faster AI processing
 - 2 medical centers
@@ -34,9 +34,9 @@ snapshot:
   body: 兩家醫療中心的 5 位醫師，以及 AI/ML、軟體/UI、臨床、法規與主管利害關係人。
 - title: 成果
   body: 更快的處理速度、更清楚的使用回饋、依工作流程調整的 operating point，以及受保護的送件時程。
-relatedPrevTitle: 第三方測試與驗證營運
+relatedPrevTitle: 客戶導向的第三方驗證營運
 relatedPrevURL: work/structured-validation/
-relatedNextTitle: 病灶層級臨床 AI 建置與驗證
+relatedNextTitle: 設計不只看 Accuracy 的 AI 評估
 relatedNextURL: work/clinical-ai-at-scale/
 navItems:
 - id: problem
@@ -60,7 +60,7 @@ navItems:
 ## 三個改變產品路徑的決策
 
 <div class="product-decision-list-v6">
-  <article><span>01 · USABILITY VS. MODEL PERFORMANCE</span><h3>優化真實工作流程，而不是只追求學術上最好的模型</h3><p>我透過持續的醫師 workflow testing，把「太慢」轉成低於一分鐘的第一階段產品目標，並與工程師共同評估 latency–sensitivity trade-off。在臨床可接受的小幅 sensitivity 下降下，端到端處理時間由約兩分鐘降到約四十秒。當醫師指出系統仍讓人感覺很慢，是因為不知道剩餘時間時，我提出百分比 progress indicator；功能上線後獲得正面回饋。</p></article>
+  <article><span>01 · USABILITY VS. MODEL PERFORMANCE</span><h3>優化真實工作流程，而不是只追求學術上最好的模型</h3><p>我透過持續的醫師 workflow testing，把「太慢」轉成低於一分鐘的第一階段產品目標，並與工程師共同評估 latency–sensitivity trade-off。在臨床可接受的小幅 sensitivity 下降下，端到端處理時間由約兩分鐘降到約四十秒。當醫師指出系統仍讓人感覺很慢，是因為不知道剩餘時間時，我根據醫師回饋提出百分比 progress indicator，之後實際部署到產品中。</p></article>
   <article><span>02 · ONE MODEL, DIFFERENT WORKFLOWS</span><h3>把模型指標轉成 operating-point 決策</h3><p>我把 sensitivity 與 false-positive burden 翻譯成醫師實際閱片時的工作量，再透過產品試用與 competitor benchmarks 定義 institution-level thresholds。結果顯示，偏 screening 的情境可更重視 sensitivity，而其他醫療中心工作流程則可使用較平衡的 operating point。</p></article>
   <article><span>03 · BETTER MODEL VS. SHIPPING ON TIME</span><h3>不是拒絕更好的模型，而是安排正確的 release sequencing</h3><p>送件後期出現明顯改善的新模型時，我評估的不只是 engineering time，而是驗證與文件的下游重工，估計若納入當期 release 將增加約三到六個月影響。我建議沿用已完成驗證的版本送件，並把新模型排入下一開發週期；主管採納此方案，團隊維持原定六月 TFDA 送件時程。</p></article>
 </div>
@@ -70,7 +70,7 @@ navItems:
 <span id="workflow"></span>
 ## 從研究模型走向醫師工作流程
 
-底層研究採逐病灶 cascade：先產生 sensitivity-oriented candidates，再降低偽陽性，最後對保留病灶進行五類分類。完整技術評估另見 **Building and Validating Lesion-Wise Clinical AI**。
+底層研究採逐病灶 cascade：先產生 sensitivity-oriented candidates，再降低偽陽性，最後對保留病灶進行五類分類。完整技術評估另見 **設計不只看 Accuracy 的 AI 評估**。
 
 產品層不只包含模型，也涵蓋 **PACS case access、AI processing-state visibility、AI-assisted lesion overlays、病灶層級閱片與報告審閱**。在兩家醫療中心進行的持續醫師 discovery，讓速度、等待可見性、operating point 與 release scope 都能被轉成具體產品需求。
 

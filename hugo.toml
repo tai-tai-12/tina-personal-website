@@ -1,5 +1,5 @@
 baseURL = "https://tai-tai-12.github.io/tina-personal-website/"
-title = "Tina Tai — Product & Analytics | AI × Healthcare"
+title = "Tina Tai — Product Manager | AI/ML & Analytics"
 theme = "careercanvas"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
@@ -13,9 +13,9 @@ summaryLength = 30
 
 [params]
   name = "Tina Tai"
-  tagline = "Product & Analytics | AI × Healthcare"
-  description = "Technical product and analytics professional translating AI evidence, user workflows, and technical trade-offs into real-world product decisions."
-  profile_image = "images/profile/tina-headshot.jpg"
+  tagline = "Product Manager | AI/ML & Analytics"
+  description = "Product manager with hands-on AI/ML and analytics experience, translating user needs, technical evidence, and cross-functional trade-offs into products that work in real workflows."
+  profile_image = "images/profile/tina-homepage-portrait-v530.webp"
   linkedin = "https://www.linkedin.com/in/shih-ting-tai/"
   email = "tinatai@andrew.cmu.edu"
   location = "Pittsburgh, PA, USA"
@@ -28,13 +28,13 @@ summaryLength = 30
     languageName = "EN"
     weight = 1
     contentDir = "content/en"
-    title = "Tina Tai — Product & Analytics | AI × Healthcare"
+    title = "Tina Tai — Product Manager | AI/ML & Analytics"
   [languages.zh]
     languageCode = "zh-TW"
     languageName = "中文"
     weight = 2
     contentDir = "content/zh"
-    title = "Tina Tai — 產品與數據分析 | AI × Healthcare"
+    title = "Tina Tai — 產品經理 | AI/ML × 數據分析"
 
 [markup]
   [markup.goldmark]

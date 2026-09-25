@@ -1,13 +1,13 @@
 ---
-title: 第三方測試與驗證作業
+title: 客戶導向的第三方驗證營運
 translationKey: structured-validation
 tags:
 - 第三方測試
 - 品質作業
 - 法規文件
 - 實驗室營運
-category: 受規範測試 · 作業
-summary: 在 ISO/IEC 17025 實驗室環境中，支援游離輻射設備第三方測試、證據整理、報告產出與產學技術聯盟營運。
+category: 客戶驗證 · 營運
+summary: 從需求釐清、測試執行到 nonconformity／retesting 溝通與正式報告，負責外部客戶導向的技術驗證流程。
 proof:
 - 8 項產品測試
 - 10+ 份測試報告
@@ -15,11 +15,11 @@ proof:
 visual: analytics-visual
 weight: 3
 heroBackground: images/projects/work-testing-v519.webp
-contextLabel: 受規範測試 · 作業
+contextLabel: 客戶驗證 · 營運
 detailHero: images/projects/detail-v521/testing-hero-v521.webp
 heroSize: standard
 detailHeroAlt: Third-party laboratory testing and validation workflow
-heroDek: 把第三方測試、定量分析、文件與審查整理成可重複、可追溯的驗證營運流程。
+heroDek: 從需求範圍、技術測試、問題溝通、retesting 到正式報告，管理外部客戶導向的驗證流程。
 heroStats:
 - value: '8'
   label: 測試產品
@@ -38,9 +38,9 @@ snapshot:
   body: 游離輻射設備第三方測試與定量影像分析支援。
 - title: 成果
   body: 建立可重複的測試與報告流程，支援 8 項產品與 10+ 份報告。
-relatedPrevTitle: 病灶層級臨床 AI 建置與驗證
+relatedPrevTitle: 設計不只看 Accuracy 的 AI 評估
 relatedPrevURL: work/clinical-ai-at-scale/
-relatedNextTitle: 從醫療 AI 研究到可部署產品
+relatedNextTitle: 在真實臨床限制下推進醫療 AI 產品
 relatedNextURL: work/medical-ai-product/
 navItems:
 - id: problem
@@ -57,9 +57,9 @@ navItems:
 
 
 <span id="problem"></span>
-## 工作流一旦碎片化，證據就容易失去一致性
+## 面向客戶的驗證不只是把測試做完
 
-這份工作位於 **技術量測、實驗室品質系統與對外報告** 的交界。產品測試需求需要被轉成清楚程序、可追溯量測、可審查紀錄，以及能支援客戶合規準備的報告。
+外部客戶不一定會帶著已完整定義的技術流程進來。這份工作位於 **需求範圍、技術量測、實驗室品質系統、問題溝通與對外報告** 的交界；需求必須被轉成清楚程序、可追溯結果、可審查紀錄與能支援合規準備的正式交付。
 
 <span id="workstreams"></span>
 ## 兩個彼此獨立的工作範圍

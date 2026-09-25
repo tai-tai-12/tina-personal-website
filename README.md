@@ -1,7 +1,7 @@
-# Tina Tai Personal Website — V6.1
+# Tina Tai Personal Website — V6.2
 
-Production release focused on **product judgment, user discovery, and defensible evidence**.
+**Release:** PM-First Positioning & Recruiter Scanability
 
-V6 builds on the V5.30 visual system while upgrading the story told by the portfolio: not only what Tina worked on, but the product decisions she made, the trade-offs she analyzed, and the evidence behind those decisions.
+V6.2 selectively applies the strongest recommendations from the latest positioning review without turning the portfolio into a generic PM site. It keeps the established V6 case-study architecture, preserves healthcare as differentiated domain depth, and improves recruiter-first framing, readability, recognition visibility, and action clarity.
 
-See `docs/V6_PRODUCT_JUDGMENT_EVIDENCE_UPGRADE.md` for the release summary.
+See `docs/V6_2_PM_FIRST_POSITIONING_RECRUITER_SCANABILITY.md` for the full decision log and QA notes.

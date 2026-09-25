@@ -1,14 +1,13 @@
 ---
-title: Third-Party Testing & Validation Operations
+title: Running Client-Facing Validation Operations
 translationKey: structured-validation
 tags:
 - Third-Party Testing
 - Quality Operations
 - Regulatory Documentation
 - Lab Operations
-category: REGULATED TESTING · OPERATIONS
-summary: Structured third-party radiation-equipment testing, evidence packaging, and
-  reporting in an accredited laboratory environment.
+category: CLIENT VALIDATION · OPERATIONS
+summary: Managed client-facing validation from requirement scoping and testing through nonconformity / retesting communication and formal reporting.
 proof:
 - 8 products tested
 - 10+ testing reports
@@ -16,12 +15,11 @@ proof:
 visual: analytics-visual
 weight: 3
 heroBackground: images/projects/work-testing-v519.webp
-contextLabel: REGULATED TESTING · OPERATIONS
+contextLabel: CLIENT VALIDATION · OPERATIONS
 detailHero: images/projects/detail-v521/testing-hero-v521.webp
 heroSize: standard
 detailHeroAlt: Third-party laboratory testing and validation workflow
-heroDek: Structuring third-party testing, quantitative analysis, documentation, and
-  review into repeatable validation operations.
+heroDek: Managing external validation from requirement scoping and technical testing through issue communication, retesting, and formal reporting.
 heroStats:
 - value: '8'
   label: Products tested
@@ -42,9 +40,9 @@ snapshot:
     support.
 - title: Outcome
   body: Repeatable testing and reporting workflows supporting 8 products and 10+ reports.
-relatedPrevTitle: Building and Validating Lesion-Wise Clinical AI
+relatedPrevTitle: Designing AI Evaluation Beyond Accuracy
 relatedPrevURL: work/clinical-ai-at-scale/
-relatedNextTitle: From Medical AI Research to a Deployable Product
+relatedNextTitle: Shipping Medical AI Under Real Clinical Constraints
 relatedNextURL: work/medical-ai-product/
 navItems:
 - id: problem
@@ -61,9 +59,9 @@ navItems:
 
 
 <span id="problem"></span>
-## Evidence becomes fragile when the workflow fragments
+## Client-facing validation requires more than running the test
 
-The work sat between **technical measurement, laboratory quality systems, and external reporting**. Product-testing requests had to be translated into defined procedures, traceable measurements, reviewable records, and reports that could support client compliance preparation.
+External clients rarely arrive with a perfectly packaged technical workflow. The work sat between **requirement scoping, technical measurement, laboratory quality systems, issue communication, and formal reporting**. Requests had to be translated into defined procedures, traceable results, reviewable records, and deliverables clients could use for compliance preparation.
 
 <span id="workstreams"></span>
 ## Two distinct areas of work

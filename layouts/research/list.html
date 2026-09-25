@@ -7,14 +7,26 @@
 
 <section class="section-shell research-v518-areas"><div class="shell">
   <div class="research-v516-heading reveal"><span class="kicker">{{ if $isZh }}主要研究{{ else }}RESEARCH AREAS{{ end }}</span><h2>{{ if $isZh }}先看研究主線，再深入成果。{{ else }}Start with the research themes, then explore the outputs.{{ end }}</h2><p>{{ if $isZh }}我的研究主線從胸主動脈 CT 延伸到腦瘤 MRI，逐步累積影像處理、模型設計、驗證與臨床轉譯能力。{{ else }}My work progressed from thoracic-aorta CT to brain-tumor MRI, building depth in image processing, model development, validation, and clinical translation.{{ end }}</p></div>
-  <div class="research-v518-area-grid reveal">
-    <a class="research-v518-area-card" href="#brain-tumor-research">
-      <figure><img src="{{ "images/research/brain-tumor-area-v518.webp" | relURL }}" alt="Brain tumor MRI AI analysis interface" loading="lazy" decoding="async"></figure>
-      <div><span>2024–2026 · PRIMARY RESEARCH</span><h3>{{ if $isZh }}腦瘤 MRI AI{{ else }}Brain Tumor MRI AI{{ end }}</h3><p>{{ if $isZh }}逐病灶偵測、偽陽性降低、五類腫瘤分類與多中心驗證。{{ else }}Lesion-wise detection, false-positive reduction, five-class tumor typing, and multi-center validation.{{ end }}</p><strong>{{ if $isZh }}查看研究成果 ↓{{ else }}See research outputs ↓{{ end }}</strong></div>
+  <div class="research-v518-area-grid research-area-grid-v64 reveal">
+    <a class="research-v518-area-card research-area-card-v64" href="#brain-tumor-research">
+      <figure class="research-area-visual-v64 signature-editorial-visual-v64"><img src="{{ "images/research/brain-tumor-preview-v64.webp" | relURL }}" alt="Brain tumor MRI AI analysis with lesion-level evidence" loading="lazy" decoding="async"></figure>
+      <div class="research-area-copy-v64">
+        <span>2024–2026 · PRIMARY RESEARCH</span>
+        <h3>{{ if $isZh }}腦瘤 MRI AI{{ else }}Brain Tumor MRI AI{{ end }}</h3>
+        <p>{{ if $isZh }}逐病灶偵測、偽陽性降低、五類腫瘤分類與多中心驗證。{{ else }}Lesion-wise detection, false-positive reduction, five-class tumor typing, and multi-center validation.{{ end }}</p>
+        <div class="research-proof-row-v64" aria-label="Research evidence"><em><strong>2</strong> medical centers</em><em><strong>0.21</strong> FP/scan</em><em><strong>5</strong> tumor classes</em></div>
+        <strong class="research-card-cta-v64">{{ if $isZh }}查看研究 →{{ else }}View research →{{ end }}</strong>
+      </div>
     </a>
-    <a class="research-v518-area-card research-v63-aorta-teaser" href="{{ "research/thoracic-aorta/" | relLangURL }}">
-      <figure><img src="{{ "images/research/thoracic-aorta-teaser-v63.webp" | relURL }}" alt="Thoracic aorta CT analysis interface with 3D reconstruction" loading="lazy" decoding="async"></figure>
-      <div><span>2023–2024 · FOUNDATIONAL RESEARCH · NSTC</span><h3>{{ if $isZh }}胸主動脈 CT 分析{{ else }}Thoracic Aorta CT Analysis{{ end }}</h3><p>{{ if $isZh }}308 例臨床 CT 的多類別分割、3D 重建與定量評估。{{ else }}Multi-class segmentation, 3D reconstruction, and quantitative evaluation across 308 clinical CT cases.{{ end }}</p><div class="research-v518-inline-metrics"><em>308 cases · Mean AUC 0.95 · Overall DSC 0.782</em></div><strong>{{ if $isZh }}查看專案 →{{ else }}View project →{{ end }}</strong></div>
+    <a class="research-v518-area-card research-area-card-v64" href="{{ "research/thoracic-aorta/" | relLangURL }}">
+      <figure class="research-area-visual-v64 signature-editorial-visual-v64"><img src="{{ "images/research/thoracic-aorta-preview-v64.webp" | relURL }}" alt="Thoracic aorta CT analysis from clinical CT through 3D reconstruction and segmentation" loading="lazy" decoding="async"></figure>
+      <div class="research-area-copy-v64">
+        <span>2023–2024 · FOUNDATIONAL RESEARCH · NSTC</span>
+        <h3>{{ if $isZh }}胸主動脈 CT 分析{{ else }}Thoracic Aorta CT Analysis{{ end }}</h3>
+        <p>{{ if $isZh }}308 例臨床 CT 的多類別分割、3D 重建與定量評估。{{ else }}Multi-class segmentation, 3D reconstruction, and quantitative evaluation across 308 clinical CT cases.{{ end }}</p>
+        <div class="research-proof-row-v64" aria-label="Research evidence"><em><strong>308</strong> CT cases</em><em><strong>0.95</strong> mean AUC</em><em><strong>0.782</strong> overall DSC</em></div>
+        <strong class="research-card-cta-v64">{{ if $isZh }}查看研究 →{{ else }}View research →{{ end }}</strong>
+      </div>
     </a>
   </div>
 </div></section>

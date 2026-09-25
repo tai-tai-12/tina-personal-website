@@ -1,0 +1,245 @@
+/* ==========================================================================\n   V6.4 — Image System, Research Card Consistency & Cross-Page Alignment\n   Unifies preview cards, proof rows, image roles, page density, and footer\n   hierarchy without adding new component families.\n   ========================================================================== */
+
+:root{
+  --v64-display-l:clamp(3.45rem,4.6vw,4.15rem);
+  --v64-display-m:clamp(2.3rem,3.15vw,2.95rem);
+  --v64-card-title:clamp(2.65rem,3.8vw,3.95rem);
+  --v64-lead:clamp(1.03rem,1.2vw,1.18rem);
+  --v64-body:1rem;
+  --v64-meta-strong:1.04rem;
+  --v64-meta:.94rem;
+  --v64-label:.76rem;
+  --v64-caption:.82rem;
+  --v64-reading:72ch;
+}
+
+/* ---------- Page-level readable hierarchy ---------- */
+.page-hero h1{font-size:var(--v64-display-l)!important;max-width:900px!important}
+.page-hero .lede,.page-hero .lede.small{font-size:var(--v64-lead)!important;max-width:820px!important}
+.experience-v516-role h2,.education-entry-card-v510>h2{font-size:var(--v64-display-m)!important}
+.experience-v516-role>aside span,.education-entry-meta-v510>span{font-size:var(--v64-meta-strong)!important}
+.experience-v516-role>aside small,.education-entry-meta-v510>small{font-size:var(--v64-meta)!important}
+.experience-v516-role>div>p,.education-entry-card-v510>p{font-size:1.05rem!important;max-width:76ch!important}
+.experience-v516-role ul{font-size:1rem!important;max-width:78ch!important}
+
+/* ---------- Education density: bring the first entry up ---------- */
+.education-v510.page-hero,.education-page-hero{padding-bottom:46px!important}
+.education-v510.section-shell,.education-v510{padding-top:34px!important}
+.education-v510-grid{align-items:start!important}
+.credential-panel-v510{margin-top:12px!important;align-self:start!important}
+.education-entry-v510:first-child{padding-top:34px!important}
+.education-entry-v510{padding-top:46px!important;padding-bottom:46px!important}
+
+/* ---------- One proof-row component across Home / Work / Research ---------- */
+.proof-row-v64,.research-proof-row-v64{
+  display:flex!important;
+  align-items:center!important;
+  flex-wrap:nowrap!important;
+  gap:10px!important;
+  margin-top:28px!important;
+}
+.proof-row-v64>span,.research-proof-row-v64>em{
+  display:inline-flex!important;
+  align-items:baseline!important;
+  gap:7px!important;
+  min-height:46px!important;
+  padding:10px 16px!important;
+  border:1px solid color-mix(in srgb,var(--line) 88%,var(--electric) 12%)!important;
+  border-radius:999px!important;
+  background:color-mix(in srgb,var(--bg) 97%,var(--electric) 3%)!important;
+  color:var(--muted)!important;
+  white-space:nowrap!important;
+  font-style:normal!important;
+  font-size:.93rem!important;
+  line-height:1.25!important;
+}
+.proof-row-v64 strong,.research-proof-row-v64 strong{
+  font:600 1.08rem/1.1 Manrope,Inter,"Noto Sans TC",sans-serif!important;
+  color:var(--text)!important;
+}
+.work-proof-row-v64{margin-top:22px!important}
+
+/* ---------- Homepage Selected Work: text/image balance ---------- */
+.mono-project{grid-template-columns:minmax(0,.98fr) minmax(0,1.02fr)!important;column-gap:56px!important;align-items:center!important}
+.project-reverse{grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr)!important}
+.mono-project .project-copy{min-width:0!important}
+.mono-project .project-copy h3.project-title-v64{
+  font-size:var(--v64-card-title)!important;
+  line-height:1.02!important;
+  letter-spacing:-.052em!important;
+  max-width:14.5ch!important;
+  text-wrap:balance;
+}
+.project-title-v64>span{display:block}
+.mono-project .project-copy>p{
+  font-size:clamp(1.08rem,1.35vw,1.28rem)!important;
+  line-height:1.62!important;
+  max-width:620px!important;
+}
+.mono-project .project-visual{aspect-ratio:16/10!important;min-height:0!important;border-radius:18px!important;overflow:hidden!important}
+.mono-project .project-visual img{width:100%!important;height:100%!important;object-fit:cover!important;display:block!important}
+.mono-project-btn{min-height:50px!important;padding:0 20px!important;border-radius:10px!important;font-size:.96rem!important}
+.project-actions{margin-top:30px!important}
+
+/* ---------- Homepage About: four equal foundations ---------- */
+.foundation-grid-v63{gap:24px!important;margin-top:42px!important}
+.foundation-item-v63{min-width:0!important;padding:18px 0 24px!important}
+.foundation-item-v63>span{font-size:.78rem!important;margin-bottom:15px!important}
+.foundation-item-v63>strong{font-size:1.08rem!important;line-height:1.32!important}
+.foundation-item-v63>p{font-size:.92rem!important;line-height:1.55!important;max-width:28ch!important}
+.about-v527-link{margin-top:24px!important}
+
+/* ---------- Research cards: one family ---------- */
+.research-area-grid-v64{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:28px!important;
+  align-items:stretch!important;
+}
+.research-area-card-v64{
+  display:flex!important;
+  flex-direction:column!important;
+  min-height:100%!important;
+  border:1px solid var(--line)!important;
+  border-radius:18px!important;
+  overflow:hidden!important;
+  background:var(--bg)!important;
+  box-shadow:none!important;
+  transition:border-color .2s ease,transform .2s ease!important;
+}
+.research-area-card-v64:hover{border-color:color-mix(in srgb,var(--electric) 38%,var(--line))!important;transform:translateY(-2px)}
+.research-area-visual-v64{
+  aspect-ratio:16/10!important;
+  margin:0!important;
+  border:0!important;
+  border-radius:0!important;
+  overflow:hidden!important;
+  background:#07131e!important;
+}
+.research-area-visual-v64 img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center!important;
+  display:block!important;
+}
+.research-area-copy-v64{
+  display:flex!important;
+  flex-direction:column!important;
+  flex:1!important;
+  padding:28px 30px 30px!important;
+}
+.research-area-copy-v64>span{
+  font:650 var(--v64-label)/1.35 Manrope,Inter,"Noto Sans TC",sans-serif!important;
+  letter-spacing:.115em!important;
+  color:var(--electric)!important;
+}
+.research-area-copy-v64 h3{
+  margin:18px 0 13px!important;
+  font-size:clamp(2rem,2.7vw,2.65rem)!important;
+  line-height:1.06!important;
+  letter-spacing:-.045em!important;
+  color:var(--text)!important;
+}
+.research-area-copy-v64>p{
+  margin:0!important;
+  font-size:1rem!important;
+  line-height:1.65!important;
+  color:var(--muted)!important;
+  max-width:60ch!important;
+}
+.research-proof-row-v64{margin-top:22px!important;gap:8px!important}
+.research-proof-row-v64>em{min-height:40px!important;padding:8px 13px!important;font-size:.83rem!important}
+.research-proof-row-v64 strong{font-size:.96rem!important}
+.research-card-cta-v64{
+  display:inline-block!important;
+  margin-top:auto!important;
+  padding-top:24px!important;
+  font-size:.92rem!important;
+  line-height:1.35!important;
+  font-weight:600!important;
+  color:var(--electric)!important;
+}
+
+/* ---------- Research detail: preview ≠ detail hero ≠ evidence figure ---------- */
+.signature-editorial-visual-v64{box-shadow:none!important}
+.research-note-hero-figure-v64{aspect-ratio:16/10!important;border-radius:18px!important;overflow:hidden!important;background:#07131e!important}
+.research-note-hero-figure-v64 img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important}
+.technical-evidence-figure-v64 img{background:#f7f9fc!important;border:1px solid var(--line)!important;border-radius:14px!important}
+.technical-evidence-figure-v64 figcaption{font-size:var(--v64-caption)!important}
+
+/* ---------- Work landing uses the same proof grammar ---------- */
+.work-stack-row-v510{align-items:center!important}
+.work-stack-copy-v510 h2{font-size:clamp(2.2rem,3.2vw,3.05rem)!important;line-height:1.05!important;letter-spacing:-.043em!important}
+.work-stack-copy-v510>p{font-size:1.02rem!important;line-height:1.65!important;max-width:68ch!important}
+.work-stack-visual-v510{aspect-ratio:16/10!important;border-radius:17px!important;overflow:hidden!important}
+.work-stack-visual-v510 img{width:100%!important;height:100%!important;object-fit:cover!important}
+
+/* ---------- Figure roles across the site ---------- */
+.editorial-visual img,.signature-editorial-visual-v64 img{border:0!important;box-shadow:none!important}
+.research-v518-feature-card figure,.research-v518-award-card figure,.content-photo{overflow:hidden!important;border-radius:14px!important}
+.research-v518-feature-card figure img,.research-v518-award-card figure img,.content-photo img{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important}
+.research-v518-award-card figure{max-height:300px!important}
+.research-v518-feature-card figure{max-height:330px!important}
+
+/* ---------- Quiet footer hierarchy ---------- */
+.site-footer-v525{padding-top:26px!important;padding-bottom:14px!important}
+.footer-email-v525{font-weight:450!important;text-decoration:none!important}
+.footer-email-v525:hover{text-decoration:underline!important;text-underline-offset:3px!important}
+.footer-action-v64{min-height:38px!important;padding:0 14px!important;font-size:.84rem!important;border-radius:9px!important}
+.footer-action-v64:not(.footer-action-resume-v62){background:transparent!important;border-color:color-mix(in srgb,var(--line) 95%,var(--text) 5%)!important}
+.footer-action-resume-v62{background:color-mix(in srgb,var(--electric) 5%,var(--bg))!important}
+
+/* ---------- Labels and readable secondary copy ---------- */
+.kicker,.education-subsection-label-v515,.credential-group-label-v514,.experience-v516-section-label{font-size:var(--v64-label)!important}
+.research-v518-engineering-list article>div:nth-child(2)>span{font-size:var(--v64-label)!important}
+.research-v518-tech-tags i{font-size:.82rem!important}
+.publication-item-v524>div>strong{font-size:.93rem!important}
+.publication-item-v524 p{font-size:1rem!important}
+.publication-item-v524 small{font-size:.82rem!important}
+
+/* ---------- Large desktop ---------- */
+@media(min-width:1200px){
+  .proof-row-v64{flex-wrap:nowrap!important}
+  .mono-project .project-copy h3.project-title-v64{max-width:14.7ch!important}
+}
+
+/* ---------- Tablet ---------- */
+@media(max-width:1100px){
+  .mono-project,.project-reverse{grid-template-columns:1fr!important;gap:34px!important}
+  .project-reverse .project-visual{order:2}
+  .project-reverse .project-copy{order:1}
+  .mono-project .project-copy h3.project-title-v64{max-width:18ch!important}
+  .proof-row-v64{flex-wrap:wrap!important}
+  .research-area-grid-v64{grid-template-columns:1fr!important;max-width:820px;margin-inline:auto}
+  .education-v510-grid{grid-template-columns:1fr!important}
+  .credential-panel-v510{margin-top:30px!important}
+}
+
+/* ---------- Mobile ---------- */
+@media(max-width:760px){
+  .page-hero h1{font-size:clamp(2.6rem,11.5vw,3.45rem)!important}
+  .project-title-v64>span{display:inline}
+  .project-title-v64>span+span:before{content:" ";}
+  .mono-project .project-copy h3.project-title-v64{font-size:clamp(2.45rem,10.5vw,3.35rem)!important;max-width:none!important}
+  .mono-project .project-copy>p{font-size:1.02rem!important}
+  .proof-row-v64,.research-proof-row-v64{flex-wrap:wrap!important;gap:8px!important}
+  .proof-row-v64>span,.research-proof-row-v64>em{min-height:42px!important;padding:8px 13px!important;font-size:.86rem!important}
+  .research-area-copy-v64{padding:24px 22px 26px!important}
+  .research-area-copy-v64 h3{font-size:2rem!important}
+  .research-area-visual-v64{aspect-ratio:4/3!important}
+  .research-area-visual-v64 img{object-position:center!important}
+  .foundation-grid-v63{gap:0!important}
+  .footer-action-v64{min-height:40px!important}
+}
+
+/* ---------- Dark-mode image canvases ---------- */
+[data-theme="dark"] .technical-evidence-figure-v64 img{background:#eef3f8!important;border-color:color-mix(in srgb,var(--line) 82%,white 18%)!important}
+[data-theme="dark"] .proof-row-v64>span,[data-theme="dark"] .research-proof-row-v64>em{background:color-mix(in srgb,var(--bg) 94%,var(--electric) 6%)!important}
+
+/* Education page uses the same page-header density as other timeline pages. */
+.education-page-hero{padding-bottom:46px!important}
+.education-page-section{padding-top:34px!important;padding-bottom:86px!important}
+.education-page-shell-v510{gap:56px!important;align-items:start!important}
+.education-timeline-v510{align-self:start!important}
+.credential-panel-v510{top:94px!important}

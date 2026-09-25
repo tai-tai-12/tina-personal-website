@@ -11,6 +11,7 @@ summary: Used physician discovery, technical trade-offs, and release sequencing 
 proof:
 - ~67% faster AI processing
 - 2 medical centers
+- 5 physician users
 visual: product-visual
 weight: 1
 heroBackground: images/projects/work-product-v519.webp

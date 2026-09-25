@@ -11,6 +11,7 @@ summary: 透過醫師需求探索、技術取捨與 release sequencing，把腦�
 proof:
 - ~67% faster AI processing
 - 2 medical centers
+- 5 physician users
 visual: product-visual
 weight: 1
 heroBackground: images/projects/work-product-v519.webp

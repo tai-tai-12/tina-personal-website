@@ -24,14 +24,14 @@ summaryLength = 30
 
 [languages]
   [languages.en]
-    languageCode = "en-US"
-    languageName = "EN"
+    locale = "en-US"
+    label = "EN"
     weight = 1
     contentDir = "content/en"
     title = "Tina Tai — Product Manager | AI/ML & Analytics"
   [languages.zh]
-    languageCode = "zh-TW"
-    languageName = "中文"
+    locale = "zh-TW"
+    label = "中文"
     weight = 2
     contentDir = "content/zh"
     title = "Tina Tai — 產品經理 | AI/ML × 數據分析"

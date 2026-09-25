@@ -65,7 +65,7 @@
         <div class="project-kicker-row"><span class="project-no">01</span><span class="project-type">PRODUCT MANAGEMENT · AI</span></div>
         <h3>{{ if $isZh }}在真實臨床限制下推進醫療 AI 產品{{ else }}Shipping Medical AI Under Real Clinical Constraints{{ end }}</h3>
         <p>{{ if $isZh }}透過醫師需求探索、模型取捨與 release sequencing，把腦瘤 MRI AI 推進真實臨床工作流程。{{ else }}Used physician discovery, model trade-offs, and release sequencing to move brain-tumor MRI AI into real clinical workflow.{{ end }}</p>
-        <div class="project-proof-inline project-proof-inline-v530"><span><strong>~67%</strong> faster processing</span><i aria-hidden="true">·</i><span><strong>2</strong> medical centers</span></div>
+        <div class="project-proof-inline project-proof-inline-v530 project-proof-v63"><span><strong>~67%</strong> faster processing</span><i aria-hidden="true">·</i><span><strong>2</strong> medical centers</span><i aria-hidden="true">·</i><span><strong>5</strong> physicians</span></div>
         <div class="project-actions"><a href="{{ "work/medical-ai-product/" | relLangURL }}" class="btn mono-project-btn">{{ if $isZh }}查看專案{{ else }}Explore project{{ end }} <span>↗</span></a></div>
       </div>
       <a class="project-visual mono-visual editorial-visual" href="{{ "work/medical-ai-product/" | relLangURL }}" aria-label="Open Medical AI to Product case study">
@@ -81,7 +81,7 @@
         <div class="project-kicker-row"><span class="project-no">02</span><span class="project-type">AI EVALUATION · ML</span></div>
         <h3>{{ if $isZh }}設計不只看 Accuracy 的 AI 評估{{ else }}Designing AI Evaluation Beyond Accuracy{{ end }}</h3>
         <p>{{ if $isZh }}以逐病灶敏感度、FP/scan、precision 與 failure analysis 評估 AI，而不是只看單一 headline accuracy。{{ else }}Evaluated lesion-wise AI through sensitivity, FP/scan, precision, and failure analysis—not a single headline accuracy metric.{{ end }}</p>
-        <div class="project-proof-inline project-proof-inline-v530"><span><strong>12.1K</strong> development exams</span><i aria-hidden="true">·</i><span><strong>264</strong> independent test exams</span></div>
+        <div class="project-proof-inline project-proof-inline-v530 project-proof-v63"><span><strong>12.1K</strong> development exams</span><i aria-hidden="true">·</i><span><strong>264</strong> independent test exams</span></div>
         <div class="project-actions"><a href="{{ "work/clinical-ai-at-scale/" | relLangURL }}" class="btn mono-project-btn">{{ if $isZh }}查看專案{{ else }}Explore project{{ end }} <span>↗</span></a><a href="{{ "research/" | relLangURL }}" class="mono-text-action">{{ if $isZh }}研究成果{{ else }}Research outputs{{ end }} →</a></div>
       </div>
     </article>
@@ -91,7 +91,7 @@
         <div class="project-kicker-row"><span class="project-no">03</span><span class="project-type">CLIENT VALIDATION · OPERATIONS</span></div>
         <h3>{{ if $isZh }}執行面向客戶的第三方驗證作業{{ else }}Running Client-Facing Validation Operations{{ end }}</h3>
         <p>{{ if $isZh }}從需求釐清、測試執行到 nonconformity／retesting 溝通與正式報告，負責外部客戶導向的技術驗證流程。{{ else }}Managed client-facing validation from requirement scoping and testing through nonconformity / retesting communication and formal reporting.{{ end }}</p>
-        <div class="project-proof-inline project-proof-inline-v530"><span><strong>8</strong> products tested</span><i aria-hidden="true">·</i><span><strong>10+</strong> testing reports</span></div>
+        <div class="project-proof-inline project-proof-inline-v530 project-proof-v63"><span><strong>8</strong> products tested</span><i aria-hidden="true">·</i><span><strong>10+</strong> testing reports</span><i aria-hidden="true">·</i><span><strong>5</strong> clients</span></div>
         <div class="project-actions"><a href="{{ "work/structured-validation/" | relLangURL }}" class="btn mono-project-btn">{{ if $isZh }}查看專案{{ else }}Explore project{{ end }} <span>↗</span></a></div>
       </div>
       <a class="project-visual mono-visual editorial-visual" href="{{ "work/structured-validation/" | relLangURL }}" aria-label="Open analytics and operations case study">
@@ -156,14 +156,11 @@
     </div>
     <div class="about-v527-editorial reveal">
       <blockquote>{{ if $isZh }}我最有興趣的是技術能做到什麼、使用者真正需要什麼，以及團隊最後應該做出什麼產品決策。{{ else }}I’m most interested in the decisions between what technology can do, what users actually need, and what a team should build next.{{ end }}</blockquote>
-      <div class="journey-map" aria-label="Career journey">
-        <div class="journey-step"><span>01</span><strong>Biomedical Imaging</strong></div>
-        <div class="journey-arrow">→</div>
-        <div class="journey-step"><span>02</span><strong>AI Research</strong></div>
-        <div class="journey-arrow">→</div>
-        <div class="journey-step"><span>03</span><strong>Product</strong></div>
-        <div class="journey-arrow">→</div>
-        <div class="journey-step"><span>04</span><strong>Analytics</strong></div>
+      <div class="foundation-grid-v63" aria-label="Four foundations">
+        <div class="foundation-item-v63"><span>01</span><strong>Biomedical Imaging</strong><p>{{ if $isZh }}臨床工作流程與影像基礎。{{ else }}Clinical workflow and imaging foundations.{{ end }}</p></div>
+        <div class="foundation-item-v63"><span>02</span><strong>AI Research</strong><p>{{ if $isZh }}模型開發、失敗分析與驗證。{{ else }}Model development, error analysis, and validation.{{ end }}</p></div>
+        <div class="foundation-item-v63"><span>03</span><strong>Product</strong><p>{{ if $isZh }}需求探索、取捨與 release decisions。{{ else }}User discovery, trade-offs, and release decisions.{{ end }}</p></div>
+        <div class="foundation-item-v63"><span>04</span><strong>Analytics</strong><p>{{ if $isZh }}證據整合與結構化決策。{{ else }}Evidence synthesis and structured decision-making.{{ end }}</p></div>
       </div>
       <a class="text-link about-v527-link" href="{{ "about/" | relLangURL }}">{{ if $isZh }}更多關於我{{ else }}More about me{{ end }} →</a>
     </div>

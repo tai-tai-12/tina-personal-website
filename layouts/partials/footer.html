@@ -4,7 +4,7 @@
     <div class="footer-identity-v524 footer-identity-v525">
       <strong>Tina Tai</strong>
       <div class="footer-contact-v524 footer-contact-v525" aria-label="Contact information">
-        <span class="footer-location-v525">{{ with .Site.Params.location }}{{ . }}{{ end }} · {{ if $isZh }}開放美國與台灣工作機會{{ else }}Open to U.S. &amp; Taiwan opportunities{{ end }}</span>
+        <span class="footer-location-v525">{{ with .Site.Params.location }}{{ replace . ", USA" "" }}{{ end }} · {{ if $isZh }}開放美國與台灣工作機會{{ else }}Open to U.S. &amp; Taiwan opportunities{{ end }}</span>
         <a class="footer-email-v525" href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
       </div>
     </div>

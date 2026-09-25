@@ -1,7 +1,9 @@
-# Tina Tai Personal Website — V6.2
+# Tina Tai Personal Website — V6.3
 
-**Release:** PM-First Positioning & Recruiter Scanability
+**Release:** Unified Editorial System & Research Architecture
 
-V6.2 selectively applies the strongest recommendations from the latest positioning review without turning the portfolio into a generic PM site. It keeps the established V6 case-study architecture, preserves healthcare as differentiated domain depth, and improves recruiter-first framing, readability, recognition visibility, and action clarity.
+V6.3 turns the V6.2 portfolio into a more coherent cross-page design system. Similar information types now share the same visual grammar across Experience, Education, Research, Work, About, and Footer. Supporting metadata is more readable without flattening hierarchy.
 
-See `docs/V6_2_PM_FIRST_POSITIONING_RECRUITER_SCANABILITY.md` for the full decision log and QA notes.
+The Thoracic Aorta project is also restructured: it is no longer repeated twice on the Research landing page, and now has a dedicated lightweight Research Project Note at `/research/thoracic-aorta/`, keeping it clearly foundational rather than equal in weight to the primary brain-tumor research program.
+
+See `docs/V6_3_UNIFIED_EDITORIAL_SYSTEM_RESEARCH_ARCHITECTURE.md` for the release notes.

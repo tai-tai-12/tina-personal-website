@@ -12,6 +12,13 @@ proof:
 - ~67% less AI processing time
 - 2 medical centers
 - 5 physician users
+displayMetrics:
+- value: "~67%"
+  label: "Faster processing"
+- value: "5"
+  label: "Physician users"
+- value: "2"
+  label: "Medical centers"
 visual: product-visual
 weight: 1
 heroBackground: images/projects/work-product-v519.webp

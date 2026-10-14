@@ -1,35 +1,39 @@
-# V8.7 — Homepage Editorial Refinement
+# Tina Tai — Personal Portfolio V8.8
 
-This deployable Hugo / GitHub Pages site updates **only the homepage** from V8.6. It uses `home-v87.css` exclusively on home pages; all interior pages, credentials, research content, and source assets remain unchanged. See `V8_7_RELEASE_NOTES.md` and `V8_7_QA.md`.
+**Full replacement source package** for the existing bilingual Hugo website at `tai-tai-12.github.io/tina-personal-website/`. This archive is **not** a patch and is meant to replace the old repository content, without accumulating old versioned CSS files or scripts.
 
-Before pushing: `python3 scripts/verify_v87.py`. On GitHub Pages, Actions runs the V8.7 verification and formal Hugo build.
+## Deploy as a clean replacement
 
-# Tina Tai Personal Website · V8.6
+1. Extract `Tina_Tai_Personal_Website_V8_8_Full_Replacement.zip`.
+2. The ZIP already contains the **repository-root files directly** (`hugo.toml`, `layouts/`, `content/`, `static/`, `.github/`, etc.). Extract these files and folders directly into the repository root; do **not** create an extra `tina-personal-website-v8-8/` layer.
+3. Replace the old repository files with these files, **including the hidden `.github/` folder**. Do not delete the `.git/` directory if you use Git locally (it contains your repo history and remote configuration).
+4. Verify the root contains `hugo.toml`, `layouts/`, `content/`, `static/`, `themes/`, `scripts/` and `.github/workflows/hugo.yaml`. There must be **no extra enclosing website folder** in the repo root.
+5. Commit and push to `main`. GitHub Actions will run `python3 scripts/verify_v88.py`, build with Hugo, then deploy to GitHub Pages.
+6. In page source, check `<meta name="portfolio-version" content="8.8">` and that the stylesheets are `portfolio-v88.css?v=8.8.0` and `home-v88.css?v=8.8.0` (home only).
+7. Check the built site at Home, Work, Experience, Research, Education, About and the case/research detail pages in English and Traditional Chinese, on both desktop and mobile.
 
-Complete bilingual Hugo source project for the existing GitHub Pages portfolio. **This is a full deployment archive, not a patch.** It builds on V8.5 and focuses on Education and Experience.
-
-## V8.6 updates
-
-- **Education:** All three degrees use the same sequence: Degree → Focus → Selected Coursework → Campus Highlights. Current CMU coursework is identified as in progress. Campus highlights distinguish student involvement, ceremonial representation, and student leadership without suggesting those roles were equivalent.
-- **Experience:** Four professional roles now use a shared visual hierarchy: Organization / Date → Role / Scope → Primary Outcome → Selected Contributions → Optional Recognition → Relevant Links. Product, research, clinical training, and testing operations preserve their different substance and evidence.
-- **Recognition:** A shared component presents DeepBT A+ Future Tech Award as a **team/project award** and NTUH Certificate of Excellence as **individual internship recognition**.
-- **Preserved:** Home, Work, Research, About, all certificates/verification links, original research and award photographs, bilingual routes, latest Oct 13 Resume, privacy exclusions, dark mode, and GitHub Pages settings.
-
-See `docs/V8_6_RELEASE_NOTES.md` for detailed content and UX decisions, and `docs/V8_6_QA.md` for QA scope and limitations.
-
-## Deployment to GitHub Pages
-
-1. Unzip `Tina_Tai_Personal_Website_V8_6_Deployment.zip` and open `tina-personal-website-v8-6/`.
-2. Replace the **repository root contents** of `tai-tai-12/tina-personal-website` with the contents of that folder, **including `.github/`**. Remove obsolete tracked files that are absent from the package, notably `static/css/portfolio-v85.css`.
-3. Push to `main`. GitHub Actions runs `python3 scripts/verify_v86.py`, then Hugo build and GitHub Pages deployment.
-4. View source on the published site to confirm `<meta name="portfolio-version" content="8.6">`, and the stylesheet `portfolio-v86.css?v=8.6.0`.
-
-## Validation
+If replacing files using a terminal, an example from the unpacked folder is:
 
 ```bash
-python3 scripts/verify_v86.py
-hugo build --gc --minify
-hugo server -D
+# Run from outside your local repository; replace placeholders with real paths.
+rsync -av --delete --exclude='.git/' /path/to/unpacked-v8.8/ /path/to/your/local/tina-personal-website/
+cd /path/to/your/local/tina-personal-website
+python3 scripts/verify_v88.py
+git add -A
+git commit -m "Deploy V8.8 cross-page UX polish"
+git push origin main
 ```
 
-Hugo 0.164.0 is specified in `.github/workflows/hugo.yaml`. The offline validator and Chromium **template-based** screenshots do not replace the actual Hugo build or deployment-level browser regression. Verify the official build and both languages after deployment.
+**Note:** Only use `rsync --delete` if you intend to fully replace the repo's working tree and have backed up any independent changes. The `.git/` directory is excluded from deletion, including if it's hidden.
+
+## Local validation
+
+```bash
+python3 scripts/verify_v88.py
+hugo build --gc --minify
+hugo server
+```
+
+Local source checks do not replace a successful Hugo build or production browser verification. The GitHub Actions workflow runs both the source check and the actual Hugo build.
+
+See `V8_8_RELEASE_NOTES.md` and `V8_8_QA.md`.

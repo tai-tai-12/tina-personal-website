@@ -12,6 +12,13 @@ proof:
 - 8 products tested
 - 10+ testing reports
 - 5 client organizations
+displayMetrics:
+- value: "8"
+  label: "Products tested"
+- value: "10+"
+  label: "Reports"
+- value: "5"
+  label: "Client organizations"
 visual: analytics-visual
 weight: 3
 heroBackground: images/projects/work-testing-v519.webp

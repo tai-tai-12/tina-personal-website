@@ -79,6 +79,6 @@
     <div class="about-v85-interest-row"><span>{{ if $isZh }}志願服務{{ else }}VOLUNTEERING{{ end }}</span><p>{{ if $isZh }}Rotary 社區服務 · 動物福利志工{{ else }}Rotary community service · Animal-welfare volunteering{{ end }}</p></div>
     <div class="about-v85-interest-row"><span>{{ if $isZh }}個人興趣{{ else }}PERSONAL INTERESTS{{ end }}</span><p>{{ if $isZh }}攝影 · 舞蹈 · 旅行與美食探索{{ else }}Photography · Dance · Travel & food{{ end }}</p></div>
   </div>
-  <div class="about-v85-final-cta"><span>{{ if $isZh }}想進一步了解我做過的產品與研究？{{ else }}Want to see the product and research behind the story?{{ end }}</span><a href="{{ "work/" | relLangURL }}">{{ if $isZh }}精選作品案例{{ else }}Selected work{{ end }} <span aria-hidden="true">↗</span></a><a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div>
+  <div class="about-v85-final-cta"><span>{{ if $isZh }}想進一步了解我做過的產品與研究？{{ else }}Want to see the product and research behind the story?{{ end }}</span><a href="{{ "work/" | relLangURL }}">{{ if $isZh }}精選作品案例{{ else }}Selected work{{ end }} <span aria-hidden="true">↗</span></a><a href="mailto:{{ .Site.Params.email }}">{{ if $isZh }}寄信聯繫{{ else }}Email me{{ end }} <span aria-hidden="true">↗</span></a><a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div>
 </div></section>
 {{ end }}

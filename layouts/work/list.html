@@ -22,8 +22,8 @@
       <span class="work-category">{{ .Params.category }}</span>
       <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
       <p>{{ .Params.summary }}</p>
-      {{ with .Params.proof }}<div class="proof-row-v64 work-proof-row-v64 metrics-v83 work-metrics-v83" aria-label="Project evidence">{{ range $p := . }}<span>{{ $p }}</span>{{ end }}</div>{{ end }}
-      <a class="btn mono-project-btn work-stack-btn-v510" href="{{ .RelPermalink }}">{{ if $isZh }}查看專案{{ else }}Explore project{{ end }} ↗</a>
+      {{ with .Params.displayMetrics }}{{ partial "case-metrics-v88.html" (dict "Metrics" . "Class" "work-metrics-v88" "IsZh" $isZh) }}{{ end }}
+      <a class="btn mono-project-btn work-stack-btn-v510" href="{{ .RelPermalink }}">{{ if $isZh }}閱讀完整案例{{ else }}Read case study{{ end }} ↗</a>
     </div>
   </article>
   {{ end }}

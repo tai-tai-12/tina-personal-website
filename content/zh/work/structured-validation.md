@@ -12,6 +12,13 @@ proof:
 - 8 項產品測試
 - 10+ 份測試報告
 - 5 家客戶組織
+displayMetrics:
+- value: "8"
+  label: "受測產品"
+- value: "10+"
+  label: "正式報告"
+- value: "5"
+  label: "客戶"
 visual: analytics-visual
 weight: 3
 heroBackground: images/projects/work-testing-v519.webp

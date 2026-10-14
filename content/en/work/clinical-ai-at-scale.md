@@ -12,6 +12,13 @@ proof:
 - 94.5% fewer FP candidates
 - 264 independent MRI cases
 - 90.16% 5-class accuracy
+displayMetrics:
+- value: "94.5%"
+  label: "Fewer FP candidates"
+- value: "264"
+  label: "Independent MRI cases"
+- value: "90.16%"
+  label: "Retained-TP 5-class accuracy"
 visual: clinical-ai-visual
 weight: 2
 heroBackground: images/projects/work-clinical-ai-v519.webp

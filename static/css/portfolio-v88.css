@@ -4543,3 +4543,36 @@ a:focus-visible,button:focus-visible{outline:3px solid #4774e9;outline-offset:4p
  .edu-v86-section-top{align-items:start;flex-direction:column;gap:5px}
  .edu-v86-focus{font-size:.96rem}
 }
+
+/* V8.8 — Shared evidence / editorial consistency; maintain earlier layout semantics. */
+:root{--v88-copy:#596579;--v88-line:color-mix(in srgb,var(--line) 88%,transparent)}
+.case-metrics-v88{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;min-width:0;margin:20px 0 12px;border-top:1px solid var(--v88-line);border-bottom:1px solid var(--v88-line);padding:13px 0}
+.case-metrics-v88-item{min-width:0;display:flex;flex-direction:column;gap:5px;padding:0 14px;border-right:1px solid var(--v88-line)}
+.case-metrics-v88-item:first-child{padding-left:0}.case-metrics-v88-item:last-child{padding-right:0;border-right:0}
+.case-metrics-v88-item strong{display:block;font:700 clamp(1.14rem,1.6vw,1.55rem)/1.15 Manrope,Inter,"Noto Sans TC",sans-serif;letter-spacing:-.035em;color:var(--text);white-space:nowrap;overflow-wrap:normal;font-variant-numeric:tabular-nums}
+.case-metrics-v88-item small{display:block;font:500 .79rem/1.38 Inter,"Noto Sans TC",sans-serif;color:var(--muted);overflow-wrap:break-word}
+/* The graphic should explain the workflow, not repeat the entire outcome strip. */
+.evidence-v84-numbers{display:none}
+.evidence-v84-footer{padding-top:7px;font-size:.7rem}
+.evidence-v84-title{font-size:clamp(1.13rem,1.7vw,1.42rem)}
+.evidence-v84-steps b{font-size:clamp(.75rem,.92vw,.86rem)}
+.evidence-v84-steps small{font-size:clamp(.67rem,.82vw,.78rem)}
+.evidence-v84-steps li{min-height:75px}
+/* Featured first-author conference photos live with the actual citations, not in a duplicate section. */
+.research-pub-row-v88{display:grid;grid-template-columns:64px minmax(0,1fr) 148px;align-items:start;column-gap:21px}
+.research-pub-row-v88 > div{min-width:0}
+.research-pub-thumb-v88{margin:0;width:148px;aspect-ratio:4/3;overflow:hidden;border-radius:9px;border:1px solid var(--line);background:var(--soft)}
+.research-pub-thumb-v88 img{width:100%;height:100%;display:block;object-fit:cover}
+/* Consistent verification / navigation affordances */
+.work-metrics-v88{margin-top:18px;margin-bottom:19px}
+.case-study-v526 .case-fact-v526 strong{font-variant-numeric:tabular-nums;letter-spacing:-.025em}
+.case-brief-v526 .case-brief-item-v526{padding-block:12px}
+@media(max-width:800px){.research-pub-row-v88{grid-template-columns:48px minmax(0,1fr) 116px;column-gap:12px}.research-pub-thumb-v88{width:116px}}
+@media(max-width:560px){.research-pub-row-v88{grid-template-columns:45px minmax(0,1fr);column-gap:9px}.research-pub-thumb-v88{grid-column:2;width:min(180px,100%);aspect-ratio:4/3;margin-top:10px}.case-metrics-v88-item{padding-inline:8px}.case-metrics-v88-item strong{font-size:1.14rem}.case-metrics-v88-item small{font-size:.69rem}.evidence-v84-steps li{min-height:0}}
+@media(max-width:365px){.case-metrics-v88-item{padding-inline:6px}.case-metrics-v88-item strong{font-size:1rem}.case-metrics-v88-item small{font-size:.65rem}}
+[data-theme="dark"] .research-pub-thumb-v88{border-color:var(--line)}
+
+/* V8.8 narrow evidence artwork: explicit line breaks prevent split English words. */
+.evidence-v84-steps b,.evidence-v84-steps small{overflow-wrap:normal;word-break:normal;hyphens:none}
+.evidence-v84-steps small{font-size:clamp(.68rem,.84vw,.8rem)}
+@media(max-width:430px){.evidence-v84-steps small{font-size:.69rem}.evidence-v84-steps b{font-size:.73rem}}

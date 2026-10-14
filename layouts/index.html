@@ -41,7 +41,7 @@
           <span class="home-v87-case-label">01 <span aria-hidden="true">/</span> PRODUCT MANAGEMENT · AI</span>
           <h3><a href="{{ "work/medical-ai-product/" | relLangURL }}">{{ if $isZh }}在真實臨床限制下推進醫療 AI 產品{{ else }}Shipping Medical AI Under Real Clinical Constraints{{ end }}</a></h3>
           <p>{{ if $isZh }}從醫師需求探索到模型與時程取捨，將 AI 研究成果推進實際臨床產品工作流程。{{ else }}From physician discovery to model and release trade-offs, moving AI research into a practical clinical product workflow.{{ end }}</p>
-          <div class="home-v87-case-proof"><div><strong>~67%</strong><small>{{ if $isZh }}處理時間縮短{{ else }}Faster processing{{ end }}</small></div><div><strong>5</strong><small>{{ if $isZh }}醫師使用者{{ else }}Physician users{{ end }}</small></div><div><strong>2</strong><small>{{ if $isZh }}醫療中心{{ else }}Medical centers{{ end }}</small></div></div>
+          {{ partial "case-metrics-v88.html" (dict "Metrics" (slice (dict "value" "~67%" "label" (cond $isZh "處理時間縮短" "Faster processing")) (dict "value" "5" "label" (cond $isZh "醫師使用者" "Physician users")) (dict "value" "2" "label" (cond $isZh "醫療中心" "Medical centers"))) "Class" "home-v88-metrics" "IsZh" $isZh) }}
           <p class="home-v87-case-note">{{ if $isZh }}DeepBT A+ · 2026 未來科技獎（陽明交大團隊／專案獲獎）{{ else }}DeepBT A+ · 2026 Future Tech Award (NYCU project recognition){{ end }}</p>
           <a class="home-v87-case-cta" href="{{ "work/medical-ai-product/" | relLangURL }}">{{ if $isZh }}閱讀完整案例{{ else }}Read case study{{ end }} <span aria-hidden="true">↗</span></a>
         </div>
@@ -54,7 +54,7 @@
           <span class="home-v87-case-label">02 <span aria-hidden="true">/</span> AI EVALUATION · RESEARCH</span>
           <h3><a href="{{ "work/clinical-ai-at-scale/" | relLangURL }}">{{ if $isZh }}設計不只看 Accuracy 的 AI 評估{{ else }}Designing AI Evaluation Beyond Accuracy{{ end }}</a></h3>
           <p>{{ if $isZh }}以逐病灶敏感度、偽陽性負擔與失敗案例分析，評估真實臨床情境中的模型取捨。{{ else }}Evaluating lesion-level sensitivity, false-positive burden, and failure modes instead of relying on a single accuracy score.{{ end }}</p>
-          <div class="home-v87-case-proof"><div><strong>94.5%</strong><small>{{ if $isZh }}FP 候選減少{{ else }}Fewer FP candidates{{ end }}</small></div><div><strong>264</strong><small>{{ if $isZh }}獨立 MRI 測試{{ else }}Independent MRI cases{{ end }}</small></div><div><strong>90.16%</strong><small>{{ if $isZh }}保留 TP 五類準確率{{ else }}Retained-TP 5-class accuracy{{ end }}</small></div></div>
+          {{ partial "case-metrics-v88.html" (dict "Metrics" (slice (dict "value" "94.5%" "label" (cond $isZh "偽陽性候選減少" "Fewer FP candidates")) (dict "value" "264" "label" (cond $isZh "獨立 MRI 測試" "Independent MRI cases")) (dict "value" "90.16%" "label" (cond $isZh "保留 TP 五類準確率" "Retained-TP 5-class accuracy"))) "Class" "home-v88-metrics" "IsZh" $isZh) }}
           <a class="home-v87-case-cta" href="{{ "work/clinical-ai-at-scale/" | relLangURL }}">{{ if $isZh }}閱讀完整案例{{ else }}Read case study{{ end }} <span aria-hidden="true">↗</span></a>
         </div>
       </article>
@@ -66,7 +66,7 @@
           <span class="home-v87-case-label">03 <span aria-hidden="true">/</span> VALIDATION · OPERATIONS</span>
           <h3><a href="{{ "work/structured-validation/" | relLangURL }}">{{ if $isZh }}執行面向客戶的技術驗證作業{{ else }}Running Client-Facing Validation Operations{{ end }}</a></h3>
           <p>{{ if $isZh }}管理需求界定、測試、問題修正與正式報告，連結技術執行與外部客戶的品質要求。{{ else }}Managing scope, testing, nonconformities, retests, and reporting across technical teams and external clients.{{ end }}</p>
-          <div class="home-v87-case-proof"><div><strong>8</strong><small>{{ if $isZh }}受測產品{{ else }}Products tested{{ end }}</small></div><div><strong>10+</strong><small>{{ if $isZh }}正式報告{{ else }}Reports{{ end }}</small></div><div><strong>5</strong><small>{{ if $isZh }}客戶{{ else }}Clients{{ end }}</small></div></div>
+          {{ partial "case-metrics-v88.html" (dict "Metrics" (slice (dict "value" "8" "label" (cond $isZh "受測產品" "Products tested")) (dict "value" "10+" "label" (cond $isZh "正式報告" "Reports")) (dict "value" "5" "label" (cond $isZh "客戶" "Client organizations"))) "Class" "home-v88-metrics" "IsZh" $isZh) }}
           <a class="home-v87-case-cta" href="{{ "work/structured-validation/" | relLangURL }}">{{ if $isZh }}閱讀完整案例{{ else }}Read case study{{ end }} <span aria-hidden="true">↗</span></a>
         </div>
       </article>
@@ -84,10 +84,10 @@
       <a class="home-v87-secondary-link" href="{{ "experience/" | relLangURL }}">{{ if $isZh }}完整經歷{{ else }}Full experience{{ end }} <span aria-hidden="true">↗</span></a>
     </div>
     <div class="home-v87-xp-list reveal">
-      <a href="{{ "experience/" | relLangURL }}" class="home-v87-xp-row"><time>2024–2026</time><div><strong>Product Manager</strong><span>AITEWAN Biomedical Technology</span></div><p>{{ if $isZh }}醫師需求探索、AI 處理流程優化與產品發佈決策{{ else }}Physician discovery, AI workflow optimization, and release decisions{{ end }}</p><span class="home-v87-row-arrow" aria-hidden="true">↗</span></a>
-      <a href="{{ "experience/" | relLangURL }}" class="home-v87-xp-row"><time>2023–2026</time><div><strong>Research Assistant / Project Lead</strong><span>NYCU · AI in Medical Imaging Lab</span></div><p>{{ if $isZh }}腦瘤 MRI AI、跨中心評估及研究成果發表{{ else }}Brain-tumor MRI AI, multi-center evaluation, and publications{{ end }}</p><span class="home-v87-row-arrow" aria-hidden="true">↗</span></a>
-      <a href="{{ "experience/" | relLangURL }}" class="home-v87-xp-row"><time>2023–2024</time><div><strong>Clinical Intern</strong><span>National Taiwan University Hospital</span></div><p>{{ if $isZh }}1,040 小時臨床實習與 Certificate of Excellence{{ else }}1,040 clinical hours and Certificate of Excellence{{ end }}</p><span class="home-v87-row-arrow" aria-hidden="true">↗</span></a>
-      <a href="{{ "experience/" | relLangURL }}" class="home-v87-xp-row"><time>2021–2023</time><div><strong>Test Manager / Research Assistant</strong><span>NYCU · Biomedical Imaging Physics Lab</span></div><p>{{ if $isZh }}法規相關第三方測試、客戶協作與 MATLAB 影像分析{{ else }}Regulated testing, client coordination, and MATLAB image analysis{{ end }}</p><span class="home-v87-row-arrow" aria-hidden="true">↗</span></a>
+      <a href="{{ "experience/" | relLangURL }}#xp-v86-aitewan-title" class="home-v87-xp-row"><time>2024–2026</time><div><strong>Product Manager</strong><span>AITEWAN Biomedical Technology</span></div><p>{{ if $isZh }}醫師需求探索、AI 處理流程優化與產品發佈決策{{ else }}Physician discovery, AI workflow optimization, and release decisions{{ end }}</p><span class="home-v87-row-arrow" aria-hidden="true">↗</span></a>
+      <a href="{{ "experience/" | relLangURL }}#xp-v86-research-title" class="home-v87-xp-row"><time>2023–2026</time><div><strong>Research Assistant / Project Lead</strong><span>NYCU · AI in Medical Imaging Lab</span></div><p>{{ if $isZh }}腦瘤 MRI AI、跨中心評估及研究成果發表{{ else }}Brain-tumor MRI AI, multi-center evaluation, and publications{{ end }}</p><span class="home-v87-row-arrow" aria-hidden="true">↗</span></a>
+      <a href="{{ "experience/" | relLangURL }}#xp-v86-clinical-title" class="home-v87-xp-row"><time>2023–2024</time><div><strong>Clinical Intern</strong><span>National Taiwan University Hospital</span></div><p>{{ if $isZh }}1,040 小時臨床實習與 Certificate of Excellence{{ else }}1,040 clinical hours and Certificate of Excellence{{ end }}</p><span class="home-v87-row-arrow" aria-hidden="true">↗</span></a>
+      <a href="{{ "experience/" | relLangURL }}#xp-v86-bipi-title" class="home-v87-xp-row"><time>2021–2023</time><div><strong>Test Manager / Research Assistant</strong><span>NYCU · Biomedical Imaging Physics Lab</span></div><p>{{ if $isZh }}法規相關第三方測試、客戶協作與 MATLAB 影像分析{{ else }}Regulated testing, client coordination, and MATLAB image analysis{{ end }}</p><span class="home-v87-row-arrow" aria-hidden="true">↗</span></a>
     </div>
   </div>
 </section>
@@ -134,10 +134,10 @@
 <section class="home-v87-section home-v87-about section-shell" id="about" aria-labelledby="home-v87-about-heading">
   <div class="shell home-v87-about-grid reveal">
     <div><span class="home-v87-section-index">05 / {{ if $isZh }}關於我{{ else }}ABOUT{{ end }}</span>
-      <h2 id="home-v87-about-heading">{{ if $isZh }}技術、使用者與團隊之間的連結。{{ else }}Connecting technology, people, and execution.{{ end }}</h2>
+      <h2 id="home-v87-about-heading">{{ if $isZh }}讓技術與使用者需求變成真正有影響力的產品。{{ else }}Let’s connect around products that make a difference.{{ end }}</h2>
     </div>
-    <div class="home-v87-about-copy"><p>{{ if $isZh }}研究讓我學會判斷證據能支持什麼；產品工作讓我理解如何在真實限制下做出選擇。我重視清楚的溝通、跨領域協作，以及真正能落地的成果。{{ else }}Research taught me to question what the evidence really supports. Product work taught me how to make decisions under real constraints. I care about clear communication, cross-functional collaboration, and work that makes it into practice.{{ end }}</p>
-      <div class="home-v87-about-actions"><a href="{{ "about/" | relLangURL }}">{{ if $isZh }}閱讀我的故事{{ else }}More about me{{ end }} ↗</a><a href="mailto:{{ .Site.Params.email }}">{{ if $isZh }}與我聯繫{{ else }}Get in touch{{ end }} ↗</a></div>
+    <div class="home-v87-about-copy"><p>{{ if $isZh }}我結合醫療影像、AI 評估與實際產品交付經驗，處理複雜的技術與使用者問題。如果你正在探索 AI 產品、數據分析或醫療科技相關機會，歡迎與我交流。{{ else }}I bring medical-imaging expertise, AI evaluation, and hands-on product execution to complex decisions. Interested in AI-enabled products, analytics, or healthcare technology? I’d welcome a conversation.{{ end }}</p>
+      <div class="home-v87-about-actions home-v88-about-actions"><a class="home-v88-contact-primary" href="mailto:{{ .Site.Params.email }}?subject={{ if $isZh }}網站交流{{ else }}Portfolio%20Inquiry{{ end }}">{{ if $isZh }}寄信聯繫{{ else }}Email me{{ end }} ↗</a><a href="{{ "about/" | relLangURL }}">{{ if $isZh }}了解我的故事{{ else }}More about me{{ end }} ↗</a></div>
     </div>
   </div>
 </section>

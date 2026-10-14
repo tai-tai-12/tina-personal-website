@@ -48,11 +48,7 @@
     <div class="research-note-index-v63">04 · {{ if $isZh }}結果{{ else }}RESULTS{{ end }}</div>
     <div><h2>{{ if $isZh }}以資料規模與模型表現建立研究證據。{{ else }}Evidence through cohort scale and quantitative performance.{{ end }}</h2>
       <figure class="aorta-report-figure-v81"><a class="research-zoom-v83" href="{{ "images/research/thoracic-aorta-3d-results-v81.webp" | relURL }}" data-lightbox aria-label="{{ if $isZh }}點擊放大研究原圖{{ else }}Enlarge original research figure{{ end }}"><img src="{{ "images/research/thoracic-aorta-3d-results-v81.webp" | relURL }}" alt="Four-panel 3D aorta segmentation comparison from the original NSTC research report: reference segmentation, Dice baseline, aortic-arch weighting, and rotation augmentation" loading="lazy" decoding="async"></a><figcaption>{{ if $isZh }}<strong>原始研究結果 · Figure 29。</strong> 真實標註與三種模型結果比較；最右方為結合主動脈弓權重與旋轉 augmentation 的模型。圖像摘自本人 NSTC 研究報告，非合成的產品 UI。{{ else }}<strong>Original research result · Figure 29.</strong> Reference annotation and three model outputs, including arch weighting and rotation augmentation (right). Extracted from my NSTC research report; not a synthetic product interface.{{ end }}</figcaption></figure>
-      <div class="metric-row-v63">
-        <span><strong>308</strong><em>{{ if $isZh }}CT 研究{{ else }}CT studies{{ end }}</em></span>
-        <span><strong>0.95</strong><em>Mean AUC</em></span>
-        <span><strong>0.782</strong><em>Overall DSC</em></span>
-      </div>
+      
     </div>
   </div></section>
 

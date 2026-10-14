@@ -12,6 +12,13 @@ proof:
 - AI 處理時間縮短約 67%
 - 2 家醫學中心
 - 5 位醫師使用者
+displayMetrics:
+- value: "~67%"
+  label: "處理時間縮短"
+- value: "5"
+  label: "醫師使用者"
+- value: "2"
+  label: "醫療中心"
 visual: product-visual
 weight: 1
 heroBackground: images/projects/work-product-v519.webp

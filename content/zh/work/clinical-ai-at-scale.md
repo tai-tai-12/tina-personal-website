@@ -12,6 +12,13 @@ proof:
 - 偽陽性候選減少 94.5%
 - 264 例獨立 MRI 測試
 - 90.16% 五類分類準確率
+displayMetrics:
+- value: "94.5%"
+  label: "偽陽性候選減少"
+- value: "264"
+  label: "獨立 MRI 測試"
+- value: "90.16%"
+  label: "保留 TP 五類準確率"
 visual: clinical-ai-visual
 weight: 2
 heroBackground: images/projects/work-clinical-ai-v519.webp

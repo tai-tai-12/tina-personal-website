@@ -1,0 +1,6 @@
+{{ $metrics := .Metrics }}
+<div class="case-metrics-v88{{ with .Class }} {{ . }}{{ end }}" aria-label="{{ if .IsZh }}專案核心成果{{ else }}Key project results{{ end }}">
+  {{ range $metrics }}
+  <div class="case-metrics-v88-item"><strong>{{ .value }}</strong><small>{{ .label }}</small></div>
+  {{ end }}
+</div>

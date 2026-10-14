@@ -23,15 +23,15 @@
   {{ else }}
   <ol class="evidence-v84-steps" aria-hidden="true">
     {{ if $isProduct }}
-    <li><span>01</span><b>{{ if $isZh }}探索{{ else }}DISCOVER{{ end }}</b><small>{{ if $isZh }}醫師需求{{ else }}Physician needs{{ end }}</small></li>
-    <li><span>02</span><b>{{ if $isZh }}測試{{ else }}TEST{{ end }}</b><small>{{ if $isZh }}臨床流程{{ else }}Clinical workflow{{ end }}</small></li>
-    <li><span>03</span><b>{{ if $isZh }}決策{{ else }}DECIDE{{ end }}</b><small>{{ if $isZh }}模型與延遲取捨{{ else }}Model &amp; latency{{ end }}</small></li>
-    <li><span>04</span><b>{{ if $isZh }}交付{{ else }}DELIVER{{ end }}</b><small>{{ if $isZh }}發佈準備{{ else }}Release readiness{{ end }}</small></li>
+    <li><span>01</span><b>{{ if $isZh }}探索{{ else }}DISCOVER{{ end }}</b><small>{{ if $isZh }}醫師需求{{ else }}Clinician needs{{ end }}</small></li>
+    <li><span>02</span><b>{{ if $isZh }}測試{{ else }}TEST{{ end }}</b><small>{{ if $isZh }}臨床流程{{ else }}Workflow{{ end }}</small></li>
+    <li><span>03</span><b>{{ if $isZh }}決策{{ else }}DECIDE{{ end }}</b><small>{{ if $isZh }}模型與延遲取捨{{ else }}Trade-offs{{ end }}</small></li>
+    <li><span>04</span><b>{{ if $isZh }}交付{{ else }}DELIVER{{ end }}</b><small>{{ if $isZh }}發佈準備{{ else }}Readiness{{ end }}</small></li>
     {{ else }}
-    <li><span>01</span><b>{{ if $isZh }}界定{{ else }}SCOPE{{ end }}</b><small>{{ if $isZh }}需求與規格{{ else }}Requirements{{ end }}</small></li>
-    <li><span>02</span><b>{{ if $isZh }}測試{{ else }}TEST{{ end }}</b><small>{{ if $isZh }}執行與量測{{ else }}Measurement{{ end }}</small></li>
-    <li><span>03</span><b>{{ if $isZh }}解決{{ else }}RESOLVE{{ end }}</b><small>{{ if $isZh }}不符合項與複測{{ else }}Findings &amp; retests{{ end }}</small></li>
-    <li><span>04</span><b>{{ if $isZh }}交付{{ else }}DELIVER{{ end }}</b><small>{{ if $isZh }}正式報告{{ else }}Formal reports{{ end }}</small></li>
+    <li><span>01</span><b>{{ if $isZh }}界定{{ else }}SCOPE{{ end }}</b><small>{{ if $isZh }}需求與規格{{ else }}Specs{{ end }}</small></li>
+    <li><span>02</span><b>{{ if $isZh }}測試{{ else }}TEST{{ end }}</b><small>{{ if $isZh }}執行與量測{{ else }}Measures{{ end }}</small></li>
+    <li><span>03</span><b>{{ if $isZh }}解決{{ else }}RESOLVE{{ end }}</b><small>{{ if $isZh }}不符合項與複測{{ else }}Retests{{ end }}</small></li>
+    <li><span>04</span><b>{{ if $isZh }}交付{{ else }}DELIVER{{ end }}</b><small>{{ if $isZh }}正式報告{{ else }}Reports{{ end }}</small></li>
     {{ end }}
   </ol>
   <div class="evidence-v84-numbers" aria-hidden="true">

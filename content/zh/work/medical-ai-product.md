@@ -82,12 +82,10 @@ navItems:
 
 <div class="product-flow-v81" role="group" aria-label="DeepBT A+ 團隊產品能力：五階段醫師工作流程">
   <div class="product-flow-eyebrow-v81">團隊產品能力 · 官方專案說明</div>
-  <ol class="product-flow-steps-v81">
-    <li><span>01 · 影像輸入</span><strong>DICOM / PACS</strong><p>取得適用的 T1C 或 T1C + T2 MRI 影像。</p></li>
-    <li><span>02 · AI 分析</span><strong>病灶分析</strong><p>疑似病灶偵測、分割、量測、定位及五類腫瘤分類。</p></li>
-    <li><span>03 · 醫師確認</span><strong>Physician confirmation</strong><p>由臨床醫師審閱並確認 AI 輔助結果。</p></li>
-    <li><span>04 · 報告草稿</span><strong>LLM-assisted draft</strong><p>根據醫師確認的資訊輔助生成報告草稿。</p></li>
-    <li><span>05 · 臨床把關</span><strong>Clinical review</strong><p>草稿仍需由臨床人員審閱，不等於自主診斷。</p></li>
+  <ol class="product-flow-steps-v81 product-flow-phases-v82">
+    <li><span>01 · 臨床影像整合</span><strong>DICOM / PACS</strong><p>串接影像工作流程，讀取符合條件的 T1C 或 T1C + T2 MRI。</p></li>
+    <li><span>02 · AI 輔助判讀</span><strong>病灶分析與醫師確認</strong><p>協助偵測、分割、量測、定位與分類疑似病灶，再由臨床醫師確認。</p></li>
+    <li><span>03 · 報告與臨床治理</span><strong>醫師確認後的 LLM 草稿</strong><p>根據醫師確認資訊產生報告草稿，仍須臨床審閱；不代表自主診斷。</p></li>
   </ol>
   <div class="product-flow-attribution-v81"><div><span>團隊產品範圍</span><p>功能依據<a href="https://www.futuretech.org.tw/futuretech/index.php?action=product_detail&prod_no=P0008700008523&web_lang=zh-tw" target="_blank" rel="noopener noreferrer">官方 DeepBT A+ 專案介紹 ↗</a>整理；此圖是概念性流程，不代表我獨立開發所有子系統，也不是產品操作截圖。</p></div><div><span>我的貢獻</span><p>醫師需求探索、需求定義、處理進度的使用體驗、院所層級閾值決策、跨團隊 release planning 與法規協調。</p></div></div>
 </div>

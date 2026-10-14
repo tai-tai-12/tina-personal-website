@@ -1,53 +1,54 @@
-# Tina Tai Personal Website — V8.1
+# Tina Tai Personal Website — V8.2
 
-**Release:** October 2026 · **Project:** Bilingual Hugo portfolio · **Positioning:** Product Management first, AI/ML & Analytics second, Healthcare as a differentiator.
+**Release:** October 2026  
+**Theme:** Full Visual Refinement & Design System Consolidation  
+**Positioning:** Product Management first; AI/ML & Analytics second; Healthcare as a differentiator.
 
-V8.1 refines V8.0 using primary-source research evidence, public project listings and credential records. **Do not deploy the private `Material(4).zip` or original certificates.** This archive contains the complete Hugo source, theme, public-selected research artifacts, images, current Resume, GitHub Pages workflow and release checks.
+This is the **complete, bilingual Hugo source project** for an existing GitHub Pages portfolio. V8.2 is a visual refactor of V8.1, not a new site or new claim set. It retains existing routes, the current October 13 general PM resume, primary-source-backed project evidence, links to official recognition, selected research figures, and EN / 繁體中文 content.
 
-## What's new / V8.1 更新
+## What changed / 這次更新
 
-- **2026 Future Tech Award:** official public team/project page links in English and Traditional Chinese. **The original award photo was intentionally excluded at the user's request.** The existing understated FT typographic block remains, not an official medal graphic.
-- **Medical AI Product:** accessible five-stage DICOM/PACS → lesion analysis → physician confirmation → LLM-assisted draft reporting → clinical review schematic, with explicit separation of **team capabilities** and **Tina's actual contributions**. The figure is illustrative, not a system UI screenshot.
-- **Clinical AI:** two-dimension trade-off visualization for the same 264-case retrospective cohort; 1,007 → 55 false-positive candidates (−94.54%) alongside 84.96% → 80.97% lesion-wise sensitivity (−3.99 percentage points). Precision 16.01% → 76.89% is also reported.
-- **Research methodology:** pre-consensus agreement (Fleiss' κ and Dice), T1C-only secondary analysis with exact denominators, and clear distinction from the separately published MIDL 249-exam cohort. No prospective clinical gains or regulatory clearance are claimed.
-- **Actual research figures:** two de-identified research illustrations (Figure 9 / Figure 29) from the original NSTC thoracic-aorta research report. They are labeled as research figures, not synthetic illustrations or deployed product screenshots.
-- **Research support:** separate, compact NSTC undergraduate research grant and international conference travel support; not framed as competition awards.
-- **References:** official MIDL 2026 program; public FUTEX DeepBT A+ profiles (language appropriate); credential verification for Google Ads Search, Google Ads Measurement and IBM DBA. Harvard CS50 links to the **official course description**, not an invented personal verification record.
-- **Release quality:** V8.1 CSS, English/Traditional Chinese consistency, orphan image pruning, GitHub Pages workflow source validation and a reproducible QA script.
-
-All major V8.0 additions—October 13 General PM Resume, current CMU coursework, NYCU coursework corrections, 1,040-hour internship and selected credentials—remain preserved.
+- **Single stylesheet entry point:** 8 legacy CSS files are concatenated in cascade order into `static/css/portfolio-v82.css`. A clearly identified V8.2 design-system section sets coherent typography, whitespace, figures, metadata, and breakpoints. The 8 originals are preserved for developer reference under `docs/legacy-styles/` and are not published as separate CSS assets. Some historical selectors remain inside the consolidated file for visual and functional compatibility; this is not a full removal of every old selector.
+- **Fixed Future Tech recognition layout:** replaced the broken flex-based mixed inline text with a vertical, semantic recognition module (project/team award, not individual). The user-excluded non-scanned award photograph was **not** included.
+- **Homepage:** true two-column Experience timeline, dates and labels that can be read at a glance, NTUH internship added, normalized Selected Work figures, matching MIDL/AMLDS mini-cards, more structured About narrative and four concise foundations.
+- **Research:** selected publications presented near the top ahead of image-heavy presentation cards, consistent smaller photo crops, readable publication dates and captions, clearer hierarchy for recognition, methods and NSTC support.
+- **Experience / Education / Work:** reduced oversized headings, improved body widths and metadata, simplified repeated scope decoration, consistent research/coursework/credential presentation, bounded work-card images.
+- **Case studies:** consistent reading measure and headings, accessible three-phase team-product workflow, one integrated clinical FP/sensitivity trade-off presentation (no duplicate FP-only chart), research figures shown without excessive width, more legible diagram labels.
+- **Responsive design:** intended adaptations at desktop, 1050px, 760px and 480px, including stacked mobile timeline, single-column case flow and editorial research tiles.
+- **Deployment:** `scripts/verify_v82.py` runs in the GitHub Pages workflow before Hugo build; cache version `8.2.0`.
 
 ## Deployment / GitHub Pages 部署
 
-1. Extract the ZIP. Copy **the contents** of the root `tina-personal-website-v8-1/` into the existing `tina-personal-website` repository, including hidden `.github/`.
-2. Commit and push to `main`. Your existing Pages configuration must have **Source: GitHub Actions**.
-3. `.github/workflows/hugo.yaml` first runs `python3 scripts/verify_v81.py`, then installs Hugo 0.164.0, builds the site and deploys it.
-4. Check the deployed EN and 繁體中文 product/research case studies and open the public Resume link. Hard-refresh for the `?v=8.1.0` CSS cache revision.
-5. Before sharing widely, visually QA at least one desktop and one phone viewport and verify that external credential links are publicly accessible without account sign-in.
+1. Unzip this package. Copy **the contents** of `tina-personal-website-v8-2/` into the root of the existing `tina-personal-website` repository. Include hidden `.github/` files. Delete any old V8.1 files in the repository that are absent from V8.2, especially old CSS files under `static/css/`.
+2. Commit and push to `main`; Pages Source must remain **GitHub Actions**.
+3. The workflow runs `python3 scripts/verify_v82.py`, installs Hugo 0.164.0, compiles the site and deploys `public/`.
+4. Confirm green GitHub Actions results, then hard-refresh the published site to pick up `?v=8.2.0`.
+5. Perform live visual review at widths **1440, 1024, 768, 390, 360px** in both English and Traditional Chinese, light/dark, and test navigation, section anchors, official links, and Resume download.
 
-### Local validation
+### Local development
 
 ```bash
-python3 scripts/verify_v81.py
-hugo version                # Hugo 0.164.0 recommended for deployment parity
+python3 scripts/verify_v82.py
+hugo version
 hugo --gc --minify --baseURL "https://tai-tai-12.github.io/tina-personal-website/"
 hugo server -D
 ```
 
-**Build status in authoring environment:** source and asset checks are completed; the machine used to prepare this archive had no Hugo executable and cannot fetch one through its network. Final Hugo build and actual browser screenshot validation must therefore run on GitHub Actions or locally. Do not treat the source check as an equivalent to a successful Hugo build.
+**Verification limits:** the authoring environment had no Hugo binary and blocked both browser navigation and downloading an executable. We verified static content, asset references, CSS parse, JavaScript syntax, the PDF hash and ZIP integrity; **we did not obtain a successful Hugo build or actual pixel-level desktop/mobile screenshots here**. These remain necessary deployment acceptance gates. See `docs/V8_2_QA.md`.
 
-## Directory guide
+## Key files
 
-- `content/en/`, `content/zh/`: paired 11-page content sets
-- `layouts/`: Hugo templates
-- `static/css/v81-evidence.css`: incremental evidence & mobile design
-- `static/images/research/thoracic-aorta-*-v81.webp`: cropped source figures
-- `static/resume/Shih-Ting_Tai_Resume.pdf`: supplied October 13 Resume (unchanged)
-- `static/research/publications/`: selected existing public research PDFs
-- `scripts/verify_v81.py`: offline checks, also run in deployment workflow
-- `docs/V8_1_RELEASE_NOTES.md`: claim-level documentation and source links
-- `docs/V8_1_QA.md`: checks performed, what remains
+- `layouts/`: customized Hugo templates for all pages
+- `content/en/`, `content/zh/`: bilingual case studies and research detail content
+- `static/css/portfolio-v82.css`: the only public CSS file
+- `docs/legacy-styles/`: archived old CSS source files for traceability
+- `static/images/`: selected publicly presentable assets, including genuine research figures
+- `static/resume/Shih-Ting_Tai_Resume.pdf`: unchanged October 13 resume
+- `static/research/publications/`: public-facing publications/poster PDFs
+- `scripts/verify_v82.py`: offline source validation, also runs in Actions
+- `docs/V8_2_RELEASE_NOTES.md`: release details and design choices
+- `docs/V8_2_QA.md`: test status and remaining visual sign-off
 
-## Editorial policies
+## Evidence and privacy
 
-Preserve evidence scope and fair attribution. Research performance ≠ completed prospective clinical validation; software feature description ≠ personal implementation of every subsystem; project/team recognition ≠ an individually conferred award. Never expose raw medical test screenshots, research identifiers, student/transcript details, license scans or private credential documents.
+Do not publish the private `Material(4).zip`, transcripts, degree certificates, raw clinician/FHIR screenshots, professional license originals, or the Future Tech Award non-scanned photograph. Keep research metrics scoped to their evaluated cohort and project awards attributed to the project/team. No clearance, prospective effectiveness or individual implementation of all product features is claimed.

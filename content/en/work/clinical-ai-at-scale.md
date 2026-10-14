@@ -92,12 +92,7 @@ The evaluation deliberately separated development and independent clinical testi
   <div class="case-metric"><strong>90.16%&nbsp;</strong><span>Five-class accuracy</span><small>Retained true-positive lesions</small></div>
 </div>
 
-<div class="clinical-reduction-v8" role="group" aria-label="False-positive candidate reduction across the 264-case independent evaluation">
-  <div class="clinical-reduction-header-v8"><span>INDEPENDENT COHORT · 264 MRI CASES</span><strong>94.5% fewer false-positive candidates</strong></div>
-  <div class="clinical-reduction-row-v8"><span>Stage 0 candidates</span><div class="clinical-reduction-track-v8"><i style="width:100%"></i></div><b>1,007 FP</b></div>
-  <div class="clinical-reduction-row-v8"><span>Full cascade output</span><div class="clinical-reduction-track-v8"><i style="width:5.46%"></i></div><b>55 FP</b></div>
-  <p>Same independent test cohort, before vs. after candidate filtering. This is a reduction in false-positive candidates—not a claim that sensitivity increased by 94.5%.</p>
-</div>
+<p class="clinical-key-outcome-v82"><strong>1,007 → 55 false-positive candidates (−94.54%).</strong> The reduction in review burden came with a measured reduction in lesion-wise sensitivity; the two outcomes are presented together below.</p>
 
 <section class="clinical-tradeoff-v81" aria-labelledby="tradeoff-title-v81">
   <div class="clinical-tradeoff-heading-v81"><span>THE TRADE-OFF · SAME 264-EXAM RETROSPECTIVE COHORT</span><h3 id="tradeoff-title-v81">Fewer false alarms came with a measured sensitivity cost.</h3><p>Compared with the Stage-0 proposal pool, the full cascade greatly reduced false-positive review burden while losing nine additionally detected true-positive lesions. Both sides of the trade-off belong in the evaluation.</p></div>

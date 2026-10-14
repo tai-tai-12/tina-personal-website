@@ -80,14 +80,12 @@ The product layer extended beyond the model itself. It included **PACS-connected
   <figcaption><strong>Conceptual product workflow.</strong> Connected data, AI-assisted review, documentation, and governed clinical use—not a literal product screenshot.</figcaption>
 </figure>
 
-<div class="product-flow-v81" role="group" aria-label="Team platform capability: five stages of physician-centered medical AI workflow">
+<div class="product-flow-v81" role="group" aria-label="Team platform capability: three phases of physician-centered medical AI workflow">
   <div class="product-flow-eyebrow-v81">TEAM PLATFORM CAPABILITY · PUBLISHED PRODUCT SCOPE</div>
-  <ol class="product-flow-steps-v81">
-    <li><span>01 · INPUT</span><strong>DICOM / PACS</strong><p>Retrieve appropriate T1C or T1C + T2 MRI studies.</p></li>
-    <li><span>02 · INFERENCE</span><strong>Lesion analysis</strong><p>Detect, segment, measure, localize and classify suspected lesions.</p></li>
-    <li><span>03 · REVIEW</span><strong>Physician confirmation</strong><p>Clinician reviews and confirms AI-assisted findings.</p></li>
-    <li><span>04 · DRAFT</span><strong>LLM-assisted report</strong><p>Generate a draft report from physician-confirmed information.</p></li>
-    <li><span>05 · GOVERNANCE</span><strong>Clinical review</strong><p>Draft remains under clinical review; it is not an autonomous diagnosis.</p></li>
+  <ol class="product-flow-steps-v81 product-flow-phases-v82">
+    <li><span>01 · CLINICAL INTEGRATION</span><strong>DICOM / PACS</strong><p>Connect the imaging workflow and retrieve appropriate T1C or T1C + T2 MRI studies.</p></li>
+    <li><span>02 · AI-ASSISTED REVIEW</span><strong>Lesion analysis &amp; physician confirmation</strong><p>Detect, segment, measure, localize and classify candidate lesions for clinician review and confirmation.</p></li>
+    <li><span>03 · REPORT &amp; GOVERNANCE</span><strong>Physician-confirmed LLM draft</strong><p>Generate a draft report from confirmed findings, with final review by a clinician—not autonomous diagnosis.</p></li>
   </ol>
   <div class="product-flow-attribution-v81"><div><span>TEAM PRODUCT SCOPE</span><p>Capabilities described in the <a href="https://www.futuretech.org.tw/futuretech/index.php?action=product_detail&prod_no=P0008700008523&web_lang=en-us" target="_blank" rel="noopener noreferrer">official DeepBT A+ profile ↗</a>; this is a schematic, not a product screenshot or claim that I implemented each subsystem.</p></div><div><span>MY CONTRIBUTION</span><p>Physician discovery, requirements, progress-state usability, institution-level operating points, cross-functional release planning and regulatory coordination.</p></div></div>
 </div>

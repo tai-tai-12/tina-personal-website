@@ -85,12 +85,7 @@ Development cohort 用於模型開發、internal validation 與 operating-point 
   <div class="case-metric"><strong>90.16%&nbsp;</strong><span>Five-class accuracy</span><small>Retained true-positive lesions</small></div>
 </div>
 
-<div class="clinical-reduction-v8" role="group" aria-label="264 例獨立測試之偽陽性候選減少">
-  <div class="clinical-reduction-header-v8"><span>INDEPENDENT COHORT · 264 MRI CASES</span><strong>偽陽性候選減少 94.5%</strong></div>
-  <div class="clinical-reduction-row-v8"><span>Stage 0 候選</span><div class="clinical-reduction-track-v8"><i style="width:100%"></i></div><b>1,007 FP</b></div>
-  <div class="clinical-reduction-row-v8"><span>完整 cascade 輸出</span><div class="clinical-reduction-track-v8"><i style="width:5.46%"></i></div><b>55 FP</b></div>
-  <p>相同 264 例獨立測試 cohort，對比候選階段與完整篩選後的偽陽性總數；此為偽陽性候選減少比例，不代表敏感度提高 94.5%。</p>
-</div>
+<p class="clinical-key-outcome-v82"><strong>偽陽性候選從 1,007 降至 55（−94.54%）。</strong>降低判讀負擔的同時，逐病灶敏感度也有實際下降，因此下方並列呈現兩項結果。</p>
 
 <section class="clinical-tradeoff-v81" aria-labelledby="tradeoff-title-v81">
   <div class="clinical-tradeoff-heading-v81"><span>效能取捨 · 同一組 264 例回溯性獨立測試</span><h3 id="tradeoff-title-v81">降低大量誤報，也必須呈現 sensitivity 的代價。</h3><p>與 Stage-0 候選池相比，完整 cascade 大幅減少偽陽性檢閱負擔，但同時額外損失九個真陽性病灶。這兩個方向都是模型評估的重要部分。</p></div>

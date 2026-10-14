@@ -66,7 +66,11 @@
         <h3 class="project-title-v64">{{ if $isZh }}在真實臨床限制下推進醫療 AI 產品{{ else }}<span>Shipping Medical AI</span><span>Under Real Clinical Constraints</span>{{ end }}</h3>
         <p>{{ if $isZh }}透過醫師需求探索、模型取捨與 release sequencing，把腦瘤 MRI AI 推進真實臨床工作流程。{{ else }}Used physician discovery, model trade-offs, and release sequencing to move brain-tumor MRI AI into real clinical workflow.{{ end }}</p>
         <div class="proof-row-v64" aria-label="Project evidence"><span><strong>~67%</strong> {{ if $isZh }}處理時間縮短{{ else }}less processing time{{ end }}</span><span><strong>2</strong> {{ if $isZh }}家醫療中心{{ else }}medical centers{{ end }}</span><span><strong>5</strong> {{ if $isZh }}位醫師{{ else }}physicians{{ end }}</span></div>
-        <p class="project-recognition-v8">{{ if $isZh }}<span>PROJECT RECOGNITION</span> DeepBT A+ · 2026 未來科技獎（團隊）{{ else }}<span>PROJECT RECOGNITION</span> DeepBT A+ · 2026 Future Tech Award (team){{ end }}</p>
+        <div class="project-recognition-v82" aria-label="Project recognition">
+          <span>{{ if $isZh }}團隊／專案肯定 · 2026{{ else }}PROJECT RECOGNITION · 2026{{ end }}</span>
+          <strong>DeepBT A+ · {{ if $isZh }}未來科技獎{{ else }}Future Tech Award{{ end }}</strong>
+          <small>{{ if $isZh }}陽明交大團隊獲獎；本人參與產品開發。{{ else }}NYCU team recognition; contributed to product development.{{ end }}</small>
+        </div>
         <div class="project-actions"><a href="{{ "work/medical-ai-product/" | relLangURL }}" class="btn mono-project-btn">{{ if $isZh }}查看專案{{ else }}Explore project{{ end }} <span>↗</span></a></div>
       </div>
       <a class="project-visual mono-visual editorial-visual" href="{{ "work/medical-ai-product/" | relLangURL }}" aria-label="Open Medical AI to Product case study">
@@ -110,6 +114,7 @@
       <article class="experience-v55-row"><span class="experience-year">2024–2026</span><div class="experience-v55-main"><span>AITEWAN Biomedical Technology</span><h3>Product Manager</h3><p>{{ if $isZh }}腦瘤 SaMD 的醫師需求探索、延遲優化、release planning 與 TFDA 執行。{{ else }}Physician discovery, latency optimization, release planning, and TFDA execution for a brain-tumor SaMD.{{ end }}</p><a href="{{ "work/medical-ai-product/" | relLangURL }}">{{ if $isZh }}相關專案{{ else }}Related project{{ end }} →</a></div></article>
       <article class="experience-v55-row"><span class="experience-year">2023–2026</span><div class="experience-v55-main"><span>NYCU · AI in Medical Imaging Lab</span><h3>Research Assistant / Project Lead</h3><p>{{ if $isZh }}腦瘤 MRI AI、早期胸主動脈 CT 研究、多中心資料分析與國際研究發表。{{ else }}Brain-tumor MRI AI, earlier thoracic-aorta CT research, multi-center data analysis, and international research communication.{{ end }}</p><a href="{{ "work/clinical-ai-at-scale/" | relLangURL }}">{{ if $isZh }}相關專案{{ else }}Related project{{ end }} →</a></div></article>
       <article class="experience-v55-row"><span class="experience-year">2021–2023</span><div class="experience-v55-main"><span>NYCU · Prof. Chen's Biomedical Imaging Physics & Instrumentation Lab</span><h3>Test Manager / Research Assistant</h3><p>{{ if $isZh }}第三方游離輻射設備測試／小聯盟營運，以及獨立的 MATLAB small-animal CT 定量分析。{{ else }}Third-party radiation-equipment testing / consortium operations, plus separate MATLAB quantitative CT analysis.{{ end }}</p><a href="{{ "work/structured-validation/" | relLangURL }}">{{ if $isZh }}相關專案{{ else }}Related project{{ end }} →</a></div></article>
+      <article class="experience-v55-row"><span class="experience-year">2023–2024</span><div class="experience-v55-main"><span>National Taiwan University Hospital</span><h3>Clinical Intern</h3><p>{{ if $isZh }}完成 1,040 小時跨診斷影像、放射腫瘤與核子醫學臨床實習，並獲 Certificate of Excellence。{{ else }}Completed 1,040 hours across diagnostic imaging, radiation oncology and nuclear medicine; Certificate of Excellence.{{ end }}</p><a href="{{ "experience/" | relLangURL }}">{{ if $isZh }}詳細經歷{{ else }}Full experience{{ end }} →</a></div></article>
     </div>
   </div>
 </section>
@@ -155,13 +160,16 @@
     <div class="section-signature reveal">
       <span class="section-number">05</span><span class="section-rule"></span><span class="section-dot"></span><span class="section-label">{{ if $isZh }}關於我{{ else }}ABOUT{{ end }}</span>
     </div>
-    <div class="about-v527-editorial reveal">
-      <blockquote>{{ if $isZh }}我最有興趣的是技術能做到什麼、使用者真正需要什麼，以及團隊最後應該做出什麼產品決策。{{ else }}I’m most interested in the decisions between what technology can do, what users actually need, and what a team should build next.{{ end }}</blockquote>
-      <div class="foundation-grid-v63" aria-label="Four foundations">
-        <div class="foundation-item-v63"><span>01</span><strong>Biomedical Imaging</strong><p>{{ if $isZh }}臨床工作流程與影像基礎。{{ else }}Clinical workflow and imaging foundations.{{ end }}</p></div>
-        <div class="foundation-item-v63"><span>02</span><strong>AI Research</strong><p>{{ if $isZh }}模型開發、失敗分析與驗證。{{ else }}Model development, error analysis, and validation.{{ end }}</p></div>
-        <div class="foundation-item-v63"><span>03</span><strong>Product</strong><p>{{ if $isZh }}需求探索、取捨與 release decisions。{{ else }}User discovery, trade-offs, and release decisions.{{ end }}</p></div>
-        <div class="foundation-item-v63"><span>04</span><strong>Analytics</strong><p>{{ if $isZh }}證據整合與結構化決策。{{ else }}Evidence synthesis and structured decision-making.{{ end }}</p></div>
+    <div class="about-v82-editorial reveal">
+      <div class="about-v82-intro">
+        <h2>{{ if $isZh }}連結技術、使用者與產品決策。{{ else }}Connecting technology, people, and product decisions.{{ end }}</h2>
+        <p>{{ if $isZh }}醫療影像與 AI 研究讓我學會評估技術證據；產品管理經驗則教會我如何把這些證據轉化成真正改善工作流程的決策。現在，我在 CMU Tepper 持續深化商業分析與策略判斷。{{ else }}Medical imaging and AI research taught me to evaluate technical evidence. Product management taught me to turn that evidence into decisions that improve real workflows. At CMU Tepper, I’m building the business analytics and strategy skills to connect both.{{ end }}</p>
+      </div>
+      <div class="foundation-grid-v63 foundation-grid-v82" aria-label="Four foundations">
+        <div class="foundation-item-v63"><span>01</span><strong>{{ if $isZh }}產品判斷{{ else }}Product Judgment{{ end }}</strong><p>{{ if $isZh }}需求探索、取捨與發佈決策。{{ else }}Discovery, trade-offs, and delivery.{{ end }}</p></div>
+        <div class="foundation-item-v63"><span>02</span><strong>AI &amp; Analytics</strong><p>{{ if $isZh }}模型評估與數據洞察。{{ else }}Evaluation and evidence synthesis.{{ end }}</p></div>
+        <div class="foundation-item-v63"><span>03</span><strong>{{ if $isZh }}臨床領域知識{{ else }}Clinical Expertise{{ end }}</strong><p>{{ if $isZh }}影像與臨床工作流程。{{ else }}Medical imaging and workflows.{{ end }}</p></div>
+        <div class="foundation-item-v63"><span>04</span><strong>{{ if $isZh }}跨團隊執行{{ else }}Cross-functional Execution{{ end }}</strong><p>{{ if $isZh }}協作、交付與法規協調。{{ else }}Alignment, releases, and coordination.{{ end }}</p></div>
       </div>
       <a class="text-link about-v527-link" href="{{ "about/" | relLangURL }}">{{ if $isZh }}更多關於我{{ else }}More about me{{ end }} →</a>
     </div>

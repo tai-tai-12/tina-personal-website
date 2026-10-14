@@ -18,8 +18,8 @@
       </div>
     </div>
     <figure class="about-v85-photo">
-      <img src="{{ "images/about/thesis-presentation-v61.webp" | relURL }}" alt="{{ if $isZh }}Tina Tai 於陽明交通大學碩士論文發表現場{{ else }}Tina Tai presenting her master's thesis research at NYCU{{ end }}" loading="eager" decoding="async">
-      <figcaption>{{ if $isZh }}碩士論文發表 · 陽明交通大學 · 2026{{ else }}Master's thesis presentation · NYCU · 2026{{ end }}</figcaption>
+      <img src="{{ "images/about/thesis-presentation-v61.webp" | relURL }}" alt="{{ if $isZh }}Tina Tai 於國立陽明交通大學碩士論文發表現場{{ else }}Tina Tai presenting her master's thesis research at NYCU{{ end }}" loading="eager" decoding="async">
+      <figcaption>{{ if $isZh }}碩士論文發表 · 國立陽明交通大學 · 2026{{ else }}Master's thesis presentation · NYCU · 2026{{ end }}</figcaption>
     </figure>
   </div>
 </section>
@@ -48,14 +48,14 @@
     <article class="about-v85-leadership-feature">
       <div class="about-v85-feature-meta"><span>{{ if $isZh }}學生自治領導{{ else }}STUDENT LEADERSHIP{{ end }}</span><time>2023–2024</time></div>
       <h3>{{ if $isZh }}系學會會長{{ else }}President, Department Student Association{{ end }}</h3>
-      <p class="about-v85-feature-affiliation">National Yang Ming Chiao Tung University</p>
+      <p class="about-v85-feature-affiliation">{{ if $isZh }}國立陽明交通大學{{ else }}National Yang Ming Chiao Tung University{{ end }}</p>
       <p>{{ if $isZh }}帶領系學會組織與系上活動協調，累積與不同學生及校內角色合作的經驗。{{ else }}Led student-organization coordination and departmental activities, working across student and university groups.{{ end }}</p>
     </article>
     <article class="about-v85-leadership-feature">
       <div class="about-v85-feature-meta"><span>{{ if $isZh }}目前參與{{ else }}CURRENT INVOLVEMENT{{ end }}</span><time>2026–2027</time></div>
-      <h3>{{ if $isZh }}獲選 MSBA 學生大使{{ else }}Selected MSBA Student Ambassador{{ end }}</h3>
-      <p class="about-v85-feature-affiliation">Carnegie Mellon University · Tepper School of Business</p>
-      <p>{{ if $isZh }}獲選擔任 2026–27 年度 MSBA Student Ambassador。{{ else }}Selected to serve as an MSBA Student Ambassador for the 2026–27 academic year.{{ end }}</p>
+      <h3>{{ if $isZh }}獲選商業分析碩士學生大使{{ else }}Selected MSBA Student Ambassador{{ end }}</h3>
+      <p class="about-v85-feature-affiliation">{{ if $isZh }}卡內基美隆大學 · Tepper 商學院{{ else }}Carnegie Mellon University · Tepper School of Business{{ end }}</p>
+      <p>{{ if $isZh }}獲選擔任 2026–27 年度商業分析碩士學生大使。{{ else }}Selected to serve as an MSBA Student Ambassador for the 2026–27 academic year.{{ end }}</p>
     </article>
   </div>
   <div class="about-v85-community reveal">
@@ -75,8 +75,8 @@
     <p>{{ if $isZh }}喜歡攝影、舞蹈，也樂於透過旅遊、食物與不同活動認識新的環境。{{ else }}I enjoy photography, dance, and exploring new places and food.{{ end }}</p>
   </div>
   <div class="about-v85-interest-area">
-    <div class="about-v85-interest-row"><span>{{ if $isZh }}社團與活動{{ else }}CLUBS & ACTIVITIES{{ end }}</span><p>{{ if $isZh }}Hip-Hop 熱舞社社員 · 手語社{{ else }}Hip-Hop Dance Club (member) · Sign Language Club{{ end }}</p></div>
-    <div class="about-v85-interest-row"><span>{{ if $isZh }}志願服務{{ else }}VOLUNTEERING{{ end }}</span><p>{{ if $isZh }}Rotary 社區服務 · 動物福利志工{{ else }}Rotary community service · Animal-welfare volunteering{{ end }}</p></div>
+    <div class="about-v85-interest-row"><span>{{ if $isZh }}社團與活動{{ else }}CLUBS & ACTIVITIES{{ end }}</span><p>{{ if $isZh }}嘻哈熱舞社社員 · 手語社{{ else }}Hip-Hop Dance Club (member) · Sign Language Club{{ end }}</p></div>
+    <div class="about-v85-interest-row"><span>{{ if $isZh }}志願服務{{ else }}VOLUNTEERING{{ end }}</span><p>{{ if $isZh }}扶輪社社區服務 · 動物福利志工{{ else }}Rotary community service · Animal-welfare volunteering{{ end }}</p></div>
     <div class="about-v85-interest-row"><span>{{ if $isZh }}個人興趣{{ else }}PERSONAL INTERESTS{{ end }}</span><p>{{ if $isZh }}攝影 · 舞蹈 · 旅行與美食探索{{ else }}Photography · Dance · Travel & food{{ end }}</p></div>
   </div>
   <div class="about-v85-final-cta"><span>{{ if $isZh }}想進一步了解我做過的產品與研究？{{ else }}Want to see the product and research behind the story?{{ end }}</span><a href="{{ "work/" | relLangURL }}">{{ if $isZh }}精選作品案例{{ else }}Selected work{{ end }} <span aria-hidden="true">↗</span></a><a href="mailto:{{ .Site.Params.email }}">{{ if $isZh }}寄信聯繫{{ else }}Email me{{ end }} <span aria-hidden="true">↗</span></a><a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div>

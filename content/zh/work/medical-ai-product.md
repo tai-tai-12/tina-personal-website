@@ -44,7 +44,7 @@ snapshot:
   body: 更快的處理速度、更清楚的使用回饋、依工作流程調整的 operating point，以及受保護的送件時程。
 relatedPrevTitle: 客戶導向的第三方驗證營運
 relatedPrevURL: work/structured-validation/
-relatedNextTitle: 設計不只看 Accuracy 的 AI 評估
+relatedNextTitle: 設計不只看準確率的 AI 評估
 relatedNextURL: work/clinical-ai-at-scale/
 navItems:
 - id: problem
@@ -78,7 +78,7 @@ navItems:
 <span id="workflow"></span>
 ## 從研究模型走向醫師工作流程
 
-底層研究採逐病灶 cascade：先產生 sensitivity-oriented candidates，再降低偽陽性，最後對保留病灶進行五類分類。完整技術評估另見 **設計不只看 Accuracy 的 AI 評估**。
+底層研究採逐病灶 cascade：先產生 sensitivity-oriented candidates，再降低偽陽性，最後對保留病灶進行五類分類。完整技術評估另見 **設計不只看準確率的 AI 評估**。
 
 產品層不只包含模型，也涵蓋 **PACS case access、AI processing-state visibility、AI-assisted lesion overlays、病灶層級閱片、醫師確認後的 LLM 輔助報告草稿與臨床審閱**。在兩家醫療中心進行的持續醫師 discovery，讓速度、等待可見性、operating point 與 release scope 都能被轉成具體產品需求。
 
@@ -115,8 +115,8 @@ navItems:
 </div>
 
 <div class="case-evidence-grid">
-  <article class="case-evidence-card">{{< site-img src="images/research/midl-poster.webp" alt="Tina Tai 與 MIDL 2026 海報" >}}<div><span>MIDL · 2026</span><h3>First-Author Short Paper Poster</h3><p>逐病灶偽陽性降低與五類腫瘤分類的公開研究成果。</p></div></article>
-  <article class="case-evidence-card">{{< site-img src="images/research/amlds-talk.webp" alt="Tina Tai 在 AMLDS 2026 進行口頭報告" >}}<div><span>AMLDS · 2026</span><h3>First-Author Oral Presentation</h3><p>同一技術主線上聚焦候選病灶驗證與偽陽性降低的延伸研究，並獲 Outstanding Oral Presentation。</p></div></article>
+  <article class="case-evidence-card">{{< site-img src="images/research/midl-poster.webp" alt="Tina Tai 與 MIDL 2026 海報" >}}<div><span>MIDL · 2026</span><h3>第一作者短論文海報發表</h3><p>逐病灶偽陽性降低與五類腫瘤分類的公開研究成果。</p></div></article>
+  <article class="case-evidence-card">{{< site-img src="images/research/amlds-talk.webp" alt="Tina Tai 在 AMLDS 2026 進行口頭報告" >}}<div><span>AMLDS · 2026</span><h3>第一作者口頭論文發表</h3><p>同一技術主線上聚焦候選病灶驗證與偽陽性降低的延伸研究，並獲傑出口頭報告獎。</p></div></article>
 </div>
 
 <div class="case-metrics case-metrics-v524">

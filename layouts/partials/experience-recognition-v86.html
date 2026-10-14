@@ -1,15 +1,15 @@
 {{ $isZh := .IsZh }}
 {{ if eq .Kind "team" }}
-<section class="xp-v86-recognition" aria-label="Project recognition">
+<section class="xp-v86-recognition" aria-label="{{ if $isZh }}團隊／專案獲獎{{ else }}Project recognition{{ end }}">
   <div class="xp-v86-recognition-label"><span aria-hidden="true">✦</span>{{ if $isZh }}團隊／專案肯定 · 2026{{ else }}PROJECT RECOGNITION · 2026{{ end }}</div>
   <strong>DeepBT A+ — {{ if $isZh }}未來科技獎{{ else }}Future Tech Award{{ end }}</strong>
-  <p>{{ if $isZh }}參與 NYCU 主導之獲獎團隊專案；本獎項為團隊／專案榮譽，並非個人獨立得獎。{{ else }}Contributed to the NYCU-led, award-recognized DeepBT A+ project; this is team/project recognition, not an individual award.{{ end }}</p>
+  <p>{{ if $isZh }}參與國立陽明交通大學主導之獲獎團隊專案；本獎項為團隊／專案榮譽，並非個人獨立得獎。{{ else }}Contributed to the NYCU-led, award-recognized DeepBT A+ project; this is team/project recognition, not an individual award.{{ end }}</p>
   <a href="https://www.futuretech.org.tw/futuretech/index.php?action=product_detail&amp;prod_no=P0008700008523&amp;web_lang=en-us" target="_blank" rel="noopener noreferrer">{{ if $isZh }}官方專案驗證{{ else }}Official project verification{{ end }} ↗</a>
 </section>
 {{ else if eq .Kind "individual" }}
-<section class="xp-v86-recognition" aria-label="Individual recognition">
+<section class="xp-v86-recognition" aria-label="{{ if $isZh }}個人實習表現獲獎{{ else }}Individual recognition{{ end }}">
   <div class="xp-v86-recognition-label"><span aria-hidden="true">✦</span>{{ if $isZh }}個人實習表現肯定{{ else }}INDIVIDUAL RECOGNITION{{ end }}</div>
-  <strong>Certificate of Excellence</strong>
-  <p>{{ if $isZh }}臺大醫院臨床實習表現獲得肯定。{{ else }}Recognition for clinical internship performance at NTU Hospital.{{ end }}</p>
+  <strong>{{ if $isZh }}放射腫瘤科實習表現優異獎{{ else }}Certificate of Excellence{{ end }}</strong>
+  <p>{{ if $isZh }}於臺大醫院放射腫瘤科實習期間獲頒表現優異獎。{{ else }}Recognition for clinical internship performance at NTU Hospital.{{ end }}</p>
 </section>
 {{ end }}

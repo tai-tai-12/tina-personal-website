@@ -11,8 +11,8 @@
         <a href="{{ "education/" | relLangURL }}"{{ if eq .Section "education" }} aria-current="location"{{ end }}>{{ if $isZh }}學歷{{ else }}Education{{ end }}</a>
         <a href="{{ "about/" | relLangURL }}"{{ if eq .Section "about" }} aria-current="location"{{ end }}>{{ if $isZh }}關於我{{ else }}About{{ end }}</a>
       </div>
-      <div class="nav-utility-v512" aria-label="Site controls">
-        <a class="nav-resume-v512" href="{{ .Site.Params.resume | relURL }}" target="_blank" rel="noreferrer">Resume <span aria-hidden="true">↗</span></a>
+      <div class="nav-utility-v512" aria-label="{{ if $isZh }}網站功能{{ else }}Site controls{{ end }}">
+        <a class="nav-resume-v512" href="{{ .Site.Params.resume | relURL }}" target="_blank" rel="noreferrer">{{ if $isZh }}英文履歷{{ else }}Resume{{ end }} <span aria-hidden="true">↗</span></a>
         {{ if .IsTranslated }}{{ range .Translations }}
           <a class="lang-switch-v512" href="{{ .RelPermalink }}" aria-label="{{ if $isZh }}Switch to English{{ else }}切換至中文{{ end }}">
             <span class="{{ if not $isZh }}is-active{{ end }}">EN</span><i aria-hidden="true">/</i><span class="{{ if $isZh }}is-active{{ end }}">中文</span>

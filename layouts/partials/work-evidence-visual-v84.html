@@ -18,7 +18,7 @@
   <div class="evidence-v84-keyline">
     <strong>−94.54%</strong>
     <span>{{ if $isZh }}偽陽性候選量{{ else }}FP candidates{{ end }}</span>
-    <span class="evidence-v84-context">Sensitivity 84.96% → 80.97%</span>
+    <span class="evidence-v84-context">{{ if $isZh }}病灶偵測率{{ else }}Sensitivity{{ end }} 84.96% → 80.97%</span>
   </div>
   {{ else }}
   <ol class="evidence-v84-steps" aria-hidden="true">

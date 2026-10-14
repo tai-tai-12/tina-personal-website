@@ -43,7 +43,7 @@ snapshot:
   body: 同一條聯盟檢測服務流程中的企業後續聯繫、會員與合約作業、客戶接待、X 光設備檢測及技術報告。
 - title: 成果
   body: 服務 5 家客戶、實際檢測 8 項設備／產品並產出 10+ 份第三方技術報告。
-relatedPrevTitle: 設計不只看 Accuracy 的 AI 評估
+relatedPrevTitle: 設計不只看準確率的 AI 評估
 relatedPrevURL: work/clinical-ai-at-scale/
 relatedNextTitle: 在真實臨床限制下推進醫療 AI 產品
 relatedNextURL: work/medical-ai-product/

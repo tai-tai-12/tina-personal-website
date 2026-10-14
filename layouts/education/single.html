@@ -3,40 +3,40 @@
 <div class="page-hero section-shell compact education-page-hero top-level-page-hero-v7"><div class="shell narrow reveal">
   {{ partial "page-context.html" . }}
   <h1>{{ .Title }}</h1>
-  <p class="lede small">{{ if $isZh }}我的學術路徑從醫療影像與生醫工程出發，延伸到醫療 AI，並在 Carnegie Mellon 補上商業分析、機器學習、最佳化與科技策略訓練。{{ else }}My academic path started in medical imaging and biomedical engineering, expanded into medical AI, and now adds business analytics, machine learning, optimization, and technology strategy at Carnegie Mellon.{{ end }}</p>
+  <p class="lede small">{{ if $isZh }}我的學術路徑從醫療影像與生醫工程出發，延伸到醫療 AI，並在卡內基美隆大學補上商業分析、機器學習、最佳化與科技策略訓練。{{ else }}My academic path started in medical imaging and biomedical engineering, expanded into medical AI, and now adds business analytics, machine learning, optimization, and technology strategy at Carnegie Mellon.{{ end }}</p>
 </div></div>
 
 <section class="section-shell education-page-section"><div class="shell education-page-shell-v510">
   <div class="education-timeline-v510 reveal">
     <article class="education-entry-v510">
-      <div class="education-entry-meta-v510"><span>2026–2027</span><small>Pittsburgh, PA, USA</small></div>
+      <div class="education-entry-meta-v510"><span>2026–2027</span><small>{{ if $isZh }}美國匹茲堡{{ else }}Pittsburgh, PA, USA{{ end }}</small></div>
       <div class="education-entry-card-v510">
         <div class="education-institution-row-v510">
-          <a class="education-seal-link-v511" href="https://www.cmu.edu/" target="_blank" rel="noopener" aria-label="Carnegie Mellon University website">
-            <img class="education-seal-v511 cmu-seal-v511" src="{{ "images/education/cmu-seal.svg" | relURL }}" alt="Carnegie Mellon University seal">
+          <a class="education-seal-link-v511" href="https://www.cmu.edu/" target="_blank" rel="noopener" aria-label="{{ if $isZh }}卡內基美隆大學官方網站{{ else }}Carnegie Mellon University website{{ end }}">
+            <img class="education-seal-v511 cmu-seal-v511" src="{{ "images/education/cmu-seal.svg" | relURL }}" alt="{{ if $isZh }}卡內基美隆大學校徽{{ else }}Carnegie Mellon University seal{{ end }}">
           </a>
           <div class="education-institution-copy-v511">
-            <a class="education-university-link-v510" href="https://www.cmu.edu/" target="_blank" rel="noopener">Carnegie Mellon University <span>↗</span></a>
-            <a class="education-unit-link-v510" href="https://www.cmu.edu/tepper/" target="_blank" rel="noopener">Tepper School of Business <span>↗</span></a>
+            <a class="education-university-link-v510" href="https://www.cmu.edu/" target="_blank" rel="noopener">{{ if $isZh }}卡內基美隆大學{{ else }}Carnegie Mellon University{{ end }} <span>↗</span></a>
+            <a class="education-unit-link-v510" href="https://www.cmu.edu/tepper/" target="_blank" rel="noopener">{{ if $isZh }}Tepper 商學院{{ else }}Tepper School of Business{{ end }} <span>↗</span></a>
           </div>
         </div>
-        <h2>M.S. Business Analytics</h2>
-        <div class="edu-v86-focus">Analytics · Machine Learning · Optimization · Technology Strategy</div>
-        <section class="edu-v86-section edu-v86-coursework" aria-label="Selected coursework">
+        <h2>{{ if $isZh }}商業分析碩士{{ else }}M.S. Business Analytics{{ end }}</h2>
+        <div class="edu-v86-focus">{{ if $isZh }}商業分析 · 機器學習 · 最佳化 · 科技策略{{ else }}Analytics · Machine Learning · Optimization · Technology Strategy{{ end }}</div>
+        <section class="edu-v86-section edu-v86-coursework" aria-label="{{ if $isZh }}精選課程{{ else }}Selected coursework{{ end }}">
           <div class="edu-v86-section-top"><h3>{{ if $isZh }}精選課程{{ else }}SELECTED COURSEWORK{{ end }}</h3>
             <span class="edu-v86-status">{{ if $isZh }}2026 秋季 · 修習中{{ else }}Fall 2026 · In progress{{ end }}</span></div>
           <ul class="edu-v86-course-list">
-            <li>Machine Learning Fundamentals</li>
-            <li>Modern Data Management</li>
-            <li>Programming in R &amp; Python</li>
-            <li>Statistical Foundations for Business Analytics</li>
+            <li>{{ if $isZh }}機器學習基礎{{ else }}Machine Learning Fundamentals{{ end }}</li>
+            <li>{{ if $isZh }}現代資料管理{{ else }}Modern Data Management{{ end }}</li>
+            <li>{{ if $isZh }}R 與 Python 程式設計{{ else }}Programming in R &amp; Python{{ end }}</li>
+            <li>{{ if $isZh }}商業分析統計基礎{{ else }}Statistical Foundations for Business Analytics{{ end }}</li>
           </ul>
         </section>
-        <section class="edu-v86-section edu-v86-campus" aria-label="Campus highlight">
+        <section class="edu-v86-section edu-v86-campus" aria-label="{{ if $isZh }}校園亮點{{ else }}Campus highlight{{ end }}">
           <h3>{{ if $isZh }}校園亮點{{ else }}CAMPUS HIGHLIGHTS{{ end }}</h3>
           <div class="edu-v86-highlight"><span class="edu-v86-highlight-type">{{ if $isZh }}學生參與{{ else }}STUDENT INVOLVEMENT{{ end }}</span>
-            <strong>{{ if $isZh }}2026–27 MSBA Student Ambassador（學生大使）{{ else }}Selected MSBA Student Ambassador · 2026–27{{ end }}</strong>
-            <p>{{ if $isZh }}獲選為 MSBA 學生大使。{{ else }}Selected student ambassador for the MSBA program.{{ end }}</p>
+            <strong>{{ if $isZh }}2026–27 年度商業分析碩士學生大使{{ else }}Selected MSBA Student Ambassador · 2026–27{{ end }}</strong>
+            <p>{{ if $isZh }}獲選擔任商業分析碩士（MSBA）學生大使。{{ else }}Selected student ambassador for the MSBA program.{{ end }}</p>
              <a href="{{ "about/" | relLangURL }}">{{ if $isZh }}了解更多 ↗{{ else }}Learn more ↗{{ end }}</a>
           </div>
         </section>
@@ -44,27 +44,27 @@
     </article>
 
     <article class="education-entry-v510">
-      <div class="education-entry-meta-v510"><span>2024–2026</span><small>Taipei, Taiwan</small></div>
+      <div class="education-entry-meta-v510"><span>2024–2026</span><small>{{ if $isZh }}臺灣臺北{{ else }}Taipei, Taiwan{{ end }}</small></div>
       <div class="education-entry-card-v510">
         <div class="education-institution-row-v510">
-          <a class="education-seal-link-v511" href="https://www.nycu.edu.tw/nycu/en/index" target="_blank" rel="noopener" aria-label="National Yang Ming Chiao Tung University website">
-            <img class="education-seal-v511 nycu-seal-v511" src="{{ "images/education/nycu-seal.png" | relURL }}" alt="National Yang Ming Chiao Tung University emblem">
+          <a class="education-seal-link-v511" href="https://www.nycu.edu.tw/nycu/en/index" target="_blank" rel="noopener" aria-label="{{ if $isZh }}國立陽明交通大學官方網站{{ else }}National Yang Ming Chiao Tung University website{{ end }}">
+            <img class="education-seal-v511 nycu-seal-v511" src="{{ "images/education/nycu-seal.png" | relURL }}" alt="{{ if $isZh }}國立陽明交通大學校徽{{ else }}National Yang Ming Chiao Tung University emblem{{ end }}">
           </a>
           <div class="education-institution-copy-v511">
-            <a class="education-university-link-v510" href="https://www.nycu.edu.tw/nycu/en/index" target="_blank" rel="noopener">National Yang Ming Chiao Tung University <span>↗</span></a>
-            <a class="education-unit-link-v510" href="https://bioph.nycu.edu.tw/" target="_blank" rel="noopener">Institute of Biophotonics <span>↗</span></a>
+            <a class="education-university-link-v510" href="https://www.nycu.edu.tw/nycu/en/index" target="_blank" rel="noopener">{{ if $isZh }}國立陽明交通大學{{ else }}National Yang Ming Chiao Tung University{{ end }} <span>↗</span></a>
+            <a class="education-unit-link-v510" href="https://bioph.nycu.edu.tw/" target="_blank" rel="noopener">{{ if $isZh }}生醫光電研究所{{ else }}Institute of Biophotonics{{ end }} <span>↗</span></a>
           </div>
         </div>
-        <h2>M.S. Biophotonics</h2>
-        <div class="edu-v86-focus">Medical AI · Brain MRI · Clinical Validation · Research Engineering</div>
-        <section class="edu-v86-section edu-v86-coursework" aria-label="Selected coursework">
+        <h2>{{ if $isZh }}生醫光電碩士{{ else }}M.S. Biophotonics{{ end }}</h2>
+        <div class="edu-v86-focus">{{ if $isZh }}醫療 AI · 腦部磁振造影 · 臨床驗證 · 研究工程{{ else }}Medical AI · Brain MRI · Clinical Validation · Research Engineering{{ end }}</div>
+        <section class="edu-v86-section edu-v86-coursework" aria-label="{{ if $isZh }}精選課程{{ else }}Selected coursework{{ end }}">
           <div class="edu-v86-section-top"><h3>{{ if $isZh }}精選課程{{ else }}SELECTED COURSEWORK{{ end }}</h3></div>
           <ul class="edu-v86-course-list">
-            <li>Machine Learning &amp; Biomedical Applications</li>
-            <li>Introduction to Photonics Engineering</li>
+            <li>{{ if $isZh }}機器學習與生醫應用{{ else }}Machine Learning &amp; Biomedical Applications{{ end }}</li>
+            <li>{{ if $isZh }}光電工程導論{{ else }}Introduction to Photonics Engineering{{ end }}</li>
           </ul>
         </section>
-        <section class="edu-v86-section edu-v86-campus" aria-label="Campus highlight">
+        <section class="edu-v86-section edu-v86-campus" aria-label="{{ if $isZh }}校園亮點{{ else }}Campus highlight{{ end }}">
           <h3>{{ if $isZh }}校園亮點{{ else }}CAMPUS HIGHLIGHTS{{ end }}</h3>
           <div class="edu-v86-highlight"><span class="edu-v86-highlight-type">{{ if $isZh }}典禮受獎代表{{ else }}CEREMONIAL REPRESENTATION{{ end }}</span>
             <strong>{{ if $isZh }}研究所畢業生上台受獎代表 · 2026{{ else }}Graduation Ceremony Representative · 2026{{ end }}</strong>
@@ -76,30 +76,30 @@
     </article>
 
     <article class="education-entry-v510">
-      <div class="education-entry-meta-v510"><span>2020–2024</span><small>Taipei, Taiwan</small></div>
+      <div class="education-entry-meta-v510"><span>2020–2024</span><small>{{ if $isZh }}臺灣臺北{{ else }}Taipei, Taiwan{{ end }}</small></div>
       <div class="education-entry-card-v510">
         <div class="education-institution-row-v510">
-          <a class="education-seal-link-v511" href="https://www.nycu.edu.tw/nycu/en/index" target="_blank" rel="noopener" aria-label="National Yang Ming Chiao Tung University website">
-            <img class="education-seal-v511 nycu-seal-v511" src="{{ "images/education/nycu-seal.png" | relURL }}" alt="National Yang Ming Chiao Tung University emblem">
+          <a class="education-seal-link-v511" href="https://www.nycu.edu.tw/nycu/en/index" target="_blank" rel="noopener" aria-label="{{ if $isZh }}國立陽明交通大學官方網站{{ else }}National Yang Ming Chiao Tung University website{{ end }}">
+            <img class="education-seal-v511 nycu-seal-v511" src="{{ "images/education/nycu-seal.png" | relURL }}" alt="{{ if $isZh }}國立陽明交通大學校徽{{ else }}National Yang Ming Chiao Tung University emblem{{ end }}">
           </a>
           <div class="education-institution-copy-v511">
-            <a class="education-university-link-v510" href="https://www.nycu.edu.tw/nycu/en/index" target="_blank" rel="noopener">National Yang Ming Chiao Tung University <span>↗</span></a>
-            <a class="education-unit-link-v510" href="https://birs.nycu.edu.tw/english-version/" target="_blank" rel="noopener">Department of Biomedical Imaging & Radiological Sciences <span>↗</span></a>
+            <a class="education-university-link-v510" href="https://www.nycu.edu.tw/nycu/en/index" target="_blank" rel="noopener">{{ if $isZh }}國立陽明交通大學{{ else }}National Yang Ming Chiao Tung University{{ end }} <span>↗</span></a>
+            <a class="education-unit-link-v510" href="https://birs.nycu.edu.tw/english-version/" target="_blank" rel="noopener">{{ if $isZh }}生物醫學影像暨放射科學系{{ else }}Department of Biomedical Imaging & Radiological Sciences{{ end }} <span>↗</span></a>
           </div>
         </div>
-        <h2>B.S. Biomedical Imaging & Radiological Sciences</h2>
-        <p>{{ if $isZh }}輔修生醫工程{{ else }}Minor · Biomedical Engineering{{ end }}</p>
-        <div class="edu-v86-focus">Medical Imaging · Radiation Science · Biomedical Engineering</div>
-        <section class="edu-v86-section edu-v86-coursework" aria-label="Selected coursework">
+        <h2>{{ if $isZh }}生物醫學影像暨放射科學學士{{ else }}B.S. Biomedical Imaging & Radiological Sciences{{ end }}</h2>
+        <p>{{ if $isZh }}輔修生物醫學工程{{ else }}Minor · Biomedical Engineering{{ end }}</p>
+        <div class="edu-v86-focus">{{ if $isZh }}醫學影像 · 放射科學 · 生物醫學工程{{ else }}Medical Imaging · Radiation Science · Biomedical Engineering{{ end }}</div>
+        <section class="edu-v86-section edu-v86-coursework" aria-label="{{ if $isZh }}精選課程{{ else }}Selected coursework{{ end }}">
           <div class="edu-v86-section-top"><h3>{{ if $isZh }}精選課程{{ else }}SELECTED COURSEWORK{{ end }}</h3></div>
           <ul class="edu-v86-course-list">
-            <li>Programming Language</li>
-            <li>Deep Learning &amp; Biomedical Applications</li>
-            <li>Principles of Magnetic Resonance Imaging</li>
+            <li>{{ if $isZh }}程式語言{{ else }}Programming Language{{ end }}</li>
+            <li>{{ if $isZh }}深度學習與生醫應用{{ else }}Deep Learning &amp; Biomedical Applications{{ end }}</li>
+            <li>{{ if $isZh }}磁振造影原理{{ else }}Principles of Magnetic Resonance Imaging{{ end }}</li>
             <li>{{ if $isZh }}醫療器材法規實務{{ else }}Medical Device Regulatory Requirements{{ end }}</li>
           </ul>
         </section>
-        <section class="edu-v86-section edu-v86-campus" aria-label="Campus highlight">
+        <section class="edu-v86-section edu-v86-campus" aria-label="{{ if $isZh }}校園亮點{{ else }}Campus highlight{{ end }}">
           <h3>{{ if $isZh }}校園亮點{{ else }}CAMPUS HIGHLIGHTS{{ end }}</h3>
           <div class="edu-v86-highlight"><span class="edu-v86-highlight-type">{{ if $isZh }}學生領導{{ else }}STUDENT LEADERSHIP{{ end }}</span>
             <strong>{{ if $isZh }}系學會會長 · 2023–2024{{ else }}President, Department Student Association · 2023–2024{{ end }}</strong>
@@ -113,30 +113,30 @@
 
   <aside class="credential-panel-v510 credential-panel-v514 credentials-v84 reveal">
     <span class="kicker">{{ if $isZh }}獲獎與專業資格{{ else }}HONORS &amp; CREDENTIALS{{ end }}</span>
-    <section class="credential-group-v514 credential-col-v84" aria-label="Professional license">
+    <section class="credential-group-v514 credential-col-v84" aria-label="{{ if $isZh }}專業執照{{ else }}Professional license{{ end }}">
       <div class="credential-col-heading-v84"><span class="credential-col-icon-v84" aria-hidden="true">01</span><h2>{{ if $isZh }}專業執照{{ else }}Professional License{{ end }}</h2></div>
       <ul class="credential-list-v84">
         <li><strong>{{ if $isZh }}醫事放射師{{ else }}Licensed Medical Radiation Technologist{{ end }}</strong><span>{{ if $isZh }}台灣衛生福利部 · 2024{{ else }}Taiwan Ministry of Health and Welfare · 2024{{ end }}</span></li>
       </ul>
     </section>
-    <section class="credential-group-v514 credential-col-v84" aria-label="Selected honors">
+    <section class="credential-group-v514 credential-col-v84" aria-label="{{ if $isZh }}精選獲獎{{ else }}Selected honors{{ end }}">
       <div class="credential-col-heading-v84"><span class="credential-col-icon-v84" aria-hidden="true">02</span><h2>{{ if $isZh }}精選獲獎{{ else }}Selected Honors{{ end }}</h2></div>
       <ul class="credential-list-v84">
-        <li><strong>{{ if $isZh }}傑出論文獎 · 第一名{{ else }}Outstanding Thesis Award · First Place{{ end }}</strong><span>NYCU · 2026</span></li>
-        <li><strong>Outstanding Oral Presentation</strong><span>AMLDS · 2026</span></li>
-        <li><strong>Honor Student Award</strong><span>NYCU · 2024</span></li>
-        <li><strong>Certificate of Excellence</strong><span>{{ if $isZh }}臺大醫院 · 臨床實習{{ else }}NTU Hospital · Clinical Internship{{ end }}</span></li>
+        <li><strong>{{ if $isZh }}傑出論文獎 · 第一名{{ else }}Outstanding Thesis Award · First Place{{ end }}</strong><span>{{ if $isZh }}陽明交大 · 2026{{ else }}NYCU · 2026{{ end }}</span></li>
+        <li><strong>{{ if $isZh }}傑出口頭報告獎{{ else }}Outstanding Oral Presentation{{ end }}</strong><span>AMLDS · 2026</span></li>
+        <li><strong>{{ if $isZh }}書卷獎{{ else }}Honor Student Award{{ end }}</strong><span>{{ if $isZh }}陽明交大 · 2024{{ else }}NYCU · 2024{{ end }}</span></li>
+        <li><strong>{{ if $isZh }}放射腫瘤科實習表現優異獎{{ else }}Certificate of Excellence{{ end }}</strong><span>{{ if $isZh }}臺大醫院 · 臨床實習{{ else }}NTU Hospital · Clinical Internship{{ end }}</span></li>
       </ul>
       <a class="credential-col-more-v84" href="{{ "research/" | relLangURL }}">{{ if $isZh }}查看研究與獎項{{ else }}Research &amp; recognition{{ end }} ↗</a>
     </section>
-    <section class="credential-group-v514 credential-col-v84" aria-label="Selected certifications">
+    <section class="credential-group-v514 credential-col-v84" aria-label="{{ if $isZh }}精選認證與訓練{{ else }}Selected certifications{{ end }}">
       <div class="credential-col-heading-v84"><span class="credential-col-icon-v84" aria-hidden="true">03</span><h2>{{ if $isZh }}精選認證與訓練{{ else }}Selected Certifications{{ end }}</h2></div>
       <ul class="credential-list-v84">
-        <li><strong>CS50’s Introduction to AI with Python</strong><span>Harvard CS50 · 2025</span><div class="credential-links-v84"><a href="https://cs50.harvard.edu/certificates/1d4e0491-7302-4f56-84c1-fffb139622ae" target="_blank" rel="noopener noreferrer">{{ if $isZh }}驗證證書{{ else }}Verify certificate{{ end }} ↗</a></div></li>
-        <li><strong>Google Ads Search &amp; Measurement</strong><span>Google Skillshop · 2026 · {{ if $isZh }}兩項認證{{ else }}Two certifications{{ end }}</span><div class="credential-links-v84"><a href="https://www.credential.net/81142a9a-5143-4e81-97be-9354d8667e3e" target="_blank" rel="noopener noreferrer">Search ↗</a><a href="https://www.credential.net/f2b46cae-5532-4190-80f1-9da00bf7dd7d" target="_blank" rel="noopener noreferrer">Measurement ↗</a></div></li>
-        <li><strong>Data Science Fundamentals with Python &amp; SQL</strong><span>IBM / Coursera · 2025 · Specialization</span><div class="credential-links-v84"><a href="https://www.coursera.org/verify/specialization/FJCM0NEN2YEI" target="_blank" rel="noopener noreferrer">{{ if $isZh }}驗證證書{{ else }}Verify certificate{{ end }} ↗</a></div></li>
-        <li><strong>IBM Relational Database Administrator</strong><span>IBM / Coursera · 2025 · Professional Certificate</span><div class="credential-links-v84"><a href="https://www.coursera.org/verify/professional-cert/TEEVL5E2DS84" target="_blank" rel="noopener noreferrer">{{ if $isZh }}驗證證書{{ else }}Verify certificate{{ end }} ↗</a></div></li>
-        <li><strong>Fundamentals of Visualization with Tableau</strong><span>UC Davis / Coursera · 2026</span><div class="credential-links-v84"><a href="https://www.coursera.org/verify/FSKBD3NK1OJD" target="_blank" rel="noopener noreferrer">{{ if $isZh }}驗證證書{{ else }}Verify certificate{{ end }} ↗</a></div></li>
+        <li><strong>{{ if $isZh }}CS50 Python 人工智慧入門{{ else }}CS50’s Introduction to AI with Python{{ end }}</strong><span>Harvard CS50 · 2025</span><div class="credential-links-v84"><a href="https://cs50.harvard.edu/certificates/1d4e0491-7302-4f56-84c1-fffb139622ae" target="_blank" rel="noopener noreferrer">{{ if $isZh }}驗證證書{{ else }}Verify certificate{{ end }} ↗</a></div></li>
+        <li><strong>{{ if $isZh }}Google Ads 搜尋廣告與成效評估{{ else }}Google Ads Search &amp; Measurement{{ end }}</strong><span>Google Skillshop · 2026 · {{ if $isZh }}兩項認證{{ else }}Two certifications{{ end }}</span><div class="credential-links-v84"><a href="https://www.credential.net/81142a9a-5143-4e81-97be-9354d8667e3e" target="_blank" rel="noopener noreferrer">{{ if $isZh }}搜尋廣告證書{{ else }}Search{{ end }} ↗</a><a href="https://www.credential.net/f2b46cae-5532-4190-80f1-9da00bf7dd7d" target="_blank" rel="noopener noreferrer">{{ if $isZh }}成效評估證書{{ else }}Measurement{{ end }} ↗</a></div></li>
+        <li><strong>{{ if $isZh }}Python 與 SQL 資料科學基礎{{ else }}Data Science Fundamentals with Python &amp; SQL{{ end }}</strong><span>IBM / Coursera · 2025 · {{ if $isZh }}專項課程{{ else }}Specialization{{ end }}</span><div class="credential-links-v84"><a href="https://www.coursera.org/verify/specialization/FJCM0NEN2YEI" target="_blank" rel="noopener noreferrer">{{ if $isZh }}驗證證書{{ else }}Verify certificate{{ end }} ↗</a></div></li>
+        <li><strong>{{ if $isZh }}IBM 關聯式資料庫管理專業證書{{ else }}IBM Relational Database Administrator{{ end }}</strong><span>IBM / Coursera · 2025 · {{ if $isZh }}專業證書{{ else }}Professional Certificate{{ end }}</span><div class="credential-links-v84"><a href="https://www.coursera.org/verify/professional-cert/TEEVL5E2DS84" target="_blank" rel="noopener noreferrer">{{ if $isZh }}驗證證書{{ else }}Verify certificate{{ end }} ↗</a></div></li>
+        <li><strong>{{ if $isZh }}Tableau 資料視覺化基礎{{ else }}Fundamentals of Visualization with Tableau{{ end }}</strong><span>UC Davis / Coursera · 2026</span><div class="credential-links-v84"><a href="https://www.coursera.org/verify/FSKBD3NK1OJD" target="_blank" rel="noopener noreferrer">{{ if $isZh }}驗證證書{{ else }}Verify certificate{{ end }} ↗</a></div></li>
       </ul>
       <p class="credential-note-v84">{{ if $isZh }}僅展示與產品、AI 及數據分析相關的精選證書。{{ else }}Curated credentials relevant to product, AI, and analytics.{{ end }}</p>
     </section>

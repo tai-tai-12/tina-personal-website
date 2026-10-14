@@ -1,5 +1,5 @@
 ---
-title: 設計不只看 Accuracy 的 AI 評估
+title: 設計不只看準確率的 AI 評估
 translationKey: clinical-ai-at-scale
 tags:
 - Machine Learning
@@ -68,36 +68,36 @@ navItems:
 <span id="role"></span>
 ## 我的角色與研究範圍
 
-作為 Research Assistant / Project Lead，我負責腦部影像模型開發與評估、臨床資料處理、錯誤模式分析，以及向臨床與國際研究場合傳達技術結果。
+作為研究助理與專案負責人，我負責腦部影像模型開發與評估、臨床資料處理、錯誤模式分析，以及向臨床與國際研究場合傳達技術結果。
 
 <div class="case-proof-grid technical-scope-grid">
   <div class="case-proof"><strong>12,125</strong><span>模型開發用 MRI 病例</span><small>23,341 個標註腫瘤病灶</small></div>
-  <div class="case-proof"><strong>132 / 132</strong><span>陽性／陰性病例</span><small>平衡的獨立測試 cohort</small></div>
+  <div class="case-proof"><strong>132 / 132</strong><span>陽性／陰性病例</span><small>正負樣本平衡的獨立測試組</small></div>
   <div class="case-proof"><strong>2</strong><span>醫療中心</span><small>Taipei VGH · Taichung VGH</small></div>
 </div>
 
 開發資料用於模型訓練、內部驗證及決策閾值評估；**獨立臨床測試資料**則保留作為最終端到端評估。
 
-<figure class="case-visual case-visual-vector">{{< site-img src="images/projects/detail-v521/clinical-cascade-v521.webp" alt="逐病灶 AI 三階段評估流程" >}}<figcaption><strong>Evaluation framework.</strong> Stage 0 建立高敏感度候選池，Stage 1 移除明顯偽陽性，Stage 2 處理剩餘偽陽性並進行保留病灶分類。</figcaption></figure>
+<figure class="case-visual case-visual-vector">{{< site-img src="images/projects/detail-v521/clinical-cascade-v521.webp" alt="逐病灶 AI 三階段評估流程" >}}<figcaption><strong>評估流程：</strong> 第 0 階段建立高敏感度候選池，第 1 階段移除明顯偽陽性，第 2 階段處理剩餘偽陽性並進行保留病灶分類。</figcaption></figure>
 
 <span id="evaluation"></span>
-## 不只看 headline accuracy
+## 不只看表面準確率
 
-評估設計刻意分離 development 與 independent clinical testing，並把 lesion-wise sensitivity 與 FP/scan、precision 一起解讀，同時分析 deleted true positives 與 residual false positives；腫瘤分類結果只在保留的 true-positive lesions 上計算。
+評估設計刻意分離 模型開發資料與獨立臨床測試，並把 逐病灶敏感度、每張影像的偽陽性數量及精確率 一起解讀，同時分析 遭移除的真陽性病灶與剩餘偽陽性；腫瘤分類結果只在保留的 真陽性病灶 上計算。
 
 <div class="case-metrics case-metrics-v524">
-  <div class="case-metric"><strong>80.97%&nbsp;</strong><span>Lesion-wise sensitivity</span><small>Independent test cohort</small></div>
-  <div class="case-metric"><strong>0.21&nbsp;</strong><span>False positives / scan</span><small>完整 cascade 後</small></div>
-  <div class="case-metric"><strong>76.89%&nbsp;</strong><span>Lesion-wise precision</span><small>Final cascade output</small></div>
-  <div class="case-metric"><strong>90.16%&nbsp;</strong><span>Five-class accuracy</span><small>Retained true-positive lesions</small></div>
+  <div class="case-metric"><strong>80.97%&nbsp;</strong><span>逐病灶敏感度</span><small>獨立測試組</small></div>
+  <div class="case-metric"><strong>0.21&nbsp;</strong><span>每張影像的偽陽性數量</span><small>完整級聯流程後</small></div>
+  <div class="case-metric"><strong>76.89%&nbsp;</strong><span>逐病灶精確率</span><small>完整級聯 output</small></div>
+  <div class="case-metric"><strong>90.16%&nbsp;</strong><span>五類腫瘤分類準確率</span><small>Retained 真陽性病灶</small></div>
 </div>
 
 <p class="clinical-key-outcome-v82"><strong>偽陽性候選從 1,007 降至 55（−94.54%）。</strong>降低判讀負擔的同時，逐病灶敏感度也有實際下降，因此下方並列呈現兩項結果。</p>
 
 <section class="clinical-tradeoff-v81" aria-labelledby="tradeoff-title-v81">
-  <div class="clinical-tradeoff-heading-v81"><span>效能取捨 · 同一組 264 例回溯性獨立測試</span><h3 id="tradeoff-title-v81">降低大量誤報，也必須呈現 sensitivity 的代價。</h3><p>與 Stage-0 候選池相比，完整 cascade 大幅減少偽陽性檢閱負擔，但同時額外損失九個真陽性病灶。這兩個方向都是模型評估的重要部分。</p></div>
-  <div class="clinical-tradeoff-pair-v81"><div><span>每例偽陽性 FP/SCAN</span><div class="tradeoff-comparison-v81"><span class="tradeoff-value-v81">Stage 0 <strong>3.81</strong></span><div class="tradeoff-line-v81"><i style="width:100%"></i></div><span class="tradeoff-value-v81">Full cascade <strong>0.21</strong></span><div class="tradeoff-line-v81"><i style="width:5.51%"></i></div></div><b>偽陽性候選減少 94.54%</b></div><div><span>逐病灶敏感度 SENSITIVITY</span><div class="tradeoff-comparison-v81"><span class="tradeoff-value-v81">Stage 0 <strong>84.96%</strong></span><div class="tradeoff-line-v81"><i style="width:84.96%"></i></div><span class="tradeoff-value-v81">Full cascade <strong>80.97%</strong></span><div class="tradeoff-line-v81"><i style="width:80.97%"></i></div></div><b>下降 3.99 個百分點</b></div></div>
-  <p class="clinical-tradeoff-source-v81">資料來源：最終碩士論文、264 例回溯性 MRI 測試（226 個標註病灶）。此為研究評估，並非前瞻性臨床成效研究；最終 precision 為 76.89%，Stage 0 為 16.01%。</p>
+  <div class="clinical-tradeoff-heading-v81"><span>效能取捨 · 同一組 264 例回溯性獨立測試</span><h3 id="tradeoff-title-v81">降低大量誤報，也必須呈現 敏感度下降的代價。</h3><p>與 第 0 階段候選池相比，完整級聯流程大幅減少偽陽性檢閱負擔，但同時額外損失九個真陽性病灶。這兩個方向都是模型評估的重要部分。</p></div>
+  <div class="clinical-tradeoff-pair-v81"><div><span>每例偽陽性 每張影像偽陽性數</span><div class="tradeoff-comparison-v81"><span class="tradeoff-value-v81">第 0 階段 <strong>3.81</strong></span><div class="tradeoff-line-v81"><i style="width:100%"></i></div><span class="tradeoff-value-v81">Full cascade <strong>0.21</strong></span><div class="tradeoff-line-v81"><i style="width:5.51%"></i></div></div><b>偽陽性候選減少 94.54%</b></div><div><span>逐病灶敏感度 敏感度</span><div class="tradeoff-comparison-v81"><span class="tradeoff-value-v81">第 0 階段 <strong>84.96%</strong></span><div class="tradeoff-line-v81"><i style="width:84.96%"></i></div><span class="tradeoff-value-v81">Full cascade <strong>80.97%</strong></span><div class="tradeoff-line-v81"><i style="width:80.97%"></i></div></div><b>下降 3.99 個百分點</b></div></div>
+  <p class="clinical-tradeoff-source-v81">資料來源：最終碩士論文、264 例回溯性 MRI 測試（226 個標註病灶）。此為研究評估，並非前瞻性臨床成效研究；最終 精確率為 76.89%，第 0 階段 為 16.01%。</p>
 </section>
 
 <span id="engineering"></span>

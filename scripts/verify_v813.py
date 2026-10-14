@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Deployment checks for full-replacement V8.12 Hugo source; run before build."""
+"""Deployment checks for full-replacement V8.13 Hugo source; run before build."""
 from pathlib import Path
 import hashlib, re, sys, xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parent.parent
@@ -13,13 +13,13 @@ head=read('layouts/partials/head.html');base=read('layouts/_default/baseof.html'
 home=read('layouts/index.html');work=read('layouts/work/list.html');research=read('layouts/research/list.html')
 nav=read('layouts/partials/header.html');about=read('layouts/about/single.html')
 aorta=read('layouts/research/single.html');exp=read('layouts/experience/single.html')
-css=read('static/css/portfolio-v812.css');homecss=read('static/css/home-v812.css')
+css=read('static/css/portfolio-v813.css');homecss=read('static/css/home-v813.css')
 workflow=read('.github/workflows/hugo.yaml')
-ck('content="8.12"' in head,'V8.12 meta marker')
-ck('data-portfolio-version="8.12"' in base,'V8.12 page marker')
-ck('portfolio-v812.css' in head and 'home-v812.css' in head,'versioned CSS entrypoints')
-ck('?v=8.12.0' in head and '?v=8.12.0' in base,'CSS/JS cache bust')
-ck('scripts/verify_v812.py' in workflow,'CI validation')
+ck('content="8.13"' in head,'V8.13 meta marker')
+ck('data-portfolio-version="8.13"' in base,'V8.13 page marker')
+ck('portfolio-v813.css' in head and 'home-v813.css' in head,'versioned CSS entrypoints')
+ck('?v=8.13.0' in head and '?v=8.13.0' in base,'CSS/JS cache bust')
+ck('scripts/verify_v813.py' in workflow,'CI validation')
 ck('hugo build' in workflow,'Hugo build action')
 ck('2026 Future Tech Award' in home and 'NYCU project recognition' in home,'award attribution')
 ck('IMG_9931' not in home,'excluded award photo')
@@ -90,7 +90,7 @@ if source.is_file():
  ck(hashlib.sha256(resume.read_bytes()).digest()==hashlib.sha256(source.read_bytes()).digest(),'latest resume unchanged')
 ck((ROOT/'.github/workflows/hugo.yaml').is_file(),'hidden GitHub workflow included')
 
-# V8.12 accuracy: consortium work and third-party reports are the same assignment.
+# V8.13 accuracy: consortium work and third-party reports are the same assignment.
 for lang in ('en','zh'):
     c=read(f'content/{lang}/work/structured-validation.md')
     ck('xray-testing-evidence-v89.svg' in c and 'xray-tube-testing-hero-v89.svg' in c, f'{lang} new original X-ray visuals')
@@ -114,7 +114,7 @@ for name in ('testing-hero-v521.webp','testing-measurement-v521.webp','work-test
     ck(not any(x.name==name for x in (ROOT/'static').rglob('*')), 'outdated misleading visual removed '+name)
 
 
-# V8.12: conservatively scoped client engagement and recruiter-readable presentation.
+# V8.13: conservatively scoped client engagement and recruiter-readable presentation.
 for lang in ('en','zh'):
     case=read(f'content/{lang}/work/structured-validation.md')
     ck(('professor' in case.lower() if lang=='en' else '教授' in case), f'{lang} origin of company introduction explicit')
@@ -137,7 +137,22 @@ ck('{{ if $isZh }}家醫療中心{{ else }}medical centers{{ end }}' in research
 ck('模型開發用 MRI 病例' in read('content/zh/work/clinical-ai-at-scale.md'), 'clinical study cohort labels localized')
 ck('Graduation Ceremony Representative' in read('layouts/education/single.html'), 'ceremonial representative preserved')
 
-print(f'V8.12 offline source checks: {count-len(errors)}/{count} passed')
+# V8.13 localization and language-specific evidence rules.
+edu=read('layouts/education/single.html');home=read('layouts/index.html');honors=read('layouts/partials/experience-recognition-v86.html')
+for val in ('卡內基美隆大學','國立陽明交通大學','生醫光電研究所','生物醫學影像暨放射科學系','機器學習與生醫應用','磁振造影原理','書卷獎','傑出口頭報告獎','放射腫瘤科實習表現優異獎'):
+ ck(val in edu,'localized Education content: '+val)
+for val in ('國立陽明交通大學','卡內基美隆大學','傑出論文獎','第一作者 · 短論文海報發表','獲傑出口頭報告獎'):
+ ck(val in home,'localized homepage content: '+val)
+for val in ('書卷獎','Outstanding Oral Presentation','Honor Student Award'):
+ ck(val in edu,'bilingual original/reference: '+val)
+ck('放射腫瘤科實習表現優異獎' in honors,'individual award correct department')
+ck('傑出口頭報告獎' in research,'Research awards translated')
+ck('本次正式發表名稱維持英文' not in research,'original paper titles preserved without fabricated translation')
+ck('padding-top:clamp(36px,3.5vw,42px)' in homecss,'desktop homepage About baseline adjusted')
+ck('@media (max-width:770px)' in homecss,'mobile About alignment restored')
+ck('content="8.13"' in head,'release version 8.13')
+ck('Certificate of Excellence' in edu,'English award name preserved')
+print(f'V8.13 offline source checks: {count-len(errors)}/{count} passed')
 if errors:
  for error in errors: print('FAIL:',error)
  sys.exit(1)

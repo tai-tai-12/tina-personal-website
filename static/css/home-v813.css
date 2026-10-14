@@ -104,3 +104,12 @@
 .home-v87-case-media .evidence-v84-numbers{display:none}
 .home-v87-case-media .evidence-v84-steps{margin-bottom:5px}
 @media(max-width:560px){.home-v87-case .case-metrics-v88{margin:12px 0 8px}.home-v87-case-media .evidence-v84-title{font-size:1.02rem}}
+
+/* V8.13 — final closing section alignment: body copy begins at heading top on desktop. */
+@media (min-width:771px){
+  .home-v87-about-grid .home-v87-about-copy{padding-top:clamp(36px,3.5vw,42px);}
+  .home-v87-about-grid .home-v87-about-copy>p{margin-top:0;}
+}
+@media (max-width:770px){
+  .home-v87-about-grid .home-v87-about-copy{padding-top:0;}
+}

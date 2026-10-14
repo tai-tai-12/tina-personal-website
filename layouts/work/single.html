@@ -29,7 +29,7 @@
   <section class="case-brief-v526" aria-label="Project brief">
     <div class="case-brief-shell-v526">
       <div class="case-brief-heading-v526">
-        <span>{{ if eq $.Lang "zh" }}AT A GLANCE · 重點摘要{{ else }}AT A GLANCE{{ end }}</span>
+        <span>{{ if eq $.Lang "zh" }}重點摘要{{ else }}AT A GLANCE{{ end }}</span>
       </div>
       <div class="case-brief-grid-v526">
         {{ range . }}
@@ -43,7 +43,7 @@
   <div class="case-reading-shell-v526">
     <aside class="case-margin-nav-v526" aria-label="Case study navigation">
       <div class="case-margin-nav-inner-v526">
-        <span class="case-margin-nav-label-v526">{{ if eq .Lang "zh" }}CASE STUDY · 導覽{{ else }}CASE STUDY{{ end }}</span>
+        <span class="case-margin-nav-label-v526">{{ if eq .Lang "zh" }}案例導覽{{ else }}CASE STUDY{{ end }}</span>
         {{ with .Params.navItems }}
         <nav><ul>{{ range . }}<li><a href="#{{ .id }}">{{ .label }}</a></li>{{ end }}</ul></nav>
         {{ else }}{{ $.TableOfContents }}{{ end }}
@@ -54,7 +54,7 @@
 
   <footer class="case-related-v526">
     <div class="case-related-shell-v526">
-      <span class="case-related-label-v526">{{ if eq .Lang "zh" }}CONTINUE EXPLORING · 繼續探索{{ else }}CONTINUE EXPLORING{{ end }}</span>
+      <span class="case-related-label-v526">{{ if eq .Lang "zh" }}繼續探索{{ else }}CONTINUE EXPLORING{{ end }}</span>
       <div class="case-related-grid-v526">
         {{ with .Params.relatedPrevURL }}<a href="{{ . | relLangURL }}"><small>← {{ if eq $.Lang "zh" }}上一個專案{{ else }}Previous project{{ end }}</small><strong>{{ $.Params.relatedPrevTitle }}</strong></a>{{ end }}
         {{ with .Params.relatedNextURL }}<a href="{{ . | relLangURL }}"><small>{{ if eq $.Lang "zh" }}下一個專案{{ else }}Next project{{ end }} →</small><strong>{{ $.Params.relatedNextTitle }}</strong></a>{{ end }}

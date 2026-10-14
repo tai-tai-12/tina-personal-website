@@ -4,24 +4,24 @@ translationKey: "experience"
 contextLabel: "職涯軌跡"
 ---
 
-## AITEWAN Biomedical Technology
-**Product Manager · 2024/07 – 2026/06 · 台北**
+## AITEWAN Biomedical Technology（愛智威生醫）
+**產品經理 · 2024/07 – 2026/06 · 台北**
 
-負責 AI 輔助腦瘤產品的持續醫師需求探索、技術產品取捨、release planning 與法規執行，工作橫跨兩家醫療中心。參與開發的 NYCU DeepBT A+ 團隊專案獲 2026 Future Tech Award（未來科技獎）。
+負責 AI 輔助腦瘤產品的持續醫師需求探索、技術產品取捨、版本規劃 與法規執行，工作橫跨兩家醫療中心。參與開發的 NYCU DeepBT A+ 團隊專案獲 2026 未來科技獎。
 
 [AITEWAN 公司官網 ↗](https://www.aitewan-bio.com/en/)
 
-## NYCU — AI in Medical Imaging Lab
-**Research Assistant / Project Lead · 2023/02 – 2026/06 · 台北**
+## 國立陽明交通大學 — 醫學影像人工智慧實驗室
+**研究助理／專案負責人 · 2023/02 – 2026/06 · 台北**
 
 將臨床 AI 研究轉化為兩家醫療中心可使用的工作流程，領導腦部與心臟影像專案，並於國際場合發表研究成果。
 
-## National Taiwan University Hospital — Department of Radiology
-**Clinical Intern · 2023/07 – 2024/01 · 台北**
+## 國立臺灣大學醫學院附設醫院 — 影像醫學部
+**臨床實習生 · 2023/07 – 2024/01 · 台北**
 
 完成 1,040 小時（26 週）臨床實習，輪訓診斷影像、放射腫瘤與核子醫學，並獲得實習優良證明。
 
-## NYCU — Biomedical Imaging Physics & Instrumentation Lab
-**Test Manager / Research Assistant · 2021/06 – 2023/02 · 台北**
+## 國立陽明交通大學 — 生物醫學影像物理與儀器實驗室
+**檢測管理／研究助理 · 2021/06 – 2023/02 · 台北**
 
 擔任游離輻射產學技術聯盟專責研究助理，親自接待客戶、執行 X 光球管測試、產出第三方報告與招募會員，並另行開發由兩個大學實驗室採用的 MATLAB 小動物 CT 骨密度分析工具。

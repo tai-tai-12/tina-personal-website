@@ -12,13 +12,13 @@
       <p class="home-v87-intro">{{ if $isZh }}從醫療影像與 AI 研究出發，累積臨床產品開發及跨團隊執行經驗；現在於 CMU Tepper 進一步深化商業分析能力。{{ else }}From medical imaging and AI research to clinical product delivery, I connect user needs, analytical rigor, and cross-functional execution. Now pursuing an M.S. in Business Analytics at CMU Tepper.{{ end }}</p>
       <div class="home-v87-hero-actions">
         <a class="btn primary-blue" href="#work">{{ if $isZh }}探索精選案例{{ else }}Explore Selected Work{{ end }} <span aria-hidden="true">↓</span></a>
-        <a class="btn secondary-clean" href="{{ .Site.Params.resume | relURL }}" target="_blank" rel="noopener noreferrer">Resume <span aria-hidden="true">↗</span></a>
+        <a class="btn secondary-clean" href="{{ .Site.Params.resume | relURL }}" target="_blank" rel="noopener noreferrer">{{ if $isZh }}英文履歷{{ else }}Resume{{ end }} <span aria-hidden="true">↗</span></a>
       </div>
-      <div class="home-v87-hero-meta"><span>CMU Tepper MSBA · 2027</span><span class="home-v87-meta-dot" aria-hidden="true"></span><span>{{ if $isZh }}醫療 AI 產品經驗{{ else }}Medical AI product experience{{ end }}</span></div>
+      <div class="home-v87-hero-meta"><span>{{ if $isZh }}卡內基美隆大學 · 商業分析碩士 · 2027{{ else }}CMU Tepper MSBA · 2027{{ end }}</span><span class="home-v87-meta-dot" aria-hidden="true"></span><span>{{ if $isZh }}醫療 AI 產品經驗{{ else }}Medical AI product experience{{ end }}</span></div>
     </div>
     <figure class="home-v87-portrait reveal delay-1">
       <img src="{{ "images/profile/tina-homepage-portrait-v530.webp" | relURL }}" alt="{{ if $isZh }}Tina Tai 的專業肖像照{{ else }}Professional portrait of Tina Tai{{ end }}" width="960" height="1200" loading="eager" fetchpriority="high" decoding="async">
-      <figcaption>PRODUCT · EVIDENCE · PEOPLE</figcaption>
+      <figcaption>{{ if $isZh }}產品 · 證據 · 合作{{ else }}PRODUCT · EVIDENCE · PEOPLE{{ end }}</figcaption>
     </figure>
   </div>
 </section>
@@ -38,7 +38,7 @@
           {{ partial "work-evidence-visual-v84.html" (dict "Kind" "product" "Page" .) }}
         </a>
         <div class="home-v87-case-copy">
-          <span class="home-v87-case-label">01 <span aria-hidden="true">/</span> PRODUCT MANAGEMENT · AI</span>
+          <span class="home-v87-case-label">01 <span aria-hidden="true">/</span> {{ if $isZh }}產品管理 · AI{{ else }}PRODUCT MANAGEMENT · AI{{ end }}</span>
           <h3><a href="{{ "work/medical-ai-product/" | relLangURL }}">{{ if $isZh }}在真實臨床限制下推進醫療 AI 產品{{ else }}Shipping Medical AI Under Real Clinical Constraints{{ end }}</a></h3>
           <p>{{ if $isZh }}從醫師需求探索到模型與時程取捨，將 AI 研究成果推進實際臨床產品工作流程。{{ else }}From physician discovery to model and release trade-offs, moving AI research into a practical clinical product workflow.{{ end }}</p>
           {{ partial "case-metrics-v88.html" (dict "Metrics" (slice (dict "value" "~67%" "label" (cond $isZh "處理時間縮短" "Faster processing")) (dict "value" "5" "label" (cond $isZh "醫師使用者" "Physician users")) (dict "value" "2" "label" (cond $isZh "醫療中心" "Medical centers"))) "Class" "home-v88-metrics" "IsZh" $isZh) }}
@@ -51,8 +51,8 @@
           {{ partial "work-evidence-visual-v84.html" (dict "Kind" "clinical" "Page" .) }}
         </a>
         <div class="home-v87-case-copy">
-          <span class="home-v87-case-label">02 <span aria-hidden="true">/</span> AI EVALUATION · RESEARCH</span>
-          <h3><a href="{{ "work/clinical-ai-at-scale/" | relLangURL }}">{{ if $isZh }}設計不只看 Accuracy 的 AI 評估{{ else }}Designing AI Evaluation Beyond Accuracy{{ end }}</a></h3>
+          <span class="home-v87-case-label">02 <span aria-hidden="true">/</span> {{ if $isZh }}AI 評估 · 研究{{ else }}AI EVALUATION · RESEARCH{{ end }}</span>
+          <h3><a href="{{ "work/clinical-ai-at-scale/" | relLangURL }}">{{ if $isZh }}設計不只看準確率的 AI 評估{{ else }}Designing AI Evaluation Beyond Accuracy{{ end }}</a></h3>
           <p>{{ if $isZh }}評估 AI 如何減少錯誤提示，同時衡量是否因此漏掉更多真實病灶，並以獨立 MRI 測試驗證結果。{{ else }}Evaluated how to reduce false AI alarms without overlooking the trade-off: potentially missing more real lesions, using independent MRI testing.{{ end }}</p>
           {{ partial "case-metrics-v88.html" (dict "Metrics" (slice (dict "value" "94.5%" "label" (cond $isZh "錯誤候選減少" "Fewer false alarms")) (dict "value" "264" "label" (cond $isZh "獨立 MRI 測試" "Independent MRI cases")) (dict "value" "90.16%" "label" (cond $isZh "已正確偵測病灶的五類分類準確率" "Tumor typing of correctly detected lesions"))) "Class" "home-v88-metrics" "IsZh" $isZh) }}
           <a class="home-v87-case-cta" href="{{ "work/clinical-ai-at-scale/" | relLangURL }}">{{ if $isZh }}閱讀完整案例{{ else }}Read case study{{ end }} <span aria-hidden="true">↗</span></a>
@@ -63,7 +63,7 @@
           {{ partial "work-evidence-visual-v84.html" (dict "Kind" "validation" "Page" .) }}
         </a>
         <div class="home-v87-case-copy">
-          <span class="home-v87-case-label">03 <span aria-hidden="true">/</span> VALIDATION · OPERATIONS</span>
+          <span class="home-v87-case-label">03 <span aria-hidden="true">/</span> {{ if $isZh }}檢測驗證 · 客戶營運{{ else }}VALIDATION · OPERATIONS{{ end }}</span>
           <h3><a href="{{ "work/structured-validation/" | relLangURL }}">{{ if $isZh }}執行面向客戶的技術驗證作業{{ else }}Running Client-Facing Validation Operations{{ end }}</a></h3>
           <p>{{ if $isZh }}教授先建立企業初步聯繫，我負責後續服務與合約協調、客戶接待、X 光球管檢測及第三方報告。{{ else }}Followed up on professor-introduced industry contacts, coordinated agreements, and personally delivered X-ray tube testing and reports.{{ end }}</p>
           {{ partial "case-metrics-v88.html" (dict "Metrics" (slice (dict "value" "8" "label" (cond $isZh "受測產品" "Products tested")) (dict "value" "10+" "label" (cond $isZh "正式報告" "Reports")) (dict "value" "5" "label" (cond $isZh "客戶" "Client organizations"))) "Class" "home-v88-metrics" "IsZh" $isZh) }}
@@ -84,10 +84,10 @@
       <a class="home-v87-secondary-link" href="{{ "experience/" | relLangURL }}">{{ if $isZh }}完整經歷{{ else }}Full experience{{ end }} <span aria-hidden="true">↗</span></a>
     </div>
     <div class="home-v87-xp-list reveal">
-      <a href="{{ "experience/" | relLangURL }}#xp-v86-aitewan-title" class="home-v87-xp-row"><time>2024–2026</time><div><strong>Product Manager</strong><span>AITEWAN Biomedical Technology</span></div><p>{{ if $isZh }}醫師需求探索、AI 處理流程優化與產品發佈決策{{ else }}Physician discovery, AI workflow optimization, and release decisions{{ end }}</p><span class="home-v87-row-arrow" aria-hidden="true">↗</span></a>
-      <a href="{{ "experience/" | relLangURL }}#xp-v86-research-title" class="home-v87-xp-row"><time>2023–2026</time><div><strong>Research Assistant / Project Lead</strong><span>NYCU · AI in Medical Imaging Lab</span></div><p>{{ if $isZh }}腦瘤 MRI AI、跨中心評估及研究成果發表{{ else }}Brain-tumor MRI AI, multi-center evaluation, and publications{{ end }}</p><span class="home-v87-row-arrow" aria-hidden="true">↗</span></a>
-      <a href="{{ "experience/" | relLangURL }}#xp-v86-clinical-title" class="home-v87-xp-row"><time>2023–2024</time><div><strong>Clinical Intern</strong><span>National Taiwan University Hospital</span></div><p>{{ if $isZh }}1,040 小時臨床實習與 Certificate of Excellence{{ else }}1,040 clinical hours and Certificate of Excellence{{ end }}</p><span class="home-v87-row-arrow" aria-hidden="true">↗</span></a>
-      <a href="{{ "experience/" | relLangURL }}#xp-v86-bipi-title" class="home-v87-xp-row"><time>2021–2023</time><div><strong>Test Manager / Research Assistant</strong><span>NYCU · Biomedical Imaging Physics Lab</span></div><p>{{ if $isZh }}教授轉介企業後續聯繫、X 光球管實測與第三方報告；另有 CT 研究{{ else }}Industry follow-up, hands-on X-ray testing and reports; separate CT research{{ end }}</p><span class="home-v87-row-arrow" aria-hidden="true">↗</span></a>
+      <a href="{{ "experience/" | relLangURL }}#xp-v86-aitewan-title" class="home-v87-xp-row"><time>2024–2026</time><div><strong>{{ if $isZh }}產品經理{{ else }}Product Manager{{ end }}</strong><span>AITEWAN Biomedical Technology</span></div><p>{{ if $isZh }}醫師需求探索、AI 處理流程優化與產品發佈決策{{ else }}Physician discovery, AI workflow optimization, and release decisions{{ end }}</p><span class="home-v87-row-arrow" aria-hidden="true">↗</span></a>
+      <a href="{{ "experience/" | relLangURL }}#xp-v86-research-title" class="home-v87-xp-row"><time>2023–2026</time><div><strong>{{ if $isZh }}研究助理／專案負責人{{ else }}Research Assistant / Project Lead{{ end }}</strong><span>{{ if $isZh }}陽明交大 · 醫學影像人工智慧實驗室{{ else }}NYCU · AI in Medical Imaging Lab{{ end }}</span></div><p>{{ if $isZh }}腦瘤 MRI AI、跨中心評估及研究成果發表{{ else }}Brain-tumor MRI AI, multi-center evaluation, and publications{{ end }}</p><span class="home-v87-row-arrow" aria-hidden="true">↗</span></a>
+      <a href="{{ "experience/" | relLangURL }}#xp-v86-clinical-title" class="home-v87-xp-row"><time>2023–2024</time><div><strong>{{ if $isZh }}臨床實習生{{ else }}Clinical Intern{{ end }}</strong><span>{{ if $isZh }}國立臺灣大學醫學院附設醫院{{ else }}National Taiwan University Hospital{{ end }}</span></div><p>{{ if $isZh }}1,040 小時臨床實習 · 放射腫瘤科表現優異獎{{ else }}1,040 clinical hours and Certificate of Excellence{{ end }}</p><span class="home-v87-row-arrow" aria-hidden="true">↗</span></a>
+      <a href="{{ "experience/" | relLangURL }}#xp-v86-bipi-title" class="home-v87-xp-row"><time>2021–2023</time><div><strong>{{ if $isZh }}檢測管理／研究助理{{ else }}Test Manager / Research Assistant{{ end }}</strong><span>{{ if $isZh }}陽明交大 · 生物醫學影像物理與儀器實驗室{{ else }}NYCU · Biomedical Imaging Physics Lab{{ end }}</span></div><p>{{ if $isZh }}教授轉介企業後續聯繫、X 光球管實測與第三方報告；另有 CT 研究{{ else }}Industry follow-up, hands-on X-ray testing and reports; separate CT research{{ end }}</p><span class="home-v87-row-arrow" aria-hidden="true">↗</span></a>
     </div>
   </div>
 </section>
@@ -104,11 +104,11 @@
     <div class="home-v87-research-grid reveal">
       <a class="home-v87-research-card" href="{{ "research/" | relLangURL }}">
         <figure><img src="{{ "images/research/midl-poster.webp" | relURL }}" alt="{{ if $isZh }}Tina Tai 於 MIDL 2026 發表腦瘤 AI 海報{{ else }}Tina Tai presenting a brain-tumor AI poster at MIDL 2026{{ end }}" loading="lazy" decoding="async"></figure>
-        <div><span>MIDL · 2026</span><strong>{{ if $isZh }}第一作者 · Short Paper Poster{{ else }}First-Author Short Paper Poster{{ end }}</strong><p>{{ if $isZh }}腦瘤 AI 的逐病灶辨識與分類{{ else }}Lesion-wise brain tumor AI{{ end }}</p></div><span class="home-v87-card-arrow" aria-hidden="true">↗</span>
+        <div><span>MIDL · 2026</span><strong>{{ if $isZh }}第一作者 · 短論文海報發表{{ else }}First-Author Short Paper Poster{{ end }}</strong><p>{{ if $isZh }}腦瘤 AI 的逐病灶辨識與分類{{ else }}Lesion-wise brain tumor AI{{ end }}</p></div><span class="home-v87-card-arrow" aria-hidden="true">↗</span>
       </a>
       <a class="home-v87-research-card" href="{{ "research/" | relLangURL }}">
         <figure><img src="{{ "images/research/amlds-talk.webp" | relURL }}" alt="{{ if $isZh }}Tina Tai 於 AMLDS 2026 發表口頭論文{{ else }}Tina Tai giving an oral presentation at AMLDS 2026{{ end }}" loading="lazy" decoding="async"></figure>
-        <div><span>AMLDS · 2026</span><strong>{{ if $isZh }}第一作者 · Outstanding Oral Presentation{{ else }}First-Author Oral Presentation{{ end }}</strong><p>{{ if $isZh }}獲 Outstanding Oral Presentation Award{{ else }}Outstanding Oral Presentation Award{{ end }}</p></div><span class="home-v87-card-arrow" aria-hidden="true">↗</span>
+        <div><span>AMLDS · 2026</span><strong>{{ if $isZh }}第一作者 · 傑出口頭報告{{ else }}First-Author Oral Presentation{{ end }}</strong><p>{{ if $isZh }}獲傑出口頭報告獎{{ else }}Outstanding Oral Presentation Award{{ end }}</p></div><span class="home-v87-card-arrow" aria-hidden="true">↗</span>
       </a>
     </div>
   </div>
@@ -124,9 +124,9 @@
       <a class="home-v87-secondary-link" href="{{ "education/" | relLangURL }}">{{ if $isZh }}學歷與證書{{ else }}Education & credentials{{ end }} <span aria-hidden="true">↗</span></a>
     </div>
     <div class="home-v87-education-list reveal">
-      <a href="{{ "education/" | relLangURL }}" class="home-v87-education-row"><time>2026–2027</time><div><strong>Carnegie Mellon University</strong><span>{{ if $isZh }}商業分析碩士 · Tepper School of Business{{ else }}M.S. Business Analytics · Tepper School of Business{{ end }}</span><small>{{ if $isZh }}MSBA Student Ambassador · 預計 2027 畢業{{ else }}MSBA Student Ambassador · Expected 2027{{ end }}</small></div><span aria-hidden="true">↗</span></a>
-      <a href="{{ "education/" | relLangURL }}" class="home-v87-education-row"><time>2024–2026</time><div><strong>National Yang Ming Chiao Tung University</strong><span>{{ if $isZh }}生醫光電碩士{{ else }}M.S. Biophotonics{{ end }}</span><small>{{ if $isZh }}Outstanding Thesis Award · 第一名{{ else }}Outstanding Thesis Award · First Place{{ end }}</small></div><span aria-hidden="true">↗</span></a>
-      <a href="{{ "education/" | relLangURL }}" class="home-v87-education-row"><time>2020–2024</time><div><strong>National Yang Ming Chiao Tung University</strong><span>{{ if $isZh }}醫學影像暨放射科學學士 · 生醫工程輔系{{ else }}B.S. Biomedical Imaging & Radiological Sciences · Minor in Biomedical Engineering{{ end }}</span><small>{{ if $isZh }}系學會會長 · 醫療影像技術基礎{{ else }}Department Student Association President · Clinical foundations{{ end }}</small></div><span aria-hidden="true">↗</span></a>
+      <a href="{{ "education/" | relLangURL }}" class="home-v87-education-row"><time>2026–2027</time><div><strong>{{ if $isZh }}卡內基美隆大學{{ else }}Carnegie Mellon University{{ end }}</strong><span>{{ if $isZh }}商業分析碩士 · Tepper 商學院{{ else }}M.S. Business Analytics · Tepper School of Business{{ end }}</span><small>{{ if $isZh }}MSBA 學生大使 · 預計 2027 年畢業{{ else }}MSBA Student Ambassador · Expected 2027{{ end }}</small></div><span aria-hidden="true">↗</span></a>
+      <a href="{{ "education/" | relLangURL }}" class="home-v87-education-row"><time>2024–2026</time><div><strong>{{ if $isZh }}國立陽明交通大學{{ else }}National Yang Ming Chiao Tung University{{ end }}</strong><span>{{ if $isZh }}生醫光電碩士{{ else }}M.S. Biophotonics{{ end }}</span><small>{{ if $isZh }}傑出論文獎 · 第一名{{ else }}Outstanding Thesis Award · First Place{{ end }}</small></div><span aria-hidden="true">↗</span></a>
+      <a href="{{ "education/" | relLangURL }}" class="home-v87-education-row"><time>2020–2024</time><div><strong>{{ if $isZh }}國立陽明交通大學{{ else }}National Yang Ming Chiao Tung University{{ end }}</strong><span>{{ if $isZh }}生物醫學影像暨放射科學學士 · 生物醫學工程輔系{{ else }}B.S. Biomedical Imaging & Radiological Sciences · Minor in Biomedical Engineering{{ end }}</span><small>{{ if $isZh }}系學會會長 · 醫療影像技術基礎{{ else }}Department Student Association President · Clinical foundations{{ end }}</small></div><span aria-hidden="true">↗</span></a>
     </div>
   </div>
 </section>

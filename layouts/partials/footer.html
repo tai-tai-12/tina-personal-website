@@ -3,14 +3,14 @@
   <div class="shell footer-grid footer-grid-v524 footer-grid-v525">
     <div class="footer-identity-v524 footer-identity-v525">
       <strong>Tina Tai</strong>
-      <div class="footer-contact-v524 footer-contact-v525" aria-label="Contact information">
-        <span class="footer-location-v525">{{ with .Site.Params.location }}{{ replace . ", USA" "" }}{{ end }} · {{ if $isZh }}開放美國與台灣工作機會{{ else }}Open to U.S. &amp; Taiwan opportunities{{ end }}</span>
+      <div class="footer-contact-v524 footer-contact-v525" aria-label="{{ if $isZh }}聯絡資訊{{ else }}Contact information{{ end }}">
+        <span class="footer-location-v525">{{ if $isZh }}美國匹茲堡 · 開放美國與臺灣工作機會{{ else }}{{ with .Site.Params.location }}{{ replace . ", USA" "" }}{{ end }} · Open to U.S. &amp; Taiwan opportunities{{ end }}</span>
         <a class="footer-email-v525" href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
       </div>
     </div>
-    <nav class="footer-links" aria-label="Footer links">
+    <nav class="footer-links" aria-label="{{ if $isZh }}頁尾連結{{ else }}Footer links{{ end }}">
       <a class="footer-action-v62 footer-action-v64 footer-action-v7" href="{{ .Site.Params.linkedin }}" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-      <a class="footer-action-v62 footer-action-v64 footer-action-v7" href="{{ .Site.Params.resume | relURL }}" target="_blank" rel="noreferrer">Resume ↗</a>
+      <a class="footer-action-v62 footer-action-v64 footer-action-v7" href="{{ .Site.Params.resume | relURL }}" target="_blank" rel="noreferrer">{{ if $isZh }}英文履歷{{ else }}Resume{{ end }} ↗</a>
     </nav>
   </div>
   <div class="shell footer-note">© {{ now.Year }} Tina Tai</div>

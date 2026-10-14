@@ -6,7 +6,7 @@
     <div class="shell research-note-hero-grid-v63">
       <div class="reveal">
         <a class="research-note-back-v63" href="{{ "research/" | relLangURL }}">← {{ if $isZh }}所有研究{{ else }}All research{{ end }}</a>
-        <span class="research-note-eyebrow-v63">{{ if $isZh }}FOUNDATIONAL RESEARCH · NSTC{{ else }}FOUNDATIONAL RESEARCH · NSTC{{ end }}</span>
+        <span class="research-note-eyebrow-v63">{{ if $isZh }}國科會 · 基礎研究{{ else }}FOUNDATIONAL RESEARCH · NSTC{{ end }}</span>
         <h1>{{ .Title }}</h1>
         <p>{{ if $isZh }}從臨床 CT 資料出發，完成多類別分割、3D 重建與定量評估，建立我後續醫療 AI 研究的第一個端到端技術基礎。{{ else }}From clinical CT data to multi-class segmentation, 3D reconstruction, and quantitative evaluation—my first end-to-end foundation for later medical-AI work.{{ end }}</p>
         <div class="research-note-facts-v63" aria-label="Project results">
@@ -22,16 +22,16 @@
   <section class="section-shell research-note-section-v63"><div class="shell research-note-reading-v63">
     <div class="research-note-index-v63">01 · {{ if $isZh }}背景{{ else }}CONTEXT{{ end }}</div>
     <div><h2>{{ if $isZh }}第一次完整走完臨床影像 AI 研究流程。{{ else }}My first end-to-end clinical imaging AI research project.{{ end }}</h2>
-      <p>{{ if $isZh }}這項<strong>為期 8 個月、由國科會（NSTC）支持</strong>的大專生研究計畫，以 cardiovascular CT angiography 為主題，運用 <strong>3D U-Net</strong> 分析 308 例臨床 CT。我負責資料準備、模型開發、定量評估與成果簡報，也從這個專案開始建立把臨床影像問題轉成可驗證技術流程的能力。{{ else }}This <strong>eight-month NSTC-funded undergraduate research project</strong> used <strong>3D U-Net</strong> for thoracic-aorta segmentation across 308 clinical CT studies. I worked across data preparation, model development, quantitative evaluation, and presentation of findings—building the first full research workflow I later carried into larger medical-AI projects.{{ end }}</p></div>
+      <p>{{ if $isZh }}這項<strong>為期 8 個月、由國科會（NSTC）支持</strong>的大專生研究計畫，以 心血管電腦斷層血管攝影（CTA） 為主題，運用 <strong>3D U-Net</strong> 分析 308 例臨床 CT。我負責資料準備、模型開發、定量評估與成果簡報，也從這個專案開始建立把臨床影像問題轉成可驗證技術流程的能力。{{ else }}This <strong>eight-month NSTC-funded undergraduate research project</strong> used <strong>3D U-Net</strong> for thoracic-aorta segmentation across 308 clinical CT studies. I worked across data preparation, model development, quantitative evaluation, and presentation of findings—building the first full research workflow I later carried into larger medical-AI projects.{{ end }}</p></div>
   </div></section>
 
   <section class="section-shell alt research-note-section-v63"><div class="shell research-note-reading-v63">
     <div class="research-note-index-v63">02 · {{ if $isZh }}工作內容{{ else }}WHAT I WORKED ON{{ end }}</div>
     <div><h2>{{ if $isZh }}從資料、模型到 3D 定量分析。{{ else }}From data to model to 3D quantitative analysis.{{ end }}</h2>
       <div class="definition-grid-v63 definition-grid-v63-3">
-        <div><span>DATA</span><strong>{{ if $isZh }}臨床 CTA 資料準備{{ else }}Clinical CTA preparation{{ end }}</strong><p>{{ if $isZh }}資料整理、影像前處理與分析輸入標準化。{{ else }}Clinical data preparation, image preprocessing, and standardized research inputs.{{ end }}</p></div>
-        <div><span>MODEL</span><strong>{{ if $isZh }}多類別分割{{ else }}Multi-class segmentation{{ end }}</strong><p>{{ if $isZh }}使用 3D U-Net 建立與評估胸主動脈多類別分割模型。{{ else }}Developed and evaluated a multi-class 3D U-Net thoracic-aorta segmentation pipeline.{{ end }}</p></div>
-        <div><span>ANALYSIS</span><strong>{{ if $isZh }}3D 重建與定量評估{{ else }}3D reconstruction & evaluation{{ end }}</strong><p>{{ if $isZh }}把 segmentation output 轉成 3D 與量化結果。{{ else }}Translated segmentation outputs into 3D reconstruction and quantitative evaluation.{{ end }}</p></div>
+        <div><span>{{ if $isZh }}資料{{ else }}DATA{{ end }}</span><strong>{{ if $isZh }}臨床 CTA 資料準備{{ else }}Clinical CTA preparation{{ end }}</strong><p>{{ if $isZh }}資料整理、影像前處理與分析輸入標準化。{{ else }}Clinical data preparation, image preprocessing, and standardized research inputs.{{ end }}</p></div>
+        <div><span>{{ if $isZh }}模型{{ else }}MODEL{{ end }}</span><strong>{{ if $isZh }}多類別分割{{ else }}Multi-class segmentation{{ end }}</strong><p>{{ if $isZh }}使用 3D U-Net 建立與評估胸主動脈多類別分割模型。{{ else }}Developed and evaluated a multi-class 3D U-Net thoracic-aorta segmentation pipeline.{{ end }}</p></div>
+        <div><span>{{ if $isZh }}分析{{ else }}ANALYSIS{{ end }}</span><strong>{{ if $isZh }}3D 重建與定量評估{{ else }}3D reconstruction & evaluation{{ end }}</strong><p>{{ if $isZh }}將影像分割結果轉為 3D 重建及量化分析。{{ else }}Translated segmentation outputs into 3D reconstruction and quantitative evaluation.{{ end }}</p></div>
       </div>
     </div>
   </div></section>
@@ -39,7 +39,7 @@
   <section class="section-shell research-note-section-v63"><div class="shell research-note-reading-v63">
     <div class="research-note-index-v63">03 · {{ if $isZh }}流程{{ else }}WORKFLOW{{ end }}</div>
     <div><h2>{{ if $isZh }}把專案流程濃縮成一個可讀的研究圖。{{ else }}A compact view of the research workflow.{{ end }}</h2>
-      <figure class="editorial-figure-v63 technical-evidence-figure-v64"><img src="{{ "images/research/thoracic-aorta-workflow-v63.webp" | relURL }}" alt="Thoracic aorta CT workflow from CT input through reconstruction and segmentation" loading="lazy" decoding="async"><figcaption>{{ if $isZh }}臨床 CT → 3D reconstruction → segmentation output。{{ else }}Clinical CT → 3D reconstruction → segmentation output.{{ end }}</figcaption></figure>
+      <figure class="editorial-figure-v63 technical-evidence-figure-v64"><img src="{{ "images/research/thoracic-aorta-workflow-v63.webp" | relURL }}" alt="Thoracic aorta CT workflow from CT input through reconstruction and segmentation" loading="lazy" decoding="async"><figcaption>{{ if $isZh }}臨床 CT → 3D 重建 → 影像分割結果。{{ else }}Clinical CT → 3D reconstruction → segmentation output.{{ end }}</figcaption></figure>
       <figure class="aorta-report-figure-v81 aorta-annotation-figure-v81"><a class="research-zoom-v83" href="{{ "images/research/thoracic-aorta-multiplanar-annotation-v81.webp" | relURL }}" data-lightbox aria-label="{{ if $isZh }}點擊放大研究原圖{{ else }}Enlarge original research figure{{ end }}"><img src="{{ "images/research/thoracic-aorta-multiplanar-annotation-v81.webp" | relURL }}" alt="Real clinical CT aorta segmentation reference in coronal, sagittal, axial and 3D views, reproduced from an anonymized NSTC research figure" loading="lazy" decoding="async"></a><figcaption>{{ if $isZh }}<strong>原始研究標註 · Figure 9。</strong> 冠狀、矢狀、橫斷面及 3D 標註視圖；摘自本人研究報告之研究圖，非臨床產品截圖。{{ else }}<strong>Original research annotation · Figure 9.</strong> Coronal, sagittal, axial, and 3D views from my NSTC project report; not a live clinical product screenshot.{{ end }}</figcaption></figure>
     </div>
   </div></section>
@@ -47,7 +47,7 @@
   <section class="section-shell alt research-note-section-v63"><div class="shell research-note-reading-v63">
     <div class="research-note-index-v63">04 · {{ if $isZh }}結果{{ else }}RESULTS{{ end }}</div>
     <div><h2>{{ if $isZh }}以資料規模與模型表現建立研究證據。{{ else }}Evidence through cohort scale and quantitative performance.{{ end }}</h2>
-      <figure class="aorta-report-figure-v81"><a class="research-zoom-v83" href="{{ "images/research/thoracic-aorta-3d-results-v81.webp" | relURL }}" data-lightbox aria-label="{{ if $isZh }}點擊放大研究原圖{{ else }}Enlarge original research figure{{ end }}"><img src="{{ "images/research/thoracic-aorta-3d-results-v81.webp" | relURL }}" alt="Four-panel 3D aorta segmentation comparison from the original NSTC research report: reference segmentation, Dice baseline, aortic-arch weighting, and rotation augmentation" loading="lazy" decoding="async"></a><figcaption>{{ if $isZh }}<strong>原始研究結果 · Figure 29。</strong> 真實標註與三種模型結果比較；最右方為結合主動脈弓權重與旋轉 augmentation 的模型。圖像摘自本人 NSTC 研究報告，非合成的產品 UI。{{ else }}<strong>Original research result · Figure 29.</strong> Reference annotation and three model outputs, including arch weighting and rotation augmentation (right). Extracted from my NSTC research report; not a synthetic product interface.{{ end }}</figcaption></figure>
+      <figure class="aorta-report-figure-v81"><a class="research-zoom-v83" href="{{ "images/research/thoracic-aorta-3d-results-v81.webp" | relURL }}" data-lightbox aria-label="{{ if $isZh }}點擊放大研究原圖{{ else }}Enlarge original research figure{{ end }}"><img src="{{ "images/research/thoracic-aorta-3d-results-v81.webp" | relURL }}" alt="Four-panel 3D aorta segmentation comparison from the original NSTC research report: reference segmentation, Dice baseline, aortic-arch weighting, and rotation augmentation" loading="lazy" decoding="async"></a><figcaption>{{ if $isZh }}<strong>原始研究結果 · Figure 29。</strong> 真實標註與三種模型結果比較；最右方為結合主動脈弓權重與旋轉資料增強 的模型。圖像摘自本人 NSTC 研究報告，非合成的產品 UI。{{ else }}<strong>Original research result · Figure 29.</strong> Reference annotation and three model outputs, including arch weighting and rotation augmentation (right). Extracted from my NSTC research report; not a synthetic product interface.{{ end }}</figcaption></figure>
       
     </div>
   </div></section>

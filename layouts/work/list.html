@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ $isZh := eq .Site.Language.Lang "zh" }}
-<div class="page-hero section-shell compact mono-page-hero"><div class="shell narrow reveal">
+<div class="page-hero section-shell compact mono-page-hero top-level-page-hero-v7"><div class="shell narrow reveal">
   {{ partial "page-context.html" . }}
   <h1>{{ .Title }}</h1>
   <p class="lede small">{{ if $isZh }}三個精選案例，聚焦產品判斷、AI 評估與客戶導向技術驗證。{{ else }}Three selected case studies in product judgment, AI evaluation, and client-facing technical operations.{{ end }}</p>

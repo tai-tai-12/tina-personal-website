@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ $isZh := eq .Site.Language.Lang "zh" }}
-<div class="page-hero section-shell compact"><div class="shell narrow reveal">
+<div class="page-hero section-shell compact top-level-page-hero-v7"><div class="shell narrow reveal">
   {{ partial "page-context.html" . }}<h1>{{ .Title }}</h1>
   <p class="lede small">{{ if $isZh }}我的工作以產品判斷為核心，並由 AI 研究、臨床工作流程與受規範技術驗證的實作經驗支撐。{{ else }}My work centers on product decisions in technical environments, backed by hands-on AI research, clinical workflow experience, and regulated validation.{{ end }}</p>
 </div></div>

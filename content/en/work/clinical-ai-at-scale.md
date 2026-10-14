@@ -9,8 +9,9 @@ tags:
 category: AI EVALUATION · ML
 summary: Designed lesion-wise AI evaluation beyond headline accuracy, separating development from independent clinical testing and review burden.
 proof:
-- 12.1K development exams
 - 264 independent test exams
+- 0.21 FP/scan
+- 90.16% 5-class accuracy
 visual: clinical-ai-visual
 weight: 2
 heroBackground: images/projects/work-clinical-ai-v519.webp

@@ -9,8 +9,9 @@ tags:
 category: AI 評估 · ML
 summary: 以 sensitivity、FP/scan、precision 與 failure analysis 設計不只看單一 accuracy 的逐病灶 AI 評估。
 proof:
-- 12.1K development exams
-- 264 independent test exams
+- 264 例獨立測試
+- 0.21 FP/scan
+- 90.16% 五類分類準確率
 visual: clinical-ai-visual
 weight: 2
 heroBackground: images/projects/work-clinical-ai-v519.webp

@@ -1,0 +1,245 @@
+/* ========================================================================== 
+   V7.0 — Recruiter-Curated Portfolio & Visual System Lock
+   Finalizes top-level page headers, evidence rails, research discoverability,
+   education density, footer balance, and cross-page visual consistency.
+   ========================================================================== */
+
+:root{
+  --v7-page-h1:clamp(3.75rem,4.6vw,4.25rem);
+  --v7-page-lead:clamp(1.16rem,1.28vw,1.28rem);
+  --v7-eyebrow:.86rem;
+  --v7-meta:1rem;
+  --v7-rule:color-mix(in srgb,var(--line) 94%,var(--electric) 6%);
+}
+
+/* ---------- 1. One opening grammar for all top-level portfolio pages ---------- */
+.top-level-page-hero-v7{
+  padding-top:72px!important;
+  padding-bottom:54px!important;
+  border-bottom:1px solid var(--v7-rule)!important;
+  background:var(--bg)!important;
+}
+.top-level-page-hero-v7 .shell.narrow{max-width:1180px!important}
+.top-level-page-hero-v7 .page-context{
+  gap:14px!important;
+  margin:0!important;
+}
+.top-level-page-hero-v7 .page-context-icon{
+  width:44px!important;
+  height:44px!important;
+  border-radius:12px!important;
+  background:color-mix(in srgb,var(--bg) 95%,var(--electric) 5%)!important;
+}
+.top-level-page-hero-v7 .page-context-icon svg{width:19px!important;height:19px!important}
+.top-level-page-hero-v7 .page-context-label{
+  font-size:var(--v7-eyebrow)!important;
+  line-height:1!important;
+  letter-spacing:.12em!important;
+  font-weight:600!important;
+}
+.top-level-page-hero-v7 h1{
+  font-size:var(--v7-page-h1)!important;
+  line-height:1.02!important;
+  letter-spacing:-.052em!important;
+  font-weight:500!important;
+  max-width:930px!important;
+  margin:29px 0 0!important;
+}
+.top-level-page-hero-v7 .lede,
+.top-level-page-hero-v7 .lede.small{
+  font-size:var(--v7-page-lead)!important;
+  line-height:1.58!important;
+  color:color-mix(in srgb,var(--text) 62%,var(--muted) 38%)!important;
+  max-width:835px!important;
+  margin-top:25px!important;
+}
+
+/* The first content block should begin intentionally, not after an empty canyon. */
+.top-level-page-hero-v7 + .section-shell{padding-top:50px!important}
+.education-page-hero.top-level-page-hero-v7{padding-bottom:50px!important}
+.education-page-hero.top-level-page-hero-v7 + .education-page-section{padding-top:34px!important}
+.research-page-hero.top-level-page-hero-v7 + .research-v518-areas{padding-top:48px!important}
+
+/* ---------- 2. Section hierarchy: page H1 remains dominant ---------- */
+.research-v516-heading h2{
+  font-size:clamp(2.45rem,3.25vw,3.12rem)!important;
+  line-height:1.06!important;
+  max-width:900px!important;
+  letter-spacing:-.044em!important;
+}
+.research-v516-heading>p{font-size:1.03rem!important;line-height:1.64!important;max-width:760px!important}
+.kicker,.research-v516-heading .kicker{font-size:.79rem!important;letter-spacing:.12em!important}
+
+/* ---------- 3. Evidence is information, not a row of buttons ---------- */
+.proof-row-v64,
+.research-proof-row-v64{
+  display:flex!important;
+  align-items:stretch!important;
+  flex-wrap:nowrap!important;
+  gap:0!important;
+  margin-top:27px!important;
+  width:max-content!important;
+  max-width:100%!important;
+}
+.proof-row-v64>span,
+.research-proof-row-v64>em{
+  display:inline-flex!important;
+  align-items:baseline!important;
+  gap:7px!important;
+  min-height:0!important;
+  padding:0 18px!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  color:var(--muted)!important;
+  white-space:nowrap!important;
+  font-style:normal!important;
+  font-size:.91rem!important;
+  line-height:1.45!important;
+}
+.proof-row-v64>span:first-child,
+.research-proof-row-v64>em:first-child{padding-left:0!important}
+.proof-row-v64>span:last-child,
+.research-proof-row-v64>em:last-child{padding-right:0!important}
+.proof-row-v64>span+span,
+.research-proof-row-v64>em+em{border-left:1px solid var(--line)!important}
+.proof-row-v64 strong,
+.research-proof-row-v64 strong{
+  font:600 1.02rem/1.2 Manrope,Inter,"Noto Sans TC",sans-serif!important;
+  color:var(--text)!important;
+}
+.work-proof-row-v64{margin-top:22px!important}
+.research-proof-row-v64{margin-top:22px!important}
+
+/* ---------- 4. Selected-work cards: control title scale and rhythm ---------- */
+.mono-project{
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+  column-gap:58px!important;
+  align-items:center!important;
+}
+.mono-project .project-copy h3.project-title-v64{
+  font-size:clamp(3.15rem,4.25vw,4.25rem)!important;
+  line-height:1.01!important;
+  letter-spacing:-.054em!important;
+  max-width:15.3ch!important;
+  text-wrap:balance!important;
+}
+.project-title-v64>span{display:block!important}
+.mono-project .project-copy>p{
+  font-size:clamp(1.12rem,1.38vw,1.28rem)!important;
+  line-height:1.58!important;
+  max-width:610px!important;
+}
+.mono-project .project-visual{aspect-ratio:16/10!important;border-radius:17px!important}
+.mono-project-btn{min-height:48px!important;padding:0 19px!important;font-size:.94rem!important}
+.project-actions{margin-top:28px!important}
+
+/* ---------- 5. Research cards: equal format, unequal narrative importance ---------- */
+.research-area-grid-v64{gap:30px!important}
+.research-area-card-v64{border-color:var(--line)!important;border-radius:17px!important}
+.research-area-visual-v64{aspect-ratio:16/10!important;background:#07131e!important}
+.research-area-copy-v64{padding:28px 30px 30px!important}
+.research-area-copy-v64>span{font-size:.79rem!important;letter-spacing:.105em!important}
+.research-area-copy-v64 h3{font-size:clamp(2.05rem,2.55vw,2.55rem)!important;margin:17px 0 12px!important}
+.research-area-copy-v64>p{font-size:1rem!important;line-height:1.62!important;min-height:3.24em!important}
+.research-card-cta-v64{padding-top:22px!important;font-size:.94rem!important}
+
+/* ---------- 6. Education: information should arrive sooner ---------- */
+.education-page-section{padding-top:34px!important;padding-bottom:80px!important}
+.education-page-shell-v510{gap:48px!important;align-items:start!important}
+.education-entry-v510:first-child{padding-top:26px!important}
+.education-entry-v510{padding-top:40px!important;padding-bottom:42px!important}
+.credential-panel-v510{top:76px!important;margin-top:0!important;align-self:start!important}
+
+/* ---------- 7. Experience timeline metadata should be easy to scan ---------- */
+.experience-v516-role>aside span{font-size:1.1rem!important;font-weight:600!important}
+.experience-v516-role>aside small{font-size:.96rem!important;line-height:1.45!important;margin-top:10px!important}
+.experience-org{font-size:.98rem!important;font-weight:600!important}
+.experience-v516-role h2{font-size:clamp(2.45rem,3vw,3.15rem)!important}
+.experience-v516-role>div>p{font-size:1.06rem!important;line-height:1.62!important}
+
+/* ---------- 8. About foundations: one thesis, then four parallel capabilities ---------- */
+.about-copy-v3 blockquote{font-size:clamp(2.8rem,4.5vw,4.25rem)!important;line-height:1.06!important;max-width:1000px!important}
+.foundation-grid-v63{margin-top:34px!important}
+.about-v527-link{margin-top:20px!important}
+
+/* ---------- 9. Footer: email stays visible; LinkedIn and Resume are peers ---------- */
+.site-footer-v7{padding-top:24px!important;padding-bottom:12px!important}
+.site-footer-v7 .footer-identity-v525>strong{font-size:1.02rem!important;font-weight:600!important}
+.site-footer-v7 .footer-location-v525{font-size:.9rem!important;line-height:1.45!important}
+.site-footer-v7 .footer-email-v525{
+  display:block!important;
+  margin-top:4px!important;
+  font-size:.91rem!important;
+  font-weight:450!important;
+  color:var(--text)!important;
+  text-decoration:none!important;
+}
+.site-footer-v7 .footer-email-v525::before{display:none!important;content:none!important}
+.site-footer-v7 .footer-email-v525:hover{text-decoration:underline!important;text-underline-offset:3px!important}
+.site-footer-v7 .footer-links{gap:10px!important}
+.site-footer-v7 .footer-action-v7,
+.site-footer-v7 .footer-action-resume-v62.footer-action-v7{
+  min-height:38px!important;
+  padding:0 14px!important;
+  border-radius:9px!important;
+  border:1px solid color-mix(in srgb,var(--line) 94%,var(--text) 6%)!important;
+  background:transparent!important;
+  color:var(--text)!important;
+  font-size:.84rem!important;
+  font-weight:550!important;
+}
+.site-footer-v7 .footer-action-v7:hover{border-color:color-mix(in srgb,var(--electric) 42%,var(--line))!important;color:var(--electric)!important;background:color-mix(in srgb,var(--bg) 96%,var(--electric) 4%)!important}
+.site-footer-v7 .footer-note{font-size:.76rem!important;opacity:.58!important;margin-top:18px!important}
+
+/* ---------- 10. Aorta research note: preview, hero and evidence stay distinct ---------- */
+.research-note-hero-figure-v64{border-radius:17px!important}
+.research-note-facts-v63,.metric-row-v63{gap:0!important}
+.research-note-facts-v63>span,.metric-row-v63>span{border-radius:0!important;background:transparent!important}
+
+/* ---------- 11. Large desktop ---------- */
+@media(min-width:1200px){
+  .proof-row-v64,.research-proof-row-v64{flex-wrap:nowrap!important}
+  .top-level-page-hero-v7 + .section-shell{padding-top:48px!important}
+}
+
+/* ---------- 12. Tablet ---------- */
+@media(max-width:1100px){
+  .top-level-page-hero-v7{padding-top:58px!important;padding-bottom:46px!important}
+  .top-level-page-hero-v7 h1{font-size:clamp(3.25rem,7vw,4rem)!important}
+  .mono-project,.project-reverse{grid-template-columns:1fr!important;gap:34px!important}
+  .project-reverse .project-visual{order:2}
+  .project-reverse .project-copy{order:1}
+  .proof-row-v64,.research-proof-row-v64{flex-wrap:wrap!important;row-gap:9px!important}
+  .proof-row-v64>span,.research-proof-row-v64>em{padding:0 14px!important}
+  .proof-row-v64>span:nth-child(3),.research-proof-row-v64>em:nth-child(3){border-left:1px solid var(--line)!important}
+  .research-area-grid-v64{grid-template-columns:1fr!important;max-width:820px!important;margin-inline:auto!important}
+}
+
+/* ---------- 13. Mobile ---------- */
+@media(max-width:760px){
+  .top-level-page-hero-v7{padding-top:44px!important;padding-bottom:38px!important}
+  .top-level-page-hero-v7 .page-context-icon{width:38px!important;height:38px!important;border-radius:11px!important}
+  .top-level-page-hero-v7 .page-context-icon svg{width:17px!important;height:17px!important}
+  .top-level-page-hero-v7 .page-context-label{font-size:.75rem!important}
+  .top-level-page-hero-v7 h1{font-size:clamp(2.7rem,12vw,3.55rem)!important;margin-top:23px!important}
+  .top-level-page-hero-v7 .lede,.top-level-page-hero-v7 .lede.small{font-size:1rem!important;line-height:1.6!important;margin-top:20px!important}
+  .top-level-page-hero-v7 + .section-shell{padding-top:34px!important}
+  .project-title-v64>span{display:inline!important}
+  .project-title-v64>span+span:before{content:" "}
+  .mono-project .project-copy h3.project-title-v64{font-size:clamp(2.55rem,11vw,3.35rem)!important;max-width:none!important}
+  .proof-row-v64,.research-proof-row-v64{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;width:100%!important;gap:0!important;border-top:1px solid var(--line)!important;border-bottom:1px solid var(--line)!important;padding:9px 0!important}
+  .proof-row-v64>span,.research-proof-row-v64>em{display:block!important;padding:7px 10px!important;border-left:0!important;white-space:normal!important;font-size:.84rem!important}
+  .proof-row-v64>span:nth-child(even),.research-proof-row-v64>em:nth-child(even){border-left:1px solid var(--line)!important}
+  .research-area-copy-v64>p{min-height:0!important}
+  .research-v516-heading h2{font-size:clamp(2.1rem,9vw,2.75rem)!important}
+  .education-page-section{padding-top:28px!important}
+  .site-footer-v7 .footer-links{margin-top:16px!important}
+}
+
+/* ---------- 14. Dark mode ---------- */
+[data-theme="dark"] .top-level-page-hero-v7{background:var(--bg)!important;border-bottom-color:var(--line)!important}
+[data-theme="dark"] .proof-row-v64>span,
+[data-theme="dark"] .research-proof-row-v64>em{background:transparent!important}
+[data-theme="dark"] .site-footer-v7 .footer-action-v7,
+[data-theme="dark"] .site-footer-v7 .footer-action-resume-v62.footer-action-v7{background:transparent!important}

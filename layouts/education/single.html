@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ $isZh := eq .Site.Language.Lang "zh" }}
-<div class="page-hero section-shell compact education-page-hero"><div class="shell narrow reveal">
+<div class="page-hero section-shell compact education-page-hero top-level-page-hero-v7"><div class="shell narrow reveal">
   {{ partial "page-context.html" . }}
   <h1>{{ .Title }}</h1>
   <p class="lede small">{{ if $isZh }}我的學術路徑從醫療影像與生醫工程出發，延伸到醫療 AI，並在 Carnegie Mellon 補上商業分析、機器學習、最佳化與科技策略訓練。{{ else }}My academic path started in medical imaging and biomedical engineering, expanded into medical AI, and now adds business analytics, machine learning, optimization, and technology strategy at Carnegie Mellon.{{ end }}</p>

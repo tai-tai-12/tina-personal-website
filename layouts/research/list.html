@@ -49,11 +49,17 @@
   </div>
 </div></section>
 
-<section class="section-shell alt research-v518-recognition"><div class="shell">
-  <div class="research-v516-heading reveal"><span class="kicker">{{ if $isZh }}獲獎與肯定{{ else }}RECOGNITION{{ end }}</span><h2>{{ if $isZh }}研究成果與研究表達的肯定。{{ else }}Recognition for the research and its communication.{{ end }}</h2></div>
-  <div class="research-v518-award-grid reveal">
-    <article class="research-v518-award-card"><figure><img src="{{ "images/research/amlds-award-v519.webp" | relURL }}" alt="Tina Tai receiving the AMLDS 2026 Outstanding Oral Presentation award" loading="lazy" decoding="async"></figure><div><span>AMLDS · 2026</span><h3>Outstanding Oral Presentation</h3><p>Session · Medical Imaging & Diagnostic AI<br>Osaka, Japan</p></div></article>
-    <article class="research-v518-award-card"><figure><img src="{{ "images/research/thesis-award-v519.webp" | relURL }}" alt="Tina Tai receiving the 2026 NYCU Outstanding Thesis Award" loading="lazy" decoding="async"></figure><div><span>NYCU · 2026</span><h3>{{ if $isZh }}Outstanding Thesis Award · 第一名{{ else }}Outstanding Thesis Award · First Place{{ end }}</h3><p>{{ if $isZh }}生醫光電研究所碩士論文競賽。{{ else }}Institute of Biophotonics master's thesis competition.{{ end }}</p></div></article>
+<section class="section-shell alt research-v518-recognition research-v85-recognition" aria-labelledby="research-v85-honors-title"><div class="shell">
+  <div class="research-v516-heading research-v85-honors-heading reveal"><span class="kicker">{{ if $isZh }}研究獲獎{{ else }}RESEARCH RECOGNITION{{ end }}</span><h2 id="research-v85-honors-title">{{ if $isZh }}精選研究榮譽{{ else }}Selected Research Honors{{ end }}</h2><p>{{ if $isZh }}研究品質與國際學術表達所獲得的肯定。{{ else }}Recognition for research quality and scientific communication.{{ end }}</p></div>
+  <div class="research-v85-awards reveal">
+    <article class="research-v85-award">
+      <figure><img src="{{ "images/research/amlds-award-v519.webp" | relURL }}" alt="{{ if $isZh }}Tina Tai 於 AMLDS 2026 領取傑出口頭報告獎{{ else }}Tina Tai receiving an Outstanding Oral Presentation recognition at AMLDS 2026{{ end }}" loading="lazy" decoding="async"></figure>
+      <div class="research-v85-award-copy"><span class="research-v85-award-meta">AMLDS · 2026</span><h3>Outstanding Oral Presentation</h3><p>{{ if $isZh }}Medical Imaging &amp; Diagnostic AI 專場 · 日本大阪{{ else }}Medical Imaging &amp; Diagnostic AI session · Osaka, Japan{{ end }}</p></div>
+    </article>
+    <article class="research-v85-award">
+      <figure><img src="{{ "images/research/thesis-award-v519.webp" | relURL }}" alt="{{ if $isZh }}Tina Tai 於陽明交通大學領取 2026 年優秀論文第一名獎項{{ else }}Tina Tai receiving the NYCU 2026 Outstanding Thesis Award, First Place{{ end }}" loading="lazy" decoding="async"></figure>
+      <div class="research-v85-award-copy"><span class="research-v85-award-meta">NYCU · 2026</span><h3>{{ if $isZh }}Outstanding Thesis Award · 第一名{{ else }}Outstanding Thesis Award · First Place{{ end }}</h3><p>{{ if $isZh }}生醫光電研究所碩士論文競賽{{ else }}Institute of Biophotonics · Master's thesis competition{{ end }}</p></div>
+    </article>
   </div>
 </div></section>
 

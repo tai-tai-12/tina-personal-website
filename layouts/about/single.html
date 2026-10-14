@@ -1,47 +1,84 @@
 {{ define "main" }}
 {{ $isZh := eq .Site.Language.Lang "zh" }}
-<div class="page-hero section-shell compact about-v517-hero top-level-page-hero-v7"><div class="shell narrow reveal">
+<div class="page-hero section-shell compact about-v85-page-hero top-level-page-hero-v7"><div class="shell narrow reveal">
   {{ partial "page-context.html" . }}
   <h1>{{ .Title }}</h1>
-  <p class="lede small">{{ if $isZh }}產品經理，具備 AI/ML、醫療影像與數據分析技術背景，專注把使用者需求與技術證據轉成團隊能執行的決策。{{ else }}Product manager with technical depth in AI/ML and analytics, translating user needs and evidence into decisions teams can execute.{{ end }}</p>
+  <p class="lede small">{{ if $isZh }}從醫療影像與 AI 研究，到產品決策與商業分析：認識這些經驗如何形塑我的工作方式。{{ else }}From medical imaging and AI research to product decisions and business analytics—how those experiences shape the way I work.{{ end }}</p>
 </div></div>
 
-<section class="section-shell article-section about-story-v517"><article class="shell narrow prose reveal">{{ .Content }}</article></section>
+<section class="section-shell about-v85-intro-section" aria-labelledby="about-v85-intro-title">
+  <div class="shell about-v85-intro-grid reveal">
+    <div class="about-v85-intro-copy">
+      <span class="kicker">{{ if $isZh }}我的故事{{ else }}MY STORY{{ end }}</span>
+      <h2 id="about-v85-intro-title">{{ if $isZh }}把技術證據與真實使用者需求連結成產品決策。{{ else }}Building products where technical evidence meets real user needs.{{ end }}</h2>
+      <div class="about-v85-story-copy">{{ .Content }}</div>
+      <div class="about-v85-inline-links">
+        <a href="{{ "work/" | relLangURL }}">{{ if $isZh }}瀏覽作品案例{{ else }}Explore my work{{ end }} <span aria-hidden="true">↗</span></a>
+        <a href="{{ "experience/" | relLangURL }}">{{ if $isZh }}查看工作經歷{{ else }}Experience{{ end }} <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <figure class="about-v85-photo">
+      <img src="{{ "images/about/thesis-presentation-v61.webp" | relURL }}" alt="{{ if $isZh }}Tina Tai 於陽明交通大學碩士論文發表現場{{ else }}Tina Tai presenting her master's thesis research at NYCU{{ end }}" loading="eager" decoding="async">
+      <figcaption>{{ if $isZh }}碩士論文發表 · 陽明交通大學 · 2026{{ else }}Master's thesis presentation · NYCU · 2026{{ end }}</figcaption>
+    </figure>
+  </div>
+</section>
 
-<section class="section-shell alt capabilities-v517"><div class="shell">
-  <div class="section-title-row-v3 reveal"><div><span class="kicker">{{ if $isZh }}能力組合{{ else }}CAPABILITIES{{ end }}</span><h2>{{ if $isZh }}四個互相連結的能力面向。{{ else }}Four connected capability areas.{{ end }}</h2><p>{{ if $isZh }}我在產品、研究、分析與受規範環境中反覆使用的能力。{{ else }}Capabilities I use across product, research, analytics, and regulated environments.{{ end }}</p></div></div>
-  <div class="capability-grid-v517 reveal">
-    <article>
-      <div class="capability-icon-v517" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M8 3v6M16 3v6M8 13h8"/></svg></div>
-      <div><span>01</span><h3>{{ if $isZh }}產品與策略{{ else }}Product & Strategy{{ end }}</h3><ul><li>Product Management</li><li>Requirements & Roadmapping</li><li>Stakeholder Alignment</li></ul></div>
+<section class="section-shell alt about-v85-journey-section" aria-labelledby="about-v85-journey-title"><div class="shell">
+  <div class="about-v85-heading reveal">
+    <span class="kicker">{{ if $isZh }}我的工作視角{{ else }}THE LENSES BEHIND MY WORK{{ end }}</span>
+    <h2 id="about-v85-journey-title">{{ if $isZh }}四段互相交織的經歷。{{ else }}Four connected perspectives.{{ end }}</h2>
+    <p>{{ if $isZh }}這些經歷在時間上有重疊，也分別讓我從不同角度理解產品問題。{{ else }}These experiences overlap in time—and bring different perspectives to the same product decisions.{{ end }}</p>
+  </div>
+  <ol class="about-v85-lenses reveal">
+    <li><span class="about-v85-lens-number">01</span><div><h3>{{ if $isZh }}醫療影像{{ else }}Medical Imaging{{ end }}</h3><p>{{ if $isZh }}理解臨床工作流程、品質與實際使用情境的限制。{{ else }}Understanding clinical workflows, quality, and real-world constraints.{{ end }}</p></div></li>
+    <li><span class="about-v85-lens-number">02</span><div><h3>{{ if $isZh }}AI 研究{{ else }}AI Research{{ end }}</h3><p>{{ if $isZh }}檢視證據、失敗模式，以及模型表現背後的取捨。{{ else }}Evaluating evidence, failure modes, and model trade-offs.{{ end }}</p></div></li>
+    <li><span class="about-v85-lens-number">03</span><div><h3>{{ if $isZh }}產品管理{{ else }}Product Management{{ end }}</h3><p>{{ if $isZh }}將使用者需求轉化為優先順序、產品決策與交付。{{ else }}Turning user needs into priorities, decisions, and releases.{{ end }}</p></div></li>
+    <li><span class="about-v85-lens-number">04</span><div><h3>{{ if $isZh }}商業分析{{ else }}Business Analytics{{ end }}</h3><p>{{ if $isZh }}持續補強以資料支持的商業與產品決策能力。{{ else }}Building stronger data-informed business and product judgment.{{ end }}</p></div></li>
+  </ol>
+</div></section>
+
+<section class="section-shell about-v85-leadership-section" aria-labelledby="about-v85-leadership-title"><div class="shell">
+  <div class="about-v85-heading reveal">
+    <span class="kicker">{{ if $isZh }}領導與參與{{ else }}LEADERSHIP & COMMUNITY{{ end }}</span>
+    <h2 id="about-v85-leadership-title">{{ if $isZh }}在研究與工作之外，也重視團隊合作。{{ else }}Leadership beyond my technical work.{{ end }}</h2>
+    <p>{{ if $isZh }}有些經歷是正式領導職務，有些則是在不同團隊中協助把事情完成。{{ else }}Some roles involved formal leadership; others taught me how to support teams and follow through.{{ end }}</p>
+  </div>
+  <div class="about-v85-leadership-feature-grid reveal">
+    <article class="about-v85-leadership-feature">
+      <div class="about-v85-feature-meta"><span>{{ if $isZh }}學生自治領導{{ else }}STUDENT LEADERSHIP{{ end }}</span><time>2023–2024</time></div>
+      <h3>{{ if $isZh }}系學會會長{{ else }}President, Department Student Association{{ end }}</h3>
+      <p class="about-v85-feature-affiliation">National Yang Ming Chiao Tung University</p>
+      <p>{{ if $isZh }}帶領系學會組織與系上活動協調，累積與不同學生及校內角色合作的經驗。{{ else }}Led student-organization coordination and departmental activities, working across student and university groups.{{ end }}</p>
     </article>
-    <article>
-      <div class="capability-icon-v517" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-8M22 19V3"/><path d="M3 19h19"/></svg></div>
-      <div><span>02</span><h3>{{ if $isZh }}分析與 AI{{ else }}Analytics & AI{{ end }}</h3><ul><li>Business Analytics</li><li>Machine Learning & AI</li><li>Statistical Evaluation</li></ul></div>
-    </article>
-    <article>
-      <div class="capability-icon-v517" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 5 3 8 7 10 4-2 7-5 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-5"/></svg></div>
-      <div><span>03</span><h3>{{ if $isZh }}醫療與受規範科技{{ else }}Healthcare & Regulated Tech{{ end }}</h3><ul><li>Medical Imaging</li><li>Clinical Validation & SaMD</li><li>Regulatory Documentation</li></ul></div>
-    </article>
-    <article>
-      <div class="capability-icon-v517" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 6 3 12l5 6M16 6l5 6-5 6M14 4l-4 16"/></svg></div>
-      <div><span>04</span><h3>{{ if $isZh }}技術工具{{ else }}Technical Toolkit{{ end }}</h3><ul><li>Python · SQL · MATLAB</li><li>PyTorch · scikit-learn</li><li>3D Slicer · Git</li></ul></div>
+    <article class="about-v85-leadership-feature">
+      <div class="about-v85-feature-meta"><span>{{ if $isZh }}目前參與{{ else }}CURRENT INVOLVEMENT{{ end }}</span><time>2026–2027</time></div>
+      <h3>{{ if $isZh }}獲選 MSBA 學生大使{{ else }}Selected MSBA Student Ambassador{{ end }}</h3>
+      <p class="about-v85-feature-affiliation">Carnegie Mellon University · Tepper School of Business</p>
+      <p>{{ if $isZh }}獲選擔任 2026–27 年度 MSBA Student Ambassador。{{ else }}Selected to serve as an MSBA Student Ambassador for the 2026–27 academic year.{{ end }}</p>
     </article>
   </div>
-  <div class="about-stakeholder-strip-v524" aria-label="Cross-functional environments">
-    <div><span>{{ if $isZh }}跨場域{{ else }}CROSS-FUNCTIONAL ENVIRONMENTS{{ end }}</span><strong>{{ if $isZh }}醫院 · 學術實驗室 · 新創{{ else }}Hospital · Academic Lab · Startup{{ end }}</strong></div>
-    <div><span>{{ if $isZh }}協作對象{{ else }}STAKEHOLDERS{{ end }}</span><strong>{{ if $isZh }}醫師 · 工程師 · 醫事放射師 · 法規顧問{{ else }}Physicians · Engineers · Radiologic Technologists · Regulatory Advisors{{ end }}</strong></div>
+  <div class="about-v85-community reveal">
+    <h3>{{ if $isZh }}其他團隊與社群經歷{{ else }}Other team & community experience{{ end }}</h3>
+    <ul>
+      <li><div><strong>{{ if $isZh }}高中生醫學研習營 · 活動籌辦{{ else }}Medical Camp for High School Students · Organizer{{ end }}</strong><p>{{ if $isZh }}協助規劃活動與營隊執行。{{ else }}Supported program planning and camp delivery.{{ end }}</p></div></li>
+      <li><div><strong>{{ if $isZh }}大學籃球隊經理{{ else }}University Basketball Team Manager{{ end }}</strong><p>{{ if $isZh }}參與隊務、賽事紀錄與比賽相關支援。{{ else }}Supported team operations, competition records, and game-day activities.{{ end }}</p></div></li>
+      <li><div><strong>{{ if $isZh }}獅子會服務參與{{ else }}Lions Club · Community Service{{ end }}</strong><p>{{ if $isZh }}參與捐血者衛教與捐血後服務。{{ else }}Contributed to donor education and post-donation support.{{ end }}</p></div></li>
+    </ul>
   </div>
 </div></section>
 
-<section class="section-shell leadership-v517"><div class="shell narrow">
-  <div class="section-title-row-v3 reveal"><div><span class="kicker">{{ if $isZh }}領導與社群參與{{ else }}LEADERSHIP & COMMUNITY{{ end }}</span><h2>{{ if $isZh }}工作之外，我也持續參與團隊與社群。{{ else }}Leadership and community involvement beyond the portfolio.{{ end }}</h2></div></div>
-  <div class="leadership-list-v517 reveal">
-    <article><span>2025–2026</span><div><strong>Lions Club</strong><p>{{ if $isZh }}協助捐血者衛教與捐血後服務。{{ else }}Supported blood-donation services through donor education and post-donation assistance.{{ end }}</p></div></article>
-    <article><span>2023–2024</span><div><strong>{{ if $isZh }}系學會會長{{ else }}Department Student Association · President{{ end }}</strong><p>{{ if $isZh }}帶領學生組織與系上活動協調，累積團隊管理與跨角色溝通經驗。{{ else }}Led student-organization coordination and department activities, building team-management and cross-role communication experience.{{ end }}</p></div></article>
-    <article><span>2020</span><div><strong>{{ if $isZh }}全國高中生醫學研習營{{ else }}National High School Medical Camp{{ end }}</strong><p>{{ if $isZh }}參與活動策劃與營隊執行。{{ else }}Supported program planning and camp operations.{{ end }}</p></div></article>
-    <article><span>2020</span><div><strong>{{ if $isZh }}校／系籃球隊經理{{ else }}University & Department Basketball Team Manager{{ end }}</strong><p>{{ if $isZh }}參與校內外賽事紀錄、裁判與隊務支援。{{ else }}Supported team operations, competition records, and officiating across university and external games.{{ end }}</p></div></article>
+<section class="section-shell alt about-v85-personal-section" aria-labelledby="about-v85-personal-title"><div class="shell about-v85-personal-grid reveal">
+  <div>
+    <span class="kicker">{{ if $isZh }}工作之外{{ else }}BEYOND WORK{{ end }}</span>
+    <h2 id="about-v85-personal-title">{{ if $isZh }}保持好奇，也持續嘗試新事物。{{ else }}Curiosity outside of work.{{ end }}</h2>
+    <p>{{ if $isZh }}喜歡攝影、舞蹈，也樂於透過旅遊、食物與不同活動認識新的環境。{{ else }}I enjoy photography, dance, and exploring new places and food.{{ end }}</p>
   </div>
-  <div class="about-personal-grid-v523"><div><span>{{ if $isZh }}更早期活動{{ else }}EARLIER ACTIVITIES{{ end }}</span><p>{{ if $isZh }}手語社、熱舞社、Rotary 社區服務與動物福利志工。{{ else }}Sign language, dance, Rotary community service, and animal-welfare volunteering.{{ end }}</p></div><div><span>{{ if $isZh }}工作之外{{ else }}OUTSIDE WORK{{ end }}</span><p>{{ if $isZh }}攝影、記錄日常生活，以及探索新的地方和食物。{{ else }}Photography, documenting everyday life, and exploring new places and food.{{ end }}</p></div></div>
+  <div class="about-v85-interest-area">
+    <div class="about-v85-interest-row"><span>{{ if $isZh }}社團與活動{{ else }}CLUBS & ACTIVITIES{{ end }}</span><p>{{ if $isZh }}Hip-Hop 熱舞社社員 · 手語社{{ else }}Hip-Hop Dance Club (member) · Sign Language Club{{ end }}</p></div>
+    <div class="about-v85-interest-row"><span>{{ if $isZh }}志願服務{{ else }}VOLUNTEERING{{ end }}</span><p>{{ if $isZh }}Rotary 社區服務 · 動物福利志工{{ else }}Rotary community service · Animal-welfare volunteering{{ end }}</p></div>
+    <div class="about-v85-interest-row"><span>{{ if $isZh }}個人興趣{{ else }}PERSONAL INTERESTS{{ end }}</span><p>{{ if $isZh }}攝影 · 舞蹈 · 旅行與美食探索{{ else }}Photography · Dance · Travel & food{{ end }}</p></div>
+  </div>
+  <div class="about-v85-final-cta"><span>{{ if $isZh }}想進一步了解我做過的產品與研究？{{ else }}Want to see the product and research behind the story?{{ end }}</span><a href="{{ "work/" | relLangURL }}">{{ if $isZh }}精選作品案例{{ else }}Selected work{{ end }} <span aria-hidden="true">↗</span></a><a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div>
 </div></section>
 {{ end }}

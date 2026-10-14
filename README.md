@@ -1,3 +1,9 @@
+# V8.7 — Homepage Editorial Refinement
+
+This deployable Hugo / GitHub Pages site updates **only the homepage** from V8.6. It uses `home-v87.css` exclusively on home pages; all interior pages, credentials, research content, and source assets remain unchanged. See `V8_7_RELEASE_NOTES.md` and `V8_7_QA.md`.
+
+Before pushing: `python3 scripts/verify_v87.py`. On GitHub Pages, Actions runs the V8.7 verification and formal Hugo build.
+
 # Tina Tai Personal Website · V8.6
 
 Complete bilingual Hugo source project for the existing GitHub Pages portfolio. **This is a full deployment archive, not a patch.** It builds on V8.5 and focuses on Education and Experience.

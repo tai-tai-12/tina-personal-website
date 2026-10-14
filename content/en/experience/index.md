@@ -24,4 +24,4 @@ Completed a 1,040-hour (26-week) clinical internship across diagnostic imaging, 
 ## NYCU — Biomedical Imaging Physics & Instrumentation Lab
 **Test Manager / Research Assistant · Jun 2021 – Feb 2023 · Taipei, Taiwan**
 
-Conducted regulatory testing across ionizing-radiation equipment products, supported government audits, and built MATLAB tooling adopted by two university labs.
+Dedicated research assistant for NYCU’s ionizing-radiation consortium: personally conducted client X-ray tube testing, produced third-party reports, recruited members, and separately built MATLAB small-animal CT bone-analysis tooling adopted by two university labs.

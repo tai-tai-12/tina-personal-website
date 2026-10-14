@@ -24,4 +24,4 @@ contextLabel: "職涯軌跡"
 ## NYCU — Biomedical Imaging Physics & Instrumentation Lab
 **Test Manager / Research Assistant · 2021/06 – 2023/02 · 台北**
 
-執行游離輻射設備產品的法規測試、支援政府稽核，並建立後續被兩個大學實驗室採用的 MATLAB 工具。
+擔任游離輻射產學技術聯盟專責研究助理，親自接待客戶、執行 X 光球管測試、產出第三方報告與招募會員，並另行開發由兩個大學實驗室採用的 MATLAB 小動物 CT 骨密度分析工具。

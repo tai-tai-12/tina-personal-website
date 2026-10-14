@@ -28,7 +28,7 @@
     <div class="home-v87-section-heading reveal">
       <div class="home-v87-section-intro"><span class="home-v87-section-index">01 / {{ if $isZh }}精選案例{{ else }}SELECTED CASE STUDIES{{ end }}</span>
         <h2 id="home-v87-work-heading">{{ if $isZh }}產品判斷，以證據為基礎。{{ else }}Product decisions, backed by evidence.{{ end }}</h2>
-        <p>{{ if $isZh }}三個案例，從使用者需求與產品交付，到 AI 評估與面向客戶的技術驗證。{{ else }}Three case studies spanning product execution, AI evaluation, and client-facing technical validation.{{ end }}</p>
+        <p>{{ if $isZh }}三個案例，從醫療 AI 產品決策、模型評估，到 X 光設備第三方檢測與客戶營運。{{ else }}Three cases spanning medical AI product decisions, model evaluation, and hands-on X-ray device testing with client operations.{{ end }}</p>
       </div>
       <a class="home-v87-secondary-link" href="{{ "work/" | relLangURL }}">{{ if $isZh }}案例總覽{{ else }}All case studies{{ end }} <span aria-hidden="true">↗</span></a>
     </div>
@@ -65,7 +65,7 @@
         <div class="home-v87-case-copy">
           <span class="home-v87-case-label">03 <span aria-hidden="true">/</span> VALIDATION · OPERATIONS</span>
           <h3><a href="{{ "work/structured-validation/" | relLangURL }}">{{ if $isZh }}執行面向客戶的技術驗證作業{{ else }}Running Client-Facing Validation Operations{{ end }}</a></h3>
-          <p>{{ if $isZh }}管理需求界定、測試、問題修正與正式報告，連結技術執行與外部客戶的品質要求。{{ else }}Managing scope, testing, nonconformities, retests, and reporting across technical teams and external clients.{{ end }}</p>
+          <p>{{ if $isZh }}於游離輻射產學技術聯盟親自執行 X 光球管檢測、第三方報告製作、客戶接待與會員招募。{{ else }}Personally tested client-submitted X-ray tubes, produced third-party reports, and supported customer relationships and consortium recruitment.{{ end }}</p>
           {{ partial "case-metrics-v88.html" (dict "Metrics" (slice (dict "value" "8" "label" (cond $isZh "受測產品" "Products tested")) (dict "value" "10+" "label" (cond $isZh "正式報告" "Reports")) (dict "value" "5" "label" (cond $isZh "客戶" "Client organizations"))) "Class" "home-v88-metrics" "IsZh" $isZh) }}
           <a class="home-v87-case-cta" href="{{ "work/structured-validation/" | relLangURL }}">{{ if $isZh }}閱讀完整案例{{ else }}Read case study{{ end }} <span aria-hidden="true">↗</span></a>
         </div>
@@ -87,7 +87,7 @@
       <a href="{{ "experience/" | relLangURL }}#xp-v86-aitewan-title" class="home-v87-xp-row"><time>2024–2026</time><div><strong>Product Manager</strong><span>AITEWAN Biomedical Technology</span></div><p>{{ if $isZh }}醫師需求探索、AI 處理流程優化與產品發佈決策{{ else }}Physician discovery, AI workflow optimization, and release decisions{{ end }}</p><span class="home-v87-row-arrow" aria-hidden="true">↗</span></a>
       <a href="{{ "experience/" | relLangURL }}#xp-v86-research-title" class="home-v87-xp-row"><time>2023–2026</time><div><strong>Research Assistant / Project Lead</strong><span>NYCU · AI in Medical Imaging Lab</span></div><p>{{ if $isZh }}腦瘤 MRI AI、跨中心評估及研究成果發表{{ else }}Brain-tumor MRI AI, multi-center evaluation, and publications{{ end }}</p><span class="home-v87-row-arrow" aria-hidden="true">↗</span></a>
       <a href="{{ "experience/" | relLangURL }}#xp-v86-clinical-title" class="home-v87-xp-row"><time>2023–2024</time><div><strong>Clinical Intern</strong><span>National Taiwan University Hospital</span></div><p>{{ if $isZh }}1,040 小時臨床實習與 Certificate of Excellence{{ else }}1,040 clinical hours and Certificate of Excellence{{ end }}</p><span class="home-v87-row-arrow" aria-hidden="true">↗</span></a>
-      <a href="{{ "experience/" | relLangURL }}#xp-v86-bipi-title" class="home-v87-xp-row"><time>2021–2023</time><div><strong>Test Manager / Research Assistant</strong><span>NYCU · Biomedical Imaging Physics Lab</span></div><p>{{ if $isZh }}法規相關第三方測試、客戶協作與 MATLAB 影像分析{{ else }}Regulated testing, client coordination, and MATLAB image analysis{{ end }}</p><span class="home-v87-row-arrow" aria-hidden="true">↗</span></a>
+      <a href="{{ "experience/" | relLangURL }}#xp-v86-bipi-title" class="home-v87-xp-row"><time>2021–2023</time><div><strong>Test Manager / Research Assistant</strong><span>NYCU · Biomedical Imaging Physics Lab</span></div><p>{{ if $isZh }}游離輻射聯盟：X 光球管實測、第三方報告與獨立 CT 分析工具{{ else }}Hands-on X-ray tube testing, third-party reports, and separate CT analytics{{ end }}</p><span class="home-v87-row-arrow" aria-hidden="true">↗</span></a>
     </div>
   </div>
 </section>

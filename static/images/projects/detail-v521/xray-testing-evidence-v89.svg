@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="820" viewBox="0 0 1440 820" role="img" aria-labelledby="t d">
+<title id="t">Ionizing-radiation device testing and reporting process</title><desc id="d">Original schematic showing client intake, physical X-ray tube test setup, result review and report delivery. No specific patient or client information.</desc>
+<defs><linearGradient id="p" x2="1" y2="1"><stop stop-color="#f8fbff"/><stop offset="1" stop-color="#eef5ff"/></linearGradient><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10" fill="none" stroke="#4a7acc" stroke-width="2.2"/></marker></defs>
+<rect width="1440" height="820" rx="28" fill="url(#p)"/>
+<rect x="46" y="46" width="1348" height="728" rx="26" fill="#fff" stroke="#dfe9f6" stroke-width="2"/>
+<text x="90" y="111" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="3" fill="#1866d6">IONIZING-RADIATION TESTING · CONSORTIUM OPERATIONS</text>
+<text x="90" y="170" font-family="Inter,Arial,sans-serif" font-size="39" font-weight="750" fill="#18304f">Hands-on testing, from X-ray tube to report</text>
+<!-- Four cards -->
+<g font-family="Inter,Arial,sans-serif">
+<rect x="88" y="240" width="292" height="372" rx="20" fill="#f6f9fe" stroke="#d9e5f3" stroke-width="2"/>
+<rect x="412" y="240" width="292" height="372" rx="20" fill="#f6f9fe" stroke="#d9e5f3" stroke-width="2"/>
+<rect x="736" y="240" width="292" height="372" rx="20" fill="#f6f9fe" stroke="#d9e5f3" stroke-width="2"/>
+<rect x="1060" y="240" width="292" height="372" rx="20" fill="#f6f9fe" stroke="#d9e5f3" stroke-width="2"/>
+<path d="M385 426H404 M708 426H728 M1032 426H1052" stroke="#487ec5" stroke-width="3" marker-end="url(#a)"/>
+<text x="110" y="285" font-size="20" font-weight="750" fill="#1c69d3">01 · CLIENT INTAKE</text>
+<text x="434" y="285" font-size="20" font-weight="750" fill="#1c69d3">02 · X-RAY TESTING</text>
+<text x="758" y="285" font-size="20" font-weight="750" fill="#1c69d3">03 · REVIEW</text>
+<text x="1082" y="285" font-size="20" font-weight="750" fill="#1c69d3">04 · REPORTING</text>
+<!-- clipboard -->
+<rect x="155" y="339" width="160" height="160" rx="16" fill="#fff" stroke="#9fbbda" stroke-width="4"/><rect x="197" y="324" width="78" height="29" rx="10" fill="#b5cce7"/>
+<path d="M181 388h106 M181 419h106 M181 450h72" stroke="#7e9cbd" stroke-width="7" stroke-linecap="round"/>
+<circle cx="275" cy="460" r="17" fill="#d5e7fb"/><path d="M266 460l8 8 16-19" stroke="#1768d6" stroke-width="5" fill="none"/>
+<!-- x-ray source with rays and detector -->
+<rect x="447" y="377" width="94" height="70" rx="15" fill="#24466c"/><rect x="463" y="395" width="68" height="34" rx="8" fill="#4e7db2"/>
+<path d="M541 394 L612 355 L612 470 L541 430 Z" fill="#c6e2ff" opacity=".7"/><path d="M548 412H612" stroke="#2a7be0" stroke-width="3" stroke-dasharray="7 7"/>
+<rect x="615" y="349" width="32" height="136" rx="8" fill="#edf4fc" stroke="#5f94d4" stroke-width="4"/>
+<path d="M631 484v22" stroke="#789abc" stroke-width="8"/>
+<!-- review graph -->
+<rect x="787" y="344" width="184" height="152" rx="13" fill="#fff" stroke="#aec5df" stroke-width="3"/>
+<path d="M815 457l31-23 28 12 28-53 39 27" fill="none" stroke="#2475d9" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M806 477H952" stroke="#aabdd3" stroke-width="4"/><circle cx="962" cy="364" r="16" fill="#def1e9"/><path d="M955 363l6 7 10-14" stroke="#199565" stroke-width="4" fill="none"/>
+<!-- document -->
+<path d="M1127 338h110l39 39v133h-149z" fill="#fff" stroke="#9ab8d7" stroke-width="4"/><path d="M1237 339v40h39" stroke="#9ab8d7" stroke-width="4" fill="none"/>
+<path d="M1155 415h91 M1155 446h91 M1155 477h58" stroke="#9fb9d2" stroke-width="7" stroke-linecap="round"/>
+<!-- captions -->
+<text x="234" y="548" font-size="19" fill="#516b87" text-anchor="middle">Confirm tube &amp; scope</text>
+<text x="558" y="548" font-size="19" fill="#516b87" text-anchor="middle">Perform measurements</text>
+<text x="882" y="548" font-size="19" fill="#516b87" text-anchor="middle">Trace issues / retests</text>
+<text x="1206" y="548" font-size="19" fill="#516b87" text-anchor="middle">Issue test reports</text>
+</g>
+<rect x="88" y="660" width="1264" height="64" rx="12" fill="#edf4fd"/>
+<text x="116" y="701" font-family="Inter,Arial,sans-serif" font-size="19" fill="#446987">ILLUSTRATIVE PROCESS  ·  NOT A PHOTOGRAPH OF CLIENT EQUIPMENT OR A CERTIFICATE OF ACCREDITATION</text>
+</svg>

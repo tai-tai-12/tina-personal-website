@@ -1,101 +1,116 @@
 ---
-title: 客戶導向的第三方驗證營運
+title: 執行客戶導向的第三方驗證作業
 translationKey: structured-validation
 tags:
+- X 光球管檢測
 - 第三方測試
-- 品質作業
-- 法規文件
-- 實驗室營運
-category: 客戶驗證 · 營運
-summary: 從需求釐清、測試執行到 nonconformity／retesting 溝通與正式報告，負責外部客戶導向的技術驗證流程。
+- 產學聯盟營運
+- 技術報告
+category: 游離輻射設備檢測 · 客戶營運
+summary: 擔任游離輻射產學技術聯盟專責研究助理，實際執行客戶送測 X 光球管的第三方檢測、產出報告，並負責客戶接待與聯盟會員招募。
 proof:
-- 8 項產品測試
-- 10+ 份測試報告
+- 8 項設備測試
+- 10+ 份第三方報告
 - 5 家客戶組織
 displayMetrics:
 - value: "8"
-  label: "受測產品"
+  label: "受測設備／產品"
 - value: "10+"
-  label: "正式報告"
+  label: "第三方測試報告"
 - value: "5"
-  label: "客戶"
+  label: "客戶組織"
 visual: analytics-visual
 weight: 3
-heroBackground: images/projects/work-testing-v519.webp
-contextLabel: 客戶驗證 · 營運
-detailHero: images/projects/detail-v521/testing-hero-v521.webp
+heroBackground: images/projects/detail-v521/xray-tube-testing-hero-v89.svg
+contextLabel: 游離輻射設備檢測 · 產學聯盟營運
+detailHero: images/projects/detail-v521/xray-tube-testing-hero-v89.svg
 heroSize: standard
-detailHeroAlt: Third-party laboratory testing and validation workflow
-heroDek: 從需求範圍、技術測試、問題溝通、retesting 到正式報告，管理外部客戶導向的驗證流程。
+detailHeroAlt: X 光球管、偵檢器及測試紀錄的原創示意圖，非客戶真實設備照片
+heroDek: 於陽明交大游離輻射產學技術聯盟，親自執行 X 光球管檢測、客戶接待、第三方報告製作與會員招募。
 heroStats:
 - value: '8'
-  label: 測試產品
+  label: 受測設備／產品
 - value: 10+
-  label: 報告產出
+  label: 第三方報告
 - value: '5'
   label: 客戶組織
-- value: '2'
-  label: 實驗室採用工具
 snapshot:
 - title: 挑戰
-  body: 測試證據、量測、文件、客戶與稽核需求必須保持一致且可追溯。
+  body: 產業客戶需要對 X 光設備的檢測結果提供具可追溯性、可審查的第三方技術證據。
 - title: 我的角色
-  body: 從需求範圍、技術執行到 nonconformity／retesting 溝通與正式報告的端到端客戶與測試協調。
+  body: 擔任聯盟專責研究助理，親自接待客戶、接收送測 X 光球管、執行檢測、溝通問題及製作第三方測試報告。
 - title: 範圍
-  body: 游離輻射設備第三方測試與定量影像分析支援。
+  body: 同一條聯盟檢測服務流程中的游離輻射設備檢測、客戶關係、會員招募與技術文件。
 - title: 成果
-  body: 建立可重複的測試與報告流程，支援 8 項產品與 10+ 份報告。
+  body: 服務 5 家客戶、實際檢測 8 項設備／產品並產出 10+ 份第三方技術報告。
 relatedPrevTitle: 設計不只看 Accuracy 的 AI 評估
 relatedPrevURL: work/clinical-ai-at-scale/
 relatedNextTitle: 在真實臨床限制下推進醫療 AI 產品
 relatedNextURL: work/medical-ai-product/
 navItems:
 - id: problem
-  label: 01 作業問題
-- id: workstreams
-  label: 02 工作主軸
+  label: 01 客戶問題
+- id: my-work
+  label: 02 我的實際工作
 - id: validation
-  label: 03 驗證系統
+  label: 03 檢測與報告
+- id: accreditation
+  label: 04 認可範圍
 - id: quantitative
-  label: 04 定量影像
+  label: 05 獨立 CT 研究
 - id: takeaway
-  label: 05 重點收斂
+  label: 06 核心收穫
 ---
 
-
 <span id="problem"></span>
-## 面向客戶的驗證不只是把測試做完
+## 從客戶送測的 X 光球管，到可交付的第三方報告
 
-外部客戶不一定會帶著已完整定義的技術流程進來。這份工作位於 **需求範圍、技術量測、實驗室品質系統、問題溝通與對外報告** 的交界；需求必須被轉成清楚程序、可追溯結果、可審查紀錄與能支援合規準備的正式交付。
+對設備製造商等外部客戶而言，游離輻射設備檢測不只是完成一次量測，還包含接收與釐清需求、實際執行測試、處理測試問題、留下可追溯的紀錄，以及交付正式報告。我在 **陽明交大生物醫學影像物理暨儀器實驗室（BIPI）** 擔任 **游離輻射產學技術聯盟的專責研究助理**。聯盟的客戶服務、第三方檢測與報告製作，**是我同一條工作主線**，而非分開的兩份工作。
 
-<span id="workstreams"></span>
-## 兩個彼此獨立的工作範圍
+<span id="my-work"></span>
+## 我親自負責的工作
 
-<div class="case-section-subgrid-v524">
-  <article><span>REGULATED TESTING</span><strong>第三方測試與小聯盟營運</strong><p>需求範圍確認、設備測試、nonconformity／retesting 溝通、正式技術報告、客戶協調與評鑑準備。</p></article>
-  <article><span>QUANTITATIVE IMAGING</span><strong>MATLAB small-animal CT 分析</strong><p>骨密度與骨小樑量測，並建立後續由兩個大學實驗室採用的可重複流程。</p></article>
+<div class="case-section-subgrid-v524 xray-roles-v89">
+  <article><span>第三方檢測 · 親自執行</span><strong>從客戶接待到測試報告</strong><p>接待外部客戶、接收客戶送測的 X 光球管、確認設備規格與需求、親自執行實際測試與紀錄量測結果、協調異常問題或複測，以及製作第三方技術報告。</p></article>
+  <article><span>產學聯盟 · 會員與客戶營運</span><strong>會員招募與客戶關係</strong><p>招募潛在聯盟會員、處理會員與客戶溝通，並安排實際檢測合作；這些工作都屬於同一個游離輻射產學技術聯盟及其檢測服務流程。</p></article>
 </div>
 
-在受規範測試工作中，我擔任 **游離輻射產學技術合作小聯盟** 的主要學生助理，參與端到端客戶 intake 與測試執行，包括產品／規格確認、測試範圍定義、nonconformity 與 retesting 溝通、技術報告、品質系統紀錄、評鑑準備與會員／客戶溝通。
+**實際交付：** 為 **5 家客戶組織**的 **8 項設備／產品**執行測試，並製作 **10+ 份第三方技術報告**。這些數字都屬於**同一條聯盟與第三方檢測工作主線**，不是把 TAF 工作和其他第三方測試分開計數。
 
 <span id="validation"></span>
-## 驗證流程與可追溯性
+## X 光球管檢測與技術證據交付
 
-**Request → test plan → measurement → traceable result → report → review**
+**客戶接待 → 需求與規格確認 → X 光設備實測 → 結果檢視／複測 → 第三方報告**
 
-<figure class="case-visual-v521 case-visual-full-v521">{{< site-img src="images/projects/detail-v521/testing-measurement-v521.webp" alt="實驗室量測、文件與驗證審查概念流程" >}}<figcaption><strong>概念驗證流程。</strong> 呈現量測、證據審查、文件與品質審查，不是特定客戶測試的實際畫面。</figcaption></figure>
+<figure class="case-visual-v521 case-visual-full-v521 xray-evidence-v89">
+  {{< site-img src="images/projects/detail-v521/xray-testing-evidence-v89.svg" alt="客戶接待、X 光球管檢測、測試結果審查與第三方報告交付流程示意圖" >}}
+  <figcaption><strong>原創流程示意圖。</strong> 依實際工作類型重新繪製游離輻射設備檢測流程；不是任何客戶設備或正式測試報告的照片。</figcaption>
+</figure>
+<ol class="xray-mobile-steps-v89" aria-label="X 光設備檢測四步驟">
+<li><span>01 · 接收</span><strong>客戶球管與設備規格</strong><p>確認送測設備、測試需求與執行範圍。</p></li>
+<li><span>02 · 實測</span><strong>實際操作游離輻射設備</strong><p>完成檢測並保留可追溯量測紀錄。</p></li>
+<li><span>03 · 檢視</span><strong>異常與複測</strong><p>檢視結果並協調需要的後續測試。</p></li>
+<li><span>04 · 報告</span><strong>第三方技術報告</strong><p>整理並交付正式技術文件。</p></li></ol>
 
-<p class="case-note-v524"><strong>認證範圍。</strong> 實驗室在特定 scope 下具 ISO/IEC 17025 / TAF 認證；實際測試項目的認證狀態依服務內容而異。</p>
+我的工作同時包含 **技術執行**與**客戶端交付**：檢測前確認設備與測試需求、執行量測並維持紀錄一致性、處理異常或複測溝通，以及將結果整理成客戶可使用的報告。聯盟會員招募與關係維護，也是這段服務流程的一部分，而非另一個不相干的行政專案。
 
+<span id="accreditation"></span>
+## TAF 認可實驗室與產學聯盟的關係
+
+游離輻射產學技術聯盟連結產業、醫療院所與學術研究單位，提供技術合作與檢測服務。相關的 **陽明交大游離輻射檢驗實驗室** 列於財團法人全國認證基金會（TAF）認可名錄，編號 **3871**，依 **ISO/IEC 17025** 就特定測試範圍取得認可，其中包括部分 X 光球管與影像偵檢器測試項目。**TAF 認可的是實驗室的特定能力與項目；聯盟是產學合作機制；我則是實際執行測試及報告工作的研究助理。**
+
+**認可聲明邊界：** 我確實親自執行前述客戶檢測並產出報告；但這不代表我個人取得 TAF 認可、以授權簽署人身分簽發報告，或八項設備的全部測試項目都必然落在認可範圍內。
+
+<div class="xray-sources-v89"><a href="https://accreditation.taftw.org.tw/taf/public/basic/viewApplyItems.action?unitNo=3871" target="_blank" rel="noopener noreferrer">TAF 官方認可範圍 ↗</a><a href="https://nycuiril.wixsite.com/ionizingradiation/general-9" target="_blank" rel="noopener noreferrer">游離輻射產學技術聯盟 ↗</a><a href="https://sites.google.com/view/jcchen/" target="_blank" rel="noopener noreferrer">陳志成老師實驗室 ↗</a></div>
 
 <span id="quantitative"></span>
-## 定量影像工具
+## 另一項獨立研究：小動物 CT 骨密度分析
 
-與上述第三方測試工作分開，我也為 small-animal bone studies 開發 **MATLAB-based quantitative CT tooling**，標準化骨密度與骨小樑量測流程，後續由 **兩個大學實驗室** 使用。兩者分開呈現，可以更清楚界定各自工作範圍，同時保留共同能力：建立可重複、可交接的技術流程。
+除了聯盟的第三方檢測與報告工作，我也另外為**小動物 CT 研究**開發 **MATLAB 骨影像分割與定量分析工具**，支援骨密度與骨小樑量測。此可重複使用的流程後續由 **兩個大學實驗室**採用。這兩個實驗室是 **CT 研究工具的採用成果**，不是第三方檢測的額外客戶或 TAF 認可案件。
 
 <span id="takeaway"></span>
-## Takeaway
+## 核心收穫
 
-這段經驗讓我學會如何讓技術證據變得 **可追溯、可審查，也能被技術團隊之外的人使用**；這也成為我後續醫療 AI 驗證、法規文件與產品營運的重要基礎。
+這段經驗把親自動手執行測試與面向客戶的服務營運結合在一起：**接收 X 光球管、實際檢測、產出可信的第三方報告，以及招募產業會員**。我由此學會如何讓技術證據融入真正可運作的交付流程，這也成為後續臨床 AI 產品管理與受規範產品交付的重要基礎。
 
-<div class="case-capabilities-v523"><span class="case-capabilities-label-v523">CAPABILITIES DEMONSTRATED</span><div class="case-capabilities-chips-v523"><span>Third-Party Testing</span><span>Quality Operations</span><span>Quantitative Imaging</span><span>Technical Reporting</span><span>Audit Coordination</span></div></div>
+<div class="case-capabilities-v523"><span class="case-capabilities-label-v523">CAPABILITIES DEMONSTRATED</span><div class="case-capabilities-chips-v523"><span>X 光設備實測</span><span>第三方報告製作</span><span>客戶接待</span><span>產學聯盟會員招募</span><span>技術品質作業</span></div></div>

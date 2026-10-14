@@ -65,7 +65,8 @@
         <div class="project-kicker-row"><span class="project-no">01</span><span class="project-type">PRODUCT MANAGEMENT · AI</span></div>
         <h3 class="project-title-v64">{{ if $isZh }}在真實臨床限制下推進醫療 AI 產品{{ else }}<span>Shipping Medical AI</span><span>Under Real Clinical Constraints</span>{{ end }}</h3>
         <p>{{ if $isZh }}透過醫師需求探索、模型取捨與 release sequencing，把腦瘤 MRI AI 推進真實臨床工作流程。{{ else }}Used physician discovery, model trade-offs, and release sequencing to move brain-tumor MRI AI into real clinical workflow.{{ end }}</p>
-        <div class="proof-row-v64" aria-label="Project evidence"><span><strong>~67%</strong> faster processing</span><span><strong>2</strong> medical centers</span><span><strong>5</strong> physicians</span></div>
+        <div class="proof-row-v64" aria-label="Project evidence"><span><strong>~67%</strong> {{ if $isZh }}處理時間縮短{{ else }}less processing time{{ end }}</span><span><strong>2</strong> {{ if $isZh }}家醫療中心{{ else }}medical centers{{ end }}</span><span><strong>5</strong> {{ if $isZh }}位醫師{{ else }}physicians{{ end }}</span></div>
+        <p class="project-recognition-v8">{{ if $isZh }}<span>PROJECT RECOGNITION</span> DeepBT A+ · 2026 未來科技獎（團隊）{{ else }}<span>PROJECT RECOGNITION</span> DeepBT A+ · 2026 Future Tech Award (team){{ end }}</p>
         <div class="project-actions"><a href="{{ "work/medical-ai-product/" | relLangURL }}" class="btn mono-project-btn">{{ if $isZh }}查看專案{{ else }}Explore project{{ end }} <span>↗</span></a></div>
       </div>
       <a class="project-visual mono-visual editorial-visual" href="{{ "work/medical-ai-product/" | relLangURL }}" aria-label="Open Medical AI to Product case study">
@@ -81,7 +82,7 @@
         <div class="project-kicker-row"><span class="project-no">02</span><span class="project-type">AI EVALUATION · ML</span></div>
         <h3 class="project-title-v64">{{ if $isZh }}設計不只看 Accuracy 的 AI 評估{{ else }}Designing AI Evaluation Beyond Accuracy{{ end }}</h3>
         <p>{{ if $isZh }}以逐病灶敏感度、FP/scan、precision 與 failure analysis 評估 AI，而不是只看單一 headline accuracy。{{ else }}Evaluated lesion-wise AI through sensitivity, FP/scan, precision, and failure analysis—not a single headline accuracy metric.{{ end }}</p>
-        <div class="proof-row-v64" aria-label="Project evidence"><span><strong>264</strong> independent tests</span><span><strong>0.21</strong> FP/scan</span><span><strong>90.16%</strong> 5-class accuracy</span></div>
+        <div class="proof-row-v64" aria-label="Project evidence"><span><strong>94.5%</strong> {{ if $isZh }}偽陽性候選減少{{ else }}fewer FP candidates{{ end }}</span><span><strong>264</strong> {{ if $isZh }}例獨立測試{{ else }}independent tests{{ end }}</span><span><strong>90.16%</strong> {{ if $isZh }}五類分類準確率{{ else }}5-class accuracy{{ end }}</span></div>
         <div class="project-actions"><a href="{{ "work/clinical-ai-at-scale/" | relLangURL }}" class="btn mono-project-btn">{{ if $isZh }}查看專案{{ else }}Explore project{{ end }} <span>↗</span></a><a href="{{ "research/" | relLangURL }}" class="mono-text-action">{{ if $isZh }}研究成果{{ else }}Research outputs{{ end }} →</a></div>
       </div>
     </article>

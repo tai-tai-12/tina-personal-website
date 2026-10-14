@@ -9,8 +9,8 @@ tags:
 category: AI 評估 · ML
 summary: 以 sensitivity、FP/scan、precision 與 failure analysis 設計不只看單一 accuracy 的逐病灶 AI 評估。
 proof:
-- 264 例獨立測試
-- 0.21 FP/scan
+- 偽陽性候選減少 94.5%
+- 264 例獨立 MRI 測試
 - 90.16% 五類分類準確率
 visual: clinical-ai-visual
 weight: 2
@@ -83,6 +83,13 @@ Development cohort 用於模型開發、internal validation 與 operating-point 
   <div class="case-metric"><strong>0.21&nbsp;</strong><span>False positives / scan</span><small>完整 cascade 後</small></div>
   <div class="case-metric"><strong>76.89%&nbsp;</strong><span>Lesion-wise precision</span><small>Final cascade output</small></div>
   <div class="case-metric"><strong>90.16%&nbsp;</strong><span>Five-class accuracy</span><small>Retained true-positive lesions</small></div>
+</div>
+
+<div class="clinical-reduction-v8" role="group" aria-label="264 例獨立測試之偽陽性候選減少">
+  <div class="clinical-reduction-header-v8"><span>INDEPENDENT COHORT · 264 MRI CASES</span><strong>偽陽性候選減少 94.5%</strong></div>
+  <div class="clinical-reduction-row-v8"><span>Stage 0 候選</span><div class="clinical-reduction-track-v8"><i style="width:100%"></i></div><b>1,007 FP</b></div>
+  <div class="clinical-reduction-row-v8"><span>完整 cascade 輸出</span><div class="clinical-reduction-track-v8"><i style="width:5.46%"></i></div><b>55 FP</b></div>
+  <p>相同 264 例獨立測試 cohort，對比候選階段與完整篩選後的偽陽性總數；此為偽陽性候選減少比例，不代表敏感度提高 94.5%。</p>
 </div>
 
 <figure class="case-visual-v521 case-visual-full-v521">{{< site-img src="images/projects/detail-v521/clinical-evaluation-v521.webp" alt="腦部 MRI 逐病灶模型評估與篩選概念圖" >}}<figcaption><strong>概念評估視覺。</strong> 用於解釋候選篩選、病灶分類與效能評估，不是研究 pipeline 的實際截圖。</figcaption></figure>

@@ -22,7 +22,7 @@
   <section class="section-shell research-note-section-v63"><div class="shell research-note-reading-v63">
     <div class="research-note-index-v63">01 · {{ if $isZh }}背景{{ else }}CONTEXT{{ end }}</div>
     <div><h2>{{ if $isZh }}第一次完整走完臨床影像 AI 研究流程。{{ else }}My first end-to-end clinical imaging AI research project.{{ end }}</h2>
-      <p>{{ if $isZh }}這項國科會大專生研究計畫以 cardiovascular CT angiography 為主題，涵蓋 308 例臨床 CT。我負責資料準備、模型開發、定量評估與成果簡報，也從這個專案開始建立把臨床影像問題轉成可驗證技術流程的能力。{{ else }}This NSTC-funded undergraduate project applied deep learning to cardiovascular CT angiography across 308 clinical cases. I worked across data preparation, model development, quantitative evaluation, and presentation of findings—building the first full research workflow I later carried into larger medical-AI projects.{{ end }}</p></div>
+      <p>{{ if $isZh }}這項<strong>為期 8 個月、由國科會（NSTC）支持</strong>的大專生研究計畫，以 cardiovascular CT angiography 為主題，運用 <strong>3D U-Net</strong> 分析 308 例臨床 CT。我負責資料準備、模型開發、定量評估與成果簡報，也從這個專案開始建立把臨床影像問題轉成可驗證技術流程的能力。{{ else }}This <strong>eight-month NSTC-funded undergraduate research project</strong> used <strong>3D U-Net</strong> for thoracic-aorta segmentation across 308 clinical CT studies. I worked across data preparation, model development, quantitative evaluation, and presentation of findings—building the first full research workflow I later carried into larger medical-AI projects.{{ end }}</p></div>
   </div></section>
 
   <section class="section-shell alt research-note-section-v63"><div class="shell research-note-reading-v63">
@@ -30,7 +30,7 @@
     <div><h2>{{ if $isZh }}從資料、模型到 3D 定量分析。{{ else }}From data to model to 3D quantitative analysis.{{ end }}</h2>
       <div class="definition-grid-v63 definition-grid-v63-3">
         <div><span>DATA</span><strong>{{ if $isZh }}臨床 CTA 資料準備{{ else }}Clinical CTA preparation{{ end }}</strong><p>{{ if $isZh }}資料整理、影像前處理與分析輸入標準化。{{ else }}Clinical data preparation, image preprocessing, and standardized research inputs.{{ end }}</p></div>
-        <div><span>MODEL</span><strong>{{ if $isZh }}多類別分割{{ else }}Multi-class segmentation{{ end }}</strong><p>{{ if $isZh }}建立與評估胸主動脈分割模型。{{ else }}Developed and evaluated a multi-class thoracic-aorta segmentation pipeline.{{ end }}</p></div>
+        <div><span>MODEL</span><strong>{{ if $isZh }}多類別分割{{ else }}Multi-class segmentation{{ end }}</strong><p>{{ if $isZh }}使用 3D U-Net 建立與評估胸主動脈多類別分割模型。{{ else }}Developed and evaluated a multi-class 3D U-Net thoracic-aorta segmentation pipeline.{{ end }}</p></div>
         <div><span>ANALYSIS</span><strong>{{ if $isZh }}3D 重建與定量評估{{ else }}3D reconstruction & evaluation{{ end }}</strong><p>{{ if $isZh }}把 segmentation output 轉成 3D 與量化結果。{{ else }}Translated segmentation outputs into 3D reconstruction and quantitative evaluation.{{ end }}</p></div>
       </div>
     </div>

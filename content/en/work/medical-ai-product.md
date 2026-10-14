@@ -9,7 +9,7 @@ tags:
 category: PRODUCT MANAGEMENT · AI
 summary: Used physician discovery, technical trade-offs, and release sequencing to move brain-tumor MRI AI into real clinical workflow.
 proof:
-- ~67% faster AI processing
+- ~67% less AI processing time
 - 2 medical centers
 - 5 physician users
 visual: product-visual
@@ -21,7 +21,7 @@ detailHeroAlt: Clinical AI product workflow at a brain MRI review workstation
 heroDek: Turning brain-tumor MRI research into a physician-led product through recurring user discovery, technical trade-offs, release sequencing, validation, and TFDA execution.
 heroStats:
 - value: ~67%
-  label: Faster AI processing
+  label: Less AI processing time
 - value: 5 physicians · 2 centers
   label: Recurring workflow discovery
 - value: TFDA
@@ -32,7 +32,7 @@ snapshot:
 - title: My role
   body: Product discovery, requirements, technical trade-off decisions, release planning, validation, and regulatory execution.
 - title: Scope
-  body: Five physician users across two medical centers, plus AI/ML, software/UI, clinical, regulatory, and leadership stakeholders.
+  body: Five physician users at two medical centers, plus weekly coordination across 12 AI/ML, software/UI, clinical, regulatory, and leadership stakeholders.
 - title: Outcome
   body: Faster processing, clearer user feedback, workflow-specific operating points, and a protected submission timeline.
 relatedPrevTitle: Running Client-Facing Validation Operations
@@ -62,7 +62,7 @@ The research system performed well technically, but physicians exposed the produ
 
 <div class="product-decision-list-v6">
   <article><span>01 · USABILITY VS. MODEL PERFORMANCE</span><h3>Optimize for the workflow, not the academically best model</h3><p>I led recurring workflow testing with physicians and translated feedback into an initial sub-one-minute latency target. Working with engineers, we accepted a small, clinically validated sensitivity decrease and reduced end-to-end processing from roughly two minutes to about forty seconds. When physicians said the system still <em>felt</em> slow because they could not tell how much longer it would run, I proposed a percentage progress indicator based on physician feedback, which was subsequently deployed in the product.</p></article>
-  <article><span>02 · ONE MODEL, DIFFERENT WORKFLOWS</span><h3>Turn model metrics into operating-point decisions</h3><p>I translated sensitivity and false-positive burden into what physicians would experience during review, then used product trials and competitor benchmarks to define institution-level thresholds. The work showed that screening-oriented settings could prioritize sensitivity, while other medical-center workflows could use a more balanced operating point.</p></article>
+  <article><span>02 · ONE MODEL, DIFFERENT WORKFLOWS</span><h3>Turn model metrics into operating-point decisions</h3><p>I translated sensitivity and false-positive burden into what physicians would experience during review, then used product trials and competitor benchmarks to define institution-level thresholds. The work showed that higher-sensitivity clinical review workflows could prioritize sensitivity, while other medical-center workflows could use a more balanced operating point.</p></article>
   <article><span>03 · BETTER MODEL VS. SHIPPING ON TIME</span><h3>Sequence the upgrade instead of destabilizing the release</h3><p>When a materially improved model arrived late in the submission cycle, I assessed downstream revalidation and documentation work—not just engineering time—and estimated roughly three to six months of additional impact. I recommended keeping the already validated version for the current release and sequencing the new model into the next cycle. Leadership adopted the plan, and the team maintained the June TFDA submission timeline.</p></article>
 </div>
 
@@ -81,9 +81,18 @@ The product layer extended beyond the model itself. It included **PACS-connected
 </figure>
 
 <span id="evidence"></span>
-## Research evidence and execution
+## Product validation, research evidence, and recognition
 
 The product pathway grew from the same lesion-wise brain-tumor AI research program communicated through complementary public outputs.
+
+<div class="case-award-v8" aria-label="Project recognition">
+  <div class="case-award-emblem-v8" aria-hidden="true"><span>2026</span><strong>FT</strong></div>
+  <div class="case-award-copy-v8">
+    <span>TEAM / PROJECT RECOGNITION · 2026</span>
+    <h3>DeepBT A+ · Future Tech Award</h3>
+    <p>I contributed to <strong>DeepBT A+</strong>, the NYCU-led intelligent brain-tumor MRI reading assistance project recognized with the <strong>2026 Future Tech Award</strong>. The honor belongs to the project team; my work centered on physician-facing product decisions, execution, and clinical/regulatory coordination.</p>
+  </div>
+</div>
 
 <div class="case-evidence-grid">
   <article class="case-evidence-card">

@@ -32,7 +32,7 @@ snapshot:
 - title: 我的角色
   body: 使用者研究、需求定義、技術取捨、release planning、驗證與法規執行。
 - title: 範圍
-  body: 兩家醫療中心的 5 位醫師，以及 AI/ML、軟體/UI、臨床、法規與主管利害關係人。
+  body: 兩家醫療中心的 5 位醫師；每週協調 12 位 AI/ML、軟體/UI、臨床、法規與主管跨職能利害關係人。
 - title: 成果
   body: 更快的處理速度、更清楚的使用回饋、依工作流程調整的 operating point，以及受保護的送件時程。
 relatedPrevTitle: 客戶導向的第三方驗證營運
@@ -62,7 +62,7 @@ navItems:
 
 <div class="product-decision-list-v6">
   <article><span>01 · USABILITY VS. MODEL PERFORMANCE</span><h3>優化真實工作流程，而不是只追求學術上最好的模型</h3><p>我透過持續的醫師 workflow testing，把「太慢」轉成低於一分鐘的第一階段產品目標，並與工程師共同評估 latency–sensitivity trade-off。在臨床可接受的小幅 sensitivity 下降下，端到端處理時間由約兩分鐘降到約四十秒。當醫師指出系統仍讓人感覺很慢，是因為不知道剩餘時間時，我根據醫師回饋提出百分比 progress indicator，之後實際部署到產品中。</p></article>
-  <article><span>02 · ONE MODEL, DIFFERENT WORKFLOWS</span><h3>把模型指標轉成 operating-point 決策</h3><p>我把 sensitivity 與 false-positive burden 翻譯成醫師實際閱片時的工作量，再透過產品試用與 competitor benchmarks 定義 institution-level thresholds。結果顯示，偏 screening 的情境可更重視 sensitivity，而其他醫療中心工作流程則可使用較平衡的 operating point。</p></article>
+  <article><span>02 · ONE MODEL, DIFFERENT WORKFLOWS</span><h3>把模型指標轉成 operating-point 決策</h3><p>我把 sensitivity 與 false-positive burden 翻譯成醫師實際閱片時的工作量，再透過產品試用與 competitor benchmarks 定義 institution-level thresholds。結果顯示，需高敏感度的臨床審閱情境可更重視 sensitivity，而其他醫療中心工作流程則可使用較平衡的 operating point。</p></article>
   <article><span>03 · BETTER MODEL VS. SHIPPING ON TIME</span><h3>不是拒絕更好的模型，而是安排正確的 release sequencing</h3><p>送件後期出現明顯改善的新模型時，我評估的不只是 engineering time，而是驗證與文件的下游重工，估計若納入當期 release 將增加約三到六個月影響。我建議沿用已完成驗證的版本送件，並把新模型排入下一開發週期；主管採納此方案，團隊維持原定六月 TFDA 送件時程。</p></article>
 </div>
 
@@ -81,9 +81,18 @@ navItems:
 </figure>
 
 <span id="evidence"></span>
-## 研究證據與產品執行
+## 產品驗證、研究證據與團隊肯定
 
 產品路徑建立在同一條逐病灶腦瘤 AI 研究主線上，並透過不同公開發表形式呈現。
+
+<div class="case-award-v8" aria-label="專案獲獎">
+  <div class="case-award-emblem-v8" aria-hidden="true"><span>2026</span><strong>FT</strong></div>
+  <div class="case-award-copy-v8">
+    <span>團隊／專案獲獎 · 2026</span>
+    <h3>DeepBT A+ · 未來科技獎（Future Tech Award）</h3>
+    <p>我參與 <strong>DeepBT A+ 腦瘤 MRI 智慧輔助判讀系統</strong> 的產品推進工作；此 NYCU 主導的團隊專案獲得 <strong>2026 Future Tech Award</strong>。此獎項屬於團隊／專案肯定，不代表我個人獨立獲獎；我的貢獻聚焦醫師工作流程、產品決策、跨團隊交付，以及臨床與法規協調。</p>
+  </div>
+</div>
 
 <div class="case-evidence-grid">
   <article class="case-evidence-card">{{< site-img src="images/research/midl-poster.webp" alt="Tina Tai 與 MIDL 2026 海報" >}}<div><span>MIDL · 2026</span><h3>First-Author Short Paper Poster</h3><p>逐病灶偽陽性降低與五類腫瘤分類的公開研究成果。</p></div></article>

@@ -26,9 +26,18 @@
           <span class="education-subsection-label-v515">{{ if $isZh }}學術重點{{ else }}ACADEMIC FOCUS{{ end }}</span>
           <p class="education-focus-inline-v527">Analytics · Machine Learning · Optimization · Technology Strategy</p>
         </div>
+        <div class="education-subsection-v515 coursework-v515 coursework-current-v8">
+          <span class="education-subsection-label-v515">{{ if $isZh }}目前修習課程 · 2026 秋季{{ else }}CURRENT COURSEWORK · FALL 2026{{ end }}</span>
+          <ul class="coursework-list-v515 coursework-list-v530">
+            <li>Machine Learning Fundamentals</li>
+            <li>Modern Data Management</li>
+            <li>Programming in R &amp; Python</li>
+            <li>Statistical Foundations for Business Analytics</li>
+          </ul>
+        </div>
         <div class="education-subsection-v515 education-leadership-v62">
           <span class="education-subsection-label-v515">{{ if $isZh }}領導與社群{{ else }}LEADERSHIP &amp; COMMUNITY{{ end }}</span>
-          <p class="education-leadership-line-v62">MSBA Student Ambassador</p>
+          <p class="education-leadership-line-v62">{{ if $isZh }}2026–27 MSBA 學生大使（Student Ambassador）{{ else }}Selected MSBA Student Ambassador · 2026–27{{ end }}</p>
         </div>
       </div>
     </article>
@@ -52,12 +61,10 @@
           <p class="education-focus-inline-v527">Medical AI · Brain MRI · Clinical Validation · Research Engineering</p>
         </div>
         <div class="education-subsection-v515 coursework-v515">
-          <span class="education-subsection-label-v515">{{ if $isZh }}精選課程{{ else }}SELECTED COURSEWORK{{ end }}</span>
+          <span class="education-subsection-label-v515">{{ if $isZh }}精選研究所課程{{ else }}SELECTED GRADUATE COURSEWORK{{ end }}</span>
           <ul class="coursework-list-v515 coursework-list-v530">
-            <li>Deep Learning &amp; Biomedical Applications</li>
             <li>Machine Learning &amp; Biomedical Applications</li>
-            <li>Magnetic Resonance in Medicine</li>
-            <li>Medical Device Regulatory Requirements</li>
+            <li>Introduction to Photonics Engineering</li>
           </ul>
         </div>
       </div>
@@ -85,7 +92,9 @@
           <span class="education-subsection-label-v515">{{ if $isZh }}精選課程{{ else }}SELECTED COURSEWORK{{ end }}</span>
           <ul class="coursework-list-v515 coursework-list-v530">
             <li>Programming Language</li>
+            <li>Deep Learning &amp; Biomedical Applications</li>
             <li>Principles of Magnetic Resonance Imaging</li>
+            <li>{{ if $isZh }}Medical Device Regulatory Requirements（醫療器材法規實務）{{ else }}Medical Device Regulatory Requirements{{ end }}</li>
           </ul>
         </div>
       </div>
@@ -104,7 +113,7 @@
     <div class="credential-group-v514">
       <span class="credential-group-label-v514">{{ if $isZh }}精選獲獎{{ else }}SELECTED HONORS{{ end }}</span>
       <ul class="credential-list-v514 credential-list-v62">
-        <li><span class="credential-award-icon-v62" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3.5 15 5l3.3-.2.2 3.3 1.6 2.9-2.9 1.6-1.6 2.9-3.3-.2-3 1.5-3-1.5-3.3.2L6.8 12.6 4 11l1.5-2.9.2-3.3L9 5l3-1.5Z"/><path d="m9.2 12.3 1.8 1.8 3.8-4"/></svg></span><div><strong>Outstanding Thesis Award</strong><span>NYCU · 2026</span></div></li>
+        <li><span class="credential-award-icon-v62" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3.5 15 5l3.3-.2.2 3.3 1.6 2.9-2.9 1.6-1.6 2.9-3.3-.2-3 1.5-3-1.5-3.3.2L6.8 12.6 4 11l1.5-2.9.2-3.3L9 5l3-1.5Z"/><path d="m9.2 12.3 1.8 1.8 3.8-4"/></svg></span><div><strong>{{ if $isZh }}Outstanding Thesis Award · 第一名{{ else }}Outstanding Thesis Award · First Place{{ end }}</strong><span>NYCU · 2026</span></div></li>
         <li><span class="credential-award-icon-v62" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3.5 15 5l3.3-.2.2 3.3 1.6 2.9-2.9 1.6-1.6 2.9-3.3-.2-3 1.5-3-1.5-3.3.2L6.8 12.6 4 11l1.5-2.9.2-3.3L9 5l3-1.5Z"/><path d="m9.2 12.3 1.8 1.8 3.8-4"/></svg></span><div><strong>Outstanding Oral Presentation</strong><span>AMLDS · 2026</span></div></li>
         <li><span class="credential-award-icon-v62" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3.5 15 5l3.3-.2.2 3.3 1.6 2.9-2.9 1.6-1.6 2.9-3.3-.2-3 1.5-3-1.5-3.3.2L6.8 12.6 4 11l1.5-2.9.2-3.3L9 5l3-1.5Z"/><path d="m9.2 12.3 1.8 1.8 3.8-4"/></svg></span><div><strong>Honor Student Award</strong><span>NYCU · 2024</span></div></li>
         <li><span class="credential-award-icon-v62" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3.5 15 5l3.3-.2.2 3.3 1.6 2.9-2.9 1.6-1.6 2.9-3.3-.2-3 1.5-3-1.5-3.3.2L6.8 12.6 4 11l1.5-2.9.2-3.3L9 5l3-1.5Z"/><path d="m9.2 12.3 1.8 1.8 3.8-4"/></svg></span><div><strong>Certificate of Excellence</strong><span>NTU Hospital · Clinical Internship</span></div></li>
@@ -117,7 +126,9 @@
       <ul class="credential-list-v514 credential-list-compact-v514">
         <li><strong>Data Science & Smart Instrumentation</strong><span>NYCU · 2026</span></li>
         <li><strong>CS50's Introduction to AI with Python</strong><span>Harvard / CS50 · 2025</span></li>
-        <li><strong>Data Science Fundamentals with Python & SQL</strong><span>IBM · 2025</span></li>
+        <li><strong>Google Ads Search &amp; Measurement</strong><span>{{ if $isZh }}Google Skillshop · 2026 · 兩項認證{{ else }}Google Skillshop · 2026 · Two certifications{{ end }}</span></li>
+        <li><strong>IBM Relational Database Administrator</strong><span>Professional Certificate · 2025</span></li>
+        <li><strong>Data Science Fundamentals with Python &amp; SQL</strong><span>IBM · 2025</span></li>
         <li><strong>Fundamentals of Visualization with Tableau</strong><span>UC Davis · 2026</span></li>
       </ul>
       <p class="credential-note credential-note-v514">{{ if $isZh }}更多技術證書收錄於{{ else }}More technical credentials are listed on{{ end }} <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noreferrer">LinkedIn ↗</a></p>

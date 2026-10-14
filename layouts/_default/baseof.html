@@ -1,12 +1,13 @@
 <!doctype html>
-<html lang="{{ .Site.Language.Lang }}" data-theme="light" data-portfolio-version="6.5">
+<html lang="{{ .Site.Language.Lang }}" data-theme="light" data-portfolio-version="8.0">
 <head>
   {{ partial "head.html" . }}
 </head>
 <body>
+  <a class="skip-to-content-v8" href="#main-content">Skip to main content / 跳至主要內容</a>
   {{ partial "header.html" . }}
-  <main>{{ block "main" . }}{{ end }}</main>
+  <main id="main-content">{{ block "main" . }}{{ end }}</main>
   {{ partial "footer.html" . }}
-  <script src="{{ "js/site.js" | relURL }}?v=6.5.0" defer></script>
+  <script src="{{ "js/site.js" | relURL }}?v=8.0.0" defer></script>
 </body>
 </html>

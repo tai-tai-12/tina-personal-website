@@ -9,8 +9,8 @@ tags:
 category: AI EVALUATION · ML
 summary: Designed lesion-wise AI evaluation beyond headline accuracy, separating development from independent clinical testing and review burden.
 proof:
-- 264 independent test exams
-- 0.21 FP/scan
+- 94.5% fewer FP candidates
+- 264 independent MRI cases
 - 90.16% 5-class accuracy
 visual: clinical-ai-visual
 weight: 2
@@ -90,6 +90,13 @@ The evaluation deliberately separated development and independent clinical testi
   <div class="case-metric"><strong>0.21&nbsp;</strong><span>False positives / scan</span><small>After the full cascade</small></div>
   <div class="case-metric"><strong>76.89%&nbsp;</strong><span>Lesion-wise precision</span><small>Final cascade output</small></div>
   <div class="case-metric"><strong>90.16%&nbsp;</strong><span>Five-class accuracy</span><small>Retained true-positive lesions</small></div>
+</div>
+
+<div class="clinical-reduction-v8" role="group" aria-label="False-positive candidate reduction across the 264-case independent evaluation">
+  <div class="clinical-reduction-header-v8"><span>INDEPENDENT COHORT · 264 MRI CASES</span><strong>94.5% fewer false-positive candidates</strong></div>
+  <div class="clinical-reduction-row-v8"><span>Stage 0 candidates</span><div class="clinical-reduction-track-v8"><i style="width:100%"></i></div><b>1,007 FP</b></div>
+  <div class="clinical-reduction-row-v8"><span>Full cascade output</span><div class="clinical-reduction-track-v8"><i style="width:5.46%"></i></div><b>55 FP</b></div>
+  <p>Same independent test cohort, before vs. after candidate filtering. This is a reduction in false-positive candidates—not a claim that sensitivity increased by 94.5%.</p>
 </div>
 
 <figure class="case-visual-v521 case-visual-full-v521">

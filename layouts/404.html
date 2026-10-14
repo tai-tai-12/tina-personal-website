@@ -1,1 +1,14 @@
-{{ define "main" }}<section class="section-shell"><div class="shell narrow error-page"><span class="kicker">404</span><h1>Page not found.</h1><p>The page may have moved or the link may be outdated.</p><a class="btn primary-blue" href="{{ .Site.Home.RelPermalink }}">Back home →</a></div></section>{{ end }}
+{{ define "main" }}
+{{ $isZh := eq .Site.Language.Lang "zh" }}
+<section class="section-shell" aria-labelledby="not-found-heading">
+  <div class="shell narrow error-page">
+    <span class="kicker">404 · NOT FOUND</span>
+    <h1 id="not-found-heading">{{ if $isZh }}找不到這個頁面{{ else }}Page not found{{ end }}</h1>
+    <p>{{ if $isZh }}連結可能已更新。你可以返回首頁，或從精選專案重新開始。{{ else }}This link may have moved. Return home or explore the selected work.{{ end }}</p>
+    <div class="cta-row hero-cta-row">
+      <a class="btn primary-blue" href="{{ .Site.Home.RelPermalink }}">{{ if $isZh }}返回首頁{{ else }}Back to home{{ end }} →</a>
+      <a class="btn secondary-clean" href="{{ "work/" | relLangURL }}">{{ if $isZh }}精選專案{{ else }}Selected work{{ end }} ↗</a>
+    </div>
+  </div>
+</section>
+{{ end }}

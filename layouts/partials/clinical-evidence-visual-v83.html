@@ -1,0 +1,11 @@
+{{ $isZh := eq .Site.Language.Lang "zh" }}
+<div class="clinical-evidence-visual-v83" role="img" aria-label="{{ if $isZh }}獨立回溯性測試中，偽陽性候選由 1007 減至 55，降低 94.54%。{{ else }}Independent retrospective cohort: false-positive candidates decreased from 1,007 to 55, a 94.54 percent reduction.{{ end }}">
+  <span class="clinical-visual-eyebrow-v83">{{ if $isZh }}264 例 MRI · 獨立回溯性評估{{ else }}264 MRI CASES · RETROSPECTIVE EVALUATION{{ end }}</span>
+  <strong class="clinical-visual-title-v83">{{ if $isZh }}偽陽性候選比較{{ else }}False-positive candidate burden{{ end }}</strong>
+  <div class="clinical-visual-bars-v83">
+    <div class="clinical-visual-bar-group-v83"><span>{{ if $isZh }}初始候選{{ else }}Initial candidates{{ end }}</span><div class="clinical-visual-track-v83"><i class="clinical-visual-fill-v83 baseline" aria-hidden="true"></i></div><b>1,007</b></div>
+    <div class="clinical-visual-bar-group-v83"><span>{{ if $isZh }}最終模型{{ else }}Final cascade{{ end }}</span><div class="clinical-visual-track-v83"><i class="clinical-visual-fill-v83 refined" aria-hidden="true"></i></div><b>55</b></div>
+  </div>
+  <div class="clinical-visual-outcome-v83"><strong>−94.54%</strong><span>{{ if $isZh }}偽陽性候選 · Sensitivity：84.96% → 80.97%{{ else }}FP candidates · Sensitivity: 84.96% → 80.97%{{ end }}</span></div>
+  <span class="clinical-visual-source-v83">{{ if $isZh }}來源：碩士論文 · 相同 cohort{{ else }}Source: M.S. thesis · same cohort{{ end }}</span>
+</div>

@@ -25,6 +25,20 @@
     document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
   }
 
+  // Enlarging authentic research figures does not alter or expose source data.
+  const lightbox = document.getElementById('research-lightbox-v83');
+  if (lightbox && typeof lightbox.showModal === 'function') {
+    const zoomed = lightbox.querySelector('img');
+    document.querySelectorAll('[data-lightbox]').forEach(link => link.addEventListener('click', event => {
+      event.preventDefault();
+      zoomed.src = link.href;
+      lightbox.showModal();
+    }));
+    lightbox.querySelector('button').addEventListener('click', () => lightbox.close());
+    lightbox.addEventListener('click', e => { if (e.target === lightbox) lightbox.close(); });
+    lightbox.addEventListener('close', () => { zoomed.removeAttribute('src'); });
+  }
+
   const reveal = document.querySelectorAll('.reveal');
   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     reveal.forEach(el => el.classList.add('visible'));

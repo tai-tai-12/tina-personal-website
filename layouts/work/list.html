@@ -12,9 +12,9 @@
       {{ if eq .Params.visual "product-visual" }}
       <img src="{{ "images/projects/work-product-v519.webp" | relURL }}" alt="Clinical product workflow illustration">
       {{ else if eq .Params.visual "clinical-ai-visual" }}
-      <img src="{{ "images/projects/work-clinical-ai-v519.webp" | relURL }}" alt="Lesion-wise brain tumor AI pipeline illustration">
+      {{ partial "clinical-evidence-visual-v83.html" $ }}
       {{ else }}
-      <img src="{{ "images/projects/work-testing-v519.webp" | relURL }}" alt="Conceptual third-party radiation-equipment testing workflow">
+      <img src="{{ "images/projects/validation-workflow-v83.svg" | relURL }}" alt="Validation delivery from test scoping to reporting" loading="lazy" decoding="async">
       {{ end }}
       <span class="work-stack-index-v510">0{{ .Weight }}</span>
     </a>
@@ -22,7 +22,7 @@
       <span class="work-category">{{ .Params.category }}</span>
       <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
       <p>{{ .Params.summary }}</p>
-      {{ with .Params.proof }}<div class="proof-row-v64 work-proof-row-v64" aria-label="Project evidence">{{ range $p := . }}<span>{{ $p }}</span>{{ end }}</div>{{ end }}
+      {{ with .Params.proof }}<div class="proof-row-v64 work-proof-row-v64 metrics-v83 work-metrics-v83" aria-label="Project evidence">{{ range $p := . }}<span>{{ $p }}</span>{{ end }}</div>{{ end }}
       <a class="btn mono-project-btn work-stack-btn-v510" href="{{ .RelPermalink }}">{{ if $isZh }}查看專案{{ else }}Explore project{{ end }} ↗</a>
     </div>
   </article>

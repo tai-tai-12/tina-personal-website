@@ -26,7 +26,7 @@
   </header>
 
   {{ with .Params.snapshot }}
-  <section class="case-brief-v526" aria-label="{{ if eq .Lang "zh" }}專案摘要{{ else }}Project brief{{ end }}">
+  <section class="case-brief-v526" aria-label="{{ if eq $.Lang "zh" }}專案摘要{{ else }}Project brief{{ end }}">
     <div class="case-brief-shell-v526">
       <div class="case-brief-heading-v526">
         <span>{{ if eq $.Lang "zh" }}重點摘要{{ else }}AT A GLANCE{{ end }}</span>

@@ -1,31 +1,26 @@
-# Tina Tai Personal Website — V8.13.1 FINAL
+# Tina Tai Personal Website — V8.13.2 (Build-Fixed Final)
 
-A **complete source replacement** for Hugo / GitHub Pages. The ZIP root is the GitHub repository root; there is no extra parent folder.
+**Complete replacement** of the Hugo source tree for GitHub Pages. Base: the previously deployed V8.13. This is not an overlay over the failed V8.13.1.
 
-## Deployment
+## What was fixed
+1. Resolved a **Hugo Go-template rendering scope error** in `layouts/work/single.html`. Inside `with .Params.snapshot`, the language check must use `$.Lang`, not `.Lang`. The failed package introduced this difference.
+2. Preserved Research area card metric containment (fixed three-column grid, responsive single-column metrics on small screens).
+3. Preserved final Traditional Chinese localization corrections for Research, Case Study takeaway headings, and accessible labels.
+4. Kept all original publication, resume, award, testing attribution, multilingual routes and existing project assets.
 
-1. Back up the current V8.13 website repository. Keep `.git/` if using local Git.
-2. Replace all previous website source files with **all** contents of this archive, including hidden `.github/`.
-3. Commit and push to `main`.
-4. In GitHub → Actions, confirm the **Build and deploy** workflow successfully completes both Build and Deploy.
-5. Refresh the live website and confirm the page source contains `<meta name="portfolio-version" content="8.13.1">` and loads `portfolio-v8131.css`, `home-v8131.css`.
-6. Visually inspect both Research cards in EN / 繁中 at desktop and mobile widths; confirm no metric text extends beyond a card.
+## Safely replacing the repository
+1. Back up your current website. If working locally with Git, **do not delete `.git/`**.
+2. Remove existing tracked site files and copy all files from this ZIP directly to the repository root, including hidden `.github/`.
+3. Check the repository root has `hugo.toml`, `content/`, `layouts/`, `static/`, `themes/`, `scripts/`, `.github/`.
+4. Push to `main` and wait for `hugo.yaml` build and deploy jobs to both succeed.
+5. Verify page source contains `<meta name="portfolio-version" content="8.13.2">`; verify `portfolio-v8132.css` and `home-v8132.css` load.
+6. Verify `/research/` in EN and `/zh/research/` in Traditional Chinese, plus at least one case-study page.
 
-## Quick check
+## Local/source checks
 
 ```bash
-python3 scripts/verify_v8131.py
+python3 scripts/verify_v8132.py
+hugo build --gc --minify
 ```
 
-The GitHub Actions workflow runs this check automatically **before** the official Hugo build.
-
-## Scope
-
-- Prevent overflow in the three Research metrics of each Research Area card. At desktop, metrics use equal columns with stacked value + label; on small phones, a readable vertical list.
-- Translate remaining labels and conclusions in Traditional Chinese pages; localize selected accessibility labels.
-- Keep **all** Work, Experience, Education, Research, About, three detailed cases, thoracic-aorta study, official sources, newest resume, and existing visual identity intact.
-- Keep medical AI performance-cohort distinctions, lab accreditation boundaries, consortium client-contact attribution, and team award attribution unchanged.
-
-## Validation scope
-
-See `V8_13_1_FINAL_QA.md`. Source validation, HTML template previews, and browser containment checks have passed. The formal Hugo build and post-deployment interaction/visual checks remain the GitHub Actions and live-site gates; do not equate the local preview with production pixels.
+The source validator and stylesheet checks pass locally. **A real Hugo build is required on GitHub Actions:** the authoring container does not have Hugo, so the deploy job's success has to be checked after upload.

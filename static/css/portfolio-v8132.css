@@ -4634,7 +4634,7 @@ html[data-theme="dark"] .case-prose-v526 .xray-evidence-v89 figcaption{backgroun
 @media(max-width:770px){.nav-primary-v512 a[aria-current="location"]::after{bottom:-3px;left:0;right:auto;width:24px}}
 
 
-/* V8.13.1 FINAL — Research metric containment and readable information hierarchy.
+/* V8.13.2 BUILD-FIXED — Research metric containment and readable information hierarchy.
    The old nowrap / max-content proof row could bleed past a two-column card.
    Scope the fix to the two Research Areas cards; keep other metric components unchanged. */
 .research-area-card-v64 .research-proof-row-v64{

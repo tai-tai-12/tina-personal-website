@@ -92,7 +92,11 @@ Development cohort 用於模型開發、internal validation 與 operating-point 
   <p>相同 264 例獨立測試 cohort，對比候選階段與完整篩選後的偽陽性總數；此為偽陽性候選減少比例，不代表敏感度提高 94.5%。</p>
 </div>
 
-<figure class="case-visual-v521 case-visual-full-v521">{{< site-img src="images/projects/detail-v521/clinical-evaluation-v521.webp" alt="腦部 MRI 逐病灶模型評估與篩選概念圖" >}}<figcaption><strong>概念評估視覺。</strong> 用於解釋候選篩選、病灶分類與效能評估，不是研究 pipeline 的實際截圖。</figcaption></figure>
+<section class="clinical-tradeoff-v81" aria-labelledby="tradeoff-title-v81">
+  <div class="clinical-tradeoff-heading-v81"><span>效能取捨 · 同一組 264 例回溯性獨立測試</span><h3 id="tradeoff-title-v81">降低大量誤報，也必須呈現 sensitivity 的代價。</h3><p>與 Stage-0 候選池相比，完整 cascade 大幅減少偽陽性檢閱負擔，但同時額外損失九個真陽性病灶。這兩個方向都是模型評估的重要部分。</p></div>
+  <div class="clinical-tradeoff-pair-v81"><div><span>每例偽陽性 FP/SCAN</span><div class="tradeoff-comparison-v81"><span class="tradeoff-value-v81">Stage 0 <strong>3.81</strong></span><div class="tradeoff-line-v81"><i style="width:100%"></i></div><span class="tradeoff-value-v81">Full cascade <strong>0.21</strong></span><div class="tradeoff-line-v81"><i style="width:5.51%"></i></div></div><b>偽陽性候選減少 94.54%</b></div><div><span>逐病灶敏感度 SENSITIVITY</span><div class="tradeoff-comparison-v81"><span class="tradeoff-value-v81">Stage 0 <strong>84.96%</strong></span><div class="tradeoff-line-v81"><i style="width:84.96%"></i></div><span class="tradeoff-value-v81">Full cascade <strong>80.97%</strong></span><div class="tradeoff-line-v81"><i style="width:80.97%"></i></div></div><b>下降 3.99 個百分點</b></div></div>
+  <p class="clinical-tradeoff-source-v81">資料來源：最終碩士論文、264 例回溯性 MRI 測試（226 個標註病灶）。此為研究評估，並非前瞻性臨床成效研究；最終 precision 為 76.89%，Stage 0 為 16.01%。</p>
+</section>
 
 <span id="engineering"></span>
 ## 從臨床洞察到技術設計
@@ -102,6 +106,8 @@ Development cohort 用於模型開發、internal validation 與 operating-point 
 <div class="clinical-insight-v6"><span>CLINICAL INSIGHT → TECHNICAL DESIGN</span><h3>用臨床 domain knowledge 找模型失敗原因，而不是只換 architecture</h3><p>當 glioma 與 metastasis 長期容易混淆時，我重新回到 MRI 影像本身，利用醫事放射背景觀察肉眼可辨識特徵，與醫師確認後，再把這些臨床 insight 轉成模型與 augmentation 實驗。這是我把臨床推理轉成技術設計的代表例子。</p></div>
 
 重點先放在問題判斷與 evidence；工具則作為支撐。
+
+<div class="clinical-evidence-notes-v81"><article><span>GROUND-TRUTH 品質</span><h3>專家達成共識前的一致性</h3><p>腫瘤類型的 Fleiss’ κ 為 <strong>0.9416</strong>，軸內／軸外分類為 <strong>0.9514</strong>；分割 mean Dice 為 <strong>0.8864</strong>。這些評估的是標註一致性，不是模型準確率。</p></article><article><span>減少輸入序列的次要分析</span><h3>T1C-only vs. T1C + T2</h3><p>次要 T1C-only 組態的 sensitivity 為 <strong>73.89%</strong>、<strong>0.09 FP/scan</strong>、保留真陽性五分類 accuracy 為 <strong>88.62%</strong>；主要 T1C+T2 組態則為 <strong>80.97%</strong>、<strong>0.21</strong>、<strong>90.16%</strong>。兩組保留的病灶並不完全相同，因此五分類數值不能直接當作相同病灶的比較。</p></article></div>
 
 <details class="technical-details-v62">
   <summary>Technical details</summary>
@@ -114,6 +120,8 @@ Development cohort 用於模型開發、internal validation 與 operating-point 
 </details>
 
 相關研究版本發表於 **MIDL 2026** 與 **AMLDS 2026**；本頁 headline metrics 刻意統一採最終碩論 independent-cohort evaluation。
+
+<div class="case-boundary-v81"><strong>研究證據的限制</strong><p>這是雙中心回溯性獨立測試，不是 prospective reader study，亦未證實臨床實務中醫師判讀時間、alert fatigue、病人預後或自主診斷能力的改善。MIDL 2026 公開論文使用的是<strong>另一組 249 例</strong>的 held-out cohort，其 90.13% sensitivity 和 0.41 FP/scan 不能與本論文 264 例數據混為同一組結果。</p></div>
 
 <span id="takeaway"></span>
 ## Takeaway

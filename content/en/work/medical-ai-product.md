@@ -61,7 +61,7 @@ The research system performed well technically, but physicians exposed the produ
 ## Three product decisions that changed the path
 
 <div class="product-decision-list-v6">
-  <article><span>01 · USABILITY VS. MODEL PERFORMANCE</span><h3>Optimize for the workflow, not the academically best model</h3><p>I led recurring workflow testing with physicians and translated feedback into an initial sub-one-minute latency target. Working with engineers, we accepted a small, clinically validated sensitivity decrease and reduced end-to-end processing from roughly two minutes to about forty seconds. When physicians said the system still <em>felt</em> slow because they could not tell how much longer it would run, I proposed a percentage progress indicator based on physician feedback, which was subsequently deployed in the product.</p></article>
+  <article><span>01 · USABILITY VS. MODEL PERFORMANCE</span><h3>Optimize for the workflow, not the academically best model</h3><p>I led recurring workflow testing with physicians and translated feedback into an initial sub-one-minute latency target. Working with engineers, we accepted a small sensitivity trade-off discussed with clinical users and reduced end-to-end processing from roughly two minutes to about forty seconds. When physicians said the system still <em>felt</em> slow because they could not tell how much longer it would run, I proposed a percentage progress indicator based on physician feedback, which was subsequently deployed in the product.</p></article>
   <article><span>02 · ONE MODEL, DIFFERENT WORKFLOWS</span><h3>Turn model metrics into operating-point decisions</h3><p>I translated sensitivity and false-positive burden into what physicians would experience during review, then used product trials and competitor benchmarks to define institution-level thresholds. The work showed that higher-sensitivity clinical review workflows could prioritize sensitivity, while other medical-center workflows could use a more balanced operating point.</p></article>
   <article><span>03 · BETTER MODEL VS. SHIPPING ON TIME</span><h3>Sequence the upgrade instead of destabilizing the release</h3><p>When a materially improved model arrived late in the submission cycle, I assessed downstream revalidation and documentation work—not just engineering time—and estimated roughly three to six months of additional impact. I recommended keeping the already validated version for the current release and sequencing the new model into the next cycle. Leadership adopted the plan, and the team maintained the June TFDA submission timeline.</p></article>
 </div>
@@ -73,12 +73,26 @@ The research system performed well technically, but physicians exposed the produ
 
 The underlying research used a lesion-wise cascade rather than treating detection as a single end point. A sensitivity-oriented proposal stage generated candidates, a downstream classifier suppressed false positives, and the final stage typed retained lesions. The detailed technical evaluation is covered separately in **Designing AI Evaluation Beyond Accuracy**.
 
-The product layer extended beyond the model itself. It included **PACS-connected case access, processing-state visibility, AI-assisted lesion overlays, lesion-level review, and report review before physician judgment**. Repeated physician discovery across two centers turned technical performance into concrete requirements for speed, visibility, operating point, and release scope.
+The product layer extended beyond the model itself. It included **PACS-connected case access, processing-state visibility, AI-assisted lesion overlays, lesion-level review, and physician confirmation before LLM-assisted report drafting and final clinician oversight**. Repeated physician discovery across two centers turned technical performance into concrete requirements for speed, visibility, operating point, and release scope.
 
 <figure class="case-visual-v521 case-visual-full-v521">
   {{< site-img src="images/projects/detail-v521/product-deployment-v521.webp" alt="Conceptual illustration of secure medical-AI deployment, data flow, and governance" >}}
   <figcaption><strong>Conceptual product workflow.</strong> Connected data, AI-assisted review, documentation, and governed clinical use—not a literal product screenshot.</figcaption>
 </figure>
+
+<div class="product-flow-v81" role="group" aria-label="Team platform capability: five stages of physician-centered medical AI workflow">
+  <div class="product-flow-eyebrow-v81">TEAM PLATFORM CAPABILITY · PUBLISHED PRODUCT SCOPE</div>
+  <ol class="product-flow-steps-v81">
+    <li><span>01 · INPUT</span><strong>DICOM / PACS</strong><p>Retrieve appropriate T1C or T1C + T2 MRI studies.</p></li>
+    <li><span>02 · INFERENCE</span><strong>Lesion analysis</strong><p>Detect, segment, measure, localize and classify suspected lesions.</p></li>
+    <li><span>03 · REVIEW</span><strong>Physician confirmation</strong><p>Clinician reviews and confirms AI-assisted findings.</p></li>
+    <li><span>04 · DRAFT</span><strong>LLM-assisted report</strong><p>Generate a draft report from physician-confirmed information.</p></li>
+    <li><span>05 · GOVERNANCE</span><strong>Clinical review</strong><p>Draft remains under clinical review; it is not an autonomous diagnosis.</p></li>
+  </ol>
+  <div class="product-flow-attribution-v81"><div><span>TEAM PRODUCT SCOPE</span><p>Capabilities described in the <a href="https://www.futuretech.org.tw/futuretech/index.php?action=product_detail&prod_no=P0008700008523&web_lang=en-us" target="_blank" rel="noopener noreferrer">official DeepBT A+ profile ↗</a>; this is a schematic, not a product screenshot or claim that I implemented each subsystem.</p></div><div><span>MY CONTRIBUTION</span><p>Physician discovery, requirements, progress-state usability, institution-level operating points, cross-functional release planning and regulatory coordination.</p></div></div>
+</div>
+
+<div class="case-boundary-v81"><strong>Evidence boundary</strong><p>The research metrics below describe retrospective model evaluation, while physician workflow testing, interoperability work, and TFDA submission coordination describe product execution. They are different evidence types; no reader-study efficiency gain, prospective outcome improvement, regulatory clearance, or autonomous diagnosis is claimed.</p></div>
 
 <span id="evidence"></span>
 ## Product validation, research evidence, and recognition
@@ -92,6 +106,7 @@ The product pathway grew from the same lesion-wise brain-tumor AI research progr
     <h3>DeepBT A+ · Future Tech Award</h3>
     <p>I contributed to <strong>DeepBT A+</strong>, the NYCU-led intelligent brain-tumor MRI reading assistance project recognized with the <strong>2026 Future Tech Award</strong>. The honor belongs to the project team; my work centered on physician-facing product decisions, execution, and clinical/regulatory coordination.</p>
   </div>
+  <p class="case-award-source-v81"><a href="https://www.futuretech.org.tw/futuretech/index.php?action=product_detail&prod_no=P0008700008523&web_lang=en-us" target="_blank" rel="noopener noreferrer">Official FUTEX / Future Tech project profile ↗</a> <span>· External verification · No award photo displayed</span></p>
 </div>
 
 <div class="case-evidence-grid">

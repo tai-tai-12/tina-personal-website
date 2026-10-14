@@ -99,10 +99,11 @@ The evaluation deliberately separated development and independent clinical testi
   <p>Same independent test cohort, before vs. after candidate filtering. This is a reduction in false-positive candidates—not a claim that sensitivity increased by 94.5%.</p>
 </div>
 
-<figure class="case-visual-v521 case-visual-full-v521">
-  {{< site-img src="images/projects/detail-v521/clinical-evaluation-v521.webp" alt="Conceptual lesion-wise model evaluation and filtering workflow for brain MRI" >}}
-  <figcaption><strong>Conceptual evaluation view.</strong> Candidate filtering, lesion-level classification, and performance evaluation—not a literal screenshot of the research pipeline.</figcaption>
-</figure>
+<section class="clinical-tradeoff-v81" aria-labelledby="tradeoff-title-v81">
+  <div class="clinical-tradeoff-heading-v81"><span>THE TRADE-OFF · SAME 264-EXAM RETROSPECTIVE COHORT</span><h3 id="tradeoff-title-v81">Fewer false alarms came with a measured sensitivity cost.</h3><p>Compared with the Stage-0 proposal pool, the full cascade greatly reduced false-positive review burden while losing nine additionally detected true-positive lesions. Both sides of the trade-off belong in the evaluation.</p></div>
+  <div class="clinical-tradeoff-pair-v81"><div><span>FALSE POSITIVES / SCAN</span><div class="tradeoff-comparison-v81"><span class="tradeoff-value-v81">Stage 0 <strong>3.81</strong></span><div class="tradeoff-line-v81"><i style="width:100%"></i></div><span class="tradeoff-value-v81">Full cascade <strong>0.21</strong></span><div class="tradeoff-line-v81"><i style="width:5.51%"></i></div></div><b>−94.54% false-positive candidates</b></div><div><span>LESION-WISE SENSITIVITY</span><div class="tradeoff-comparison-v81"><span class="tradeoff-value-v81">Stage 0 <strong>84.96%</strong></span><div class="tradeoff-line-v81"><i style="width:84.96%"></i></div><span class="tradeoff-value-v81">Full cascade <strong>80.97%</strong></span><div class="tradeoff-line-v81"><i style="width:80.97%"></i></div></div><b>−3.99 percentage points</b></div></div>
+  <p class="clinical-tradeoff-source-v81">Source: final master's thesis, 264 retrospectively evaluated MRI exams (226 reference lesions); research evaluation, not a prospective clinical effectiveness study. Final precision was 76.89% vs. 16.01% at Stage 0.</p>
+</section>
 
 <span id="engineering"></span>
 ## From clinical insight to technical design
@@ -112,6 +113,8 @@ The final cascade was only one layer of the work. Reproducible evaluation also d
 <div class="clinical-insight-v6"><span>CLINICAL INSIGHT → TECHNICAL DESIGN</span><h3>Use domain knowledge to diagnose model failure—not only architecture changes</h3><p>When glioma and metastasis remained difficult to distinguish, I returned to the MRI itself, used my radiologic training to identify clinically visible patterns, consulted physicians, and translated those observations into model and augmentation experiments. It became a practical example of using clinical reasoning to guide technical design.</p></div>
 
 The reasoning came first; the tooling supported it.
+
+<div class="clinical-evidence-notes-v81"><article><span>GROUND-TRUTH QUALITY</span><h3>Expert agreement before consensus</h3><p>Fleiss’ κ was <strong>0.9416</strong> for tumor type and <strong>0.9514</strong> for intra-/extra-axial annotation; mean segmentation Dice was <strong>0.8864</strong>. These measure annotation consistency, not model accuracy.</p></article><article><span>REDUCED-SEQUENCE EXPLORATION</span><h3>T1C-only vs. T1C + T2</h3><p>In a secondary configuration analysis, T1C-only achieved <strong>73.89% sensitivity</strong>, <strong>0.09 FP/scan</strong> and <strong>88.62% five-class accuracy</strong> among retained true positives, versus <strong>80.97%</strong>, <strong>0.21</strong> and <strong>90.16%</strong> for the primary T1C+T2 system. Different lesions were retained, so typing accuracy is conditional and not a head-to-head comparison on identical detections.</p></article></div>
 
 <details class="technical-details-v62">
   <summary>Technical details</summary>
@@ -124,6 +127,8 @@ The reasoning came first; the tooling supported it.
 </details>
 
 Related study versions were presented at **MIDL 2026** and **AMLDS 2026**; the headline metrics on this page intentionally follow the final master's-thesis independent-cohort evaluation.
+
+<div class="case-boundary-v81"><strong>What these data cannot establish</strong><p>This was a retrospective, two-center independent test—not a prospective reader study or evidence of faster clinician reading, lower alert fatigue in real practice, autonomous diagnosis, or improved patient outcomes. Public MIDL 2026 results use a <em>different</em> 249-exam held-out cohort; their 90.13% sensitivity and 0.41 FP/scan should not be combined with this thesis cohort's 264-exam endpoints.</p></div>
 
 <span id="takeaway"></span>
 ## Takeaway

@@ -1,60 +1,53 @@
-# Tina Tai Personal Website — V8.0
+# Tina Tai Personal Website — V8.1
 
-**Release date:** October 2026  
-**Focus:** PM-first portfolio, source-grounded updates, bilingual consistency, readable evidence, deployable Hugo source.
+**Release:** October 2026 · **Project:** Bilingual Hugo portfolio · **Positioning:** Product Management first, AI/ML & Analytics second, Healthcare as a differentiator.
 
-## What's new / 本版重點
+V8.1 refines V8.0 using primary-source research evidence, public project listings and credential records. **Do not deploy the private `Material(4).zip` or original certificates.** This archive contains the complete Hugo source, theme, public-selected research artifacts, images, current Resume, GitHub Pages workflow and release checks.
 
-| Area | V8.0 changes |
-|---|---|
-| Resume / 履歷 | Replaced public Resume PDF with the supplied **October 13, 2026 General PM Resume**, at the existing URL (`/resume/Shih-Ting_Tai_Resume.pdf`). |
-| Product / 產品 | Recognizes **DeepBT A+ · 2026 Future Tech Award** as an NYCU-led *project/team* award, not an individually won award; adds attribution in the case study, Work preview and Experience. |
-| Model evaluation / AI 評估 | Introduces outcome-first **94.5% reduction in false-positive candidates (1,007 → 55)** on **264 independent MRI cases**, clarifying that this is not a change in sensitivity. Keeps denominator-aware 80.97% sensitivity and 90.16% retained-TP classification accuracy. |
-| NTUH / 臨床實習 | Shows **1,040 hours / 26 weeks**, 3 clinical rotation areas, and the existing Certificate of Excellence. |
-| CMU / 卡內基美隆 | Adds selected *current Fall 2026 courses* and distinguishes them from completed courses; clarifies MSBA Student Ambassador 2026–27. |
-| NYCU / 陽明交通大學 | Reassigns MRI, deep-learning and medical-device-regulation coursework to the B.S.; limits master's listed courses to graduate coursework. |
-| Certifications / 專業證書 | Adds **Google Ads Search & Measurement** and **IBM Relational Database Administrator Professional Certificate** to the selected training inventory without publishing all certificates. |
-| Thoracic aorta / 胸主動脈 | Adds **eight-month NSTC-funded** duration and **3D U-Net**. |
-| Usability / 介面 | Adds restrained editorial award panel, accessible evaluation bars, mobile CSS, keyboard skip link, reduced-motion compatibility, more resilient theme/menu interactions and `V8.0` asset cache versions. |
-| Privacy / 隱私 | No original transcript, license scan, test score, degree, ID or raw Material archive is included. |
+## What's new / V8.1 更新
 
-This is the complete **Hugo source repository**, not a pre-rendered HTML export. The original GitHub Pages Actions workflow and published URL structure are preserved.
+- **2026 Future Tech Award:** official public team/project page links in English and Traditional Chinese. **The original award photo was intentionally excluded at the user's request.** The existing understated FT typographic block remains, not an official medal graphic.
+- **Medical AI Product:** accessible five-stage DICOM/PACS → lesion analysis → physician confirmation → LLM-assisted draft reporting → clinical review schematic, with explicit separation of **team capabilities** and **Tina's actual contributions**. The figure is illustrative, not a system UI screenshot.
+- **Clinical AI:** two-dimension trade-off visualization for the same 264-case retrospective cohort; 1,007 → 55 false-positive candidates (−94.54%) alongside 84.96% → 80.97% lesion-wise sensitivity (−3.99 percentage points). Precision 16.01% → 76.89% is also reported.
+- **Research methodology:** pre-consensus agreement (Fleiss' κ and Dice), T1C-only secondary analysis with exact denominators, and clear distinction from the separately published MIDL 249-exam cohort. No prospective clinical gains or regulatory clearance are claimed.
+- **Actual research figures:** two de-identified research illustrations (Figure 9 / Figure 29) from the original NSTC thoracic-aorta research report. They are labeled as research figures, not synthetic illustrations or deployed product screenshots.
+- **Research support:** separate, compact NSTC undergraduate research grant and international conference travel support; not framed as competition awards.
+- **References:** official MIDL 2026 program; public FUTEX DeepBT A+ profiles (language appropriate); credential verification for Google Ads Search, Google Ads Measurement and IBM DBA. Harvard CS50 links to the **official course description**, not an invented personal verification record.
+- **Release quality:** V8.1 CSS, English/Traditional Chinese consistency, orphan image pruning, GitHub Pages workflow source validation and a reproducible QA script.
 
-## Deploy / 部署至 GitHub Pages
+All major V8.0 additions—October 13 General PM Resume, current CMU coursework, NYCU coursework corrections, 1,040-hour internship and selected credentials—remain preserved.
 
-1. Unzip the distribution. Work from the `tina-personal-website-v8/` folder, which contains `hugo.toml` and `.github/workflows/hugo.yaml`.
-2. Copy the contents of that folder (including hidden `.github`) into the existing `tina-personal-website` repository, preserving GitHub repository settings.
-3. Commit and push changes to `main`. The existing GitHub Actions workflow will install Hugo, build and deploy the site.
-4. In repository Settings → Pages, confirm that the source is **GitHub Actions**.
-5. After successful workflow completion, check the English and Chinese pages and open the public Resume button to confirm the PDF has updated. If cached, hard-refresh.
+## Deployment / GitHub Pages 部署
 
-**Local checks (Hugo installed):**
+1. Extract the ZIP. Copy **the contents** of the root `tina-personal-website-v8-1/` into the existing `tina-personal-website` repository, including hidden `.github/`.
+2. Commit and push to `main`. Your existing Pages configuration must have **Source: GitHub Actions**.
+3. `.github/workflows/hugo.yaml` first runs `python3 scripts/verify_v81.py`, then installs Hugo 0.164.0, builds the site and deploys it.
+4. Check the deployed EN and 繁體中文 product/research case studies and open the public Resume link. Hard-refresh for the `?v=8.1.0` CSS cache revision.
+5. Before sharing widely, visually QA at least one desktop and one phone viewport and verify that external credential links are publicly accessible without account sign-in.
+
+### Local validation
 
 ```bash
-python3 scripts/verify_v8.py
-hugo server -D
-# open http://localhost:1313/tina-personal-website/
-
+python3 scripts/verify_v81.py
+hugo version                # Hugo 0.164.0 recommended for deployment parity
 hugo --gc --minify --baseURL "https://tai-tai-12.github.io/tina-personal-website/"
+hugo server -D
 ```
 
-The automated Actions workflow currently uses Hugo **0.164.0**. If using a different local Hugo version, prefer this version for parity with GitHub Pages. Do not place the private `Material` archive in `static/` or commit any original transcript/certificate documents.
+**Build status in authoring environment:** source and asset checks are completed; the machine used to prepare this archive had no Hugo executable and cannot fetch one through its network. Final Hugo build and actual browser screenshot validation must therefore run on GitHub Actions or locally. Do not treat the source check as an equivalent to a successful Hugo build.
 
-## Structure
+## Directory guide
 
-- `content/en`, `content/zh`: paired content pages and case studies
-- `layouts/`: page templates and shared components
-- `static/css/v8-refresh.css`: V8 style refinements, loaded after V7 styles
-- `static/resume/Shih-Ting_Tai_Resume.pdf`: canonical downloadable resume
-- `static/research/publications/`: existing selected public research artifacts
-- `scripts/verify_v8.py`: reproducible offline source/asset checks
-- `docs/V8_0_RELEASE_NOTES.md`: change rationale and evidence decisions
-- `docs/V8_0_QA.md`: source validation results and known limits
+- `content/en/`, `content/zh/`: paired 11-page content sets
+- `layouts/`: Hugo templates
+- `static/css/v81-evidence.css`: incremental evidence & mobile design
+- `static/images/research/thoracic-aorta-*-v81.webp`: cropped source figures
+- `static/resume/Shih-Ting_Tai_Resume.pdf`: supplied October 13 Resume (unchanged)
+- `static/research/publications/`: selected existing public research PDFs
+- `scripts/verify_v81.py`: offline checks, also run in deployment workflow
+- `docs/V8_1_RELEASE_NOTES.md`: claim-level documentation and source links
+- `docs/V8_1_QA.md`: checks performed, what remains
 
-## Editorial principles / 內容原則
+## Editorial policies
 
-- Prioritize product judgment and measurable outcomes ahead of technical jargon.
-- State denominators and cohort scopes for AI metrics; never conflate sensitivity, precision, classification accuracy or false-positive reduction.
-- Attribute awards accurately: team/project recognitions are not personal awards.
-- Show only selected credentials on the public site. Keep private evidence in a separate vault.
-- Preserve English / Traditional Chinese parity while writing natural copy for each audience.
+Preserve evidence scope and fair attribution. Research performance ≠ completed prospective clinical validation; software feature description ≠ personal implementation of every subsystem; project/team recognition ≠ an individually conferred award. Never expose raw medical test screenshots, research identifiers, student/transcript details, license scans or private credential documents.

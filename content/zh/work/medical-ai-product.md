@@ -61,7 +61,7 @@ navItems:
 ## 三個改變產品路徑的決策
 
 <div class="product-decision-list-v6">
-  <article><span>01 · USABILITY VS. MODEL PERFORMANCE</span><h3>優化真實工作流程，而不是只追求學術上最好的模型</h3><p>我透過持續的醫師 workflow testing，把「太慢」轉成低於一分鐘的第一階段產品目標，並與工程師共同評估 latency–sensitivity trade-off。在臨床可接受的小幅 sensitivity 下降下，端到端處理時間由約兩分鐘降到約四十秒。當醫師指出系統仍讓人感覺很慢，是因為不知道剩餘時間時，我根據醫師回饋提出百分比 progress indicator，之後實際部署到產品中。</p></article>
+  <article><span>01 · USABILITY VS. MODEL PERFORMANCE</span><h3>優化真實工作流程，而不是只追求學術上最好的模型</h3><p>我透過持續的醫師 workflow testing，把「太慢」轉成低於一分鐘的第一階段產品目標，並與工程師共同評估 latency–sensitivity trade-off。在評估小幅 sensitivity 下降的取捨後，端到端處理時間由約兩分鐘降到約四十秒。當醫師指出系統仍讓人感覺很慢，是因為不知道剩餘時間時，我根據醫師回饋提出百分比 progress indicator，之後實際部署到產品中。</p></article>
   <article><span>02 · ONE MODEL, DIFFERENT WORKFLOWS</span><h3>把模型指標轉成 operating-point 決策</h3><p>我把 sensitivity 與 false-positive burden 翻譯成醫師實際閱片時的工作量，再透過產品試用與 competitor benchmarks 定義 institution-level thresholds。結果顯示，需高敏感度的臨床審閱情境可更重視 sensitivity，而其他醫療中心工作流程則可使用較平衡的 operating point。</p></article>
   <article><span>03 · BETTER MODEL VS. SHIPPING ON TIME</span><h3>不是拒絕更好的模型，而是安排正確的 release sequencing</h3><p>送件後期出現明顯改善的新模型時，我評估的不只是 engineering time，而是驗證與文件的下游重工，估計若納入當期 release 將增加約三到六個月影響。我建議沿用已完成驗證的版本送件，並把新模型排入下一開發週期；主管採納此方案，團隊維持原定六月 TFDA 送件時程。</p></article>
 </div>
@@ -73,12 +73,26 @@ navItems:
 
 底層研究採逐病灶 cascade：先產生 sensitivity-oriented candidates，再降低偽陽性，最後對保留病灶進行五類分類。完整技術評估另見 **設計不只看 Accuracy 的 AI 評估**。
 
-產品層不只包含模型，也涵蓋 **PACS case access、AI processing-state visibility、AI-assisted lesion overlays、病灶層級閱片與報告審閱**。在兩家醫療中心進行的持續醫師 discovery，讓速度、等待可見性、operating point 與 release scope 都能被轉成具體產品需求。
+產品層不只包含模型，也涵蓋 **PACS case access、AI processing-state visibility、AI-assisted lesion overlays、病灶層級閱片、醫師確認後的 LLM 輔助報告草稿與臨床審閱**。在兩家醫療中心進行的持續醫師 discovery，讓速度、等待可見性、operating point 與 release scope 都能被轉成具體產品需求。
 
 <figure class="case-visual-v521 case-visual-full-v521">
   {{< site-img src="images/projects/detail-v521/product-deployment-v521.webp" alt="醫療 AI 產品部署、資料流與治理概念圖" >}}
   <figcaption><strong>概念產品流程。</strong> 呈現資料連接、AI 輔助閱片、文件與治理，不是實際產品畫面截圖。</figcaption>
 </figure>
+
+<div class="product-flow-v81" role="group" aria-label="DeepBT A+ 團隊產品能力：五階段醫師工作流程">
+  <div class="product-flow-eyebrow-v81">團隊產品能力 · 官方專案說明</div>
+  <ol class="product-flow-steps-v81">
+    <li><span>01 · 影像輸入</span><strong>DICOM / PACS</strong><p>取得適用的 T1C 或 T1C + T2 MRI 影像。</p></li>
+    <li><span>02 · AI 分析</span><strong>病灶分析</strong><p>疑似病灶偵測、分割、量測、定位及五類腫瘤分類。</p></li>
+    <li><span>03 · 醫師確認</span><strong>Physician confirmation</strong><p>由臨床醫師審閱並確認 AI 輔助結果。</p></li>
+    <li><span>04 · 報告草稿</span><strong>LLM-assisted draft</strong><p>根據醫師確認的資訊輔助生成報告草稿。</p></li>
+    <li><span>05 · 臨床把關</span><strong>Clinical review</strong><p>草稿仍需由臨床人員審閱，不等於自主診斷。</p></li>
+  </ol>
+  <div class="product-flow-attribution-v81"><div><span>團隊產品範圍</span><p>功能依據<a href="https://www.futuretech.org.tw/futuretech/index.php?action=product_detail&prod_no=P0008700008523&web_lang=zh-tw" target="_blank" rel="noopener noreferrer">官方 DeepBT A+ 專案介紹 ↗</a>整理；此圖是概念性流程，不代表我獨立開發所有子系統，也不是產品操作截圖。</p></div><div><span>我的貢獻</span><p>醫師需求探索、需求定義、處理進度的使用體驗、院所層級閾值決策、跨團隊 release planning 與法規協調。</p></div></div>
+</div>
+
+<div class="case-boundary-v81"><strong>證據邊界</strong><p>下列研究數據屬於回溯性模型評估；醫師工作流程測試、介接驗證及 TFDA 送件協調則屬產品執行證據。兩者不可直接互推；這裡沒有宣稱完成 reader study、前瞻性臨床成效證明、主管機關核准或自主診斷能力。</p></div>
 
 <span id="evidence"></span>
 ## 產品驗證、研究證據與團隊肯定
@@ -92,6 +106,7 @@ navItems:
     <h3>DeepBT A+ · 未來科技獎（Future Tech Award）</h3>
     <p>我參與 <strong>DeepBT A+ 腦瘤 MRI 智慧輔助判讀系統</strong> 的產品推進工作；此 NYCU 主導的團隊專案獲得 <strong>2026 Future Tech Award</strong>。此獎項屬於團隊／專案肯定，不代表我個人獨立獲獎；我的貢獻聚焦醫師工作流程、產品決策、跨團隊交付，以及臨床與法規協調。</p>
   </div>
+  <p class="case-award-source-v81"><a href="https://www.futuretech.org.tw/futuretech/index.php?action=product_detail&prod_no=P0008700008523&web_lang=zh-tw" target="_blank" rel="noopener noreferrer">FUTEX 未來科技官方專案介紹 ↗</a> <span>· 官方來源驗證 · 不展示獎項照片</span></p>
 </div>
 
 <div class="case-evidence-grid">

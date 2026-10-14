@@ -54,7 +54,7 @@ check(resume.exists() and resume.stat().st_size>50000,'Latest resume PDF missing
 check((ROOT/'static/css/v8-refresh.css').exists(),'Missing V8 stylesheet')
 head=(ROOT/'layouts/partials/head.html').read_text(encoding='utf-8')
 check('v8-refresh.css' in head,'V8 CSS not included')
-check('content="8.0"' in head,'Incorrect release metadata')
+check('content="8.1"' in head,'Release metadata is not current')
 check((ROOT/'layouts/_default/baseof.html').read_text().count('id="main-content"')==1,'Missing main content anchor')
 for lang in ('en','zh'):
     case=(ROOT/f'content/{lang}/work/clinical-ai-at-scale.md').read_text()

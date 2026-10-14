@@ -1,32 +1,29 @@
-# Tina Tai — Personal Portfolio V8.10 (Full Replacement)
+# Tina Tai Portfolio V8.11 — Full Replacement
 
-This archive contains **all source files** required for the bilingual Hugo / GitHub Pages website. It is **not** an incremental patch. ZIP entries start at the repository root (`.github/`, `hugo.toml`, `content/`, `layouts/`, `static/`, `scripts/`, `themes/`).
+This archive is a complete bilingual Hugo website, **not an incremental patch**. All paths in the ZIP are relative to the repository root; `.github/` is included. Keep your local `.git/` folder when replacing files via Git.
 
-## Replace the website safely
+## Deploy
 
-1. Back up your existing repository. Extract this ZIP into an empty folder, not into the old website source directory.
-2. Copy **all ZIP contents**, including hidden `.github/`, into the repository root, replacing previous source files. You may remove the old website source tree first, but **never delete local `.git/`**; keep repository metadata, branches and history.
-3. If using `rsync`, a safe example is:
+1. Back up the previous site. Extract this ZIP into an empty directory.
+2. Replace all tracked website source files in your Git repository with the extracted contents, including the hidden `.github/` directory. Do not delete `.git/`.
+3. Run `python3 scripts/verify_v811.py` (checks source integrity, critical claims, media paths, and version information).
+4. Commit and push to `main`. GitHub Actions runs the source verifier and then performs the official Hugo build/deployment.
+5. Check source for `<meta name="portfolio-version" content="8.11">` and confirm that `portfolio-v811.css` and `home-v811.css` load with `?v=8.11.0`.
+6. Test desktop/mobile and EN/繁中 navigation, case study links, PDF resume, research zoom, light/dark mode and external verification links. Clear browser cache or hard-refresh if old CSS is displayed.
 
-```bash
-rsync -av --delete --exclude='.git/' /path/to/unpacked-v810/ /path/to/local/repo/
-cd /path/to/local/repo
-python3 scripts/verify_v810.py
-git add -A
-git commit -m "Deploy V8.10 bilingual recruiter-clarity update"
-git push origin main
-```
+## Scope & factual boundaries
 
-4. GitHub Actions (`.github/workflows/hugo.yaml`) runs source checks, builds Hugo and deploys GitHub Pages. If Hugo is installed locally, you can also run `hugo build --gc --minify`.
-5. Once deployed, view HTML source and confirm `<meta name="portfolio-version" content="8.10">` and CSS `portfolio-v810.css?v=8.10.0` / `home-v810.css?v=8.10.0`.
-6. Verify English and Traditional Chinese at Home, Work, Experience, Research, and the three cases. In particular, open the X-ray validation case on desktop and mobile. Test Resume download and project/official links.
+- The main career emphasis is **Product Manager at AITEWAN**. The earlier BIPI testing role is intentionally shorter in Experience; its full evidence remains in the dedicated X-ray case study.
+- BIPI: company contacts were initially introduced by the professor; Tina handled follow-up, explained consortium services, coordinated membership and paperwork, received devices and customers, personally performed X-ray tube testing and prepared third-party reports. Do not claim independent cold outreach, signed deals, customer acquisition conversion, or personal TAF accreditation.
+- The **8 devices / 5 client organizations / 10+ technical reports** refer to **one** consortium-linked third-party testing workstream. The small-animal CT bone analysis project was separate and adopted by two university laboratories.
+- TAF accredits the laboratory for defined methods; it does not accredit each individual or automatically cover every report.
+- Brain-tumor AI sensitivity, false positives and five-class results reflect defined retrospective cohorts; avoid presenting them as prospective clinical benefit.
+- Resume is unchanged from the supplied October 13 PDF. Do not include personal source material, confidential test records or the excluded Future Tech Award photograph.
 
-## Accuracy guidance
+## Documentation
 
-- **Industry follow-up**: the supervising professor generally made initial contact and passed contacts to Tina for follow-up. Tina then explained testing/consortium services, coordinated membership and agreement paperwork/signing logistics, welcomed clients, personally performed X-ray tube testing, and wrote third-party reports. **Do not claim cold prospecting, independently signed contracts, new-customer acquisition, or personally accredited status.**
-- **One workstream**: 8 devices, 5 client organizations, and 10+ reports all describe the same consortium-linked third-party testing work.
-- **Separate research**: MATLAB small-animal CT quantitative bone analysis used by two university labs is separate from consortium testing.
-- **TAF**: the related laboratory holds defined ISO/IEC 17025 accredited testing scopes; this does not imply each assignment, report, or individual held accreditation.
-- **Clinical AI**: 264 retrospective test cases; 94.54% fewer false-positive candidates accompanied a lesion sensitivity change from 84.96% to 80.97%. No prospective outcome claims.
+- `V8_11_RELEASE_NOTES.md` — what changed in this release
+- `V8_11_RECRUITER_AUDIT.md` — page-by-page content and visual audit
+- `V8_11_QA.md` — checks completed versus deployment-only checks
 
-Read `V8_10_RELEASE_NOTES.md` and `V8_10_QA.md`. This package includes the latest resume unchanged, all needed images, both languages, the Hugo theme, and deployment workflow. It contains no private certificate scans, client names or Future Tech Award photograph.
+This environment did not have the Hugo binary. Browser checks used locally reconstructed templates, not final production Hugo output. The official Hugo build is a required GitHub Actions deployment gate.

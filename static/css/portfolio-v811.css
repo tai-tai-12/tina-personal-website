@@ -4597,3 +4597,29 @@ html[data-theme="dark"] .case-prose-v526 .xray-evidence-v89 figcaption{backgroun
 .xp-v810-taf-note{flex-basis:100%;font-size:.82rem;line-height:1.55;color:var(--muted);max-width:710px;padding:5px 0 1px}
 .xp-v86-links:has(.xp-v810-taf-note){flex-wrap:wrap;align-items:center}
 @media(max-width:720px){.xp-v810-taf-note{font-size:.87rem}}
+
+/* V8.11 – Recruiter readability & proportional hierarchy.
+   Retain the existing visual system, reduce early-career verbosity,
+   and improve detailed case navigation at desktop widths. */
+@media(min-width:900px){
+ .case-study-v526 .case-margin-nav-label-v526{font-size:.76rem;opacity:1;letter-spacing:.105em}
+ .case-study-v526 .case-margin-nav-v526 nav a{font-size:.84rem;line-height:1.5;padding:9px 0;color:var(--muted)}
+}
+.xp-v811-compact .xp-v86-impact{min-height:94px;padding:16px 21px;gap:20px}
+.xp-v811-compact .xp-v86-impact-value{font-size:clamp(2.05rem,2.7vw,2.7rem)}
+.xp-v811-compact .xp-v86-detail{margin-top:17px}
+.xp-v811-compact .xp-v86-contributions li{padding-top:11px;padding-bottom:11px}
+.xp-v811-compact .xp-v86-header p{max-width:72ch}
+.xp-v811-compact .xp-v86-technical{margin-top:14px;font-size:.9rem;line-height:1.62}
+.xp-v811-secondary-work strong{color:var(--text);font-weight:650}
+.xp-v811-compact-links{margin-top:17px}
+/* Improve metadata scanability without adding visual clutter. */
+.research-v85-award-meta{font-size:clamp(.79rem,.83vw,.87rem)}
+.case-prose-v526 figcaption,.case-prose-v526 figure figcaption{line-height:1.65}
+@media(max-width:700px){
+ .xp-v811-compact .xp-v86-impact{min-height:0;padding:16px}
+ .xp-v811-compact .xp-v86-contributions li{padding-top:12px;padding-bottom:12px}
+}
+@media(prefers-reduced-motion:reduce){
+ .xp-v811-compact,.xp-v811-compact *{scroll-behavior:auto}
+}

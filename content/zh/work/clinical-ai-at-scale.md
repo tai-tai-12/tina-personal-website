@@ -7,7 +7,7 @@ tags:
 - Medical Imaging
 - Experimentation
 category: AI 評估 · ML
-summary: 以 sensitivity、FP/scan、precision 與 failure analysis 設計不只看單一 accuracy 的逐病灶 AI 評估。
+summary: 以獨立 MRI 測試評估如何減少 AI 錯誤提示，同時量測漏掉真實病灶的代價，而非只看一項準確率。
 proof:
 - 偽陽性候選減少 94.5%
 - 264 例獨立 MRI 測試
@@ -18,14 +18,14 @@ displayMetrics:
 - value: "264"
   label: "獨立 MRI 測試"
 - value: "90.16%"
-  label: "保留 TP 五類準確率"
+  label: "保留正確偵測病灶的五類分類準確率"
 visual: clinical-ai-visual
 weight: 2
 heroBackground: images/projects/work-clinical-ai-v519.webp
 detailHero: images/projects/detail-v521/clinical-hero-v521.webp
 heroSize: standard
 detailHeroAlt: Clinical AI dashboard showing lesion-wise brain MRI analysis
-heroDek: 以多中心資料、實務失敗模式與敏感度／閱片負擔取捨，評估病灶層級腦部 MRI AI。
+heroDek: 透過獨立多中心 MRI 測試，評估如何減少 AI 錯誤提示，以及這樣做可能漏掉多少真實病灶。
 heroStats:
 - value: '264'
   label: 獨立測試病例
@@ -35,7 +35,7 @@ heroStats:
   label: 五類分類準確率
 snapshot:
 - title: 挑戰
-  body: 單一 headline metric 無法完整描述病灶偵測品質與後續閱片負擔。
+  body: MRI AI 若將正常區域誤判為腫瘤，會增加醫師審查工作；降低錯誤提示時，也必須同時量測漏掉的病灶。
 - title: 我的角色
   body: 模型開發、評估設計、錯誤分析與技術溝通。
 - title: 範圍
@@ -61,9 +61,9 @@ navItems:
 
 
 <span id="problem"></span>
-## 單一 accuracy 無法描述臨床閱片品質
+## 減少錯誤提示，也要衡量漏掉的真實病灶
 
-醫療影像模型不能只看一個 headline metric；評估需要同時考慮獨立資料、實際失敗模式，以及漏診與偽陽性閱片負擔之間的取捨。
+腦部 MRI AI 可能把正常區域誤標為疑似腫瘤，讓醫師需要花時間確認。我參與評估多階段模型，在 **264 例獨立回溯性 MRI 測試**中，將錯誤候選數從 **1,007 降至 55（減少 94.54%）**；同時，真實病灶的偵測比例也從 **84.96% 降至 80.97%**。這是回溯性研究評估，不代表已證實醫師臨床閱片速度改善。
 
 <span id="role"></span>
 ## 我的角色與研究範圍

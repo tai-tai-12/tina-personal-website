@@ -7,7 +7,7 @@ tags:
 - Regulatory
 - Cross-functional Leadership
 category: PRODUCT MANAGEMENT · AI
-summary: Used physician discovery, technical trade-offs, and release sequencing to move brain-tumor MRI AI into real clinical workflow.
+summary: Worked with physicians and engineers to make brain MRI AI faster and easier to use, while managing release and medical-device submission decisions.
 proof:
 - ~67% less AI processing time
 - 2 medical centers
@@ -25,7 +25,7 @@ heroBackground: images/projects/work-product-v519.webp
 detailHero: images/projects/detail-v521/product-hero-v521.webp
 heroSize: compact
 detailHeroAlt: Clinical AI product workflow at a brain MRI review workstation
-heroDek: Turning brain-tumor MRI research into a physician-led product through recurring user discovery, technical trade-offs, release sequencing, validation, and TFDA execution.
+heroDek: Helped turn brain MRI AI into medical-device software that physicians could review and use, improving speed and coordinating a Taiwan FDA submission timeline.
 heroStats:
 - value: ~67%
   label: Less AI processing time
@@ -60,9 +60,9 @@ navItems:
 ---
 
 <span id="problem"></span>
-## A strong model still had to work for users
+## A technically strong model still had to work for physicians
 
-The research system performed well technically, but physicians exposed the product problems that model metrics alone could not solve. **Nearly two minutes of processing felt too slow in workflow, users could not tell how long processing would continue, and different clinical contexts valued sensitivity and false-positive burden differently.** At the same time, every model change carried validation, documentation, and regulatory consequences.
+A research model is not yet a usable product. The physicians I worked with needed faster answers, a visible processing status, and a manageable number of incorrect tumor alerts. As Product Manager, I turned these needs into priorities and worked with engineers and regulatory colleagues on delivery. **Nearly two minutes of processing felt too slow in workflow, users could not tell how long processing would continue, and different clinical contexts valued sensitivity and false-positive burden differently.** At the same time, every model change carried validation, documentation, and regulatory consequences.
 
 <span id="role"></span>
 ## Three product decisions that changed the path
@@ -78,7 +78,7 @@ The research system performed well technically, but physicians exposed the produ
 <span id="workflow"></span>
 ## From research model to physician workflow
 
-The underlying research used a lesion-wise cascade rather than treating detection as a single end point. A sensitivity-oriented proposal stage generated candidates, a downstream classifier suppressed false positives, and the final stage typed retained lesions. The detailed technical evaluation is covered separately in **Designing AI Evaluation Beyond Accuracy**.
+The AI evaluated potential tumors in stages: first generating likely locations, then filtering mistaken alerts and classifying remaining findings. A sensitivity-oriented proposal stage generated candidates, a downstream classifier suppressed false positives, and the final stage typed retained lesions. The detailed technical evaluation is covered separately in **Designing AI Evaluation Beyond Accuracy**.
 
 The product layer extended beyond the model itself. It included **PACS-connected case access, processing-state visibility, AI-assisted lesion overlays, lesion-level review, and physician confirmation before LLM-assisted report drafting and final clinician oversight**. Repeated physician discovery across two centers turned technical performance into concrete requirements for speed, visibility, operating point, and release scope.
 

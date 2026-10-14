@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Deployment checks for full-replacement V8.9 Hugo source; run before build."""
+"""Deployment checks for full-replacement V8.10 Hugo source; run before build."""
 from pathlib import Path
 import hashlib, re, sys, xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parent.parent
@@ -13,13 +13,13 @@ head=read('layouts/partials/head.html');base=read('layouts/_default/baseof.html'
 home=read('layouts/index.html');work=read('layouts/work/list.html');research=read('layouts/research/list.html')
 nav=read('layouts/partials/header.html');about=read('layouts/about/single.html')
 aorta=read('layouts/research/single.html');exp=read('layouts/experience/single.html')
-css=read('static/css/portfolio-v89.css');homecss=read('static/css/home-v89.css')
+css=read('static/css/portfolio-v810.css');homecss=read('static/css/home-v810.css')
 workflow=read('.github/workflows/hugo.yaml')
-ck('content="8.9"' in head,'V8.9 meta marker')
-ck('data-portfolio-version="8.9"' in base,'V8.9 page marker')
-ck('portfolio-v89.css' in head and 'home-v89.css' in head,'versioned CSS entrypoints')
-ck('?v=8.9.0' in head and '?v=8.9.0' in base,'CSS/JS cache bust')
-ck('scripts/verify_v89.py' in workflow,'CI validation')
+ck('content="8.10"' in head,'V8.10 meta marker')
+ck('data-portfolio-version="8.10"' in base,'V8.10 page marker')
+ck('portfolio-v810.css' in head and 'home-v810.css' in head,'versioned CSS entrypoints')
+ck('?v=8.10.0' in head and '?v=8.10.0' in base,'CSS/JS cache bust')
+ck('scripts/verify_v810.py' in workflow,'CI validation')
 ck('hugo build' in workflow,'Hugo build action')
 ck('2026 Future Tech Award' in home and 'NYCU project recognition' in home,'award attribution')
 ck('IMG_9931' not in home,'excluded award photo')
@@ -90,7 +90,7 @@ if source.is_file():
  ck(hashlib.sha256(resume.read_bytes()).digest()==hashlib.sha256(source.read_bytes()).digest(),'latest resume unchanged')
 ck((ROOT/'.github/workflows/hugo.yaml').is_file(),'hidden GitHub workflow included')
 
-# V8.9 accuracy: consortium work and third-party reports are the same assignment.
+# V8.10 accuracy: consortium work and third-party reports are the same assignment.
 for lang in ('en','zh'):
     c=read(f'content/{lang}/work/structured-validation.md')
     ck('xray-testing-evidence-v89.svg' in c and 'xray-tube-testing-hero-v89.svg' in c, f'{lang} new original X-ray visuals')
@@ -113,7 +113,23 @@ ck('X-ray tube tests to reports' in read('layouts/partials/work-evidence-visual-
 for name in ('testing-hero-v521.webp','testing-measurement-v521.webp','work-testing-v519.webp'):
     ck(not any(x.name==name for x in (ROOT/'static').rglob('*')), 'outdated misleading visual removed '+name)
 
-print(f'V8.9 offline source checks: {count-len(errors)}/{count} passed')
+
+# V8.10: conservatively scoped client engagement and recruiter-readable presentation.
+for lang in ('en','zh'):
+    case=read(f'content/{lang}/work/structured-validation.md')
+    ck(('professor' in case.lower() if lang=='en' else '教授' in case), f'{lang} origin of company introduction explicit')
+    ck(('agreement' in case.lower() if lang=='en' else '合約' in case), f'{lang} agreement coordination reflected')
+    ck(('X-ray' in case if lang=='en' else 'X 光' in case) and '10+' in case and '8' in case and '5' in case, f'{lang} primary testing outputs preserved')
+    ck(('separate research' in case.lower() if lang=='en' else '獨立研究' in case), f'{lang} CT work separate')
+    ck(not any(x in case.lower() for x in ('cold outreach','independently sourced','acquired five clients','closed five deals')), f'{lang} no invented sales ownership')
+    ai=read(f'content/{lang}/work/clinical-ai-at-scale.md')
+    ck(('false alarms' in ai if lang=='en' else '錯誤提示' in ai),f'{lang} plain language AI explanation')
+for marker in ('Followed up on company contacts introduced by the professor', 'coordinated contract paperwork', 'xp-v810-taf-note'):
+    ck(marker in exp, f'Experience conservative client handling and accreditation: {marker}')
+ck('professor-introduced industry contacts' in home,'home conservative client attribution')
+ck('DELIVERY SCOPE' in exp and 'TRAINING SCOPE' in exp,'scope vs impact distinguished')
+
+print(f'V8.10 offline source checks: {count-len(errors)}/{count} passed')
 if errors:
  for error in errors: print('FAIL:',error)
  sys.exit(1)

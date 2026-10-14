@@ -53,8 +53,8 @@
         <div class="home-v87-case-copy">
           <span class="home-v87-case-label">02 <span aria-hidden="true">/</span> AI EVALUATION · RESEARCH</span>
           <h3><a href="{{ "work/clinical-ai-at-scale/" | relLangURL }}">{{ if $isZh }}設計不只看 Accuracy 的 AI 評估{{ else }}Designing AI Evaluation Beyond Accuracy{{ end }}</a></h3>
-          <p>{{ if $isZh }}以逐病灶敏感度、偽陽性負擔與失敗案例分析，評估真實臨床情境中的模型取捨。{{ else }}Evaluating lesion-level sensitivity, false-positive burden, and failure modes instead of relying on a single accuracy score.{{ end }}</p>
-          {{ partial "case-metrics-v88.html" (dict "Metrics" (slice (dict "value" "94.5%" "label" (cond $isZh "偽陽性候選減少" "Fewer FP candidates")) (dict "value" "264" "label" (cond $isZh "獨立 MRI 測試" "Independent MRI cases")) (dict "value" "90.16%" "label" (cond $isZh "保留 TP 五類準確率" "Retained-TP 5-class accuracy"))) "Class" "home-v88-metrics" "IsZh" $isZh) }}
+          <p>{{ if $isZh }}評估 AI 如何減少錯誤提示，同時衡量是否因此漏掉更多真實病灶，並以獨立 MRI 測試驗證結果。{{ else }}Evaluated how to reduce false AI alarms without overlooking the trade-off: potentially missing more real lesions, using independent MRI testing.{{ end }}</p>
+          {{ partial "case-metrics-v88.html" (dict "Metrics" (slice (dict "value" "94.5%" "label" (cond $isZh "錯誤候選減少" "Fewer false alarms")) (dict "value" "264" "label" (cond $isZh "獨立 MRI 測試" "Independent MRI cases")) (dict "value" "90.16%" "label" (cond $isZh "已正確偵測病灶的五類分類準確率" "Tumor typing of correctly detected lesions"))) "Class" "home-v88-metrics" "IsZh" $isZh) }}
           <a class="home-v87-case-cta" href="{{ "work/clinical-ai-at-scale/" | relLangURL }}">{{ if $isZh }}閱讀完整案例{{ else }}Read case study{{ end }} <span aria-hidden="true">↗</span></a>
         </div>
       </article>
@@ -65,7 +65,7 @@
         <div class="home-v87-case-copy">
           <span class="home-v87-case-label">03 <span aria-hidden="true">/</span> VALIDATION · OPERATIONS</span>
           <h3><a href="{{ "work/structured-validation/" | relLangURL }}">{{ if $isZh }}執行面向客戶的技術驗證作業{{ else }}Running Client-Facing Validation Operations{{ end }}</a></h3>
-          <p>{{ if $isZh }}於游離輻射產學技術聯盟親自執行 X 光球管檢測、第三方報告製作、客戶接待與會員招募。{{ else }}Personally tested client-submitted X-ray tubes, produced third-party reports, and supported customer relationships and consortium recruitment.{{ end }}</p>
+          <p>{{ if $isZh }}教授先建立企業初步聯繫，我負責後續服務與合約協調、客戶接待、X 光球管檢測及第三方報告。{{ else }}Followed up on professor-introduced industry contacts, coordinated agreements, and personally delivered X-ray tube testing and reports.{{ end }}</p>
           {{ partial "case-metrics-v88.html" (dict "Metrics" (slice (dict "value" "8" "label" (cond $isZh "受測產品" "Products tested")) (dict "value" "10+" "label" (cond $isZh "正式報告" "Reports")) (dict "value" "5" "label" (cond $isZh "客戶" "Client organizations"))) "Class" "home-v88-metrics" "IsZh" $isZh) }}
           <a class="home-v87-case-cta" href="{{ "work/structured-validation/" | relLangURL }}">{{ if $isZh }}閱讀完整案例{{ else }}Read case study{{ end }} <span aria-hidden="true">↗</span></a>
         </div>
@@ -87,7 +87,7 @@
       <a href="{{ "experience/" | relLangURL }}#xp-v86-aitewan-title" class="home-v87-xp-row"><time>2024–2026</time><div><strong>Product Manager</strong><span>AITEWAN Biomedical Technology</span></div><p>{{ if $isZh }}醫師需求探索、AI 處理流程優化與產品發佈決策{{ else }}Physician discovery, AI workflow optimization, and release decisions{{ end }}</p><span class="home-v87-row-arrow" aria-hidden="true">↗</span></a>
       <a href="{{ "experience/" | relLangURL }}#xp-v86-research-title" class="home-v87-xp-row"><time>2023–2026</time><div><strong>Research Assistant / Project Lead</strong><span>NYCU · AI in Medical Imaging Lab</span></div><p>{{ if $isZh }}腦瘤 MRI AI、跨中心評估及研究成果發表{{ else }}Brain-tumor MRI AI, multi-center evaluation, and publications{{ end }}</p><span class="home-v87-row-arrow" aria-hidden="true">↗</span></a>
       <a href="{{ "experience/" | relLangURL }}#xp-v86-clinical-title" class="home-v87-xp-row"><time>2023–2024</time><div><strong>Clinical Intern</strong><span>National Taiwan University Hospital</span></div><p>{{ if $isZh }}1,040 小時臨床實習與 Certificate of Excellence{{ else }}1,040 clinical hours and Certificate of Excellence{{ end }}</p><span class="home-v87-row-arrow" aria-hidden="true">↗</span></a>
-      <a href="{{ "experience/" | relLangURL }}#xp-v86-bipi-title" class="home-v87-xp-row"><time>2021–2023</time><div><strong>Test Manager / Research Assistant</strong><span>NYCU · Biomedical Imaging Physics Lab</span></div><p>{{ if $isZh }}游離輻射聯盟：X 光球管實測、第三方報告與獨立 CT 分析工具{{ else }}Hands-on X-ray tube testing, third-party reports, and separate CT analytics{{ end }}</p><span class="home-v87-row-arrow" aria-hidden="true">↗</span></a>
+      <a href="{{ "experience/" | relLangURL }}#xp-v86-bipi-title" class="home-v87-xp-row"><time>2021–2023</time><div><strong>Test Manager / Research Assistant</strong><span>NYCU · Biomedical Imaging Physics Lab</span></div><p>{{ if $isZh }}教授轉介企業後續聯繫、X 光球管實測與第三方報告；另有 CT 研究{{ else }}Industry follow-up, hands-on X-ray testing and reports; separate CT research{{ end }}</p><span class="home-v87-row-arrow" aria-hidden="true">↗</span></a>
     </div>
   </div>
 </section>

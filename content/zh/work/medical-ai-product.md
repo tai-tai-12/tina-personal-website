@@ -7,7 +7,7 @@ tags:
 - 法規
 - 跨團隊協作
 category: 產品管理 · AI
-summary: 透過醫師需求探索、技術取捨與 release sequencing，把腦瘤 MRI AI 推進真實臨床工作流程。
+summary: 與醫師及工程團隊合作，改善腦部 MRI AI 處理速度與易用性，並協調產品版本及醫療器材送件時程。
 proof:
 - AI 處理時間縮短約 67%
 - 2 家醫學中心
@@ -25,7 +25,7 @@ heroBackground: images/projects/work-product-v519.webp
 detailHero: images/projects/detail-v521/product-hero-v521.webp
 heroSize: compact
 detailHeroAlt: Clinical AI product workflow at a brain MRI review workstation
-heroDek: 透過持續使用者研究、技術取捨、release sequencing、驗證與 TFDA 執行，把腦瘤 MRI 研究推向以醫師為核心的產品。
+heroDek: 協助將腦部 MRI AI 研究轉成醫師可使用的醫療器材軟體，改善處理速度並協調台灣衛福部食藥署（TFDA）送件時程。
 heroStats:
 - value: ~67%
   label: AI 處理時間縮短

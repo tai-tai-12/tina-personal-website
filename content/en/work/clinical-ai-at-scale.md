@@ -7,26 +7,25 @@ tags:
 - Medical Imaging
 - Experimentation
 category: AI EVALUATION · ML
-summary: Designed lesion-wise AI evaluation beyond headline accuracy, separating development from independent clinical testing and review burden.
+summary: Evaluated how to cut false MRI tumor alerts while tracking missed lesions, using independent test data rather than relying on headline accuracy.
 proof:
 - 94.5% fewer FP candidates
 - 264 independent MRI cases
 - 90.16% 5-class accuracy
 displayMetrics:
 - value: "94.5%"
-  label: "Fewer FP candidates"
+  label: "Fewer false alarms"
 - value: "264"
   label: "Independent MRI cases"
 - value: "90.16%"
-  label: "Retained-TP 5-class accuracy"
+  label: "Tumor-type accuracy on detected lesions"
 visual: clinical-ai-visual
 weight: 2
 heroBackground: images/projects/work-clinical-ai-v519.webp
 detailHero: images/projects/detail-v521/clinical-hero-v521.webp
 heroSize: standard
 detailHeroAlt: Clinical AI dashboard showing lesion-wise brain MRI analysis
-heroDek: Evaluating lesion-wise brain MRI AI across multi-center data, practical failure
-  modes, and the trade-off between sensitivity and review burden.
+heroDek: Reduced false tumor alerts on brain MRI while measuring the trade-off in real lesions detected, using independent multi-center test data.
 heroStats:
 - value: '264'
   label: Independent test exams
@@ -36,8 +35,7 @@ heroStats:
   label: 5-class accuracy
 snapshot:
 - title: Challenge
-  body: A single headline metric could not capture lesion detection quality or downstream
-    review burden.
+  body: An AI scan can flag too many areas as tumors, slowing clinical review; reducing false alarms must be measured alongside missed tumors.
 - title: My role
   body: Model development, evaluation design, error analysis, and technical communication.
 - title: Scope
@@ -65,9 +63,9 @@ navItems:
 
 
 <span id="problem"></span>
-## Accuracy alone does not describe clinical review quality
+## Fewer false alarms—without ignoring what gets missed
 
-Medical-imaging models need more than a single headline metric. Performance has to be evaluated across clinically meaningful tasks, independent data, practical failure modes, and the trade-off between missed lesions and false-positive review burden.
+A brain MRI AI system can mistakenly flag healthy areas as possible tumors. Those false alarms add work for clinicians. I helped evaluate a multi-stage approach that reduced false-positive candidates by **94.54% (1,007 to 55)** across **264 independently tested MRI exams**. The trade-off mattered: the proportion of real lesions detected declined from **84.96% to 80.97%**. This was a retrospective research evaluation, not evidence that clinicians read scans faster in routine practice.
 
 <span id="role"></span>
 ## My role and study scope

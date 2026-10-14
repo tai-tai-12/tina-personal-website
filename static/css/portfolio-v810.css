@@ -4592,3 +4592,8 @@ html[data-theme="dark"] .case-prose-v526 .xray-evidence-v89 figcaption{backgroun
 
 .xray-mobile-steps-v89{display:none}
 @media(max-width:700px){.case-prose-v526 .xray-evidence-v89{display:none}.case-prose-v526 .xray-mobile-steps-v89{list-style:none;padding:0;margin:22px 0 30px;display:grid;gap:9px}.case-prose-v526 .xray-mobile-steps-v89 li{border:1px solid var(--line);background:var(--panel);border-radius:12px;padding:15px 16px;margin:0}.xray-mobile-steps-v89 li>span{display:block;font-size:12px;font-weight:750;letter-spacing:.07em;color:var(--blue);margin-bottom:6px}.xray-mobile-steps-v89 li>strong{display:block;font-size:15px;line-height:1.45;color:var(--text)}.case-prose-v526 .xray-mobile-steps-v89 li>p{font-size:14px;margin:6px 0 0;line-height:1.55}}
+
+/* V8.10: concise lab accreditation context. */
+.xp-v810-taf-note{flex-basis:100%;font-size:.82rem;line-height:1.55;color:var(--muted);max-width:710px;padding:5px 0 1px}
+.xp-v86-links:has(.xp-v810-taf-note){flex-wrap:wrap;align-items:center}
+@media(max-width:720px){.xp-v810-taf-note{font-size:.87rem}}

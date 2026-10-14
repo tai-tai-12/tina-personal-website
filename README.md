@@ -1,32 +1,32 @@
-# Tina Tai — Personal Portfolio V8.9 (Full Replacement)
+# Tina Tai — Personal Portfolio V8.10 (Full Replacement)
 
-This ZIP is the **entire bilingual Hugo project**, not a patch. The ZIP root contains `hugo.toml`, `.github/`, `content/`, `layouts/`, `static/`, `scripts/`, and `themes/`. It is safe to replace the website source tree while **keeping your local `.git/` repository metadata**.
+This archive contains **all source files** required for the bilingual Hugo / GitHub Pages website. It is **not** an incremental patch. ZIP entries start at the repository root (`.github/`, `hugo.toml`, `content/`, `layouts/`, `static/`, `scripts/`, `themes/`).
 
-## Full replacement deployment
+## Replace the website safely
 
-1. Back up your existing website folder. Extract the ZIP to a new folder.
-2. Copy **all files including `.github/`** into the repository root; replace prior website source files (not `.git/`).
-3. Ensure no older `portfolio-v88.css` or `home-v88.css` persists after the replacement.
-4. `python3 scripts/verify_v89.py` (source/data/security checks).
-5. Commit and push to `main`; the included `.github/workflows/hugo.yaml` validates sources, builds Hugo, and deploys GitHub Pages.
-6. Verify the published HTML contains `<meta name="portfolio-version" content="8.9">` and the current `portfolio-v89.css?v=8.9.0` plus `home-v89.css?v=8.9.0`.
-7. Check Work → Running Client-Facing Validation Operations, Home, Experience, and English / Traditional Chinese views on desktop and mobile. Confirm the original X-ray testing figures load.
-
-Local build, if Hugo is installed:
+1. Back up your existing repository. Extract this ZIP into an empty folder, not into the old website source directory.
+2. Copy **all ZIP contents**, including hidden `.github/`, into the repository root, replacing previous source files. You may remove the old website source tree first, but **never delete local `.git/`**; keep repository metadata, branches and history.
+3. If using `rsync`, a safe example is:
 
 ```bash
-python3 scripts/verify_v89.py
-hugo build --gc --minify
-hugo server
+rsync -av --delete --exclude='.git/' /path/to/unpacked-v810/ /path/to/local/repo/
+cd /path/to/local/repo
+python3 scripts/verify_v810.py
+git add -A
+git commit -m "Deploy V8.10 bilingual recruiter-clarity update"
+git push origin main
 ```
 
-If using `rsync` for a clean replacement, **never delete the `.git/` directory**. Example:
+4. GitHub Actions (`.github/workflows/hugo.yaml`) runs source checks, builds Hugo and deploys GitHub Pages. If Hugo is installed locally, you can also run `hugo build --gc --minify`.
+5. Once deployed, view HTML source and confirm `<meta name="portfolio-version" content="8.10">` and CSS `portfolio-v810.css?v=8.10.0` / `home-v810.css?v=8.10.0`.
+6. Verify English and Traditional Chinese at Home, Work, Experience, Research, and the three cases. In particular, open the X-ray validation case on desktop and mobile. Test Resume download and project/official links.
 
-```bash
-rsync -av --delete --exclude='.git/' /path/to/unpacked-v89/ /path/to/your/local/repo/
-cd /path/to/your/local/repo
-python3 scripts/verify_v89.py
-git add -A && git commit -m "Deploy V8.9 accurate X-ray validation case" && git push origin main
-```
+## Accuracy guidance
 
-See `V8_9_RELEASE_NOTES.md` and `V8_9_QA.md`.
+- **Industry follow-up**: the supervising professor generally made initial contact and passed contacts to Tina for follow-up. Tina then explained testing/consortium services, coordinated membership and agreement paperwork/signing logistics, welcomed clients, personally performed X-ray tube testing, and wrote third-party reports. **Do not claim cold prospecting, independently signed contracts, new-customer acquisition, or personally accredited status.**
+- **One workstream**: 8 devices, 5 client organizations, and 10+ reports all describe the same consortium-linked third-party testing work.
+- **Separate research**: MATLAB small-animal CT quantitative bone analysis used by two university labs is separate from consortium testing.
+- **TAF**: the related laboratory holds defined ISO/IEC 17025 accredited testing scopes; this does not imply each assignment, report, or individual held accreditation.
+- **Clinical AI**: 264 retrospective test cases; 94.54% fewer false-positive candidates accompanied a lesion sensitivity change from 84.96% to 80.97%. No prospective outcome claims.
+
+Read `V8_10_RELEASE_NOTES.md` and `V8_10_QA.md`. This package includes the latest resume unchanged, all needed images, both languages, the Hugo theme, and deployment workflow. It contains no private certificate scans, client names or Future Tech Award photograph.

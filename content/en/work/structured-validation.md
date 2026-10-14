@@ -7,7 +7,7 @@ tags:
 - Consortium Operations
 - Technical Reporting
 category: X-RAY DEVICE TESTING · OPERATIONS
-summary: Personally executed third-party X-ray tube testing, handled client engagements and consortium membership outreach, and produced technical reports within NYCU's ionizing-radiation testing environment.
+summary: Followed up on industry contacts introduced by the lab professor, explained consortium services, coordinated agreements and client visits, and personally tested X-ray tubes and prepared third-party reports.
 proof:
 - 8 devices tested
 - 10+ third-party reports
@@ -26,7 +26,7 @@ contextLabel: X-RAY DEVICE TESTING · CONSORTIUM OPERATIONS
 detailHero: images/projects/detail-v521/xray-tube-testing-hero-v89.svg
 heroSize: standard
 detailHeroAlt: Illustration of an X-ray tube, detector, and traceable testing records, not actual client equipment
-heroDek: Hands-on X-ray tube testing, client intake, third-party reports, and member recruitment for NYCU's ionizing-radiation industry–university consortium.
+heroDek: From faculty-introduced client contacts and agreement coordination to hands-on X-ray tube testing and third-party technical reports.
 heroStats:
 - value: '8'
   label: Devices tested
@@ -38,11 +38,11 @@ snapshot:
 - title: Challenge
   body: Industry clients needed independently documented X-ray device measurements and traceable technical evidence.
 - title: My role
-  body: Dedicated consortium research assistant who received clients and their submitted X-ray tubes, performed testing, communicated issues, and produced reports.
+  body: Dedicated consortium research assistant who followed up on faculty introductions, explained services, coordinated agreement paperwork, received client devices, personally tested them, and prepared third-party reports.
 - title: Scope
-  body: Third-party ionizing-radiation device testing, client relations, member recruitment, and documentation within the consortium's laboratory-facing operations.
+  body: Follow-up for professor-introduced company contacts, consortium membership and contract coordination, plus client intake, testing, and technical reporting.
 - title: Outcome
-  body: Personally supported hands-on testing of 8 devices for 5 client organizations and produced 10+ third-party technical reports.
+  body: Personally tested 8 devices across 5 client organizations and prepared 10+ third-party technical reports.
 relatedPrevTitle: Designing AI Evaluation Beyond Accuracy
 relatedPrevURL: work/clinical-ai-at-scale/
 relatedNextTitle: Shipping Medical AI Under Real Clinical Constraints
@@ -63,16 +63,16 @@ navItems:
 ---
 
 <span id="problem"></span>
-## From a client's X-ray tube to a usable third-party report
+## From a faculty introduction to a delivered X-ray testing report
 
-For manufacturers and other external clients, radiation-device testing is not merely a lab measurement. It means receiving and clarifying the request, executing a defined test, handling issues, recording traceable evidence, and producing an understandable report. At **NYCU's Biomedical Imaging Physics & Instrumentation Lab (BIPI)**, I served as the **dedicated research assistant for the Ionizing Radiation Industry–University Technical Collaboration Consortium**. The consortium's client services and third-party testing/reporting were **one integrated part of my role**, not separate jobs.
+The lab professor would often make the initial introduction to an industry contact and pass the follow-up to me. As the **dedicated research assistant for NYCU's Ionizing Radiation Industry–University Technical Collaboration Consortium**, I explained the consortium's services, followed up with company contacts, coordinated member recruitment follow-up and agreement paperwork, and arranged client testing. I then welcomed clients bringing in X-ray tubes, performed the measurements, and prepared third-party technical reports. **Client coordination, consortium operations, and third-party testing were one connected responsibility—not separate projects.**
 
 <span id="my-work"></span>
 ## What I personally owned
 
 <div class="case-section-subgrid-v524 xray-roles-v89">
-  <article><span>HANDS-ON THIRD-PARTY TESTING</span><strong>From client intake to test report</strong><p>Received and assisted external clients, accepted their submitted X-ray tubes, clarified device details and testing needs, performed the physical tests, documented measurements, coordinated issue resolution or retesting, and personally produced third-party technical reports.</p></article>
-  <article><span>CONSORTIUM OPERATIONS</span><strong>Member recruitment &amp; client relationships</strong><p>Recruited prospective consortium members, handled member/client communication, and coordinated practical testing arrangements within the same ionizing-radiation consortium and laboratory environment.</p></article>
+  <article><span>CLIENT FOLLOW-UP &amp; AGREEMENTS</span><strong>Building the relationship after an introduction</strong><p>Typically following the professor's initial conversations with companies, I contacted the referred representatives, introduced testing services and consortium membership, coordinated member recruitment follow-up, contract paperwork and signing arrangements, and scheduled the next steps.</p></article>
+  <article><span>HANDS-ON TESTING &amp; REPORTING</span><strong>Delivering the technical service</strong><p>I welcomed clients and received their X-ray tubes, confirmed testing needs, personally carried out the measurements, maintained records, communicated anomalies or retesting needs, and prepared third-party technical reports.</p></article>
 </div>
 
 **Work delivered:** hands-on testing for **8 devices/products** across **5 client organizations**, with **10+ third-party technical reports**. These figures all refer to the **same consortium-linked testing workstream**; they are not separate TAF and non-TAF project counts.
@@ -80,7 +80,7 @@ For manufacturers and other external clients, radiation-device testing is not me
 <span id="validation"></span>
 ## X-ray tube testing &amp; evidence delivery
 
-**Client intake → test scope → hands-on X-ray testing → results and retesting → third-party report**
+**After initial faculty introductions and agreement coordination:** client device intake → test scope → hands-on X-ray testing → review or retesting → third-party report.
 
 <figure class="case-visual-v521 case-visual-full-v521 xray-evidence-v89">
   {{< site-img src="images/projects/detail-v521/xray-testing-evidence-v89.svg" alt="Illustrated sequence of client intake, X-ray tube device testing, evidence review, and third-party technical report delivery" >}}
@@ -92,7 +92,7 @@ For manufacturers and other external clients, radiation-device testing is not me
 <li><span>03 · REVIEW</span><strong>Results, issues &amp; retests</strong><p>Review deviations and coordinate follow-up testing as needed.</p></li>
 <li><span>04 · REPORT</span><strong>Third-party technical report</strong><p>Produce a documented client deliverable.</p></li></ol>
 
-I was accountable for both the **technical execution** and the **client-facing handoff**. This meant verifying device and test requirements before measurement, maintaining coherent testing records, communicating irregularities and retests, and turning results into deliverables a client could use. It also required coordinating member relationships rather than treating the consortium as an unrelated administrative activity.
+My role covered both the **client follow-up** and **technical delivery** after the laboratory's initial introductions: explaining services, handling the agreement process, arranging visits, verifying requirements, conducting tests, following up on retests, and delivering reports. The consortium membership work belonged to this same service workflow.
 
 <span id="accreditation"></span>
 ## Laboratory accreditation &amp; consortium context
@@ -111,6 +111,6 @@ Alongside—but **separate from consortium testing and third-party reporting**�
 <span id="takeaway"></span>
 ## Takeaway
 
-This experience combined hands-on testing ownership with customer-facing operations: **receiving X-ray tubes, executing tests, producing credible reports, and bringing new industry members into the consortium**. It taught me to connect technical evidence with a working service process—skills I later brought into clinical AI product management and regulated delivery.
+This role connected **faculty-initiated industry relationships to real service delivery**. I learned to manage the handoff—from explaining consortium services and coordinating agreements to testing client X-ray tubes and providing usable third-party reports—while separately developing a CT research tool. It built practical client communication and execution skills that I later applied in product management.
 
-<div class="case-capabilities-v523"><span class="case-capabilities-label-v523">CAPABILITIES DEMONSTRATED</span><div class="case-capabilities-chips-v523"><span>Hands-on X-ray Testing</span><span>Third-Party Reporting</span><span>Client Intake</span><span>Consortium Recruitment</span><span>Technical Quality Operations</span></div></div>
+<div class="case-capabilities-v523"><span class="case-capabilities-label-v523">CAPABILITIES DEMONSTRATED</span><div class="case-capabilities-chips-v523"><span>Hands-on X-ray Testing</span><span>Third-Party Reporting</span><span>Client Intake</span><span>Membership Coordination</span><span>Agreement Follow-up</span><span>Technical Quality Operations</span></div></div>

@@ -24,12 +24,12 @@ weight: 1
 heroBackground: images/projects/work-product-v519.webp
 detailHero: images/projects/detail-v521/product-hero-v521.webp
 heroSize: compact
-detailHeroAlt: Clinical AI product workflow at a brain MRI review workstation
+detailHeroAlt: 腦部 MRI 臨床 AI 輔助判讀工作流程示意
 heroDek: 協助將腦部 MRI AI 研究轉成醫師可使用的醫療器材軟體，改善處理速度並協調台灣衛福部食藥署（TFDA）送件時程。
 heroStats:
 - value: ~67%
   label: AI 處理時間縮短
-- value: 5 physicians · 2 centers
+- value: 5 位醫師 · 2 家中心
   label: 持續 workflow discovery
 - value: TFDA
   label: 送件執行

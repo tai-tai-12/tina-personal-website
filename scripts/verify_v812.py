@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Deployment checks for full-replacement V8.11 Hugo source; run before build."""
+"""Deployment checks for full-replacement V8.12 Hugo source; run before build."""
 from pathlib import Path
 import hashlib, re, sys, xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parent.parent
@@ -13,13 +13,13 @@ head=read('layouts/partials/head.html');base=read('layouts/_default/baseof.html'
 home=read('layouts/index.html');work=read('layouts/work/list.html');research=read('layouts/research/list.html')
 nav=read('layouts/partials/header.html');about=read('layouts/about/single.html')
 aorta=read('layouts/research/single.html');exp=read('layouts/experience/single.html')
-css=read('static/css/portfolio-v811.css');homecss=read('static/css/home-v811.css')
+css=read('static/css/portfolio-v812.css');homecss=read('static/css/home-v812.css')
 workflow=read('.github/workflows/hugo.yaml')
-ck('content="8.11"' in head,'V8.11 meta marker')
-ck('data-portfolio-version="8.11"' in base,'V8.11 page marker')
-ck('portfolio-v811.css' in head and 'home-v811.css' in head,'versioned CSS entrypoints')
-ck('?v=8.11.0' in head and '?v=8.11.0' in base,'CSS/JS cache bust')
-ck('scripts/verify_v811.py' in workflow,'CI validation')
+ck('content="8.12"' in head,'V8.12 meta marker')
+ck('data-portfolio-version="8.12"' in base,'V8.12 page marker')
+ck('portfolio-v812.css' in head and 'home-v812.css' in head,'versioned CSS entrypoints')
+ck('?v=8.12.0' in head and '?v=8.12.0' in base,'CSS/JS cache bust')
+ck('scripts/verify_v812.py' in workflow,'CI validation')
 ck('hugo build' in workflow,'Hugo build action')
 ck('2026 Future Tech Award' in home and 'NYCU project recognition' in home,'award attribution')
 ck('IMG_9931' not in home,'excluded award photo')
@@ -90,7 +90,7 @@ if source.is_file():
  ck(hashlib.sha256(resume.read_bytes()).digest()==hashlib.sha256(source.read_bytes()).digest(),'latest resume unchanged')
 ck((ROOT/'.github/workflows/hugo.yaml').is_file(),'hidden GitHub workflow included')
 
-# V8.11 accuracy: consortium work and third-party reports are the same assignment.
+# V8.12 accuracy: consortium work and third-party reports are the same assignment.
 for lang in ('en','zh'):
     c=read(f'content/{lang}/work/structured-validation.md')
     ck('xray-testing-evidence-v89.svg' in c and 'xray-tube-testing-hero-v89.svg' in c, f'{lang} new original X-ray visuals')
@@ -114,7 +114,7 @@ for name in ('testing-hero-v521.webp','testing-measurement-v521.webp','work-test
     ck(not any(x.name==name for x in (ROOT/'static').rglob('*')), 'outdated misleading visual removed '+name)
 
 
-# V8.11: conservatively scoped client engagement and recruiter-readable presentation.
+# V8.12: conservatively scoped client engagement and recruiter-readable presentation.
 for lang in ('en','zh'):
     case=read(f'content/{lang}/work/structured-validation.md')
     ck(('professor' in case.lower() if lang=='en' else '教授' in case), f'{lang} origin of company introduction explicit')
@@ -131,8 +131,13 @@ ck('xp-v811-compact' in exp and exp.count('xp-v811-compact')>=2,'compact earlier
 ck(exp.count('xp-v86-contributions li')==0 if False else exp.count('class="xp-v86-contributions"')==3,'contribution lists preserved')
 ck('font-size:.84rem' in css and 'case-margin-nav-v526' in css,'case navigation readability')
 ck('DELIVERY SCOPE' in exp and 'TRAINING SCOPE' in exp,'scope vs impact distinguished')
+ck('aria-current="location"' in nav, 'current section navigation state included')
+ck('if eq .Site.Language.Lang "zh"' in base, 'localized skip-to-content')
+ck('{{ if $isZh }}家醫療中心{{ else }}medical centers{{ end }}' in research, 'research evidence labels localized')
+ck('模型開發用 MRI 病例' in read('content/zh/work/clinical-ai-at-scale.md'), 'clinical study cohort labels localized')
+ck('Graduation Ceremony Representative' in read('layouts/education/single.html'), 'ceremonial representative preserved')
 
-print(f'V8.11 offline source checks: {count-len(errors)}/{count} passed')
+print(f'V8.12 offline source checks: {count-len(errors)}/{count} passed')
 if errors:
  for error in errors: print('FAIL:',error)
  sys.exit(1)

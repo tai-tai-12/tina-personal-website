@@ -4623,3 +4623,12 @@ html[data-theme="dark"] .case-prose-v526 .xray-evidence-v89 figcaption{backgroun
 @media(prefers-reduced-motion:reduce){
  .xp-v811-compact,.xp-v811-compact *{scroll-behavior:auto}
 }
+
+/* V8.12 final polish — navigation state and metadata contrast.
+   This intentionally does not change the established page grids or image sizing. */
+.nav-primary-v512 a[aria-current="location"]{color:var(--text);font-weight:700;position:relative}
+.nav-primary-v512 a[aria-current="location"]::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:var(--blue,#2563eb);border-radius:2px}
+.research-pub-row-v88>span,.publication-item>span{font-size:max(.78rem,12px)}
+.research-pub-row-v88 small,.research-pub-row-v88 .publication-actions-v6 a{line-height:1.55}
+.research-v518-area-card .research-area-copy-v64>span{font-size:clamp(.74rem,.77vw,.85rem)}
+@media(max-width:770px){.nav-primary-v512 a[aria-current="location"]::after{bottom:-3px;left:0;right:auto;width:24px}}

@@ -71,12 +71,12 @@ navItems:
 作為 Research Assistant / Project Lead，我負責腦部影像模型開發與評估、臨床資料處理、錯誤模式分析，以及向臨床與國際研究場合傳達技術結果。
 
 <div class="case-proof-grid technical-scope-grid">
-  <div class="case-proof"><strong>12,125</strong><span>Development MRI exams</span><small>23,341 個標註腫瘤病灶</small></div>
-  <div class="case-proof"><strong>132 / 132</strong><span>Positive / negative exams</span><small>平衡的獨立測試 cohort</small></div>
-  <div class="case-proof"><strong>2</strong><span>Medical centers</span><small>Taipei VGH · Taichung VGH</small></div>
+  <div class="case-proof"><strong>12,125</strong><span>模型開發用 MRI 病例</span><small>23,341 個標註腫瘤病灶</small></div>
+  <div class="case-proof"><strong>132 / 132</strong><span>陽性／陰性病例</span><small>平衡的獨立測試 cohort</small></div>
+  <div class="case-proof"><strong>2</strong><span>醫療中心</span><small>Taipei VGH · Taichung VGH</small></div>
 </div>
 
-Development cohort 用於模型開發、internal validation 與 operating-point characterization；**independent clinical test cohort** 則保留作為最終端到端評估。
+開發資料用於模型訓練、內部驗證及決策閾值評估；**獨立臨床測試資料**則保留作為最終端到端評估。
 
 <figure class="case-visual case-visual-vector">{{< site-img src="images/projects/detail-v521/clinical-cascade-v521.webp" alt="逐病灶 AI 三階段評估流程" >}}<figcaption><strong>Evaluation framework.</strong> Stage 0 建立高敏感度候選池，Stage 1 移除明顯偽陽性，Stage 2 處理剩餘偽陽性並進行保留病灶分類。</figcaption></figure>
 

@@ -74,13 +74,13 @@
         <div class="project-actions"><a href="{{ "work/medical-ai-product/" | relLangURL }}" class="btn mono-project-btn">{{ if $isZh }}查看專案{{ else }}Explore project{{ end }} <span>↗</span></a></div>
       </div>
       <a class="project-visual mono-visual editorial-visual" href="{{ "work/medical-ai-product/" | relLangURL }}" aria-label="Open Medical AI to Product case study">
-        <img src="{{ "images/projects/work-product-v519.webp" | relURL }}" alt="Clinical product workflow showing imaging input, AI review, lesion evidence, and physician decision">
+        {{ partial "work-evidence-visual-v84.html" (dict "Kind" "product" "Page" .) }}
       </a>
     </article>
 
     <article class="project-feature project-feature-secondary project-reverse mono-project reveal">
       <a class="project-visual mono-visual editorial-visual" href="{{ "work/clinical-ai-at-scale/" | relLangURL }}" aria-label="Open lesion-wise clinical AI case study">
-        {{ partial "clinical-evidence-visual-v83.html" . }}
+        {{ partial "work-evidence-visual-v84.html" (dict "Kind" "clinical" "Page" .) }}
       </a>
       <div class="project-copy">
         <div class="project-kicker-row"><span class="project-no">02</span><span class="project-type">AI EVALUATION · ML</span></div>
@@ -100,7 +100,7 @@
         <div class="project-actions"><a href="{{ "work/structured-validation/" | relLangURL }}" class="btn mono-project-btn">{{ if $isZh }}查看專案{{ else }}Explore project{{ end }} <span>↗</span></a></div>
       </div>
       <a class="project-visual mono-visual editorial-visual" href="{{ "work/structured-validation/" | relLangURL }}" aria-label="Open analytics and operations case study">
-        <img src="{{ "images/projects/validation-workflow-v83.svg" | relURL }}" alt="Evidence-based validation workflow: scope requirements, execute tests, resolve findings, and deliver reports" loading="lazy" decoding="async">
+        {{ partial "work-evidence-visual-v84.html" (dict "Kind" "validation" "Page" .) }}
       </a>
     </article>
   </div>

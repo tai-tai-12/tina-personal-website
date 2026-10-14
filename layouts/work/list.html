@@ -10,11 +10,11 @@
   <article class="work-stack-row-v510 reveal">
     <a class="work-stack-visual-v510 {{ .Params.visual }}" href="{{ .RelPermalink }}" aria-label="{{ if $isZh }}開啟專案：{{ else }}Open project: {{ end }}{{ .Title }}">
       {{ if eq .Params.visual "product-visual" }}
-      <img src="{{ "images/projects/work-product-v519.webp" | relURL }}" alt="Clinical product workflow illustration">
+        {{ partial "work-evidence-visual-v84.html" (dict "Kind" "product" "Page" $) }}
       {{ else if eq .Params.visual "clinical-ai-visual" }}
-      {{ partial "clinical-evidence-visual-v83.html" $ }}
+        {{ partial "work-evidence-visual-v84.html" (dict "Kind" "clinical" "Page" $) }}
       {{ else }}
-      <img src="{{ "images/projects/validation-workflow-v83.svg" | relURL }}" alt="Validation delivery from test scoping to reporting" loading="lazy" decoding="async">
+        {{ partial "work-evidence-visual-v84.html" (dict "Kind" "validation" "Page" $) }}
       {{ end }}
       <span class="work-stack-index-v510">0{{ .Weight }}</span>
     </a>

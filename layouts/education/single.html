@@ -101,38 +101,35 @@
     </article>
   </div>
 
-  <aside class="credential-panel-v510 credential-panel-v514 reveal">
-    <span class="kicker">{{ if $isZh }}獲獎與專業資格{{ else }}HONORS & CREDENTIALS{{ end }}</span>
-
-    <div class="credential-group-v514">
-      <span class="credential-group-label-v514">{{ if $isZh }}專業執照{{ else }}PROFESSIONAL LICENSE{{ end }}</span>
-      <h2>{{ if $isZh }}醫事放射師{{ else }}Licensed Medical Radiation Technologist{{ end }}</h2>
-      <p>{{ if $isZh }}台灣衛生福利部 · 2024{{ else }}Taiwan Ministry of Health and Welfare · 2024{{ end }}</p>
-    </div>
-
-    <div class="credential-group-v514">
-      <span class="credential-group-label-v514">{{ if $isZh }}精選獲獎{{ else }}SELECTED HONORS{{ end }}</span>
-      <ul class="credential-list-v514 credential-list-v62">
-        <li><span class="credential-award-icon-v62" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3.5 15 5l3.3-.2.2 3.3 1.6 2.9-2.9 1.6-1.6 2.9-3.3-.2-3 1.5-3-1.5-3.3.2L6.8 12.6 4 11l1.5-2.9.2-3.3L9 5l3-1.5Z"/><path d="m9.2 12.3 1.8 1.8 3.8-4"/></svg></span><div><strong>{{ if $isZh }}Outstanding Thesis Award · 第一名{{ else }}Outstanding Thesis Award · First Place{{ end }}</strong><span>NYCU · 2026</span></div></li>
-        <li><span class="credential-award-icon-v62" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3.5 15 5l3.3-.2.2 3.3 1.6 2.9-2.9 1.6-1.6 2.9-3.3-.2-3 1.5-3-1.5-3.3.2L6.8 12.6 4 11l1.5-2.9.2-3.3L9 5l3-1.5Z"/><path d="m9.2 12.3 1.8 1.8 3.8-4"/></svg></span><div><strong>Outstanding Oral Presentation</strong><span>AMLDS · 2026</span></div></li>
-        <li><span class="credential-award-icon-v62" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3.5 15 5l3.3-.2.2 3.3 1.6 2.9-2.9 1.6-1.6 2.9-3.3-.2-3 1.5-3-1.5-3.3.2L6.8 12.6 4 11l1.5-2.9.2-3.3L9 5l3-1.5Z"/><path d="m9.2 12.3 1.8 1.8 3.8-4"/></svg></span><div><strong>Honor Student Award</strong><span>NYCU · 2024</span></div></li>
-        <li><span class="credential-award-icon-v62" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3.5 15 5l3.3-.2.2 3.3 1.6 2.9-2.9 1.6-1.6 2.9-3.3-.2-3 1.5-3-1.5-3.3.2L6.8 12.6 4 11l1.5-2.9.2-3.3L9 5l3-1.5Z"/><path d="m9.2 12.3 1.8 1.8 3.8-4"/></svg></span><div><strong>Certificate of Excellence</strong><span>NTU Hospital · Clinical Internship</span></div></li>
+  <aside class="credential-panel-v510 credential-panel-v514 credentials-v84 reveal">
+    <span class="kicker">{{ if $isZh }}獲獎與專業資格{{ else }}HONORS &amp; CREDENTIALS{{ end }}</span>
+    <section class="credential-group-v514 credential-col-v84" aria-label="Professional license">
+      <div class="credential-col-heading-v84"><span class="credential-col-icon-v84" aria-hidden="true">01</span><h2>{{ if $isZh }}專業執照{{ else }}Professional License{{ end }}</h2></div>
+      <ul class="credential-list-v84">
+        <li><strong>{{ if $isZh }}醫事放射師{{ else }}Licensed Medical Radiation Technologist{{ end }}</strong><span>{{ if $isZh }}台灣衛生福利部 · 2024{{ else }}Taiwan Ministry of Health and Welfare · 2024{{ end }}</span></li>
       </ul>
-      <a class="credential-more-v514" href="{{ "research/" | relLangURL }}">{{ if $isZh }}查看研究與獲獎{{ else }}Research & recognition{{ end }} →</a>
-    </div>
-
-    <div class="credential-group-v514">
-      <span class="credential-group-label-v514">{{ if $isZh }}進階訓練{{ else }}ADDITIONAL TRAINING{{ end }}</span>
-      <ul class="credential-list-v514 credential-list-compact-v514">
-        <li><strong>Data Science & Smart Instrumentation</strong><span>NYCU · 2026</span></li>
-        <li><strong>CS50's Introduction to AI with Python</strong><span>Harvard / CS50 · 2025</span><span class="credential-verify-v81"><a href="https://cs50.harvard.edu/ai/" target="_blank" rel="noopener noreferrer">{{ if $isZh }}官方課程介紹 ↗{{ else }}Official course ↗{{ end }}</a></span></li>
-        <li><strong>Google Ads Search &amp; Measurement</strong><span>{{ if $isZh }}Google Skillshop · 2026 · 兩項認證{{ else }}Google Skillshop · 2026 · Two certifications{{ end }}</span><span class="credential-verify-v81"><a href="https://www.credential.net/81142a9a-5143-4e81-97be-9354d8667e3e" target="_blank" rel="noopener noreferrer">Search ↗</a><a href="https://www.credential.net/f2b46cae-5532-4190-80f1-9da00bf7dd7d" target="_blank" rel="noopener noreferrer">Measurement ↗</a></span></li>
-        <li><strong>IBM Relational Database Administrator</strong><span>Professional Certificate · 2025</span><span class="credential-verify-v81"><a href="https://www.coursera.org/verify/professional-cert/TEEVL5E2DS84" target="_blank" rel="noopener noreferrer">{{ if $isZh }}驗證證書 ↗{{ else }}Verify credential ↗{{ end }}</a></span></li>
-        <li><strong>Data Science Fundamentals with Python &amp; SQL</strong><span>IBM · 2025</span></li>
-        <li><strong>Fundamentals of Visualization with Tableau</strong><span>UC Davis · 2026</span></li>
+    </section>
+    <section class="credential-group-v514 credential-col-v84" aria-label="Selected honors">
+      <div class="credential-col-heading-v84"><span class="credential-col-icon-v84" aria-hidden="true">02</span><h2>{{ if $isZh }}精選獲獎{{ else }}Selected Honors{{ end }}</h2></div>
+      <ul class="credential-list-v84">
+        <li><strong>{{ if $isZh }}傑出論文獎 · 第一名{{ else }}Outstanding Thesis Award · First Place{{ end }}</strong><span>NYCU · 2026</span></li>
+        <li><strong>Outstanding Oral Presentation</strong><span>AMLDS · 2026</span></li>
+        <li><strong>Honor Student Award</strong><span>NYCU · 2024</span></li>
+        <li><strong>Certificate of Excellence</strong><span>{{ if $isZh }}臺大醫院 · 臨床實習{{ else }}NTU Hospital · Clinical Internship{{ end }}</span></li>
       </ul>
-      <p class="credential-note credential-note-v514">{{ if $isZh }}更多技術證書收錄於{{ else }}More technical credentials are listed on{{ end }} <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noreferrer">LinkedIn ↗</a></p>
-    </div>
+      <a class="credential-col-more-v84" href="{{ "research/" | relLangURL }}">{{ if $isZh }}查看研究與獎項{{ else }}Research &amp; recognition{{ end }} ↗</a>
+    </section>
+    <section class="credential-group-v514 credential-col-v84" aria-label="Selected certifications">
+      <div class="credential-col-heading-v84"><span class="credential-col-icon-v84" aria-hidden="true">03</span><h2>{{ if $isZh }}精選認證與訓練{{ else }}Selected Certifications{{ end }}</h2></div>
+      <ul class="credential-list-v84">
+        <li><strong>CS50’s Introduction to AI with Python</strong><span>Harvard CS50 · 2025</span><div class="credential-links-v84"><a href="https://cs50.harvard.edu/certificates/1d4e0491-7302-4f56-84c1-fffb139622ae" target="_blank" rel="noopener noreferrer">{{ if $isZh }}驗證證書{{ else }}Verify certificate{{ end }} ↗</a></div></li>
+        <li><strong>Google Ads Search &amp; Measurement</strong><span>Google Skillshop · 2026 · {{ if $isZh }}兩項認證{{ else }}Two certifications{{ end }}</span><div class="credential-links-v84"><a href="https://www.credential.net/81142a9a-5143-4e81-97be-9354d8667e3e" target="_blank" rel="noopener noreferrer">Search ↗</a><a href="https://www.credential.net/f2b46cae-5532-4190-80f1-9da00bf7dd7d" target="_blank" rel="noopener noreferrer">Measurement ↗</a></div></li>
+        <li><strong>Data Science Fundamentals with Python &amp; SQL</strong><span>IBM / Coursera · 2025 · Specialization</span><div class="credential-links-v84"><a href="https://www.coursera.org/verify/specialization/FJCM0NEN2YEI" target="_blank" rel="noopener noreferrer">{{ if $isZh }}驗證證書{{ else }}Verify certificate{{ end }} ↗</a></div></li>
+        <li><strong>IBM Relational Database Administrator</strong><span>IBM / Coursera · 2025 · Professional Certificate</span><div class="credential-links-v84"><a href="https://www.coursera.org/verify/professional-cert/TEEVL5E2DS84" target="_blank" rel="noopener noreferrer">{{ if $isZh }}驗證證書{{ else }}Verify certificate{{ end }} ↗</a></div></li>
+        <li><strong>Fundamentals of Visualization with Tableau</strong><span>UC Davis / Coursera · 2026</span><div class="credential-links-v84"><a href="https://www.coursera.org/verify/FSKBD3NK1OJD" target="_blank" rel="noopener noreferrer">{{ if $isZh }}驗證證書{{ else }}Verify certificate{{ end }} ↗</a></div></li>
+      </ul>
+      <p class="credential-note-v84">{{ if $isZh }}僅展示與產品、AI 及數據分析相關的精選證書。{{ else }}Curated credentials relevant to product, AI, and analytics.{{ end }}</p>
+    </section>
   </aside>
 </div></section>
 

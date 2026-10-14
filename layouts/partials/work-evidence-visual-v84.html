@@ -1,0 +1,46 @@
+{{ $page := .Page }}
+{{ $isZh := eq $page.Site.Language.Lang "zh" }}
+{{ $kind := .Kind }}
+{{ $isProduct := eq $kind "product" }}
+{{ $isClinical := eq $kind "clinical" }}
+{{ $isValidation := eq $kind "validation" }}
+<div class="evidence-visual-v84 evidence-{{ $kind }}-v84" role="img" aria-label="{{ if $isProduct }}{{ if $isZh }}醫療 AI 產品：從醫師需求到產品發佈的四階段流程，處理時間減少約 67%。{{ else }}Medical AI product: four steps from physician needs to release, around 67 percent less processing time.{{ end }}{{ else if $isClinical }}{{ if $isZh }}264 例獨立回溯性 MRI 評估：偽陽性候選由 1,007 降至 55，敏感度由 84.96% 降至 80.97%。{{ else }}264 retrospective MRI cases: false-positive candidates from 1,007 to 55, sensitivity from 84.96 to 80.97 percent.{{ end }}{{ else }}{{ if $isZh }}客戶驗證流程：需求界定、測試、問題修正與報告，涵蓋八項產品及十份以上測試報告。{{ else }}Client testing workflow: scope, test, resolve, deliver, covering eight products and ten-plus reports.{{ end }}{{ end }}">
+  <div class="evidence-v84-head">
+    <span class="evidence-v84-eyebrow">{{ if $isProduct }}01 / {{ if $isZh }}產品執行{{ else }}PRODUCT EXECUTION{{ end }}{{ else if $isClinical }}02 / {{ if $isZh }}模型評估{{ else }}MODEL EVALUATION{{ end }}{{ else }}03 / {{ if $isZh }}驗證作業{{ else }}VALIDATION OPERATIONS{{ end }}{{ end }}</span>
+    <span class="evidence-v84-tag">{{ if $isProduct }}{{ if $isZh }}流程｜決策{{ else }}WORKFLOW / DECISION{{ end }}{{ else if $isClinical }}{{ if $isZh }}數據｜取捨{{ else }}EVIDENCE / TRADE-OFF{{ end }}{{ else }}{{ if $isZh }}流程｜交付{{ else }}PROCESS / DELIVERY{{ end }}{{ end }}</span>
+  </div>
+  <strong class="evidence-v84-title">{{ if $isProduct }}{{ if $isZh }}從臨床需求到產品交付{{ else }}From clinical needs to release{{ end }}{{ else if $isClinical }}{{ if $isZh }}偽陽性候選數量比較{{ else }}False-positive candidate burden{{ end }}{{ else }}{{ if $isZh }}從測試範疇到正式報告{{ else }}From test scope to evidence{{ end }}{{ end }}</strong>
+  {{ if $isClinical }}
+  <div class="evidence-v84-bars" aria-hidden="true">
+    <div class="evidence-v84-bar"><span>{{ if $isZh }}初始候選{{ else }}Initial candidates{{ end }}</span><div class="evidence-v84-track"><i class="evidence-v84-fill is-base"></i></div><b>1,007</b></div>
+    <div class="evidence-v84-bar"><span>{{ if $isZh }}最終級聯{{ else }}Final cascade{{ end }}</span><div class="evidence-v84-track"><i class="evidence-v84-fill is-final"></i></div><b>55</b></div>
+  </div>
+  <div class="evidence-v84-keyline">
+    <strong>−94.54%</strong>
+    <span>{{ if $isZh }}偽陽性候選量{{ else }}FP candidates{{ end }}</span>
+    <span class="evidence-v84-context">Sensitivity 84.96% → 80.97%</span>
+  </div>
+  {{ else }}
+  <ol class="evidence-v84-steps" aria-hidden="true">
+    {{ if $isProduct }}
+    <li><span>01</span><b>{{ if $isZh }}探索{{ else }}DISCOVER{{ end }}</b><small>{{ if $isZh }}醫師需求{{ else }}Physician needs{{ end }}</small></li>
+    <li><span>02</span><b>{{ if $isZh }}測試{{ else }}TEST{{ end }}</b><small>{{ if $isZh }}臨床流程{{ else }}Clinical workflow{{ end }}</small></li>
+    <li><span>03</span><b>{{ if $isZh }}決策{{ else }}DECIDE{{ end }}</b><small>{{ if $isZh }}模型與延遲取捨{{ else }}Model &amp; latency{{ end }}</small></li>
+    <li><span>04</span><b>{{ if $isZh }}交付{{ else }}DELIVER{{ end }}</b><small>{{ if $isZh }}發佈準備{{ else }}Release readiness{{ end }}</small></li>
+    {{ else }}
+    <li><span>01</span><b>{{ if $isZh }}界定{{ else }}SCOPE{{ end }}</b><small>{{ if $isZh }}需求與規格{{ else }}Requirements{{ end }}</small></li>
+    <li><span>02</span><b>{{ if $isZh }}測試{{ else }}TEST{{ end }}</b><small>{{ if $isZh }}執行與量測{{ else }}Measurement{{ end }}</small></li>
+    <li><span>03</span><b>{{ if $isZh }}解決{{ else }}RESOLVE{{ end }}</b><small>{{ if $isZh }}不符合項與複測{{ else }}Findings &amp; retests{{ end }}</small></li>
+    <li><span>04</span><b>{{ if $isZh }}交付{{ else }}DELIVER{{ end }}</b><small>{{ if $isZh }}正式報告{{ else }}Formal reports{{ end }}</small></li>
+    {{ end }}
+  </ol>
+  <div class="evidence-v84-numbers" aria-hidden="true">
+    {{ if $isProduct }}
+    <div><strong>~67%</strong><span>{{ if $isZh }}處理時間縮短{{ else }}Less processing time{{ end }}</span></div><div><strong>5</strong><span>{{ if $isZh }}醫師{{ else }}Physicians{{ end }}</span></div><div><strong>2</strong><span>{{ if $isZh }}醫療中心{{ else }}Medical centers{{ end }}</span></div>
+    {{ else }}
+    <div><strong>8</strong><span>{{ if $isZh }}受測產品{{ else }}Products tested{{ end }}</span></div><div><strong>10+</strong><span>{{ if $isZh }}報告{{ else }}Reports{{ end }}</span></div><div><strong>5</strong><span>{{ if $isZh }}客戶{{ else }}Clients{{ end }}</span></div>
+    {{ end }}
+  </div>
+  {{ end }}
+  <div class="evidence-v84-footer"><span>{{ if $isProduct }}{{ if $isZh }}產品決策與執行摘要{{ else }}Product judgment &amp; execution{{ end }}{{ else if $isClinical }}{{ if $isZh }}來源：碩士論文・同一組回溯性測試{{ else }}M.S. thesis · same retrospective cohort{{ end }}{{ else }}{{ if $isZh }}流程摘要，非客戶系統畫面{{ else }}Process schematic · not a client UI{{ end }}{{ end }}</span><span class="evidence-v84-foot-mark" aria-hidden="true">↗</span></div>
+</div>

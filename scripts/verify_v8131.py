@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Deployment checks for full-replacement V8.13 Hugo source; run before build."""
+"""Deployment checks for full-replacement V8.13.1 Hugo source; run before build."""
 from pathlib import Path
 import hashlib, re, sys, xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parent.parent
@@ -13,13 +13,13 @@ head=read('layouts/partials/head.html');base=read('layouts/_default/baseof.html'
 home=read('layouts/index.html');work=read('layouts/work/list.html');research=read('layouts/research/list.html')
 nav=read('layouts/partials/header.html');about=read('layouts/about/single.html')
 aorta=read('layouts/research/single.html');exp=read('layouts/experience/single.html')
-css=read('static/css/portfolio-v813.css');homecss=read('static/css/home-v813.css')
+css=read('static/css/portfolio-v8131.css');homecss=read('static/css/home-v8131.css')
 workflow=read('.github/workflows/hugo.yaml')
-ck('content="8.13"' in head,'V8.13 meta marker')
-ck('data-portfolio-version="8.13"' in base,'V8.13 page marker')
-ck('portfolio-v813.css' in head and 'home-v813.css' in head,'versioned CSS entrypoints')
-ck('?v=8.13.0' in head and '?v=8.13.0' in base,'CSS/JS cache bust')
-ck('scripts/verify_v813.py' in workflow,'CI validation')
+ck('content="8.13.1"' in head,'V8.13.1 meta marker')
+ck('data-portfolio-version="8.13.1"' in base,'V8.13.1 page marker')
+ck('portfolio-v8131.css' in head and 'home-v8131.css' in head,'versioned CSS entrypoints')
+ck('?v=8.13.1' in head and '?v=8.13.1' in base,'CSS/JS cache bust')
+ck('scripts/verify_v8131.py' in workflow,'CI validation')
 ck('hugo build' in workflow,'Hugo build action')
 ck('2026 Future Tech Award' in home and 'NYCU project recognition' in home,'award attribution')
 ck('IMG_9931' not in home,'excluded award photo')
@@ -90,7 +90,7 @@ if source.is_file():
  ck(hashlib.sha256(resume.read_bytes()).digest()==hashlib.sha256(source.read_bytes()).digest(),'latest resume unchanged')
 ck((ROOT/'.github/workflows/hugo.yaml').is_file(),'hidden GitHub workflow included')
 
-# V8.13 accuracy: consortium work and third-party reports are the same assignment.
+# V8.13.1 accuracy: consortium work and third-party reports are the same assignment.
 for lang in ('en','zh'):
     c=read(f'content/{lang}/work/structured-validation.md')
     ck('xray-testing-evidence-v89.svg' in c and 'xray-tube-testing-hero-v89.svg' in c, f'{lang} new original X-ray visuals')
@@ -114,7 +114,7 @@ for name in ('testing-hero-v521.webp','testing-measurement-v521.webp','work-test
     ck(not any(x.name==name for x in (ROOT/'static').rglob('*')), 'outdated misleading visual removed '+name)
 
 
-# V8.13: conservatively scoped client engagement and recruiter-readable presentation.
+# V8.13.1: conservatively scoped client engagement and recruiter-readable presentation.
 for lang in ('en','zh'):
     case=read(f'content/{lang}/work/structured-validation.md')
     ck(('professor' in case.lower() if lang=='en' else '教授' in case), f'{lang} origin of company introduction explicit')
@@ -137,7 +137,7 @@ ck('{{ if $isZh }}家醫療中心{{ else }}medical centers{{ end }}' in research
 ck('模型開發用 MRI 病例' in read('content/zh/work/clinical-ai-at-scale.md'), 'clinical study cohort labels localized')
 ck('Graduation Ceremony Representative' in read('layouts/education/single.html'), 'ceremonial representative preserved')
 
-# V8.13 localization and language-specific evidence rules.
+# V8.13.1 localization and language-specific evidence rules.
 edu=read('layouts/education/single.html');home=read('layouts/index.html');honors=read('layouts/partials/experience-recognition-v86.html')
 for val in ('卡內基美隆大學','國立陽明交通大學','生醫光電研究所','生物醫學影像暨放射科學系','機器學習與生醫應用','磁振造影原理','書卷獎','傑出口頭報告獎','放射腫瘤科實習表現優異獎'):
  ck(val in edu,'localized Education content: '+val)
@@ -150,9 +150,29 @@ ck('傑出口頭報告獎' in research,'Research awards translated')
 ck('本次正式發表名稱維持英文' not in research,'original paper titles preserved without fabricated translation')
 ck('padding-top:clamp(36px,3.5vw,42px)' in homecss,'desktop homepage About baseline adjusted')
 ck('@media (max-width:770px)' in homecss,'mobile About alignment restored')
-ck('content="8.13"' in head,'release version 8.13')
+ck('content="8.13.1"' in head,'release version 8.13')
 ck('Certificate of Excellence' in edu,'English award name preserved')
-print(f'V8.13 offline source checks: {count-len(errors)}/{count} passed')
+
+# V8.13.1 FINAL regression — containment and zh localization.
+ck('grid-template-columns:repeat(3,minmax(0,1fr))' in css, 'Research three-column metric container')
+ck('.research-area-card-v64 .research-proof-row-v64>em' in css, 'Research child metrics constrained')
+ck('white-space:normal' in css and 'overflow-wrap:break-word' in css, 'Research metrics allow natural wrapping')
+ck('@media(max-width:560px)' in css, 'mobile single-column Research metrics')
+ck('主要研究{{ else }}PRIMARY RESEARCH' in research, 'Research primary classification localized')
+ck('基礎研究 · 國科會{{ else }}FOUNDATIONAL RESEARCH' in research, 'Research foundational classification localized')
+ck('DSC · segmentation overlap' in research, 'shortened and comprehensible DSC label')
+for name in ('medical-ai-product','clinical-ai-at-scale'):
+ s=read('content/zh/work/'+name+'.md')
+ ck('## 重點總結' in s and '## Takeaway' not in s,'zh case conclusion translated '+name)
+ck('本頁核心數據統一採用碩士論文中的' in read('content/zh/work/clinical-ai-at-scale.md'), 'Clinical AI final cohort explanation localized')
+for item in ('案例背景','專案關鍵數據','專案摘要','案例導覽'):
+ ck(item in read('layouts/work/single.html'),'case aria localized '+item)
+ck('Tina Tai 首頁' in read('layouts/partials/header.html'),'header brand aria localized')
+ck('研究成果' in aorta,'aorta results aria localized')
+for p in ('static/css/portfolio-v813.css','static/css/home-v813.css','scripts/verify_v813.py'):
+ ck(not (ROOT/p).exists(), 'no obsolete stylesheet / verifier '+p)
+
+print(f'V8.13.1 offline source checks: {count-len(errors)}/{count} passed')
 if errors:
  for error in errors: print('FAIL:',error)
  sys.exit(1)

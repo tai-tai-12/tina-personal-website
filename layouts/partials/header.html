@@ -1,7 +1,7 @@
 {{ $isZh := eq .Site.Language.Lang "zh" }}
 <header class="site-header">
   <div class="shell nav-wrap nav-wrap-v512">
-    <a class="brand" href="{{ .Site.Home.RelPermalink }}" aria-label="Tina Tai home">Tina Tai<span class="brand-dot">.</span></a>
+    <a class="brand" href="{{ .Site.Home.RelPermalink }}" aria-label="{{ if $isZh }}Tina Tai 首頁{{ else }}Tina Tai home{{ end }}">Tina Tai<span class="brand-dot">.</span></a>
     <button class="menu-toggle" aria-label="{{ if $isZh }}開啟選單{{ else }}Open menu{{ end }}" aria-expanded="false" data-menu-toggle>☰</button>
     <nav class="nav nav-v512" data-menu aria-label="{{ if $isZh }}主要導覽{{ else }}Primary navigation{{ end }}">
       <div class="nav-primary-v512">

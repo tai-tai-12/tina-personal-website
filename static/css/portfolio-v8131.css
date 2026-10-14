@@ -4632,3 +4632,61 @@ html[data-theme="dark"] .case-prose-v526 .xray-evidence-v89 figcaption{backgroun
 .research-pub-row-v88 small,.research-pub-row-v88 .publication-actions-v6 a{line-height:1.55}
 .research-v518-area-card .research-area-copy-v64>span{font-size:clamp(.74rem,.77vw,.85rem)}
 @media(max-width:770px){.nav-primary-v512 a[aria-current="location"]::after{bottom:-3px;left:0;right:auto;width:24px}}
+
+
+/* V8.13.1 FINAL — Research metric containment and readable information hierarchy.
+   The old nowrap / max-content proof row could bleed past a two-column card.
+   Scope the fix to the two Research Areas cards; keep other metric components unchanged. */
+.research-area-card-v64 .research-proof-row-v64{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  align-items:stretch;
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  margin-top:20px;
+  padding:17px 0 0;
+  gap:0;
+  border-top:1px solid var(--line);
+}
+.research-area-card-v64 .research-proof-row-v64>em{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:flex-start;
+  min-width:0;
+  max-width:100%;
+  min-height:0;
+  margin:0;
+  padding:0 12px;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  white-space:normal;
+  overflow-wrap:break-word;
+  font-style:normal;
+  font-size:clamp(.76rem,.78vw,.87rem);
+  line-height:1.45;
+  color:var(--muted);
+  gap:4px;
+}
+.research-area-card-v64 .research-proof-row-v64>em:first-child{padding-left:0}
+.research-area-card-v64 .research-proof-row-v64>em:last-child{padding-right:0}
+.research-area-card-v64 .research-proof-row-v64>em+em{border-left:1px solid var(--line)}
+.research-area-card-v64 .research-proof-row-v64>em:nth-child(3){border-left:1px solid var(--line)}
+.research-area-card-v64 .research-proof-row-v64 strong{
+  display:block;
+  font:600 clamp(1.06rem,1.25vw,1.28rem)/1.25 Manrope,Inter,"Noto Sans TC",sans-serif;
+  letter-spacing:-.015em;
+  color:var(--text);
+  font-variant-numeric:tabular-nums;
+}
+@media(max-width:560px){
+  .research-area-card-v64 .research-proof-row-v64{grid-template-columns:1fr;gap:0;padding-top:10px}
+  .research-area-card-v64 .research-proof-row-v64>em{
+    flex-direction:row;align-items:baseline;gap:10px;
+    padding:9px 0;min-height:0;border-left:0!important;
+  }
+  .research-area-card-v64 .research-proof-row-v64>em+em{border-top:1px solid var(--line)}
+  .research-area-card-v64 .research-proof-row-v64 strong{flex:0 0 66px;font-size:1.07rem}
+}

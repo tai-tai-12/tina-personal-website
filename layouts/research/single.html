@@ -9,13 +9,13 @@
         <span class="research-note-eyebrow-v63">{{ if $isZh }}國科會 · 基礎研究{{ else }}FOUNDATIONAL RESEARCH · NSTC{{ end }}</span>
         <h1>{{ .Title }}</h1>
         <p>{{ if $isZh }}從臨床 CT 資料出發，完成多類別分割、3D 重建與定量評估，建立我後續醫療 AI 研究的第一個端到端技術基礎。{{ else }}From clinical CT data to multi-class segmentation, 3D reconstruction, and quantitative evaluation—my first end-to-end foundation for later medical-AI work.{{ end }}</p>
-        <div class="research-note-facts-v63" aria-label="Project results">
+        <div class="research-note-facts-v63" aria-label="{{ if $isZh }}研究成果{{ else }}Project results{{ end }}">
           <span><strong>308</strong><em>{{ if $isZh }}臨床 CT 研究{{ else }}clinical CT studies{{ end }}</em></span>
           <span><strong>0.95</strong><em>{{ if $isZh }}AUC · 區分能力{{ else }}AUC · discrimination{{ end }}</em></span>
           <span><strong>0.782</strong><em>{{ if $isZh }}DSC · 分割重疊度{{ else }}DSC · overlap with reference{{ end }}</em></span>
         </div>
       </div>
-      <figure class="research-note-hero-figure-v63 research-note-hero-figure-v64 signature-editorial-visual-v64 reveal delay-1"><img src="{{ "images/research/thoracic-aorta-area-v519.webp" | relURL }}" alt="Thoracic aorta CT segmentation workflow" loading="eager" decoding="async"></figure>
+      <figure class="research-note-hero-figure-v63 research-note-hero-figure-v64 signature-editorial-visual-v64 reveal delay-1"><img src="{{ "images/research/thoracic-aorta-area-v519.webp" | relURL }}" alt="{{ if $isZh }}胸主動脈 CT 影像分割流程{{ else }}Thoracic aorta CT segmentation workflow{{ end }}" loading="eager" decoding="async"></figure>
     </div>
   </header>
 

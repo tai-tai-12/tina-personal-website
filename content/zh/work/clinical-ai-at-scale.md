@@ -121,12 +121,12 @@ navItems:
   <p>相關工作還包含 MRI registration、hospital-data standardization / format conversion、ground-truth consensus 管理，以及 radiomics / segmentation / classification experiments。</p>
 </details>
 
-相關研究版本發表於 **MIDL 2026** 與 **AMLDS 2026**；本頁 headline metrics 刻意統一採最終碩論 independent-cohort evaluation。
+相關研究成果發表於 **MIDL 2026** 與 **AMLDS 2026**；本頁核心數據統一採用碩士論文中的 **264 例回溯性獨立測試** 結果。
 
 <div class="case-boundary-v81"><strong>研究證據的限制</strong><p>這是雙中心回溯性獨立測試，不是 prospective reader study，亦未證實臨床實務中醫師判讀時間、alert fatigue、病人預後或自主診斷能力的改善。MIDL 2026 公開論文使用的是<strong>另一組 249 例</strong>的 held-out cohort，其 90.13% sensitivity 和 0.41 FP/scan 不能與本論文 264 例數據混為同一組結果。</p></div>
 
 <span id="takeaway"></span>
-## Takeaway
+## 重點總結
 
 技術可信度不只來自模型 accuracy，也來自清楚的資料範圍、正確的 denominator、明確的 failure analysis，以及對證據能支持與不能支持之處的精準溝通。
 

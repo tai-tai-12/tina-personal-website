@@ -3,7 +3,7 @@
   <header class="case-hero-v526 case-hero-size-{{ .Params.heroSize | default "standard" }}{{ with .Params.detailHero }} has-visual{{ end }}"{{ with .Params.detailHero }} style="--case-hero-bg:url('{{ . | relURL }}')"{{ end }}>
     <div class="case-hero-v526-art" aria-hidden="true"></div>
     <div class="case-hero-shell-v526">
-      <div class="case-hero-context-v526" aria-label="Case study context">
+      <div class="case-hero-context-v526" aria-label="{{ if eq .Lang "zh" }}案例背景{{ else }}Case study context{{ end }}">
         <a href="{{ "work/" | relLangURL }}">← {{ if eq .Lang "zh" }}所有作品{{ else }}All work{{ end }}</a>
         <span>{{ if eq .Lang "zh" }}精選作品{{ else }}Selected work{{ end }} / 0{{ .Weight }}</span>
         <span class="case-category-v526">{{ .Params.category | default "CASE STUDY" }}</span>
@@ -14,7 +14,7 @@
         {{ with .Params.heroDek }}<p class="case-deck-v526">{{ . }}</p>{{ else }}{{ with .Params.summary }}<p class="case-deck-v526">{{ . }}</p>{{ end }}{{ end }}
 
         {{ with .Params.heroStats }}
-        <div class="case-facts-v526" aria-label="Key project facts">
+        <div class="case-facts-v526" aria-label="{{ if eq $.Lang "zh" }}專案關鍵數據{{ else }}Key project facts{{ end }}">
           {{ range . }}
           <div class="case-fact-v526"><strong>{{ .value }}&nbsp;</strong><span>{{ .label }}</span></div>
           {{ end }}
@@ -26,7 +26,7 @@
   </header>
 
   {{ with .Params.snapshot }}
-  <section class="case-brief-v526" aria-label="Project brief">
+  <section class="case-brief-v526" aria-label="{{ if eq .Lang "zh" }}專案摘要{{ else }}Project brief{{ end }}">
     <div class="case-brief-shell-v526">
       <div class="case-brief-heading-v526">
         <span>{{ if eq $.Lang "zh" }}重點摘要{{ else }}AT A GLANCE{{ end }}</span>
@@ -41,7 +41,7 @@
   {{ end }}
 
   <div class="case-reading-shell-v526">
-    <aside class="case-margin-nav-v526" aria-label="Case study navigation">
+    <aside class="case-margin-nav-v526" aria-label="{{ if eq .Lang "zh" }}案例導覽{{ else }}Case study navigation{{ end }}">
       <div class="case-margin-nav-inner-v526">
         <span class="case-margin-nav-label-v526">{{ if eq .Lang "zh" }}案例導覽{{ else }}CASE STUDY{{ end }}</span>
         {{ with .Params.navItems }}

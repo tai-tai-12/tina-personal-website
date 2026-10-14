@@ -1,40 +1,31 @@
-# Tina Tai Personal Website — V8.13 Bilingual Localization & Visual QA
+# Tina Tai Personal Website — V8.13.1 FINAL
 
-**Full-replacement Hugo source for the existing GitHub Pages site**, not an incremental overlay.
+A **complete source replacement** for Hugo / GitHub Pages. The ZIP root is the GitHub repository root; there is no extra parent folder.
 
-## Replace the repository safely
+## Deployment
 
-1. Back up the current repository or create a Git tag for V8.12.
-2. If editing a local Git checkout, **keep `.git/`**; remove only the tracked site sources/assets from the working tree.
-3. Unzip V8.13. The archive opens directly into the website root (no extra parent directory).
-4. Copy everything from that root into the repository, including the hidden `.github/` directory.
-5. Confirm these top-level items exist: `hugo.toml`, `.github/`, `content/`, `layouts/`, `static/`, `themes/`, `scripts/`.
-6. Commit and push to `main`. GitHub Actions checks the source and then builds/deploys with Hugo.
-7. Inspect View Page Source for `<meta name="portfolio-version" content="8.13">`. Stylesheets should be `portfolio-v813.css` and `home-v813.css`.
-8. Review both English and 繁體中文 Home, Work, Experience, Research, Education and About on desktop and phone. Open each case study, verify Resume/credential links and theme switching.
+1. Back up the current V8.13 website repository. Keep `.git/` if using local Git.
+2. Replace all previous website source files with **all** contents of this archive, including hidden `.github/`.
+3. Commit and push to `main`.
+4. In GitHub → Actions, confirm the **Build and deploy** workflow successfully completes both Build and Deploy.
+5. Refresh the live website and confirm the page source contains `<meta name="portfolio-version" content="8.13.1">` and loads `portfolio-v8131.css`, `home-v8131.css`.
+6. Visually inspect both Research cards in EN / 繁中 at desktop and mobile widths; confirm no metric text extends beyond a card.
 
-## V8.13 scope
-
-- Localizes Taiwanese universities, departments, degrees, coursework and awards in Chinese-facing templates while preserving the official English labels on the English site.
-- Corrects **Honor Student Award → 書卷獎** with reference to the original NYCU award certificate; corrects the NTUH recognition to **放射腫瘤科實習表現優異獎**, reflecting the originating department.
-- Localizes homepage education, experience, conference recognition, selected certification descriptions, supporting metadata, footer and a selection of case-study explanatory labels.
-- Aligns the homepage About paragraph to the heading top on desktop; retains stacked flow on mobile.
-- Preserves research/technical paper titles in their original English where they are official publication names, plus product/institution acronyms useful for verification.
-- Does **not** alter clinical metrics, ownership attribution, original publications, private documentation boundaries or the existing resume file.
-
-## Source checks
+## Quick check
 
 ```bash
-python3 scripts/verify_v813.py
-hugo build --gc --minify
+python3 scripts/verify_v8131.py
 ```
 
-The first command runs local preflight checks. Hugo is not available in the authoring environment, so the formal Hugo build must be verified by the GitHub Actions workflow and followed by live-site visual checks.
+The GitHub Actions workflow runs this check automatically **before** the official Hugo build.
 
-## Key factual boundaries
+## Scope
 
-- Future Tech Award is an NYCU-led team/project recognition, not a personal individual award. The excluded event photograph is not shipped.
-- 8 devices, 5 client organizations and 10+ reports describe one ionizing-radiation consortium testing assignment; companies were introduced by the professor, and the user's responsibility was follow-up, membership/agreement coordination, hands-on testing and report delivery.
-- The MATLAB small-animal CT work is separate; TAF accreditation applies to the laboratory's defined scopes, not the individual.
-- The 94.54% false-positive reduction is retrospective and carries a decrease in sensitivity; do not interpret research metrics as prospective clinical efficacy.
-- No raw personal academic records, medical-license scans or clinical identifiers are included.
+- Prevent overflow in the three Research metrics of each Research Area card. At desktop, metrics use equal columns with stacked value + label; on small phones, a readable vertical list.
+- Translate remaining labels and conclusions in Traditional Chinese pages; localize selected accessibility labels.
+- Keep **all** Work, Experience, Education, Research, About, three detailed cases, thoracic-aorta study, official sources, newest resume, and existing visual identity intact.
+- Keep medical AI performance-cohort distinctions, lab accreditation boundaries, consortium client-contact attribution, and team award attribution unchanged.
+
+## Validation scope
+
+See `V8_13_1_FINAL_QA.md`. Source validation, HTML template previews, and browser containment checks have passed. The formal Hugo build and post-deployment interaction/visual checks remain the GitHub Actions and live-site gates; do not equate the local preview with production pixels.

@@ -127,7 +127,7 @@ navItems:
 </div>
 
 <span id="takeaway"></span>
-## Takeaway
+## 重點總結
 
 AI 產品工作最困難的往往不是選出技術上最強的模型，而是判斷 **哪個 trade-off 對使用者最有價值、哪些證據足以支持決策，以及哪些功能該現在交付、哪些應該排到下一個 release。**
 

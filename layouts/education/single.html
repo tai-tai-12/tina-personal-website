@@ -21,24 +21,25 @@
           </div>
         </div>
         <h2>M.S. Business Analytics</h2>
-        <p>{{ if $isZh }}商業分析與科技策略訓練{{ else }}Business analytics and technology strategy{{ end }}</p>
-        <div class="education-subsection-v515">
-          <span class="education-subsection-label-v515">{{ if $isZh }}學術重點{{ else }}ACADEMIC FOCUS{{ end }}</span>
-          <p class="education-focus-inline-v527">Analytics · Machine Learning · Optimization · Technology Strategy</p>
-        </div>
-        <div class="education-subsection-v515 coursework-v515 coursework-current-v8">
-          <span class="education-subsection-label-v515">{{ if $isZh }}目前修習課程 · 2026 秋季{{ else }}CURRENT COURSEWORK · FALL 2026{{ end }}</span>
-          <ul class="coursework-list-v515 coursework-list-v530">
+        <div class="edu-v86-focus">Analytics · Machine Learning · Optimization · Technology Strategy</div>
+        <section class="edu-v86-section edu-v86-coursework" aria-label="Selected coursework">
+          <div class="edu-v86-section-top"><h3>{{ if $isZh }}精選課程{{ else }}SELECTED COURSEWORK{{ end }}</h3>
+            <span class="edu-v86-status">{{ if $isZh }}2026 秋季 · 修習中{{ else }}Fall 2026 · In progress{{ end }}</span></div>
+          <ul class="edu-v86-course-list">
             <li>Machine Learning Fundamentals</li>
             <li>Modern Data Management</li>
             <li>Programming in R &amp; Python</li>
             <li>Statistical Foundations for Business Analytics</li>
           </ul>
-        </div>
-        <div class="education-subsection-v515 education-leadership-v62">
-          <span class="education-subsection-label-v515">{{ if $isZh }}領導與社群{{ else }}LEADERSHIP &amp; COMMUNITY{{ end }}</span>
-          <p class="education-leadership-line-v62">{{ if $isZh }}2026–27 MSBA 學生大使（Student Ambassador）{{ else }}Selected MSBA Student Ambassador · 2026–27{{ end }}</p>
-        </div>
+        </section>
+        <section class="edu-v86-section edu-v86-campus" aria-label="Campus highlight">
+          <h3>{{ if $isZh }}校園亮點{{ else }}CAMPUS HIGHLIGHTS{{ end }}</h3>
+          <div class="edu-v86-highlight"><span class="edu-v86-highlight-type">{{ if $isZh }}學生參與{{ else }}STUDENT INVOLVEMENT{{ end }}</span>
+            <strong>{{ if $isZh }}2026–27 MSBA Student Ambassador（學生大使）{{ else }}Selected MSBA Student Ambassador · 2026–27{{ end }}</strong>
+            <p>{{ if $isZh }}獲選為 MSBA 學生大使。{{ else }}Selected student ambassador for the MSBA program.{{ end }}</p>
+             <a href="{{ "about/" | relLangURL }}">{{ if $isZh }}了解更多 ↗{{ else }}Learn more ↗{{ end }}</a>
+          </div>
+        </section>
       </div>
     </article>
 
@@ -55,22 +56,22 @@
           </div>
         </div>
         <h2>M.S. Biophotonics</h2>
-        <p>{{ if $isZh }}醫療影像與 AI 研究{{ else }}Medical imaging & AI research{{ end }}</p>
-        <div class="education-subsection-v515">
-          <span class="education-subsection-label-v515">{{ if $isZh }}學術重點{{ else }}ACADEMIC FOCUS{{ end }}</span>
-          <p class="education-focus-inline-v527">Medical AI · Brain MRI · Clinical Validation · Research Engineering</p>
-        </div>
-        <div class="education-subsection-v515 coursework-v515">
-          <span class="education-subsection-label-v515">{{ if $isZh }}精選研究所課程{{ else }}SELECTED GRADUATE COURSEWORK{{ end }}</span>
-          <ul class="coursework-list-v515 coursework-list-v530">
+        <div class="edu-v86-focus">Medical AI · Brain MRI · Clinical Validation · Research Engineering</div>
+        <section class="edu-v86-section edu-v86-coursework" aria-label="Selected coursework">
+          <div class="edu-v86-section-top"><h3>{{ if $isZh }}精選課程{{ else }}SELECTED COURSEWORK{{ end }}</h3></div>
+          <ul class="edu-v86-course-list">
             <li>Machine Learning &amp; Biomedical Applications</li>
             <li>Introduction to Photonics Engineering</li>
           </ul>
-        </div>
-        <div class="education-subsection-v515 education-v85-activity">
-          <span class="education-subsection-label-v515">{{ if $isZh }}畢業典禮代表{{ else }}GRADUATION CEREMONY{{ end }}</span>
-          <p><strong>{{ if $isZh }}研究所畢業生上台受獎代表 · 2026{{ else }}Graduation Ceremony Representative · 2026{{ end }}</strong><span>{{ if $isZh }}代表生醫光電研究所應屆畢業生於典禮上台受獎。{{ else }}Represented the Institute of Biophotonics graduating cohort in an onstage graduation recognition.{{ end }}</span></p>
-        </div>
+        </section>
+        <section class="edu-v86-section edu-v86-campus" aria-label="Campus highlight">
+          <h3>{{ if $isZh }}校園亮點{{ else }}CAMPUS HIGHLIGHTS{{ end }}</h3>
+          <div class="edu-v86-highlight"><span class="edu-v86-highlight-type">{{ if $isZh }}典禮受獎代表{{ else }}CEREMONIAL REPRESENTATION{{ end }}</span>
+            <strong>{{ if $isZh }}研究所畢業生上台受獎代表 · 2026{{ else }}Graduation Ceremony Representative · 2026{{ end }}</strong>
+            <p>{{ if $isZh }}代表生醫光電研究所畢業生於畢業典禮上台受獎。{{ else }}Represented the Institute of Biophotonics graduating students onstage to receive recognition at the graduation ceremony.{{ end }}</p>
+            
+          </div>
+        </section>
       </div>
     </article>
 
@@ -88,23 +89,24 @@
         </div>
         <h2>B.S. Biomedical Imaging & Radiological Sciences</h2>
         <p>{{ if $isZh }}輔修生醫工程{{ else }}Minor · Biomedical Engineering{{ end }}</p>
-        <div class="education-subsection-v515">
-          <span class="education-subsection-label-v515">{{ if $isZh }}學術重點{{ else }}ACADEMIC FOCUS{{ end }}</span>
-          <p class="education-focus-inline-v527">Medical Imaging · Radiation Science · Biomedical Engineering</p>
-        </div>
-        <div class="education-subsection-v515 coursework-v515">
-          <span class="education-subsection-label-v515">{{ if $isZh }}精選課程{{ else }}SELECTED COURSEWORK{{ end }}</span>
-          <ul class="coursework-list-v515 coursework-list-v530">
+        <div class="edu-v86-focus">Medical Imaging · Radiation Science · Biomedical Engineering</div>
+        <section class="edu-v86-section edu-v86-coursework" aria-label="Selected coursework">
+          <div class="edu-v86-section-top"><h3>{{ if $isZh }}精選課程{{ else }}SELECTED COURSEWORK{{ end }}</h3></div>
+          <ul class="edu-v86-course-list">
             <li>Programming Language</li>
             <li>Deep Learning &amp; Biomedical Applications</li>
             <li>Principles of Magnetic Resonance Imaging</li>
-            <li>{{ if $isZh }}Medical Device Regulatory Requirements（醫療器材法規實務）{{ else }}Medical Device Regulatory Requirements{{ end }}</li>
+            <li>{{ if $isZh }}醫療器材法規實務{{ else }}Medical Device Regulatory Requirements{{ end }}</li>
           </ul>
-        </div>
-        <div class="education-subsection-v515 education-v85-activity">
-          <span class="education-subsection-label-v515">{{ if $isZh }}學生領導經歷{{ else }}STUDENT LEADERSHIP{{ end }}</span>
-          <p><strong>{{ if $isZh }}系學會會長 · 2023–2024{{ else }}President, Department Student Association · 2023–2024{{ end }}</strong><a href="{{ "about/" | relLangURL }}">{{ if $isZh }}了解領導與社群經歷 ↗{{ else }}Leadership & community experience ↗{{ end }}</a></p>
-        </div>
+        </section>
+        <section class="edu-v86-section edu-v86-campus" aria-label="Campus highlight">
+          <h3>{{ if $isZh }}校園亮點{{ else }}CAMPUS HIGHLIGHTS{{ end }}</h3>
+          <div class="edu-v86-highlight"><span class="edu-v86-highlight-type">{{ if $isZh }}學生領導{{ else }}STUDENT LEADERSHIP{{ end }}</span>
+            <strong>{{ if $isZh }}系學會會長 · 2023–2024{{ else }}President, Department Student Association · 2023–2024{{ end }}</strong>
+            <p>{{ if $isZh }}領導系學會並參與活動規劃及組織協調。{{ else }}Department-level student leadership and event coordination.{{ end }}</p>
+             <a href="{{ "about/" | relLangURL }}">{{ if $isZh }}了解更多 ↗{{ else }}Learn more ↗{{ end }}</a>
+          </div>
+        </section>
       </div>
     </article>
   </div>

@@ -1,32 +1,29 @@
-# Tina Tai Personal Website · V8.5
+# Tina Tai Personal Website · V8.6
 
-Full Hugo source project for the bilingual existing GitHub Pages portfolio, based on V8.4. This is **not** a partial patch.
+Complete bilingual Hugo source project for the existing GitHub Pages portfolio. **This is a full deployment archive, not a patch.** It builds on V8.5 and focuses on Education and Experience.
 
-## What's updated
+## V8.6 updates
 
-- About: complete editorial reorganization around actual personal story, connected experiences, featured student leadership, community work and interests. Home About is reduced to a short preview.
-- Education: adds the NYCU graduation-ceremony onstage representative (not a speaker) and Department Student Association President, without recreating the full About list.
-- Research: equally proportioned award photos and compact Recognition cards.
-- Existing Work cases, evidence visuals, Resume, public research artifacts, certifications, dark mode and language routes are preserved.
+- **Education:** All three degrees use the same sequence: Degree → Focus → Selected Coursework → Campus Highlights. Current CMU coursework is identified as in progress. Campus highlights distinguish student involvement, ceremonial representation, and student leadership without suggesting those roles were equivalent.
+- **Experience:** Four professional roles now use a shared visual hierarchy: Organization / Date → Role / Scope → Primary Outcome → Selected Contributions → Optional Recognition → Relevant Links. Product, research, clinical training, and testing operations preserve their different substance and evidence.
+- **Recognition:** A shared component presents DeepBT A+ Future Tech Award as a **team/project award** and NTUH Certificate of Excellence as **individual internship recognition**.
+- **Preserved:** Home, Work, Research, About, all certificates/verification links, original research and award photographs, bilingual routes, latest Oct 13 Resume, privacy exclusions, dark mode, and GitHub Pages settings.
 
-## Deployment
+See `docs/V8_6_RELEASE_NOTES.md` for detailed content and UX decisions, and `docs/V8_6_QA.md` for QA scope and limitations.
 
-1. Unzip this archive and open `tina-personal-website-v8-5/`.
-2. Copy all the **contents** of that directory into the root of the GitHub repository `tai-tai-12/tina-personal-website`, including the hidden `.github` directory. Remove repository files that are absent from this clean package, especially `static/css/portfolio-v84.css`.
-3. Push to `main`. GitHub Actions first runs `python3 scripts/verify_v85.py`, then builds the Hugo site and deploys it to GitHub Pages.
-4. Inspect HTML View Source for `portfolio-version` = `8.5` and `portfolio-v85.css?v=8.5.0`.
+## Deployment to GitHub Pages
 
-For local verification with Python 3:
+1. Unzip `Tina_Tai_Personal_Website_V8_6_Deployment.zip` and open `tina-personal-website-v8-6/`.
+2. Replace the **repository root contents** of `tai-tai-12/tina-personal-website` with the contents of that folder, **including `.github/`**. Remove obsolete tracked files that are absent from the package, notably `static/css/portfolio-v85.css`.
+3. Push to `main`. GitHub Actions runs `python3 scripts/verify_v86.py`, then Hugo build and GitHub Pages deployment.
+4. View source on the published site to confirm `<meta name="portfolio-version" content="8.6">`, and the stylesheet `portfolio-v86.css?v=8.6.0`.
 
-```bash
-python3 scripts/verify_v85.py
-```
-
-For a local Hugo production-like build (Hugo 0.164.0 recommended):
+## Validation
 
 ```bash
+python3 scripts/verify_v86.py
 hugo build --gc --minify
 hugo server -D
 ```
 
-The automated source verifier and local Chromium **template** screenshots are distinct from a full Hugo build. The latter must pass through GitHub Actions during deployment. See `docs/V8_5_RELEASE_NOTES.md` and `docs/V8_5_QA.md`.
+Hugo 0.164.0 is specified in `.github/workflows/hugo.yaml`. The offline validator and Chromium **template-based** screenshots do not replace the actual Hugo build or deployment-level browser regression. Verify the official build and both languages after deployment.

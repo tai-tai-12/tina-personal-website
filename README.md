@@ -1,26 +1,19 @@
-# Tina Tai Personal Website — V8.13.2 (Build-Fixed Final)
+# Tina Tai Personal Website — V8.13.3 IEEE Publication Update
 
-**Complete replacement** of the Hugo source tree for GitHub Pages. Base: the previously deployed V8.13. This is not an overlay over the failed V8.13.1.
+This is a **full replacement** Hugo / GitHub Pages source package, based on the successfully deployed V8.13.2 release.
 
-## What was fixed
-1. Resolved a **Hugo Go-template rendering scope error** in `layouts/work/single.html`. Inside `with .Params.snapshot`, the language check must use `$.Lang`, not `.Lang`. The failed package introduced this difference.
-2. Preserved Research area card metric containment (fixed three-column grid, responsive single-column metrics on small screens).
-3. Preserved final Traditional Chinese localization corrections for Research, Case Study takeaway headings, and accessible labels.
-4. Kept all original publication, resume, award, testing attribution, multilingual routes and existing project assets.
+## Deployment
+1. Back up the previous version. Preserve `.git/` if using local Git.
+2. Replace the entire website source in the existing GitHub repository with the contents of this ZIP, including `.github/`.
+3. Commit and push to `main`.
+4. In GitHub Actions, confirm **build** and **deploy** succeeded.
+5. Confirm the site source reports `<meta name="portfolio-version" content="8.13.3">`.
+6. Check `/research/`, `/zh/research/` and the two clinical/product case studies. Test IEEE Xplore and PDF links.
 
-## Safely replacing the repository
-1. Back up your current website. If working locally with Git, **do not delete `.git/`**.
-2. Remove existing tracked site files and copy all files from this ZIP directly to the repository root, including hidden `.github/`.
-3. Check the repository root has `hugo.toml`, `content/`, `layouts/`, `static/`, `themes/`, `scripts/`, `.github/`.
-4. Push to `main` and wait for `hugo.yaml` build and deploy jobs to both succeed.
-5. Verify page source contains `<meta name="portfolio-version" content="8.13.2">`; verify `portfolio-v8132.css` and `home-v8132.css` load.
-6. Verify `/research/` in EN and `/zh/research/` in Traditional Chinese, plus at least one case-study page.
+## Publication verification
+- AMLDS 2026 official proceedings: https://ieeexplore.ieee.org/xpl/conhome/11723344/proceeding
+- This is a **conference proceedings URL**, **not** a verified article-specific DOI or document URL. An article-level link may replace it once verified.
+- The previously published local AMLDS paper PDF remains available. MIDL references and distinct research cohorts are unchanged.
 
-## Local/source checks
-
-```bash
-python3 scripts/verify_v8132.py
-hugo build --gc --minify
-```
-
-The source validator and stylesheet checks pass locally. **A real Hugo build is required on GitHub Actions:** the authoring container does not have Hugo, so the deploy job's success has to be checked after upload.
+## Quality checks
+Run `python3 scripts/verify_v8133.py` before building. Hugo build runs in the included GitHub Actions workflow.

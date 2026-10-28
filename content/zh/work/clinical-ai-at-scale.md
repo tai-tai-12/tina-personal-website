@@ -121,7 +121,7 @@ navItems:
   <p>相關工作還包含 MRI registration、hospital-data standardization / format conversion、ground-truth consensus 管理，以及 radiomics / segmentation / classification experiments。</p>
 </details>
 
-相關研究成果發表於 **MIDL 2026** 與 **AMLDS 2026**；AMLDS 2026 論文現已收錄於 [IEEE Xplore 正式會議論文集](https://ieeexplore.ieee.org/xpl/conhome/11723344/proceeding)。本頁核心數據統一採用碩士論文中的 **264 例回溯性獨立測試** 結果，不與 AMLDS 論文的另一組評估數據混用。
+相關研究成果分別發表於 [MIDL 2026](https://openreview.net/forum?id=OIjw0dFD3r) 與 [AMLDS 2026](https://ieeexplore.ieee.org/document/11723832)；AMLDS 論文已收錄於 IEEE Xplore。本頁核心數據統一採用碩士論文中的 **264 例回溯性獨立測試** 結果，不與 AMLDS 論文的另一組評估數據混用。
 
 <div class="case-boundary-v81"><strong>研究證據的限制</strong><p>這是雙中心回溯性獨立測試，不是 prospective reader study，亦未證實臨床實務中醫師判讀時間、alert fatigue、病人預後或自主診斷能力的改善。MIDL 2026 公開論文使用的是<strong>另一組 249 例</strong>的 held-out cohort，其 90.13% sensitivity 和 0.41 FP/scan 不能與本論文 264 例數據混為同一組結果。</p></div>
 

@@ -126,7 +126,7 @@ The reasoning came first; the tooling supported it.
   <p>Supporting work included MRI registration, hospital-data standardization / format conversion, ground-truth consensus management, and radiomics / segmentation / classification experiments.</p>
 </details>
 
-Related study versions were presented at **MIDL 2026** and **AMLDS 2026**. The AMLDS 2026 paper is now included in the [IEEE Xplore conference proceedings](https://ieeexplore.ieee.org/xpl/conhome/11723344/proceeding); the headline metrics on this page intentionally follow the final master's-thesis independent-cohort evaluation, not the AMLDS paper's separate evaluation.
+Related study versions were published at [MIDL 2026](https://openreview.net/forum?id=OIjw0dFD3r) and [AMLDS 2026](https://ieeexplore.ieee.org/document/11723832). The AMLDS paper is available on IEEE Xplore; the headline metrics on this page intentionally follow the final master's-thesis independent-cohort evaluation, not the AMLDS paper's separate evaluation.
 
 <div class="case-boundary-v81"><strong>What these data cannot establish</strong><p>This was a retrospective, two-center independent test—not a prospective reader study or evidence of faster clinician reading, lower alert fatigue in real practice, autonomous diagnosis, or improved patient outcomes. Public MIDL 2026 results use a <em>different</em> 249-exam held-out cohort; their 90.13% sensitivity and 0.41 FP/scan should not be combined with this thesis cohort's 264-exam endpoints.</p></div>
 

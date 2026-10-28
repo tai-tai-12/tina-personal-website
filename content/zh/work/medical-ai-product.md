@@ -116,7 +116,7 @@ navItems:
 
 <div class="case-evidence-grid">
   <article class="case-evidence-card">{{< site-img src="images/research/midl-poster.webp" alt="Tina Tai 與 MIDL 2026 海報" >}}<div><span>MIDL · 2026</span><h3>第一作者短論文海報發表</h3><p>逐病灶偽陽性降低與五類腫瘤分類的公開研究成果。</p></div></article>
-  <article class="case-evidence-card">{{< site-img src="images/research/amlds-talk.webp" alt="Tina Tai 在 AMLDS 2026 進行口頭報告" >}}<div><span>AMLDS · 2026</span><h3>第一作者口頭論文發表</h3><p>同一技術主線上聚焦候選病灶驗證與偽陽性降低的延伸研究，現已收錄於 <a href="https://ieeexplore.ieee.org/xpl/conhome/11723344/proceeding" target="_blank" rel="noopener noreferrer">IEEE Xplore 會議論文集</a>，並獲傑出口頭報告獎。</p></div></article>
+  <article class="case-evidence-card">{{< site-img src="images/research/amlds-talk.webp" alt="Tina Tai 在 AMLDS 2026 進行口頭報告" >}}<div><span>AMLDS · 2026</span><h3>第一作者口頭論文發表</h3><p>同一技術主線上聚焦候選病灶驗證與偽陽性降低的延伸研究，現已收錄於 <a href="https://ieeexplore.ieee.org/document/11723832" target="_blank" rel="noopener noreferrer">IEEE Xplore 單篇論文</a>，並獲傑出口頭報告獎。</p></div></article>
 </div>
 
 <div class="case-metrics case-metrics-v524">

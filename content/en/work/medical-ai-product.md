@@ -121,7 +121,7 @@ The product pathway grew from the same lesion-wise brain-tumor AI research progr
   </article>
   <article class="case-evidence-card">
     {{< site-img src="images/research/amlds-talk.webp" alt="Tina Tai giving an oral presentation at AMLDS 2026" >}}
-    <div><span>AMLDS · 2026</span><h3>First-Author Oral Presentation</h3><p>A related extension on candidate verification and false-positive reduction, published in the <a href="https://ieeexplore.ieee.org/xpl/conhome/11723344/proceeding" target="_blank" rel="noopener noreferrer">IEEE Xplore conference proceedings</a>; recognized with an Outstanding Oral Presentation award.</p></div>
+    <div><span>AMLDS · 2026</span><h3>First-Author Oral Presentation</h3><p>A related extension on candidate verification and false-positive reduction, published in the <a href="https://ieeexplore.ieee.org/document/11723832" target="_blank" rel="noopener noreferrer">IEEE Xplore article</a>; recognized with an Outstanding Oral Presentation award.</p></div>
   </article>
 </div>
 

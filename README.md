@@ -1,19 +1,26 @@
-# Tina Tai Personal Website — V8.13.3 IEEE Publication Update
+# Tina Tai Personal Website — V8.13.4 Publication Link Refinement
 
-This is a **full replacement** Hugo / GitHub Pages source package, based on the successfully deployed V8.13.2 release.
+This ZIP is a **full replacement** of the V8.13.3 Hugo / GitHub Pages source. All files are at the ZIP root (not nested inside an extra folder).
 
-## Deployment
-1. Back up the previous version. Preserve `.git/` if using local Git.
-2. Replace the entire website source in the existing GitHub repository with the contents of this ZIP, including `.github/`.
-3. Commit and push to `main`.
-4. In GitHub Actions, confirm **build** and **deploy** succeeded.
-5. Confirm the site source reports `<meta name="portfolio-version" content="8.13.3">`.
-6. Check `/research/`, `/zh/research/` and the two clinical/product case studies. Test IEEE Xplore and PDF links.
+## What changed
+- Research: MIDL `Paper` links directly to [OpenReview](https://openreview.net/forum?id=OIjw0dFD3r); its real poster is linked as `Poster`.
+- Research: AMLDS `Paper` links to [the individual IEEE Xplore article](https://ieeexplore.ieee.org/document/11723832), not the proceedings index.
+- No extra `Official Program` / `Proceedings` link: these duplicate the core publication navigation for a recruiting portfolio. Add them later only to substantiate something unique, such as a presentation schedule or an award notice.
+- Clinical AI / Medical AI supporting research links now reference the individual paper pages, in both languages.
+- Original PDFs, poster, photos and research metrics remain unchanged. No case-study design, resume, or imagery changes.
 
-## Publication verification
-- AMLDS 2026 official proceedings: https://ieeexplore.ieee.org/xpl/conhome/11723344/proceeding
-- This is a **conference proceedings URL**, **not** a verified article-specific DOI or document URL. An article-level link may replace it once verified.
-- The previously published local AMLDS paper PDF remains available. MIDL references and distinct research cohorts are unchanged.
+## Full replacement deployment
+1. Back up V8.13.3. Preserve `.git/` if replacing files in a locally cloned repository.
+2. Extract this ZIP and copy **all** contents to the repository root, including hidden `.github/`; remove old website source/CSS/scripts so versions do not overlap.
+3. `python3 scripts/verify_v8134.py` — must pass.
+4. Commit and push to `main`.
+5. Confirm GitHub Actions `build` **and** `deploy` succeeded.
+6. Verify `<meta name="portfolio-version" content="8.13.4">` and check `/research/` and `/zh/research/` and the links in both case studies.
 
-## Quality checks
-Run `python3 scripts/verify_v8133.py` before building. Hugo build runs in the included GitHub Actions workflow.
+## Publication sources
+- MIDL 2026 article: https://openreview.net/forum?id=OIjw0dFD3r
+- AMLDS 2026 article: https://ieeexplore.ieee.org/document/11723832
+- Direct links are provided by the user; an AMLDS DOI was **not** asserted or guessed.
+
+## Verification scope
+The source verifier runs before Hugo in GitHub Actions. Final Hugo rendering and GitHub Pages delivery must be confirmed by the Actions run and production URL after deployment.

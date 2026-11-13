@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Deployment checks for full-replacement V8.13.4 Hugo source; run before build."""
+"""Deployment checks for full-replacement V8.14 Hugo source; run before build."""
 from pathlib import Path
 import hashlib, re, sys, xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parent.parent
@@ -13,13 +13,13 @@ head=read('layouts/partials/head.html');base=read('layouts/_default/baseof.html'
 home=read('layouts/index.html');work=read('layouts/work/list.html');research=read('layouts/research/list.html')
 nav=read('layouts/partials/header.html');about=read('layouts/about/single.html')
 aorta=read('layouts/research/single.html');exp=read('layouts/experience/single.html')
-css=read('static/css/portfolio-v8134.css');homecss=read('static/css/home-v8134.css')
+css=read('static/css/portfolio-v814.css');homecss=read('static/css/home-v814.css')
 workflow=read('.github/workflows/hugo.yaml')
-ck('content="8.13.4"' in head,'V8.13.4 meta marker')
-ck('data-portfolio-version="8.13.4"' in base,'V8.13.4 page marker')
-ck('portfolio-v8134.css' in head and 'home-v8134.css' in head,'versioned CSS entrypoints')
-ck('?v=8.13.4' in head and '?v=8.13.4' in base,'CSS/JS cache bust')
-ck('scripts/verify_v8134.py' in workflow,'CI validation')
+ck('content="8.14"' in head,'V8.14 meta marker')
+ck('data-portfolio-version="8.14"' in base,'V8.14 page marker')
+ck('portfolio-v814.css' in head and 'home-v814.css' in head,'versioned CSS entrypoints')
+ck('?v=8.14' in head and '?v=8.14' in base,'CSS/JS cache bust')
+ck('scripts/verify_v814.py' in workflow,'CI validation')
 ck('hugo build' in workflow,'Hugo build action')
 ck('2026 Future Tech Award' in home and 'NYCU project recognition' in home,'award attribution')
 ck('IMG_9931' not in home,'excluded award photo')
@@ -29,6 +29,9 @@ ck('partial "case-metrics-v88.html"' in work,'Work uses shared metrics')
 ck('case-metrics-v88-item' in read('layouts/partials/case-metrics-v88.html'),'shared metric structure')
 ck('Read case study' in home and 'Read case study' in work,'consistent CTA')
 ck('Explore project' not in work,'removed legacy CTA')
+ck('where .Pages "Params.independent" "ne" true' in work,'independent FairPay not intermingled with 3 main cases')
+ck('fairpay-independent-heading' in work and 'range where .Pages "Params.independent" true' in work,'independent work card exists')
+ck('FairPay AI' in work or 'fairpay-independent' in work,'FairPay work card')
 ck('class="evidence-v84-numbers"' in read('layouts/partials/work-evidence-visual-v84.html'),'underlying evidence graphic intact')
 ck('evidence-v84-numbers{display:none}' in css,'repeated micro stats visually removed')
 for target in ('medical-ai-product','clinical-ai-at-scale','structured-validation'):
@@ -90,7 +93,7 @@ if source.is_file():
  ck(hashlib.sha256(resume.read_bytes()).digest()==hashlib.sha256(source.read_bytes()).digest(),'latest resume unchanged')
 ck((ROOT/'.github/workflows/hugo.yaml').is_file(),'hidden GitHub workflow included')
 
-# V8.13.4 accuracy: consortium work and third-party reports are the same assignment.
+# V8.14 accuracy: consortium work and third-party reports are the same assignment.
 for lang in ('en','zh'):
     c=read(f'content/{lang}/work/structured-validation.md')
     ck('xray-testing-evidence-v89.svg' in c and 'xray-tube-testing-hero-v89.svg' in c, f'{lang} new original X-ray visuals')
@@ -114,7 +117,7 @@ for name in ('testing-hero-v521.webp','testing-measurement-v521.webp','work-test
     ck(not any(x.name==name for x in (ROOT/'static').rglob('*')), 'outdated misleading visual removed '+name)
 
 
-# V8.13.4: conservatively scoped client engagement and recruiter-readable presentation.
+# V8.14: conservatively scoped client engagement and recruiter-readable presentation.
 for lang in ('en','zh'):
     case=read(f'content/{lang}/work/structured-validation.md')
     ck(('professor' in case.lower() if lang=='en' else '教授' in case), f'{lang} origin of company introduction explicit')
@@ -137,7 +140,7 @@ ck('{{ if $isZh }}家醫療中心{{ else }}medical centers{{ end }}' in research
 ck('模型開發用 MRI 病例' in read('content/zh/work/clinical-ai-at-scale.md'), 'clinical study cohort labels localized')
 ck('Graduation Ceremony Representative' in read('layouts/education/single.html'), 'ceremonial representative preserved')
 
-# V8.13.4 localization and language-specific evidence rules.
+# V8.14 localization and language-specific evidence rules.
 edu=read('layouts/education/single.html');home=read('layouts/index.html');honors=read('layouts/partials/experience-recognition-v86.html')
 for val in ('卡內基美隆大學','國立陽明交通大學','生醫光電研究所','生物醫學影像暨放射科學系','機器學習與生醫應用','磁振造影原理','書卷獎','傑出口頭報告獎','放射腫瘤科實習表現優異獎'):
  ck(val in edu,'localized Education content: '+val)
@@ -150,10 +153,10 @@ ck('傑出口頭報告獎' in research,'Research awards translated')
 ck('本次正式發表名稱維持英文' not in research,'original paper titles preserved without fabricated translation')
 ck('padding-top:clamp(36px,3.5vw,42px)' in homecss,'desktop homepage About baseline adjusted')
 ck('@media (max-width:770px)' in homecss,'mobile About alignment restored')
-ck('content="8.13.4"' in head,'release version 8.13')
+ck('content="8.14"' in head,'release version 8.13')
 ck('Certificate of Excellence' in edu,'English award name preserved')
 
-# V8.13.4 FINAL regression — containment and zh localization.
+# V8.14 FINAL regression — containment and zh localization.
 ck('grid-template-columns:repeat(3,minmax(0,1fr))' in css, 'Research three-column metric container')
 ck('.research-area-card-v64 .research-proof-row-v64>em' in css, 'Research child metrics constrained')
 ck('white-space:normal' in css and 'overflow-wrap:break-word' in css, 'Research metrics allow natural wrapping')
@@ -172,7 +175,7 @@ ck('研究成果' in aorta,'aorta results aria localized')
 for p in ('static/css/portfolio-v813.css','static/css/home-v813.css','scripts/verify_v813.py'):
  ck(not (ROOT/p).exists(), 'no obsolete stylesheet / verifier '+p)
 
-# V8.13.4 canonical paper-link regression checks.
+# V8.14 canonical paper-link regression checks.
 midl_paper = 'https://openreview.net/forum?id=OIjw0dFD3r'
 amlds_paper = 'https://ieeexplore.ieee.org/document/11723832'
 old_proceedings = 'https://ieeexplore.ieee.org/xpl/conhome/11723344/proceeding'
@@ -194,10 +197,10 @@ for lang in ('en','zh'):
     ck(amlds_paper in product, f'{lang} Product supporting research links to the individual IEEE paper')
     ck(old_proceedings not in ai+product, f'{lang} No case link to the proceedings index')
     ck('264' in ai and '80.97' in ai and '0.21' in ai, f'{lang} Thesis cohort evidence unchanged')
-ck('portfolio-v8134.css' in head and 'home-v8134.css' in head, 'Release CSS assets referenced')
-ck((ROOT/'static/css/portfolio-v8134.css').is_file() and (ROOT/'static/css/home-v8134.css').is_file(), 'Versioned CSS files exist')
+ck('portfolio-v814.css' in head and 'home-v814.css' in head, 'Release CSS assets referenced')
+ck((ROOT/'static/css/portfolio-v814.css').is_file() and (ROOT/'static/css/home-v814.css').is_file(), 'Versioned CSS files exist')
 
-print(f'V8.13.4 offline source checks: {count-len(errors)}/{count} passed')
+print(f'V8.14 offline source checks: {count-len(errors)}/{count} passed')
 
 # Regression guard: Go's dot changes in `with .Params.snapshot`. Refer to page language through `$`.
 single=read('layouts/work/single.html')
@@ -208,7 +211,29 @@ for p in (ROOT/'layouts').rglob('*.html'):
  s=p.read_text(encoding='utf-8')
  ck(s.count('{{')==s.count('}}'),f'Go template brace count: {p.relative_to(ROOT)}')
 if errors:
- print('V8.13.4 source checks FAILED:')
+ print('V8.14 source checks FAILED:')
  for e in errors:print(' -',e)
  sys.exit(1)
-print(f'V8.13.4 source checks passed: {count}/{count}')
+# New V8.14 FairPay bilingual content checks and external evidence provenance.
+for lang in ('en','zh'):
+    page=read(f'content/{lang}/work/fairpay-ai.md')
+    fm=page.split('---',2)[1]
+    ck('independent: true' in fm and 'translationKey: fairpay-ai' in fm, f'{lang} independent FairPay frontmatter')
+    ck(('fairpay-evidence-flow-v814-zh.svg' if lang == 'zh' else 'fairpay-evidence-flow-v814.svg') in fm, f'{lang} source-hosted illustrative art')
+    for name in ('fairpay-overview-demo.png','fairpay-agreement-evidence-demo.png','fairpay-payments-review-demo.png'):
+        ck(name in page, f'{lang} original public product image reference: {name}')
+    for ext in ('pivk3KyXpEQ','fairpay-ai','docs/VALIDATION.md'):
+        ck(ext in page, f'{lang} linked demonstration/proof {ext}')
+    ck(('161' in page and 'Sandbox' in page and 'synthetic' in page.lower()) if lang=='en' else ('161' in page and 'Sandbox' in page and '合成' in page), f'{lang} transparent QA and scope boundary')
+ck((ROOT/'static/images/projects/fairpay-evidence-flow-v814.svg').exists(),'FairPay local illustrated work graphic included')
+ET.parse(ROOT/'static/images/projects/fairpay-evidence-flow-v814.svg')
+ck('FairPay AI' not in home, 'homepage three core cases unchanged')
+ck('portfolio-v814.css' in head and 'home-v814.css' in head, 'new CSS references')
+ck('fairpay-evidence-flow-v814-zh.png' in head, 'FairPay OG preview localized')
+ck(all((ROOT/'static/images/projects'/f'fairpay-evidence-flow-v814{tail}').is_file() for tail in ('.svg','.png','-zh.svg','-zh.png')), 'all localized FairPay image assets exist')
+ck('v814' in workflow, 'GitHub Actions validates new version')
+if errors:
+ print(f'V8.14 checks FAILED: {len(errors)}')
+ for e in errors:print(' -',e)
+ sys.exit(1)
+print(f'V8.14 source checks passed: {count}/{count}')

@@ -6,7 +6,7 @@
   <p class="lede small">{{ if $isZh }}三個精選案例：醫療 AI 產品決策、模型評估，以及游離輻射設備第三方檢測與客戶營運。{{ else }}Three selected cases in medical AI product decisions, model evaluation, and hands-on ionizing-radiation device testing.{{ end }}</p>
 </div></div>
 <section class="section-shell work-index-section work-stack-v510"><div class="shell work-stack-list-v510">
-  {{ range sort .Pages "Weight" }}
+  {{ range sort (where .Pages "Params.independent" "ne" true) "Weight" }}
   <article class="work-stack-row-v510 reveal">
     <a class="work-stack-visual-v510 {{ .Params.visual }}" href="{{ .RelPermalink }}" aria-label="{{ if $isZh }}開啟專案：{{ else }}Open project: {{ end }}{{ .Title }}">
       {{ if eq .Params.visual "product-visual" }}
@@ -28,4 +28,30 @@
   </article>
   {{ end }}
 </div></section>
+
+<section class="section-shell fairpay-independent-section" aria-labelledby="fairpay-independent-heading">
+  <div class="shell">
+    <div class="fairpay-section-heading reveal">
+      <div>
+        <span class="kicker">{{ if $isZh }}獨立作品 · AI 產品{{ else }}INDEPENDENT BUILD · AI PRODUCT{{ end }}</span>
+        <h2 id="fairpay-independent-heading">{{ if $isZh }}將產品判斷延伸到 FinTech。{{ else }}Applying product judgment beyond healthcare.{{ end }}</h2>
+        <p>{{ if $isZh }}除了上述三個核心案例，我也在黑客松中完成一個使用合成資料的 AI 帳務流程原型。{{ else }}Alongside my three core case studies, I built a synthetic-data AI billing prototype during a hackathon.{{ end }}</p>
+      </div>
+    </div>
+    {{ range where .Pages "Params.independent" true }}
+    <article class="fairpay-independent-card reveal">
+      <a class="fairpay-independent-art" href="{{ .RelPermalink }}" aria-label="{{ if $isZh }}閱讀 FairPay AI 專案{{ else }}Read FairPay AI project{{ end }}">
+        <img src="{{ (cond $isZh "images/projects/fairpay-evidence-flow-v814-zh.svg" "images/projects/fairpay-evidence-flow-v814.svg") | relURL }}" loading="lazy" decoding="async" alt="{{ if $isZh }}FairPay AI：合約來源比對、人工審核與帳單草稿控制的示意流程{{ else }}FairPay AI illustrated flow from agreement evidence to human review and invoice-draft controls{{ end }}">
+      </a>
+      <div class="fairpay-independent-copy">
+        <span class="work-category">{{ .Params.category }}</span>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <p>{{ .Params.summary }}</p>
+        <div class="fairpay-independent-meta"><span>{{ if $isZh }}本機原型{{ else }}Local prototype{{ end }}</span><span>{{ if $isZh }}合成測試資料{{ else }}Synthetic examples{{ end }}</span><span>PayPal Sandbox</span></div>
+        <a class="btn mono-project-btn work-stack-btn-v510" href="{{ .RelPermalink }}">{{ if $isZh }}探索產品原型{{ else }}Explore product build{{ end }} ↗</a>
+      </div>
+    </article>
+    {{ end }}
+  </div>
+</section>
 {{ end }}

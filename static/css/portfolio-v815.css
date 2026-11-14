@@ -4727,3 +4727,60 @@ html[data-theme="dark"] .case-prose-v526 .xray-evidence-v89 figcaption{backgroun
 @media(max-width:620px){.fairpay-independent-section{padding:55px 0 78px}.fairpay-independent-card{padding:13px;border-radius:15px}.fairpay-independent-art{border-radius:10px;aspect-ratio:1.6}.fairpay-independent-copy h3{font-size:1.65rem}.fairpay-action-links{padding:14px;gap:9px 17px}.case-prose-v526 .fairpay-screen{padding:7px;border-radius:12px}.case-prose-v526 .fairpay-screen img{border-radius:7px}.case-prose-v526 .fairpay-screen figcaption{font-size:.84rem!important}}
 html[data-theme="dark"] .fairpay-independent-art{border-color:#354963}
 @media(prefers-reduced-motion:reduce){.fairpay-independent-art{transition:none}}
+
+
+/* ==========================================================
+   V8.15 · Work parity and FairPay case readability
+   Source V8.14 preserved. Changes are strictly scoped.
+   ========================================================== */
+.work-independent-v815{padding:64px 0 96px;border-top:1px solid var(--line);background:var(--bg)}
+.work-independent-heading-v815{padding:0 0 18px;border-bottom:1px solid var(--line)}
+.work-independent-kicker-v815{margin:0;color:var(--blue);font-size:.78rem;font-weight:700;letter-spacing:.1em;line-height:1.5}
+.work-independent-heading-v815 p{font-size:.96rem;line-height:1.6;color:var(--muted);margin:9px 0 0;max-width:720px}
+.work-independent-row-v815{padding-top:36px;padding-bottom:30px;border-bottom:0}
+.work-independent-visual-v815{background:var(--panel);border-color:var(--line)}
+.work-stack-visual-v510.work-independent-visual-v815 img{display:block;width:100%;height:100%;object-fit:contain;filter:none}
+.work-independent-copy-v815 h3{font-family:Manrope,Inter,"Noto Sans TC",sans-serif;font-size:var(--v82-type-card,clamp(2rem,3vw,2.65rem));font-weight:560;line-height:1.23;letter-spacing:-.03em;margin:0 0 12px}
+.work-independent-copy-v815 h3 a{text-decoration:none;color:inherit}
+.work-independent-copy-v815 h3 a:hover{color:var(--blue)}
+.work-independent-copy-v815>p{max-width:66ch}
+.work-independent-tags-v815{display:flex;flex-wrap:wrap;gap:8px;margin-top:19px;margin-bottom:0}
+.work-independent-tags-v815 span{padding:5px 10px;border-radius:99px;border:1px solid var(--line);color:var(--muted);font-size:.78rem;line-height:1.5;background:var(--panel)}
+/* Shared, gentle interaction; the diagrams themselves are never zoomed/cropped. */
+@media (hover:hover) and (prefers-reduced-motion:no-preference){
+  .work-stack-row-v510 .work-stack-visual-v510{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+  .work-stack-row-v510 .work-stack-visual-v510:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(20,60,110,.11);border-color:var(--blue)}
+  .work-stack-row-v510 a.work-stack-visual-v510:hover img{transform:none!important}
+}
+.work-stack-row-v510 .work-stack-visual-v510:focus-visible{outline:3px solid var(--blue);outline-offset:4px;border-color:var(--blue)}
+.work-stack-row-v510 a.work-stack-visual-v510 img{transform:none!important;transition:none!important}
+@media(max-width:980px){.work-independent-row-v815{gap:24px}}
+@media(max-width:760px){.work-independent-v815{padding:48px 0 74px}.work-independent-row-v815{padding:26px 0 0}.work-independent-heading-v815 p{font-size:.91rem}}
+/* FairPay key decisions and documented product screens. */
+.case-hero-themes-v815{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:23px auto 0;max-width:850px}
+.case-hero-themes-v815 span{border:1px solid var(--line);border-radius:99px;padding:7px 13px;color:var(--muted);font-size:.83rem;line-height:1.5;background:var(--panel)}
+.case-prose-v526 .fairpay-decision-grid article{padding:20px 19px}
+.case-prose-v526 .fairpay-decision-grid article>span{font-size:.75rem;line-height:1.5}
+.case-prose-v526 .fairpay-decision-grid h3{font-size:1.07rem!important;line-height:1.4!important}
+.case-prose-v526 .fairpay-decision-grid p{font-size:.96rem!important;line-height:1.66!important}
+.case-prose-v526 .fairpay-screen img{max-height:520px!important;object-fit:contain}
+.fairpay-zoom-link-v815{display:block;position:relative;cursor:zoom-in;text-decoration:none;overflow:hidden;border-radius:11px}
+.fairpay-zoom-link-v815 img{display:block;max-width:100%;height:auto;width:100%;border:1px solid var(--line);border-radius:9px}
+.fairpay-zoom-hint-v815{position:absolute;right:12px;bottom:12px;background:rgba(6,20,36,.9);color:#fff;border-radius:6px;font-size:.82rem;font-weight:600;padding:7px 11px;line-height:1.4;pointer-events:none}
+.fairpay-zoom-link-v815:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.fairpay-zoom-link-v815:hover .fairpay-zoom-hint-v815{background:#174bd6}
+.fairpay-lightbox-v815{padding:48px 18px 16px;background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:15px;box-shadow:0 26px 95px rgba(0,0,0,.4);width:min(96vw,1400px);max-width:96vw;max-height:95dvh;overflow:auto}
+.fairpay-lightbox-v815::backdrop{background:rgba(6,14,28,.87)}
+.fairpay-lightbox-v815 img{display:block;max-width:100%;width:auto;max-height:calc(95dvh - 125px);height:auto;margin:auto;object-fit:contain}
+.fairpay-lightbox-close-v815{position:absolute;right:12px;top:8px;width:34px;height:34px;border:0;border-radius:50%;background:var(--bg-alt);color:var(--text);font-size:25px;line-height:1;cursor:pointer}
+.fairpay-lightbox-caption-v815{max-width:100%;margin:8px auto 0;font-size:.83rem;line-height:1.55;text-align:center;color:var(--muted)}
+/* Slightly more legible global case margin navigation. */
+@media(min-width:981px){
+  .case-reading-shell-v526{grid-template-columns:158px minmax(0,800px);gap:62px}
+  .case-margin-nav-v526 nav a{font-size:12.5px;line-height:1.45;padding:8px 0}
+  .case-margin-nav-label-v526{font-size:10.5px}
+}
+.case-margin-nav-v526 nav a[aria-current="location"]{color:var(--blue);font-weight:700}
+@media(max-width:620px){.case-hero-themes-v815{gap:7px;margin-top:18px}.case-hero-themes-v815 span{font-size:.75rem;padding:6px 9px}.fairpay-zoom-hint-v815{font-size:.73rem;padding:6px 8px;right:7px;bottom:7px}.fairpay-lightbox-v815{padding:43px 7px 12px}}
+@media(prefers-reduced-motion:reduce){.work-stack-row-v510 .work-stack-visual-v510{transform:none!important;transition:none!important}.fairpay-zoom-link-v815{transition:none}}
+@media print{.skip-to-content-v8{display:none!important}.fairpay-lightbox-v815{display:none!important}.fairpay-zoom-hint-v815{display:none!important}}

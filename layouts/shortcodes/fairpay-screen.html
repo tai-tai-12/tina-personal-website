@@ -1,0 +1,12 @@
+{{- $src := .Get "src" | strings.TrimPrefix "/" | relURL -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $title := .Get "title" | default "" -}}
+{{- $caption := .Get "caption" | default "" -}}
+{{- $zoom := .Get "zoom" | default "Enlarge screenshot" -}}
+<figure class="fairpay-screen">
+  <a class="fairpay-zoom-link-v815" href="{{ $src }}" data-fairpay-zoom aria-label="{{ $zoom }} — {{ $title }}">
+    <img src="{{ $src }}" loading="lazy" decoding="async" alt="{{ $alt }}">
+    <span class="fairpay-zoom-hint-v815" aria-hidden="true">{{ $zoom }} ↗</span>
+  </a>
+  <figcaption><strong>{{ $title }}</strong> {{ $caption }}</figcaption>
+</figure>

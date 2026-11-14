@@ -5,13 +5,23 @@
     <div class="case-hero-shell-v526">
       <div class="case-hero-context-v526" aria-label="{{ if eq .Lang "zh" }}案例背景{{ else }}Case study context{{ end }}">
         <a href="{{ "work/" | relLangURL }}">← {{ if eq .Lang "zh" }}所有作品{{ else }}All work{{ end }}</a>
-        <span>{{ if eq .Lang "zh" }}精選作品{{ else }}Selected work{{ end }} / 0{{ .Weight }}</span>
-        <span class="case-category-v526">{{ .Params.category | default "CASE STUDY" }}</span>
+        {{ if .Params.independent }}
+          <span class="case-category-v526">{{ if eq .Lang "zh" }}獨立產品作品{{ else }}Independent product build{{ end }}</span>
+        {{ else }}
+          <span>{{ if eq .Lang "zh" }}精選作品{{ else }}Selected work{{ end }} / 0{{ .Weight }}</span>
+          <span class="case-category-v526">{{ .Params.category | default "CASE STUDY" }}</span>
+        {{ end }}
       </div>
 
       <div class="case-hero-copy-v526">
         <h1>{{ .Title }}</h1>
         {{ with .Params.heroDek }}<p class="case-deck-v526">{{ . }}</p>{{ else }}{{ with .Params.summary }}<p class="case-deck-v526">{{ . }}</p>{{ end }}{{ end }}
+
+        {{ with .Params.heroThemes }}
+        <div class="case-hero-themes-v815" aria-label="{{ if eq $.Lang "zh" }}專案重點{{ else }}Project focus{{ end }}">
+          {{ range . }}<span>{{ . }}</span>{{ end }}
+        </div>
+        {{ end }}
 
         {{ with .Params.heroStats }}
         <div class="case-facts-v526" aria-label="{{ if eq $.Lang "zh" }}專案關鍵數據{{ else }}Key project facts{{ end }}">
@@ -51,6 +61,14 @@
     </aside>
     <div class="case-prose-v526">{{ .Content }}</div>
   </div>
+
+  {{ if .Params.independent }}
+  <dialog class="fairpay-lightbox-v815" id="fairpay-lightbox-v815" aria-label="{{ if eq .Lang "zh" }}FairPay 產品畫面放大檢視{{ else }}Enlarged FairPay product screenshot{{ end }}">
+    <button class="fairpay-lightbox-close-v815" type="button" aria-label="{{ if eq .Lang "zh" }}關閉放大圖片{{ else }}Close enlarged screenshot{{ end }}">×</button>
+    <img alt="">
+    <p class="fairpay-lightbox-caption-v815"></p>
+  </dialog>
+  {{ end }}
 
   <footer class="case-related-v526">
     <div class="case-related-shell-v526">

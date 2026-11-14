@@ -29,26 +29,25 @@
   {{ end }}
 </div></section>
 
-<section class="section-shell fairpay-independent-section" aria-labelledby="fairpay-independent-heading">
+<section class="section-shell work-independent-v815" aria-labelledby="work-independent-label-v815">
   <div class="shell">
-    <div class="fairpay-section-heading reveal">
-      <div>
-        <span class="kicker">{{ if $isZh }}獨立作品 · AI 產品{{ else }}INDEPENDENT BUILD · AI PRODUCT{{ end }}</span>
-        <h2 id="fairpay-independent-heading">{{ if $isZh }}將產品判斷延伸到 FinTech。{{ else }}Applying product judgment beyond healthcare.{{ end }}</h2>
-        <p>{{ if $isZh }}除了上述三個核心案例，我也在黑客松中完成一個使用合成資料的 AI 帳務流程原型。{{ else }}Alongside my three core case studies, I built a synthetic-data AI billing prototype during a hackathon.{{ end }}</p>
-      </div>
+    <div class="work-independent-heading-v815 reveal">
+      <h2 class="work-independent-kicker-v815" id="work-independent-label-v815">{{ if $isZh }}獨立產品作品{{ else }}INDEPENDENT PRODUCT BUILD{{ end }}</h2>
     </div>
     {{ range where .Pages "Params.independent" true }}
-    <article class="fairpay-independent-card reveal">
-      <a class="fairpay-independent-art" href="{{ .RelPermalink }}" aria-label="{{ if $isZh }}閱讀 FairPay AI 專案{{ else }}Read FairPay AI project{{ end }}">
-        <img src="{{ (cond $isZh "images/projects/fairpay-evidence-flow-v814-zh.svg" "images/projects/fairpay-evidence-flow-v814.svg") | relURL }}" loading="lazy" decoding="async" alt="{{ if $isZh }}FairPay AI：合約來源比對、人工審核與帳單草稿控制的示意流程{{ else }}FairPay AI illustrated flow from agreement evidence to human review and invoice-draft controls{{ end }}">
+    <article class="work-stack-row-v510 work-independent-row-v815 reveal">
+      <a class="work-stack-visual-v510 work-independent-visual-v815" href="{{ .RelPermalink }}" aria-label="{{ if $isZh }}閱讀 FairPay AI 專案{{ else }}Read FairPay AI project{{ end }}">
+        <img src="{{ (cond $isZh "images/projects/fairpay-evidence-flow-v815-zh.svg" "images/projects/fairpay-evidence-flow-v815.svg") | relURL }}" loading="lazy" decoding="async" alt="{{ if $isZh }}FairPay AI：來源證據、人工審核、帳單草稿控制流程圖{{ else }}FairPay AI: source evidence, human review and invoice-draft controls{{ end }}">
       </a>
-      <div class="fairpay-independent-copy">
-        <span class="work-category">{{ .Params.category }}</span>
+      <div class="work-stack-copy-v510 work-independent-copy-v815">
         <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
         <p>{{ .Params.summary }}</p>
-        <div class="fairpay-independent-meta"><span>{{ if $isZh }}本機原型{{ else }}Local prototype{{ end }}</span><span>{{ if $isZh }}合成測試資料{{ else }}Synthetic examples{{ end }}</span><span>PayPal Sandbox</span></div>
-        <a class="btn mono-project-btn work-stack-btn-v510" href="{{ .RelPermalink }}">{{ if $isZh }}探索產品原型{{ else }}Explore product build{{ end }} ↗</a>
+        <div class="work-independent-tags-v815" aria-label="{{ if $isZh }}專案範圍{{ else }}Project scope{{ end }}">
+          <span>{{ if $isZh }}本機原型{{ else }}Local prototype{{ end }}</span>
+          <span>{{ if $isZh }}合成資料{{ else }}Synthetic data{{ end }}</span>
+          <span>PayPal Sandbox</span>
+        </div>
+        <a class="btn mono-project-btn work-stack-btn-v510" href="{{ .RelPermalink }}">{{ if $isZh }}探索產品作品{{ else }}Explore product build{{ end }} ↗</a>
       </div>
     </article>
     {{ end }}

@@ -1,27 +1,26 @@
-# Tina Tai Personal Website — V8.15 (Work Consistency & FairPay Readability)
+# Tina Tai Personal Website — V8.16 (FairPay Evidence-First Work Redesign)
 
-**Complete GitHub Pages/Hugo source replacement.** All required site files are at the ZIP root, including the hidden `.github/` workflow directory. This release is based on V8.14 and preserves the three core case studies, every other public page, research data, publications, and the existing resume.
+**Complete GitHub Pages/Hugo source replacement.** All required site files are at the ZIP root, including the hidden `.github/` workflow directory. This release is based on V8.15 and preserves the three core case studies, every other public page, research data, publications, and the existing resume.
 
-## Editorial and visual changes
+## Editorial and visual changes in V8.16
 
-- **Work hierarchy:** Three core cases stay first, followed by a distinct **Independent Product Build** heading for FairPay AI. All four projects now use the same two-column editorial case-row layout, image proportions, CTA styling, and consistent low-motion Hover/Focus interactions. FairPay is not presented as equivalent in maturity to real clinical/product work.
-- **No duplicate headline:** Removed the oversized “Applying product judgment beyond healthcare” title, repeated category label, extra boxed-card surface, and large surrounding shadow.
-- **FairPay hero:** Replaced mixed-type hero counters (`3 / 161 / Sandbox`) with three qualitative capabilities. The `161 focused checks` remain accurately attributed to a local test run in the Testing & Limitations section.
-- **FairPay breadcrumb:** The secondary project uses **Independent product build** instead of the misleading **Selected work / 04** label. The other three retain their original numbered sequence.
-- **Three real application screenshots:** Overview, Agreements and Payments screenshots are now **hosted as WebP assets inside this website**, derived from the genuine product screenshot images embedded in the supplied exported FairPay case-study PDF. They are not AI-generated dashboards. Each one has a descriptive caption and an accessible click-to-enlarge `<dialog>` with Escape, close button, backdrop close, and focus restoration. The GitHub repo and video remain linked.
-- **Readability:** Simplified repeated caveats, retained the separate `$50 vs $500`, blocking decision, and `$400 Sandbox draft` scenarios; improved small-font decision cards and desktop case navigation; highlighted the current case section.
-- **Print:** Hide the focus-only Skip Link when printing a PDF; preserve it for normal keyboard users.
-- **Compatibility:** Updated versioned styles, cache keys, and the verifier. The existing GitHub Pages workflow, Hugo version, base URL, and all unchanged case study sources are preserved.
+- **Evidence-led visual:** FairPay's Work artwork is now **responsive HTML/CSS** rather than a text-dense three-panel SVG. An illustrative synthetic source-check highlights **AI suggestion $50 versus quoted source $500**, visibly marking the difference for human review. This is not a real client payment or the same scenario as the separate PayPal Sandbox draft.
+- **Recruiter-facing detail:** The right side now shows three focused contributions: source traceability, human-controlled billing rules, and an inspectable prototype (three actual screens, public demo and documentation).
+- **Consistent Work hierarchy:** The three proven core cases remain first; FairPay remains a clearly marked *Independent Product Build* in the same two-column editorial system, with unified hover/focus feedback. Slightly more generous visual widths at desktop help all cases.
+- **Legible at narrow widths:** Big typographic amounts and real text that reflows, not small type flattened into an image. Bilingual page content adapts down to 320px, including Dark Mode and reduced motion.
+- **New Open Graph previews:** Separate English/Traditional Chinese, **1200 × 628** PNG social thumbnails match the revised proof visual. FairPay's other locally hosted screenshots and detail-page Lightbox remain unchanged.
+- **No factual expansion:** Three original product, AI and validation cases, existing research, Education, Experience, Resume, FairPay testing boundary, demo and links are preserved. The recorded 161 checks remain in Testing & Limitations, not mistaken for product uptake.
+- **Versioning:** Versioned CSS and build verifier updated; GitHub Actions retains the established Hugo and Pages deployment approach.
 
 ## Deployment: full replacement, NOT a patch
 
-1. Back up the current GitHub repository (V8.14) and, if editing a local Git clone, **preserve `.git/`**.
+1. Back up the current GitHub repository (V8.15) and, if editing a local Git clone, **preserve `.git/`**.
 2. Remove the old website source files and copy all content from this ZIP directly into the repository root. **Do not nest the extracted folder**, and include `.github/`.
-3. Optional local source check: `python3 scripts/verify_v815.py`.
+3. Optional local source check: `python3 scripts/verify_v816.py`.
 4. Commit and push to `main`.
 5. Check GitHub **Actions → Build and deploy**. Both `build` and `deploy` must succeed.
 6. Open the home page, `/work/`, `/zh/work/`, `/work/fairpay-ai/` and `/zh/work/fairpay-ai/` and inspect desktop/mobile, Light/Dark modes, image zoom and links.
-7. Verify the page source contains `<meta name="portfolio-version" content="8.15">` and `portfolio-v815.css`.
+7. Verify the page source contains `<meta name="portfolio-version" content="8.16">` and `portfolio-v816.css`.
 
 Do **not** delete the `static/images/projects/fairpay-*-v815.webp` screenshots: the website now serves them locally.
 
@@ -36,9 +35,9 @@ FairPay is a local, synthetic-data hackathon prototype, **not** a production ser
 
 ## QA coverage and limits
 
-- **320/320** source regression checks passed, including bilingual content and local screenshot assets.
-- **40/40** offline Chromium preview configurations passed for Work/FairPay in English/Traditional Chinese at widths 1440, 1024, 768, 390 and 360 pixels in Light/Dark modes. No horizontal page or measured card overflow; assets loaded. The modal's Escape/Focus restoration was exercised in both languages.
-- JavaScript syntax and CSS parser checks passed.
-- Offline visual previews use captured HTML structure plus the actual V8.15 CSS/JS and locally embedded screenshots. **They are not a Hugo-generated production build**. This runtime cannot download or execute Hugo; the authoritative deployment/build acceptance is GitHub Actions.
+- **328/328** source checks passed, JavaScript syntax valid, CSS parsed without errors, and local Hugo assets referenced by the templates exist.
+- **44/44** Playwright/Chromium responsive spot checks passed (English/Traditional Chinese, Light/Dark modes; 320–1440px), checking viewport and inner-card bounds. Work graphic screenshots are retained separately in the conversation, not shipped in the site ZIP.
+- FairPay detailed-page image Lightbox was retained from previously tested V8.15; the new work image remains a normal clickable case-study link.
+- **Official Hugo build could not run in this isolated container** because the runtime has no Hugo binary and cannot resolve GitHub release downloads. Do not claim the source QA substitutes for the GitHub Actions build/deploy checks.
 
-The release-specific QA record is `V8_15_QA.md`. No historic generated browser preview HTML is shipped as a website page.
+The release-specific record is `V8_16_QA.md`; do not commit the temporary preview HTML/Python scripts in `/mnt/data` to the repository.

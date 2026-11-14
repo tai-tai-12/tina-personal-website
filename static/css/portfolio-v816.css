@@ -4784,3 +4784,100 @@ html[data-theme="dark"] .fairpay-independent-art{border-color:#354963}
 @media(max-width:620px){.case-hero-themes-v815{gap:7px;margin-top:18px}.case-hero-themes-v815 span{font-size:.75rem;padding:6px 9px}.fairpay-zoom-hint-v815{font-size:.73rem;padding:6px 8px;right:7px;bottom:7px}.fairpay-lightbox-v815{padding:43px 7px 12px}}
 @media(prefers-reduced-motion:reduce){.work-stack-row-v510 .work-stack-visual-v510{transform:none!important;transition:none!important}.fairpay-zoom-link-v815{transition:none}}
 @media print{.skip-to-content-v8{display:none!important}.fairpay-lightbox-v815{display:none!important}.fairpay-zoom-hint-v815{display:none!important}}
+
+
+/* ==========================================================
+   V8.16 · FairPay: proof-led, readable Work index
+   Native HTML (not microtype in a flattened image), with mobile reflow.
+   Three established core cases retain their order and evidence content.
+   ========================================================== */
+@media (min-width:981px){
+  .work-index-section .work-stack-row-v510,
+  .work-independent-v815 .work-stack-row-v510{grid-template-columns:minmax(0,.93fr) minmax(0,1.07fr);gap:clamp(30px,4.3vw,64px)}
+}
+@media (min-width:761px) and (max-width:980px){
+  .work-index-section .work-stack-row-v510,
+  .work-independent-v815 .work-stack-row-v510{grid-template-columns:1fr;gap:24px}
+  .work-index-section .work-stack-visual-v510{max-width:740px}
+}
+.work-independent-v815{padding:66px 0 104px}
+.work-independent-row-v816{align-items:center;padding-top:30px;padding-bottom:12px}
+.work-independent-proof-link-v816.work-stack-visual-v510{
+  display:flex;align-items:stretch;overflow:hidden;
+  min-height:405px;max-height:none;aspect-ratio:auto;
+  border-radius:19px;background:#eef3ff;border-color:#d7e1f4;
+  text-decoration:none;color:#101d34;
+}
+.fairpay-proof-v816{
+  position:relative;isolation:isolate;display:flex;flex-direction:column;
+  width:100%;min-width:0;padding:clamp(19px,2.3vw,30px);
+  background:radial-gradient(circle at 100% 0%,#dce8ff 0%,#dce8ff 22%,transparent 22.2%),
+    linear-gradient(148deg,#fbfdff 0%,#f3f7ff 56%,#eaf2ff 100%);
+  color:#0c1730;overflow:hidden;
+}
+.fairpay-proof-v816:before{content:"";position:absolute;z-index:-1;width:190px;height:190px;border-radius:50%;background:rgba(174,201,254,.22);left:-90px;bottom:-96px}
+.fairpay-proof-heading-v816{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:15px}
+.fairpay-proof-brand-v816{font-size:.81rem;font-weight:800;letter-spacing:.1em;color:#1746e0}
+.fairpay-proof-role-v816{font-size:.67rem;font-weight:750;letter-spacing:.08em;color:#526b98}
+.fairpay-proof-lead-v816{display:grid;gap:5px;margin-bottom:23px}
+.fairpay-proof-lead-v816 strong{font-family:Manrope,Inter,"Noto Sans TC",sans-serif;font-size:clamp(1.65rem,2.35vw,2.08rem);line-height:1.16;letter-spacing:-.048em;font-weight:750;color:#121c36}
+.fairpay-proof-lead-v816>span{font-size:clamp(.83rem,1.07vw,.94rem);line-height:1.5;color:#4d617d}
+.fairpay-proof-compare-v816{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:clamp(8px,1.1vw,14px)}
+.fairpay-proof-amount-v816{min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:3px;padding:clamp(13px,1.4vw,19px);background:#fff;border:1px solid #d8e4f8;border-radius:15px;box-shadow:0 8px 21px rgba(24,63,122,.07)}
+.fairpay-proof-amount-v816>span{font-size:clamp(.68rem,.95vw,.79rem);font-weight:800;line-height:1.45;letter-spacing:.025em;color:#526582}
+.fairpay-proof-amount-v816 strong{font-family:Manrope,Inter,sans-serif;font-size:clamp(2.4rem,4vw,3.85rem);line-height:1.08;font-weight:750;letter-spacing:-.05em;font-variant-numeric:tabular-nums;color:#1746e0}
+.fairpay-proof-amount-v816.is-proposal strong{color:#a44b2c}
+.fairpay-proof-amount-v816 small{font-size:clamp(.74rem,1.04vw,.87rem);line-height:1.36;color:#556881}
+.fairpay-proof-not-equal-v816{display:block;font:700 clamp(1.45rem,2.1vw,1.9rem)/1 Manrope,Inter,sans-serif;color:#b86243}
+.fairpay-proof-bottom-v816{margin-top:auto;padding-top:21px}
+.fairpay-proof-review-v816{display:flex;align-items:center;gap:12px;padding:12px 14px;background:#ecf3ff;border:1px solid #d4e1f7;border-radius:12px}
+.fairpay-proof-review-icon-v816{width:30px;height:30px;flex:0 0 30px;border-radius:10px;display:grid;place-items:center;background:#1746e0;color:#fff;font-size:1.1rem;font-weight:700}
+.fairpay-proof-review-v816 div{display:grid;gap:2px;min-width:0}
+.fairpay-proof-review-v816 strong{font-size:.91rem;line-height:1.35;color:#17315d}
+.fairpay-proof-review-v816 div>span{font-size:clamp(.72rem,.91vw,.82rem);line-height:1.4;color:#4c678a}
+.fairpay-proof-foot-v816{font-size:.69rem;letter-spacing:.016em;color:#647b9e;margin-top:12px;line-height:1.45}
+.work-independent-copy-v816{padding:6px 0;min-width:0}
+.fairpay-copy-eyebrow-v816{display:block;font-size:.72rem;letter-spacing:.1em;font-weight:750;line-height:1.5;color:var(--blue);margin-bottom:12px}
+.work-independent-copy-v816 h3{font-size:clamp(2.05rem,3vw,2.72rem);line-height:1.16;margin:0 0 13px;max-width:680px}
+.work-independent-copy-v816>p{font-size:clamp(.97rem,1.18vw,1.08rem);line-height:1.65;max-width:630px;margin:0}
+.fairpay-keypoints-v816{list-style:none;display:grid;gap:0;margin:19px 0 0;padding:0;max-width:600px}
+.fairpay-keypoints-v816 li{display:flex;gap:13px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--line)}
+.fairpay-keypoint-mark-v816{flex:0 0 31px;display:grid;place-items:center;width:31px;height:31px;border-radius:8px;background:var(--soft);color:var(--blue);font-size:.72rem;font-weight:750;line-height:1}
+.fairpay-keypoints-v816 li>div{display:grid;gap:2px;min-width:0}
+.fairpay-keypoints-v816 strong{font-size:.97rem;line-height:1.4;color:var(--text);font-weight:700}
+.fairpay-keypoints-v816 small{font-size:.85rem;line-height:1.45;color:var(--muted)}
+.fairpay-scope-v816{font-size:.79rem;line-height:1.5;color:var(--muted);margin-top:10px}
+.work-independent-copy-v816 .fairpay-cta-v816{margin-top:18px}
+html[data-theme="dark"] .work-independent-proof-link-v816{border-color:#3b5276;background:#102b54}
+@media(max-width:980px){.work-independent-proof-link-v816.work-stack-visual-v510{max-width:740px;min-height:400px}}
+@media(max-width:760px){
+ .work-independent-v815{padding-top:48px;padding-bottom:72px}
+ .work-independent-row-v816{padding-top:26px}
+ .work-independent-proof-link-v816.work-stack-visual-v510{max-width:100%;min-height:370px}
+ .fairpay-proof-v816{padding:clamp(14px,4.3vw,22px)}
+ .fairpay-proof-compare-v816{gap:8px}
+ .fairpay-proof-amount-v816{padding:11px}
+ .fairpay-proof-amount-v816 strong{font-size:clamp(2rem,8.7vw,3.1rem)}
+ .fairpay-proof-amount-v816>span{font-size:.68rem}
+ .fairpay-proof-amount-v816 small{font-size:.73rem}
+ .fairpay-proof-not-equal-v816{font-size:1.5rem}
+ .fairpay-proof-lead-v816{margin-bottom:18px}
+ .fairpay-proof-lead-v816 strong{font-size:clamp(1.55rem,6.2vw,2rem)}
+ .work-independent-copy-v816 h3{font-size:clamp(1.8rem,7vw,2.2rem)}
+}
+@media(max-width:360px){
+ .fairpay-proof-heading-v816{gap:3px}
+ .fairpay-proof-role-v816{font-size:.61rem}
+ .fairpay-proof-amount-v816{padding:9px 8px}
+ .fairpay-proof-amount-v816 strong{font-size:2rem}
+ .fairpay-proof-v816{padding:13px}
+ .fairpay-proof-not-equal-v816{font-size:1.15rem}
+}
+@media(prefers-reduced-motion:reduce){.work-independent-proof-link-v816{transition:none!important;transform:none!important}}
+@media print{.work-independent-proof-link-v816{min-height:0!important}.fairpay-proof-v816{break-inside:avoid}}
+
+/* V8.16 dark-mode CTA contrast: a light affirmative button on dark background. */
+html[data-theme="dark"] .work-independent-copy-v816 .fairpay-cta-v816{background:#f2f6ff;color:#101b34;border:1px solid #d8e4fa}
+html[data-theme="dark"] .work-independent-copy-v816 .fairpay-cta-v816:hover{background:#dce8ff;color:#101b34}
+
+@media(max-width:360px){.fairpay-proof-role-v816{display:none}.fairpay-proof-amount-v816>span{font-size:.73rem}}

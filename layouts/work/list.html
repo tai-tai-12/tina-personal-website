@@ -35,19 +35,47 @@
       <h2 class="work-independent-kicker-v815" id="work-independent-label-v815">{{ if $isZh }}獨立產品作品{{ else }}INDEPENDENT PRODUCT BUILD{{ end }}</h2>
     </div>
     {{ range where .Pages "Params.independent" true }}
-    <article class="work-stack-row-v510 work-independent-row-v815 reveal">
-      <a class="work-stack-visual-v510 work-independent-visual-v815" href="{{ .RelPermalink }}" aria-label="{{ if $isZh }}閱讀 FairPay AI 專案{{ else }}Read FairPay AI project{{ end }}">
-        <img src="{{ (cond $isZh "images/projects/fairpay-evidence-flow-v815-zh.svg" "images/projects/fairpay-evidence-flow-v815.svg") | relURL }}" loading="lazy" decoding="async" alt="{{ if $isZh }}FairPay AI：來源證據、人工審核、帳單草稿控制流程圖{{ else }}FairPay AI: source evidence, human review and invoice-draft controls{{ end }}">
-      </a>
-      <div class="work-stack-copy-v510 work-independent-copy-v815">
-        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-        <p>{{ .Params.summary }}</p>
-        <div class="work-independent-tags-v815" aria-label="{{ if $isZh }}專案範圍{{ else }}Project scope{{ end }}">
-          <span>{{ if $isZh }}本機原型{{ else }}Local prototype{{ end }}</span>
-          <span>{{ if $isZh }}合成資料{{ else }}Synthetic data{{ end }}</span>
-          <span>PayPal Sandbox</span>
+    <article class="work-stack-row-v510 work-independent-row-v815 work-independent-row-v816 reveal">
+      <a class="work-stack-visual-v510 work-independent-proof-link-v816" href="{{ .RelPermalink }}" aria-label="{{ if $isZh }}查看 FairPay AI：AI 提議 50 美元，合約原文 500 美元，需人工核對{{ else }}Explore FairPay AI: an AI suggestion of fifty dollars versus five hundred dollars in the agreement, requiring human review{{ end }}">
+        <div class="fairpay-proof-v816" role="img" aria-label="{{ if $isZh }}FairPay 合成測試情境：AI 提議 50 美元；原始合約寫明 500 美元；顯示差異並要求人工核對。這不是實際付款紀錄。{{ else }}FairPay synthetic case: AI suggested fifty dollars while the contract said five hundred dollars. The discrepancy requires human review; this is not a real payment.{{ end }}">
+          <div class="fairpay-proof-heading-v816">
+            <span class="fairpay-proof-brand-v816">FAIRPAY AI</span>
+            <span class="fairpay-proof-role-v816">{{ if $isZh }}來源核對示例{{ else }}SOURCE CHECK · SYNTHETIC{{ end }}</span>
+          </div>
+          <div class="fairpay-proof-lead-v816">
+            <strong>{{ if $isZh }}先核對，再請款。{{ else }}Evidence before invoice.{{ end }}</strong>
+            <span>{{ if $isZh }}AI 可以提議，但來源證據必須可查證。{{ else }}An AI proposal is not an approved amount.{{ end }}</span>
+          </div>
+          <div class="fairpay-proof-compare-v816">
+            <div class="fairpay-proof-amount-v816 is-proposal">
+              <span>{{ if $isZh }}AI 提議{{ else }}AI SUGGESTION{{ end }}</span>
+              <strong>$50</strong>
+              <small>{{ if $isZh }}需要人工核對{{ else }}Needs review{{ end }}</small>
+            </div>
+            <span class="fairpay-proof-not-equal-v816" aria-hidden="true">≠</span>
+            <div class="fairpay-proof-amount-v816 is-source">
+              <span>{{ if $isZh }}合約原文{{ else }}SOURCE AGREEMENT{{ end }}</span>
+              <strong>$500</strong>
+              <small>{{ if $isZh }}來源文字記載{{ else }}Quoted contract fee{{ end }}</small>
+            </div>
+          </div>
+          <div class="fairpay-proof-bottom-v816">
+            <div class="fairpay-proof-review-v816"><span class="fairpay-proof-review-icon-v816" aria-hidden="true">!</span><div><strong>{{ if $isZh }}差異已辨識{{ else }}Mismatch identified{{ end }}</strong><span>{{ if $isZh }}人工確認後才能繼續後續流程{{ else }}Human review comes before any billing action{{ end }}</span></div></div>
+            <div class="fairpay-proof-foot-v816">{{ if $isZh }}合成測試案例 · 非正式付款服務{{ else }}Synthetic demonstration · not a live payment service{{ end }}</div>
+          </div>
         </div>
-        <a class="btn mono-project-btn work-stack-btn-v510" href="{{ .RelPermalink }}">{{ if $isZh }}探索產品作品{{ else }}Explore product build{{ end }} ↗</a>
+      </a>
+      <div class="work-stack-copy-v510 work-independent-copy-v815 work-independent-copy-v816">
+        <span class="fairpay-copy-eyebrow-v816">{{ if $isZh }}黑客松原型 · AI 產品 / FINTECH{{ else }}HACKATHON PROTOTYPE · AI PRODUCT / FINTECH{{ end }}</span>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <p>{{ if $isZh }}將合約來源與 AI 提議並排核對，讓財務檢查和人工授權成為帳單草稿流程的重要關卡。{{ else }}A contract-to-invoice prototype that checks AI suggestions against the source and keeps billing decisions under explicit human control.{{ end }}</p>
+        <ul class="fairpay-keypoints-v816">
+          <li><span class="fairpay-keypoint-mark-v816">01</span><div><strong>{{ if $isZh }}來源可以驗證{{ else }}Traceable source evidence{{ end }}</strong><small>{{ if $isZh }}標示 AI 建議與合約條款的差異{{ else }}See where AI-extracted terms differ from the agreement{{ end }}</small></div></li>
+          <li><span class="fairpay-keypoint-mark-v816">02</span><div><strong>{{ if $isZh }}保留人工決策{{ else }}Human-controlled billing{{ end }}</strong><small>{{ if $isZh }}折抵、驗收與授權不可由 AI 自行決定{{ else }}Credits, acceptance, and approval stay separate{{ end }}</small></div></li>
+          <li><span class="fairpay-keypoint-mark-v816">03</span><div><strong>{{ if $isZh }}有可檢視的產品原型{{ else }}Working product prototype{{ end }}</strong><small>{{ if $isZh }}三個實際畫面、產品示範影片與公開文件{{ else }}Three real screens, a demo, and public documentation{{ end }}</small></div></li>
+        </ul>
+        <div class="fairpay-scope-v816">{{ if $isZh }}本機原型 · 合成資料 · PayPal Sandbox 草稿{{ else }}Local prototype · Synthetic data · PayPal Sandbox drafts{{ end }}</div>
+        <a class="btn mono-project-btn work-stack-btn-v510 fairpay-cta-v816" href="{{ .RelPermalink }}">{{ if $isZh }}探索產品作品{{ else }}Explore product build{{ end }} ↗</a>
       </div>
     </article>
     {{ end }}

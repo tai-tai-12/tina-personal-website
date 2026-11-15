@@ -3,7 +3,7 @@
 <div class="page-hero section-shell compact mono-page-hero top-level-page-hero-v7"><div class="shell narrow reveal">
   {{ partial "page-context.html" . }}
   <h1>{{ .Title }}</h1>
-  <p class="lede small">{{ if $isZh }}三個精選案例：醫療 AI 產品決策、模型評估，以及游離輻射設備第三方檢測與客戶營運。{{ else }}Three selected cases in medical AI product decisions, model evaluation, and hands-on ionizing-radiation device testing.{{ end }}</p>
+  <p class="lede small">{{ if $isZh }}三個核心案例涵蓋醫療 AI 產品交付、模型評估及客戶導向的設備檢測；另有一項獨立 AI 產品作品。{{ else }}Three core case studies in medical AI product delivery, model evaluation, and client-facing device validation, plus an independent AI product build.{{ end }}</p>
 </div></div>
 <section class="section-shell work-index-section work-stack-v510"><div class="shell work-stack-list-v510">
   {{ range sort (where .Pages "Params.independent" "ne" true) "Weight" }}

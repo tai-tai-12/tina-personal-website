@@ -4881,3 +4881,104 @@ html[data-theme="dark"] .work-independent-copy-v816 .fairpay-cta-v816{background
 html[data-theme="dark"] .work-independent-copy-v816 .fairpay-cta-v816:hover{background:#dce8ff;color:#101b34}
 
 @media(max-width:360px){.fairpay-proof-role-v816{display:none}.fairpay-proof-amount-v816>span{font-size:.73rem}}
+
+
+/* V8.16.1 · Print-specific Work refinement.
+   These rules deliberately do not change screen/tablet/mobile presentation. */
+@media print {
+  @page { margin: 13mm 12mm; }
+  html, body {
+    background: #ffffff !important;
+    color: #111827 !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .skip-to-content-v8, .fairpay-lightbox-v815, .fairpay-zoom-hint-v815 {
+    display: none !important;
+  }
+  .site-header { position: static !important; }
+  .page-hero.section-shell { padding: 18px 0 18px !important; }
+  .work-index-section, .work-independent-v815 {
+    padding-top: 14px !important;
+    padding-bottom: 16px !important;
+    background: #ffffff !important;
+  }
+  .work-index-section .work-stack-row-v510,
+  .work-independent-v815 .work-stack-row-v510 {
+    display: grid !important;
+    grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr) !important;
+    gap: 22px !important;
+    align-items: center !important;
+    padding: 19px 0 !important;
+    margin: 0 !important;
+    break-inside: avoid-page !important;
+    page-break-inside: avoid !important;
+  }
+  .work-independent-heading-v815 {
+    break-after: avoid-page;
+    page-break-after: avoid;
+    margin-bottom: 4px !important;
+  }
+  .work-independent-proof-link-v816.work-stack-visual-v510 {
+    min-height: 0 !important;
+    max-height: none !important;
+  }
+  .fairpay-proof-v816 {
+    padding: 14px !important;
+  }
+  .fairpay-proof-lead-v816 { margin-bottom: 10px !important; }
+  .fairpay-proof-bottom-v816 { padding-top: 9px !important; }
+  .fairpay-proof-amount-v816 { padding: 11px !important; }
+  .fairpay-proof-amount-v816 strong { font-size: 2.45rem !important; }
+  .fairpay-proof-v816,
+  .work-stack-visual-v510,
+  .evidence-visual-v84 {
+    break-inside: avoid-page !important;
+    page-break-inside: avoid !important;
+  }
+  .work-stack-copy-v510 h2,
+  .work-stack-copy-v510 h3,
+  .work-independent-copy-v816 h3 {
+    font-size: 1.32rem !important;
+    line-height: 1.22 !important;
+    color: #111827 !important;
+    break-after: avoid-page;
+  }
+  .work-stack-copy-v510 > p,
+  .work-independent-copy-v816 > p {
+    font-size: .85rem !important;
+    line-height: 1.48 !important;
+    color: #334155 !important;
+  }
+  .work-stack-copy-v510 .work-metrics-v88 { margin-block: 10px !important; }
+  .work-stack-copy-v510 .mono-project-btn,
+  .work-independent-copy-v816 .fairpay-cta-v816 {
+    display: inline-flex !important;
+    background: #ffffff !important;
+    color: #111827 !important;
+    -webkit-text-fill-color: #111827 !important;
+    border: 1.5px solid #111827 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    min-height: 33px !important;
+    padding: 5px 13px !important;
+    margin-top: 12px !important;
+    font-size: .82rem !important;
+    line-height: 1.25 !important;
+    transform: none !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .work-independent-copy-v816 .fairpay-keypoints-v816 { margin-top: 11px !important; }
+  .work-independent-copy-v816 .fairpay-keypoints-v816 li { padding: 5px 0 !important; }
+  .work-independent-copy-v816 .fairpay-keypoints-v816 strong { font-size: .8rem !important; }
+  .work-independent-copy-v816 .fairpay-keypoints-v816 small { font-size: .72rem !important; }
+  .fairpay-scope-v816 { font-size: .7rem !important; }
+  .work-stack-row-v510 a,
+  .work-stack-row-v510 a:visited { opacity: 1 !important; }
+  .site-footer { break-inside: avoid-page !important; page-break-inside: avoid !important; }
+  .work-index-section .reveal,
+  .work-independent-v815 .reveal { opacity: 1 !important; transform: none !important; }
+}

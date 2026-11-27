@@ -1,10 +1,22 @@
 {{ $isZh := .IsZh }}
 {{ if eq .Kind "team" }}
-<section class="xp-v86-recognition" aria-label="{{ if $isZh }}團隊／專案獲獎{{ else }}Project recognition{{ end }}">
-  <div class="xp-v86-recognition-label"><span aria-hidden="true">✦</span>{{ if $isZh }}團隊／專案肯定 · 2026{{ else }}PROJECT RECOGNITION · 2026{{ end }}</div>
-  <strong>DeepBT A+ — {{ if $isZh }}未來科技獎{{ else }}Future Tech Award{{ end }}</strong>
-  <p>{{ if $isZh }}參與國立陽明交通大學主導之獲獎團隊專案；本獎項為團隊／專案榮譽，並非個人獨立得獎。{{ else }}Contributed to the NYCU-led, award-recognized DeepBT A+ project; this is team/project recognition, not an individual award.{{ end }}</p>
-  <a href="https://www.futuretech.org.tw/futuretech/index.php?action=product_detail&amp;prod_no=P0008700008523&amp;web_lang=en-us" target="_blank" rel="noopener noreferrer">{{ if $isZh }}官方專案驗證{{ else }}Official project verification{{ end }} ↗</a>
+<section class="xp-v86-recognition xp-awards-v8162" aria-label="{{ if $isZh }}DeepBT A+ 團隊獲獎{{ else }}DeepBT A+ project recognition{{ end }}">
+  <div class="xp-v86-recognition-label"><span aria-hidden="true">✦</span>{{ if $isZh }}團隊／專案肯定 · 2026{{ else }}TEAM / PROJECT RECOGNITION · 2026{{ end }}</div>
+  <div class="xp-awards-grid-v8162">
+    <article class="xp-awards-item-v8162">
+      <span class="xp-awards-item-meta-v8162">2026 · FUTEX</span>
+      <h3>{{ if $isZh }}未來科技獎{{ else }}Future Tech Award{{ end }}</h3>
+      <p>DeepBT A+</p>
+      <a href="https://www.futuretech.org.tw/futuretech/index.php?action=product_detail&amp;prod_no=P0008700008523&amp;web_lang={{ if $isZh }}zh-tw{{ else }}en-us{{ end }}" target="_blank" rel="noopener noreferrer">{{ if $isZh }}官方專案介紹{{ else }}Official project profile{{ end }} ↗</a>
+    </article>
+    <article class="xp-awards-item-v8162">
+      <span class="xp-awards-item-meta-v8162">2026 · {{ if $isZh }}第 23 屆{{ else }}23RD EDITION{{ end }}</span>
+      <h3>{{ if $isZh }}國家新創獎{{ else }}National Innovation Award{{ end }}</h3>
+      <p>{{ if $isZh }}學研新創獎{{ else }}Academic Research category{{ end }}</p>
+      <span class="xp-awards-item-note-v8162">{{ if $isZh }}依正式得獎通知確認{{ else }}Confirmed by official award notification{{ end }}</span>
+    </article>
+  </div>
+  <p class="xp-awards-attribution-v8162">{{ if $isZh }}兩項獎項為國立陽明交通大學主導團隊／專案榮譽，並非個人獨立獲獎。我的工作聚焦醫師需求、產品決策及跨團隊交付。{{ else }}Both honors recognize NYCU-led project teams, not an individual award. My role focused on physician-facing requirements, product decisions, and cross-functional delivery.{{ end }}</p>
 </section>
 {{ else if eq .Kind "individual" }}
 <section class="xp-v86-recognition" aria-label="{{ if $isZh }}個人實習表現獲獎{{ else }}Individual recognition{{ end }}">

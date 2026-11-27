@@ -7,7 +7,7 @@ contextLabel: "CAREER PATH"
 ## AITEWAN Biomedical Technology
 **Product Manager · Jul 2024 – Jun 2026 · Taipei, Taiwan**
 
-Led recurring physician discovery, technical product trade-offs, release planning, and regulatory execution for an AI-assisted brain-tumor product across two medical centers. Contributed to the NYCU-led DeepBT A+ project recognized with the 2026 Future Tech Award (team recognition).
+Led recurring physician discovery, technical product trade-offs, release planning, and regulatory execution for an AI-assisted brain-tumor product across two medical centers. Contributed to NYCU-led DeepBT A+, subsequently recognized with the 2026 Future Tech Award and National Innovation Award (Academic Research category; team/project recognition).
 
 [AITEWAN company website ↗](https://www.aitewan-bio.com/en/)
 

@@ -104,15 +104,24 @@ The product layer extended beyond the model itself. It included **PACS-connected
 
 The product pathway grew from the same lesion-wise brain-tumor AI research program communicated through complementary public outputs.
 
-<div class="case-award-v8" aria-label="Project recognition">
-  <div class="case-award-emblem-v8" aria-hidden="true"><span>2026</span><strong>FT</strong></div>
-  <div class="case-award-copy-v8">
-    <span>TEAM / PROJECT RECOGNITION · 2026</span>
-    <h3>DeepBT A+ · Future Tech Award</h3>
-    <p>I contributed to <strong>DeepBT A+</strong>, the NYCU-led intelligent brain-tumor MRI reading assistance project recognized with the <strong>2026 Future Tech Award</strong>. The honor belongs to the project team; my work centered on physician-facing product decisions, execution, and clinical/regulatory coordination.</p>
+<section class="case-dual-awards-v8162" aria-label="DeepBT A+ project recognition">
+  <div class="case-dual-awards-heading-v8162"><span>TEAM / PROJECT RECOGNITION · 2026</span><p>Two awards recognizing NYCU-led medical AI innovation projects. These are team/project honors; my contributions centered on physician needs, product decisions, delivery, and clinical/regulatory coordination.</p></div>
+  <div class="case-dual-awards-grid-v8162">
+    <article class="case-dual-award-v8162">
+      <span class="case-dual-award-kicker-v8162">2026 · FUTEX</span>
+      <h3>Future Tech Award</h3>
+      <p>DeepBT A+ — AI-assisted brain MRI interpretation and clinical workflow support.</p>
+      <a href="https://www.futuretech.org.tw/futuretech/index.php?action=product_detail&amp;prod_no=P0008700008523&amp;web_lang=en-us" target="_blank" rel="noopener noreferrer">Official project profile ↗</a>
+    </article>
+    <article class="case-dual-award-v8162">
+      <span class="case-dual-award-kicker-v8162">2026 · 23RD NATIONAL INNOVATION AWARD</span>
+      <h3>National Innovation Award</h3>
+      <p><strong>Academic Research category</strong> — healthcare AI workflow integration from brain-tumor imaging analysis to assisted report generation.</p>
+      <span class="case-dual-award-confirm-v8162">Confirmed by official award notification</span>
+    </article>
   </div>
-  <p class="case-award-source-v81"><a href="https://www.futuretech.org.tw/futuretech/index.php?action=product_detail&prod_no=P0008700008523&web_lang=en-us" target="_blank" rel="noopener noreferrer">Official FUTEX / Future Tech project profile ↗</a> <span>· External verification · No award photo displayed</span></p>
-</div>
+  <p class="case-dual-awards-official-v8162"><strong>Official awarded entry (Chinese):</strong> 醫療 AI 工作流整合平台實現從腦瘤影像分析到報告生成的智慧輔助</p>
+</section>
 
 <div class="case-evidence-grid">
   <article class="case-evidence-card">

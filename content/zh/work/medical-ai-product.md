@@ -104,15 +104,24 @@ navItems:
 
 產品路徑建立在同一條逐病灶腦瘤 AI 研究主線上，並透過不同公開發表形式呈現。
 
-<div class="case-award-v8" aria-label="專案獲獎">
-  <div class="case-award-emblem-v8" aria-hidden="true"><span>2026</span><strong>FT</strong></div>
-  <div class="case-award-copy-v8">
-    <span>團隊／專案獲獎 · 2026</span>
-    <h3>DeepBT A+ · 未來科技獎（Future Tech Award）</h3>
-    <p>我參與 <strong>DeepBT A+ 腦瘤 MRI 智慧輔助判讀系統</strong> 的產品推進工作；此 NYCU 主導的團隊專案獲得 <strong>2026 Future Tech Award</strong>。此獎項屬於團隊／專案肯定，不代表我個人獨立獲獎；我的貢獻聚焦醫師工作流程、產品決策、跨團隊交付，以及臨床與法規協調。</p>
+<section class="case-dual-awards-v8162" aria-label="DeepBT A+ 團隊專案獲獎">
+  <div class="case-dual-awards-heading-v8162"><span>團隊／專案肯定 · 2026</span><p>兩項獎項肯定國立陽明交通大學主導的醫療 AI 團隊／專案成果，並非個人獨立獲獎。我的貢獻為醫師需求、產品決策、跨團隊交付及臨床與法規協調。</p></div>
+  <div class="case-dual-awards-grid-v8162">
+    <article class="case-dual-award-v8162">
+      <span class="case-dual-award-kicker-v8162">2026 · FUTEX</span>
+      <h3>未來科技獎</h3>
+      <p>DeepBT A+：腦瘤 MRI 智慧輔助判讀與臨床工作流程整合。</p>
+      <a href="https://www.futuretech.org.tw/futuretech/index.php?action=product_detail&amp;prod_no=P0008700008523&amp;web_lang=zh-tw" target="_blank" rel="noopener noreferrer">官方專案介紹 ↗</a>
+    </article>
+    <article class="case-dual-award-v8162">
+      <span class="case-dual-award-kicker-v8162">2026 · 第二十三屆</span>
+      <h3>國家新創獎</h3>
+      <p><strong>學研新創獎</strong>：獲獎案涵蓋腦瘤影像分析到報告生成的醫療 AI 工作流整合。</p>
+      <span class="case-dual-award-confirm-v8162">依正式得獎通知確認</span>
+    </article>
   </div>
-  <p class="case-award-source-v81"><a href="https://www.futuretech.org.tw/futuretech/index.php?action=product_detail&prod_no=P0008700008523&web_lang=zh-tw" target="_blank" rel="noopener noreferrer">FUTEX 未來科技官方專案介紹 ↗</a> <span>· 官方來源驗證 · 不展示獎項照片</span></p>
-</div>
+  <p class="case-dual-awards-official-v8162"><strong>公文正式獲獎案名：</strong>「醫療 AI 工作流整合平台實現從腦瘤影像分析到報告生成的智慧輔助」</p>
+</section>
 
 <div class="case-evidence-grid">
   <article class="case-evidence-card">{{< site-img src="images/research/midl-poster.webp" alt="Tina Tai 與 MIDL 2026 海報" >}}<div><span>MIDL · 2026</span><h3>第一作者短論文海報發表</h3><p>逐病灶偽陽性降低與五類腫瘤分類的公開研究成果。</p></div></article>
